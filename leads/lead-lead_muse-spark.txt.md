@@ -24,3 +24,8 @@ impact: NONE
 [NEXT] SCAN: Passive CT + light probe to populate inventory — 1) crt.sh/CT for duocircle.com, *.docker.com, *.docker.io, posit.cloud, shinyapps.io, autotrader.com, kbb.com, emsisoft.com 2) then read-only probes: GET https://hub.docker.com/v2/ , GET https://app.docker.com/ , GET https://posit.cloud/ , GET https://duocircle.com/.well-known/security.txt with status/headers/body-size capture. Do not invent hosts outside probe_allow.
 [LEARN] NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
 [RISK] 48 reason: Large attack surface (docker hub/app/build/scout + posit cloud/shinyapps + coxauto dealer platforms) but no live inventory, no auth/token exposure validated, no SSRF/cloud-metadata reachable surface confirmed; exposure is latent high-value pending probe, not active exploit.
+## 2026-08-27 15:19:54 UTC (model muse-spark)
+[PARKED] NONE — no hypothesis met VALID >=70 with concrete passive evidence; wildcard docker assets alone lack versioned endpoint/param anomaly to prove class alive
+[FINAL] NONE
+[LEARN] NONE — no class proven dead/alive this cycle (no status/param evidence)
+[RISK] 38 — email-only programs, no auth-gated high-value endpoints exposed in current inventory slice; docker wildcards are high-value but no concrete IDOR/SSRF/JWT anomaly observed passively
