@@ -1,0 +1,11 @@
+target:
+  name: doctolib
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/doctolib-public-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/doctolib-public-bug-bounty-program
+  domains:
+  - doctolib.fr
+  - doctolib.de
+  github_orgs: []
+  excluded: []

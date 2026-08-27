@@ -1,0 +1,10 @@
+target:
+  name: dex-trade
+  platform: bounty
+  disclosure: https://hackenproof.com/dex-trade/dex-trade
+  bounty: true
+  program_url: https://hackenproof.com/dex-trade/dex-trade
+  domains:
+  - dex-trade.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: avail-carsharing
+  platform: bounty
+  disclosure: https://availcarsharing.com/bug-bounty
+  bounty: true
+  program_url: https://availcarsharing.com/bug-bounty
+  domains:
+  - availcarsharing.com
+  github_orgs: []
+  excluded: []

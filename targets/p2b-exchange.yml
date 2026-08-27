@@ -1,0 +1,10 @@
+target:
+  name: p2b-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/p2b-exchange/p2b-exchange
+  bounty: true
+  program_url: https://hackenproof.com/p2b-exchange/p2b-exchange
+  domains:
+  - p2pb2b.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: bittrex
+  platform: bounty
+  disclosure: https://hackenproof.com/bittrex/bittrex
+  bounty: true
+  program_url: https://hackenproof.com/bittrex/bittrex
+  domains:
+  - bittrex.com
+  github_orgs: []
+  excluded: []

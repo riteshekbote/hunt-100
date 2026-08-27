@@ -1,0 +1,10 @@
+target:
+  name: libelle
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/libelle/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/libelle/detail
+  domains:
+  - libelle.nl
+  github_orgs: []
+  excluded: []

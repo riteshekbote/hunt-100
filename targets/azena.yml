@@ -1,0 +1,10 @@
+target:
+  name: azena
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/azena/azenaresponsibledisclosure/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/azena/azenaresponsibledisclosure/detail
+  domains:
+  - azena.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: nab-s-responsible-disclosure-progra
+  platform: bounty
+  disclosure: https://bugcrowd.com/nationalaustraliabankog
+  bounty: true
+  program_url: https://bugcrowd.com/nationalaustraliabankog
+  domains:
+  - advantedge.com.au
+  - claiming.com.au
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: truelayer
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/truelayer/truelayer/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/truelayer/truelayer/detail
+  domains:
+  - truelayer.cloud
+  - truelayer.com
+  github_orgs: []
+  excluded: []

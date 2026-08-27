@@ -1,0 +1,10 @@
+target:
+  name: make
+  platform: bounty
+  disclosure: https://www.make.com/en/bounty
+  bounty: true
+  program_url: https://www.make.com/en/bounty
+  domains:
+  - make.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: clabs
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/clabs/clabs/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/clabs/clabs/detail
+  domains:
+  - celo.org
+  github_orgs: []
+  excluded: []

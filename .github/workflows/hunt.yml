@@ -130,11 +130,13 @@ jobs:
           count against you. If nothing in the inventory merits a hypothesis,
           emit [HYP NONE] instead of inventing surface.
 
+          VALID-ONLY RULE: Only output hypotheses that would pass all 7 gates as VALID with confidence >=70 and concrete evidence. If none, output [HYP NONE] — never emit HOLD/INVALID as HYP.
+
           HARD FORMAT RULE: one field per line. NEVER put confidence/class/asset inline
           inside the [HYP] title line. Every field MUST be on its own line as 'key: value'
           directly under the [HYP] line.
 
-          STEP 4 — SELF-CRITIQUE: Re-read your own hypotheses. Drop any that: confidence < 40, or class on the knowledge REJECTED list, or no concrete verify_steps. For dropped ones emit [PARKED] <title>: <why dropped>. Emit [FINAL] with the surviving hypotheses re-ranked (top first).
+          STEP 4 — SELF-CRITIQUE: Re-read your own hypotheses. Drop any that: confidence < 70, or class on the knowledge REJECTED list, or no concrete verify_steps. For dropped ones emit [PARKED] <title>: <why dropped>. Emit [FINAL] with the surviving hypotheses re-ranked (top first).
 
           STEP 5 — NEXT ACTION: Choose exactly one and emit [NEXT] <PROBE|SCAN|RAG|HUMAN>: <one concrete action, with the exact endpoint/request if PROBE>.
 
@@ -243,7 +245,9 @@ jobs:
               text = open(f).read()
               c = re.search(r'^confidence:\s*(\d+)', text, re.M)
               a = re.search(r'^asset:\s*(\S+)', text, re.M)
-              all_h.append((int(c.group(1)) if c else 0, a.group(1) if a else '?', title, f))
+              conf=int(c.group(1)) if c else 0
+              if conf < 70: continue
+              all_h.append((conf, a.group(1) if a else '?', title, f))
           all_h.sort(reverse=True)
           with open('reports/hypotheses.md', 'a') as out:
               out.write(f"\n## RANKED HYPOTHESES {stamp}\n")

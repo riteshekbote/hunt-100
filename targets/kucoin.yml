@@ -1,0 +1,10 @@
+target:
+  name: kucoin
+  platform: bounty
+  disclosure: https://hackenproof.com/kucoin
+  bounty: true
+  program_url: https://hackenproof.com/kucoin
+  domains:
+  - kucoin.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ikea
+  platform: bounty
+  disclosure: https://bugs.ikea.com/
+  bounty: true
+  program_url: https://bugs.ikea.com/
+  domains:
+  - ikea.com
+  github_orgs: []
+  excluded: []

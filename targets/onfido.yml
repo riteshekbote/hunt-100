@@ -1,0 +1,10 @@
+target:
+  name: onfido
+  platform: bounty
+  disclosure: https://onfido.com/company/responsible-disclosure/
+  bounty: true
+  program_url: https://onfido.com/company/responsible-disclosure/
+  domains:
+  - onfido.com
+  github_orgs: []
+  excluded: []

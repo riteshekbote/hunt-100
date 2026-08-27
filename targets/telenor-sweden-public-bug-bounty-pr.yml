@@ -1,0 +1,11 @@
+target:
+  name: telenor-sweden-public-bug-bounty-pr
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/telenor-sweden-public-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/telenor-sweden-public-bug-bounty-program
+  domains:
+  - bredbandsbolaget.se
+  - europolitan.se
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: difx
+  platform: bounty
+  disclosure: https://hackenproof.com/difx/difx
+  bounty: true
+  program_url: https://hackenproof.com/difx/difx
+  domains:
+  - difx.com
+  github_orgs: []
+  excluded: []

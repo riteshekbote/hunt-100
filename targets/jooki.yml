@@ -1,0 +1,11 @@
+target:
+  name: jooki
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/muuselabs/jooki/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/muuselabs/jooki/detail
+  domains:
+  - jooki.rocks
+  - muuselabs.com
+  github_orgs: []
+  excluded: []

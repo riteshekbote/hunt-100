@@ -1,0 +1,10 @@
+target:
+  name: lcx
+  platform: bounty
+  disclosure: https://hackenproof.com/lcx/lcx
+  bounty: true
+  program_url: https://hackenproof.com/lcx/lcx
+  domains:
+  - lcx.com
+  github_orgs: []
+  excluded: []

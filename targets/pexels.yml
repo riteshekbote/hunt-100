@@ -1,0 +1,10 @@
+target:
+  name: pexels
+  platform: bounty
+  disclosure: https://bugcrowd.com/pexels
+  bounty: true
+  program_url: https://bugcrowd.com/pexels
+  domains:
+  - pexels.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: mettle
+  platform: bounty
+  disclosure: https://bugcrowd.com/mettle
+  bounty: true
+  program_url: https://bugcrowd.com/mettle
+  domains:
+  - bbp-mettle.co.uk
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: vivo
+  platform: bounty
+  disclosure: https://security.vivo.com.cn/#/home
+  bounty: true
+  program_url: https://security.vivo.com.cn/#/home
+  domains:
+  - vivo.com
+  - vivo.xyz
+  github_orgs: []
+  excluded: []

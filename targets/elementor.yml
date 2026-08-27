@@ -1,0 +1,10 @@
+target:
+  name: elementor
+  platform: bounty
+  disclosure: https://bugcrowd.com/elementor
+  bounty: true
+  program_url: https://bugcrowd.com/elementor
+  domains:
+  - elementor.com
+  github_orgs: []
+  excluded: []

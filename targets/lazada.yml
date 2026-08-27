@@ -1,0 +1,11 @@
+target:
+  name: lazada
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/lazada
+  bounty: true
+  program_url: https://yeswehack.com/programs/lazada
+  domains:
+  - lazada-seller.cn
+  - lazada.co.id
+  github_orgs: []
+  excluded: []

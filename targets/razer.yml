@@ -1,0 +1,10 @@
+target:
+  name: razer
+  platform: bounty
+  disclosure: https://www.razer.com/security/bug-bounty-program
+  bounty: true
+  program_url: https://www.razer.com/security/bug-bounty-program
+  domains:
+  - razer.com
+  github_orgs: []
+  excluded: []

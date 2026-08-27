@@ -1,0 +1,10 @@
+target:
+  name: picky-assist
+  platform: bounty
+  disclosure: https://pickyassist.com/blog/bug-bounty-program-bug-beacon/
+  bounty: true
+  program_url: https://pickyassist.com/blog/bug-bounty-program-bug-beacon/
+  domains:
+  - pickyassist.com
+  github_orgs: []
+  excluded: []

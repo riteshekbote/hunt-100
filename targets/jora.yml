@@ -1,0 +1,11 @@
+target:
+  name: jora
+  platform: bounty
+  disclosure: https://bugcrowd.com/jora
+  bounty: true
+  program_url: https://bugcrowd.com/jora
+  domains:
+  - jora.com
+  - jora.xyz
+  github_orgs: []
+  excluded: []

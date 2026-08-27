@@ -1,0 +1,10 @@
+target:
+  name: letsexchange
+  platform: bounty
+  disclosure: https://hackenproof.com/letsexchange/letsexchange-web-and-api
+  bounty: true
+  program_url: https://hackenproof.com/letsexchange/letsexchange-web-and-api
+  domains:
+  - letsexchange.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: uphold
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/Uphold/upholdcom/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/Uphold/upholdcom/detail
+  domains:
+  - uphold.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: dick-s-sporting-goods
+  platform: bounty
+  disclosure: https://bugcrowd.com/dickssportinggoods
+  bounty: true
+  program_url: https://bugcrowd.com/dickssportinggoods
+  domains:
+  - calia.com
+  - dcsg.com
+  github_orgs: []
+  excluded: []

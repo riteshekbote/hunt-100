@@ -1,0 +1,10 @@
+target:
+  name: okx
+  platform: bounty
+  disclosure: https://hackenproof.com/okx-1/okx
+  bounty: true
+  program_url: https://hackenproof.com/okx-1/okx
+  domains:
+  - okx.com
+  github_orgs: []
+  excluded: []

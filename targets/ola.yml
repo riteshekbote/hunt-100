@@ -1,0 +1,11 @@
+target:
+  name: ola
+  platform: bounty
+  disclosure: https://whitehat.olacabs.com
+  bounty: true
+  program_url: https://whitehat.olacabs.com
+  domains:
+  - olacabs.com
+  - olamoney.com
+  github_orgs: []
+  excluded: []

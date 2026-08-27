@@ -1,0 +1,10 @@
+target:
+  name: evaa
+  platform: bounty
+  disclosure: https://hackenproof.com/evaa
+  bounty: true
+  program_url: https://hackenproof.com/evaa
+  domains:
+  - evaa.finance
+  github_orgs: []
+  excluded: []

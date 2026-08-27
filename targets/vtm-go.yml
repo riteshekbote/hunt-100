@@ -1,0 +1,11 @@
+target:
+  name: vtm-go
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/vtmgo/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/vtmgo/detail
+  domains:
+  - vtm.be
+  - vtmgo.be
+  github_orgs: []
+  excluded: []

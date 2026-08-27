@@ -1,0 +1,11 @@
+target:
+  name: tweakers
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/tweakers/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/tweakers/detail
+  domains:
+  - tweakblogs.net
+  - tweakers.net
+  github_orgs: []
+  excluded: []

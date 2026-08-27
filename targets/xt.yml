@@ -1,0 +1,10 @@
+target:
+  name: xt
+  platform: bounty
+  disclosure: https://hackenproof.com/xt/xt
+  bounty: true
+  program_url: https://hackenproof.com/xt/xt
+  domains:
+  - xt.com
+  github_orgs: []
+  excluded: []

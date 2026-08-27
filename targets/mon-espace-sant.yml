@@ -1,0 +1,10 @@
+target:
+  name: mon-espace-sant
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/mon-espace-sante-mes
+  bounty: true
+  program_url: https://yeswehack.com/programs/mon-espace-sante-mes
+  domains:
+  - monespacesante.fr
+  github_orgs: []
+  excluded: []

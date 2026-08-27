@@ -1,0 +1,10 @@
+target:
+  name: myetherwallet
+  platform: bounty
+  disclosure: https://hackenproof.com/myetherwallet
+  bounty: true
+  program_url: https://hackenproof.com/myetherwallet
+  domains:
+  - myetherwallet.com
+  github_orgs: []
+  excluded: []

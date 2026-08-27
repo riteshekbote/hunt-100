@@ -1,0 +1,11 @@
+target:
+  name: geotab-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/geotab-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/geotab-vdp
+  domains:
+  - bsmtechnologies.com
+  - bsmwireless.com
+  github_orgs: []
+  excluded: []

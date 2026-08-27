@@ -1,0 +1,10 @@
+target:
+  name: takealot
+  platform: bounty
+  disclosure: https://www.takealot.com/help/responsible-disclosure-policy
+  bounty: true
+  program_url: https://www.takealot.com/help/responsible-disclosure-policy
+  domains:
+  - takealot.com
+  github_orgs: []
+  excluded: []

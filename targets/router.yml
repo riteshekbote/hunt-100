@@ -1,0 +1,10 @@
+target:
+  name: router
+  platform: bounty
+  disclosure: https://hackenproof.com/router/router-web
+  bounty: true
+  program_url: https://hackenproof.com/router/router-web
+  domains:
+  - routerprotocol.com
+  github_orgs: []
+  excluded: []

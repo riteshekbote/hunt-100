@@ -1,0 +1,10 @@
+target:
+  name: bit-com
+  platform: bounty
+  disclosure: https://hackenproof.com/bit-dot-com/bit-dot-com
+  bounty: true
+  program_url: https://hackenproof.com/bit-dot-com/bit-dot-com
+  domains:
+  - bit.com
+  github_orgs: []
+  excluded: []

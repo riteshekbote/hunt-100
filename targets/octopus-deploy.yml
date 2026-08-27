@@ -1,0 +1,10 @@
+target:
+  name: octopus-deploy
+  platform: bounty
+  disclosure: https://octopus.com/security/disclosure
+  bounty: true
+  program_url: https://octopus.com/security/disclosure
+  domains:
+  - octopus.com
+  github_orgs: []
+  excluded: []

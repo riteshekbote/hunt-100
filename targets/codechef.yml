@@ -1,0 +1,10 @@
+target:
+  name: codechef
+  platform: bounty
+  disclosure: https://www.codechef.com/bug-bounty-program
+  bounty: true
+  program_url: https://www.codechef.com/bug-bounty-program
+  domains:
+  - codechef.com
+  github_orgs: []
+  excluded: []

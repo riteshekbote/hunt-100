@@ -1,0 +1,11 @@
+target:
+  name: cvs-health-vdp
+  platform: bounty
+  disclosure: https://www.cvshealth.com/vulnerability-disclosure-program
+  bounty: true
+  program_url: https://www.cvshealth.com/vulnerability-disclosure-program
+  domains:
+  - cvs.com
+  - cvshealth.com
+  github_orgs: []
+  excluded: []

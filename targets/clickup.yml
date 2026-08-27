@@ -1,0 +1,10 @@
+target:
+  name: clickup
+  platform: bounty
+  disclosure: https://clickup.com/bug-bounty
+  bounty: true
+  program_url: https://clickup.com/bug-bounty
+  domains:
+  - clickup.com
+  github_orgs: []
+  excluded: []

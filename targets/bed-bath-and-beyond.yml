@@ -1,0 +1,11 @@
+target:
+  name: bed-bath-and-beyond
+  platform: bounty
+  disclosure: https://bugcrowd.com/overstockvdp
+  bounty: true
+  program_url: https://bugcrowd.com/overstockvdp
+  domains:
+  - bedbathandbeyond.ca
+  - bedbathandbeyond.com
+  github_orgs: []
+  excluded: []

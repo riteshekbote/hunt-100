@@ -1,0 +1,10 @@
+target:
+  name: mailtrack-io
+  platform: bounty
+  disclosure: https://mailtrack.io/en/responsible-vulnerability
+  bounty: true
+  program_url: https://mailtrack.io/en/responsible-vulnerability
+  domains:
+  - mailtrack.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: port-of-antwerp-bruges
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/portofantwerp/portofantwerp/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/portofantwerp/portofantwerp/detail
+  domains:
+  - c-point.be
+  - portofantwerp.com
+  github_orgs: []
+  excluded: []

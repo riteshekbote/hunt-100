@@ -1,0 +1,11 @@
+target:
+  name: nextiva
+  platform: bounty
+  disclosure: https://www.nextiva.com/security-policy.html
+  bounty: true
+  program_url: https://www.nextiva.com/security-policy.html
+  domains:
+  - nextiva.com
+  - nextos.com
+  github_orgs: []
+  excluded: []

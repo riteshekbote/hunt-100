@@ -1,0 +1,10 @@
+target:
+  name: cbs
+  platform: bounty
+  disclosure: https://www.cbs.nl/en-gb/about-us/website/coordinated-vulnerability-disclosure--cvd--
+  bounty: true
+  program_url: https://www.cbs.nl/en-gb/about-us/website/coordinated-vulnerability-disclosure--cvd--
+  domains:
+  - cbs.nl
+  github_orgs: []
+  excluded: []

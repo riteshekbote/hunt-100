@@ -1,0 +1,10 @@
+target:
+  name: huobi
+  platform: bounty
+  disclosure: https://hackenproof.com/huobi-global/huobi
+  bounty: true
+  program_url: https://hackenproof.com/huobi-global/huobi
+  domains:
+  - huobi.com
+  github_orgs: []
+  excluded: []

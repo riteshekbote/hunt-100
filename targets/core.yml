@@ -1,0 +1,10 @@
+target:
+  name: core
+  platform: bounty
+  disclosure: https://hackenproof.com/avalanche/core
+  bounty: true
+  program_url: https://hackenproof.com/avalanche/core
+  domains:
+  - core.app
+  github_orgs: []
+  excluded: []

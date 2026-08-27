@@ -1,0 +1,10 @@
+target:
+  name: het-parool
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/hetparool/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/hetparool/detail
+  domains:
+  - parool.nl
+  github_orgs: []
+  excluded: []

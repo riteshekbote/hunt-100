@@ -1,0 +1,11 @@
+target:
+  name: bingx-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/bingx/bingx-exchange
+  bounty: true
+  program_url: https://hackenproof.com/bingx/bingx-exchange
+  domains:
+  - bingx.com
+  - bingx.pro
+  github_orgs: []
+  excluded: []

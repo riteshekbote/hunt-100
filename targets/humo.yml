@@ -1,0 +1,10 @@
+target:
+  name: humo
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/humo/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/humo/detail
+  domains:
+  - humo.be
+  github_orgs: []
+  excluded: []

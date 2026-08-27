@@ -1,0 +1,11 @@
+target:
+  name: moralis-vdp
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/moralis/moralisio/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/moralis/moralisio/detail
+  domains:
+  - bigmoralis.com
+  - grandmoralis.com
+  github_orgs: []
+  excluded: []

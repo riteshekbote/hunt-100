@@ -1,0 +1,10 @@
+target:
+  name: discord
+  platform: bounty
+  disclosure: https://canary.discord.com/security
+  bounty: true
+  program_url: https://canary.discord.com/security
+  domains:
+  - discord.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: check-point
+  platform: bounty
+  disclosure: https://www.checkpoint.com/white-hat/
+  bounty: true
+  program_url: https://www.checkpoint.com/white-hat/
+  domains:
+  - checkpoint.com
+  github_orgs: []
+  excluded: []

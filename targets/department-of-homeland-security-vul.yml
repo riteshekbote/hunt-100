@@ -1,0 +1,11 @@
+target:
+  name: department-of-homeland-security-vul
+  platform: bounty
+  disclosure: https://bugcrowd.com/dhs-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/dhs-vdp
+  domains:
+  - biometrics.gov
+  - cbp.gov
+  github_orgs: []
+  excluded: []

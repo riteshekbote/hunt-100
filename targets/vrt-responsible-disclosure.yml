@@ -1,0 +1,11 @@
+target:
+  name: vrt-responsible-disclosure
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/vrtnv/vrt/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/vrtnv/vrt/detail
+  domains:
+  - canvas.be
+  - dewarmsteweek.be
+  github_orgs: []
+  excluded: []

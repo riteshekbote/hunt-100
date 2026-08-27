@@ -1,0 +1,11 @@
+target:
+  name: redbull
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/redbull/redbull/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/redbull/redbull/detail
+  domains:
+  - redbull.com
+  - redbullmediahouse.com
+  github_orgs: []
+  excluded: []

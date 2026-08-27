@@ -1,0 +1,10 @@
+target:
+  name: the-standard
+  platform: bounty
+  disclosure: https://www.standard.com/about-standard/responsible-disclosure-program
+  bounty: true
+  program_url: https://www.standard.com/about-standard/responsible-disclosure-program
+  domains:
+  - standard.com
+  github_orgs: []
+  excluded: []

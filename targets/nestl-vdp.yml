@@ -1,0 +1,10 @@
+target:
+  name: nestl-vdp
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/nestl%C3%A9/nestl%C3%A9vdp/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/nestl%C3%A9/nestl%C3%A9vdp/detail
+  domains:
+  - nestle.com
+  github_orgs: []
+  excluded: []

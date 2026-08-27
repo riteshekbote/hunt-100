@@ -1,0 +1,11 @@
+target:
+  name: automata-network
+  platform: bounty
+  disclosure: https://www.ata.network/bugbounty
+  bounty: true
+  program_url: https://www.ata.network/bugbounty
+  domains:
+  - ata.network
+  - 1rpc.io
+  github_orgs: []
+  excluded: []

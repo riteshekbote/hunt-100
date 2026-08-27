@@ -1,0 +1,10 @@
+target:
+  name: clio
+  platform: bounty
+  disclosure: https://support.clio.com/hc/en-us/articles/360001114273-How-do-I-Claim-a-Bug-Bounty-or-Report-a-Vulnerability-
+  bounty: true
+  program_url: https://support.clio.com/hc/en-us/articles/360001114273-How-do-I-Claim-a-Bug-Bounty-or-Report-a-Vulnerability-
+  domains:
+  - clio.com
+  github_orgs: []
+  excluded: []

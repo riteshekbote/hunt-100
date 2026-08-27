@@ -1,0 +1,10 @@
+target:
+  name: status
+  platform: bounty
+  disclosure: https://hackenproof.com/status-dot-im/status
+  bounty: true
+  program_url: https://hackenproof.com/status-dot-im/status
+  domains:
+  - status.im
+  github_orgs: []
+  excluded: []

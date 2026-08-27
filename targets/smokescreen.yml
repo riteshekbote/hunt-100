@@ -1,0 +1,10 @@
+target:
+  name: smokescreen
+  platform: bounty
+  disclosure: https://www.smokescreen.io/responsible-disclosure-policy/
+  bounty: true
+  program_url: https://www.smokescreen.io/responsible-disclosure-policy/
+  domains:
+  - smokescreen.io
+  github_orgs: []
+  excluded: []

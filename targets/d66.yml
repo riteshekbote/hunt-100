@@ -1,0 +1,10 @@
+target:
+  name: d66
+  platform: bounty
+  disclosure: https://d66.nl/responsible-disclosure/
+  bounty: true
+  program_url: https://d66.nl/responsible-disclosure/
+  domains:
+  - d66.nl
+  github_orgs: []
+  excluded: []

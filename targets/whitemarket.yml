@@ -1,0 +1,10 @@
+target:
+  name: whitemarket
+  platform: bounty
+  disclosure: https://hackenproof.com/whitemarket/whitemarket-web
+  bounty: true
+  program_url: https://hackenproof.com/whitemarket/whitemarket-web
+  domains:
+  - white.market
+  github_orgs: []
+  excluded: []

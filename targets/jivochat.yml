@@ -1,0 +1,10 @@
+target:
+  name: jivochat
+  platform: bounty
+  disclosure: https://jivochat.com/bugbounty/
+  bounty: true
+  program_url: https://jivochat.com/bugbounty/
+  domains:
+  - jivosite.com
+  github_orgs: []
+  excluded: []

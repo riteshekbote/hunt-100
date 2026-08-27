@@ -1,0 +1,10 @@
+target:
+  name: digitaal-vlaanderen
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/vod/digitaalvlaanderen/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/vod/digitaalvlaanderen/detail
+  domains:
+  - vlaanderen.be
+  github_orgs: []
+  excluded: []

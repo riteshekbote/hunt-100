@@ -1,0 +1,10 @@
+target:
+  name: eerste-kamer
+  platform: bounty
+  disclosure: https://www.eerstekamer.nl/begrip/responsible_disclosure
+  bounty: true
+  program_url: https://www.eerstekamer.nl/begrip/responsible_disclosure
+  domains:
+  - eerstekamer.nl
+  github_orgs: []
+  excluded: []

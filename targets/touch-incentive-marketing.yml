@@ -1,0 +1,10 @@
+target:
+  name: touch-incentive-marketing
+  platform: bounty
+  disclosure: https://touchincentive.com/responsible-disclosure/
+  bounty: true
+  program_url: https://touchincentive.com/responsible-disclosure/
+  domains:
+  - touchincentive.com
+  github_orgs: []
+  excluded: []

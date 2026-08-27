@@ -1,0 +1,11 @@
+target:
+  name: blablacar
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/bug-bounty-program-blablacar
+  bounty: true
+  program_url: https://yeswehack.com/programs/bug-bounty-program-blablacar
+  domains:
+  - blablacar.fr
+  - blablacar.de
+  github_orgs: []
+  excluded: []

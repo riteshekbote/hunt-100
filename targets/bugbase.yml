@@ -1,0 +1,10 @@
+target:
+  name: bugbase
+  platform: bounty
+  disclosure: https://bugbase.in/programs/bugbase
+  bounty: true
+  program_url: https://bugbase.in/programs/bugbase
+  domains:
+  - bugbase.in
+  github_orgs: []
+  excluded: []

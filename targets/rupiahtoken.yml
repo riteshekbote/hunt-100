@@ -1,0 +1,10 @@
+target:
+  name: rupiahtoken
+  platform: bounty
+  disclosure: https://rupiahtoken.com/blog/bug-bounty-program
+  bounty: true
+  program_url: https://rupiahtoken.com/blog/bug-bounty-program
+  domains:
+  - rupiahtoken.com
+  github_orgs: []
+  excluded: []

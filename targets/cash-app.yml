@@ -1,0 +1,11 @@
+target:
+  name: cash-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/cashapp
+  bounty: true
+  program_url: https://bugcrowd.com/cashapp
+  domains:
+  - cash.app
+  - cashstaging.app
+  github_orgs: []
+  excluded: []

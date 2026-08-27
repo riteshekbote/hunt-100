@@ -1,0 +1,11 @@
+target:
+  name: opera-public-bug-bounty
+  platform: bounty
+  disclosure: https://bugcrowd.com/opera
+  bounty: true
+  program_url: https://bugcrowd.com/opera
+  domains:
+  - apex-football.com
+  - dailyadvent.com
+  github_orgs: []
+  excluded: []

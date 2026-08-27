@@ -1,0 +1,10 @@
+target:
+  name: internet-nl
+  platform: bounty
+  disclosure: https://internet.nl/disclosure/
+  bounty: true
+  program_url: https://internet.nl/disclosure/
+  domains:
+  - internet.nl
+  github_orgs: []
+  excluded: []

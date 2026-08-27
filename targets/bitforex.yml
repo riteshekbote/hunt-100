@@ -1,0 +1,10 @@
+target:
+  name: bitforex
+  platform: bounty
+  disclosure: https://hackenproof.com/bitforex/bitforex
+  bounty: true
+  program_url: https://hackenproof.com/bitforex/bitforex
+  domains:
+  - bitforex.com
+  github_orgs: []
+  excluded: []

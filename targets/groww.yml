@@ -1,0 +1,10 @@
+target:
+  name: groww
+  platform: bounty
+  disclosure: https://groww.in/p/security/
+  bounty: true
+  program_url: https://groww.in/p/security/
+  domains:
+  - groww.in
+  github_orgs: []
+  excluded: []

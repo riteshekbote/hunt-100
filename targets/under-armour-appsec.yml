@@ -1,0 +1,11 @@
+target:
+  name: under-armour-appsec
+  platform: bounty
+  disclosure: https://bugcrowd.com/underarmour
+  bounty: true
+  program_url: https://bugcrowd.com/underarmour
+  domains:
+  - api.ua.com
+  - endomondo.com
+  github_orgs: []
+  excluded: []

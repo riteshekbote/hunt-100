@@ -1,0 +1,10 @@
+target:
+  name: mobile-de
+  platform: bounty
+  disclosure: https://app.zerocopter.com/de/cvd/aef29c56-5295-4789-b848-3f121eeca350
+  bounty: true
+  program_url: https://app.zerocopter.com/de/cvd/aef29c56-5295-4789-b848-3f121eeca350
+  domains:
+  - mobile.de
+  github_orgs: []
+  excluded: []

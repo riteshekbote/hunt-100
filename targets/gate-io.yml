@@ -1,0 +1,10 @@
+target:
+  name: gate-io
+  platform: bounty
+  disclosure: https://hackenproof.com/gate-dot-io/gate-dot-io-exchange
+  bounty: true
+  program_url: https://hackenproof.com/gate-dot-io/gate-dot-io-exchange
+  domains:
+  - gate.io
+  github_orgs: []
+  excluded: []

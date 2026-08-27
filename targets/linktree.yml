@@ -1,0 +1,11 @@
+target:
+  name: linktree
+  platform: bounty
+  disclosure: https://bugcrowd.com/linktree-mbb-og
+  bounty: true
+  program_url: https://bugcrowd.com/linktree-mbb-og
+  domains:
+  - album.link
+  - artist.link
+  github_orgs: []
+  excluded: []

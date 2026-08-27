@@ -1,0 +1,10 @@
+target:
+  name: mcdelivery
+  platform: bounty
+  disclosure: https://www.mcdelivery.co.in/bug-bounty
+  bounty: true
+  program_url: https://www.mcdelivery.co.in/bug-bounty
+  domains:
+  - mcdelivery.co.in
+  github_orgs: []
+  excluded: []

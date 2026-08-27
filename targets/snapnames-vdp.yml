@@ -1,0 +1,10 @@
+target:
+  name: snapnames-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/snapnames-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/snapnames-vdp
+  domains:
+  - snapnames.com
+  github_orgs: []
+  excluded: []

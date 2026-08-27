@@ -1,0 +1,10 @@
+target:
+  name: seagate-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/seagate-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/seagate-vdp
+  domains:
+  - seagate.com
+  github_orgs: []
+  excluded: []

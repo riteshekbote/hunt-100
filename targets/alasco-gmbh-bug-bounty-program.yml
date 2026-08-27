@@ -1,0 +1,11 @@
+target:
+  name: alasco-gmbh-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/alasco-gmbh-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/alasco-gmbh-bug-bounty-program
+  domains:
+  - alasco.de
+  - alasco.rocks
+  github_orgs: []
+  excluded: []

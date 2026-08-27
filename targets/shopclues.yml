@@ -1,0 +1,10 @@
+target:
+  name: shopclues
+  platform: bounty
+  disclosure: https://www.shopclues.com/wall-of-fame.html
+  bounty: true
+  program_url: https://www.shopclues.com/wall-of-fame.html
+  domains:
+  - shopclues.com
+  github_orgs: []
+  excluded: []

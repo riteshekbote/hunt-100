@@ -1,0 +1,10 @@
+target:
+  name: omg-nepal
+  platform: bounty
+  disclosure: https://app.bugv.io/researcher/program/0000005/detail
+  bounty: true
+  program_url: https://app.bugv.io/researcher/program/0000005/detail
+  domains:
+  - omgnepal.com
+  github_orgs: []
+  excluded: []

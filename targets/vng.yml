@@ -1,0 +1,11 @@
+target:
+  name: vng
+  platform: bounty
+  disclosure: https://vng.nl/kwetsbaarheid-melden
+  bounty: true
+  program_url: https://vng.nl/kwetsbaarheid-melden
+  domains:
+  - vng.nl
+  - ondernemersfondsen.nl
+  github_orgs: []
+  excluded: []

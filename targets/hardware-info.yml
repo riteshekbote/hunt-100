@@ -1,0 +1,10 @@
+target:
+  name: hardware-info
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/hardwareinfo/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/hardwareinfo/detail
+  domains:
+  - hwigroup.com
+  github_orgs: []
+  excluded: []

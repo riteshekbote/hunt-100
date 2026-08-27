@@ -1,0 +1,11 @@
+target:
+  name: gulp
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/randstad/gulp/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/randstad/gulp/detail
+  domains:
+  - gulp.ch
+  - gulp.de
+  github_orgs: []
+  excluded: []

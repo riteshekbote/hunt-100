@@ -1,0 +1,10 @@
+target:
+  name: kuna-crypto-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/kuna/kuna-crypto-exchange
+  bounty: true
+  program_url: https://hackenproof.com/kuna/kuna-crypto-exchange
+  domains:
+  - kuna.io
+  github_orgs: []
+  excluded: []

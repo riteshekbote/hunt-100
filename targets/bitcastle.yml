@@ -1,0 +1,10 @@
+target:
+  name: bitcastle
+  platform: bounty
+  disclosure: https://hackenproof.com/bitcastle/bitcastle-web
+  bounty: true
+  program_url: https://hackenproof.com/bitcastle/bitcastle-web
+  domains:
+  - bitcastle.io
+  github_orgs: []
+  excluded: []

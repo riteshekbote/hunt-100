@@ -1,0 +1,10 @@
+target:
+  name: intigriti
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/intigriti/intigriti/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/intigriti/intigriti/detail
+  domains:
+  - intigriti.com
+  github_orgs: []
+  excluded: []

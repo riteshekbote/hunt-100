@@ -1,0 +1,10 @@
+target:
+  name: jojo
+  platform: bounty
+  disclosure: https://hackenproof.com/jojo/jojo-web
+  bounty: true
+  program_url: https://hackenproof.com/jojo/jojo-web
+  domains:
+  - jojo.exchange
+  github_orgs: []
+  excluded: []

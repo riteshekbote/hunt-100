@@ -1,0 +1,10 @@
+target:
+  name: bitrue
+  platform: bounty
+  disclosure: https://hackenproof.com/bitrue/bitrue
+  bounty: true
+  program_url: https://hackenproof.com/bitrue/bitrue
+  domains:
+  - bitrue.com
+  github_orgs: []
+  excluded: []

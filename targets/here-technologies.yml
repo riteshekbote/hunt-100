@@ -1,0 +1,11 @@
+target:
+  name: here-technologies
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail
+  domains:
+  - account.api.here.com
+  - account.here.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: imdb
+  platform: bounty
+  disclosure: https://help.imdb.com/article/imdb/general-information/how-to-report-security-issues-and-vulnerabilities/G99J5YVB8SBBMJ73?ref_=helpart_nav_14#
+  bounty: true
+  program_url: https://help.imdb.com/article/imdb/general-information/how-to-report-security-issues-and-vulnerabilities/G99J5YVB8SBBMJ73?ref_=helpart_nav_14#
+  domains:
+  - imdb.com
+  github_orgs: []
+  excluded: []

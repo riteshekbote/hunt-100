@@ -1,0 +1,10 @@
+target:
+  name: yeswehack
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/yes-we-hack
+  bounty: true
+  program_url: https://yeswehack.com/programs/yes-we-hack
+  domains:
+  - yeswehack.com
+  github_orgs: []
+  excluded: []

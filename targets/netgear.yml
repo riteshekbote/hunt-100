@@ -1,0 +1,10 @@
+target:
+  name: netgear
+  platform: bounty
+  disclosure: https://bugcrowd.com/netgear
+  bounty: true
+  program_url: https://bugcrowd.com/netgear
+  domains:
+  - netgear.com
+  github_orgs: []
+  excluded: []

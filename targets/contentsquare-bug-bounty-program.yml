@@ -1,0 +1,10 @@
+target:
+  name: contentsquare-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/contentsquare-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/contentsquare-bug-bounty-program
+  domains:
+  - contentsquare.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: bmc
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/randstad/bmc/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/randstad/bmc/detail
+  domains:
+  - bmc.nl
+  github_orgs: []
+  excluded: []

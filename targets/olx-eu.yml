@@ -1,0 +1,11 @@
+target:
+  name: olx-eu
+  platform: bounty
+  disclosure: https://bugcrowd.com/olx-eu
+  bounty: true
+  program_url: https://bugcrowd.com/olx-eu
+  domains:
+  - imovirtual.com
+  - olx.pl
+  github_orgs: []
+  excluded: []

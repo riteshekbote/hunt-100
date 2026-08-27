@@ -1,0 +1,10 @@
+target:
+  name: bitkub
+  platform: bounty
+  disclosure: https://hackenproof.com/bitkub/bitkub
+  bounty: true
+  program_url: https://hackenproof.com/bitkub/bitkub
+  domains:
+  - bitkub.com
+  github_orgs: []
+  excluded: []

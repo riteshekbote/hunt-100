@@ -1,0 +1,11 @@
+target:
+  name: monster-worldwide
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/randstad/monsterworldwide/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/randstad/monsterworldwide/detail
+  domains:
+  - military.com
+  - monster.at
+  github_orgs: []
+  excluded: []

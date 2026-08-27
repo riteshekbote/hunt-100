@@ -1,0 +1,11 @@
+target:
+  name: us-environmental-protection-agency-
+  platform: bounty
+  disclosure: https://bugcrowd.com/epa-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/epa-vdp
+  domains:
+  - fedcenter.gov
+  - frtr.gov
+  github_orgs: []
+  excluded: []

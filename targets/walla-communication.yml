@@ -1,0 +1,10 @@
+target:
+  name: walla-communication
+  platform: bounty
+  disclosure: https://www.walla.co.il/.well-know/security.txt
+  bounty: true
+  program_url: https://www.walla.co.il/.well-know/security.txt
+  domains:
+  - walla.co.il
+  github_orgs: []
+  excluded: []

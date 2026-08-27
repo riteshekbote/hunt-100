@@ -1,0 +1,11 @@
+target:
+  name: infomaniak-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/infomaniak-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/infomaniak-bug-bounty-program
+  domains:
+  - kdrive.infomaniak.com
+  - kchat.infomaniak.com
+  github_orgs: []
+  excluded: []

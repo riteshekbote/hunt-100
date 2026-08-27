@@ -1,0 +1,11 @@
+target:
+  name: uz-leuven
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/uz%20leuven/uzleuven/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/uz%20leuven/uzleuven/detail
+  domains:
+  - kwsdose.be
+  - playuzleuven.be
+  github_orgs: []
+  excluded: []

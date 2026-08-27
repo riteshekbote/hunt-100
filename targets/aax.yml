@@ -1,0 +1,10 @@
+target:
+  name: aax
+  platform: bounty
+  disclosure: https://hackenproof.com/aax/aax
+  bounty: true
+  program_url: https://hackenproof.com/aax/aax
+  domains:
+  - aax.com
+  github_orgs: []
+  excluded: []

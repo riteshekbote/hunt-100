@@ -1,0 +1,11 @@
+target:
+  name: tidal
+  platform: bounty
+  disclosure: https://bugcrowd.com/tidal-bugbounty
+  bounty: true
+  program_url: https://bugcrowd.com/tidal-bugbounty
+  domains:
+  - tdl.sh
+  - tidal.com
+  github_orgs: []
+  excluded: []

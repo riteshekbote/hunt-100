@@ -1,0 +1,10 @@
+target:
+  name: agicap
+  platform: bounty
+  disclosure: https://agicap.com/en/bug-bounty/
+  bounty: true
+  program_url: https://agicap.com/en/bug-bounty/
+  domains:
+  - agicap.com
+  github_orgs: []
+  excluded: []

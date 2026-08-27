@@ -1,0 +1,11 @@
+target:
+  name: protonvpn
+  platform: bounty
+  disclosure: https://protonvpn.com/blog/bug-bounty-program/
+  bounty: true
+  program_url: https://protonvpn.com/blog/bug-bounty-program/
+  domains:
+  - protonvpn.com
+  - protonvpn.ch
+  github_orgs: []
+  excluded: []

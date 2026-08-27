@@ -1,0 +1,10 @@
+target:
+  name: algemeen-dagblad
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/algemeendagblad/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/algemeendagblad/detail
+  domains:
+  - ad.nl
+  github_orgs: []
+  excluded: []

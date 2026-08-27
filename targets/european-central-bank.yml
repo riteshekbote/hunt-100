@@ -1,0 +1,10 @@
+target:
+  name: european-central-bank
+  platform: bounty
+  disclosure: https://www.ecb.europa.eu/services/responsible-disclosure/html/index.nl.html
+  bounty: true
+  program_url: https://www.ecb.europa.eu/services/responsible-disclosure/html/index.nl.html
+  domains:
+  - europa.eu
+  github_orgs: []
+  excluded: []

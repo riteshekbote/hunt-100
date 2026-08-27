@@ -1,0 +1,10 @@
+target:
+  name: coinw
+  platform: bounty
+  disclosure: https://hackenproof.com/coinw/coinw-web-and-mobile
+  bounty: true
+  program_url: https://hackenproof.com/coinw/coinw-web-and-mobile
+  domains:
+  - coinw.com
+  github_orgs: []
+  excluded: []

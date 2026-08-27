@@ -1,0 +1,11 @@
+target:
+  name: avalanche
+  platform: bounty
+  disclosure: https://hackenproof.com/avalanche
+  bounty: true
+  program_url: https://hackenproof.com/avalanche
+  domains:
+  - avalabs.org
+  - avax.network
+  github_orgs: []
+  excluded: []

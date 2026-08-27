@@ -1,0 +1,10 @@
+target:
+  name: dexalot
+  platform: bounty
+  disclosure: https://hackenproof.com/dexalot
+  bounty: true
+  program_url: https://hackenproof.com/dexalot
+  domains:
+  - dexalot.com
+  github_orgs: []
+  excluded: []

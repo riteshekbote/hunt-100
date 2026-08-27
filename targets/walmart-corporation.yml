@@ -1,0 +1,10 @@
+target:
+  name: walmart-corporation
+  platform: bounty
+  disclosure: https://corporate.walmart.com/article/responsible-disclosure-policy
+  bounty: true
+  program_url: https://corporate.walmart.com/article/responsible-disclosure-policy
+  domains:
+  - walmart.com
+  github_orgs: []
+  excluded: []

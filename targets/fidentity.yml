@@ -1,0 +1,10 @@
+target:
+  name: fidentity
+  platform: bounty
+  disclosure: https://gobugfree.com/programs/fidentity
+  bounty: true
+  program_url: https://gobugfree.com/programs/fidentity
+  domains:
+  - fidentity.ch
+  github_orgs: []
+  excluded: []

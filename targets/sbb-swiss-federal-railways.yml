@@ -1,0 +1,11 @@
+target:
+  name: sbb-swiss-federal-railways
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/sbb/sbbglobal/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/sbb/sbbglobal/detail
+  domains:
+  - sbb.ch
+  - swisspass.ch
+  github_orgs: []
+  excluded: []

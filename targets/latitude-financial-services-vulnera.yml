@@ -1,0 +1,11 @@
+target:
+  name: latitude-financial-services-vulnera
+  platform: bounty
+  disclosure: https://bugcrowd.com/latitudefinancial-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/latitudefinancial-vdp
+  domains:
+  - 28degreescard.com.au
+  - buyersedge.com.au
+  github_orgs: []
+  excluded: []

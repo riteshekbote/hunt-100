@@ -1,0 +1,10 @@
+target:
+  name: latoken
+  platform: bounty
+  disclosure: https://hackenproof.com/latoken/latoken-exchange
+  bounty: true
+  program_url: https://hackenproof.com/latoken/latoken-exchange
+  domains:
+  - latoken.com
+  github_orgs: []
+  excluded: []

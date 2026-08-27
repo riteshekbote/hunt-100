@@ -1,0 +1,11 @@
+target:
+  name: ngrok
+  platform: bounty
+  disclosure: https://ngrok.com/security/disclosure-and-reward-program
+  bounty: true
+  program_url: https://ngrok.com/security/disclosure-and-reward-program
+  domains:
+  - ngrok.com
+  - ngrok.io
+  github_orgs: []
+  excluded: []

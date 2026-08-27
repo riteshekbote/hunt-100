@@ -1,0 +1,10 @@
+target:
+  name: vechain
+  platform: bounty
+  disclosure: https://hackenproof.com/vechain
+  bounty: true
+  program_url: https://hackenproof.com/vechain
+  domains:
+  - vechain.org
+  github_orgs: []
+  excluded: []

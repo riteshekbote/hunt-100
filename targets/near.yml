@@ -1,0 +1,11 @@
+target:
+  name: near
+  platform: bounty
+  disclosure: https://hackenproof.com/near
+  bounty: true
+  program_url: https://hackenproof.com/near
+  domains:
+  - near.org
+  - near.foundation
+  github_orgs: []
+  excluded: []

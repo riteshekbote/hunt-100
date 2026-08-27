@@ -1,0 +1,11 @@
+target:
+  name: openai
+  platform: bounty
+  disclosure: https://bugcrowd.com/openai
+  bounty: true
+  program_url: https://bugcrowd.com/openai
+  domains:
+  - openai.com
+  - openai.org
+  github_orgs: []
+  excluded: []

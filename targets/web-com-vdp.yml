@@ -1,0 +1,11 @@
+target:
+  name: web-com-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/webdotcom-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/webdotcom-vdp
+  domains:
+  - networksolutions.com
+  - register.com
+  github_orgs: []
+  excluded: []

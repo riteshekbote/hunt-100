@@ -1,0 +1,10 @@
+target:
+  name: coinmetro
+  platform: bounty
+  disclosure: https://hackenproof.com/coinmetro/coinmetro-exchange
+  bounty: true
+  program_url: https://hackenproof.com/coinmetro/coinmetro-exchange
+  domains:
+  - coinmetro.com
+  github_orgs: []
+  excluded: []

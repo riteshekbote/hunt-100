@@ -1,0 +1,10 @@
+target:
+  name: odoo
+  platform: bounty
+  disclosure: https://www.odoo.com/security-report
+  bounty: true
+  program_url: https://www.odoo.com/security-report
+  domains:
+  - odoo.com
+  github_orgs: []
+  excluded: []

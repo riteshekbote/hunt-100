@@ -1,0 +1,10 @@
+target:
+  name: tryhackme
+  platform: bounty
+  disclosure: https://help.tryhackme.com/en/articles/6495946-the-bug-bounty-program
+  bounty: true
+  program_url: https://help.tryhackme.com/en/articles/6495946-the-bug-bounty-program
+  domains:
+  - tryhackme.com
+  github_orgs: []
+  excluded: []

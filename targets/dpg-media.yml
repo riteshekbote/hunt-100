@@ -1,0 +1,11 @@
+target:
+  name: dpg-media
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/dpgmedia/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/dpgmedia/detail
+  domains:
+  - dpgmedia.be
+  - dpgmedia.nl
+  github_orgs: []
+  excluded: []

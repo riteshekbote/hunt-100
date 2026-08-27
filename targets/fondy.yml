@@ -1,0 +1,11 @@
+target:
+  name: fondy
+  platform: bounty
+  disclosure: https://docs.fondy.eu/en/docs/page/bug-bounty-program
+  bounty: true
+  program_url: https://docs.fondy.eu/en/docs/page/bug-bounty-program
+  domains:
+  - fondy.eu
+  - fondy.io
+  github_orgs: []
+  excluded: []

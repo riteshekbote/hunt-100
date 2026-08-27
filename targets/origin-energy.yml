@@ -1,0 +1,11 @@
+target:
+  name: origin-energy
+  platform: bounty
+  disclosure: https://bugcrowd.com/originenergy-og1
+  bounty: true
+  program_url: https://bugcrowd.com/originenergy-og1
+  domains:
+  - api.originenergy.com.au
+  - download.originenergy.com.au
+  github_orgs: []
+  excluded: []

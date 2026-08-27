@@ -1,0 +1,10 @@
+target:
+  name: narkasa
+  platform: bounty
+  disclosure: https://support.narkasa.com/hc/en-us/articles/360011019458-Bug-Bounty
+  bounty: true
+  program_url: https://support.narkasa.com/hc/en-us/articles/360011019458-Bug-Bounty
+  domains:
+  - narkasa.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: b-hler-group-vdp
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/buhlergroup/buhlergroupvdp/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/buhlergroup/buhlergroupvdp/detail
+  domains:
+  - buhlergroup.cn
+  - buhler-datascience.ch
+  github_orgs: []
+  excluded: []

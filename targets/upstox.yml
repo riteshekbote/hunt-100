@@ -1,0 +1,10 @@
+target:
+  name: upstox
+  platform: bounty
+  disclosure: https://upstox.com/bug-bounty/
+  bounty: true
+  program_url: https://upstox.com/bug-bounty/
+  domains:
+  - upstox.com
+  github_orgs: []
+  excluded: []

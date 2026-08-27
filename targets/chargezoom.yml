@@ -1,0 +1,10 @@
+target:
+  name: chargezoom
+  platform: bounty
+  disclosure: https://chargezoom.com/bugbounty/
+  bounty: true
+  program_url: https://chargezoom.com/bugbounty/
+  domains:
+  - payportal.net
+  github_orgs: []
+  excluded: []

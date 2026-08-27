@@ -1,0 +1,10 @@
+target:
+  name: sidn
+  platform: bounty
+  disclosure: https://www.sidn.nl/en/cybersecurity/reporting-a-security-breach
+  bounty: true
+  program_url: https://www.sidn.nl/en/cybersecurity/reporting-a-security-breach
+  domains:
+  - sidn.nl
+  github_orgs: []
+  excluded: []

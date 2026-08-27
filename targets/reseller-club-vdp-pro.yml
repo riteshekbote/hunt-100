@@ -1,0 +1,10 @@
+target:
+  name: reseller-club-vdp-pro
+  platform: bounty
+  disclosure: https://bugcrowd.com/newfold-resellerclub-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/newfold-resellerclub-vdp
+  domains:
+  - resellerclub.com
+  github_orgs: []
+  excluded: []

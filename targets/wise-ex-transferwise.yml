@@ -1,0 +1,11 @@
+target:
+  name: wise-ex-transferwise
+  platform: bounty
+  disclosure: https://bugcrowd.com/wise
+  bounty: true
+  program_url: https://bugcrowd.com/wise
+  domains:
+  - transferwise.com
+  - wise.com
+  github_orgs: []
+  excluded: []

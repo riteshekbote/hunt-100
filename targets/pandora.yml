@@ -1,0 +1,10 @@
+target:
+  name: pandora
+  platform: bounty
+  disclosure: https://hackenproof.com/pandora/pandora-web
+  bounty: true
+  program_url: https://hackenproof.com/pandora/pandora-web
+  domains:
+  - pandora.digital
+  github_orgs: []
+  excluded: []

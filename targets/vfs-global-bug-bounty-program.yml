@@ -1,0 +1,10 @@
+target:
+  name: vfs-global-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/vfs-global-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/vfs-global-bug-bounty-program
+  domains:
+  - vfsevisa.com
+  github_orgs: []
+  excluded: []

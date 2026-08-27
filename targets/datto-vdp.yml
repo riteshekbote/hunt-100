@@ -1,0 +1,11 @@
+target:
+  name: datto-vdp
+  platform: bounty
+  disclosure: https://www.datto.com/legal/vulnerability-disclosure-program
+  bounty: true
+  program_url: https://www.datto.com/legal/vulnerability-disclosure-program
+  domains:
+  - autotask.net
+  - backupify.com
+  github_orgs: []
+  excluded: []

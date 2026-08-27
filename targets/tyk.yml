@@ -1,0 +1,10 @@
+target:
+  name: tyk
+  platform: bounty
+  disclosure: https://app.zerocopter.com/en/rd/261e0379-9eb8-4de6-b45d-48e30891a8bb
+  bounty: true
+  program_url: https://app.zerocopter.com/en/rd/261e0379-9eb8-4de6-b45d-48e30891a8bb
+  domains:
+  - tyk.io
+  github_orgs: []
+  excluded: []

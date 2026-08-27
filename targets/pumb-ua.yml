@@ -1,0 +1,10 @@
+target:
+  name: pumb-ua
+  platform: bounty
+  disclosure: https://hackenproof.com/pumb-dot-ua
+  bounty: true
+  program_url: https://hackenproof.com/pumb-dot-ua
+  domains:
+  - pumb.ua
+  github_orgs: []
+  excluded: []

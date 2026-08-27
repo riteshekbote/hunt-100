@@ -1,0 +1,10 @@
+target:
+  name: bitmart-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/bitmart-exchange/bitmart-exchange
+  bounty: true
+  program_url: https://hackenproof.com/bitmart-exchange/bitmart-exchange
+  domains:
+  - bitmart.com
+  github_orgs: []
+  excluded: []

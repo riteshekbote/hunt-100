@@ -1,0 +1,10 @@
+target:
+  name: deezer
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/deezer-bug-bounty-program-2019
+  bounty: true
+  program_url: https://yeswehack.com/programs/deezer-bug-bounty-program-2019
+  domains:
+  - deezer.com
+  github_orgs: []
+  excluded: []

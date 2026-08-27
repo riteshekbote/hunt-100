@@ -1,0 +1,10 @@
+target:
+  name: wombat-exchange
+  platform: bounty
+  disclosure: https://immunefi.com/bounty/wombatexchange/
+  bounty: true
+  program_url: https://immunefi.com/bounty/wombatexchange/
+  domains:
+  - wombat.exchange
+  github_orgs: []
+  excluded: []

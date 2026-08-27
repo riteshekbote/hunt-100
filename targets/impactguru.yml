@@ -1,0 +1,10 @@
+target:
+  name: impactguru
+  platform: bounty
+  disclosure: https://www.impactguru.com/bug-bounty
+  bounty: true
+  program_url: https://www.impactguru.com/bug-bounty
+  domains:
+  - impactguru.com
+  github_orgs: []
+  excluded: []

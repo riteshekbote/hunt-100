@@ -1,0 +1,11 @@
+target:
+  name: n26
+  platform: bounty
+  disclosure: https://n26.com/en-eu/bug-bounty-program
+  bounty: true
+  program_url: https://n26.com/en-eu/bug-bounty-program
+  domains:
+  - tech26.de
+  - n26.com
+  github_orgs: []
+  excluded: []

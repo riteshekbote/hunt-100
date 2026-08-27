@@ -1,0 +1,10 @@
+target:
+  name: onetrust
+  platform: bounty
+  disclosure: https://bugcrowd.com/onetrust
+  bounty: true
+  program_url: https://bugcrowd.com/onetrust
+  domains:
+  - onetrust.com
+  github_orgs: []
+  excluded: []

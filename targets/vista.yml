@@ -1,0 +1,11 @@
+target:
+  name: vista
+  platform: bounty
+  disclosure: https://www.vista.co/responsible-disclosure-policy/
+  bounty: true
+  program_url: https://www.vista.co/responsible-disclosure-policy/
+  domains:
+  - vista.co
+  - vista.co.nz
+  github_orgs: []
+  excluded: []

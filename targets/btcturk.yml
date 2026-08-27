@@ -1,0 +1,10 @@
+target:
+  name: btcturk
+  platform: bounty
+  disclosure: https://www.btcturk.com/odul-avciligi
+  bounty: true
+  program_url: https://www.btcturk.com/odul-avciligi
+  domains:
+  - btcturk.com
+  github_orgs: []
+  excluded: []

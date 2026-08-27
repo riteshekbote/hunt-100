@@ -1,0 +1,10 @@
+target:
+  name: henchman-io
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/henchman/henchmanio/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/henchman/henchmanio/detail
+  domains:
+  - henchman.io
+  github_orgs: []
+  excluded: []

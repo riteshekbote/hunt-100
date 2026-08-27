@@ -1,0 +1,11 @@
+target:
+  name: intergamma
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/intergamma/intergamma/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/intergamma/intergamma/detail
+  domains:
+  - intergamma-test.nl
+  - intergamma.cloud
+  github_orgs: []
+  excluded: []

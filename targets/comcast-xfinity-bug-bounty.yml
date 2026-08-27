@@ -1,0 +1,10 @@
+target:
+  name: comcast-xfinity-bug-bounty
+  platform: bounty
+  disclosure: https://bugcrowd.com/comcast-mbb
+  bounty: true
+  program_url: https://bugcrowd.com/comcast-mbb
+  domains:
+  - comcast.com
+  github_orgs: []
+  excluded: []

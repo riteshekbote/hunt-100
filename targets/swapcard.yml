@@ -1,0 +1,10 @@
+target:
+  name: swapcard
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/swapcard
+  bounty: true
+  program_url: https://yeswehack.com/programs/swapcard
+  domains:
+  - swapcard.com
+  github_orgs: []
+  excluded: []

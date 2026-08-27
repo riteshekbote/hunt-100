@@ -1,0 +1,10 @@
+target:
+  name: okcoin
+  platform: bounty
+  disclosure: https://hackenproof.com/okcoin/okcoin
+  bounty: true
+  program_url: https://hackenproof.com/okcoin/okcoin
+  domains:
+  - okcoin.com
+  github_orgs: []
+  excluded: []

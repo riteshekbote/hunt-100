@@ -1,0 +1,10 @@
+target:
+  name: amon
+  platform: bounty
+  disclosure: https://amon.tech/bug-bounty-program
+  bounty: true
+  program_url: https://amon.tech/bug-bounty-program
+  domains:
+  - amon.tech
+  github_orgs: []
+  excluded: []

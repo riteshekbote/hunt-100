@@ -1,0 +1,11 @@
+target:
+  name: danskebank
+  platform: bounty
+  disclosure: https://danskebank.com/responsible-disclosure
+  bounty: true
+  program_url: https://danskebank.com/responsible-disclosure
+  domains:
+  - danskebank.com
+  - danskebank.dk
+  github_orgs: []
+  excluded: []

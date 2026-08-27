@@ -1,0 +1,10 @@
+target:
+  name: swiss-post
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/swiss-post
+  bounty: true
+  program_url: https://yeswehack.com/programs/swiss-post
+  domains:
+  - post.ch
+  github_orgs: []
+  excluded: []

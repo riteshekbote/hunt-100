@@ -1,0 +1,11 @@
+target:
+  name: zerodha
+  platform: bounty
+  disclosure: https://zerodha.com/bug-bounty/
+  bounty: true
+  program_url: https://zerodha.com/bug-bounty/
+  domains:
+  - zerodha.com
+  - kite.trade
+  github_orgs: []
+  excluded: []

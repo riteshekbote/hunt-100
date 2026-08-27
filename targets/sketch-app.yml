@@ -1,0 +1,10 @@
+target:
+  name: sketch-app
+  platform: bounty
+  disclosure: https://www.sketch.com/security/disclosure/
+  bounty: true
+  program_url: https://www.sketch.com/security/disclosure/
+  domains:
+  - sketch.com
+  github_orgs: []
+  excluded: []

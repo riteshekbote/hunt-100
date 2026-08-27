@@ -1,0 +1,10 @@
+target:
+  name: datadome
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/datadome-bug-bounty
+  bounty: true
+  program_url: https://yeswehack.com/programs/datadome-bug-bounty
+  domains:
+  - datadome.co
+  github_orgs: []
+  excluded: []

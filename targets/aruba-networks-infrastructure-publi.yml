@@ -1,0 +1,10 @@
+target:
+  name: aruba-networks-infrastructure-publi
+  platform: bounty
+  disclosure: https://bugcrowd.com/aruba-public
+  bounty: true
+  program_url: https://bugcrowd.com/aruba-public
+  domains:
+  - arubanetworks.com
+  github_orgs: []
+  excluded: []

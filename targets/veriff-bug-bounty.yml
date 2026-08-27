@@ -1,0 +1,10 @@
+target:
+  name: veriff-bug-bounty
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/veriff/veriffbugbounty/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/veriff/veriffbugbounty/detail
+  domains:
+  - veriff.com
+  github_orgs: []
+  excluded: []

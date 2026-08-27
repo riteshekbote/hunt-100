@@ -1,0 +1,10 @@
+target:
+  name: flipkart
+  platform: bounty
+  disclosure: https://www.flipkart.com/pages/security
+  bounty: true
+  program_url: https://www.flipkart.com/pages/security
+  domains:
+  - flipkart.com
+  github_orgs: []
+  excluded: []

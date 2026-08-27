@@ -1,0 +1,11 @@
+target:
+  name: amsterdam-airport-schiphol
+  platform: bounty
+  disclosure: https://www.schiphol.nl/en/page/responsible-disclosure-notification/
+  bounty: true
+  program_url: https://www.schiphol.nl/en/page/responsible-disclosure-notification/
+  domains:
+  - schiphol.nl
+  - schiphol.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: fitburn
+  platform: bounty
+  disclosure: https://hackenproof.com/fitburn/fitburn-web-and-mobile
+  bounty: true
+  program_url: https://hackenproof.com/fitburn/fitburn-web-and-mobile
+  domains:
+  - fitburn.ai
+  github_orgs: []
+  excluded: []

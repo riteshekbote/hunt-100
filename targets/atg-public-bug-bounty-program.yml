@@ -1,0 +1,10 @@
+target:
+  name: atg-public-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/atg-public-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/atg-public-bug-bounty-program
+  domains:
+  - atg.se
+  github_orgs: []
+  excluded: []

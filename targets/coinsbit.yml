@@ -1,0 +1,10 @@
+target:
+  name: coinsbit
+  platform: bounty
+  disclosure: https://hackenproof.com/coinsbit/coinsbit
+  bounty: true
+  program_url: https://hackenproof.com/coinsbit/coinsbit
+  domains:
+  - coinsbit.io
+  github_orgs: []
+  excluded: []

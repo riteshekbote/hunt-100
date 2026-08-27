@@ -1,0 +1,11 @@
+target:
+  name: flourish
+  platform: bounty
+  disclosure: https://bugcrowd.com/flourish
+  bounty: true
+  program_url: https://bugcrowd.com/flourish
+  domains:
+  - flourish.studio
+  - xyzbmojn.net
+  github_orgs: []
+  excluded: []

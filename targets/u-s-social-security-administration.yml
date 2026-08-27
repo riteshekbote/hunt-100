@@ -1,0 +1,11 @@
+target:
+  name: u-s-social-security-administration
+  platform: bounty
+  disclosure: https://www.ssa.gov/vulnerability-disclosure-policy/
+  bounty: true
+  program_url: https://www.ssa.gov/vulnerability-disclosure-policy/
+  domains:
+  - ssa.gov
+  - segurosocial.gov
+  github_orgs: []
+  excluded: []

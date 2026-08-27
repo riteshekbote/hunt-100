@@ -1,0 +1,10 @@
+target:
+  name: private-internet-access
+  platform: bounty
+  disclosure: https://bugcrowd.com/privateinternetaccess
+  bounty: true
+  program_url: https://bugcrowd.com/privateinternetaccess
+  domains:
+  - privateinternetaccess.com
+  github_orgs: []
+  excluded: []

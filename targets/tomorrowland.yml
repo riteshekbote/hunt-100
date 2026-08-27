@@ -1,0 +1,11 @@
+target:
+  name: tomorrowland
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/tomorrowland/tomorrowland/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/tomorrowland/tomorrowland/detail
+  domains:
+  - aroundtheworld.tomorrowland.com
+  - tomorrowland.com
+  github_orgs: []
+  excluded: []

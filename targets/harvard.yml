@@ -1,0 +1,10 @@
+target:
+  name: harvard
+  platform: bounty
+  disclosure: https://huit.harvard.edu/responsible-vulnerability-reporting-standards#inscope
+  bounty: true
+  program_url: https://huit.harvard.edu/responsible-vulnerability-reporting-standards#inscope
+  domains:
+  - harvard.edu
+  github_orgs: []
+  excluded: []

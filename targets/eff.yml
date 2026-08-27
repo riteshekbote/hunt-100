@@ -1,0 +1,10 @@
+target:
+  name: eff
+  platform: bounty
+  disclosure: https://www.eff.org/security/
+  bounty: true
+  program_url: https://www.eff.org/security/
+  domains:
+  - eff.org
+  github_orgs: []
+  excluded: []

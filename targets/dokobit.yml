@@ -1,0 +1,10 @@
+target:
+  name: dokobit
+  platform: bounty
+  disclosure: https://www.dokobit.com/compliance/vulnerability-disclosure-policy
+  bounty: true
+  program_url: https://www.dokobit.com/compliance/vulnerability-disclosure-policy
+  domains:
+  - dokobit.com
+  github_orgs: []
+  excluded: []

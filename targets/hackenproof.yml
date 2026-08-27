@@ -1,0 +1,10 @@
+target:
+  name: hackenproof
+  platform: bounty
+  disclosure: https://hackenproof.com/hacken/hackenproof
+  bounty: true
+  program_url: https://hackenproof.com/hacken/hackenproof
+  domains:
+  - hackenproof.com
+  github_orgs: []
+  excluded: []

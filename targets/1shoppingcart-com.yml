@@ -1,0 +1,10 @@
+target:
+  name: 1shoppingcart-com
+  platform: bounty
+  disclosure: https://bugcrowd.com/shoppingcart
+  bounty: true
+  program_url: https://bugcrowd.com/shoppingcart
+  domains:
+  - mcssl.com
+  github_orgs: []
+  excluded: []

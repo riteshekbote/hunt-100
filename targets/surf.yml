@@ -1,0 +1,10 @@
+target:
+  name: surf
+  platform: bounty
+  disclosure: https://www.surf.nl/en/responsible-disclosure
+  bounty: true
+  program_url: https://www.surf.nl/en/responsible-disclosure
+  domains:
+  - surf.nl
+  github_orgs: []
+  excluded: []

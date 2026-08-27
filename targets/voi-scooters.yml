@@ -1,0 +1,10 @@
+target:
+  name: voi-scooters
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/voi/voiscooters/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/voi/voiscooters/detail
+  domains:
+  - voiscooters.com
+  github_orgs: []
+  excluded: []

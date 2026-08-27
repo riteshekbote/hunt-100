@@ -1,0 +1,11 @@
+target:
+  name: amex-global-business-travel-vulnera
+  platform: bounty
+  disclosure: https://bugcrowd.com/amexgbt-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/amexgbt-vdp
+  domains:
+  - amexgbt.com
+  - amexglobalbusinesstravel.com
+  github_orgs: []
+  excluded: []

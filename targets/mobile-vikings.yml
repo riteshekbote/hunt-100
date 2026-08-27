@@ -1,0 +1,11 @@
+target:
+  name: mobile-vikings
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/mv/mobilevikings/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/mv/mobilevikings/detail
+  domains:
+  - mas.mobilevikings.be
+  - mobilevikings.be
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: gap-inc
+  platform: bounty
+  disclosure: https://bugcrowd.com/gapinc
+  bounty: true
+  program_url: https://bugcrowd.com/gapinc
+  domains:
+  - gapinc.com
+  github_orgs: []
+  excluded: []

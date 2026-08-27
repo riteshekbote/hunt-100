@@ -1,0 +1,10 @@
+target:
+  name: polkalokr
+  platform: bounty
+  disclosure: https://hackenproof.com/polkalokr/polkalokr-1
+  bounty: true
+  program_url: https://hackenproof.com/polkalokr/polkalokr-1
+  domains:
+  - polkalokr.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: citex-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/citex-exchange/citex-web-and-api
+  bounty: true
+  program_url: https://hackenproof.com/citex-exchange/citex-web-and-api
+  domains:
+  - citex.info
+  - citex.io
+  github_orgs: []
+  excluded: []

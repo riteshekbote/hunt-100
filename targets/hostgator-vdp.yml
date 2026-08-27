@@ -1,0 +1,10 @@
+target:
+  name: hostgator-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/hostgator-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/hostgator-vdp
+  domains:
+  - hostgator.com
+  github_orgs: []
+  excluded: []

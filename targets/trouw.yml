@@ -1,0 +1,10 @@
+target:
+  name: trouw
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/trouw/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/trouw/detail
+  domains:
+  - trouw.nl
+  github_orgs: []
+  excluded: []

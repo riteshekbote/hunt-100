@@ -1,0 +1,11 @@
+target:
+  name: doist
+  platform: bounty
+  disclosure: https://todoist.com/help/articles/doist-bug-bounty-policy
+  bounty: true
+  program_url: https://todoist.com/help/articles/doist-bug-bounty-policy
+  domains:
+  - todoist.com
+  - twist.com
+  github_orgs: []
+  excluded: []

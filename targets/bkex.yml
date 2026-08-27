@@ -1,0 +1,11 @@
+target:
+  name: bkex
+  platform: bounty
+  disclosure: https://hackenproof.com/bkex/bkex
+  bounty: true
+  program_url: https://hackenproof.com/bkex/bkex
+  domains:
+  - bkk.fun
+  - bkex.com
+  github_orgs: []
+  excluded: []

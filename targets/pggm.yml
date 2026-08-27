@@ -1,0 +1,10 @@
+target:
+  name: pggm
+  platform: bounty
+  disclosure: https://www.pggm.nl/en/responsible-disclosure
+  bounty: true
+  program_url: https://www.pggm.nl/en/responsible-disclosure
+  domains:
+  - pggm.nl
+  github_orgs: []
+  excluded: []

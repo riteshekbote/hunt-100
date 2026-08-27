@@ -1,0 +1,10 @@
+target:
+  name: vgz
+  platform: bounty
+  disclosure: https://app.zerocopter.com/nl/cvd/bda542d5-c421-49f8-8e9c-5e70f5525673
+  bounty: true
+  program_url: https://app.zerocopter.com/nl/cvd/bda542d5-c421-49f8-8e9c-5e70f5525673
+  domains:
+  - vgz.nl
+  github_orgs: []
+  excluded: []

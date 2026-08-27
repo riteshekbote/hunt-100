@@ -1,0 +1,11 @@
+target:
+  name: stellantis
+  platform: bounty
+  disclosure: https://bugcrowd.com/stellantis
+  bounty: true
+  program_url: https://bugcrowd.com/stellantis
+  domains:
+  - driveuconnect.com
+  - driveuconnect.eu
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: uacatsdivision
+  platform: bounty
+  disclosure: https://hackenproof.com/uacatsdivision
+  bounty: true
+  program_url: https://hackenproof.com/uacatsdivision
+  domains:
+  - uacatsdivision.com
+  github_orgs: []
+  excluded: []

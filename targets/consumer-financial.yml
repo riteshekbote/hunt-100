@@ -1,0 +1,10 @@
+target:
+  name: consumer-financial
+  platform: bounty
+  disclosure: https://www.consumerfinance.gov/vulnerability-disclosure-policy/
+  bounty: true
+  program_url: https://www.consumerfinance.gov/vulnerability-disclosure-policy/
+  domains:
+  - consumerfinance.gov
+  github_orgs: []
+  excluded: []

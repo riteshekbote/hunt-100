@@ -1,0 +1,10 @@
+target:
+  name: coin98
+  platform: bounty
+  disclosure: https://hackenproof.com/coin98/coin98
+  bounty: true
+  program_url: https://hackenproof.com/coin98/coin98
+  domains:
+  - coin98.com
+  github_orgs: []
+  excluded: []

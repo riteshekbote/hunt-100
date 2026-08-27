@@ -1,0 +1,11 @@
+target:
+  name: personio
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/personio/personio/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/personio/personio/detail
+  domains:
+  - personio-internal.de
+  - personio.tools
+  github_orgs: []
+  excluded: []

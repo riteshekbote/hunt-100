@@ -1,0 +1,11 @@
+target:
+  name: bpost
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/bpost/dummy/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/bpost/dummy/detail
+  domains:
+  - bpost.be
+  - bpost.cloud
+  github_orgs: []
+  excluded: []

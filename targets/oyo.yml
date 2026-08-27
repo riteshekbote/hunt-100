@@ -1,0 +1,10 @@
+target:
+  name: oyo
+  platform: bounty
+  disclosure: https://www.oyorooms.com/responsible-disclosure
+  bounty: true
+  program_url: https://www.oyorooms.com/responsible-disclosure
+  domains:
+  - oyorooms.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: apsis
+  platform: bounty
+  disclosure: https://www.apsis.com/bug-bounty
+  bounty: true
+  program_url: https://www.apsis.com/bug-bounty
+  domains:
+  - apsis.com
+  github_orgs: []
+  excluded: []

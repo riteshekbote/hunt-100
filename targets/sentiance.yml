@@ -1,0 +1,10 @@
+target:
+  name: sentiance
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/sentiance/sentiance/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/sentiance/sentiance/detail
+  domains:
+  - sentiance.com
+  github_orgs: []
+  excluded: []

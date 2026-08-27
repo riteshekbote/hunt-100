@@ -1,0 +1,10 @@
+target:
+  name: aurora
+  platform: bounty
+  disclosure: https://hackenproof.com/aurora
+  bounty: true
+  program_url: https://hackenproof.com/aurora
+  domains:
+  - aurora.plus
+  github_orgs: []
+  excluded: []

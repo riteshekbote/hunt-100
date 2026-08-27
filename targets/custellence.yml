@@ -1,0 +1,10 @@
+target:
+  name: custellence
+  platform: bounty
+  disclosure: https://custellence.com/responsible-disclosure.html
+  bounty: true
+  program_url: https://custellence.com/responsible-disclosure.html
+  domains:
+  - custellence.com
+  github_orgs: []
+  excluded: []

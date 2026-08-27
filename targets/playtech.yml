@@ -1,0 +1,10 @@
+target:
+  name: playtech
+  platform: bounty
+  disclosure: https://www.playtech.com/contact-us/security-inquiry
+  bounty: true
+  program_url: https://www.playtech.com/contact-us/security-inquiry
+  domains:
+  - playtech.com
+  github_orgs: []
+  excluded: []

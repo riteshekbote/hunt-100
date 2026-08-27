@@ -1,0 +1,11 @@
+target:
+  name: hake-finance
+  platform: bounty
+  disclosure: https://immunefi.com/bounty/hakkafinance/
+  bounty: true
+  program_url: https://immunefi.com/bounty/hakkafinance/
+  domains:
+  - hakka.finance
+  - igain.finance
+  github_orgs: []
+  excluded: []

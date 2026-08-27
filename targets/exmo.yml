@@ -1,0 +1,11 @@
+target:
+  name: exmo
+  platform: bounty
+  disclosure: https://hackenproof.com/exmo/exmo
+  bounty: true
+  program_url: https://hackenproof.com/exmo/exmo
+  domains:
+  - exmo.com
+  - exmo.me
+  github_orgs: []
+  excluded: []

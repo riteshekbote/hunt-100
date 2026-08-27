@@ -1,0 +1,11 @@
+target:
+  name: cm-com
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/cmcom/cmcom/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/cmcom/cmcom/detail
+  domains:
+  - ticketing.cm.com
+  - cm.com
+  github_orgs: []
+  excluded: []

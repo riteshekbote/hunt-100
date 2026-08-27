@@ -1,0 +1,11 @@
+target:
+  name: tutanota
+  platform: bounty
+  disclosure: https://tutanota.com/faq/#report-vulnerability
+  bounty: true
+  program_url: https://tutanota.com/faq/#report-vulnerability
+  domains:
+  - tutanota.com
+  - tutanota.de
+  github_orgs: []
+  excluded: []

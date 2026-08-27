@@ -1,0 +1,11 @@
+target:
+  name: oppo
+  platform: bounty
+  disclosure: https://security.oppo.com/en/noticedetails.html?noticeId=20201578399519447
+  bounty: true
+  program_url: https://security.oppo.com/en/noticedetails.html?noticeId=20201578399519447
+  domains:
+  - oppo.com
+  - oppo.cn
+  github_orgs: []
+  excluded: []

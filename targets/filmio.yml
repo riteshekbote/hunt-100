@@ -1,0 +1,10 @@
+target:
+  name: filmio
+  platform: bounty
+  disclosure: https://hackenproof.com/filmio
+  bounty: true
+  program_url: https://hackenproof.com/filmio
+  domains:
+  - film.io
+  github_orgs: []
+  excluded: []

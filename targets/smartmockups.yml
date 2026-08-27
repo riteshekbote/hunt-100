@@ -1,0 +1,10 @@
+target:
+  name: smartmockups
+  platform: bounty
+  disclosure: https://bugcrowd.com/smartmockups
+  bounty: true
+  program_url: https://bugcrowd.com/smartmockups
+  domains:
+  - smartmockups.com
+  github_orgs: []
+  excluded: []

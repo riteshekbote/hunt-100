@@ -1,0 +1,11 @@
+target:
+  name: coingecko
+  platform: bounty
+  disclosure: https://hackenproof.com/coingecko/coingecko
+  bounty: true
+  program_url: https://hackenproof.com/coingecko/coingecko
+  domains:
+  - coingecko.com
+  - geckoterminal.com
+  github_orgs: []
+  excluded: []

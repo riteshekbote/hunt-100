@@ -1,0 +1,11 @@
+target:
+  name: meituan
+  platform: bounty
+  disclosure: https://security.meituan.com/
+  bounty: true
+  program_url: https://security.meituan.com/
+  domains:
+  - meituan.com
+  - meituan.net
+  github_orgs: []
+  excluded: []

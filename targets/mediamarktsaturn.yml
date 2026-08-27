@@ -1,0 +1,11 @@
+target:
+  name: mediamarktsaturn
+  platform: bounty
+  disclosure: https://vdp.mediamarktsaturn.com/p/Submission-Form
+  bounty: true
+  program_url: https://vdp.mediamarktsaturn.com/p/Submission-Form
+  domains:
+  - mediamarkt.at
+  - mediamarkt.be
+  github_orgs: []
+  excluded: []

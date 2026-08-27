@@ -1,0 +1,10 @@
+target:
+  name: nicehash
+  platform: bounty
+  disclosure: https://hackenproof.com/nicehash
+  bounty: true
+  program_url: https://hackenproof.com/nicehash
+  domains:
+  - nicehash.com
+  github_orgs: []
+  excluded: []

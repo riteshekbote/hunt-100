@@ -1,0 +1,10 @@
+target:
+  name: yacht
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/randstad/yacht/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/randstad/yacht/detail
+  domains:
+  - yacht.nl
+  github_orgs: []
+  excluded: []

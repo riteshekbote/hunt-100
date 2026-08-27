@@ -1,0 +1,10 @@
+target:
+  name: ternoa
+  platform: bounty
+  disclosure: https://hackenproof.com/ternoa/ternoa-web-and-apps
+  bounty: true
+  program_url: https://hackenproof.com/ternoa/ternoa-web-and-apps
+  domains:
+  - ternoa.network
+  github_orgs: []
+  excluded: []

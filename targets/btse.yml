@@ -1,0 +1,10 @@
+target:
+  name: btse
+  platform: bounty
+  disclosure: https://hackenproof.com/btse/btse-bug-bounty-program
+  bounty: true
+  program_url: https://hackenproof.com/btse/btse-bug-bounty-program
+  domains:
+  - btse.com
+  github_orgs: []
+  excluded: []

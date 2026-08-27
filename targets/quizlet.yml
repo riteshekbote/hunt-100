@@ -1,0 +1,10 @@
+target:
+  name: quizlet
+  platform: bounty
+  disclosure: https://bugcrowd.com/quizlet
+  bounty: true
+  program_url: https://bugcrowd.com/quizlet
+  domains:
+  - quizlet.com
+  github_orgs: []
+  excluded: []

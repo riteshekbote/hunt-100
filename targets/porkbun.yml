@@ -1,0 +1,10 @@
+target:
+  name: porkbun
+  platform: bounty
+  disclosure: https://porkbun.com/products/bug_bounty
+  bounty: true
+  program_url: https://porkbun.com/products/bug_bounty
+  domains:
+  - porkbun.com
+  github_orgs: []
+  excluded: []

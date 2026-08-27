@@ -1,0 +1,10 @@
+target:
+  name: cryptology
+  platform: bounty
+  disclosure: https://hackenproof.com/cryptology/cryptology
+  bounty: true
+  program_url: https://hackenproof.com/cryptology/cryptology
+  domains:
+  - cryptology.com
+  github_orgs: []
+  excluded: []

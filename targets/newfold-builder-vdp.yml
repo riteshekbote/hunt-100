@@ -1,0 +1,10 @@
+target:
+  name: newfold-builder-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/newfold-builder-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/newfold-builder-vdp
+  domains:
+  - websitebuilder.com
+  github_orgs: []
+  excluded: []

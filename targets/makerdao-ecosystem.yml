@@ -1,0 +1,10 @@
+target:
+  name: makerdao-ecosystem
+  platform: bounty
+  disclosure: https://immunefi.com/bounty/makerdao/
+  bounty: true
+  program_url: https://immunefi.com/bounty/makerdao/
+  domains:
+  - makerdao.com
+  github_orgs: []
+  excluded: []

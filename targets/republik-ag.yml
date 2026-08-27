@@ -1,0 +1,10 @@
+target:
+  name: republik-ag
+  platform: bounty
+  disclosure: https://gobugfree.com/programs/republik
+  bounty: true
+  program_url: https://gobugfree.com/programs/republik
+  domains:
+  - republik.ch
+  github_orgs: []
+  excluded: []

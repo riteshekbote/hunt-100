@@ -1,0 +1,10 @@
+target:
+  name: sendcloud
+  platform: bounty
+  disclosure: https://www.sendcloud.com/bug-bounty-program/
+  bounty: true
+  program_url: https://www.sendcloud.com/bug-bounty-program/
+  domains:
+  - sendcloud.com
+  github_orgs: []
+  excluded: []

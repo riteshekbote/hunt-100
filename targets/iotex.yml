@@ -1,0 +1,11 @@
+target:
+  name: iotex
+  platform: bounty
+  disclosure: https://hackenproof.com/iotex/iotex
+  bounty: true
+  program_url: https://hackenproof.com/iotex/iotex
+  domains:
+  - iotex.io
+  - iotexscan.io
+  github_orgs: []
+  excluded: []

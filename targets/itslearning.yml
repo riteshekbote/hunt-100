@@ -1,0 +1,10 @@
+target:
+  name: itslearning
+  platform: bounty
+  disclosure: https://itslearning.com/global/your-data-matters/responsible-disclosure/
+  bounty: true
+  program_url: https://itslearning.com/global/your-data-matters/responsible-disclosure/
+  domains:
+  - itslearning.com
+  github_orgs: []
+  excluded: []

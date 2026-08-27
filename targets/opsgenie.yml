@@ -1,0 +1,10 @@
+target:
+  name: opsgenie
+  platform: bounty
+  disclosure: https://bugcrowd.com/opsgenie
+  bounty: true
+  program_url: https://bugcrowd.com/opsgenie
+  domains:
+  - opsgenie.com
+  github_orgs: []
+  excluded: []

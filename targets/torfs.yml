@@ -1,0 +1,11 @@
+target:
+  name: torfs
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/torfs/torfs/detail
+  bounty: true
+  program_url: https://app.intigriti.com/programs/torfs/torfs/detail
+  domains:
+  - torfs.be
+  - rieker-shop.be
+  github_orgs: []
+  excluded: []

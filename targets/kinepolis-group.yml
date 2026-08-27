@@ -1,0 +1,11 @@
+target:
+  name: kinepolis-group
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/kinepolis/website/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/kinepolis/website/detail
+  domains:
+  - klubcinema.fr
+  - kinepolis.be
+  github_orgs: []
+  excluded: []

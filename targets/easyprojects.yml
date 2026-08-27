@@ -1,0 +1,10 @@
+target:
+  name: easyprojects
+  platform: bounty
+  disclosure: https://www.easyprojects.net/company/vulnerability-reward-program/
+  bounty: true
+  program_url: https://www.easyprojects.net/company/vulnerability-reward-program/
+  domains:
+  - easyprojects.net
+  github_orgs: []
+  excluded: []

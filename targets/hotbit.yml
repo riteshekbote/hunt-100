@@ -1,0 +1,10 @@
+target:
+  name: hotbit
+  platform: bounty
+  disclosure: https://hackenproof.com/hotbit/hotbit
+  bounty: true
+  program_url: https://hackenproof.com/hotbit/hotbit
+  domains:
+  - hotbit.io
+  github_orgs: []
+  excluded: []

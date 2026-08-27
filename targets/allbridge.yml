@@ -1,0 +1,10 @@
+target:
+  name: allbridge
+  platform: bounty
+  disclosure: https://hackenproof.com/allbridge/allbridge
+  bounty: true
+  program_url: https://hackenproof.com/allbridge/allbridge
+  domains:
+  - allbridge.io
+  github_orgs: []
+  excluded: []

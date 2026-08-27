@@ -1,0 +1,11 @@
+target:
+  name: cynical-technology
+  platform: bounty
+  disclosure: https://app.bugv.io/researcher/program/0000006/detail
+  bounty: true
+  program_url: https://app.bugv.io/researcher/program/0000006/detail
+  domains:
+  - cynicaltechnology.com
+  - cynicaltechnology.com.np
+  github_orgs: []
+  excluded: []

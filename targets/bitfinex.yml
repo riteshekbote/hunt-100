@@ -1,0 +1,10 @@
+target:
+  name: bitfinex
+  platform: bounty
+  disclosure: https://www.bitfinex.com/bug-bounty/
+  bounty: true
+  program_url: https://www.bitfinex.com/bug-bounty/
+  domains:
+  - bitfinex.com
+  github_orgs: []
+  excluded: []

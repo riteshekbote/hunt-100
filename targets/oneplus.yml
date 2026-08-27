@@ -1,0 +1,11 @@
+target:
+  name: oneplus
+  platform: bounty
+  disclosure: https://security.oneplus.com/
+  bounty: true
+  program_url: https://security.oneplus.com/
+  domains:
+  - oneplus.com
+  - oneplus.in
+  github_orgs: []
+  excluded: []

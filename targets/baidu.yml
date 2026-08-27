@@ -1,0 +1,11 @@
+target:
+  name: baidu
+  platform: bounty
+  disclosure: https://bsrc.baidu.com/v2/#/en
+  bounty: true
+  program_url: https://bsrc.baidu.com/v2/#/en
+  domains:
+  - baidu.com
+  - hao123.com
+  github_orgs: []
+  excluded: []

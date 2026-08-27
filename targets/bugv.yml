@@ -1,0 +1,10 @@
+target:
+  name: bugv
+  platform: bounty
+  disclosure: https://app.bugv.io/researcher/program/0000001/detail
+  bounty: true
+  program_url: https://app.bugv.io/researcher/program/0000001/detail
+  domains:
+  - bugv.io
+  github_orgs: []
+  excluded: []

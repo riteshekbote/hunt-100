@@ -1,0 +1,11 @@
+target:
+  name: scholar-fund
+  platform: bounty
+  disclosure: https://www.scholarfundwa.org/bug-bounty
+  bounty: true
+  program_url: https://www.scholarfundwa.org/bug-bounty
+  domains:
+  - scholarfundwa.org
+  - scholarfund.io
+  github_orgs: []
+  excluded: []

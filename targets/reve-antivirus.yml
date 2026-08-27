@@ -1,0 +1,10 @@
+target:
+  name: reve-antivirus
+  platform: bounty
+  disclosure: https://www.reveantivirus.com/in/bug-bounty-program
+  bounty: true
+  program_url: https://www.reveantivirus.com/in/bug-bounty-program
+  domains:
+  - reveantivirus.com
+  github_orgs: []
+  excluded: []

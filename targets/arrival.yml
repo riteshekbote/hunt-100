@@ -1,0 +1,11 @@
+target:
+  name: arrival
+  platform: bounty
+  disclosure: https://arrival.com/legal/security#purpose
+  bounty: true
+  program_url: https://arrival.com/legal/security#purpose
+  domains:
+  - arrival.com
+  - arrival.co
+  github_orgs: []
+  excluded: []

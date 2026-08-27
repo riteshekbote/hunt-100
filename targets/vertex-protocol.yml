@@ -1,0 +1,10 @@
+target:
+  name: vertex-protocol
+  platform: bounty
+  disclosure: https://hackenproof.com/vertex-protocol
+  bounty: true
+  program_url: https://hackenproof.com/vertex-protocol
+  domains:
+  - vertexprotocol.com
+  github_orgs: []
+  excluded: []

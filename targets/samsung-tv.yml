@@ -1,0 +1,10 @@
+target:
+  name: samsung-tv
+  platform: bounty
+  disclosure: https://samsungtvbounty.com
+  bounty: true
+  program_url: https://samsungtvbounty.com
+  domains:
+  - samsung.com
+  github_orgs: []
+  excluded: []

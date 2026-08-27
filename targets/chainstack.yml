@@ -1,0 +1,11 @@
+target:
+  name: chainstack
+  platform: bounty
+  disclosure: https://hackenproof.com/chainstack/chainstack
+  bounty: true
+  program_url: https://hackenproof.com/chainstack/chainstack
+  domains:
+  - chainstack.com
+  - p2pify.com
+  github_orgs: []
+  excluded: []

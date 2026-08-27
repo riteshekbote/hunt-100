@@ -1,0 +1,11 @@
+target:
+  name: pasls-store
+  platform: bounty
+  disclosure: https://app.bugv.io/researcher/program/0000008/detail
+  bounty: true
+  program_url: https://app.bugv.io/researcher/program/0000008/detail
+  domains:
+  - zimisa.com
+  - pasls.com
+  github_orgs: []
+  excluded: []

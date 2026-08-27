@@ -1,0 +1,10 @@
+target:
+  name: oro
+  platform: bounty
+  disclosure: https://oroinc.com/bug-bounty/
+  bounty: true
+  program_url: https://oroinc.com/bug-bounty/
+  domains:
+  - oroinc.com
+  github_orgs: []
+  excluded: []

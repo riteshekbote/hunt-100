@@ -1,0 +1,10 @@
+target:
+  name: whitebit
+  platform: bounty
+  disclosure: https://hackenproof.com/whitebit/whitebit
+  bounty: true
+  program_url: https://hackenproof.com/whitebit/whitebit
+  domains:
+  - whitebit.com
+  github_orgs: []
+  excluded: []

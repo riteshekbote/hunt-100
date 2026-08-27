@@ -1,0 +1,10 @@
+target:
+  name: vlerick-business-school
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/vlerickbusinessschool/vlerickbusinessschool/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/vlerickbusinessschool/vlerickbusinessschool/detail
+  domains:
+  - vlerick.com
+  github_orgs: []
+  excluded: []

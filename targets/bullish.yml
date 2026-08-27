@@ -1,0 +1,10 @@
+target:
+  name: bullish
+  platform: bounty
+  disclosure: https://bugcrowd.com/bullish
+  bounty: true
+  program_url: https://bugcrowd.com/bullish
+  domains:
+  - bullish.com
+  github_orgs: []
+  excluded: []

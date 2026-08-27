@@ -1,0 +1,10 @@
+target:
+  name: tu-chemniz
+  platform: bounty
+  disclosure: https://www.openbugbounty.org/bugbounty/TucWebmaster/
+  bounty: true
+  program_url: https://www.openbugbounty.org/bugbounty/TucWebmaster/
+  domains:
+  - tu-chemniz.de
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: twago
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/randstad/twago/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/randstad/twago/detail
+  domains:
+  - itprojects.talent-community.com
+  github_orgs: []
+  excluded: []

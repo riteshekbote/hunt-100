@@ -1,0 +1,11 @@
+target:
+  name: sixt
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/sixt/sixt/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/sixt/sixt/detail
+  domains:
+  - sixt.com
+  - sixt.de
+  github_orgs: []
+  excluded: []

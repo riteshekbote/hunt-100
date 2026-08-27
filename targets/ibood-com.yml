@@ -1,0 +1,11 @@
+target:
+  name: ibood-com
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/iboodcom/iboodcom/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/iboodcom/iboodcom/detail
+  domains:
+  - ibood.io
+  - ibood.com
+  github_orgs: []
+  excluded: []

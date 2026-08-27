@@ -1,0 +1,10 @@
+target:
+  name: bitexen
+  platform: bounty
+  disclosure: https://hackenproof.com/bitexen
+  bounty: true
+  program_url: https://hackenproof.com/bitexen
+  domains:
+  - bitexen.com
+  github_orgs: []
+  excluded: []

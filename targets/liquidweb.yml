@@ -1,0 +1,10 @@
+target:
+  name: liquidweb
+  platform: bounty
+  disclosure: https://www.liquidweb.com/about-us/policies/bug-bounty-program/
+  bounty: true
+  program_url: https://www.liquidweb.com/about-us/policies/bug-bounty-program/
+  domains:
+  - liquidweb.com
+  github_orgs: []
+  excluded: []

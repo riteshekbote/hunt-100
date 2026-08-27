@@ -1,0 +1,10 @@
+target:
+  name: threema
+  platform: bounty
+  disclosure: https://hackenproof.com/tickets-travel-network/tickets-travel-network-slash-updated-ui
+  bounty: true
+  program_url: https://hackenproof.com/tickets-travel-network/tickets-travel-network-slash-updated-ui
+  domains:
+  - threema.ch
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: premier-hero
+  platform: bounty
+  disclosure: https://app.bugv.io/researcher/program/0000004/detail
+  bounty: true
+  program_url: https://app.bugv.io/researcher/program/0000004/detail
+  domains:
+  - premierhero.com
+  github_orgs: []
+  excluded: []

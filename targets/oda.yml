@@ -1,0 +1,10 @@
+target:
+  name: oda
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/oda/oda/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/oda/oda/detail
+  domains:
+  - oda.com
+  github_orgs: []
+  excluded: []

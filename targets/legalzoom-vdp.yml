@@ -1,0 +1,11 @@
+target:
+  name: legalzoom-vdp
+  platform: bounty
+  disclosure: https://bugcrowd.com/legalzoom-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/legalzoom-vdp
+  domains:
+  - earthclassmail.com
+  - legalinc.com
+  github_orgs: []
+  excluded: []

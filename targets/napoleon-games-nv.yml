@@ -1,0 +1,10 @@
+target:
+  name: napoleon-games-nv
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/hucklu/napoleongames/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/hucklu/napoleongames/detail
+  domains:
+  - napoleongames.be
+  github_orgs: []
+  excluded: []

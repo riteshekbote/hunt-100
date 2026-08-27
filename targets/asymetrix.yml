@@ -1,0 +1,10 @@
+target:
+  name: asymetrix
+  platform: bounty
+  disclosure: https://hackenproof.com/asymetrix
+  bounty: true
+  program_url: https://hackenproof.com/asymetrix
+  domains:
+  - asymetrix.io
+  github_orgs: []
+  excluded: []

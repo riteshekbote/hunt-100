@@ -1,0 +1,10 @@
+target:
+  name: dutch-tax-office
+  platform: bounty
+  disclosure: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/fraude_misdaad_en_misstanden_melden/datalek-beveiligingslek-misbruik-computersystemen/datalek-beveiligingslek-misbruik-computersystemen
+  bounty: true
+  program_url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/fraude_misdaad_en_misstanden_melden/datalek-beveiligingslek-misbruik-computersystemen/datalek-beveiligingslek-misbruik-computersystemen
+  domains:
+  - belastingdienst.nl
+  github_orgs: []
+  excluded: []

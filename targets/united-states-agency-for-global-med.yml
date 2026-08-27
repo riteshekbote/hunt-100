@@ -1,0 +1,11 @@
+target:
+  name: united-states-agency-for-global-med
+  platform: bounty
+  disclosure: https://bugcrowd.com/usagm-vdp
+  bounty: true
+  program_url: https://bugcrowd.com/usagm-vdp
+  domains:
+  - alhurra.com
+  - insidevoa.com
+  github_orgs: []
+  excluded: []

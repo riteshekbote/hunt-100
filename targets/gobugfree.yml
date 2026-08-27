@@ -1,0 +1,10 @@
+target:
+  name: gobugfree
+  platform: bounty
+  disclosure: https://gobugfree.com/programs/bbh
+  bounty: true
+  program_url: https://gobugfree.com/programs/bbh
+  domains:
+  - gobugfree.com
+  github_orgs: []
+  excluded: []

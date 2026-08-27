@@ -1,0 +1,11 @@
+target:
+  name: u-s-dept-of-health-human-services-h
+  platform: bounty
+  disclosure: https://www.hhs.gov/vulnerability-disclosure-policy/index.html
+  bounty: true
+  program_url: https://www.hhs.gov/vulnerability-disclosure-policy/index.html
+  domains:
+  - acl.gov
+  - agingstats.gov
+  github_orgs: []
+  excluded: []

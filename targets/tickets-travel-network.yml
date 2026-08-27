@@ -1,0 +1,11 @@
+target:
+  name: tickets-travel-network
+  platform: bounty
+  disclosure: https://hackenproof.com/tickets-travel-network/tickets-travel-network-slash-updated-ui
+  bounty: true
+  program_url: https://hackenproof.com/tickets-travel-network/tickets-travel-network-slash-updated-ui
+  domains:
+  - tickets.kz
+  - tickets.ua
+  github_orgs: []
+  excluded: []

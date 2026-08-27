@@ -1,0 +1,11 @@
+target:
+  name: ninja-kiwi-games
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/ninjakiwigames/ninjakiwigames/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/ninjakiwigames/ninjakiwigames/detail
+  domains:
+  - nkstatic.com
+  - ninjakiwi.com
+  github_orgs: []
+  excluded: []

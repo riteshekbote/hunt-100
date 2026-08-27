@@ -1,0 +1,10 @@
+target:
+  name: empuls
+  platform: bounty
+  disclosure: https://www.empuls.io/bug-bounty
+  bounty: true
+  program_url: https://www.empuls.io/bug-bounty
+  domains:
+  - empuls.io
+  github_orgs: []
+  excluded: []

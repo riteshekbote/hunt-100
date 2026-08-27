@@ -1,0 +1,10 @@
+target:
+  name: traveloka
+  platform: bounty
+  disclosure: https://www.traveloka.com/en-id/bugs
+  bounty: true
+  program_url: https://www.traveloka.com/en-id/bugs
+  domains:
+  - traveloka.com
+  github_orgs: []
+  excluded: []

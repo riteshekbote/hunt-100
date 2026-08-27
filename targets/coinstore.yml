@@ -1,0 +1,10 @@
+target:
+  name: coinstore
+  platform: bounty
+  disclosure: https://hackenproof.com/coinstore/coinstore
+  bounty: true
+  program_url: https://hackenproof.com/coinstore/coinstore
+  domains:
+  - coinstore.com
+  github_orgs: []
+  excluded: []

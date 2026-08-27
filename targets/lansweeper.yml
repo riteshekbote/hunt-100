@@ -1,0 +1,10 @@
+target:
+  name: lansweeper
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/lansweeper/lansweeper1/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/lansweeper/lansweeper1/detail
+  domains:
+  - lansweeper.com
+  github_orgs: []
+  excluded: []

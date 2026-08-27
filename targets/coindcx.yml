@@ -1,0 +1,11 @@
+target:
+  name: coindcx
+  platform: bounty
+  disclosure: https://bugcrowd.com/coindcx-og
+  bounty: true
+  program_url: https://bugcrowd.com/coindcx-og
+  domains:
+  - coindcx.com
+  - dcxstage.com
+  github_orgs: []
+  excluded: []

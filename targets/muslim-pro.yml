@@ -1,0 +1,10 @@
+target:
+  name: muslim-pro
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/muslim-pro
+  bounty: true
+  program_url: https://yeswehack.com/programs/muslim-pro
+  domains:
+  - muslimpro.com
+  github_orgs: []
+  excluded: []

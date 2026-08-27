@@ -1,0 +1,10 @@
+target:
+  name: rarible
+  platform: bounty
+  disclosure: https://bugcrowd.com/rarible-ogmbb
+  bounty: true
+  program_url: https://bugcrowd.com/rarible-ogmbb
+  domains:
+  - rarible.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: didi
+  platform: bounty
+  disclosure: https://sec.didichuxing.com
+  bounty: true
+  program_url: https://sec.didichuxing.com
+  domains:
+  - didichuxing.com
+  - xiaojukeji.com
+  github_orgs: []
+  excluded: []

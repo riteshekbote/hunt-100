@@ -1,0 +1,10 @@
+target:
+  name: nozbe
+  platform: bounty
+  disclosure: https://nozbe.com/bug-bounty/
+  bounty: true
+  program_url: https://nozbe.com/bug-bounty/
+  domains:
+  - nozbe.com
+  github_orgs: []
+  excluded: []

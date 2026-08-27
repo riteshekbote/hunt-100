@@ -1,0 +1,11 @@
+target:
+  name: speakap-responsible-disclosure
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/speakap/speakapresponsibledisclosure/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/speakap/speakapresponsibledisclosure/detail
+  domains:
+  - speakap.com
+  - speakap.io
+  github_orgs: []
+  excluded: []

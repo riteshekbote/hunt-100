@@ -1,0 +1,11 @@
+target:
+  name: voys-voipgrid
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/voys/voipgrid-voys/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/voys/voipgrid-voys/detail
+  domains:
+  - voipgrid.nl
+  - voys.be
+  github_orgs: []
+  excluded: []

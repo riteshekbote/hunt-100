@@ -1,0 +1,11 @@
+target:
+  name: ovo-bug-bounty-program
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/ovo-bug-bounty-program
+  bounty: true
+  program_url: https://yeswehack.com/programs/ovo-bug-bounty-program
+  domains:
+  - ovo.id
+  - taralite.com
+  github_orgs: []
+  excluded: []

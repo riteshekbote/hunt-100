@@ -1,0 +1,10 @@
+target:
+  name: shakepay
+  platform: bounty
+  disclosure: https://legal.shakepay.com/bug-bounty-program
+  bounty: true
+  program_url: https://legal.shakepay.com/bug-bounty-program
+  domains:
+  - shakepay.com
+  github_orgs: []
+  excluded: []

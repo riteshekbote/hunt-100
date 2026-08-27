@@ -1,0 +1,10 @@
+target:
+  name: arlo-cash-rewards
+  platform: bounty
+  disclosure: https://bugcrowd.com/arlo
+  bounty: true
+  program_url: https://bugcrowd.com/arlo
+  domains:
+  - arlo.com
+  github_orgs: []
+  excluded: []

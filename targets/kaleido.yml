@@ -1,0 +1,11 @@
+target:
+  name: kaleido
+  platform: bounty
+  disclosure: https://bugcrowd.com/kaleido
+  bounty: true
+  program_url: https://bugcrowd.com/kaleido
+  domains:
+  - designify.com
+  - kaleido.ai
+  github_orgs: []
+  excluded: []

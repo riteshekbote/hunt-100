@@ -1,0 +1,10 @@
+target:
+  name: het-laatste-nieuws
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/hetlaatstenieuws/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/hetlaatstenieuws/detail
+  domains:
+  - hln.be
+  github_orgs: []
+  excluded: []

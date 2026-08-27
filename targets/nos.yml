@@ -1,0 +1,10 @@
+target:
+  name: nos
+  platform: bounty
+  disclosure: https://over.nos.nl/organisatie/regelgeving/
+  bounty: true
+  program_url: https://over.nos.nl/organisatie/regelgeving/
+  domains:
+  - nos.nl
+  github_orgs: []
+  excluded: []

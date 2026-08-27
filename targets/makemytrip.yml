@@ -1,0 +1,10 @@
+target:
+  name: makemytrip
+  platform: bounty
+  disclosure: https://www.makemytrip.com/pwa-hlp/mmtbb/report
+  bounty: true
+  program_url: https://www.makemytrip.com/pwa-hlp/mmtbb/report
+  domains:
+  - makemytrip.com
+  github_orgs: []
+  excluded: []

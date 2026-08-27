@@ -1,0 +1,10 @@
+target:
+  name: easyname
+  platform: bounty
+  disclosure: https://www.easyname.de/de/support/easyname/253-bug-bounty-programm
+  bounty: true
+  program_url: https://www.easyname.de/de/support/easyname/253-bug-bounty-programm
+  domains:
+  - easyname.com
+  github_orgs: []
+  excluded: []

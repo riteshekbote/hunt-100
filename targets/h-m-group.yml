@@ -1,0 +1,11 @@
+target:
+  name: h-m-group
+  platform: bounty
+  disclosure: https://www2.hm.com/security.txt
+  bounty: true
+  program_url: https://www2.hm.com/security.txt
+  domains:
+  - hm.com
+  - cos.com
+  github_orgs: []
+  excluded: []

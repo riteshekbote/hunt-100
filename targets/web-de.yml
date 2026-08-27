@@ -1,0 +1,11 @@
+target:
+  name: web-de
+  platform: bounty
+  disclosure: https://bugbounty.web.de/english.html
+  bounty: true
+  program_url: https://bugbounty.web.de/english.html
+  domains:
+  - web.de
+  - gmx.de
+  github_orgs: []
+  excluded: []

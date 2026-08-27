@@ -1,0 +1,10 @@
+target:
+  name: de-morgen
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/dpgm/demorgen/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/dpgm/demorgen/detail
+  domains:
+  - demorgen.be
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: elo
+  platform: bounty
+  disclosure: https://bugbounty.hackaflag.com.br/hempresa.php?id=13
+  bounty: true
+  program_url: https://bugbounty.hackaflag.com.br/hempresa.php?id=13
+  domains:
+  - elo.com.br
+  github_orgs: []
+  excluded: []

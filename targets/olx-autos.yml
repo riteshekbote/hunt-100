@@ -1,0 +1,11 @@
+target:
+  name: olx-autos
+  platform: bounty
+  disclosure: https://bugcrowd.com/olxgroup
+  bounty: true
+  program_url: https://bugcrowd.com/olxgroup
+  domains:
+  - 321sprzedane.pl
+  - letgo.com
+  github_orgs: []
+  excluded: []

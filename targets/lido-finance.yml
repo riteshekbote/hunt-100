@@ -1,0 +1,10 @@
+target:
+  name: lido-finance
+  platform: bounty
+  disclosure: https://immunefi.com/bounty/lido/
+  bounty: true
+  program_url: https://immunefi.com/bounty/lido/
+  domains:
+  - lido.fi
+  github_orgs: []
+  excluded: []

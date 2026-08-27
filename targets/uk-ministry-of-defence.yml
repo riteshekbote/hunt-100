@@ -1,0 +1,11 @@
+target:
+  name: uk-ministry-of-defence
+  platform: bounty
+  disclosure: https://www.gov.uk/guidance/report-a-vulnerability-on-an-mod-system
+  bounty: true
+  program_url: https://www.gov.uk/guidance/report-a-vulnerability-on-an-mod-system
+  domains:
+  - mod.uk
+  - mod.gov.uk
+  github_orgs: []
+  excluded: []

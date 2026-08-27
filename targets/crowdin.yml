@@ -1,0 +1,10 @@
+target:
+  name: crowdin
+  platform: bounty
+  disclosure: https://support.crowdin.com/vulnerability-policy/
+  bounty: true
+  program_url: https://support.crowdin.com/vulnerability-policy/
+  domains:
+  - crowdin.com
+  github_orgs: []
+  excluded: []

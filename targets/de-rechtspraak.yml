@@ -1,0 +1,10 @@
+target:
+  name: de-rechtspraak
+  platform: bounty
+  disclosure: https://www.rechtspraak.nl/English/Contact/Pages/Contact-point-vulnerabilities-responsible-disclosure.aspx
+  bounty: true
+  program_url: https://www.rechtspraak.nl/English/Contact/Pages/Contact-point-vulnerabilities-responsible-disclosure.aspx
+  domains:
+  - rechtspraak.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: avrotros
+  platform: bounty
+  disclosure: https://www.avrotros.nl/privacy/responsible-disclosure/
+  bounty: true
+  program_url: https://www.avrotros.nl/privacy/responsible-disclosure/
+  domains:
+  - avrotros.nl
+  github_orgs: []
+  excluded: []

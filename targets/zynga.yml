@@ -1,0 +1,11 @@
+target:
+  name: zynga
+  platform: bounty
+  disclosure: https://www.zynga.com/security/whitehats/
+  bounty: true
+  program_url: https://www.zynga.com/security/whitehats/
+  domains:
+  - zynga.com
+  - zyngagames.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: pixabay
+  platform: bounty
+  disclosure: https://bugcrowd.com/pixabay
+  bounty: true
+  program_url: https://bugcrowd.com/pixabay
+  domains:
+  - pixabay.com
+  github_orgs: []
+  excluded: []

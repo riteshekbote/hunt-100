@@ -1,0 +1,10 @@
+target:
+  name: virtuswap
+  platform: bounty
+  disclosure: https://hackenproof.com/virtuswap/virtuswap-dex-app-1
+  bounty: true
+  program_url: https://hackenproof.com/virtuswap/virtuswap-dex-app-1
+  domains:
+  - virtuswap.io
+  github_orgs: []
+  excluded: []

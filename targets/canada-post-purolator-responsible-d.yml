@@ -1,0 +1,11 @@
+target:
+  name: canada-post-purolator-responsible-d
+  platform: bounty
+  disclosure: https://www.intigriti.com/programs/innovapost/innovapost/detail
+  bounty: true
+  program_url: https://www.intigriti.com/programs/innovapost/innovapost/detail
+  domains:
+  - canadapost-postescanada.ca
+  - postescanada-canadapost.ca
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: host-gator
+  platform: bounty
+  disclosure: https://bugcrowd.com/hostgator
+  bounty: true
+  program_url: https://bugcrowd.com/hostgator
+  domains:
+  - hostgator.com.br
+  - hostgator.mx
+  github_orgs: []
+  excluded: []

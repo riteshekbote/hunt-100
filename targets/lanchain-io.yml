@@ -1,0 +1,11 @@
+target:
+  name: lanchain-io
+  platform: bounty
+  disclosure: https://hackenproof.com/latoken/lachain-dot-io
+  bounty: true
+  program_url: https://hackenproof.com/latoken/lachain-dot-io
+  domains:
+  - lachain.io
+  - ladex.exchange
+  github_orgs: []
+  excluded: []

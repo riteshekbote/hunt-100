@@ -1,0 +1,11 @@
+target:
+  name: indmoney
+  platform: bounty
+  disclosure: https://www.indmoney.com/page/bug-bounty
+  bounty: true
+  program_url: https://www.indmoney.com/page/bug-bounty
+  domains:
+  - indmoney.com
+  - indiawealth.in
+  github_orgs: []
+  excluded: []

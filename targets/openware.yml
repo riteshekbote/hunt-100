@@ -1,0 +1,10 @@
+target:
+  name: openware
+  platform: bounty
+  disclosure: https://hackenproof.com/openware/openware
+  bounty: true
+  program_url: https://hackenproof.com/openware/openware
+  domains:
+  - yellow.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: t-mobile-cz
+  platform: bounty
+  disclosure: https://www.t-mobile.cz/bug-bounty
+  bounty: true
+  program_url: https://www.t-mobile.cz/bug-bounty
+  domains:
+  - t-mobile.cz
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: logmeonce
+  platform: bounty
+  disclosure: https://www.logmeonce.com/vulnerability-disclosure-policy/
+  bounty: true
+  program_url: https://www.logmeonce.com/vulnerability-disclosure-policy/
+  domains:
+  - logmeonce.com
+  github_orgs: []
+  excluded: []

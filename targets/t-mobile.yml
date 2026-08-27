@@ -1,0 +1,11 @@
+target:
+  name: t-mobile
+  platform: bounty
+  disclosure: https://bugcrowd.com/t-mobile
+  bounty: true
+  program_url: https://bugcrowd.com/t-mobile
+  domains:
+  - api.t-mobile.com
+  - metrobyt-mobile.com
+  github_orgs: []
+  excluded: []

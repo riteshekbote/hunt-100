@@ -1,0 +1,11 @@
+target:
+  name: immutable-bug-bounty
+  platform: bounty
+  disclosure: https://bugcrowd.com/immutable-og
+  bounty: true
+  program_url: https://bugcrowd.com/immutable-og
+  domains:
+  - immutable.com
+  - imtbl.com
+  github_orgs: []
+  excluded: []

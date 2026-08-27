@@ -1,0 +1,11 @@
+target:
+  name: bigone-global-exchange
+  platform: bounty
+  disclosure: https://hackenproof.com/bigone-global-exchange/bigone-global-exchange
+  bounty: true
+  program_url: https://hackenproof.com/bigone-global-exchange/bigone-global-exchange
+  domains:
+  - big.one
+  - bigone.com
+  github_orgs: []
+  excluded: []
