@@ -61,7 +61,7 @@ jobs:
           d = yaml.safe_load(open('scope-100.yml'))
           targets = d['targets']
           with open('ctx-targets.md', 'w') as f:
-              for t in targets:
+              for t in targets[:100]:  # shard 100 per run, xhigh handles deep
                   f.write(f"## TARGET: {t['name']}\n")
                   f.write(f"- disclosure email: {t.get('disclosure','')}\n")
                   f.write(f"- bounty: {t.get('bounty','')}\n")
