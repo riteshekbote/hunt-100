@@ -1,0 +1,11 @@
+target:
+  name: bitdefender-box-v2
+  platform: bounty
+  disclosure: https://bugcrowd.com/bitdefenderbox2
+  bounty: true
+  program_url: https://bugcrowd.com/bitdefenderbox2
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

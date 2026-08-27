@@ -1,0 +1,11 @@
+target:
+  name: vhx
+  platform: bounty
+  disclosure: https://hackerone.com/vhx
+  bounty: true
+  program_url: https://hackerone.com/vhx
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

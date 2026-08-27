@@ -1,0 +1,11 @@
+target:
+  name: forescout-technologies
+  platform: bounty
+  disclosure: https://hackerone.com/forescout_technologies
+  bounty: true
+  program_url: https://hackerone.com/forescout_technologies
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

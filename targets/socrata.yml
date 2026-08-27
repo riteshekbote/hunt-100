@@ -1,0 +1,11 @@
+target:
+  name: socrata
+  platform: bounty
+  disclosure: https://bugcrowd.com/socrata
+  bounty: true
+  program_url: https://bugcrowd.com/socrata
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

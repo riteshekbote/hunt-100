@@ -1,0 +1,11 @@
+target:
+  name: innogames
+  platform: bounty
+  disclosure: https://hackerone.com/innogames
+  bounty: true
+  program_url: https://hackerone.com/innogames
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

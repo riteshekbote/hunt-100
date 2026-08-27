@@ -1,0 +1,11 @@
+target:
+  name: amazon
+  platform: bounty
+  disclosure: https://hackerone.com/amazonvrp
+  bounty: true
+  program_url: https://hackerone.com/amazonvrp
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

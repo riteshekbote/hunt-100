@@ -1,0 +1,11 @@
+target:
+  name: tube8
+  platform: bounty
+  disclosure: https://hackerone.com/tube8
+  bounty: true
+  program_url: https://hackerone.com/tube8
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

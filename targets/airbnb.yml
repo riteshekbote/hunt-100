@@ -1,0 +1,11 @@
+target:
+  name: airbnb
+  platform: bounty
+  disclosure: https://hackerone.com/airbnb
+  bounty: true
+  program_url: https://hackerone.com/airbnb
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

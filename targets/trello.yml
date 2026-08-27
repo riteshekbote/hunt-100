@@ -1,0 +1,11 @@
+target:
+  name: trello
+  platform: bounty
+  disclosure: https://bugcrowd.com/trello
+  bounty: true
+  program_url: https://bugcrowd.com/trello
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

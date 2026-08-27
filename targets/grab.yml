@@ -1,0 +1,11 @@
+target:
+  name: grab
+  platform: bounty
+  disclosure: https://hackerone.com/grab
+  bounty: true
+  program_url: https://hackerone.com/grab
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

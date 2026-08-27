@@ -1,0 +1,11 @@
+target:
+  name: rapyd
+  platform: bounty
+  disclosure: https://bugcrowd.com/rapyd
+  bounty: true
+  program_url: https://bugcrowd.com/rapyd
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

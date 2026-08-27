@@ -1,0 +1,11 @@
+target:
+  name: purevpn
+  platform: bounty
+  disclosure: https://bugcrowd.com/purevpn
+  bounty: true
+  program_url: https://bugcrowd.com/purevpn
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

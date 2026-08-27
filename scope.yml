@@ -3341,4 +3341,1054 @@ targets:
   - www.zksync.io
   github_orgs: []
   excluded: []
+- name: 1password-game
+  platform: bounty
+  disclosure: https://bugcrowd.com/agilebits
+  bounty: true
+  program_url: https://bugcrowd.com/agilebits
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: axis-os
+  platform: bounty
+  disclosure: https://bugcrowd.com/engagements/axis-os-public
+  bounty: true
+  program_url: https://bugcrowd.com/engagements/axis-os-public
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: accellion
+  platform: bounty
+  disclosure: https://bugcrowd.com/accellion-public
+  bounty: true
+  program_url: https://bugcrowd.com/accellion-public
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: acorns-llc
+  platform: bounty
+  disclosure: https://bugcrowd.com/acorns
+  bounty: true
+  program_url: https://bugcrowd.com/acorns
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: airbnb
+  platform: bounty
+  disclosure: https://hackerone.com/airbnb
+  bounty: true
+  program_url: https://hackerone.com/airbnb
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: algolia
+  platform: bounty
+  disclosure: https://hackerone.com/algolia
+  bounty: true
+  program_url: https://hackerone.com/algolia
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: allegro
+  platform: bounty
+  disclosure: https://hackerone.com/allegro
+  bounty: true
+  program_url: https://hackerone.com/allegro
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: amazon
+  platform: bounty
+  disclosure: https://hackerone.com/amazonvrp
+  bounty: true
+  program_url: https://hackerone.com/amazonvrp
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: arkose-labs
+  platform: bounty
+  disclosure: https://bugcrowd.com/arkose-labs
+  bounty: true
+  program_url: https://bugcrowd.com/arkose-labs
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: arlo-cash-rewards-program
+  platform: bounty
+  disclosure: https://bugcrowd.com/arlo
+  bounty: true
+  program_url: https://bugcrowd.com/arlo
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: aruba-networks
+  platform: bounty
+  disclosure: https://bugcrowd.com/aruba-public
+  bounty: true
+  program_url: https://bugcrowd.com/aruba-public
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: atlassian
+  platform: bounty
+  disclosure: https://bugcrowd.com/atlassian
+  bounty: true
+  program_url: https://bugcrowd.com/atlassian
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: atlassian-opsgenie
+  platform: bounty
+  disclosure: https://bugcrowd.com/opsgenie
+  bounty: true
+  program_url: https://bugcrowd.com/opsgenie
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: badoo
+  platform: bounty
+  disclosure: https://hackerone.com/badoo
+  bounty: true
+  program_url: https://hackerone.com/badoo
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: binance
+  platform: bounty
+  disclosure: https://bugcrowd.com/binance
+  bounty: true
+  program_url: https://bugcrowd.com/binance
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: bitdefender
+  platform: bounty
+  disclosure: https://bugcrowd.com/bitdefender
+  bounty: true
+  program_url: https://bugcrowd.com/bitdefender
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: bitdefender-box-v2
+  platform: bounty
+  disclosure: https://bugcrowd.com/bitdefenderbox2
+  bounty: true
+  program_url: https://bugcrowd.com/bitdefenderbox2
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: boozt-fashion
+  platform: bounty
+  disclosure: https://bugcrowd.com/boozt-og
+  bounty: true
+  program_url: https://bugcrowd.com/boozt-og
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: bugpoc
+  platform: bounty
+  disclosure: https://bugcrowd.com/bugpoc-mbb
+  bounty: true
+  program_url: https://bugcrowd.com/bugpoc-mbb
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: bugcrowd
+  platform: bounty
+  disclosure: https://bugcrowd.com/bugcrowd
+  bounty: true
+  program_url: https://bugcrowd.com/bugcrowd
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: caffeine
+  platform: bounty
+  disclosure: https://bugcrowd.com/caffeine
+  bounty: true
+  program_url: https://bugcrowd.com/caffeine
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: chainlink
+  platform: bounty
+  disclosure: https://hackerone.com/chainlink
+  bounty: true
+  program_url: https://hackerone.com/chainlink
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: cisco-meraki
+  platform: bounty
+  disclosure: https://bugcrowd.com/ciscomeraki
+  bounty: true
+  program_url: https://bugcrowd.com/ciscomeraki
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: clario
+  platform: bounty
+  disclosure: https://hackerone.com/clario
+  bounty: true
+  program_url: https://hackerone.com/clario
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: cloudinary
+  platform: bounty
+  disclosure: https://bugcrowd.com/cloudinary
+  bounty: true
+  program_url: https://bugcrowd.com/cloudinary
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: cloudways
+  platform: bounty
+  disclosure: https://bugcrowd.com/cloudways
+  bounty: true
+  program_url: https://bugcrowd.com/cloudways
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: curl
+  platform: bounty
+  disclosure: https://hackerone.com/curl
+  bounty: true
+  program_url: https://hackerone.com/curl
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: dailymotion
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/dailymotion-public-bug-bounty
+  bounty: true
+  program_url: https://yeswehack.com/programs/dailymotion-public-bug-bounty
+  domains:
+  - yeswehack.com
+  - www.yeswehack.com
+  github_orgs: []
+  excluded: []
+- name: dell-technologies-application-
+  platform: bounty
+  disclosure: https://bugcrowd.com/dell-com
+  bounty: true
+  program_url: https://bugcrowd.com/dell-com
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: dell-technologies-products-bug
+  platform: bounty
+  disclosure: https://bugcrowd.com/dell-product
+  bounty: true
+  program_url: https://bugcrowd.com/dell-product
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: digitalocean
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/digitalocean/digitalocean
+  bounty: true
+  program_url: https://app.intigriti.com/programs/digitalocean/digitalocean
+  domains:
+  - app.intigriti.com
+  - www.app.intigriti.com
+  github_orgs: []
+  excluded: []
+- name: directly
+  platform: bounty
+  disclosure: https://bugcrowd.com/directly
+  bounty: true
+  program_url: https://bugcrowd.com/directly
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: discourse
+  platform: bounty
+  disclosure: https://hackerone.com/discourse
+  bounty: true
+  program_url: https://hackerone.com/discourse
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: etsy
+  platform: bounty
+  disclosure: https://bugcrowd.com/etsy
+  bounty: true
+  program_url: https://bugcrowd.com/etsy
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: exness
+  platform: bounty
+  disclosure: https://hackerone.com/exness
+  bounty: true
+  program_url: https://hackerone.com/exness
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: expressvpn
+  platform: bounty
+  disclosure: https://bugcrowd.com/expressvpn
+  bounty: true
+  program_url: https://bugcrowd.com/expressvpn
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: fis
+  platform: bounty
+  disclosure: https://bugcrowd.com/fis
+  bounty: true
+  program_url: https://bugcrowd.com/fis
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: fiat-chrysler-automobiles
+  platform: bounty
+  disclosure: https://bugcrowd.com/fca
+  bounty: true
+  program_url: https://bugcrowd.com/fca
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: files-com
+  platform: bounty
+  disclosure: https://hackerone.com/files
+  bounty: true
+  program_url: https://hackerone.com/files
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: fitbit
+  platform: bounty
+  disclosure: https://bugcrowd.com/fitbit
+  bounty: true
+  program_url: https://bugcrowd.com/fitbit
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: ford
+  platform: bounty
+  disclosure: https://hackerone.com/ford
+  bounty: true
+  program_url: https://hackerone.com/ford
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: forescout-technologies
+  platform: bounty
+  disclosure: https://hackerone.com/forescout_technologies
+  bounty: true
+  program_url: https://hackerone.com/forescout_technologies
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: foxycart
+  platform: bounty
+  disclosure: https://bugcrowd.com/foxycart
+  bounty: true
+  program_url: https://bugcrowd.com/foxycart
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: go-jek
+  platform: bounty
+  disclosure: https://bugcrowd.com/gojek
+  bounty: true
+  program_url: https://bugcrowd.com/gojek
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: grab
+  platform: bounty
+  disclosure: https://hackerone.com/grab
+  bounty: true
+  program_url: https://hackerone.com/grab
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: ibotta
+  platform: bounty
+  disclosure: https://bugcrowd.com/ibotta
+  bounty: true
+  program_url: https://bugcrowd.com/ibotta
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: invision
+  platform: bounty
+  disclosure: https://bugcrowd.com/invision
+  bounty: true
+  program_url: https://bugcrowd.com/invision
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: indeed
+  platform: bounty
+  disclosure: https://bugcrowd.com/indeed
+  bounty: true
+  program_url: https://bugcrowd.com/indeed
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: inditex
+  platform: bounty
+  disclosure: https://hackerone.com/inditex
+  bounty: true
+  program_url: https://hackerone.com/inditex
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: innogames
+  platform: bounty
+  disclosure: https://hackerone.com/innogames
+  bounty: true
+  program_url: https://hackerone.com/innogames
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: intercom
+  platform: bounty
+  disclosure: https://bugcrowd.com/intercom
+  bounty: true
+  program_url: https://bugcrowd.com/intercom
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: jumbo-privacy
+  platform: bounty
+  disclosure: https://bugcrowd.com/jumboprivacy
+  bounty: true
+  program_url: https://bugcrowd.com/jumboprivacy
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: lastpass
+  platform: bounty
+  disclosure: https://bugcrowd.com/lastpass
+  bounty: true
+  program_url: https://bugcrowd.com/lastpass
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: liberapay
+  platform: bounty
+  disclosure: https://hackerone.com/liberapay
+  bounty: true
+  program_url: https://hackerone.com/liberapay
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: livestream
+  platform: bounty
+  disclosure: https://hackerone.com/livestream
+  bounty: true
+  program_url: https://hackerone.com/livestream
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: lob
+  platform: bounty
+  disclosure: https://hackerone.com/lob
+  bounty: true
+  program_url: https://hackerone.com/lob
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: luno
+  platform: bounty
+  disclosure: luno-esf@submit.bugcrowd.com
+  bounty: true
+  program_url: https://bugcrowd.com/luno-og
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: magento
+  platform: bounty
+  disclosure: https://hackerone.com/magento
+  bounty: true
+  program_url: https://hackerone.com/magento
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: maker-ecosystem-growth-holding
+  platform: bounty
+  disclosure: https://hackerone.com/makerdao_bbp
+  bounty: true
+  program_url: https://hackerone.com/makerdao_bbp
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: mastercard
+  platform: bounty
+  disclosure: https://bugcrowd.com/mastercard
+  bounty: true
+  program_url: https://bugcrowd.com/mastercard
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: mattermost
+  platform: bounty
+  disclosure: https://bugcrowd.com/engagements/mattermost-mbb-public
+  bounty: true
+  program_url: https://bugcrowd.com/engagements/mattermost-mbb-public
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: moneytree-kk
+  platform: bounty
+  disclosure: https://bugcrowd.com/moneytreekkog
+  bounty: true
+  program_url: https://bugcrowd.com/moneytreekkog
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: netgear-cash-rewards
+  platform: bounty
+  disclosure: https://bugcrowd.com/netgear
+  bounty: true
+  program_url: https://bugcrowd.com/netgear
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: neophotonics
+  platform: bounty
+  disclosure: https://bugcrowd.com/neophotonics
+  bounty: true
+  program_url: https://bugcrowd.com/neophotonics
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: owasp-zap
+  platform: bounty
+  disclosure: https://bugcrowd.com/owaspzap
+  bounty: true
+  program_url: https://bugcrowd.com/owaspzap
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: octopus
+  platform: bounty
+  disclosure: https://bugcrowd.com/octopus-og
+  bounty: true
+  program_url: https://bugcrowd.com/octopus-og
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: omise
+  platform: bounty
+  disclosure: https://hackerone.com/omise
+  bounty: true
+  program_url: https://hackerone.com/omise
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: pinterest
+  platform: bounty
+  disclosure: https://bugcrowd.com/pinterest/
+  bounty: true
+  program_url: https://bugcrowd.com/pinterest/
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: planethoster
+  platform: bounty
+  disclosure: https://bugcrowd.com/planethosterinc
+  bounty: true
+  program_url: https://bugcrowd.com/planethosterinc
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: postmates
+  platform: bounty
+  disclosure: https://hackerone.com/postmates
+  bounty: true
+  program_url: https://hackerone.com/postmates
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: priceline
+  platform: bounty
+  disclosure: https://hackerone.com/priceline
+  bounty: true
+  program_url: https://hackerone.com/priceline
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: purevpn
+  platform: bounty
+  disclosure: https://bugcrowd.com/purevpn
+  bounty: true
+  program_url: https://bugcrowd.com/purevpn
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: quantopian
+  platform: bounty
+  disclosure: https://hackerone.com/quantopian
+  bounty: true
+  program_url: https://hackerone.com/quantopian
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: rapyd
+  platform: bounty
+  disclosure: https://bugcrowd.com/rapyd
+  bounty: true
+  program_url: https://bugcrowd.com/rapyd
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: realself
+  platform: bounty
+  disclosure: https://bugcrowd.com/realself
+  bounty: true
+  program_url: https://bugcrowd.com/realself
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: refereum
+  platform: bounty
+  disclosure: https://hackerone.com/refereum
+  bounty: true
+  program_url: https://hackerone.com/refereum
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: six-group
+  platform: bounty
+  disclosure: https://hackerone.com/six-group
+  bounty: true
+  program_url: https://hackerone.com/six-group
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: securedrop
+  platform: bounty
+  disclosure: https://bugcrowd.com/freedomofpress
+  bounty: true
+  program_url: https://bugcrowd.com/freedomofpress
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: semmle
+  platform: bounty
+  disclosure: https://hackerone.com/semmle
+  bounty: true
+  program_url: https://hackerone.com/semmle
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: socrata
+  platform: bounty
+  disclosure: https://bugcrowd.com/socrata
+  bounty: true
+  program_url: https://bugcrowd.com/socrata
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: sophos
+  platform: bounty
+  disclosure: https://bugcrowd.com/sophos
+  bounty: true
+  program_url: https://bugcrowd.com/sophos
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: soundcloud
+  platform: bounty
+  disclosure: https://bugcrowd.com/soundcloud
+  bounty: true
+  program_url: https://bugcrowd.com/soundcloud
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: square
+  platform: bounty
+  disclosure: https://bugcrowd.com/square
+  bounty: true
+  program_url: https://bugcrowd.com/square
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: square-open-source
+  platform: bounty
+  disclosure: https://bugcrowd.com/squareopensource
+  bounty: true
+  program_url: https://bugcrowd.com/squareopensource
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: squid-cache-ibb
+  platform: bounty
+  disclosure: https://hackerone.com/ibb-squid-cache
+  bounty: true
+  program_url: https://hackerone.com/ibb-squid-cache
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: starlink
+  platform: bounty
+  disclosure: https://bugcrowd.com/spacex
+  bounty: true
+  program_url: https://bugcrowd.com/spacex
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: statuspage-io
+  platform: bounty
+  disclosure: https://bugcrowd.com/statuspage
+  bounty: true
+  program_url: https://bugcrowd.com/statuspage
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: takeaway-com
+  platform: bounty
+  disclosure: https://bugcrowd.com/takeaway
+  bounty: true
+  program_url: https://bugcrowd.com/takeaway
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: transferwise
+  platform: bounty
+  disclosure: https://bugcrowd.com/transferwise
+  bounty: true
+  program_url: https://bugcrowd.com/transferwise
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: trello
+  platform: bounty
+  disclosure: https://bugcrowd.com/trello
+  bounty: true
+  program_url: https://bugcrowd.com/trello
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: trustpilot
+  platform: bounty
+  disclosure: https://hackerone.com/trustpilot
+  bounty: true
+  program_url: https://hackerone.com/trustpilot
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: tube8
+  platform: bounty
+  disclosure: https://hackerone.com/tube8
+  bounty: true
+  program_url: https://hackerone.com/tube8
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: twilio
+  platform: bounty
+  disclosure: https://bugcrowd.com/twilio
+  bounty: true
+  program_url: https://bugcrowd.com/twilio
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: uma-project
+  platform: bounty
+  disclosure: https://hackerone.com/uma_project
+  bounty: true
+  program_url: https://hackerone.com/uma_project
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: usaa
+  platform: bounty
+  disclosure: https://bugcrowd.com/usaa
+  bounty: true
+  program_url: https://bugcrowd.com/usaa
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: ubiquiti-networks
+  platform: bounty
+  disclosure: https://hackerone.com/ui
+  bounty: true
+  program_url: https://hackerone.com/ui
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: upwork
+  platform: bounty
+  disclosure: https://bugcrowd.com/upwork
+  bounty: true
+  program_url: https://bugcrowd.com/upwork
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: vhx
+  platform: bounty
+  disclosure: https://hackerone.com/vhx
+  bounty: true
+  program_url: https://hackerone.com/vhx
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: vimeo
+  platform: bounty
+  disclosure: https://hackerone.com/vimeo
+  bounty: true
+  program_url: https://hackerone.com/vimeo
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: western-union
+  platform: bounty
+  disclosure: https://bugcrowd.com/westernunion
+  bounty: true
+  program_url: https://bugcrowd.com/westernunion
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: whmcs
+  platform: bounty
+  disclosure: https://bugcrowd.com/whmcs
+  bounty: true
+  program_url: https://bugcrowd.com/whmcs
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: you-need-a-budget-ynab
+  platform: bounty
+  disclosure: https://bugcrowd.com/ynab
+  bounty: true
+  program_url: https://bugcrowd.com/ynab
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: dfuse-platform
+  platform: bounty
+  disclosure: https://hackerone.com/dfuse
+  bounty: true
+  program_url: https://hackerone.com/dfuse
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
+- name: dropbox
+  platform: bounty
+  disclosure: https://bugcrowd.com/dropbox/
+  bounty: true
+  program_url: https://bugcrowd.com/dropbox/
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
+- name: indrive
+  platform: bounty
+  disclosure: https://hackerone.com/indrive
+  bounty: true
+  program_url: https://hackerone.com/indrive
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []
 probe_allow: '*|0x|23andme|24sessions|84codes|abnamro|accredible|actility|aholddelhaize|airmiles|airvpn|alscotoday|alumniforwarding|alwaysdata|ampcode|apache|app|aquasec|ark|artsy|asana|augur|automox|autospf|autotrader|avast|avira|azimo|backblaze|bentley|bitgo|bitmex|bitski|bitsoffreedom|bitwala|bladestorm|blog|bounty|bugbounty|bugcrowd|bugs|build|bunq|campaignmonitor|canva|careevolution|city-data|classdojo|clause|clenergy|cloudcannon|coinapp|coinbase|coinjar|coinpayments|cointracker|connect|corp|corporate|coxautoinc|cpanel|cr|dealer|dealertrack|debricked|definityinc|dentrix|deribit|deskpro|dev|developer|developers|devolksbank|dhi|digitalhealthcompliance|dmarcreport|dnb|docker|docs|dragonex|duocircle|eligible|emsisoft|en|eset|etherscan|eurid|explore|f-secure|facebook|fair|fanduel|fastmail|federacy|ferm-rotterdam|flow|fusion|g|gamma|gcore|getdpd|ghostscript|github|global|goldmansachs|google|hackerone|hacktify|halodoc|hellosign|help|heroku|hex-rays|hitbtc|home|honest|hostinger|hub|hunter|idena|immutablesoft|inboxissue|independer|infstones|ing|instructure|integraxor|intel|intigriti|intl|ironcorelabs|jackaldao|jetbrains|jumplead|kbb|kissflow|kraken|kubernetes|latentpatterns|layerzero|leetcode|liquidweb|lisk|liveclicker|loginradius|lyft|mailflowmonitoring|majidalfuttaim|malwarebytes|managewp|manheim|marktplaats|medium|mega|microstrategy|monash|monetha|mozilla|mujs|mural|myemma|ncsc|nginx|notion|nowpayments|nureply|nwbbank|offensive-security|olacabs|olark|onfo|onlineseminar|openssl|outboundsmtp|packagemanager|palantir|parabol|parity|pastecoin|pathao|paypal|pcextreme|perldoc|personalcapital|phishprotection|pingidentity|plisio|pon-cat|posit|productboard|protonmail|public|python|qiwi|qtrade|qualcomm|quantstamp|range|redstorm|reportgarden|ricoh|riotgames|ripple|rockset|rstudio|sailthru|samsungtvbounty|scout|scrapinghub|securecyberfuture|security|sendsafely|serenityos|shapesecurity|shinyapps|signalfx|silvergoldbull|simple|slack|snyk|solaredge|splendiddata|spokeo|spotify|spreaker|staked|starbucks|starleaf|static|stellar|stripe|studo|support|swiggy|swisscom|synology|tarsnap|technet|telegram|telekom|tenantmigration|tls|tradingview|trezor|tron|trychameleon|tumblr|ui|umaproject|united|upserve|vauto|vicompany|vinsolutions|visma|volkis|vpnarea|vultr|wagwalking|walletconnect|web3|wefact|wetransfer|wevpn|wickr|wiki|wordfence|yandex|yeswehack|zaful|zapier|zendesk|zksync|zomato|zoom'

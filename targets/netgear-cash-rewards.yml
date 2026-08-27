@@ -1,0 +1,11 @@
+target:
+  name: netgear-cash-rewards
+  platform: bounty
+  disclosure: https://bugcrowd.com/netgear
+  bounty: true
+  program_url: https://bugcrowd.com/netgear
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

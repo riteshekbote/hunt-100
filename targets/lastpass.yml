@@ -1,0 +1,11 @@
+target:
+  name: lastpass
+  platform: bounty
+  disclosure: https://bugcrowd.com/lastpass
+  bounty: true
+  program_url: https://bugcrowd.com/lastpass
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: owasp-zap
+  platform: bounty
+  disclosure: https://bugcrowd.com/owaspzap
+  bounty: true
+  program_url: https://bugcrowd.com/owaspzap
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

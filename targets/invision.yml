@@ -1,0 +1,11 @@
+target:
+  name: invision
+  platform: bounty
+  disclosure: https://bugcrowd.com/invision
+  bounty: true
+  program_url: https://bugcrowd.com/invision
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

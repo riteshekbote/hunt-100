@@ -1,0 +1,11 @@
+target:
+  name: exness
+  platform: bounty
+  disclosure: https://hackerone.com/exness
+  bounty: true
+  program_url: https://hackerone.com/exness
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

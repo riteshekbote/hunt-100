@@ -1,0 +1,11 @@
+target:
+  name: square-open-source
+  platform: bounty
+  disclosure: https://bugcrowd.com/squareopensource
+  bounty: true
+  program_url: https://bugcrowd.com/squareopensource
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: semmle
+  platform: bounty
+  disclosure: https://hackerone.com/semmle
+  bounty: true
+  program_url: https://hackerone.com/semmle
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

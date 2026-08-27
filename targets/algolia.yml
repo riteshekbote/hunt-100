@@ -1,0 +1,11 @@
+target:
+  name: algolia
+  platform: bounty
+  disclosure: https://hackerone.com/algolia
+  bounty: true
+  program_url: https://hackerone.com/algolia
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

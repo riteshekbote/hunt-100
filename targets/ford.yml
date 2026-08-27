@@ -1,0 +1,11 @@
+target:
+  name: ford
+  platform: bounty
+  disclosure: https://hackerone.com/ford
+  bounty: true
+  program_url: https://hackerone.com/ford
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: dell-technologies-products-bug
+  platform: bounty
+  disclosure: https://bugcrowd.com/dell-product
+  bounty: true
+  program_url: https://bugcrowd.com/dell-product
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

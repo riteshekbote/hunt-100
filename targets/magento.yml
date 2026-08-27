@@ -1,0 +1,11 @@
+target:
+  name: magento
+  platform: bounty
+  disclosure: https://hackerone.com/magento
+  bounty: true
+  program_url: https://hackerone.com/magento
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

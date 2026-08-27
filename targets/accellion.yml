@@ -1,0 +1,11 @@
+target:
+  name: accellion
+  platform: bounty
+  disclosure: https://bugcrowd.com/accellion-public
+  bounty: true
+  program_url: https://bugcrowd.com/accellion-public
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

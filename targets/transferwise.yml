@@ -1,0 +1,11 @@
+target:
+  name: transferwise
+  platform: bounty
+  disclosure: https://bugcrowd.com/transferwise
+  bounty: true
+  program_url: https://bugcrowd.com/transferwise
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

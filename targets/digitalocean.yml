@@ -1,0 +1,11 @@
+target:
+  name: digitalocean
+  platform: bounty
+  disclosure: https://app.intigriti.com/programs/digitalocean/digitalocean
+  bounty: true
+  program_url: https://app.intigriti.com/programs/digitalocean/digitalocean
+  domains:
+  - app.intigriti.com
+  - www.app.intigriti.com
+  github_orgs: []
+  excluded: []

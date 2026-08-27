@@ -1,0 +1,11 @@
+target:
+  name: western-union
+  platform: bounty
+  disclosure: https://bugcrowd.com/westernunion
+  bounty: true
+  program_url: https://bugcrowd.com/westernunion
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

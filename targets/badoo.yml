@@ -1,0 +1,11 @@
+target:
+  name: badoo
+  platform: bounty
+  disclosure: https://hackerone.com/badoo
+  bounty: true
+  program_url: https://hackerone.com/badoo
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

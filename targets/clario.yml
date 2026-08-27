@@ -1,0 +1,11 @@
+target:
+  name: clario
+  platform: bounty
+  disclosure: https://hackerone.com/clario
+  bounty: true
+  program_url: https://hackerone.com/clario
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: atlassian-opsgenie
+  platform: bounty
+  disclosure: https://bugcrowd.com/opsgenie
+  bounty: true
+  program_url: https://bugcrowd.com/opsgenie
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

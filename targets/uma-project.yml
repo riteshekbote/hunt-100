@@ -1,0 +1,11 @@
+target:
+  name: uma-project
+  platform: bounty
+  disclosure: https://hackerone.com/uma_project
+  bounty: true
+  program_url: https://hackerone.com/uma_project
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

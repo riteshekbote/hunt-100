@@ -1,0 +1,11 @@
+target:
+  name: takeaway-com
+  platform: bounty
+  disclosure: https://bugcrowd.com/takeaway
+  bounty: true
+  program_url: https://bugcrowd.com/takeaway
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []
