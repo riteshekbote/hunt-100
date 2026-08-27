@@ -1,0 +1,11 @@
+target:
+  name: ghostscript
+  platform: email
+  disclosure: https://ghostscript.com/Bug_bounty_program.html
+  bounty: true
+  program_url: https://ghostscript.com/Bug_bounty_program.html
+  domains:
+  - ghostscript.com
+  - www.ghostscript.com
+  github_orgs: []
+  excluded: []

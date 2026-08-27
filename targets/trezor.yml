@@ -1,0 +1,11 @@
+target:
+  name: trezor
+  platform: email
+  disclosure: https://trezor.io/security/
+  bounty: true
+  program_url: https://trezor.io/security/
+  domains:
+  - trezor.io
+  - www.trezor.io
+  github_orgs: []
+  excluded: []

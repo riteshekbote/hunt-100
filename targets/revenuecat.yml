@@ -1,0 +1,11 @@
+target:
+  name: revenuecat
+  platform: email
+  disclosure: https://www.federacy.com/revenuecat
+  bounty: true
+  program_url: https://www.federacy.com/revenuecat
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

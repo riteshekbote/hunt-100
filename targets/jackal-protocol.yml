@@ -1,0 +1,11 @@
+target:
+  name: jackal-protocol
+  platform: email
+  disclosure: security@jackallabs.io
+  bounty: true
+  program_url: https://jackaldao.medium.com/announcement-jackal-bug-bounty-program-31d4e03ab7e2
+  domains:
+  - jackaldao.medium.com
+  - www.jackaldao.medium.com
+  github_orgs: []
+  excluded: []

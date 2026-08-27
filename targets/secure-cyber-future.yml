@@ -1,0 +1,11 @@
+target:
+  name: secure-cyber-future
+  platform: email
+  disclosure: contact@securecyberfuture.com
+  bounty: true
+  program_url: https://www.securecyberfuture.com/responsible-disclosure
+  domains:
+  - securecyberfuture.com
+  - www.securecyberfuture.com
+  github_orgs: []
+  excluded: []

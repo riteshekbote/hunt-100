@@ -1,0 +1,11 @@
+target:
+  name: riot-games
+  platform: email
+  disclosure: http://www.riotgames.com/riot-games-security
+  bounty: true
+  program_url: http://www.riotgames.com/riot-games-security
+  domains:
+  - riotgames.com
+  - www.riotgames.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: volkis
+  platform: email
+  disclosure: security@volkis.com.au
+  bounty: true
+  program_url: https://www.volkis.com.au/vulnerability-disclosure/
+  domains:
+  - volkis.com.au
+  - www.volkis.com.au
+  github_orgs: []
+  excluded: []

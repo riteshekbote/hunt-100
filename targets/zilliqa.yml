@@ -1,0 +1,11 @@
+target:
+  name: zilliqa
+  platform: email
+  disclosure: https://dev.zilliqa.com/docs/contributors/contribute-bug-bounty/
+  bounty: true
+  program_url: https://dev.zilliqa.com/docs/contributors/contribute-bug-bounty/
+  domains:
+  - dev.zilliqa.com
+  - www.dev.zilliqa.com
+  github_orgs: []
+  excluded: []

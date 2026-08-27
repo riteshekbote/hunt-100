@@ -1,0 +1,11 @@
+target:
+  name: ing-nl
+  platform: email
+  disclosure: responsible-disclosure@ing.com
+  bounty: true
+  program_url: https://www.ing.nl/de-ing/veilig-bankieren/fraude-melden/meldpunt-kwetsbaarheden/index.html
+  domains:
+  - ing.nl
+  - www.ing.nl
+  github_orgs: []
+  excluded: []

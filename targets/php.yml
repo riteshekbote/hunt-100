@@ -1,0 +1,11 @@
+target:
+  name: php
+  platform: email
+  disclosure: security@php.net
+  bounty: true
+  program_url: https://bugs.php.net/report.php?bug_type=Security
+  domains:
+  - bugs.php.net
+  - www.bugs.php.net
+  github_orgs: []
+  excluded: []

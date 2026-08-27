@@ -1,0 +1,11 @@
+target:
+  name: hunter-io
+  platform: email
+  disclosure: support@hunter.io
+  bounty: true
+  program_url: https://hunter.io/security-bounty-program
+  domains:
+  - hunter.io
+  - www.hunter.io
+  github_orgs: []
+  excluded: []

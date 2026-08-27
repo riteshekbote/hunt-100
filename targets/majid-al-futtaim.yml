@@ -1,0 +1,11 @@
+target:
+  name: majid-al-futtaim
+  platform: email
+  disclosure: https://www.majidalfuttaim.com/en/responsible-disclosure-policy
+  bounty: true
+  program_url: https://www.majidalfuttaim.com/en/responsible-disclosure-policy
+  domains:
+  - majidalfuttaim.com
+  - www.majidalfuttaim.com
+  github_orgs: []
+  excluded: []

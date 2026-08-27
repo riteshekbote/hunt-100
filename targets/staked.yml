@@ -1,0 +1,11 @@
+target:
+  name: staked
+  platform: email
+  disclosure: https://staked.us/bug-bounty/
+  bounty: true
+  program_url: https://staked.us/bug-bounty/
+  domains:
+  - staked.us
+  - www.staked.us
+  github_orgs: []
+  excluded: []

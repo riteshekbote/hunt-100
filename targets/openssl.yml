@@ -1,0 +1,11 @@
+target:
+  name: openssl
+  platform: email
+  disclosure: openssl-security@openssl.org
+  bounty: true
+  program_url: https://www.openssl.org/community/#securityreports
+  domains:
+  - openssl.org
+  - www.openssl.org
+  github_orgs: []
+  excluded: []

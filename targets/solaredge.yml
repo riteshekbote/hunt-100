@@ -1,0 +1,11 @@
+target:
+  name: solaredge
+  platform: email
+  disclosure: HWBugBounty@solaredge.com
+  bounty: true
+  program_url: https://www.solaredge.com/us/cyber-security-policy
+  domains:
+  - solaredge.com
+  - www.solaredge.com
+  github_orgs: []
+  excluded: []

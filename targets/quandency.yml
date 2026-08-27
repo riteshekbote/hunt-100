@@ -1,0 +1,11 @@
+target:
+  name: quandency
+  platform: email
+  disclosure: security@quadency.com
+  bounty: true
+  program_url: http://support.quadency.com/en/articles/2869964-bug-bounty-program
+  domains:
+  - support.quadency.com
+  - www.support.quadency.com
+  github_orgs: []
+  excluded: []

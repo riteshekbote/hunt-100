@@ -1,0 +1,11 @@
+target:
+  name: flow
+  platform: email
+  disclosure: security@onflow.org
+  bounty: true
+  program_url: https://flow.com/flow-responsible-disclosure
+  domains:
+  - flow.com
+  - www.flow.com
+  github_orgs: []
+  excluded: []

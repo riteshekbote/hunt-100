@@ -1,0 +1,11 @@
+target:
+  name: federacy
+  platform: email
+  disclosure: https://www.federacy.com/federacy
+  bounty: true
+  program_url: https://www.federacy.com/federacy
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

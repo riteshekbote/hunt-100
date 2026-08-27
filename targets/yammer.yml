@@ -1,0 +1,11 @@
+target:
+  name: yammer
+  platform: email
+  disclosure: https://technet.microsoft.com/en-us/security/dn800983
+  bounty: true
+  program_url: https://technet.microsoft.com/en-us/security/dn800983
+  domains:
+  - technet.microsoft.com
+  - www.technet.microsoft.com
+  github_orgs: []
+  excluded: []

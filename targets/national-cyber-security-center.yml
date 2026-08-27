@@ -1,0 +1,11 @@
+target:
+  name: national-cyber-security-center
+  platform: email
+  disclosure: ert@ncsc.nl
+  bounty: true
+  program_url: https://www.ncsc.nl/security
+  domains:
+  - ncsc.nl
+  - www.ncsc.nl
+  github_orgs: []
+  excluded: []

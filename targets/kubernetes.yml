@@ -1,0 +1,11 @@
+target:
+  name: kubernetes
+  platform: email
+  disclosure: https://kubernetes.io/security
+  bounty: true
+  program_url: https://kubernetes.io/security
+  domains:
+  - kubernetes.io
+  - www.kubernetes.io
+  github_orgs: []
+  excluded: []

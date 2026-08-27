@@ -1,0 +1,11 @@
+target:
+  name: dentrix
+  platform: email
+  disclosure: https://www.dentrix.com/support/data-security/bug-bounty-program
+  bounty: true
+  program_url: https://www.dentrix.com/support/data-security/bug-bounty-program
+  domains:
+  - dentrix.com
+  - www.dentrix.com
+  github_orgs: []
+  excluded: []

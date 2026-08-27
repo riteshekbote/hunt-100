@@ -1,0 +1,11 @@
+target:
+  name: f-secure
+  platform: email
+  disclosure: security@f-secure.com
+  bounty: true
+  program_url: https://www.f-secure.com/en/business/programs/vulnerability-reward-program
+  domains:
+  - f-secure.com
+  - www.f-secure.com
+  github_orgs: []
+  excluded: []

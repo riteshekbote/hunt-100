@@ -1,0 +1,11 @@
+target:
+  name: spotify
+  platform: email
+  disclosure: https://www.spotify.com/us/bounty/
+  bounty: true
+  program_url: https://www.spotify.com/us/bounty/
+  domains:
+  - spotify.com
+  - www.spotify.com
+  github_orgs: []
+  excluded: []

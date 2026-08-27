@@ -1,0 +1,11 @@
+target:
+  name: paytm
+  platform: email
+  disclosure: https://bugbounty.paytm.com/
+  bounty: true
+  program_url: https://bugbounty.paytm.com/
+  domains:
+  - bugbounty.paytm.com
+  - www.bugbounty.paytm.com
+  github_orgs: []
+  excluded: []

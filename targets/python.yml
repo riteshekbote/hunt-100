@@ -1,0 +1,11 @@
+target:
+  name: python
+  platform: email
+  disclosure: security@python.org
+  bounty: true
+  program_url: https://www.python.org/news/security/
+  domains:
+  - python.org
+  - www.python.org
+  github_orgs: []
+  excluded: []

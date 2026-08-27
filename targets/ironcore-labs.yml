@@ -1,0 +1,11 @@
+target:
+  name: ironcore-labs
+  platform: email
+  disclosure: https://ironcorelabs.com/trust-center/bug-bounty-program
+  bounty: true
+  program_url: https://ironcorelabs.com/trust-center/bug-bounty-program
+  domains:
+  - ironcorelabs.com
+  - www.ironcorelabs.com
+  github_orgs: []
+  excluded: []

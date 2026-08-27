@@ -1,0 +1,11 @@
+target:
+  name: grafana
+  platform: email
+  disclosure: https://github.com/grafana/bugbounty
+  bounty: true
+  program_url: https://github.com/grafana/bugbounty
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []

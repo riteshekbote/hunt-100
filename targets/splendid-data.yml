@@ -1,0 +1,11 @@
+target:
+  name: splendid-data
+  platform: email
+  disclosure: security-alert@splendiddata.com
+  bounty: true
+  program_url: https://www.splendiddata.com/responsible-disclosure-policy/
+  domains:
+  - splendiddata.com
+  - www.splendiddata.com
+  github_orgs: []
+  excluded: []

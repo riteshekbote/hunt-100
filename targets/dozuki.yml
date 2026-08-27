@@ -1,0 +1,11 @@
+target:
+  name: dozuki
+  platform: email
+  disclosure: security@ifixit.com
+  bounty: true
+  program_url: https://help.dozuki.com/Info/Responsible_Disclosure
+  domains:
+  - help.dozuki.com
+  - www.help.dozuki.com
+  github_orgs: []
+  excluded: []

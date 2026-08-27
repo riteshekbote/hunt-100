@@ -1,0 +1,11 @@
+target:
+  name: zaful
+  platform: email
+  disclosure: https://www.zaful.com/report-security-issues
+  bounty: true
+  program_url: https://www.zaful.com/report-security-issues
+  domains:
+  - zaful.com
+  - www.zaful.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: ens
+  platform: email
+  disclosure: bugs@ens.domains
+  bounty: true
+  program_url: https://docs.ens.domains/bug-bounty-program
+  domains:
+  - docs.ens.domains
+  - www.docs.ens.domains
+  github_orgs: []
+  excluded: []

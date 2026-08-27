@@ -1,0 +1,11 @@
+target:
+  name: samsung-mobile
+  platform: email
+  disclosure: mobile.security@samsung.com
+  bounty: true
+  program_url: https://security.samsungmobile.com/securityReporting.smsb
+  domains:
+  - security.samsungmobile.com
+  - www.security.samsungmobile.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: signalfx
+  platform: email
+  disclosure: security@signalfx.com
+  bounty: true
+  program_url: https://www.signalfx.com/trust/security/responsible-disclosure
+  domains:
+  - signalfx.com
+  - www.signalfx.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: starleaf
+  platform: email
+  disclosure: bugbounty@starleaf.com
+  bounty: true
+  program_url: https://www.starleaf.com/c/bug-bounty-program/
+  domains:
+  - starleaf.com
+  - www.starleaf.com
+  github_orgs: []
+  excluded: []

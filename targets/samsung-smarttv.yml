@@ -1,0 +1,11 @@
+target:
+  name: samsung-smarttv
+  platform: email
+  disclosure: https://samsungtvbounty.com/ReportBug.aspx
+  bounty: true
+  program_url: https://samsungtvbounty.com/ReportBug.aspx
+  domains:
+  - samsungtvbounty.com
+  - www.samsungtvbounty.com
+  github_orgs: []
+  excluded: []

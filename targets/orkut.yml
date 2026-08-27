@@ -1,0 +1,11 @@
+target:
+  name: orkut
+  platform: email
+  disclosure: http://www.google.com/about/appsecurity/reward-program/
+  bounty: true
+  program_url: http://www.google.com/about/appsecurity/reward-program/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []

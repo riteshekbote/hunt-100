@@ -1,0 +1,11 @@
+target:
+  name: ricoh
+  platform: email
+  disclosure: https://www.ricoh.ca/en/about-us/vulnerability-disclosure-policy
+  bounty: true
+  program_url: https://www.ricoh.ca/en/about-us/vulnerability-disclosure-policy
+  domains:
+  - ricoh.ca
+  - www.ricoh.ca
+  github_orgs: []
+  excluded: []

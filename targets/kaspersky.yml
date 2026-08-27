@@ -1,0 +1,11 @@
+target:
+  name: kaspersky
+  platform: email
+  disclosure: https://support.kaspersky.com/vulnerability
+  bounty: true
+  program_url: https://support.kaspersky.com/vulnerability
+  domains:
+  - support.kaspersky.com
+  - www.support.kaspersky.com
+  github_orgs: []
+  excluded: []

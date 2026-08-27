@@ -1,0 +1,11 @@
+target:
+  name: google-prp
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/patch-rewards/index.html
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/patch-rewards/index.html
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []

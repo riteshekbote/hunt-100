@@ -1,0 +1,11 @@
+target:
+  name: kraken
+  platform: email
+  disclosure: bugbounty@kraken.com
+  bounty: true
+  program_url: https://www.kraken.com/security/bug-bounty
+  domains:
+  - kraken.com
+  - www.kraken.com
+  github_orgs: []
+  excluded: []

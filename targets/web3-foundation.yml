@@ -1,0 +1,11 @@
+target:
+  name: web3-foundation
+  platform: email
+  disclosure: security-report@web3.foundation
+  bounty: true
+  program_url: https://web3.foundation/security-report/
+  domains:
+  - web3.foundation
+  - www.web3.foundation
+  github_orgs: []
+  excluded: []

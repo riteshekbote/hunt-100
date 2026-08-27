@@ -1,0 +1,11 @@
+target:
+  name: youtube
+  platform: email
+  disclosure: https://g.co/vrp
+  bounty: true
+  program_url: https://g.co/vrp
+  domains:
+  - g.co
+  - www.g.co
+  github_orgs: []
+  excluded: []

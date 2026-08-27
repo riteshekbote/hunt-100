@@ -1,0 +1,11 @@
+target:
+  name: personal-capital
+  platform: email
+  disclosure: https://www.personalcapital.com/responsible-disclosure/
+  bounty: true
+  program_url: https://www.personalcapital.com/responsible-disclosure/
+  domains:
+  - personalcapital.com
+  - www.personalcapital.com
+  github_orgs: []
+  excluded: []

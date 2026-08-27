@@ -1,0 +1,11 @@
+target:
+  name: solana
+  platform: email
+  disclosure: security@solana.com
+  bounty: true
+  program_url: https://github.com/solana-labs/solana/security/policy
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []

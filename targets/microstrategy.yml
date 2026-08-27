@@ -1,0 +1,11 @@
+target:
+  name: microstrategy
+  platform: email
+  disclosure: https://www.microstrategy.com/us/bug-bounty-program
+  bounty: true
+  program_url: https://www.microstrategy.com/us/bug-bounty-program
+  domains:
+  - microstrategy.com
+  - www.microstrategy.com
+  github_orgs: []
+  excluded: []

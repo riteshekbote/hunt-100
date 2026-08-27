@@ -1,0 +1,11 @@
+target:
+  name: floordao
+  platform: email
+  disclosure: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  bounty: true
+  program_url: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  domains:
+  - docs.floor.xyz
+  - www.docs.floor.xyz
+  github_orgs: []
+  excluded: []

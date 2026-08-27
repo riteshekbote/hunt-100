@@ -1,0 +1,11 @@
+target:
+  name: tron-foundation
+  platform: email
+  disclosure: https://tron.network/findBug
+  bounty: true
+  program_url: https://tron.network/findBug
+  domains:
+  - tron.network
+  - www.tron.network
+  github_orgs: []
+  excluded: []

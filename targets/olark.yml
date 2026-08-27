@@ -1,0 +1,11 @@
+target:
+  name: olark
+  platform: email
+  disclosure: support+security@olark.com
+  bounty: true
+  program_url: http://www.olark.com/customer/portal/articles/1237352
+  domains:
+  - olark.com
+  - www.olark.com
+  github_orgs: []
+  excluded: []

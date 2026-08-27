@@ -1,0 +1,11 @@
+target:
+  name: zapier
+  platform: email
+  disclosure: security@zapier.com
+  bounty: true
+  program_url: https://zapier.com/engineering/bug-bounty-program/
+  domains:
+  - zapier.com
+  - www.zapier.com
+  github_orgs: []
+  excluded: []

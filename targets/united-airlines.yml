@@ -1,0 +1,11 @@
+target:
+  name: united-airlines
+  platform: email
+  disclosure: bugbounty@united.com
+  bounty: true
+  program_url: https://www.united.com/web/en-US/content/contact/bugbounty.aspx
+  domains:
+  - united.com
+  - www.united.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: loginradius
+  platform: email
+  disclosure: security@loginradius.com
+  bounty: true
+  program_url: https://www.loginradius.com/bug-bounty/
+  domains:
+  - loginradius.com
+  - www.loginradius.com
+  github_orgs: []
+  excluded: []

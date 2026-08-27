@@ -1,0 +1,11 @@
+target:
+  name: line
+  platform: email
+  disclosure: https://bugbounty.linecorp.com/en/
+  bounty: true
+  program_url: https://bugbounty.linecorp.com/en/
+  domains:
+  - bugbounty.linecorp.com
+  - www.bugbounty.linecorp.com
+  github_orgs: []
+  excluded: []

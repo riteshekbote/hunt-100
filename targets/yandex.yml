@@ -1,0 +1,11 @@
+target:
+  name: yandex
+  platform: email
+  disclosure: https://yandex.com/bugbounty/report/
+  bounty: true
+  program_url: https://yandex.com/bugbounty/report/
+  domains:
+  - yandex.com
+  - www.yandex.com
+  github_orgs: []
+  excluded: []

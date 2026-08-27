@@ -1,0 +1,11 @@
+target:
+  name: global
+  platform: email
+  disclosure: bugbounty@global.com
+  bounty: true
+  program_url: https://global.com/bug-bounty-policy/
+  domains:
+  - global.com
+  - www.global.com
+  github_orgs: []
+  excluded: []

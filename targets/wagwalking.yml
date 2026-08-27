@@ -1,0 +1,11 @@
+target:
+  name: wagwalking
+  platform: email
+  disclosure: security@wagwalking.com
+  bounty: true
+  program_url: https://wagwalking.com/responsible-disclosure
+  domains:
+  - wagwalking.com
+  - www.wagwalking.com
+  github_orgs: []
+  excluded: []

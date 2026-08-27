@@ -1,0 +1,11 @@
+target:
+  name: silvergoldbull
+  platform: email
+  disclosure: https://silvergoldbull.com/bug-bounty/
+  bounty: true
+  program_url: https://silvergoldbull.com/bug-bounty/
+  domains:
+  - silvergoldbull.com
+  - www.silvergoldbull.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: fair
+  platform: email
+  disclosure: security@fair.com
+  bounty: true
+  program_url: https://www.fair.com/bug-bounty
+  domains:
+  - fair.com
+  - www.fair.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: online-seminar
+  platform: email
+  disclosure: security@onlineseminar.nl
+  bounty: true
+  program_url: https://www.onlineseminar.com/security/
+  domains:
+  - onlineseminar.com
+  - www.onlineseminar.com
+  github_orgs: []
+  excluded: []

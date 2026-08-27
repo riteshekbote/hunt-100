@@ -1,0 +1,11 @@
+target:
+  name: ripple
+  platform: email
+  disclosure: bugs@ripple.com
+  bounty: true
+  program_url: https://ripple.com/bug-bounty/
+  domains:
+  - ripple.com
+  - www.ripple.com
+  github_orgs: []
+  excluded: []

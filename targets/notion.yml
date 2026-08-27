@@ -1,0 +1,11 @@
+target:
+  name: notion
+  platform: email
+  disclosure: security@makenotion.com
+  bounty: true
+  program_url: https://www.notion.so/Responsible-Disclosure-Policy-5f18bb6b86804eaf989c006131778b9c
+  domains:
+  - notion.so
+  - www.notion.so
+  github_orgs: []
+  excluded: []

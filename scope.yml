@@ -1091,4 +1091,2254 @@ targets:
   - www.hackerone.com
   github_orgs: []
   excluded: []
-probe_allow: '*|0x|23andme|24sessions|84codes|abnamro|accredible|actility|aholddelhaize|airmiles|airvpn|alscotoday|alumniforwarding|alwaysdata|ampcode|apache|app|aquasec|ark|artsy|asana|augur|automox|autospf|autotrader|avast|avira|azimo|backblaze|bentley|bitgo|bitmex|bitski|bitsoffreedom|bitwala|bladestorm|blog|bounty|bugbounty|bugcrowd|build|bunq|campaignmonitor|canva|careevolution|city-data|classdojo|clause|clenergy|cloudcannon|coinapp|coinbase|coinjar|coinpayments|cointracker|connect|coxautoinc|dealer|dealertrack|debricked|developer|dhi|digitalhealthcompliance|dmarcreport|dnb|docker|duocircle|emsisoft|en|federacy|getdpd|github|global|google|hackerone|hacktify|hub|inboxissue|intigriti|kbb|mailflowmonitoring|manheim|medium|nureply|outboundsmtp|packagemanager|phishprotection|posit|public|rstudio|scout|security|shinyapps|static|support|tenantmigration|tls|trychameleon|umaproject|vauto|vinsolutions|wiki|yeswehack|zendesk'
+- name: definity-inc
+  platform: email
+  disclosure: security@definityinc.com
+  bounty: true
+  program_url: https://definityinc.com/bug-bounty-program/
+  domains:
+  - definityinc.com
+  - www.definityinc.com
+  github_orgs: []
+  excluded: []
+- name: dentrix
+  platform: email
+  disclosure: https://www.dentrix.com/support/data-security/bug-bounty-program
+  bounty: true
+  program_url: https://www.dentrix.com/support/data-security/bug-bounty-program
+  domains:
+  - dentrix.com
+  - www.dentrix.com
+  github_orgs: []
+  excluded: []
+- name: deribit
+  platform: email
+  disclosure: https://www.deribit.com/pages/information/bug-bounty-program
+  bounty: true
+  program_url: https://www.deribit.com/pages/information/bug-bounty-program
+  domains:
+  - deribit.com
+  - www.deribit.com
+  github_orgs: []
+  excluded: []
+- name: deskpro
+  platform: email
+  disclosure: security@deskpro.com
+  bounty: true
+  program_url: https://www.deskpro.com/security/responsible-disclosure/
+  domains:
+  - deskpro.com
+  - www.deskpro.com
+  github_orgs: []
+  excluded: []
+- name: deutsche-telekom
+  platform: email
+  disclosure: bugbounty@t-mobile.cz
+  bounty: true
+  program_url: https://www.telekom.com/en/corporate-responsibility/data-protection-data-security/security/details/closing-security-gaps-360054
+  domains:
+  - telekom.com
+  - www.telekom.com
+  github_orgs: []
+  excluded: []
+- name: dozuki
+  platform: email
+  disclosure: security@ifixit.com
+  bounty: true
+  program_url: https://help.dozuki.com/Info/Responsible_Disclosure
+  domains:
+  - help.dozuki.com
+  - www.help.dozuki.com
+  github_orgs: []
+  excluded: []
+- name: dragonex
+  platform: email
+  disclosure: service@dragonex.io
+  bounty: true
+  program_url: https://dragonex.zendesk.com/hc/en-us/articles/360036938832-BUG-Bounty-Program
+  domains:
+  - dragonex.zendesk.com
+  - www.dragonex.zendesk.com
+  github_orgs: []
+  excluded: []
+- name: ens
+  platform: email
+  disclosure: bugs@ens.domains
+  bounty: true
+  program_url: https://docs.ens.domains/bug-bounty-program
+  domains:
+  - docs.ens.domains
+  - www.docs.ens.domains
+  github_orgs: []
+  excluded: []
+- name: eligible
+  platform: email
+  disclosure: security@eligible.com
+  bounty: true
+  program_url: https://eligible.com/responsible_disclosure_program
+  domains:
+  - eligible.com
+  - www.eligible.com
+  github_orgs: []
+  excluded: []
+- name: emma
+  platform: email
+  disclosure: responsibledisclosure@eneco.com
+  bounty: true
+  program_url: https://myemma.com/trust/report-a-vulnerability/
+  domains:
+  - myemma.com
+  - www.myemma.com
+  github_orgs: []
+  excluded: []
+- name: eset
+  platform: email
+  disclosure: security@eset.com
+  bounty: true
+  program_url: https://www.eset.com/int/security-vulnerability-reporting/
+  domains:
+  - eset.com
+  - www.eset.com
+  github_orgs: []
+  excluded: []
+- name: ethereum-foundation
+  platform: email
+  disclosure: security@ethereum.org
+  bounty: true
+  program_url: https://bounty.ethereum.org/
+  domains:
+  - bounty.ethereum.org
+  - www.bounty.ethereum.org
+  github_orgs: []
+  excluded: []
+- name: etherscan
+  platform: email
+  disclosure: info@EtherScan.io
+  bounty: true
+  program_url: https://etherscan.io/bugbounty
+  domains:
+  - etherscan.io
+  - www.etherscan.io
+  github_orgs: []
+  excluded: []
+- name: eurid
+  platform: email
+  disclosure: security.office@eurid.eu
+  bounty: true
+  program_url: https://eurid.eu/lv/other-infomation/eurid-responsible-disclosure-policy/
+  domains:
+  - eurid.eu
+  - www.eurid.eu
+  github_orgs: []
+  excluded: []
+- name: f-secure
+  platform: email
+  disclosure: security@f-secure.com
+  bounty: true
+  program_url: https://www.f-secure.com/en/business/programs/vulnerability-reward-program
+  domains:
+  - f-secure.com
+  - www.f-secure.com
+  github_orgs: []
+  excluded: []
+- name: fusion
+  platform: email
+  disclosure: https://www.fusion.org/developers/bug-bounty#bugs
+  bounty: true
+  program_url: https://www.fusion.org/developers/bug-bounty#bugs
+  domains:
+  - fusion.org
+  - www.fusion.org
+  github_orgs: []
+  excluded: []
+- name: facebook
+  platform: email
+  disclosure: https://www.facebook.com/whitehat
+  bounty: true
+  program_url: https://www.facebook.com/whitehat
+  domains:
+  - facebook.com
+  - www.facebook.com
+  github_orgs: []
+  excluded: []
+- name: fair
+  platform: email
+  disclosure: security@fair.com
+  bounty: true
+  program_url: https://www.fair.com/bug-bounty
+  domains:
+  - fair.com
+  - www.fair.com
+  github_orgs: []
+  excluded: []
+- name: fanduel
+  platform: email
+  disclosure: https://www.fanduel.com/security
+  bounty: true
+  program_url: https://www.fanduel.com/security
+  domains:
+  - fanduel.com
+  - www.fanduel.com
+  github_orgs: []
+  excluded: []
+- name: fastmail
+  platform: email
+  disclosure: security@fastmailteam.com
+  bounty: true
+  program_url: https://www.fastmail.com/bug-bounty/
+  domains:
+  - fastmail.com
+  - www.fastmail.com
+  github_orgs: []
+  excluded: []
+- name: federacy
+  platform: email
+  disclosure: https://www.federacy.com/federacy
+  bounty: true
+  program_url: https://www.federacy.com/federacy
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []
+- name: ferm-rotterdam
+  platform: email
+  disclosure: https://ferm-rotterdam.nl/nl/responsible-disclosure-statement
+  bounty: true
+  program_url: https://ferm-rotterdam.nl/nl/responsible-disclosure-statement
+  domains:
+  - ferm-rotterdam.nl
+  - www.ferm-rotterdam.nl
+  github_orgs: []
+  excluded: []
+- name: filecoin
+  platform: email
+  disclosure: security@filecoin.org
+  bounty: true
+  program_url: https://security.filecoin.io/bug-bounty/
+  domains:
+  - security.filecoin.io
+  - www.security.filecoin.io
+  github_orgs: []
+  excluded: []
+- name: floordao
+  platform: email
+  disclosure: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  bounty: true
+  program_url: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  domains:
+  - docs.floor.xyz
+  - www.docs.floor.xyz
+  github_orgs: []
+  excluded: []
+- name: flow
+  platform: email
+  disclosure: security@onflow.org
+  bounty: true
+  program_url: https://flow.com/flow-responsible-disclosure
+  domains:
+  - flow.com
+  - www.flow.com
+  github_orgs: []
+  excluded: []
+- name: frax-finance
+  platform: email
+  disclosure: https://docs.frax.finance/smart-contracts/miscellaneous
+  bounty: true
+  program_url: https://docs.frax.finance/smart-contracts/miscellaneous
+  domains:
+  - docs.frax.finance
+  - www.docs.frax.finance
+  github_orgs: []
+  excluded: []
+- name: gamma
+  platform: email
+  disclosure: security-alert@intergamma.nl
+  bounty: true
+  program_url: https://www.gamma.nl/klantenservice/veiligheid-privacy/responsible-disclosure
+  domains:
+  - gamma.nl
+  - www.gamma.nl
+  github_orgs: []
+  excluded: []
+- name: gcore
+  platform: email
+  disclosure: bugbounty@gcore.com
+  bounty: true
+  program_url: https://gcore.com/bug-bounty-program/
+  domains:
+  - gcore.com
+  - www.gcore.com
+  github_orgs: []
+  excluded: []
+- name: ghostscript
+  platform: email
+  disclosure: https://ghostscript.com/Bug_bounty_program.html
+  bounty: true
+  program_url: https://ghostscript.com/Bug_bounty_program.html
+  domains:
+  - ghostscript.com
+  - www.ghostscript.com
+  github_orgs: []
+  excluded: []
+- name: gitcoin
+  platform: email
+  disclosure: engineering@gitcoin.co
+  bounty: true
+  program_url: https://docs.gitcoin.co/mk_securitybounty/
+  domains:
+  - docs.gitcoin.co
+  - www.docs.gitcoin.co
+  github_orgs: []
+  excluded: []
+- name: github
+  platform: email
+  disclosure: https://bounty.github.com/
+  bounty: true
+  program_url: https://bounty.github.com/
+  domains:
+  - bounty.github.com
+  - www.bounty.github.com
+  github_orgs: []
+  excluded: []
+- name: global
+  platform: email
+  disclosure: bugbounty@global.com
+  bounty: true
+  program_url: https://global.com/bug-bounty-policy/
+  domains:
+  - global.com
+  - www.global.com
+  github_orgs: []
+  excluded: []
+- name: goldman-sachs
+  platform: email
+  disclosure: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  bounty: true
+  program_url: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  domains:
+  - goldmansachs.com
+  - www.goldmansachs.com
+  github_orgs: []
+  excluded: []
+- name: google
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []
+- name: google-chrome
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/chrome-rewards/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/chrome-rewards/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []
+- name: google-prp
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/patch-rewards/index.html
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/patch-rewards/index.html
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []
+- name: grafana
+  platform: email
+  disclosure: https://github.com/grafana/bugbounty
+  bounty: true
+  program_url: https://github.com/grafana/bugbounty
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: halodoc
+  platform: email
+  disclosure: security@halodoc.com
+  bounty: true
+  program_url: https://www.halodoc.com/security
+  domains:
+  - halodoc.com
+  - www.halodoc.com
+  github_orgs: []
+  excluded: []
+- name: hellosign
+  platform: email
+  disclosure: security@hellosign.com
+  bounty: true
+  program_url: https://www.hellosign.com/trust/security
+  domains:
+  - hellosign.com
+  - www.hellosign.com
+  github_orgs: []
+  excluded: []
+- name: heroku
+  platform: email
+  disclosure: bugbountymanager@salesforce.com
+  bounty: true
+  program_url: https://www.heroku.com/policy/security
+  domains:
+  - heroku.com
+  - www.heroku.com
+  github_orgs: []
+  excluded: []
+- name: hex-rays
+  platform: email
+  disclosure: bugbounty@hex-rays.com
+  bounty: true
+  program_url: https://www.hex-rays.com/bugbounty/
+  domains:
+  - hex-rays.com
+  - www.hex-rays.com
+  github_orgs: []
+  excluded: []
+- name: hitbtc
+  platform: email
+  disclosure: https://hitbtc.com/bug-report
+  bounty: true
+  program_url: https://hitbtc.com/bug-report
+  domains:
+  - hitbtc.com
+  - www.hitbtc.com
+  github_orgs: []
+  excluded: []
+- name: honest
+  platform: email
+  disclosure: vulnerability-disclosure@honestbank.com
+  bounty: true
+  program_url: https://honest.co.id/vulnerability-disclosure-policy
+  domains:
+  - honest.co.id
+  - www.honest.co.id
+  github_orgs: []
+  excluded: []
+- name: hostinger
+  platform: email
+  disclosure: abuse@hostinger.com
+  bounty: true
+  program_url: https://www.hostinger.com/responsible-disclosure-policy
+  domains:
+  - hostinger.com
+  - www.hostinger.com
+  github_orgs: []
+  excluded: []
+- name: hunter-io
+  platform: email
+  disclosure: support@hunter.io
+  bounty: true
+  program_url: https://hunter.io/security-bounty-program
+  domains:
+  - hunter.io
+  - www.hunter.io
+  github_orgs: []
+  excluded: []
+- name: ing-nl
+  platform: email
+  disclosure: responsible-disclosure@ing.com
+  bounty: true
+  program_url: https://www.ing.nl/de-ing/veilig-bankieren/fraude-melden/meldpunt-kwetsbaarheden/index.html
+  domains:
+  - ing.nl
+  - www.ing.nl
+  github_orgs: []
+  excluded: []
+- name: iota
+  platform: email
+  disclosure: security@iota.org
+  bounty: true
+  program_url: https://github.com/iotaledger/iota-java/blob/dev/.github/SECURITY.md
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: idena
+  platform: email
+  disclosure: info@idena.io
+  bounty: true
+  program_url: https://www.idena.io/contribute#contribute-3-1
+  domains:
+  - idena.io
+  - www.idena.io
+  github_orgs: []
+  excluded: []
+- name: immutablesoft
+  platform: email
+  disclosure: https://immutablesoft.github.io/ImmutableEcosystem/
+  bounty: true
+  program_url: https://immutablesoft.github.io/ImmutableEcosystem/
+  domains:
+  - immutablesoft.github.io
+  - www.immutablesoft.github.io
+  github_orgs: []
+  excluded: []
+- name: independer
+  platform: email
+  disclosure: beveiliging@independer.nl
+  bounty: true
+  program_url: https://www.independer.nl/algemeen/info/responsible-disclosure.aspx
+  domains:
+  - independer.nl
+  - www.independer.nl
+  github_orgs: []
+  excluded: []
+- name: infstones
+  platform: email
+  disclosure: https://infstones.com/blog/education/introducing-the-blocguardians-bug-bounty-program-654e723bd9afaf003e44fdea
+  bounty: true
+  program_url: https://infstones.com/blog/education/introducing-the-blocguardians-bug-bounty-program-654e723bd9afaf003e44fdea
+  domains:
+  - infstones.com
+  - www.infstones.com
+  github_orgs: []
+  excluded: []
+- name: ing
+  platform: email
+  disclosure: responsible-disclosure@ing.com
+  bounty: true
+  program_url: https://www.ing.com/ING.com-Security.htm
+  domains:
+  - ing.com
+  - www.ing.com
+  github_orgs: []
+  excluded: []
+- name: instructure
+  platform: email
+  disclosure: security@instructure.com
+  bounty: true
+  program_url: https://www.instructure.com/canvas/blog/instructures-proven-security-vulnerability-disclosure-program
+  domains:
+  - instructure.com
+  - www.instructure.com
+  github_orgs: []
+  excluded: []
+- name: integraxor-scada
+  platform: email
+  disclosure: https://www.integraxor.com/integraxor-hmi-scada-bug-bounty-program/
+  bounty: true
+  program_url: https://www.integraxor.com/integraxor-hmi-scada-bug-bounty-program/
+  domains:
+  - integraxor.com
+  - www.integraxor.com
+  github_orgs: []
+  excluded: []
+- name: intel
+  platform: email
+  disclosure: secure@intel.com
+  bounty: true
+  program_url: https://www.intel.com/content/www/us/en/security-center/default.html
+  domains:
+  - intel.com
+  - www.intel.com
+  github_orgs: []
+  excluded: []
+- name: ironcore-labs
+  platform: email
+  disclosure: https://ironcorelabs.com/trust-center/bug-bounty-program
+  bounty: true
+  program_url: https://ironcorelabs.com/trust-center/bug-bounty-program
+  domains:
+  - ironcorelabs.com
+  - www.ironcorelabs.com
+  github_orgs: []
+  excluded: []
+- name: jackal-protocol
+  platform: email
+  disclosure: security@jackallabs.io
+  bounty: true
+  program_url: https://jackaldao.medium.com/announcement-jackal-bug-bounty-program-31d4e03ab7e2
+  domains:
+  - jackaldao.medium.com
+  - www.jackaldao.medium.com
+  github_orgs: []
+  excluded: []
+- name: jetbrains
+  platform: email
+  disclosure: security@jetbrains.com
+  bounty: true
+  program_url: https://www.jetbrains.com/legal/terms/coordinated-disclosure.html
+  domains:
+  - jetbrains.com
+  - www.jetbrains.com
+  github_orgs: []
+  excluded: []
+- name: jumplead
+  platform: email
+  disclosure: https://jumplead.com/about/security
+  bounty: true
+  program_url: https://jumplead.com/about/security
+  domains:
+  - jumplead.com
+  - www.jumplead.com
+  github_orgs: []
+  excluded: []
+- name: kaspersky
+  platform: email
+  disclosure: https://support.kaspersky.com/vulnerability
+  bounty: true
+  program_url: https://support.kaspersky.com/vulnerability
+  domains:
+  - support.kaspersky.com
+  - www.support.kaspersky.com
+  github_orgs: []
+  excluded: []
+- name: kissflow
+  platform: email
+  disclosure: security@kissflow.com
+  bounty: true
+  program_url: https://kissflow.com/responsible-disclosure/
+  domains:
+  - kissflow.com
+  - www.kissflow.com
+  github_orgs: []
+  excluded: []
+- name: kiteworks
+  platform: email
+  disclosure: https://security.kiteworks.com
+  bounty: true
+  program_url: https://security.kiteworks.com
+  domains:
+  - security.kiteworks.com
+  - www.security.kiteworks.com
+  github_orgs: []
+  excluded: []
+- name: kraken
+  platform: email
+  disclosure: bugbounty@kraken.com
+  bounty: true
+  program_url: https://www.kraken.com/security/bug-bounty
+  domains:
+  - kraken.com
+  - www.kraken.com
+  github_orgs: []
+  excluded: []
+- name: kubernetes
+  platform: email
+  disclosure: https://kubernetes.io/security
+  bounty: true
+  program_url: https://kubernetes.io/security
+  domains:
+  - kubernetes.io
+  - www.kubernetes.io
+  github_orgs: []
+  excluded: []
+- name: line
+  platform: email
+  disclosure: https://bugbounty.linecorp.com/en/
+  bounty: true
+  program_url: https://bugbounty.linecorp.com/en/
+  domains:
+  - bugbounty.linecorp.com
+  - www.bugbounty.linecorp.com
+  github_orgs: []
+  excluded: []
+- name: latent-patterns
+  platform: email
+  disclosure: security@latentpatterns.com
+  bounty: true
+  program_url: https://latentpatterns.com/security
+  domains:
+  - latentpatterns.com
+  - www.latentpatterns.com
+  github_orgs: []
+  excluded: []
+- name: layerzero
+  platform: email
+  disclosure: bounty@layerzerolabs.org
+  bounty: true
+  program_url: https://layerzero.gitbook.io/docs/bug-bounty/bug-bounty-program
+  domains:
+  - layerzero.gitbook.io
+  - www.layerzero.gitbook.io
+  github_orgs: []
+  excluded: []
+- name: leetcode
+  platform: email
+  disclosure: support@leetcode.com
+  bounty: true
+  program_url: https://leetcode.com/bugbounty/
+  domains:
+  - leetcode.com
+  - www.leetcode.com
+  github_orgs: []
+  excluded: []
+- name: liquid-web
+  platform: email
+  disclosure: bugbounty@liquidweb.com
+  bounty: true
+  program_url: https://www.liquidweb.com/about-us/policies/bug-bounty-program/
+  domains:
+  - liquidweb.com
+  - www.liquidweb.com
+  github_orgs: []
+  excluded: []
+- name: lisk
+  platform: email
+  disclosure: https://lisk.io/bug-bounty-program
+  bounty: true
+  program_url: https://lisk.io/bug-bounty-program
+  domains:
+  - lisk.io
+  - www.lisk.io
+  github_orgs: []
+  excluded: []
+- name: liveclicker
+  platform: email
+  disclosure: https://www.liveclicker.com/trust/report-a-vulnerability/
+  bounty: true
+  program_url: https://www.liveclicker.com/trust/report-a-vulnerability/
+  domains:
+  - liveclicker.com
+  - www.liveclicker.com
+  github_orgs: []
+  excluded: []
+- name: livesport
+  platform: email
+  disclosure: https://bugbounty.livesport.eu/docs/Vulnerability%20Disclosure%20Policy.pdf
+  bounty: true
+  program_url: https://bugbounty.livesport.eu/docs/Vulnerability%20Disclosure%20Policy.pdf
+  domains:
+  - bugbounty.livesport.eu
+  - www.bugbounty.livesport.eu
+  github_orgs: []
+  excluded: []
+- name: loginradius
+  platform: email
+  disclosure: security@loginradius.com
+  bounty: true
+  program_url: https://www.loginradius.com/bug-bounty/
+  domains:
+  - loginradius.com
+  - www.loginradius.com
+  github_orgs: []
+  excluded: []
+- name: lyft
+  platform: email
+  disclosure: https://www.lyft.com/security
+  bounty: true
+  program_url: https://www.lyft.com/security
+  domains:
+  - lyft.com
+  - www.lyft.com
+  github_orgs: []
+  excluded: []
+- name: mev-boost
+  platform: email
+  disclosure: security@flashbots.net
+  bounty: true
+  program_url: https://github.com/flashbots/mev-boost/blob/main/SECURITY.md
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: majid-al-futtaim
+  platform: email
+  disclosure: https://www.majidalfuttaim.com/en/responsible-disclosure-policy
+  bounty: true
+  program_url: https://www.majidalfuttaim.com/en/responsible-disclosure-policy
+  domains:
+  - majidalfuttaim.com
+  - www.majidalfuttaim.com
+  github_orgs: []
+  excluded: []
+- name: malwarebytes
+  platform: email
+  disclosure: bug-bounty@malwarebytes.com
+  bounty: true
+  program_url: https://www.malwarebytes.org/secure/
+  domains:
+  - malwarebytes.org
+  - www.malwarebytes.org
+  github_orgs: []
+  excluded: []
+- name: managewp
+  platform: email
+  disclosure: https://managewp.com/white-hat-reward
+  bounty: true
+  program_url: https://managewp.com/white-hat-reward
+  domains:
+  - managewp.com
+  - www.managewp.com
+  github_orgs: []
+  excluded: []
+- name: marktplaats
+  platform: email
+  disclosure: https://www.marktplaats.nl/i/help/veilig-en-succesvol/responsible-disclosure-program.dot.html
+  bounty: true
+  program_url: https://www.marktplaats.nl/i/help/veilig-en-succesvol/responsible-disclosure-program.dot.html
+  domains:
+  - marktplaats.nl
+  - www.marktplaats.nl
+  github_orgs: []
+  excluded: []
+- name: massachusetts-institute-of-tec
+  platform: email
+  disclosure: https://bounty.mit.edu/
+  bounty: true
+  program_url: https://bounty.mit.edu/
+  domains:
+  - bounty.mit.edu
+  - www.bounty.mit.edu
+  github_orgs: []
+  excluded: []
+- name: medium
+  platform: email
+  disclosure: security@medium.com
+  bounty: true
+  program_url: https://help.medium.com/hc/en-us/articles/213481308-Bug-Bounty-Disclosure-Program
+  domains:
+  - help.medium.com
+  - www.help.medium.com
+  github_orgs: []
+  excluded: []
+- name: mega-co-nz
+  platform: email
+  disclosure: bugs@mega.co.nz
+  bounty: true
+  program_url: https://mega.co.nz/#blog_6
+  domains:
+  - mega.co.nz
+  - www.mega.co.nz
+  github_orgs: []
+  excluded: []
+- name: microstrategy
+  platform: email
+  disclosure: https://www.microstrategy.com/us/bug-bounty-program
+  bounty: true
+  program_url: https://www.microstrategy.com/us/bug-bounty-program
+  domains:
+  - microstrategy.com
+  - www.microstrategy.com
+  github_orgs: []
+  excluded: []
+- name: modern-treasury
+  platform: email
+  disclosure: https://www.federacy.com/modern-treasury
+  bounty: true
+  program_url: https://www.federacy.com/modern-treasury
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []
+- name: monash-university
+  platform: email
+  disclosure: cyberteam+disclosure@monash.edu
+  bounty: true
+  program_url: https://www.monash.edu/cybersecurity/about/mon-csirt
+  domains:
+  - monash.edu
+  - www.monash.edu
+  github_orgs: []
+  excluded: []
+- name: monetha
+  platform: email
+  disclosure: https://www.monetha.io/bounty
+  bounty: true
+  program_url: https://www.monetha.io/bounty
+  domains:
+  - monetha.io
+  - www.monetha.io
+  github_orgs: []
+  excluded: []
+- name: mozilla
+  platform: email
+  disclosure: security@mozilla.org
+  bounty: true
+  program_url: https://www.mozilla.org/en-US/security/bug-bounty/
+  domains:
+  - mozilla.org
+  - www.mozilla.org
+  github_orgs: []
+  excluded: []
+- name: mujs
+  platform: email
+  disclosure: https://mujs.com/security.html
+  bounty: true
+  program_url: https://mujs.com/security.html
+  domains:
+  - mujs.com
+  - www.mujs.com
+  github_orgs: []
+  excluded: []
+- name: multichain
+  platform: email
+  disclosure: security@multichain.org
+  bounty: true
+  program_url: https://docs.multichain.org/security/bug-bounty
+  domains:
+  - docs.multichain.org
+  - www.docs.multichain.org
+  github_orgs: []
+  excluded: []
+- name: mural
+  platform: email
+  disclosure: security@mural.co
+  bounty: true
+  program_url: https://www.mural.co/security/vdp
+  domains:
+  - mural.co
+  - www.mural.co
+  github_orgs: []
+  excluded: []
+- name: ncsc-nl
+  platform: email
+  disclosure: cert@ncsc.nl
+  bounty: true
+  program_url: https://www.ncsc.nl/security
+  domains:
+  - ncsc.nl
+  - www.ncsc.nl
+  github_orgs: []
+  excluded: []
+- name: nowpayments
+  platform: email
+  disclosure: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  bounty: true
+  program_url: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  domains:
+  - nowpayments.io
+  - www.nowpayments.io
+  github_orgs: []
+  excluded: []
+- name: nwb-bank
+  platform: email
+  disclosure: info@nwbbank.com
+  bounty: true
+  program_url: https://www.nwbbank.com/en/responsible-disclosure
+  domains:
+  - nwbbank.com
+  - www.nwbbank.com
+  github_orgs: []
+  excluded: []
+- name: national-cyber-security-center
+  platform: email
+  disclosure: ert@ncsc.nl
+  bounty: true
+  program_url: https://www.ncsc.nl/security
+  domains:
+  - ncsc.nl
+  - www.ncsc.nl
+  github_orgs: []
+  excluded: []
+- name: naver-whale
+  platform: email
+  disclosure: http://bugbounty.whale.naver.com
+  bounty: true
+  program_url: http://bugbounty.whale.naver.com
+  domains:
+  - bugbounty.whale.naver.com
+  - www.bugbounty.whale.naver.com
+  github_orgs: []
+  excluded: []
+- name: nginx
+  platform: email
+  disclosure: security-alert@nginx.org
+  bounty: true
+  program_url: https://nginx.org/en/security_advisories.html
+  domains:
+  - nginx.org
+  - www.nginx.org
+  github_orgs: []
+  excluded: []
+- name: notion
+  platform: email
+  disclosure: security@makenotion.com
+  bounty: true
+  program_url: https://www.notion.so/Responsible-Disclosure-Policy-5f18bb6b86804eaf989c006131778b9c
+  domains:
+  - notion.so
+  - www.notion.so
+  github_orgs: []
+  excluded: []
+- name: olacabs
+  platform: email
+  disclosure: https://www.olacabs.com/whitehat
+  bounty: true
+  program_url: https://www.olacabs.com/whitehat
+  domains:
+  - olacabs.com
+  - www.olacabs.com
+  github_orgs: []
+  excluded: []
+- name: offensive-security
+  platform: email
+  disclosure: security@offensive-security.com
+  bounty: true
+  program_url: https://www.offensive-security.com/bug-bounty-program/
+  domains:
+  - offensive-security.com
+  - www.offensive-security.com
+  github_orgs: []
+  excluded: []
+- name: olark
+  platform: email
+  disclosure: support+security@olark.com
+  bounty: true
+  program_url: http://www.olark.com/customer/portal/articles/1237352
+  domains:
+  - olark.com
+  - www.olark.com
+  github_orgs: []
+  excluded: []
+- name: one-plus
+  platform: email
+  disclosure: https://security.oneplus.com/noticedetails.html?noticeId=20191565338585128
+  bounty: true
+  program_url: https://security.oneplus.com/noticedetails.html?noticeId=20191565338585128
+  domains:
+  - security.oneplus.com
+  - www.security.oneplus.com
+  github_orgs: []
+  excluded: []
+- name: onfo
+  platform: email
+  disclosure: drew@onfocoin.com
+  bounty: true
+  program_url: https://onfo.zendesk.com/hc/en-us/articles/360025769031-Bug-Bounty-Program
+  domains:
+  - onfo.zendesk.com
+  - www.onfo.zendesk.com
+  github_orgs: []
+  excluded: []
+- name: online-seminar
+  platform: email
+  disclosure: security@onlineseminar.nl
+  bounty: true
+  program_url: https://www.onlineseminar.com/security/
+  domains:
+  - onlineseminar.com
+  - www.onlineseminar.com
+  github_orgs: []
+  excluded: []
+- name: open-source-university
+  platform: email
+  disclosure: security@os.university
+  bounty: true
+  program_url: https://medium.com/the-os-university-blog/os-university-smart-contracts-are-live-edu-token-bug-bounty-reward-awaits-you-27c1de006249
+  domains:
+  - medium.com
+  - www.medium.com
+  github_orgs: []
+  excluded: []
+- name: openssl
+  platform: email
+  disclosure: openssl-security@openssl.org
+  bounty: true
+  program_url: https://www.openssl.org/community/#securityreports
+  domains:
+  - openssl.org
+  - www.openssl.org
+  github_orgs: []
+  excluded: []
+- name: orkut
+  platform: email
+  disclosure: http://www.google.com/about/appsecurity/reward-program/
+  bounty: true
+  program_url: http://www.google.com/about/appsecurity/reward-program/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []
+- name: pc-extreme
+  platform: email
+  disclosure: security@pcextreme.nl
+  bounty: true
+  program_url: https://www.pcextreme.com/policies/responsible-disclosure
+  domains:
+  - pcextreme.com
+  - www.pcextreme.com
+  github_orgs: []
+  excluded: []
+- name: php
+  platform: email
+  disclosure: security@php.net
+  bounty: true
+  program_url: https://bugs.php.net/report.php?bug_type=Security
+  domains:
+  - bugs.php.net
+  - www.bugs.php.net
+  github_orgs: []
+  excluded: []
+- name: paladin-cyber-bug-bounty
+  platform: email
+  disclosure: https://www.federacy.com/paladin-cyber-bug-bounty
+  bounty: true
+  program_url: https://www.federacy.com/paladin-cyber-bug-bounty
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []
+- name: palantir
+  platform: email
+  disclosure: cirt@palantir.com
+  bounty: true
+  program_url: https://www.palantir.com/responsible-disclosure/
+  domains:
+  - palantir.com
+  - www.palantir.com
+  github_orgs: []
+  excluded: []
+- name: parabol
+  platform: email
+  disclosure: https://www.parabol.co/security-disclosure
+  bounty: true
+  program_url: https://www.parabol.co/security-disclosure
+  domains:
+  - parabol.co
+  - www.parabol.co
+  github_orgs: []
+  excluded: []
+- name: parity-technologies
+  platform: email
+  disclosure: bugbounty@parity.io
+  bounty: true
+  program_url: https://www.parity.io/bug-bounty/
+  domains:
+  - parity.io
+  - www.parity.io
+  github_orgs: []
+  excluded: []
+- name: pastecoin
+  platform: email
+  disclosure: support@pastecoin.com
+  bounty: true
+  program_url: https://www.pastecoin.com/bug_bounty
+  domains:
+  - pastecoin.com
+  - www.pastecoin.com
+  github_orgs: []
+  excluded: []
+- name: pathao
+  platform: email
+  disclosure: security@pathao.com
+  bounty: true
+  program_url: https://pathao.com/bug-bounty/
+  domains:
+  - pathao.com
+  - www.pathao.com
+  github_orgs: []
+  excluded: []
+- name: paytm
+  platform: email
+  disclosure: https://bugbounty.paytm.com/
+  bounty: true
+  program_url: https://bugbounty.paytm.com/
+  domains:
+  - bugbounty.paytm.com
+  - www.bugbounty.paytm.com
+  github_orgs: []
+  excluded: []
+- name: paypal
+  platform: email
+  disclosure: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  bounty: true
+  program_url: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  domains:
+  - paypal.com
+  - www.paypal.com
+  github_orgs: []
+  excluded: []
+- name: perl
+  platform: email
+  disclosure: perl5-security-report@perl.org
+  bounty: true
+  program_url: http://perldoc.perl.org/perlsec.html#SECURITY-VULNERABILITY-CONTACT-INFORMATION
+  domains:
+  - perldoc.perl.org
+  - www.perldoc.perl.org
+  github_orgs: []
+  excluded: []
+- name: personal-capital
+  platform: email
+  disclosure: https://www.personalcapital.com/responsible-disclosure/
+  bounty: true
+  program_url: https://www.personalcapital.com/responsible-disclosure/
+  domains:
+  - personalcapital.com
+  - www.personalcapital.com
+  github_orgs: []
+  excluded: []
+- name: ping
+  platform: email
+  disclosure: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  bounty: true
+  program_url: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  domains:
+  - pingidentity.com
+  - www.pingidentity.com
+  github_orgs: []
+  excluded: []
+- name: plisio
+  platform: email
+  disclosure: support@plisio.net
+  bounty: true
+  program_url: https://plisio.net/bug-bounty
+  domains:
+  - plisio.net
+  - www.plisio.net
+  github_orgs: []
+  excluded: []
+- name: polar-ssl
+  platform: email
+  disclosure: support.mbedtls@arm.com
+  bounty: true
+  program_url: https://tls.mbed.org/bug-bounty-program
+  domains:
+  - tls.mbed.org
+  - www.tls.mbed.org
+  github_orgs: []
+  excluded: []
+- name: pon-cat
+  platform: email
+  disclosure: rd@pon.com
+  bounty: true
+  program_url: https://www.pon-cat.com/en/responsible-disclosure
+  domains:
+  - pon-cat.com
+  - www.pon-cat.com
+  github_orgs: []
+  excluded: []
+- name: prezi
+  platform: email
+  disclosure: security@infogr.am
+  bounty: true
+  program_url: https://bugbounty.prezi.com/
+  domains:
+  - bugbounty.prezi.com
+  - www.bugbounty.prezi.com
+  github_orgs: []
+  excluded: []
+- name: productboard
+  platform: email
+  disclosure: https://www.productboard.com/product/security/#application-security
+  bounty: true
+  program_url: https://www.productboard.com/product/security/#application-security
+  domains:
+  - productboard.com
+  - www.productboard.com
+  github_orgs: []
+  excluded: []
+- name: proof-of-humanity
+  platform: email
+  disclosure: clement@kleros.io
+  bounty: true
+  program_url: https://github.com/Proof-Of-Humanity/Proof-Of-Humanity/issues/54
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: protonmail
+  platform: email
+  disclosure: security@protonmail.com
+  bounty: true
+  program_url: https://protonmail.com/blog/responsible-vulnerability-disclosure/
+  domains:
+  - protonmail.com
+  - www.protonmail.com
+  github_orgs: []
+  excluded: []
+- name: python
+  platform: email
+  disclosure: security@python.org
+  bounty: true
+  program_url: https://www.python.org/news/security/
+  domains:
+  - python.org
+  - www.python.org
+  github_orgs: []
+  excluded: []
+- name: qiwi
+  platform: email
+  disclosure: https://www.qiwi.ru/page/hack.action
+  bounty: true
+  program_url: https://www.qiwi.ru/page/hack.action
+  domains:
+  - qiwi.ru
+  - www.qiwi.ru
+  github_orgs: []
+  excluded: []
+- name: qmail
+  platform: email
+  disclosure: https://cr.yp.to/qmail/guarantee.html
+  bounty: true
+  program_url: https://cr.yp.to/qmail/guarantee.html
+  domains:
+  - cr.yp.to
+  - www.cr.yp.to
+  github_orgs: []
+  excluded: []
+- name: qtrade
+  platform: email
+  disclosure: security@qtrade.io
+  bounty: true
+  program_url: https://qtrade.io/bug_bounty
+  domains:
+  - qtrade.io
+  - www.qtrade.io
+  github_orgs: []
+  excluded: []
+- name: qualcomm
+  platform: email
+  disclosure: product-security@qualcomm.com
+  bounty: true
+  program_url: https://www.qualcomm.com/company/product-security/report-a-bug
+  domains:
+  - qualcomm.com
+  - www.qualcomm.com
+  github_orgs: []
+  excluded: []
+- name: quandency
+  platform: email
+  disclosure: security@quadency.com
+  bounty: true
+  program_url: http://support.quadency.com/en/articles/2869964-bug-bounty-program
+  domains:
+  - support.quadency.com
+  - www.support.quadency.com
+  github_orgs: []
+  excluded: []
+- name: quantstamp
+  platform: email
+  disclosure: security@quantstamp.com
+  bounty: true
+  program_url: https://quantstamp.com/legal/responsible-disclosure
+  domains:
+  - quantstamp.com
+  - www.quantstamp.com
+  github_orgs: []
+  excluded: []
+- name: rsk
+  platform: email
+  disclosure: https://developers.rsk.co/contribute/bug-bounty-program/
+  bounty: true
+  program_url: https://developers.rsk.co/contribute/bug-bounty-program/
+  domains:
+  - developers.rsk.co
+  - www.developers.rsk.co
+  github_orgs: []
+  excluded: []
+- name: range
+  platform: email
+  disclosure: security@range.co
+  bounty: true
+  program_url: https://www.range.co/security/bounty
+  domains:
+  - range.co
+  - www.range.co
+  github_orgs: []
+  excluded: []
+- name: remitano
+  platform: email
+  disclosure: support@remitano.com
+  bounty: true
+  program_url: https://security.remitano.com/
+  domains:
+  - security.remitano.com
+  - www.security.remitano.com
+  github_orgs: []
+  excluded: []
+- name: renofi
+  platform: email
+  disclosure: https://www.federacy.com/renofi
+  bounty: true
+  program_url: https://www.federacy.com/renofi
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []
+- name: research-gate
+  platform: email
+  disclosure: https://explore.researchgate.net/display/support/Security+and+vulnerability
+  bounty: true
+  program_url: https://explore.researchgate.net/display/support/Security+and+vulnerability
+  domains:
+  - explore.researchgate.net
+  - www.explore.researchgate.net
+  github_orgs: []
+  excluded: []
+- name: revenuecat
+  platform: email
+  disclosure: https://www.federacy.com/revenuecat
+  bounty: true
+  program_url: https://www.federacy.com/revenuecat
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []
+- name: ricoh
+  platform: email
+  disclosure: https://www.ricoh.ca/en/about-us/vulnerability-disclosure-policy
+  bounty: true
+  program_url: https://www.ricoh.ca/en/about-us/vulnerability-disclosure-policy
+  domains:
+  - ricoh.ca
+  - www.ricoh.ca
+  github_orgs: []
+  excluded: []
+- name: riot-games
+  platform: email
+  disclosure: http://www.riotgames.com/riot-games-security
+  bounty: true
+  program_url: http://www.riotgames.com/riot-games-security
+  domains:
+  - riotgames.com
+  - www.riotgames.com
+  github_orgs: []
+  excluded: []
+- name: ripple
+  platform: email
+  disclosure: bugs@ripple.com
+  bounty: true
+  program_url: https://ripple.com/bug-bounty/
+  domains:
+  - ripple.com
+  - www.ripple.com
+  github_orgs: []
+  excluded: []
+- name: sns-bank
+  platform: email
+  disclosure: responsible-disclosure@devolksbank.nl
+  bounty: true
+  program_url: https://www.devolksbank.nl/veiligheid.html
+  domains:
+  - devolksbank.nl
+  - www.devolksbank.nl
+  github_orgs: []
+  excluded: []
+- name: sailthru
+  platform: email
+  disclosure: https://www.sailthru.com/trust/report-a-vulnerability/
+  bounty: true
+  program_url: https://www.sailthru.com/trust/report-a-vulnerability/
+  domains:
+  - sailthru.com
+  - www.sailthru.com
+  github_orgs: []
+  excluded: []
+- name: samsung-mobile
+  platform: email
+  disclosure: mobile.security@samsung.com
+  bounty: true
+  program_url: https://security.samsungmobile.com/securityReporting.smsb
+  domains:
+  - security.samsungmobile.com
+  - www.security.samsungmobile.com
+  github_orgs: []
+  excluded: []
+- name: samsung-smarttv
+  platform: email
+  disclosure: https://samsungtvbounty.com/ReportBug.aspx
+  bounty: true
+  program_url: https://samsungtvbounty.com/ReportBug.aspx
+  domains:
+  - samsungtvbounty.com
+  - www.samsungtvbounty.com
+  github_orgs: []
+  excluded: []
+- name: scraping-hub
+  platform: email
+  disclosure: bughunt@scrapinghub.com
+  bounty: true
+  program_url: https://scrapinghub.com/responsible-disclosure-policy/
+  domains:
+  - scrapinghub.com
+  - www.scrapinghub.com
+  github_orgs: []
+  excluded: []
+- name: secure-cyber-future
+  platform: email
+  disclosure: contact@securecyberfuture.com
+  bounty: true
+  program_url: https://www.securecyberfuture.com/responsible-disclosure
+  domains:
+  - securecyberfuture.com
+  - www.securecyberfuture.com
+  github_orgs: []
+  excluded: []
+- name: selz
+  platform: email
+  disclosure: security@selz.com
+  bounty: true
+  program_url: https://help.selz.com/article/217-security-escalation
+  domains:
+  - help.selz.com
+  - www.help.selz.com
+  github_orgs: []
+  excluded: []
+- name: sendsafely
+  platform: email
+  disclosure: https://www.sendsafely.com/security/bug-bounty
+  bounty: true
+  program_url: https://www.sendsafely.com/security/bug-bounty
+  domains:
+  - sendsafely.com
+  - www.sendsafely.com
+  github_orgs: []
+  excluded: []
+- name: serenityos
+  platform: email
+  disclosure: kling@serenityos.org
+  bounty: true
+  program_url: https://www.serenityos.org/bounty/
+  domains:
+  - serenityos.org
+  - www.serenityos.org
+  github_orgs: []
+  excluded: []
+- name: shape-security
+  platform: email
+  disclosure: security@shapesecurity.com
+  bounty: true
+  program_url: https://www.shapesecurity.com/report-a-vulnerability
+  domains:
+  - shapesecurity.com
+  - www.shapesecurity.com
+  github_orgs: []
+  excluded: []
+- name: shapeshift
+  platform: email
+  disclosure: security@shapeshift.io
+  bounty: true
+  program_url: https://corp.shapeshift.io/responsible-disclosure-program/
+  domains:
+  - corp.shapeshift.io
+  - www.corp.shapeshift.io
+  github_orgs: []
+  excluded: []
+- name: shopify
+  platform: email
+  disclosure: https://bugbounty.shopify.com
+  bounty: true
+  program_url: https://bugbounty.shopify.com
+  domains:
+  - bugbounty.shopify.com
+  - www.bugbounty.shopify.com
+  github_orgs: []
+  excluded: []
+- name: signalfx
+  platform: email
+  disclosure: security@signalfx.com
+  bounty: true
+  program_url: https://www.signalfx.com/trust/security/responsible-disclosure
+  domains:
+  - signalfx.com
+  - www.signalfx.com
+  github_orgs: []
+  excluded: []
+- name: silvergoldbull
+  platform: email
+  disclosure: https://silvergoldbull.com/bug-bounty/
+  bounty: true
+  program_url: https://silvergoldbull.com/bug-bounty/
+  domains:
+  - silvergoldbull.com
+  - www.silvergoldbull.com
+  github_orgs: []
+  excluded: []
+- name: simple
+  platform: email
+  disclosure: security@simple.com
+  bounty: true
+  program_url: https://www.simple.com/policies/security
+  domains:
+  - simple.com
+  - www.simple.com
+  github_orgs: []
+  excluded: []
+- name: slack
+  platform: email
+  disclosure: https://slack.com/report-vulnerability
+  bounty: true
+  program_url: https://slack.com/report-vulnerability
+  domains:
+  - slack.com
+  - www.slack.com
+  github_orgs: []
+  excluded: []
+- name: smartling
+  platform: email
+  disclosure: itsec@smartling.com
+  bounty: true
+  program_url: https://help.smartling.com/hc/en-us/articles/360008147833-Bug-Bounty-Policy
+  domains:
+  - help.smartling.com
+  - www.help.smartling.com
+  github_orgs: []
+  excluded: []
+- name: snyk
+  platform: email
+  disclosure: report@snyk.io
+  bounty: true
+  program_url: https://snyk.io/docs/security
+  domains:
+  - snyk.io
+  - www.snyk.io
+  github_orgs: []
+  excluded: []
+- name: solana
+  platform: email
+  disclosure: security@solana.com
+  bounty: true
+  program_url: https://github.com/solana-labs/solana/security/policy
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: solaredge
+  platform: email
+  disclosure: HWBugBounty@solaredge.com
+  bounty: true
+  program_url: https://www.solaredge.com/us/cyber-security-policy
+  domains:
+  - solaredge.com
+  - www.solaredge.com
+  github_orgs: []
+  excluded: []
+- name: splendid-data
+  platform: email
+  disclosure: security-alert@splendiddata.com
+  bounty: true
+  program_url: https://www.splendiddata.com/responsible-disclosure-policy/
+  domains:
+  - splendiddata.com
+  - www.splendiddata.com
+  github_orgs: []
+  excluded: []
+- name: spokeo
+  platform: email
+  disclosure: security@spokeo.com
+  bounty: true
+  program_url: https://www.spokeo.com/bug-bounty
+  domains:
+  - spokeo.com
+  - www.spokeo.com
+  github_orgs: []
+  excluded: []
+- name: spotify
+  platform: email
+  disclosure: https://www.spotify.com/us/bounty/
+  bounty: true
+  program_url: https://www.spotify.com/us/bounty/
+  domains:
+  - spotify.com
+  - www.spotify.com
+  github_orgs: []
+  excluded: []
+- name: spreaker
+  platform: email
+  disclosure: security@spreaker.com
+  bounty: true
+  program_url: https://www.spreaker.com/security
+  domains:
+  - spreaker.com
+  - www.spreaker.com
+  github_orgs: []
+  excluded: []
+- name: staked
+  platform: email
+  disclosure: https://staked.us/bug-bounty/
+  bounty: true
+  program_url: https://staked.us/bug-bounty/
+  domains:
+  - staked.us
+  - www.staked.us
+  github_orgs: []
+  excluded: []
+- name: starleaf
+  platform: email
+  disclosure: bugbounty@starleaf.com
+  bounty: true
+  program_url: https://www.starleaf.com/c/bug-bounty-program/
+  domains:
+  - starleaf.com
+  - www.starleaf.com
+  github_orgs: []
+  excluded: []
+- name: starbucks
+  platform: email
+  disclosure: https://www.starbucks.com/whitehat
+  bounty: true
+  program_url: https://www.starbucks.com/whitehat
+  domains:
+  - starbucks.com
+  - www.starbucks.com
+  github_orgs: []
+  excluded: []
+- name: stellar
+  platform: email
+  disclosure: security@stellar.org
+  bounty: true
+  program_url: https://www.stellar.org/bug-bounty-program/
+  domains:
+  - stellar.org
+  - www.stellar.org
+  github_orgs: []
+  excluded: []
+- name: stripe
+  platform: email
+  disclosure: security@stripe.com
+  bounty: true
+  program_url: https://stripe.com/docs/security/stripe
+  domains:
+  - stripe.com
+  - www.stripe.com
+  github_orgs: []
+  excluded: []
+- name: studo
+  platform: email
+  disclosure: security@moshbit.com
+  bounty: true
+  program_url: https://studo.com/at/security
+  domains:
+  - studo.com
+  - www.studo.com
+  github_orgs: []
+  excluded: []
+- name: swiggy
+  platform: email
+  disclosure: security@swiggy.in
+  bounty: true
+  program_url: https://www.swiggy.com/bug-bounty
+  domains:
+  - swiggy.com
+  - www.swiggy.com
+  github_orgs: []
+  excluded: []
+- name: swisscom
+  platform: email
+  disclosure: bug.bounty@swisscom.com
+  bounty: true
+  program_url: https://www.swisscom.ch/en/about/company/portrait/network/security/bug-bounty.html
+  domains:
+  - swisscom.ch
+  - www.swisscom.ch
+  github_orgs: []
+  excluded: []
+- name: synology
+  platform: email
+  disclosure: bounty@synology.com with https://www.synology.com/de-de/support/security_pgp_key
+  bounty: true
+  program_url: https://www.synology.com/de-de/security/bounty_program#scope_and_reward
+  domains:
+  - synology.com
+  - www.synology.com
+  github_orgs: []
+  excluded: []
+- name: tts
+  platform: email
+  disclosure: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  bounty: true
+  program_url: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []
+- name: tarsnap
+  platform: email
+  disclosure: cperciva@tarsnap.com
+  bounty: true
+  program_url: https://www.tarsnap.com/bugbounty.html
+  domains:
+  - tarsnap.com
+  - www.tarsnap.com
+  github_orgs: []
+  excluded: []
+- name: telegram
+  platform: email
+  disclosure: https://telegram.org/faq#q-what-if-my-hacker-friend-says-they-could-decipher-telegram-mes
+  bounty: true
+  program_url: https://telegram.org/faq#q-what-if-my-hacker-friend-says-they-could-decipher-telegram-mes
+  domains:
+  - telegram.org
+  - www.telegram.org
+  github_orgs: []
+  excluded: []
+- name: telekom
+  platform: email
+  disclosure: bugbounty@t-mobile.cz
+  bounty: true
+  program_url: https://www.telekom.com/en/corporate-responsibility/data-protection-data-security/security/security/closing-security-gaps-360054
+  domains:
+  - telekom.com
+  - www.telekom.com
+  github_orgs: []
+  excluded: []
+- name: tencent
+  platform: email
+  disclosure: http://en.security.tencent.com/
+  bounty: true
+  program_url: http://en.security.tencent.com/
+  domains:
+  - en.security.tencent.com
+  - www.en.security.tencent.com
+  github_orgs: []
+  excluded: []
+- name: tokopedia
+  platform: email
+  disclosure: https://bounty.tokopedia.net/rules
+  bounty: true
+  program_url: https://bounty.tokopedia.net/rules
+  domains:
+  - bounty.tokopedia.net
+  - www.bounty.tokopedia.net
+  github_orgs: []
+  excluded: []
+- name: tradingview
+  platform: email
+  disclosure: security@tradingview.com
+  bounty: true
+  program_url: https://www.tradingview.com/bounty/
+  domains:
+  - tradingview.com
+  - www.tradingview.com
+  github_orgs: []
+  excluded: []
+- name: trezor
+  platform: email
+  disclosure: https://trezor.io/security/
+  bounty: true
+  program_url: https://trezor.io/security/
+  domains:
+  - trezor.io
+  - www.trezor.io
+  github_orgs: []
+  excluded: []
+- name: tron-foundation
+  platform: email
+  disclosure: https://tron.network/findBug
+  bounty: true
+  program_url: https://tron.network/findBug
+  domains:
+  - tron.network
+  - www.tron.network
+  github_orgs: []
+  excluded: []
+- name: tumblr
+  platform: email
+  disclosure: https://tumblr.zendesk.com/hc/en-us/articles/234583348-Bug-Bounty-Program
+  bounty: true
+  program_url: https://tumblr.zendesk.com/hc/en-us/articles/234583348-Bug-Bounty-Program
+  domains:
+  - tumblr.zendesk.com
+  - www.tumblr.zendesk.com
+  github_orgs: []
+  excluded: []
+- name: ubiquiti-aside-program-to-the-
+  platform: email
+  disclosure: https://ui.com/security/
+  bounty: true
+  program_url: https://ui.com/security/
+  domains:
+  - ui.com
+  - www.ui.com
+  github_orgs: []
+  excluded: []
+- name: udemy
+  platform: email
+  disclosure: https://support.udemy.com/hc/en-us/articles/229232627-Report-a-Security-Vulnerability
+  bounty: true
+  program_url: https://support.udemy.com/hc/en-us/articles/229232627-Report-a-Security-Vulnerability
+  domains:
+  - support.udemy.com
+  - www.support.udemy.com
+  github_orgs: []
+  excluded: []
+- name: united-airlines
+  platform: email
+  disclosure: bugbounty@united.com
+  bounty: true
+  program_url: https://www.united.com/web/en-US/content/contact/bugbounty.aspx
+  domains:
+  - united.com
+  - www.united.com
+  github_orgs: []
+  excluded: []
+- name: upserve
+  platform: email
+  disclosure: https://upserve.com/security/
+  bounty: true
+  program_url: https://upserve.com/security/
+  domains:
+  - upserve.com
+  - www.upserve.com
+  github_orgs: []
+  excluded: []
+- name: usabilityhub
+  platform: email
+  disclosure: security@usabilityhub.com
+  bounty: true
+  program_url: https://app.usabilityhub.com/security/responsible_disclosure
+  domains:
+  - app.usabilityhub.com
+  - www.app.usabilityhub.com
+  github_orgs: []
+  excluded: []
+- name: vi-company
+  platform: email
+  disclosure: support@vicompany.nl
+  bounty: true
+  program_url: https://www.vicompany.nl/legal/responsible-disclosure
+  domains:
+  - vicompany.nl
+  - www.vicompany.nl
+  github_orgs: []
+  excluded: []
+- name: vpnarea
+  platform: email
+  disclosure: support@vpnarea.com
+  bounty: true
+  program_url: https://vpnarea.com/front/home/bugbounty
+  domains:
+  - vpnarea.com
+  - www.vpnarea.com
+  github_orgs: []
+  excluded: []
+- name: visma
+  platform: email
+  disclosure: responsible-disclosure@visma.com
+  bounty: true
+  program_url: https://www.visma.com/trust-centre/smb/security-and-privacy/operational/responsible-disclosure/
+  domains:
+  - visma.com
+  - www.visma.com
+  github_orgs: []
+  excluded: []
+- name: volkis
+  platform: email
+  disclosure: security@volkis.com.au
+  bounty: true
+  program_url: https://www.volkis.com.au/vulnerability-disclosure/
+  domains:
+  - volkis.com.au
+  - www.volkis.com.au
+  github_orgs: []
+  excluded: []
+- name: vultr
+  platform: email
+  disclosure: https://www.vultr.com/bug-bounty/
+  bounty: true
+  program_url: https://www.vultr.com/bug-bounty/
+  domains:
+  - vultr.com
+  - www.vultr.com
+  github_orgs: []
+  excluded: []
+- name: wagwalking
+  platform: email
+  disclosure: security@wagwalking.com
+  bounty: true
+  program_url: https://wagwalking.com/responsible-disclosure
+  domains:
+  - wagwalking.com
+  - www.wagwalking.com
+  github_orgs: []
+  excluded: []
+- name: walletconnect
+  platform: email
+  disclosure: security@walletconnect.com
+  bounty: true
+  program_url: https://walletconnect.com/.well-known/security.txt
+  domains:
+  - walletconnect.com
+  - www.walletconnect.com
+  github_orgs: []
+  excluded: []
+- name: walmart
+  platform: email
+  disclosure: https://corporate.walmart.com/privacy-security
+  bounty: true
+  program_url: https://corporate.walmart.com/privacy-security
+  domains:
+  - corporate.walmart.com
+  - www.corporate.walmart.com
+  github_orgs: []
+  excluded: []
+- name: wamba
+  platform: email
+  disclosure: http://corp.wamba.com/en/developer/security/#form
+  bounty: true
+  program_url: http://corp.wamba.com/en/developer/security/#form
+  domains:
+  - corp.wamba.com
+  - www.corp.wamba.com
+  github_orgs: []
+  excluded: []
+- name: wetransfer
+  platform: email
+  disclosure: https://wetransfer.com/legal/disclosure
+  bounty: true
+  program_url: https://wetransfer.com/legal/disclosure
+  domains:
+  - wetransfer.com
+  - www.wetransfer.com
+  github_orgs: []
+  excluded: []
+- name: wevpn
+  platform: email
+  disclosure: security@wevpn.com
+  bounty: true
+  program_url: https://wevpn.com/responsible-disclosure
+  domains:
+  - wevpn.com
+  - www.wevpn.com
+  github_orgs: []
+  excluded: []
+- name: wefact
+  platform: email
+  disclosure: helpdesk@wefact.nl
+  bounty: true
+  program_url: https://www.wefact.nl/security/
+  domains:
+  - wefact.nl
+  - www.wefact.nl
+  github_orgs: []
+  excluded: []
+- name: wickr
+  platform: email
+  disclosure: bugbounty@wickr.com
+  bounty: true
+  program_url: https://wickr.com/security/bug-bounty/
+  domains:
+  - wickr.com
+  - www.wickr.com
+  github_orgs: []
+  excluded: []
+- name: wordfence-intelligence
+  platform: email
+  disclosure: https://www.wordfence.com/threat-intel/bug-bounty-program/
+  bounty: true
+  program_url: https://www.wordfence.com/threat-intel/bug-bounty-program/
+  domains:
+  - wordfence.com
+  - www.wordfence.com
+  github_orgs: []
+  excluded: []
+- name: yammer
+  platform: email
+  disclosure: https://technet.microsoft.com/en-us/security/dn800983
+  bounty: true
+  program_url: https://technet.microsoft.com/en-us/security/dn800983
+  domains:
+  - technet.microsoft.com
+  - www.technet.microsoft.com
+  github_orgs: []
+  excluded: []
+- name: yandex
+  platform: email
+  disclosure: https://yandex.com/bugbounty/report/
+  bounty: true
+  program_url: https://yandex.com/bugbounty/report/
+  domains:
+  - yandex.com
+  - www.yandex.com
+  github_orgs: []
+  excluded: []
+- name: youtube
+  platform: email
+  disclosure: https://g.co/vrp
+  bounty: true
+  program_url: https://g.co/vrp
+  domains:
+  - g.co
+  - www.g.co
+  github_orgs: []
+  excluded: []
+- name: zaful
+  platform: email
+  disclosure: https://www.zaful.com/report-security-issues
+  bounty: true
+  program_url: https://www.zaful.com/report-security-issues
+  domains:
+  - zaful.com
+  - www.zaful.com
+  github_orgs: []
+  excluded: []
+- name: zapier
+  platform: email
+  disclosure: security@zapier.com
+  bounty: true
+  program_url: https://zapier.com/engineering/bug-bounty-program/
+  domains:
+  - zapier.com
+  - www.zapier.com
+  github_orgs: []
+  excluded: []
+- name: zendesk
+  platform: email
+  disclosure: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  bounty: true
+  program_url: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  domains:
+  - zendesk.de
+  - www.zendesk.de
+  github_orgs: []
+  excluded: []
+- name: zilliqa
+  platform: email
+  disclosure: https://dev.zilliqa.com/docs/contributors/contribute-bug-bounty/
+  bounty: true
+  program_url: https://dev.zilliqa.com/docs/contributors/contribute-bug-bounty/
+  domains:
+  - dev.zilliqa.com
+  - www.dev.zilliqa.com
+  github_orgs: []
+  excluded: []
+- name: zoho
+  platform: email
+  disclosure: https://bugbounty.zoho.com/bb/info#guide
+  bounty: true
+  program_url: https://bugbounty.zoho.com/bb/info#guide
+  domains:
+  - bugbounty.zoho.com
+  - www.bugbounty.zoho.com
+  github_orgs: []
+  excluded: []
+- name: zomato
+  platform: email
+  disclosure: security@zomato.com
+  bounty: true
+  program_url: https://www.zomato.com/security
+  domains:
+  - zomato.com
+  - www.zomato.com
+  github_orgs: []
+  excluded: []
+- name: zoom
+  platform: email
+  disclosure: security@zoom.us
+  bounty: true
+  program_url: https://zoom.us/docs/en-us/vulnerability-disclosure-policy.html
+  domains:
+  - zoom.us
+  - www.zoom.us
+  github_orgs: []
+  excluded: []
+- name: bluesnap
+  platform: email
+  disclosure: bounty@bluesnap.com
+  bounty: true
+  program_url: https://home.bluesnap.com/security-bounty/
+  domains:
+  - home.bluesnap.com
+  - www.home.bluesnap.com
+  github_orgs: []
+  excluded: []
+- name: cpanel
+  platform: email
+  disclosure: security@cpanel.net
+  bounty: true
+  program_url: https://cpanel.net/cpanel-security-bounty-program/
+  domains:
+  - cpanel.net
+  - www.cpanel.net
+  github_orgs: []
+  excluded: []
+- name: elmah-io
+  platform: email
+  disclosure: info@elmah.io
+  bounty: true
+  program_url: https://docs.elmah.io/vulnerability-disclosure-program/
+  domains:
+  - docs.elmah.io
+  - www.docs.elmah.io
+  github_orgs: []
+  excluded: []
+- name: intl-nothing-tech
+  platform: email
+  disclosure: g_feedback@nothing.tech
+  bounty: true
+  program_url: https://intl.nothing.tech/pages/vulnerability-report
+  domains:
+  - intl.nothing.tech
+  - www.intl.nothing.tech
+  github_orgs: []
+  excluded: []
+- name: owncloud
+  platform: email
+  disclosure: https://security.owncloud.com
+  bounty: true
+  program_url: https://security.owncloud.com
+  domains:
+  - security.owncloud.com
+  - www.security.owncloud.com
+  github_orgs: []
+  excluded: []
+- name: redstorm-io
+  platform: email
+  disclosure: https://www.redstorm.io/researcher/programs/rswebapppltf
+  bounty: true
+  program_url: https://www.redstorm.io/researcher/programs/rswebapppltf
+  domains:
+  - redstorm.io
+  - www.redstorm.io
+  github_orgs: []
+  excluded: []
+- name: reportgarden
+  platform: email
+  disclosure: devops@reportgarden.com
+  bounty: true
+  program_url: https://reportgarden.com/responsible-disclosure/
+  domains:
+  - reportgarden.com
+  - www.reportgarden.com
+  github_orgs: []
+  excluded: []
+- name: rockset
+  platform: email
+  disclosure: whitehat@rockset.com
+  bounty: true
+  program_url: https://rockset.com/legal/responsible-disclosure-policy/
+  domains:
+  - rockset.com
+  - www.rockset.com
+  github_orgs: []
+  excluded: []
+- name: szns
+  platform: email
+  disclosure: security@szns.io
+  bounty: true
+  program_url: https://docs.szns.io/smart-contracts/bug-bounty
+  domains:
+  - docs.szns.io
+  - www.docs.szns.io
+  github_orgs: []
+  excluded: []
+- name: web3-foundation
+  platform: email
+  disclosure: security-report@web3.foundation
+  bounty: true
+  program_url: https://web3.foundation/security-report/
+  domains:
+  - web3.foundation
+  - www.web3.foundation
+  github_orgs: []
+  excluded: []
+- name: zksync
+  platform: email
+  disclosure: security@zksync.io
+  bounty: true
+  program_url: https://zksync.io/dev/bug-bounty.html
+  domains:
+  - zksync.io
+  - www.zksync.io
+  github_orgs: []
+  excluded: []
+probe_allow: '*|0x|23andme|24sessions|84codes|abnamro|accredible|actility|aholddelhaize|airmiles|airvpn|alscotoday|alumniforwarding|alwaysdata|ampcode|apache|app|aquasec|ark|artsy|asana|augur|automox|autospf|autotrader|avast|avira|azimo|backblaze|bentley|bitgo|bitmex|bitski|bitsoffreedom|bitwala|bladestorm|blog|bounty|bugbounty|bugcrowd|bugs|build|bunq|campaignmonitor|canva|careevolution|city-data|classdojo|clause|clenergy|cloudcannon|coinapp|coinbase|coinjar|coinpayments|cointracker|connect|corp|corporate|coxautoinc|cpanel|cr|dealer|dealertrack|debricked|definityinc|dentrix|deribit|deskpro|dev|developer|developers|devolksbank|dhi|digitalhealthcompliance|dmarcreport|dnb|docker|docs|dragonex|duocircle|eligible|emsisoft|en|eset|etherscan|eurid|explore|f-secure|facebook|fair|fanduel|fastmail|federacy|ferm-rotterdam|flow|fusion|g|gamma|gcore|getdpd|ghostscript|github|global|goldmansachs|google|hackerone|hacktify|halodoc|hellosign|help|heroku|hex-rays|hitbtc|home|honest|hostinger|hub|hunter|idena|immutablesoft|inboxissue|independer|infstones|ing|instructure|integraxor|intel|intigriti|intl|ironcorelabs|jackaldao|jetbrains|jumplead|kbb|kissflow|kraken|kubernetes|latentpatterns|layerzero|leetcode|liquidweb|lisk|liveclicker|loginradius|lyft|mailflowmonitoring|majidalfuttaim|malwarebytes|managewp|manheim|marktplaats|medium|mega|microstrategy|monash|monetha|mozilla|mujs|mural|myemma|ncsc|nginx|notion|nowpayments|nureply|nwbbank|offensive-security|olacabs|olark|onfo|onlineseminar|openssl|outboundsmtp|packagemanager|palantir|parabol|parity|pastecoin|pathao|paypal|pcextreme|perldoc|personalcapital|phishprotection|pingidentity|plisio|pon-cat|posit|productboard|protonmail|public|python|qiwi|qtrade|qualcomm|quantstamp|range|redstorm|reportgarden|ricoh|riotgames|ripple|rockset|rstudio|sailthru|samsungtvbounty|scout|scrapinghub|securecyberfuture|security|sendsafely|serenityos|shapesecurity|shinyapps|signalfx|silvergoldbull|simple|slack|snyk|solaredge|splendiddata|spokeo|spotify|spreaker|staked|starbucks|starleaf|static|stellar|stripe|studo|support|swiggy|swisscom|synology|tarsnap|technet|telegram|telekom|tenantmigration|tls|tradingview|trezor|tron|trychameleon|tumblr|ui|umaproject|united|upserve|vauto|vicompany|vinsolutions|visma|volkis|vpnarea|vultr|wagwalking|walletconnect|web3|wefact|wetransfer|wevpn|wickr|wiki|wordfence|yandex|yeswehack|zaful|zapier|zendesk|zksync|zomato|zoom'

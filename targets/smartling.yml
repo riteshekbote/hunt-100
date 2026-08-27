@@ -1,0 +1,11 @@
+target:
+  name: smartling
+  platform: email
+  disclosure: itsec@smartling.com
+  bounty: true
+  program_url: https://help.smartling.com/hc/en-us/articles/360008147833-Bug-Bounty-Policy
+  domains:
+  - help.smartling.com
+  - www.help.smartling.com
+  github_orgs: []
+  excluded: []

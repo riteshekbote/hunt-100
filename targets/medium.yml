@@ -1,0 +1,11 @@
+target:
+  name: medium
+  platform: email
+  disclosure: security@medium.com
+  bounty: true
+  program_url: https://help.medium.com/hc/en-us/articles/213481308-Bug-Bounty-Disclosure-Program
+  domains:
+  - help.medium.com
+  - www.help.medium.com
+  github_orgs: []
+  excluded: []

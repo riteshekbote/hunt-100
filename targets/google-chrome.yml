@@ -1,0 +1,11 @@
+target:
+  name: google-chrome
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/chrome-rewards/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/chrome-rewards/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []

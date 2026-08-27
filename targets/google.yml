@@ -1,0 +1,11 @@
+target:
+  name: google
+  platform: email
+  disclosure: https://www.google.com/about/appsecurity/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/
+  domains:
+  - google.com
+  - www.google.com
+  github_orgs: []
+  excluded: []

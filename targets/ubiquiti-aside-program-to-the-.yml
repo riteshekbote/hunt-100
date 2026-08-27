@@ -1,0 +1,11 @@
+target:
+  name: ubiquiti-aside-program-to-the-
+  platform: email
+  disclosure: https://ui.com/security/
+  bounty: true
+  program_url: https://ui.com/security/
+  domains:
+  - ui.com
+  - www.ui.com
+  github_orgs: []
+  excluded: []

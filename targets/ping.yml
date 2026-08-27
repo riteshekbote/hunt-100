@@ -1,0 +1,11 @@
+target:
+  name: ping
+  platform: email
+  disclosure: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  bounty: true
+  program_url: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  domains:
+  - pingidentity.com
+  - www.pingidentity.com
+  github_orgs: []
+  excluded: []

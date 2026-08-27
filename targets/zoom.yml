@@ -1,0 +1,11 @@
+target:
+  name: zoom
+  platform: email
+  disclosure: security@zoom.us
+  bounty: true
+  program_url: https://zoom.us/docs/en-us/vulnerability-disclosure-policy.html
+  domains:
+  - zoom.us
+  - www.zoom.us
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: heroku
+  platform: email
+  disclosure: bugbountymanager@salesforce.com
+  bounty: true
+  program_url: https://www.heroku.com/policy/security
+  domains:
+  - heroku.com
+  - www.heroku.com
+  github_orgs: []
+  excluded: []

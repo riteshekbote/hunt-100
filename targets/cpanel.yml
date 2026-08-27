@@ -1,0 +1,11 @@
+target:
+  name: cpanel
+  platform: email
+  disclosure: security@cpanel.net
+  bounty: true
+  program_url: https://cpanel.net/cpanel-security-bounty-program/
+  domains:
+  - cpanel.net
+  - www.cpanel.net
+  github_orgs: []
+  excluded: []

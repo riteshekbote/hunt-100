@@ -1,0 +1,11 @@
+target:
+  name: tarsnap
+  platform: email
+  disclosure: cperciva@tarsnap.com
+  bounty: true
+  program_url: https://www.tarsnap.com/bugbounty.html
+  domains:
+  - tarsnap.com
+  - www.tarsnap.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: hellosign
+  platform: email
+  disclosure: security@hellosign.com
+  bounty: true
+  program_url: https://www.hellosign.com/trust/security
+  domains:
+  - hellosign.com
+  - www.hellosign.com
+  github_orgs: []
+  excluded: []

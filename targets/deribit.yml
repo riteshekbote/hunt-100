@@ -1,0 +1,11 @@
+target:
+  name: deribit
+  platform: email
+  disclosure: https://www.deribit.com/pages/information/bug-bounty-program
+  bounty: true
+  program_url: https://www.deribit.com/pages/information/bug-bounty-program
+  domains:
+  - deribit.com
+  - www.deribit.com
+  github_orgs: []
+  excluded: []

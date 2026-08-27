@@ -1,0 +1,11 @@
+target:
+  name: renofi
+  platform: email
+  disclosure: https://www.federacy.com/renofi
+  bounty: true
+  program_url: https://www.federacy.com/renofi
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

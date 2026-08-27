@@ -1,0 +1,11 @@
+target:
+  name: wickr
+  platform: email
+  disclosure: bugbounty@wickr.com
+  bounty: true
+  program_url: https://wickr.com/security/bug-bounty/
+  domains:
+  - wickr.com
+  - www.wickr.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: fusion
+  platform: email
+  disclosure: https://www.fusion.org/developers/bug-bounty#bugs
+  bounty: true
+  program_url: https://www.fusion.org/developers/bug-bounty#bugs
+  domains:
+  - fusion.org
+  - www.fusion.org
+  github_orgs: []
+  excluded: []

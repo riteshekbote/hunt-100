@@ -1,0 +1,11 @@
+target:
+  name: github
+  platform: email
+  disclosure: https://bounty.github.com/
+  bounty: true
+  program_url: https://bounty.github.com/
+  domains:
+  - bounty.github.com
+  - www.bounty.github.com
+  github_orgs: []
+  excluded: []

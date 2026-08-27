@@ -1,0 +1,11 @@
+target:
+  name: prezi
+  platform: email
+  disclosure: security@infogr.am
+  bounty: true
+  program_url: https://bugbounty.prezi.com/
+  domains:
+  - bugbounty.prezi.com
+  - www.bugbounty.prezi.com
+  github_orgs: []
+  excluded: []

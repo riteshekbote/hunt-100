@@ -1,0 +1,11 @@
+target:
+  name: frax-finance
+  platform: email
+  disclosure: https://docs.frax.finance/smart-contracts/miscellaneous
+  bounty: true
+  program_url: https://docs.frax.finance/smart-contracts/miscellaneous
+  domains:
+  - docs.frax.finance
+  - www.docs.frax.finance
+  github_orgs: []
+  excluded: []

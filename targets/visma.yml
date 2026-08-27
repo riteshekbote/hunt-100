@@ -1,0 +1,11 @@
+target:
+  name: visma
+  platform: email
+  disclosure: responsible-disclosure@visma.com
+  bounty: true
+  program_url: https://www.visma.com/trust-centre/smb/security-and-privacy/operational/responsible-disclosure/
+  domains:
+  - visma.com
+  - www.visma.com
+  github_orgs: []
+  excluded: []

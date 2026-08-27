@@ -1,0 +1,11 @@
+target:
+  name: jetbrains
+  platform: email
+  disclosure: security@jetbrains.com
+  bounty: true
+  program_url: https://www.jetbrains.com/legal/terms/coordinated-disclosure.html
+  domains:
+  - jetbrains.com
+  - www.jetbrains.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: etherscan
+  platform: email
+  disclosure: info@EtherScan.io
+  bounty: true
+  program_url: https://etherscan.io/bugbounty
+  domains:
+  - etherscan.io
+  - www.etherscan.io
+  github_orgs: []
+  excluded: []

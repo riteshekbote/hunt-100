@@ -1,0 +1,11 @@
+target:
+  name: tts
+  platform: email
+  disclosure: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  bounty: true
+  program_url: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []

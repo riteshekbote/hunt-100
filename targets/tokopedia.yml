@@ -1,0 +1,11 @@
+target:
+  name: tokopedia
+  platform: email
+  disclosure: https://bounty.tokopedia.net/rules
+  bounty: true
+  program_url: https://bounty.tokopedia.net/rules
+  domains:
+  - bounty.tokopedia.net
+  - www.bounty.tokopedia.net
+  github_orgs: []
+  excluded: []

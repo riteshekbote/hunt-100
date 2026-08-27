@@ -1,0 +1,11 @@
+target:
+  name: monash-university
+  platform: email
+  disclosure: cyberteam+disclosure@monash.edu
+  bounty: true
+  program_url: https://www.monash.edu/cybersecurity/about/mon-csirt
+  domains:
+  - monash.edu
+  - www.monash.edu
+  github_orgs: []
+  excluded: []

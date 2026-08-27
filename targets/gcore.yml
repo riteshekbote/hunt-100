@@ -1,0 +1,11 @@
+target:
+  name: gcore
+  platform: email
+  disclosure: bugbounty@gcore.com
+  bounty: true
+  program_url: https://gcore.com/bug-bounty-program/
+  domains:
+  - gcore.com
+  - www.gcore.com
+  github_orgs: []
+  excluded: []

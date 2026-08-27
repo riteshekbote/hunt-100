@@ -1,0 +1,11 @@
+target:
+  name: naver-whale
+  platform: email
+  disclosure: http://bugbounty.whale.naver.com
+  bounty: true
+  program_url: http://bugbounty.whale.naver.com
+  domains:
+  - bugbounty.whale.naver.com
+  - www.bugbounty.whale.naver.com
+  github_orgs: []
+  excluded: []

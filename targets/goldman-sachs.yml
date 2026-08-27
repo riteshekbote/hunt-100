@@ -1,0 +1,11 @@
+target:
+  name: goldman-sachs
+  platform: email
+  disclosure: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  bounty: true
+  program_url: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  domains:
+  - goldmansachs.com
+  - www.goldmansachs.com
+  github_orgs: []
+  excluded: []

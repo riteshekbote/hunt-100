@@ -1,0 +1,11 @@
+target:
+  name: qiwi
+  platform: email
+  disclosure: https://www.qiwi.ru/page/hack.action
+  bounty: true
+  program_url: https://www.qiwi.ru/page/hack.action
+  domains:
+  - qiwi.ru
+  - www.qiwi.ru
+  github_orgs: []
+  excluded: []

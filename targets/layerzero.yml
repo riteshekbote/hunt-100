@@ -1,0 +1,11 @@
+target:
+  name: layerzero
+  platform: email
+  disclosure: bounty@layerzerolabs.org
+  bounty: true
+  program_url: https://layerzero.gitbook.io/docs/bug-bounty/bug-bounty-program
+  domains:
+  - layerzero.gitbook.io
+  - www.layerzero.gitbook.io
+  github_orgs: []
+  excluded: []

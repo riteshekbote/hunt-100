@@ -1,0 +1,11 @@
+target:
+  name: range
+  platform: email
+  disclosure: security@range.co
+  bounty: true
+  program_url: https://www.range.co/security/bounty
+  domains:
+  - range.co
+  - www.range.co
+  github_orgs: []
+  excluded: []

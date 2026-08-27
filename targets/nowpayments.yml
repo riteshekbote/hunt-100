@@ -1,0 +1,11 @@
+target:
+  name: nowpayments
+  platform: email
+  disclosure: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  bounty: true
+  program_url: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  domains:
+  - nowpayments.io
+  - www.nowpayments.io
+  github_orgs: []
+  excluded: []

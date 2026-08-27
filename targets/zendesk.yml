@@ -1,0 +1,11 @@
+target:
+  name: zendesk
+  platform: email
+  disclosure: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  bounty: true
+  program_url: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  domains:
+  - zendesk.de
+  - www.zendesk.de
+  github_orgs: []
+  excluded: []

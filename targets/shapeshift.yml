@@ -1,0 +1,11 @@
+target:
+  name: shapeshift
+  platform: email
+  disclosure: security@shapeshift.io
+  bounty: true
+  program_url: https://corp.shapeshift.io/responsible-disclosure-program/
+  domains:
+  - corp.shapeshift.io
+  - www.corp.shapeshift.io
+  github_orgs: []
+  excluded: []

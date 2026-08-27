@@ -1,0 +1,11 @@
+target:
+  name: mozilla
+  platform: email
+  disclosure: security@mozilla.org
+  bounty: true
+  program_url: https://www.mozilla.org/en-US/security/bug-bounty/
+  domains:
+  - mozilla.org
+  - www.mozilla.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: iota
+  platform: email
+  disclosure: security@iota.org
+  bounty: true
+  program_url: https://github.com/iotaledger/iota-java/blob/dev/.github/SECURITY.md
+  domains:
+  - github.com
+  - www.github.com
+  github_orgs: []
+  excluded: []

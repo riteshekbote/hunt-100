@@ -1,0 +1,11 @@
+target:
+  name: independer
+  platform: email
+  disclosure: beveiliging@independer.nl
+  bounty: true
+  program_url: https://www.independer.nl/algemeen/info/responsible-disclosure.aspx
+  domains:
+  - independer.nl
+  - www.independer.nl
+  github_orgs: []
+  excluded: []

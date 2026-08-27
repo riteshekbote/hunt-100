@@ -1,0 +1,11 @@
+target:
+  name: intel
+  platform: email
+  disclosure: secure@intel.com
+  bounty: true
+  program_url: https://www.intel.com/content/www/us/en/security-center/default.html
+  domains:
+  - intel.com
+  - www.intel.com
+  github_orgs: []
+  excluded: []

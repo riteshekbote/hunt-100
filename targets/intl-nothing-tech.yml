@@ -1,0 +1,11 @@
+target:
+  name: intl-nothing-tech
+  platform: email
+  disclosure: g_feedback@nothing.tech
+  bounty: true
+  program_url: https://intl.nothing.tech/pages/vulnerability-report
+  domains:
+  - intl.nothing.tech
+  - www.intl.nothing.tech
+  github_orgs: []
+  excluded: []

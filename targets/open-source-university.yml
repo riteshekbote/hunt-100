@@ -1,0 +1,11 @@
+target:
+  name: open-source-university
+  platform: email
+  disclosure: security@os.university
+  bounty: true
+  program_url: https://medium.com/the-os-university-blog/os-university-smart-contracts-are-live-edu-token-bug-bounty-reward-awaits-you-27c1de006249
+  domains:
+  - medium.com
+  - www.medium.com
+  github_orgs: []
+  excluded: []

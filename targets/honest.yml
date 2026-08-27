@@ -1,0 +1,11 @@
+target:
+  name: honest
+  platform: email
+  disclosure: vulnerability-disclosure@honestbank.com
+  bounty: true
+  program_url: https://honest.co.id/vulnerability-disclosure-policy
+  domains:
+  - honest.co.id
+  - www.honest.co.id
+  github_orgs: []
+  excluded: []

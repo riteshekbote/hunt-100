@@ -1,0 +1,11 @@
+target:
+  name: paypal
+  platform: email
+  disclosure: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  bounty: true
+  program_url: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  domains:
+  - paypal.com
+  - www.paypal.com
+  github_orgs: []
+  excluded: []

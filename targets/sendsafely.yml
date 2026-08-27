@@ -1,0 +1,11 @@
+target:
+  name: sendsafely
+  platform: email
+  disclosure: https://www.sendsafely.com/security/bug-bounty
+  bounty: true
+  program_url: https://www.sendsafely.com/security/bug-bounty
+  domains:
+  - sendsafely.com
+  - www.sendsafely.com
+  github_orgs: []
+  excluded: []

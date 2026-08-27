@@ -1,0 +1,11 @@
+target:
+  name: owncloud
+  platform: email
+  disclosure: https://security.owncloud.com
+  bounty: true
+  program_url: https://security.owncloud.com
+  domains:
+  - security.owncloud.com
+  - www.security.owncloud.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: starbucks
+  platform: email
+  disclosure: https://www.starbucks.com/whitehat
+  bounty: true
+  program_url: https://www.starbucks.com/whitehat
+  domains:
+  - starbucks.com
+  - www.starbucks.com
+  github_orgs: []
+  excluded: []

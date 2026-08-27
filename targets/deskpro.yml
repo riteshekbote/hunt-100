@@ -1,0 +1,11 @@
+target:
+  name: deskpro
+  platform: email
+  disclosure: security@deskpro.com
+  bounty: true
+  program_url: https://www.deskpro.com/security/responsible-disclosure/
+  domains:
+  - deskpro.com
+  - www.deskpro.com
+  github_orgs: []
+  excluded: []

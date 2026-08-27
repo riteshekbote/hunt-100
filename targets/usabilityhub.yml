@@ -1,0 +1,11 @@
+target:
+  name: usabilityhub
+  platform: email
+  disclosure: security@usabilityhub.com
+  bounty: true
+  program_url: https://app.usabilityhub.com/security/responsible_disclosure
+  domains:
+  - app.usabilityhub.com
+  - www.app.usabilityhub.com
+  github_orgs: []
+  excluded: []

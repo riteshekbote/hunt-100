@@ -1,0 +1,11 @@
+target:
+  name: massachusetts-institute-of-tec
+  platform: email
+  disclosure: https://bounty.mit.edu/
+  bounty: true
+  program_url: https://bounty.mit.edu/
+  domains:
+  - bounty.mit.edu
+  - www.bounty.mit.edu
+  github_orgs: []
+  excluded: []

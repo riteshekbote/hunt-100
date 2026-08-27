@@ -1,0 +1,11 @@
+target:
+  name: shopify
+  platform: email
+  disclosure: https://bugbounty.shopify.com
+  bounty: true
+  program_url: https://bugbounty.shopify.com
+  domains:
+  - bugbounty.shopify.com
+  - www.bugbounty.shopify.com
+  github_orgs: []
+  excluded: []

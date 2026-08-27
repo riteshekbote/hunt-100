@@ -1,0 +1,11 @@
+target:
+  name: stellar
+  platform: email
+  disclosure: security@stellar.org
+  bounty: true
+  program_url: https://www.stellar.org/bug-bounty-program/
+  domains:
+  - stellar.org
+  - www.stellar.org
+  github_orgs: []
+  excluded: []
