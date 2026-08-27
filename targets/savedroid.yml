@@ -1,0 +1,11 @@
+target:
+  name: savedroid
+  platform: bounty
+  disclosure: https://hackerone.com/savedroid
+  bounty: true
+  program_url: https://hackerone.com/savedroid
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

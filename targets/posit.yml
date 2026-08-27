@@ -1,0 +1,19 @@
+target:
+  name: posit
+  platform: email
+  disclosure: security@posit.co
+  bounty: false
+  program_url: https://posit.co/about/product-security/
+  domains:
+  - posit.co
+  - posit.cloud
+  - shinyapps.io
+  - connect.cloud
+  - rstudio.com
+  - www.rstudio.com
+  - packagemanager.posit.co
+  - public.rstudio.com
+  github_orgs:
+  - rstudio
+  - posit-dev
+  excluded: []

@@ -1,0 +1,20 @@
+target:
+  name: docker
+  platform: email
+  disclosure: security@docker.com
+  bounty: swag (critical/high)
+  program_url: https://www.docker.com/trust/vulnerability-disclosure-policy/
+  domains:
+  - docker.com
+  - www.docker.com
+  - app.docker.com
+  - hub.docker.com
+  - build.docker.com
+  - scout.docker.com
+  - '*.docker.com'
+  - '*.docker.io'
+  - dhi.io
+  github_orgs:
+  - docker
+  excluded:
+  - 3rd-party extensions not owned by Docker

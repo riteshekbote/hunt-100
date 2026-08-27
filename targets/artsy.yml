@@ -1,0 +1,11 @@
+target:
+  name: artsy
+  platform: email
+  disclosure: security@artsy.net
+  bounty: true
+  program_url: https://www.artsy.net/security
+  domains:
+  - artsy.net
+  - www.artsy.net
+  github_orgs: []
+  excluded: []

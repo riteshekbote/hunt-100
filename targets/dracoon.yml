@@ -1,0 +1,11 @@
+target:
+  name: dracoon
+  platform: bounty
+  disclosure: https://security.dracoon.com
+  bounty: true
+  program_url: https://security.dracoon.com
+  domains:
+  - security.dracoon.com
+  - www.security.dracoon.com
+  github_orgs: []
+  excluded: []

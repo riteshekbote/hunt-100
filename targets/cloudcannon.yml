@@ -1,0 +1,11 @@
+target:
+  name: cloudcannon
+  platform: bounty
+  disclosure: https://cloudcannon.com/bug-bounty/
+  bounty: true
+  program_url: https://cloudcannon.com/bug-bounty/
+  domains:
+  - cloudcannon.com
+  - www.cloudcannon.com
+  github_orgs: []
+  excluded: []

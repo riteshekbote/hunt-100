@@ -1,0 +1,11 @@
+target:
+  name: airvpn
+  platform: email
+  disclosure: security@airvpn.org
+  bounty: true
+  program_url: https://airvpn.org/security_policy/
+  domains:
+  - airvpn.org
+  - www.airvpn.org
+  github_orgs: []
+  excluded: []

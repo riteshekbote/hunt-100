@@ -1,0 +1,11 @@
+target:
+  name: 3ds-outscale
+  platform: bounty
+  disclosure: bugbounty@outscale.com
+  bounty: true
+  program_url: https://en.outscale.com/reporting-vulnerabilities/
+  domains:
+  - en.outscale.com
+  - www.en.outscale.com
+  github_orgs: []
+  excluded: []

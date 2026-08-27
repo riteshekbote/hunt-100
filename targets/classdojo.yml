@@ -1,0 +1,11 @@
+target:
+  name: classdojo
+  platform: email
+  disclosure: security@classdojo.com
+  bounty: true
+  program_url: https://www.classdojo.com/securitydisclosureprogram/
+  domains:
+  - classdojo.com
+  - www.classdojo.com
+  github_orgs: []
+  excluded: []

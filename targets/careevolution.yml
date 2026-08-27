@@ -1,0 +1,11 @@
+target:
+  name: careevolution
+  platform: bounty
+  disclosure: https://careevolution.com/trust/security-research/
+  bounty: true
+  program_url: https://careevolution.com/trust/security-research/
+  domains:
+  - careevolution.com
+  - www.careevolution.com
+  github_orgs: []
+  excluded: []

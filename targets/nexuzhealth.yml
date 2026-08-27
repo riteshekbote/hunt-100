@@ -1,0 +1,11 @@
+target:
+  name: nexuzhealth
+  platform: bounty
+  disclosure: https://www.intigriti.com/public/project/uz%20leuven/nexuzhealthwebpacs
+  bounty: true
+  program_url: https://www.intigriti.com/public/project/uz%20leuven/nexuzhealthwebpacs
+  domains:
+  - intigriti.com
+  - www.intigriti.com
+  github_orgs: []
+  excluded: []

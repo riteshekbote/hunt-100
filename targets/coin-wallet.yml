@@ -1,0 +1,11 @@
+target:
+  name: coin-wallet
+  platform: bounty
+  disclosure: support@Coin.Space
+  bounty: true
+  program_url: https://coinapp.zendesk.com/hc/en-us/articles/115001730468-Does-CoinSpace-have-a-bug-bounty-program-
+  domains:
+  - coinapp.zendesk.com
+  - www.coinapp.zendesk.com
+  github_orgs: []
+  excluded: []

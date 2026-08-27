@@ -1,0 +1,11 @@
+target:
+  name: 24sessions
+  platform: email
+  disclosure: security@24sessions.com
+  bounty: true
+  program_url: https://www.24sessions.com/responsible-disclosure
+  domains:
+  - 24sessions.com
+  - www.24sessions.com
+  github_orgs: []
+  excluded: []

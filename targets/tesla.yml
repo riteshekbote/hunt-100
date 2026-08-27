@@ -1,0 +1,11 @@
+target:
+  name: tesla
+  platform: bounty
+  disclosure: https://bugcrowd.com/tesla
+  bounty: true
+  program_url: https://bugcrowd.com/tesla
+  domains:
+  - bugcrowd.com
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,11 @@
+target:
+  name: debricked
+  platform: email
+  disclosure: security@debricked.com
+  bounty: true
+  program_url: https://debricked.com/report-a-vulnerability/
+  domains:
+  - debricked.com
+  - www.debricked.com
+  github_orgs: []
+  excluded: []

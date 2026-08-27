@@ -1,0 +1,11 @@
+target:
+  name: accredible
+  platform: email
+  disclosure: security@accredible.com
+  bounty: true
+  program_url: https://www.accredible.com/white_hat/
+  domains:
+  - accredible.com
+  - www.accredible.com
+  github_orgs: []
+  excluded: []

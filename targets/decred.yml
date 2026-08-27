@@ -1,0 +1,11 @@
+target:
+  name: decred
+  platform: bounty
+  disclosure: https://bounty.decred.org/
+  bounty: true
+  program_url: https://bounty.decred.org/
+  domains:
+  - bounty.decred.org
+  - www.bounty.decred.org
+  github_orgs: []
+  excluded: []

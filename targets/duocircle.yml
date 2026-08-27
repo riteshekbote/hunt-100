@@ -1,0 +1,19 @@
+target:
+  name: duocircle
+  platform: email
+  disclosure: security@duocircle.com
+  bounty: true
+  program_url: https://trust.duocircle.com/responsible-disclosure/
+  domains:
+  - duocircle.com
+  - autospf.com
+  - dmarcreport.com
+  - phishprotection.com
+  - outboundsmtp.com
+  - tenantmigration.com
+  - mailflowmonitoring.com
+  - alumniforwarding.com
+  - nureply.com
+  - inboxissue.com
+  github_orgs: []
+  excluded: []

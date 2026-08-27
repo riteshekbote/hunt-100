@@ -1,0 +1,11 @@
+target:
+  name: bitpay
+  platform: email
+  disclosure: disclosure@bitpay.com
+  bounty: true
+  program_url: https://support.bitpay.com/hc/en-us/articles/204229369-Does-BitPay-have-a-bug-bounty-program-
+  domains:
+  - support.bitpay.com
+  - www.support.bitpay.com
+  github_orgs: []
+  excluded: []

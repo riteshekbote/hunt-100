@@ -1,0 +1,11 @@
+target:
+  name: apache
+  platform: email
+  disclosure: security@apache.org
+  bounty: true
+  program_url: https://www.apache.org/security/
+  domains:
+  - apache.org
+  - www.apache.org
+  github_orgs: []
+  excluded: []

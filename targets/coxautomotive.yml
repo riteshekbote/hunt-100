@@ -1,0 +1,26 @@
+target:
+  name: coxautomotive
+  platform: email
+  disclosure: securitydisclosure@coxautoinc.com
+  bounty: false
+  program_url: https://www.coxautoinc.com/responsible-disclosure/
+  domains:
+  - coxautoinc.com
+  - autotrader.com
+  - www.autotrader.com
+  - kbb.com
+  - www.kbb.com
+  - manheim.com
+  - www.manheim.com
+  - dealertrack.com
+  - www.dealertrack.com
+  - dealer.com
+  - www.dealer.com
+  - vauto.com
+  - www.vauto.com
+  - vinsolutions.com
+  - www.vinsolutions.com
+  github_orgs: []
+  excluded:
+  - targeting Cox Automotive customers
+  - DoS / resource exhaustion

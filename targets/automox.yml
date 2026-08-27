@@ -1,0 +1,11 @@
+target:
+  name: automox
+  platform: email
+  disclosure: disclosures@automox.com
+  bounty: true
+  program_url: https://www.automox.com/security/responsible-disclosure
+  domains:
+  - automox.com
+  - www.automox.com
+  github_orgs: []
+  excluded: []

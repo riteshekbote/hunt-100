@@ -1,0 +1,11 @@
+target:
+  name: iconloop
+  platform: bounty
+  disclosure: https://hackerone.com/iconloop_inc
+  bounty: true
+  program_url: https://hackerone.com/iconloop_inc
+  domains:
+  - hackerone.com
+  - www.hackerone.com
+  github_orgs: []
+  excluded: []

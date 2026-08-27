@@ -1,0 +1,13 @@
+target:
+  name: emsisoft
+  platform: email
+  disclosure: security@emsisoft.com
+  bounty: true
+  bounty_amount: up to $500
+  program_url: https://www.emsisoft.com/en/bug-bounty/
+  domains:
+  - emsisoft.com
+  - static.emsisoft.com
+  - blog.emsisoft.com
+  github_orgs: []
+  excluded: []

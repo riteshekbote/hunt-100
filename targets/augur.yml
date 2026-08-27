@@ -1,0 +1,11 @@
+target:
+  name: augur
+  platform: bounty
+  disclosure: bounty@augur.net
+  bounty: true
+  program_url: https://augur.net/blog/v2-bug-bounty/
+  domains:
+  - augur.net
+  - www.augur.net
+  github_orgs: []
+  excluded: []

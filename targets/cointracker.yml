@@ -1,0 +1,11 @@
+target:
+  name: cointracker
+  platform: email
+  disclosure: security@cointracker.io
+  bounty: true
+  program_url: https://www.cointracker.io/security
+  domains:
+  - cointracker.io
+  - www.cointracker.io
+  github_orgs: []
+  excluded: []

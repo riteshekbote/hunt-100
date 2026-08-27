@@ -1,0 +1,11 @@
+target:
+  name: airswap
+  platform: bounty
+  disclosure: bounty@airswap.io
+  bounty: true
+  program_url: https://blog.airswap.io/airswap-bug-bounty-4d7ec41f3ea7
+  domains:
+  - blog.airswap.io
+  - www.blog.airswap.io
+  github_orgs: []
+  excluded: []

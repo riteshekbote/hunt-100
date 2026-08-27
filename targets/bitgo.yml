@@ -1,0 +1,11 @@
+target:
+  name: bitgo
+  platform: bounty
+  disclosure: bugbounty@bitgo.com
+  bounty: true
+  program_url: https://www.bitgo.com/bug-bounty
+  domains:
+  - bitgo.com
+  - www.bitgo.com
+  github_orgs: []
+  excluded: []

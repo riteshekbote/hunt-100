@@ -1,0 +1,11 @@
+target:
+  name: check
+  platform: bounty
+  disclosure: https://www.federacy.com/check
+  bounty: true
+  program_url: https://www.federacy.com/check
+  domains:
+  - federacy.com
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

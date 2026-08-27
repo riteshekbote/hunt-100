@@ -1,0 +1,11 @@
+target:
+  name: city-data-com
+  platform: bounty
+  disclosure: http://www.city-data.com/bug-bounty.html
+  bounty: true
+  program_url: http://www.city-data.com/bug-bounty.html
+  domains:
+  - city-data.com
+  - www.city-data.com
+  github_orgs: []
+  excluded: []

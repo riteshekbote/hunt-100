@@ -1,0 +1,11 @@
+target:
+  name: bose
+  platform: email
+  disclosure: privacyandsecurity@bose.com
+  bounty: true
+  program_url: https://global.bose.com/en_us/product_security_vulnerability_response.html
+  domains:
+  - global.bose.com
+  - www.global.bose.com
+  github_orgs: []
+  excluded: []
