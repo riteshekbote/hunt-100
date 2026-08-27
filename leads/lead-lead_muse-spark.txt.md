@@ -29,3 +29,10 @@ impact: NONE
 [FINAL] NONE
 [LEARN] NONE — no class proven dead/alive this cycle (no status/param evidence)
 [RISK] 38 — email-only programs, no auth-gated high-value endpoints exposed in current inventory slice; docker wildcards are high-value but no concrete IDOR/SSRF/JWT anomaly observed passively
+## 2026-08-27 15:34:01 UTC (model muse-spark)
+[PARKED] docker SSRF->metadata via 169.254.169.254 on registry: dropped — no endpoint/param evidence, asset is wildcard only
+[PARKED] posit shinyapps.io IDOR/BOLA on /api/v1/apps/{id}: dropped — no CT host/param in inventory to anchor
+[PARKED] duocircle mailflowmonitoring.com auth bypass: dropped — zero inventory/verify_steps
+[FINAL] NONE — 0 surviving hypotheses >=70 after strict filter
+[LEARN] NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
+[RISK] 38 — low-medium: surface is email-only disclosure with wildcard/aux domains but no high-signal endpoints, no auth/session/GraphQL/JWT/upload exposure proven; largest exposure is *.docker.com registry (Hub) pending concrete probe, all others lack CT evidence this cycle
