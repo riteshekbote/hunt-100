@@ -1,0 +1,10 @@
+target:
+  name: gigamon-api
+  platform: vdp
+  disclosure: https://www.gigamon.com/security-disclosure.html
+  bounty: false
+  program_url: https://www.gigamon.com/security-disclosure.html
+  domains:
+  - api.gigamon.com
+  github_orgs: []
+  excluded: []

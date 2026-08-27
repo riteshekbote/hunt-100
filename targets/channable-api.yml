@@ -1,0 +1,10 @@
+target:
+  name: channable-api
+  platform: vdp
+  disclosure: security@channable.com
+  bounty: false
+  program_url: https://www.channable.com/bug-bounty/
+  domains:
+  - api.channable.com
+  github_orgs: []
+  excluded: []

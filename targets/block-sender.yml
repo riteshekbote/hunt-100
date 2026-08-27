@@ -1,0 +1,10 @@
+target:
+  name: block-sender
+  platform: vdp
+  disclosure: support@blocksender.io
+  bounty: false
+  program_url: https://blocksender.io/vulnerability-disclosure-policy/
+  domains:
+  - blocksender.io
+  github_orgs: []
+  excluded: []

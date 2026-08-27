@@ -1,0 +1,10 @@
+target:
+  name: immutablesoft-api
+  platform: bounty
+  disclosure: https://immutablesoft.github.io/ImmutableEcosystem/
+  bounty: true
+  program_url: https://immutablesoft.github.io/ImmutableEcosystem/
+  domains:
+  - api.immutablesoft.github.io
+  github_orgs: []
+  excluded: []

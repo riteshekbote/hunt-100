@@ -1,0 +1,10 @@
+target:
+  name: personal-capital-app
+  platform: bounty
+  disclosure: https://www.personalcapital.com/responsible-disclosure/
+  bounty: true
+  program_url: https://www.personalcapital.com/responsible-disclosure/
+  domains:
+  - app.personalcapital.com
+  github_orgs: []
+  excluded: []

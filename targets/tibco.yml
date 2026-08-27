@@ -1,0 +1,10 @@
+target:
+  name: tibco
+  platform: vdp
+  disclosure: security@tibco.com
+  bounty: false
+  program_url: https://www.tibco.com/security/vulnerability-disclosure-policy
+  domains:
+  - tibco.com
+  github_orgs: []
+  excluded: []

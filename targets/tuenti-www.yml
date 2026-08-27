@@ -1,0 +1,10 @@
+target:
+  name: tuenti-www
+  platform: vdp
+  disclosure: http://corporate.tuenti.com/en/dev/security
+  bounty: false
+  program_url: http://corporate.tuenti.com/en/dev/security
+  domains:
+  - www.corporate.tuenti.com
+  github_orgs: []
+  excluded: []

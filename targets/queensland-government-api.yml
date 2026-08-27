@@ -1,0 +1,10 @@
+target:
+  name: queensland-government-api
+  platform: vdp
+  disclosure: cybersecurityunit@qgcio.qld.gov.au
+  bounty: false
+  program_url: https://www.qgcio.qld.gov.au/information-on/information-security/responsible-vulnerability-disclosure-statement
+  domains:
+  - api.qgcio.qld.gov.au
+  github_orgs: []
+  excluded: []

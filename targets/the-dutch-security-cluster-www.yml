@@ -1,0 +1,10 @@
+target:
+  name: the-dutch-security-cluster-www
+  platform: vdp
+  disclosure: joris.denbruinen@thehaguesecuritydelta.com
+  bounty: false
+  program_url: https://www.thehaguesecuritydelta.com/responsible-disclosure
+  domains:
+  - www.thehaguesecuritydelta.com
+  github_orgs: []
+  excluded: []

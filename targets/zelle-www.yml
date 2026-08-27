@@ -1,0 +1,10 @@
+target:
+  name: zelle-www
+  platform: vdp
+  disclosure: bugbounty@earlywarning.com
+  bounty: false
+  program_url: https://www.zellepay.com/responsible-disclosure-program
+  domains:
+  - www.zellepay.com
+  github_orgs: []
+  excluded: []

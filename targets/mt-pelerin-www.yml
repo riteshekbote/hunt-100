@@ -1,0 +1,10 @@
+target:
+  name: mt-pelerin-www
+  platform: vdp
+  disclosure: security@mtpelerin.com
+  bounty: false
+  program_url: https://www.mtpelerin.com/responsible-disclosure-policy
+  domains:
+  - www.mtpelerin.com
+  github_orgs: []
+  excluded: []

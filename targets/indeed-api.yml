@@ -1,0 +1,10 @@
+target:
+  name: indeed-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/indeed
+  bounty: true
+  program_url: https://bugcrowd.com/indeed
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

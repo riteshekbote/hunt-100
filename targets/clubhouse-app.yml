@@ -1,0 +1,10 @@
+target:
+  name: clubhouse-app
+  platform: vdp
+  disclosure: security@clubhouse.io
+  bounty: false
+  program_url: https://clubhouse.io/disclosure/
+  domains:
+  - app.clubhouse.io
+  github_orgs: []
+  excluded: []

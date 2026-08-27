@@ -1,0 +1,10 @@
+target:
+  name: vdoo-www
+  platform: vdp
+  disclosure: vuln@vdoo.com
+  bounty: false
+  program_url: https://www.vdoo.com/disclosures
+  domains:
+  - www.vdoo.com
+  github_orgs: []
+  excluded: []

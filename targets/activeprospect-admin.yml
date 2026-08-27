@@ -1,0 +1,10 @@
+target:
+  name: activeprospect-admin
+  platform: vdp
+  disclosure: security@activeprospect.com
+  bounty: false
+  program_url: https://activeprospect.com/security/
+  domains:
+  - admin.activeprospect.com
+  github_orgs: []
+  excluded: []

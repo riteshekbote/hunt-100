@@ -1,0 +1,10 @@
+target:
+  name: beckhoff-staging
+  platform: vdp
+  disclosure: https://infosys.beckhoff.com/english.php?content=../content/1033/ipc_security/9007202382327691.html&id=
+  bounty: false
+  program_url: https://infosys.beckhoff.com/english.php?content=../content/1033/ipc_security/9007202382327691.html&id=
+  domains:
+  - staging.infosys.beckhoff.com
+  github_orgs: []
+  excluded: []

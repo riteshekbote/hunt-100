@@ -1,0 +1,10 @@
+target:
+  name: cloudinary-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/cloudinary
+  bounty: true
+  program_url: https://bugcrowd.com/cloudinary
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

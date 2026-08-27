@@ -1,0 +1,10 @@
+target:
+  name: duo-security-www
+  platform: vdp
+  disclosure: psirt@duosecurity.com
+  bounty: false
+  program_url: https://duo.com/support/security-and-reliability/security-response
+  domains:
+  - www.duo.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: federal-labor-relations-author-www
+  platform: vdp
+  disclosure: vulnerabilityresearch@flra.gov
+  bounty: false
+  program_url: https://www.flra.gov/vulnerability-disclosure-policy
+  domains:
+  - www.flra.gov
+  github_orgs: []
+  excluded: []

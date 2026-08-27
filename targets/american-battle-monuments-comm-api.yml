@@ -1,0 +1,10 @@
+target:
+  name: american-battle-monuments-comm-api
+  platform: vdp
+  disclosure: ext-cybersec@abmc.gov
+  bounty: false
+  program_url: https://www.abmc.gov/vulnerability-disclosure-policy
+  domains:
+  - api.abmc.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: tjhsst-edu-app
+  platform: vdp
+  disclosure: security@tjhsst.edu
+  bounty: false
+  program_url: https://tjhsst.edu/security/policy.txt
+  domains:
+  - app.tjhsst.edu
+  github_orgs: []
+  excluded: []

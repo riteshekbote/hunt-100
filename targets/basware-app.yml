@@ -1,0 +1,10 @@
+target:
+  name: basware-app
+  platform: vdp
+  disclosure: secure@basware.com
+  bounty: false
+  program_url: https://www.basware.com/en-en/footer/responsible-disclosure/
+  domains:
+  - app.basware.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: amazon-web-services-www
+  platform: vdp
+  disclosure: aws-security@amazon.com
+  bounty: false
+  program_url: https://aws.amazon.com/security/vulnerability-reporting/
+  domains:
+  - www.aws.amazon.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: dnn-corporation-www
+  platform: vdp
+  disclosure: https://www.dnnsoftware.com/platform/share/bug-reporting
+  bounty: false
+  program_url: https://www.dnnsoftware.com/platform/share/bug-reporting
+  domains:
+  - www.dnnsoftware.com
+  github_orgs: []
+  excluded: []

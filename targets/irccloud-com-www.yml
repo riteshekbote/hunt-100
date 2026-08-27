@@ -1,0 +1,10 @@
+target:
+  name: irccloud-com-www
+  platform: vdp
+  disclosure: https://www.irccloud.com/whitehat
+  bounty: false
+  program_url: https://www.irccloud.com/whitehat
+  domains:
+  - www.irccloud.com
+  github_orgs: []
+  excluded: []

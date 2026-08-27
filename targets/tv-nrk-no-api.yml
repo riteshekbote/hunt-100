@@ -1,0 +1,10 @@
+target:
+  name: tv-nrk-no-api
+  platform: vdp
+  disclosure: IT-Sikkerhetsgruppe@nrk.no
+  bounty: false
+  program_url: https://info.nrk.no/hjem/responsible-disclosure-policy/
+  domains:
+  - api.info.nrk.no
+  github_orgs: []
+  excluded: []

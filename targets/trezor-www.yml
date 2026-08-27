@@ -1,0 +1,10 @@
+target:
+  name: trezor-www
+  platform: bounty
+  disclosure: https://trezor.io/security/
+  bounty: true
+  program_url: https://trezor.io/security/
+  domains:
+  - www.trezor.io
+  github_orgs: []
+  excluded: []

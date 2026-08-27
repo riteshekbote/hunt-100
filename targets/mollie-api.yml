@@ -1,0 +1,10 @@
+target:
+  name: mollie-api
+  platform: vdp
+  disclosure: security@mollie.com
+  bounty: false
+  program_url: https://www.mollie.com/en/responsible-disclosure
+  domains:
+  - api.mollie.com
+  github_orgs: []
+  excluded: []

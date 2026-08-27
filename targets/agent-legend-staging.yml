@@ -1,0 +1,10 @@
+target:
+  name: agent-legend-staging
+  platform: vdp
+  disclosure: security@agentlegend.com
+  bounty: false
+  program_url: https://agentlegend.com/vulnerability-disclosure-policy/
+  domains:
+  - staging.agentlegend.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: piwik-app
+  platform: vdp
+  disclosure: security@matomo.org
+  bounty: false
+  program_url: http://piwik.org/security/
+  domains:
+  - app.piwik.org
+  github_orgs: []
+  excluded: []

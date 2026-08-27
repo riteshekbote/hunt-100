@@ -1,0 +1,10 @@
+target:
+  name: joyus-www
+  platform: vdp
+  disclosure: https://joyus.zendesk.com/hc/en-us/articles/115005402923-Responsible-Disclosure-of-Security-Vulnerabilities-
+  bounty: false
+  program_url: https://joyus.zendesk.com/hc/en-us/articles/115005402923-Responsible-Disclosure-of-Security-Vulnerabilities-
+  domains:
+  - www.joyus.zendesk.com
+  github_orgs: []
+  excluded: []

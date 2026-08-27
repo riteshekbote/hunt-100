@@ -1,0 +1,10 @@
+target:
+  name: bbc-www
+  platform: vdp
+  disclosure: mailo:security@bbc.co.uk
+  bounty: false
+  program_url: https://www.bbc.com/backstage/security-disclosure-policy/
+  domains:
+  - www.bbc.com
+  github_orgs: []
+  excluded: []

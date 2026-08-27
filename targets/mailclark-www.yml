@@ -1,0 +1,10 @@
+target:
+  name: mailclark-www
+  platform: vdp
+  disclosure: support@mailclark.ai
+  bounty: false
+  program_url: https://mailclark.ai/vdp
+  domains:
+  - www.mailclark.ai
+  github_orgs: []
+  excluded: []

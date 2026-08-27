@@ -1,0 +1,10 @@
+target:
+  name: chocolatey-org-app
+  platform: vdp
+  disclosure: security@chocolatey.io
+  bounty: false
+  program_url: https://chocolatey.org/security
+  domains:
+  - app.chocolatey.org
+  github_orgs: []
+  excluded: []

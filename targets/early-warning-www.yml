@@ -1,0 +1,10 @@
+target:
+  name: early-warning-www
+  platform: vdp
+  disclosure: bugbounty@earlywarning.com
+  bounty: false
+  program_url: https://www.earlywarning.com/responsible-disclosure-program
+  domains:
+  - www.earlywarning.com
+  github_orgs: []
+  excluded: []

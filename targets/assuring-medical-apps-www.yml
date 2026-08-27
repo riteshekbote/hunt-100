@@ -1,0 +1,10 @@
+target:
+  name: assuring-medical-apps-www
+  platform: bounty
+  disclosure: https://digitalhealthcompliance.com/disclosure-en/
+  bounty: true
+  program_url: https://digitalhealthcompliance.com/disclosure-en/
+  domains:
+  - www.digitalhealthcompliance.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: accredible-app
+  platform: bounty
+  disclosure: security@accredible.com
+  bounty: true
+  program_url: https://www.accredible.com/white_hat/
+  domains:
+  - app.accredible.com
+  github_orgs: []
+  excluded: []

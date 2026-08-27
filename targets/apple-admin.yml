@@ -1,0 +1,10 @@
+target:
+  name: apple-admin
+  platform: bounty
+  disclosure: product-security@apple.com
+  bounty: true
+  program_url: https://developer.apple.com/security-bounty/
+  domains:
+  - admin.developer.apple.com
+  github_orgs: []
+  excluded: []

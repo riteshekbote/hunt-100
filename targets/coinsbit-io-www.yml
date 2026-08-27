@@ -1,0 +1,10 @@
+target:
+  name: coinsbit-io-www
+  platform: vdp
+  disclosure: info@coinsbit.io
+  bounty: false
+  program_url: https://coinsbit.io/ru/privacy-policy
+  domains:
+  - www.coinsbit.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: mx-com-www
+  platform: vdp
+  disclosure: vulns@mx.com
+  bounty: false
+  program_url: https://mx.com/security-policy
+  domains:
+  - www.mx.com
+  github_orgs: []
+  excluded: []

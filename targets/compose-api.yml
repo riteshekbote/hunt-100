@@ -1,0 +1,10 @@
+target:
+  name: compose-api
+  platform: vdp
+  disclosure: security@compose.com
+  bounty: false
+  program_url: https://www.compose.com/security
+  domains:
+  - api.compose.com
+  github_orgs: []
+  excluded: []

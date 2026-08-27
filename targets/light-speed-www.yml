@@ -1,0 +1,10 @@
+target:
+  name: light-speed-www
+  platform: vdp
+  disclosure: security@lightspeedhq.com
+  bounty: false
+  program_url: https://www.lightspeedhq.com/security/
+  domains:
+  - www.lightspeedhq.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: nrk-no-app
+  platform: vdp
+  disclosure: IT-Sikkerhetsgruppe@nrk.no
+  bounty: false
+  program_url: https://info.nrk.no/hjem/responsible-disclosure-policy/
+  domains:
+  - app.info.nrk.no
+  github_orgs: []
+  excluded: []

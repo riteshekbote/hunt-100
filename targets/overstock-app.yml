@@ -1,0 +1,10 @@
+target:
+  name: overstock-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/overstockvdp
+  bounty: false
+  program_url: https://bugcrowd.com/overstockvdp
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

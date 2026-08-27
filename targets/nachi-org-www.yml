@@ -1,0 +1,10 @@
+target:
+  name: nachi-org-www
+  platform: vdp
+  disclosure: https://www.nachi.org/bug-bounty
+  bounty: false
+  program_url: https://www.nachi.org/bug-bounty
+  domains:
+  - www.nachi.org
+  github_orgs: []
+  excluded: []

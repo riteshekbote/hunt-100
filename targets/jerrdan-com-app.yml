@@ -1,0 +1,10 @@
+target:
+  name: jerrdan-com-app
+  platform: vdp
+  disclosure: sirt@oshkoshcorp.com
+  bounty: false
+  program_url: http://jlg.com/.well-known/security.txt
+  domains:
+  - app.jlg.com
+  github_orgs: []
+  excluded: []

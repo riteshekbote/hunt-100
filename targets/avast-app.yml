@@ -1,0 +1,10 @@
+target:
+  name: avast-app
+  platform: bounty
+  disclosure: https://www.avast.com/bug-bounty
+  bounty: true
+  program_url: https://www.avast.com/bug-bounty
+  domains:
+  - app.avast.com
+  github_orgs: []
+  excluded: []

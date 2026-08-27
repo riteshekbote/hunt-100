@@ -1,0 +1,10 @@
+target:
+  name: ovh-app
+  platform: vdp
+  disclosure: https://bountyfactory.io/hunter/submit/program/42
+  bounty: false
+  program_url: https://bountyfactory.io/hunter/submit/program/42
+  domains:
+  - app.bountyfactory.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: segment-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/segment
+  bounty: true
+  program_url: https://bugcrowd.com/segment
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

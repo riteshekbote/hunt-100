@@ -1,0 +1,10 @@
+target:
+  name: blue-canvas-dev
+  platform: vdp
+  disclosure: security@bluecanvas.io
+  bounty: false
+  program_url: https://bluecanvas.io/report-vulnerability
+  domains:
+  - dev.bluecanvas.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: eurid-www
+  platform: bounty
+  disclosure: security.office@eurid.eu
+  bounty: true
+  program_url: https://eurid.eu/lv/other-infomation/eurid-responsible-disclosure-policy/
+  domains:
+  - www.eurid.eu
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: fanduel-api
+  platform: bounty
+  disclosure: https://www.fanduel.com/security
+  bounty: true
+  program_url: https://www.fanduel.com/security
+  domains:
+  - api.fanduel.com
+  github_orgs: []
+  excluded: []

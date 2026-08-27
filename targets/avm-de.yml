@@ -1,0 +1,10 @@
+target:
+  name: avm-de
+  platform: vdp
+  disclosure: security@avm.de
+  bounty: false
+  program_url: https://avm.de/service/sicherheitsinfos-zu-updates/
+  domains:
+  - avm.de
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: chemwiki-ucdavis-edu-app
+  platform: vdp
+  disclosure: security@mindtouch.com
+  bounty: false
+  program_url: https://mindtouch.com/disclosure
+  domains:
+  - app.mindtouch.com
+  github_orgs: []
+  excluded: []

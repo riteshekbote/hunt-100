@@ -1,0 +1,10 @@
+target:
+  name: erasmus-university-rotterdam
+  platform: vdp
+  disclosure: cert@eur.nl
+  bounty: false
+  program_url: https://www.eur.nl/en/campus/locations/campus-woudestein/security-safety/information-security/responsible-disclosure
+  domains:
+  - eur.nl
+  github_orgs: []
+  excluded: []

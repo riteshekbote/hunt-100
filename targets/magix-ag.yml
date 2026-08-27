@@ -1,0 +1,10 @@
+target:
+  name: magix-ag
+  platform: vdp
+  disclosure: security@magix.net
+  bounty: false
+  program_url: http://research.magix.com/
+  domains:
+  - research.magix.com
+  github_orgs: []
+  excluded: []

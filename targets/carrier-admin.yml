@@ -1,0 +1,10 @@
+target:
+  name: carrier-admin
+  platform: vdp
+  disclosure: productsecurity.ccs@carrier.com
+  bounty: false
+  program_url: https://www.corporate.carrier.com/contact-us/
+  domains:
+  - admin.corporate.carrier.com
+  github_orgs: []
+  excluded: []

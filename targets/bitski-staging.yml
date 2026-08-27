@@ -1,0 +1,10 @@
+target:
+  name: bitski-staging
+  platform: bounty
+  disclosure: https://www.bitski.com/bounty/
+  bounty: true
+  program_url: https://www.bitski.com/bounty/
+  domains:
+  - staging.bitski.com
+  github_orgs: []
+  excluded: []

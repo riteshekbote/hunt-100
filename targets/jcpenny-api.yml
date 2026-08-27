@@ -1,0 +1,10 @@
+target:
+  name: jcpenny-api
+  platform: vdp
+  disclosure: IT-security@jcp.com
+  bounty: false
+  program_url: https://www.jcpenney.com/m/responsible-disclosure-program
+  domains:
+  - api.jcpenney.com
+  github_orgs: []
+  excluded: []

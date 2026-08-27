@@ -1,0 +1,10 @@
+target:
+  name: mimecast
+  platform: vdp
+  disclosure: disclosure@mimecast.com
+  bounty: false
+  program_url: https://www.mimecast.com/responsible-disclosure/
+  domains:
+  - mimecast.com
+  github_orgs: []
+  excluded: []

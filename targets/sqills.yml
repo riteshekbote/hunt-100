@@ -1,0 +1,10 @@
+target:
+  name: sqills
+  platform: vdp
+  disclosure: responsibledisclosure@sqills.com
+  bounty: false
+  program_url: https://www.sqills.com/responsible-disclosure-policy/
+  domains:
+  - sqills.com
+  github_orgs: []
+  excluded: []

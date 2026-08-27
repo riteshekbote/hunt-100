@@ -1,0 +1,10 @@
+target:
+  name: siemens
+  platform: vdp
+  disclosure: https://new.siemens.com/global/en/products/services/cert/vulnerability-process.html
+  bounty: false
+  program_url: https://new.siemens.com/global/en/products/services/cert/vulnerability-process.html
+  domains:
+  - new.siemens.com
+  github_orgs: []
+  excluded: []

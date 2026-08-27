@@ -1,0 +1,10 @@
+target:
+  name: sophos-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/sophos
+  bounty: true
+  program_url: https://bugcrowd.com/sophos
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

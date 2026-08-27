@@ -1,0 +1,10 @@
+target:
+  name: myntra-www
+  platform: vdp
+  disclosure: security@myntra.com
+  bounty: false
+  program_url: http://www.myntra.com/security/whitehat
+  domains:
+  - www.myntra.com
+  github_orgs: []
+  excluded: []

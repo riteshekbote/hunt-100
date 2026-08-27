@@ -1,0 +1,10 @@
+target:
+  name: line-app
+  platform: bounty
+  disclosure: https://bugbounty.linecorp.com/en/
+  bounty: true
+  program_url: https://bugbounty.linecorp.com/en/
+  domains:
+  - app.bugbounty.linecorp.com
+  github_orgs: []
+  excluded: []

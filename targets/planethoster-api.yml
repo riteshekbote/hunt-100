@@ -1,0 +1,10 @@
+target:
+  name: planethoster-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/planethosterinc
+  bounty: true
+  program_url: https://bugcrowd.com/planethosterinc
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: augur-staging
+  platform: bounty
+  disclosure: bounty@augur.net
+  bounty: true
+  program_url: https://augur.net/blog/v2-bug-bounty/
+  domains:
+  - staging.augur.net
+  github_orgs: []
+  excluded: []

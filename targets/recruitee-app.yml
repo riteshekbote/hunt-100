@@ -1,0 +1,10 @@
+target:
+  name: recruitee-app
+  platform: vdp
+  disclosure: vulnerabilities@recruitee.com
+  bounty: false
+  program_url: https://recruitee.com/en/vulnerability
+  domains:
+  - app.recruitee.com
+  github_orgs: []
+  excluded: []

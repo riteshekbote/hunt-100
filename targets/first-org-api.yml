@@ -1,0 +1,10 @@
+target:
+  name: first-org-api
+  platform: vdp
+  disclosure: bugs@first.org
+  bounty: false
+  program_url: https://www.first.org/about/bugs
+  domains:
+  - api.first.org
+  github_orgs: []
+  excluded: []

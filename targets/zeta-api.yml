@@ -1,0 +1,10 @@
+target:
+  name: zeta-api
+  platform: vdp
+  disclosure: security@zeta.in
+  bounty: false
+  program_url: https://www.zeta.tech/security/
+  domains:
+  - api.zeta.tech
+  github_orgs: []
+  excluded: []

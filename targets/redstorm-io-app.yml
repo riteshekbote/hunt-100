@@ -1,0 +1,10 @@
+target:
+  name: redstorm-io-app
+  platform: bounty
+  disclosure: https://www.redstorm.io/researcher/programs/rswebapppltf
+  bounty: true
+  program_url: https://www.redstorm.io/researcher/programs/rswebapppltf
+  domains:
+  - app.redstorm.io
+  github_orgs: []
+  excluded: []

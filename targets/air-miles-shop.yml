@@ -1,0 +1,10 @@
+target:
+  name: air-miles-shop
+  platform: vdp
+  disclosure: klantenservice@airmilesshop.nl
+  bounty: false
+  program_url: https://www.airmilesshop.nl/responsible-disclosure
+  domains:
+  - airmilesshop.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: caterpillar-api
+  platform: vdp
+  disclosure: ProductSecurity@cat.com
+  bounty: false
+  program_url: https://www.cat.com/en_US/support/maintenance/c/report-potential-information-security-vulnerabilities.html
+  domains:
+  - api.cat.com
+  github_orgs: []
+  excluded: []

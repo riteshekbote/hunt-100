@@ -1,0 +1,10 @@
+target:
+  name: blogger-www
+  platform: bounty
+  disclosure: https://www.google.com/about/appsecurity/reward-program/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/reward-program/
+  domains:
+  - www.google.com
+  github_orgs: []
+  excluded: []

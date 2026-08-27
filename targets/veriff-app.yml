@@ -1,0 +1,10 @@
+target:
+  name: veriff-app
+  platform: vdp
+  disclosure: security@veriff.net
+  bounty: false
+  program_url: https://www.veriff.com/responsible-disclosure
+  domains:
+  - app.veriff.com
+  github_orgs: []
+  excluded: []

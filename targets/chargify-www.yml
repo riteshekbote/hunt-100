@@ -1,0 +1,10 @@
+target:
+  name: chargify-www
+  platform: vdp
+  disclosure: security@chargify.com
+  bounty: false
+  program_url: https://www.chargify.com/security/
+  domains:
+  - www.chargify.com
+  github_orgs: []
+  excluded: []

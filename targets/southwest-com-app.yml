@@ -1,0 +1,10 @@
+target:
+  name: southwest-com-app
+  platform: vdp
+  disclosure: securityreport@wnco.com
+  bounty: false
+  program_url: https://www.southwest.com/security-researchers.txt
+  domains:
+  - app.southwest.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: securitas-www
+  platform: vdp
+  disclosure: responsible.disclosure@securitas.com
+  bounty: false
+  program_url: https://www.securitas.com/en/about-us/responsible-disclosure/
+  domains:
+  - www.securitas.com
+  github_orgs: []
+  excluded: []

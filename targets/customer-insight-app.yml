@@ -1,0 +1,10 @@
+target:
+  name: customer-insight-app
+  platform: vdp
+  disclosure: admin@customerinsight.ca
+  bounty: false
+  program_url: https://customerinsight.ca/CI/security-statement/
+  domains:
+  - app.customerinsight.ca
+  github_orgs: []
+  excluded: []

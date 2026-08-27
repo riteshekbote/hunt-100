@@ -1,0 +1,10 @@
+target:
+  name: npm-im-app
+  platform: vdp
+  disclosure: security@npmjs.com
+  bounty: false
+  program_url: https://www.npmjs.com/policies/security
+  domains:
+  - app.npmjs.com
+  github_orgs: []
+  excluded: []

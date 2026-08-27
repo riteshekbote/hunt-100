@@ -1,0 +1,10 @@
+target:
+  name: hoasted-www
+  platform: vdp
+  disclosure: security@hostingsecure.com
+  bounty: false
+  program_url: https://www.hoasted.com/vulnerability-disclosure-policy/
+  domains:
+  - www.hoasted.com
+  github_orgs: []
+  excluded: []

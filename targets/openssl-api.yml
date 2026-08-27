@@ -1,0 +1,10 @@
+target:
+  name: openssl-api
+  platform: bounty
+  disclosure: openssl-security@openssl.org
+  bounty: true
+  program_url: https://www.openssl.org/community/#securityreports
+  domains:
+  - api.openssl.org
+  github_orgs: []
+  excluded: []

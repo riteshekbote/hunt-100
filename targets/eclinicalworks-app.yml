@@ -1,0 +1,10 @@
+target:
+  name: eclinicalworks-app
+  platform: vdp
+  disclosure: vulnerability@eclinicalworks.com
+  bounty: false
+  program_url: https://www.eclinicalworks.com/responsible-disclosure-policy/
+  domains:
+  - app.eclinicalworks.com
+  github_orgs: []
+  excluded: []

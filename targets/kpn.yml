@@ -1,0 +1,10 @@
+target:
+  name: kpn
+  platform: vdp
+  disclosure: https://www.kpn.com/algemeen/missie-en-privacy-statement/beveiligingskwetsbaarheid/beveiligingslek-melden.htm
+  bounty: false
+  program_url: https://www.kpn.com/algemeen/missie-en-privacy-statement/beveiligingskwetsbaarheid/beveiligingslek-melden.htm
+  domains:
+  - kpn.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cobalt-api
+  platform: vdp
+  disclosure: security@cobalt.io
+  bounty: false
+  program_url: https://cobalt.io/security/practices
+  domains:
+  - api.cobalt.io
+  github_orgs: []
+  excluded: []

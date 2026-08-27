@@ -1,0 +1,10 @@
+target:
+  name: nds-systems-app
+  platform: vdp
+  disclosure: responsibledisclosure@cyncsoftware.com
+  bounty: false
+  program_url: https://www.cyncsoftware.com/responsible-disclosure-policy.php
+  domains:
+  - app.cyncsoftware.com
+  github_orgs: []
+  excluded: []

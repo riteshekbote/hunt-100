@@ -1,0 +1,10 @@
+target:
+  name: redhat-www
+  platform: vdp
+  disclosure: site-security@redhat.com
+  bounty: false
+  program_url: https://access.redhat.com/articles/66234
+  domains:
+  - www.access.redhat.com
+  github_orgs: []
+  excluded: []

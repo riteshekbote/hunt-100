@@ -1,0 +1,10 @@
+target:
+  name: cobalt-app
+  platform: vdp
+  disclosure: security@cobalt.io
+  bounty: false
+  program_url: https://cobalt.io/security/practices
+  domains:
+  - app.cobalt.io
+  github_orgs: []
+  excluded: []

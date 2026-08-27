@@ -1,0 +1,10 @@
+target:
+  name: engage-vic-gov-au-www
+  platform: vdp
+  disclosure: security@harvestdp.com
+  bounty: false
+  program_url: https://harvestdp.com/security-research-policy
+  domains:
+  - www.harvestdp.com
+  github_orgs: []
+  excluded: []

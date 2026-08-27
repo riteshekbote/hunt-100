@@ -1,0 +1,10 @@
+target:
+  name: hackrate-api
+  platform: vdp
+  disclosure: https://www.hckrt.com/Catalog/Program?alias=hackrate
+  bounty: false
+  program_url: https://www.hckrt.com/Catalog/Program?alias=hackrate
+  domains:
+  - api.hckrt.com
+  github_orgs: []
+  excluded: []

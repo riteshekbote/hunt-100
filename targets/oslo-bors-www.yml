@@ -1,0 +1,10 @@
+target:
+  name: oslo-bors-www
+  platform: vdp
+  disclosure: security@oslobors.no
+  bounty: false
+  program_url: https://www.oslobors.no/ob_eng/Oslo-Boers/About-Oslo-Boers/Responsible-Disclosure
+  domains:
+  - www.oslobors.no
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: qtrade-www
+  platform: bounty
+  disclosure: security@qtrade.io
+  bounty: true
+  program_url: https://qtrade.io/bug_bounty
+  domains:
+  - www.qtrade.io
+  github_orgs: []
+  excluded: []

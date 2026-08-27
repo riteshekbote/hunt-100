@@ -1,0 +1,10 @@
+target:
+  name: concrete5-www
+  platform: vdp
+  disclosure: security@concrete5.org
+  bounty: false
+  program_url: https://www.concrete5.org/developers/security
+  domains:
+  - www.concrete5.org
+  github_orgs: []
+  excluded: []

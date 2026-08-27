@@ -1,0 +1,10 @@
+target:
+  name: particle-io-api
+  platform: vdp
+  disclosure: security@particle.io
+  bounty: false
+  program_url: https://www.particle.io/legal/responsible-disclosure/
+  domains:
+  - api.particle.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: aptible-www
+  platform: vdp
+  disclosure: security@aptible.com
+  bounty: false
+  program_url: https://www.aptible.com/legal/responsible-disclosure
+  domains:
+  - www.aptible.com
+  github_orgs: []
+  excluded: []

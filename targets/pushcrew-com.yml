@@ -1,0 +1,10 @@
+target:
+  name: pushcrew-com
+  platform: vdp
+  disclosure: security@wingify.com
+  bounty: false
+  program_url: https://pushcrew.com/security-compliance/responsible-disclosure-policy/
+  domains:
+  - pushcrew.com
+  github_orgs: []
+  excluded: []

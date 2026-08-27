@@ -1,0 +1,10 @@
+target:
+  name: edwards-app
+  platform: vdp
+  disclosure: product_security@edwards.com
+  bounty: false
+  program_url: https://www.edwards.com/devices/support/product-security
+  domains:
+  - app.edwards.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: swiftype-www
+  platform: vdp
+  disclosure: security@swiftype.com
+  bounty: false
+  program_url: https://swiftype.com/security
+  domains:
+  - www.swiftype.com
+  github_orgs: []
+  excluded: []

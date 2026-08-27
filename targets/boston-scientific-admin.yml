@@ -1,0 +1,10 @@
+target:
+  name: boston-scientific-admin
+  platform: vdp
+  disclosure: product.security@bsci.com
+  bounty: false
+  program_url: https://www.bostonscientific.com/en-US/customer-service/product-security/responsible-disclosure.html
+  domains:
+  - admin.bostonscientific.com
+  github_orgs: []
+  excluded: []

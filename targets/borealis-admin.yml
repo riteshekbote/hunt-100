@@ -1,0 +1,10 @@
+target:
+  name: borealis-admin
+  platform: vdp
+  disclosure: infosecurity@borealisgroup.com
+  bounty: false
+  program_url: https://www.borealisgroup.com/legal/responsible-disclosure
+  domains:
+  - admin.borealisgroup.com
+  github_orgs: []
+  excluded: []

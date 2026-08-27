@@ -1,0 +1,10 @@
+target:
+  name: polar-ssl-api
+  platform: bounty
+  disclosure: support.mbedtls@arm.com
+  bounty: true
+  program_url: https://tls.mbed.org/bug-bounty-program
+  domains:
+  - api.tls.mbed.org
+  github_orgs: []
+  excluded: []

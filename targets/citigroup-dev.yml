@@ -1,0 +1,10 @@
+target:
+  name: citigroup-dev
+  platform: vdp
+  disclosure: responsible.disclosure@citi.com
+  bounty: false
+  program_url: https://online.citi.com/US/JRS/pands/detail.do?ID=ReportingVulnerability
+  domains:
+  - dev.online.citi.com
+  github_orgs: []
+  excluded: []

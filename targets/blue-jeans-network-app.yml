@@ -1,0 +1,10 @@
+target:
+  name: blue-jeans-network-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/bluejeans
+  bounty: false
+  program_url: https://bugcrowd.com/bluejeans
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

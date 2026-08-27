@@ -1,0 +1,10 @@
+target:
+  name: hindawi-app
+  platform: vdp
+  disclosure: technology@hindawi.com
+  bounty: false
+  program_url: https://www.hindawi.com/responsible-disclosure-policy/
+  domains:
+  - app.hindawi.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: redox-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/redox
+  bounty: true
+  program_url: https://bugcrowd.com/redox
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

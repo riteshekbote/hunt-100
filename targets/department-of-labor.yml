@@ -1,0 +1,10 @@
+target:
+  name: department-of-labor
+  platform: vdp
+  disclosure: m-DOLCSIRC@dol.gov
+  bounty: false
+  program_url: https://www.dol.gov/vulnerability-disclosure-policy
+  domains:
+  - dol.gov
+  github_orgs: []
+  excluded: []

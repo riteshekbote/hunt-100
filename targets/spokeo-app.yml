@@ -1,0 +1,10 @@
+target:
+  name: spokeo-app
+  platform: bounty
+  disclosure: security@spokeo.com
+  bounty: true
+  program_url: https://www.spokeo.com/bug-bounty
+  domains:
+  - app.spokeo.com
+  github_orgs: []
+  excluded: []

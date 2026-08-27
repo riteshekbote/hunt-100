@@ -1,0 +1,10 @@
+target:
+  name: mastodon-www
+  platform: vdp
+  disclosure: security@joinmastodon.org
+  bounty: false
+  program_url: https://github.com/mastodon/mastodon/security/policy
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: netohq-com-api
+  platform: vdp
+  disclosure: infosec@neto.com.au
+  bounty: false
+  program_url: https://www.netohq.com/privacy-policy
+  domains:
+  - api.netohq.com
+  github_orgs: []
+  excluded: []

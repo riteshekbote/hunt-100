@@ -1,0 +1,10 @@
+target:
+  name: general-electric-api
+  platform: vdp
+  disclosure: https://www.ge.com/security
+  bounty: false
+  program_url: https://www.ge.com/security
+  domains:
+  - api.ge.com
+  github_orgs: []
+  excluded: []

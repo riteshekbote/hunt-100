@@ -1,0 +1,10 @@
+target:
+  name: british-gas-evolve-www
+  platform: vdp
+  disclosure: https://www.britishgasevolve.co.uk/responsible-disclosure
+  bounty: false
+  program_url: https://www.britishgasevolve.co.uk/responsible-disclosure
+  domains:
+  - www.britishgasevolve.co.uk
+  github_orgs: []
+  excluded: []

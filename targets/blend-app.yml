@@ -1,0 +1,10 @@
+target:
+  name: blend-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/blend-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/blend-vdp
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

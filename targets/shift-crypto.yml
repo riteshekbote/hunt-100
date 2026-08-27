@@ -1,0 +1,10 @@
+target:
+  name: shift-crypto
+  platform: vdp
+  disclosure: security@shiftcrypto.ch
+  bounty: false
+  program_url: https://shiftcrypto.ch/policies/bug-bounty-policy/
+  domains:
+  - shiftcrypto.ch
+  github_orgs: []
+  excluded: []

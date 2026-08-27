@@ -1,0 +1,10 @@
+target:
+  name: navcoin-api
+  platform: vdp
+  disclosure: disclosure@navcoin.org
+  bounty: false
+  program_url: https://navcoin.org/en/responsible-disclosure
+  domains:
+  - api.navcoin.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: nsn-nokia-solutions-networks-app
+  platform: vdp
+  disclosure: security-alert@nokia.com
+  bounty: false
+  program_url: http://nsn.com/responsible-disclosure
+  domains:
+  - app.nsn.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: news-uk
+  platform: vdp
+  disclosure: responsible-disclosure@news.co.uk
+  bounty: false
+  program_url: https://www.news.co.uk/responsible-disclosure-policy/
+  domains:
+  - news.co.uk
+  github_orgs: []
+  excluded: []

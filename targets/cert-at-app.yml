@@ -1,0 +1,10 @@
+target:
+  name: cert-at-app
+  platform: vdp
+  disclosure: team@cert.at
+  bounty: false
+  program_url: https://cert.at/de/ueber-uns/rfc2350/
+  domains:
+  - app.cert.at
+  github_orgs: []
+  excluded: []

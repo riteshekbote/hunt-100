@@ -1,0 +1,10 @@
+target:
+  name: sonatype-www
+  platform: vdp
+  disclosure: http://www.sonatype.com/contact/report-a-security-issue
+  bounty: false
+  program_url: http://www.sonatype.com/contact/report-a-security-issue
+  domains:
+  - www.sonatype.com
+  github_orgs: []
+  excluded: []

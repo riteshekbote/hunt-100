@@ -1,0 +1,10 @@
+target:
+  name: blockchain-technology-research-admin
+  platform: vdp
+  disclosure: security@btric.org
+  bounty: false
+  program_url: https://www.btric.org/legal/security/
+  domains:
+  - admin.btric.org
+  github_orgs: []
+  excluded: []

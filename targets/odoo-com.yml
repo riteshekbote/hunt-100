@@ -1,0 +1,10 @@
+target:
+  name: odoo-com
+  platform: vdp
+  disclosure: security@odoo.com
+  bounty: false
+  program_url: https://www.odoo.com/security-report
+  domains:
+  - odoo.com
+  github_orgs: []
+  excluded: []

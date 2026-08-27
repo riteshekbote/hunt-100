@@ -1,0 +1,10 @@
+target:
+  name: paymill
+  platform: vdp
+  disclosure: security@paymill.com
+  bounty: false
+  program_url: https://developers.paymill.com/guides/security/security-standards
+  domains:
+  - developers.paymill.com
+  github_orgs: []
+  excluded: []

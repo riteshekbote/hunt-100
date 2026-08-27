@@ -1,0 +1,10 @@
+target:
+  name: platform-sh-app
+  platform: vdp
+  disclosure: security@platform.sh
+  bounty: false
+  program_url: https://platform.sh/tos/#section-10-disclosures-and-notices
+  domains:
+  - app.platform.sh
+  github_orgs: []
+  excluded: []

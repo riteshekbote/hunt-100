@@ -1,0 +1,10 @@
+target:
+  name: upscope-app
+  platform: vdp
+  disclosure: team@upscope.com
+  bounty: false
+  program_url: https://upscope.io/security/bug-bounty/
+  domains:
+  - app.upscope.io
+  github_orgs: []
+  excluded: []

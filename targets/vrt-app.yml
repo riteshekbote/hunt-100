@@ -1,0 +1,10 @@
+target:
+  name: vrt-app
+  platform: vdp
+  disclosure: InfoSec@vrt.be
+  bounty: false
+  program_url: https://www.vrt.be/en/responsible-disclosure-policy-english-version/
+  domains:
+  - app.vrt.be
+  github_orgs: []
+  excluded: []

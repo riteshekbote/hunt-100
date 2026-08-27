@@ -1,0 +1,10 @@
+target:
+  name: taco-bell-app
+  platform: vdp
+  disclosure: https://tacobell.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://tacobell.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.tacobell.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

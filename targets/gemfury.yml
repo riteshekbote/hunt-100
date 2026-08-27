@@ -1,0 +1,10 @@
+target:
+  name: gemfury
+  platform: vdp
+  disclosure: security@gemfury.com
+  bounty: false
+  program_url: https://fury.co/security
+  domains:
+  - fury.co
+  github_orgs: []
+  excluded: []

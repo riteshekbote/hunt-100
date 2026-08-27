@@ -1,0 +1,10 @@
+target:
+  name: 84codes-admin
+  platform: bounty
+  disclosure: security@84codes.com
+  bounty: true
+  program_url: https://www.84codes.com/security/
+  domains:
+  - admin.84codes.com
+  github_orgs: []
+  excluded: []

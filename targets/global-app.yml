@@ -1,0 +1,10 @@
+target:
+  name: global-app
+  platform: bounty
+  disclosure: bugbounty@global.com
+  bounty: true
+  program_url: https://global.com/bug-bounty-policy/
+  domains:
+  - app.global.com
+  github_orgs: []
+  excluded: []

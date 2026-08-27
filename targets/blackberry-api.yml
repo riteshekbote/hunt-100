@@ -1,0 +1,10 @@
+target:
+  name: blackberry-api
+  platform: vdp
+  disclosure: https://www.blackberry.com/us/en/services/blackberry-product-security-incident-response
+  bounty: false
+  program_url: https://www.blackberry.com/us/en/services/blackberry-product-security-incident-response
+  domains:
+  - api.blackberry.com
+  github_orgs: []
+  excluded: []

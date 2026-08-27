@@ -1,0 +1,10 @@
+target:
+  name: raidboxes-io
+  platform: vdp
+  disclosure: security@raidboxes.io
+  bounty: false
+  program_url: https://raidboxes.io/vulnerability-disclosure-program/
+  domains:
+  - raidboxes.io
+  github_orgs: []
+  excluded: []

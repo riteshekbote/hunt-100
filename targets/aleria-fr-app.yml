@@ -1,0 +1,10 @@
+target:
+  name: aleria-fr-app
+  platform: vdp
+  disclosure: webmaster@aleria.fr
+  bounty: false
+  program_url: https://aleria.fr/legales.php
+  domains:
+  - app.aleria.fr
+  github_orgs: []
+  excluded: []

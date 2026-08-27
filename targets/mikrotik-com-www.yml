@@ -1,0 +1,10 @@
+target:
+  name: mikrotik-com-www
+  platform: vdp
+  disclosure: https://mikrotik.com/support
+  bounty: false
+  program_url: https://mikrotik.com/support
+  domains:
+  - www.mikrotik.com
+  github_orgs: []
+  excluded: []

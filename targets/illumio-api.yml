@@ -1,0 +1,10 @@
+target:
+  name: illumio-api
+  platform: vdp
+  disclosure: https://illumio.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://illumio.responsibledisclosure.com/hc/en-us
+  domains:
+  - api.illumio.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: medisao-www
+  platform: vdp
+  disclosure: https://members.medisao.com/vulnerability_disclosure/
+  bounty: false
+  program_url: https://members.medisao.com/vulnerability_disclosure/
+  domains:
+  - www.members.medisao.com
+  github_orgs: []
+  excluded: []

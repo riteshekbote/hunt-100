@@ -1,0 +1,10 @@
+target:
+  name: national-labor-relations-board-app
+  platform: vdp
+  disclosure: NLRBITSec@nlrb.gov
+  bounty: false
+  program_url: https://www.nlrb.gov/vulnerability-disclosure-policy
+  domains:
+  - app.nlrb.gov
+  github_orgs: []
+  excluded: []

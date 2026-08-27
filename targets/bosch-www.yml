@@ -1,0 +1,10 @@
+target:
+  name: bosch-www
+  platform: vdp
+  disclosure: https://psirt.bosch.com/bosch-responsible-disclosure-policy/
+  bounty: false
+  program_url: https://psirt.bosch.com/bosch-responsible-disclosure-policy/
+  domains:
+  - www.psirt.bosch.com
+  github_orgs: []
+  excluded: []

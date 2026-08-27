@@ -1,0 +1,10 @@
+target:
+  name: automox-staging
+  platform: bounty
+  disclosure: disclosures@automox.com
+  bounty: true
+  program_url: https://www.automox.com/security/responsible-disclosure
+  domains:
+  - staging.automox.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: skilledhub
+  platform: vdp
+  disclosure: admin@skilledhub.com
+  bounty: false
+  program_url: https://skilledhub.com/responsible-disclosure-policy/
+  domains:
+  - skilledhub.com
+  github_orgs: []
+  excluded: []

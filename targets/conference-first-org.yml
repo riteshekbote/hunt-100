@@ -1,0 +1,10 @@
+target:
+  name: conference-first-org
+  platform: vdp
+  disclosure: bugs@first.org
+  bounty: false
+  program_url: https://www.first.org/about/bugs
+  domains:
+  - first.org
+  github_orgs: []
+  excluded: []

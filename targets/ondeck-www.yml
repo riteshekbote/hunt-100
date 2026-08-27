@@ -1,0 +1,10 @@
+target:
+  name: ondeck-www
+  platform: vdp
+  disclosure: security@ondeck.com
+  bounty: false
+  program_url: https://www.ondeck.com/security-policy
+  domains:
+  - www.ondeck.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: coffee-bagel-brands-www
+  platform: vdp
+  disclosure: infosec@coffeeandbagels.com
+  bounty: false
+  program_url: https://www.coffeeandbagels.com/responsible-disclosure/
+  domains:
+  - www.coffeeandbagels.com
+  github_orgs: []
+  excluded: []

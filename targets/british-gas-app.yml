@@ -1,0 +1,10 @@
+target:
+  name: british-gas-app
+  platform: vdp
+  disclosure: https://www.britishgas.co.uk/global-maintenance/responsible-disclosure.html
+  bounty: false
+  program_url: https://www.britishgas.co.uk/global-maintenance/responsible-disclosure.html
+  domains:
+  - app.britishgas.co.uk
+  github_orgs: []
+  excluded: []

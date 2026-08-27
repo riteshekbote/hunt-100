@@ -1,0 +1,10 @@
+target:
+  name: ripe-ncc-app
+  platform: vdp
+  disclosure: security@ripe.net
+  bounty: false
+  program_url: https://www.ripe.net/support/contact/responsible-disclosure-policy
+  domains:
+  - app.ripe.net
+  github_orgs: []
+  excluded: []

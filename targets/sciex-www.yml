@@ -1,0 +1,10 @@
+target:
+  name: sciex-www
+  platform: vdp
+  disclosure: https://sciex.com/product-security/coordinated-vulnerabilities-disclosure-policy
+  bounty: false
+  program_url: https://sciex.com/product-security/coordinated-vulnerabilities-disclosure-policy
+  domains:
+  - www.sciex.com
+  github_orgs: []
+  excluded: []

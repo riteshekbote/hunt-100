@@ -1,0 +1,10 @@
+target:
+  name: onfo-api
+  platform: bounty
+  disclosure: drew@onfocoin.com
+  bounty: true
+  program_url: https://onfo.zendesk.com/hc/en-us/articles/360025769031-Bug-Bounty-Program
+  domains:
+  - api.onfo.zendesk.com
+  github_orgs: []
+  excluded: []

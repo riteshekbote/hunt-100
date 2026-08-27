@@ -1,0 +1,10 @@
+target:
+  name: asana-staging
+  platform: bounty
+  disclosure: security@asana.com
+  bounty: true
+  program_url: https://asana.com/bounty
+  domains:
+  - staging.asana.com
+  github_orgs: []
+  excluded: []

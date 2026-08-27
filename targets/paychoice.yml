@@ -1,0 +1,10 @@
+target:
+  name: paychoice
+  platform: vdp
+  disclosure: security@paychoice.com.au
+  bounty: false
+  program_url: https://www.paychoice.com.au/security/#security-researchers
+  domains:
+  - paychoice.com.au
+  github_orgs: []
+  excluded: []

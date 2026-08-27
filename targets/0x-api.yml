@@ -1,0 +1,10 @@
+target:
+  name: 0x-api
+  platform: bounty
+  disclosure: security@0x.org
+  bounty: true
+  program_url: https://docs.0x.org/developer-resources/bounties
+  domains:
+  - api.docs.0x.org
+  github_orgs: []
+  excluded: []

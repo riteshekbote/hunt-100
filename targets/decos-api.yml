@@ -1,0 +1,10 @@
+target:
+  name: decos-api
+  platform: vdp
+  disclosure: security@decos.com
+  bounty: false
+  program_url: https://www.decos.com/en/security
+  domains:
+  - api.decos.com
+  github_orgs: []
+  excluded: []

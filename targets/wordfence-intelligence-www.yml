@@ -1,0 +1,10 @@
+target:
+  name: wordfence-intelligence-www
+  platform: bounty
+  disclosure: https://www.wordfence.com/threat-intel/bug-bounty-program/
+  bounty: true
+  program_url: https://www.wordfence.com/threat-intel/bug-bounty-program/
+  domains:
+  - www.wordfence.com
+  github_orgs: []
+  excluded: []

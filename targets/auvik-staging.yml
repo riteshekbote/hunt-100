@@ -1,0 +1,10 @@
+target:
+  name: auvik-staging
+  platform: vdp
+  disclosure: incident@auvik.com
+  bounty: false
+  program_url: https://www.auvik.com/disclosure-policy.html
+  domains:
+  - staging.auvik.com
+  github_orgs: []
+  excluded: []

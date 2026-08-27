@@ -1,0 +1,10 @@
+target:
+  name: greenbone-app
+  platform: vdp
+  disclosure: https://www.greenbone.net/en/responsible-disclosure/
+  bounty: false
+  program_url: https://www.greenbone.net/en/responsible-disclosure/
+  domains:
+  - app.greenbone.net
+  github_orgs: []
+  excluded: []

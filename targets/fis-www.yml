@@ -1,0 +1,10 @@
+target:
+  name: fis-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/fis
+  bounty: true
+  program_url: https://bugcrowd.com/fis
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

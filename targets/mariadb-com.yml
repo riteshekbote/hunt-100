@@ -1,0 +1,10 @@
+target:
+  name: mariadb-com
+  platform: vdp
+  disclosure: security@mariadb.com
+  bounty: false
+  program_url: https://mariadb.com/security
+  domains:
+  - mariadb.com
+  github_orgs: []
+  excluded: []

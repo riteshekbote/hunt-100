@@ -1,0 +1,10 @@
+target:
+  name: openstack-www
+  platform: vdp
+  disclosure: https://security.openstack.org/#how-to-report-security-issues-to-openstack
+  bounty: false
+  program_url: https://security.openstack.org/#how-to-report-security-issues-to-openstack
+  domains:
+  - www.security.openstack.org
+  github_orgs: []
+  excluded: []

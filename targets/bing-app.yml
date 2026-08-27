@@ -1,0 +1,10 @@
+target:
+  name: bing-app
+  platform: vdp
+  disclosure: https://www.microsoft.com/en-us/msrc/bounty?rtc=1
+  bounty: false
+  program_url: https://www.microsoft.com/en-us/msrc/bounty?rtc=1
+  domains:
+  - app.microsoft.com
+  github_orgs: []
+  excluded: []

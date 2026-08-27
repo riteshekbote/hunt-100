@@ -1,0 +1,10 @@
+target:
+  name: beckman-coulter-admin
+  platform: vdp
+  disclosure: ProductSecurity@beckman.com
+  bounty: false
+  program_url: https://www.beckmancoulter.com/en/about-beckman-coulter/product-security
+  domains:
+  - admin.beckmancoulter.com
+  github_orgs: []
+  excluded: []

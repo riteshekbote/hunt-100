@@ -1,0 +1,10 @@
+target:
+  name: microsoft-bounty-programs-api
+  platform: vdp
+  disclosure: secure@microsoft.com
+  bounty: false
+  program_url: http://technet.microsoft.com/en-US/security/dn425036
+  domains:
+  - api.technet.microsoft.com
+  github_orgs: []
+  excluded: []

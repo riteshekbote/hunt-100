@@ -1,0 +1,10 @@
+target:
+  name: tvprofil-net-api
+  platform: vdp
+  disclosure: tvprofil@tvprofil.net
+  bounty: false
+  program_url: https://tvprofil.com/privacy/
+  domains:
+  - api.tvprofil.com
+  github_orgs: []
+  excluded: []

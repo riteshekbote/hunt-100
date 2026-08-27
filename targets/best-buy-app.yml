@@ -1,0 +1,10 @@
+target:
+  name: best-buy-app
+  platform: vdp
+  disclosure: https://www.bestbuy.com/site/help-topics/responsible-disclosure/pcmcat1584549036018.c?id=pcmcat1584549036018
+  bounty: false
+  program_url: https://www.bestbuy.com/site/help-topics/responsible-disclosure/pcmcat1584549036018.c?id=pcmcat1584549036018
+  domains:
+  - app.bestbuy.com
+  github_orgs: []
+  excluded: []

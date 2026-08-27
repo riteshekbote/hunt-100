@@ -1,0 +1,10 @@
+target:
+  name: desjardins-app
+  platform: vdp
+  disclosure: divulgation-responsable@desjardins.com
+  bounty: false
+  program_url: https://www.desjardins.com/ca/security/report-potential-vulnerability/index.jsp
+  domains:
+  - app.desjardins.com
+  github_orgs: []
+  excluded: []

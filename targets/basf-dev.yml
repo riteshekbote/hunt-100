@@ -1,0 +1,10 @@
+target:
+  name: basf-dev
+  platform: vdp
+  disclosure: securemail@basf.com
+  bounty: false
+  program_url: https://www.basf.com/global/en/legal/responsible-disclosure-statement.html
+  domains:
+  - dev.basf.com
+  github_orgs: []
+  excluded: []

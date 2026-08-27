@@ -1,0 +1,10 @@
+target:
+  name: guilded-api
+  platform: vdp
+  disclosure: security@guilded.gg
+  bounty: false
+  program_url: https://support.guilded.gg/hc/en-us/articles/360039728333-Contact
+  domains:
+  - api.support.guilded.gg
+  github_orgs: []
+  excluded: []

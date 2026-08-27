@@ -1,0 +1,10 @@
+target:
+  name: claromentis-www
+  platform: vdp
+  disclosure: security@claromentis.com
+  bounty: false
+  program_url: https://www.claromentis.com/responsible-disclosure-policy/
+  domains:
+  - www.claromentis.com
+  github_orgs: []
+  excluded: []

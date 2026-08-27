@@ -1,0 +1,10 @@
+target:
+  name: kustomer-www
+  platform: vdp
+  disclosure: support@kustomer.com
+  bounty: false
+  program_url: https://www.kustomer.com/policy/disclosure/
+  domains:
+  - www.kustomer.com
+  github_orgs: []
+  excluded: []

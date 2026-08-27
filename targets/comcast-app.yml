@@ -1,0 +1,10 @@
+target:
+  name: comcast-app
+  platform: vdp
+  disclosure: https://my.xfinity.com/vulnerabilityreport
+  bounty: false
+  program_url: https://my.xfinity.com/vulnerabilityreport
+  domains:
+  - app.my.xfinity.com
+  github_orgs: []
+  excluded: []

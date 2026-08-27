@@ -1,0 +1,10 @@
+target:
+  name: election-systems-software
+  platform: vdp
+  disclosure: security@essvote.com
+  bounty: false
+  program_url: https://www.essvote.com/wp-content/uploads/2020/08/ESS_vulnerability_disclosure_policy.pdf
+  domains:
+  - essvote.com
+  github_orgs: []
+  excluded: []

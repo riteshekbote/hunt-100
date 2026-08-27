@@ -1,0 +1,10 @@
+target:
+  name: aeon-to-app
+  platform: vdp
+  disclosure: security@xmr.to
+  bounty: false
+  program_url: https://xmr.to/security
+  domains:
+  - app.xmr.to
+  github_orgs: []
+  excluded: []

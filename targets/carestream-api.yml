@@ -1,0 +1,10 @@
+target:
+  name: carestream-api
+  platform: vdp
+  disclosure: https://www.carestream.com/en/us/services-and-support/cybersecurity-and-privacy
+  bounty: false
+  program_url: https://www.carestream.com/en/us/services-and-support/cybersecurity-and-privacy
+  domains:
+  - api.carestream.com
+  github_orgs: []
+  excluded: []

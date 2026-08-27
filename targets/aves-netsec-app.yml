@@ -1,0 +1,10 @@
+target:
+  name: aves-netsec-app
+  platform: vdp
+  disclosure: info@avesnetsec.com
+  bounty: false
+  program_url: https://www.avesnetsec.com/security
+  domains:
+  - app.avesnetsec.com
+  github_orgs: []
+  excluded: []

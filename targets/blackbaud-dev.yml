@@ -1,0 +1,10 @@
+target:
+  name: blackbaud-dev
+  platform: vdp
+  disclosure: blackbaud-vdp@submit.bugcrowd.com
+  bounty: false
+  program_url: https://www.blackbaud.com/security/responsible-disclosure
+  domains:
+  - dev.blackbaud.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: south-carolina-state-election--www
+  platform: vdp
+  disclosure: Elections-VDP@cisecurity.org
+  bounty: false
+  program_url: https://scvotes.gov/vulnerability-disclosure-program
+  domains:
+  - www.scvotes.gov
+  github_orgs: []
+  excluded: []

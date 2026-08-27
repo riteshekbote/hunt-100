@@ -1,0 +1,10 @@
+target:
+  name: honeycomb-io-api
+  platform: vdp
+  disclosure: security@honeycomb.io
+  bounty: false
+  program_url: https://www.honeycomb.io/bugbountyprogram/
+  domains:
+  - api.honeycomb.io
+  github_orgs: []
+  excluded: []

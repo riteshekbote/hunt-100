@@ -1,0 +1,10 @@
+target:
+  name: tumblr-app
+  platform: bounty
+  disclosure: https://tumblr.zendesk.com/hc/en-us/articles/234583348-Bug-Bounty-Program
+  bounty: true
+  program_url: https://tumblr.zendesk.com/hc/en-us/articles/234583348-Bug-Bounty-Program
+  domains:
+  - app.tumblr.zendesk.com
+  github_orgs: []
+  excluded: []

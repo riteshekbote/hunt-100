@@ -1,0 +1,10 @@
+target:
+  name: hermes-parcelnet-www
+  platform: vdp
+  disclosure: infosec@hermes-europe.co.uk
+  bounty: false
+  program_url: https://www.myhermes.co.uk/responsible-disclosure-policy
+  domains:
+  - www.myhermes.co.uk
+  github_orgs: []
+  excluded: []

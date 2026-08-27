@@ -1,0 +1,10 @@
+target:
+  name: bank-of-america-dev
+  platform: vdp
+  disclosure: security@bankofamerica.com
+  bounty: false
+  program_url: https://www.bankofamerica.com/security-center/report-suspicious-communications/
+  domains:
+  - dev.bankofamerica.com
+  github_orgs: []
+  excluded: []

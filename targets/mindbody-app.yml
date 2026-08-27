@@ -1,0 +1,10 @@
+target:
+  name: mindbody-app
+  platform: vdp
+  disclosure: responsibledisclosure@mindbody.me
+  bounty: false
+  program_url: https://company.mindbodyonline.com/security/responsible-disclosure
+  domains:
+  - app.company.mindbodyonline.com
+  github_orgs: []
+  excluded: []

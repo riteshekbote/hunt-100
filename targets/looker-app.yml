@@ -1,0 +1,10 @@
+target:
+  name: looker-app
+  platform: vdp
+  disclosure: security@looker.com
+  bounty: false
+  program_url: https://looker.com/product/security/disclosure
+  domains:
+  - app.looker.com
+  github_orgs: []
+  excluded: []

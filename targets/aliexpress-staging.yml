@@ -1,0 +1,10 @@
+target:
+  name: aliexpress-staging
+  platform: bounty
+  disclosure: security@service.alibaba.com
+  bounty: true
+  program_url: https://security.alibaba.com/
+  domains:
+  - staging.security.alibaba.com
+  github_orgs: []
+  excluded: []

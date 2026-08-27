@@ -1,0 +1,10 @@
+target:
+  name: previous-cloudbees-com
+  platform: vdp
+  disclosure: product-security@cloudbees.com
+  bounty: false
+  program_url: https://www.cloudbees.com/security-policy
+  domains:
+  - cloudbees.com
+  github_orgs: []
+  excluded: []

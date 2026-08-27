@@ -1,0 +1,10 @@
+target:
+  name: docker-api
+  platform: vdp
+  disclosure: security@docker.com
+  bounty: false
+  program_url: https://www.docker.com/legal/security
+  domains:
+  - api.docker.com
+  github_orgs: []
+  excluded: []

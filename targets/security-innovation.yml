@@ -1,0 +1,10 @@
+target:
+  name: security-innovation
+  platform: vdp
+  disclosure: security@securityinnovation.com
+  bounty: false
+  program_url: https://www.securityinnovation.com/about/security/
+  domains:
+  - securityinnovation.com
+  github_orgs: []
+  excluded: []

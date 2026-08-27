@@ -1,0 +1,10 @@
+target:
+  name: telegram-www
+  platform: bounty
+  disclosure: https://telegram.org/faq#q-what-if-my-hacker-friend-says-they-could-decipher-telegram-mes
+  bounty: true
+  program_url: https://telegram.org/faq#q-what-if-my-hacker-friend-says-they-could-decipher-telegram-mes
+  domains:
+  - www.telegram.org
+  github_orgs: []
+  excluded: []

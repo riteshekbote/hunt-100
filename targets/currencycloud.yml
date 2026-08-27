@@ -1,0 +1,10 @@
+target:
+  name: currencycloud
+  platform: vdp
+  disclosure: security@currencycloud.com
+  bounty: false
+  program_url: https://www.currencycloud.com/legal/responsible-disclosure/
+  domains:
+  - currencycloud.com
+  github_orgs: []
+  excluded: []

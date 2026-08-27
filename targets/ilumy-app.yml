@@ -1,0 +1,10 @@
+target:
+  name: ilumy-app
+  platform: vdp
+  disclosure: contact@ilumy.com
+  bounty: false
+  program_url: https://ilumy.com/cases/responsible-disclosure
+  domains:
+  - app.ilumy.com
+  github_orgs: []
+  excluded: []

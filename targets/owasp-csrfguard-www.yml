@@ -1,0 +1,10 @@
+target:
+  name: owasp-csrfguard-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/owaspcrsfguard
+  bounty: false
+  program_url: https://bugcrowd.com/owaspcrsfguard
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

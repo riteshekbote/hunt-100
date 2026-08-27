@@ -1,0 +1,10 @@
+target:
+  name: secura-api
+  platform: vdp
+  disclosure: rd@secura.com
+  bounty: false
+  program_url: https://www.secura.com/ResponsibleDisclosure
+  domains:
+  - api.secura.com
+  github_orgs: []
+  excluded: []

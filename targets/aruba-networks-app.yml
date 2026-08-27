@@ -1,0 +1,10 @@
+target:
+  name: aruba-networks-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/aruba-public
+  bounty: true
+  program_url: https://bugcrowd.com/aruba-public
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

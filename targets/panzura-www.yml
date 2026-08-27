@@ -1,0 +1,10 @@
+target:
+  name: panzura-www
+  platform: vdp
+  disclosure: security@panzura.com
+  bounty: false
+  program_url: https://panzura.com/support/panzura-security-policy/
+  domains:
+  - www.panzura.com
+  github_orgs: []
+  excluded: []

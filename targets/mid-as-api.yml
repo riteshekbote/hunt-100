@@ -1,0 +1,10 @@
+target:
+  name: mid-as-api
+  platform: vdp
+  disclosure: https://security.midas.network/reporting
+  bounty: false
+  program_url: https://security.midas.network/reporting
+  domains:
+  - api.security.midas.network
+  github_orgs: []
+  excluded: []

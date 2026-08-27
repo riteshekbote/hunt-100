@@ -1,0 +1,10 @@
+target:
+  name: transip
+  platform: vdp
+  disclosure: security@transip.nl
+  bounty: false
+  program_url: https://www.transip.eu/legal-and-security/security
+  domains:
+  - transip.eu
+  github_orgs: []
+  excluded: []

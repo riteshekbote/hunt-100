@@ -1,0 +1,10 @@
+target:
+  name: dailymotion-api
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/dailymotion-public-bug-bounty
+  bounty: true
+  program_url: https://yeswehack.com/programs/dailymotion-public-bug-bounty
+  domains:
+  - api.yeswehack.com
+  github_orgs: []
+  excluded: []

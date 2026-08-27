@@ -1,0 +1,10 @@
+target:
+  name: jamieweb-api
+  platform: vdp
+  disclosure: security@jamieweb.net
+  bounty: false
+  program_url: https://www.jamieweb.net/contact/
+  domains:
+  - api.jamieweb.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: buffer-www
+  platform: vdp
+  disclosure: security@buffer.com
+  bounty: false
+  program_url: https://buffer.com/legal#security
+  domains:
+  - www.buffer.com
+  github_orgs: []
+  excluded: []

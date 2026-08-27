@@ -1,0 +1,10 @@
+target:
+  name: kroger
+  platform: vdp
+  disclosure: isoc@kroger.com
+  bounty: false
+  program_url: https://www.kroger.com/.well-known/security.txt
+  domains:
+  - kroger.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: nike-app
+  platform: vdp
+  disclosure: infosec@nike.com
+  bounty: false
+  program_url: https://www.nike.com/help/a/responsible-disclosure
+  domains:
+  - app.nike.com
+  github_orgs: []
+  excluded: []

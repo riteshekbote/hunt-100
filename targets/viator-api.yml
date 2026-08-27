@@ -1,0 +1,10 @@
+target:
+  name: viator-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/viator
+  bounty: true
+  program_url: https://bugcrowd.com/viator
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

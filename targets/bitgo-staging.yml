@@ -1,0 +1,10 @@
+target:
+  name: bitgo-staging
+  platform: bounty
+  disclosure: bugbounty@bitgo.com
+  bounty: true
+  program_url: https://www.bitgo.com/bug-bounty
+  domains:
+  - staging.bitgo.com
+  github_orgs: []
+  excluded: []

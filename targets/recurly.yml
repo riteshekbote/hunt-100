@@ -1,0 +1,10 @@
+target:
+  name: recurly
+  platform: vdp
+  disclosure: security@recurly.com
+  bounty: false
+  program_url: https://support.recurly.com/hc/en-us/articles/360024300812-Does-Recurly-have-a-bug-bounty-program-
+  domains:
+  - support.recurly.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: centers-for-medicare-and-medic-dev
+  platform: vdp
+  disclosure: cms_it_service_desk@cms.hhs.gov
+  bounty: false
+  program_url: https://www.cms.gov/Research-Statistics-Data-and-Systems/CMS-Information-Technology/CIO-Directives-and-Policies/Downloads/CMS-Vulnerability-Disclosure-Policy.pdf
+  domains:
+  - dev.cms.gov
+  github_orgs: []
+  excluded: []

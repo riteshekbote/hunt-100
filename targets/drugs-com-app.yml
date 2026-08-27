@@ -1,0 +1,10 @@
+target:
+  name: drugs-com-app
+  platform: vdp
+  disclosure: security@drugs.com
+  bounty: false
+  program_url: https://www.drugs.com/support/responsible-disclosure-policy.html
+  domains:
+  - app.drugs.com
+  github_orgs: []
+  excluded: []

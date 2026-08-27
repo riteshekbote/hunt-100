@@ -1,0 +1,10 @@
+target:
+  name: multichain-api
+  platform: bounty
+  disclosure: security@multichain.org
+  bounty: true
+  program_url: https://docs.multichain.org/security/bug-bounty
+  domains:
+  - api.docs.multichain.org
+  github_orgs: []
+  excluded: []

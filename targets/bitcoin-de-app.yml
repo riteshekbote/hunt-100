@@ -1,0 +1,10 @@
+target:
+  name: bitcoin-de-app
+  platform: vdp
+  disclosure: bugs2019@bitcoin.de
+  bounty: false
+  program_url: https://www.bitcoin.de/en/bug-bounty
+  domains:
+  - app.bitcoin.de
+  github_orgs: []
+  excluded: []

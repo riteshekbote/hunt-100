@@ -1,0 +1,10 @@
+target:
+  name: visa-www
+  platform: vdp
+  disclosure: https://usa.visa.com/about-visa/vulnerability-disclosure.html
+  bounty: false
+  program_url: https://usa.visa.com/about-visa/vulnerability-disclosure.html
+  domains:
+  - www.usa.visa.com
+  github_orgs: []
+  excluded: []

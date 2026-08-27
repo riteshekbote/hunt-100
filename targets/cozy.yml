@@ -1,0 +1,10 @@
+target:
+  name: cozy
+  platform: vdp
+  disclosure: security@cozy.co
+  bounty: false
+  program_url: https://cozy.co/security-and-privacy/
+  domains:
+  - cozy.co
+  github_orgs: []
+  excluded: []

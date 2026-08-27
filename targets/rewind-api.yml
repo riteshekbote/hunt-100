@@ -1,0 +1,10 @@
+target:
+  name: rewind-api
+  platform: vdp
+  disclosure: https://rewind.com/legal/vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://rewind.com/legal/vulnerability-disclosure-policy/
+  domains:
+  - api.rewind.com
+  github_orgs: []
+  excluded: []

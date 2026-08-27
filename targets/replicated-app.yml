@@ -1,0 +1,10 @@
+target:
+  name: replicated-app
+  platform: vdp
+  disclosure: security@replicated.com
+  bounty: false
+  program_url: https://www.replicated.com/security/
+  domains:
+  - app.replicated.com
+  github_orgs: []
+  excluded: []

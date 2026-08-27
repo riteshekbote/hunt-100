@@ -1,0 +1,10 @@
+target:
+  name: commonsware-api
+  platform: vdp
+  disclosure: ummmmm-hi@commonsware.com
+  bounty: false
+  program_url: https://commonsware.com/bounty.html
+  domains:
+  - api.commonsware.com
+  github_orgs: []
+  excluded: []

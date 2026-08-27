@@ -1,0 +1,10 @@
+target:
+  name: new-york-times-company-app
+  platform: vdp
+  disclosure: https://help.nytimes.com/hc/en-us/articles/360051392052-Vulnerability-Disclosure-Policy
+  bounty: false
+  program_url: https://help.nytimes.com/hc/en-us/articles/360051392052-Vulnerability-Disclosure-Policy
+  domains:
+  - app.help.nytimes.com
+  github_orgs: []
+  excluded: []

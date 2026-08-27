@@ -1,0 +1,10 @@
+target:
+  name: jumplead-app
+  platform: bounty
+  disclosure: https://jumplead.com/about/security
+  bounty: true
+  program_url: https://jumplead.com/about/security
+  domains:
+  - app.jumplead.com
+  github_orgs: []
+  excluded: []

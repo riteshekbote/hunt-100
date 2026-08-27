@@ -1,0 +1,10 @@
+target:
+  name: netskope-app
+  platform: vdp
+  disclosure: PSIRT@netskope.com
+  bounty: false
+  program_url: https://www.netskope.com/vulnerability-disclosure-policy
+  domains:
+  - app.netskope.com
+  github_orgs: []
+  excluded: []

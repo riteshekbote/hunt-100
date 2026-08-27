@@ -1,0 +1,10 @@
+target:
+  name: alaska-air-admin
+  platform: vdp
+  disclosure: https://www.alaskaair.com/content/about-us/site-info/report-site-security-issues
+  bounty: false
+  program_url: https://www.alaskaair.com/content/about-us/site-info/report-site-security-issues
+  domains:
+  - admin.alaskaair.com
+  github_orgs: []
+  excluded: []

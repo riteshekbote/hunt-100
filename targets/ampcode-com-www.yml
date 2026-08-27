@@ -1,0 +1,10 @@
+target:
+  name: ampcode-com-www
+  platform: bounty
+  disclosure: security@sourcegraph.com
+  bounty: true
+  program_url: https://ampcode.com/security/
+  domains:
+  - www.ampcode.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: billogram-api
+  platform: vdp
+  disclosure: security@billogram.com
+  bounty: false
+  program_url: https://billogram.zendesk.com/hc/en-us/articles/360011911300-
+  domains:
+  - api.billogram.zendesk.com
+  github_orgs: []
+  excluded: []

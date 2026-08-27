@@ -1,0 +1,10 @@
+target:
+  name: fitbit-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/fitbit
+  bounty: true
+  program_url: https://bugcrowd.com/fitbit
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

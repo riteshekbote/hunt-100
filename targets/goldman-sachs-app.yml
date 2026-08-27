@@ -1,0 +1,10 @@
+target:
+  name: goldman-sachs-app
+  platform: bounty
+  disclosure: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  bounty: true
+  program_url: https://www.goldmansachs.com/privacy-and-cookies/global-privacy-policy.html
+  domains:
+  - app.goldmansachs.com
+  github_orgs: []
+  excluded: []

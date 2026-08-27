@@ -1,0 +1,10 @@
+target:
+  name: cert-in-www
+  platform: vdp
+  disclosure: info@cert-in.org.in
+  bounty: false
+  program_url: https://www.cert-in.org.in/PDF/Vul_Report.pdf
+  domains:
+  - www.cert-in.org.in
+  github_orgs: []
+  excluded: []

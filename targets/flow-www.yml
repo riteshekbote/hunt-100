@@ -1,0 +1,10 @@
+target:
+  name: flow-www
+  platform: bounty
+  disclosure: security@onflow.org
+  bounty: true
+  program_url: https://flow.com/flow-responsible-disclosure
+  domains:
+  - www.flow.com
+  github_orgs: []
+  excluded: []

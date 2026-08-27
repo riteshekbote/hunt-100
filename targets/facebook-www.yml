@@ -1,0 +1,10 @@
+target:
+  name: facebook-www
+  platform: bounty
+  disclosure: https://www.facebook.com/whitehat
+  bounty: true
+  program_url: https://www.facebook.com/whitehat
+  domains:
+  - www.facebook.com
+  github_orgs: []
+  excluded: []

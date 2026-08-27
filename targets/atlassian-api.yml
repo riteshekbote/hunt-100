@@ -1,0 +1,10 @@
+target:
+  name: atlassian-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/atlassian
+  bounty: true
+  program_url: https://bugcrowd.com/atlassian
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

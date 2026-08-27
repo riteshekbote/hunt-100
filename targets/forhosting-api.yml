@@ -1,0 +1,10 @@
+target:
+  name: forhosting-api
+  platform: vdp
+  disclosure: security@forhosting.nl
+  bounty: false
+  program_url: https://www.forhosting.pro/responsibledisclosure
+  domains:
+  - api.forhosting.pro
+  github_orgs: []
+  excluded: []

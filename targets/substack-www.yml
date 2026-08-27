@@ -1,0 +1,10 @@
+target:
+  name: substack-www
+  platform: vdp
+  disclosure: security@substackinc.com
+  bounty: false
+  program_url: https://substack.com/vulnerability-disclosure
+  domains:
+  - www.substack.com
+  github_orgs: []
+  excluded: []

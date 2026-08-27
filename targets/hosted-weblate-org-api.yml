@@ -1,0 +1,10 @@
+target:
+  name: hosted-weblate-org-api
+  platform: vdp
+  disclosure: https://docs.weblate.org/en/latest/contributing/issues.html#security
+  bounty: false
+  program_url: https://docs.weblate.org/en/latest/contributing/issues.html#security
+  domains:
+  - api.docs.weblate.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: techsmith
+  platform: vdp
+  disclosure: https://www.techsmith.com/security.html
+  bounty: false
+  program_url: https://www.techsmith.com/security.html
+  domains:
+  - techsmith.com
+  github_orgs: []
+  excluded: []

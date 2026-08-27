@@ -1,0 +1,10 @@
+target:
+  name: intuo-www
+  platform: vdp
+  disclosure: philip@intuo.io
+  bounty: false
+  program_url: https://www.intuo.io/security
+  domains:
+  - www.intuo.io
+  github_orgs: []
+  excluded: []

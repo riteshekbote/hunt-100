@@ -1,0 +1,10 @@
+target:
+  name: tealium-api
+  platform: vdp
+  disclosure: vdp@tealium.com
+  bounty: false
+  program_url: https://tealium.com/vdp/
+  domains:
+  - api.tealium.com
+  github_orgs: []
+  excluded: []

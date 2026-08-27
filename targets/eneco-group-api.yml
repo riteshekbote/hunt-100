@@ -1,0 +1,10 @@
+target:
+  name: eneco-group-api
+  platform: vdp
+  disclosure: responsibledisclosure@eneco.com
+  bounty: false
+  program_url: https://www.eneco.com/responsible-disclosure/
+  domains:
+  - api.eneco.com
+  github_orgs: []
+  excluded: []

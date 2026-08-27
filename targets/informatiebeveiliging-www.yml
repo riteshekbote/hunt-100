@@ -1,0 +1,10 @@
+target:
+  name: informatiebeveiliging-www
+  platform: vdp
+  disclosure: directie@informatiebeveiliging.nl
+  bounty: false
+  program_url: https://informatiebeveiliging.nl/
+  domains:
+  - www.informatiebeveiliging.nl
+  github_orgs: []
+  excluded: []

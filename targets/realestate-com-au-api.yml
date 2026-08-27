@@ -1,0 +1,10 @@
+target:
+  name: realestate-com-au-api
+  platform: vdp
+  disclosure: security-vulnerability@rea-group.com
+  bounty: false
+  program_url: https://www.rea-group.com/security
+  domains:
+  - api.rea-group.com
+  github_orgs: []
+  excluded: []

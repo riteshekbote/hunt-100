@@ -1,0 +1,10 @@
+target:
+  name: farm-credit-administration-www
+  platform: vdp
+  disclosure: security_vdp@fca.gov
+  bounty: false
+  program_url: https://www.fca.gov/vulnerability-disclosure-policy
+  domains:
+  - www.fca.gov
+  github_orgs: []
+  excluded: []

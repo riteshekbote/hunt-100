@@ -1,0 +1,10 @@
+target:
+  name: nasdaq-api
+  platform: vdp
+  disclosure: https://nasdaq.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://nasdaq.responsibledisclosure.com/hc/en-us
+  domains:
+  - api.nasdaq.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

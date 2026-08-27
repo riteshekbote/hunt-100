@@ -1,0 +1,10 @@
+target:
+  name: robocorp-com
+  platform: vdp
+  disclosure: security@robocorp.com
+  bounty: false
+  program_url: https://robocorp.com/.well-known/responsible-disclosure-policy.html
+  domains:
+  - robocorp.com
+  github_orgs: []
+  excluded: []

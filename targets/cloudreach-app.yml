@@ -1,0 +1,10 @@
+target:
+  name: cloudreach-app
+  platform: vdp
+  disclosure: security@cloudreach.com
+  bounty: false
+  program_url: https://www.cloudreach.com/en/legal/vulnerability-disclosure-notice/
+  domains:
+  - app.cloudreach.com
+  github_orgs: []
+  excluded: []

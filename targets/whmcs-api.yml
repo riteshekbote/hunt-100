@@ -1,0 +1,10 @@
+target:
+  name: whmcs-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/whmcs
+  bounty: true
+  program_url: https://bugcrowd.com/whmcs
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

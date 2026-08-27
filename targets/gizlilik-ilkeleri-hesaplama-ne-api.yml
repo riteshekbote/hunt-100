@@ -1,0 +1,10 @@
+target:
+  name: gizlilik-ilkeleri-hesaplama-ne-api
+  platform: vdp
+  disclosure: https://gizlilik-ilkeleri.hesaplama.net/
+  bounty: false
+  program_url: https://gizlilik-ilkeleri.hesaplama.net/
+  domains:
+  - api.gizlilik-ilkeleri.hesaplama.net
+  github_orgs: []
+  excluded: []

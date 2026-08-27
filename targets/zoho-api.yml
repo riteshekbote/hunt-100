@@ -1,0 +1,10 @@
+target:
+  name: zoho-api
+  platform: bounty
+  disclosure: https://bugbounty.zoho.com/bb/info#guide
+  bounty: true
+  program_url: https://bugbounty.zoho.com/bb/info#guide
+  domains:
+  - api.bugbounty.zoho.com
+  github_orgs: []
+  excluded: []

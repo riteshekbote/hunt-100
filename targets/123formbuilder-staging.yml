@@ -1,0 +1,10 @@
+target:
+  name: 123formbuilder-staging
+  platform: vdp
+  disclosure: https://security.123formbuilder.com
+  bounty: false
+  program_url: https://security.123formbuilder.com
+  domains:
+  - staging.security.123formbuilder.com
+  github_orgs: []
+  excluded: []

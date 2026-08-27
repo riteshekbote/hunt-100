@@ -1,0 +1,10 @@
+target:
+  name: department-of-housing-and-urba
+  platform: vdp
+  disclosure: VDP@hud.gov
+  bounty: false
+  program_url: https://www.hud.gov/vulnerability-disclosure-policy
+  domains:
+  - hud.gov
+  github_orgs: []
+  excluded: []

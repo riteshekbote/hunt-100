@@ -1,0 +1,10 @@
+target:
+  name: debian-security-tracker
+  platform: vdp
+  disclosure: http://www.debian.org/Bugs/
+  bounty: false
+  program_url: http://www.debian.org/Bugs/
+  domains:
+  - debian.org
+  github_orgs: []
+  excluded: []

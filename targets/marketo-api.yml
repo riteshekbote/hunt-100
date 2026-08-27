@@ -1,0 +1,10 @@
+target:
+  name: marketo-api
+  platform: vdp
+  disclosure: securityteam@marketo.com
+  bounty: false
+  program_url: https://documents.marketo.com/legal/notices/responsible-disclosure-policy.pdf
+  domains:
+  - api.documents.marketo.com
+  github_orgs: []
+  excluded: []

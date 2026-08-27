@@ -1,0 +1,10 @@
+target:
+  name: coinjar-app
+  platform: bounty
+  disclosure: security@coinjar.com
+  bounty: true
+  program_url: https://www.coinjar.com/bounty
+  domains:
+  - app.coinjar.com
+  github_orgs: []
+  excluded: []

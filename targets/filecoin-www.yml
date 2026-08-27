@@ -1,0 +1,10 @@
+target:
+  name: filecoin-www
+  platform: bounty
+  disclosure: security@filecoin.org
+  bounty: true
+  program_url: https://security.filecoin.io/bug-bounty/
+  domains:
+  - www.security.filecoin.io
+  github_orgs: []
+  excluded: []

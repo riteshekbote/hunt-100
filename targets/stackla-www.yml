@@ -1,0 +1,10 @@
+target:
+  name: stackla-www
+  platform: vdp
+  disclosure: security@stackla.com
+  bounty: false
+  program_url: https://support.stackla.com/hc/en-us/articles/115005937887-Reporting-a-possible-security-vulnerability-to-Stackla
+  domains:
+  - www.support.stackla.com
+  github_orgs: []
+  excluded: []

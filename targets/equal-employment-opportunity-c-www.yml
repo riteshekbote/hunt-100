@@ -1,0 +1,10 @@
+target:
+  name: equal-employment-opportunity-c-www
+  platform: vdp
+  disclosure: https://www.eeoc.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.eeoc.gov/vulnerability-disclosure-policy
+  domains:
+  - www.eeoc.gov
+  github_orgs: []
+  excluded: []

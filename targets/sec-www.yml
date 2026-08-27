@@ -1,0 +1,10 @@
+target:
+  name: sec-www
+  platform: vdp
+  disclosure: security@sec.gov
+  bounty: false
+  program_url: https://www.sec.gov/vulnerability-disclosure-policy
+  domains:
+  - www.sec.gov
+  github_orgs: []
+  excluded: []

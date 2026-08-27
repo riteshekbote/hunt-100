@@ -1,0 +1,10 @@
+target:
+  name: modern-treasury-www
+  platform: bounty
+  disclosure: https://www.federacy.com/modern-treasury
+  bounty: true
+  program_url: https://www.federacy.com/modern-treasury
+  domains:
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

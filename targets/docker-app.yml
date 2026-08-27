@@ -1,0 +1,10 @@
+target:
+  name: docker-app
+  platform: vdp
+  disclosure: security@docker.com
+  bounty: false
+  program_url: https://www.docker.com/legal/security
+  domains:
+  - app.docker.com
+  github_orgs: []
+  excluded: []

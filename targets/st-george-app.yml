@@ -1,0 +1,10 @@
+target:
+  name: st-george-app
+  platform: vdp
+  disclosure: vulnerability@stgeorge.com.au
+  bounty: false
+  program_url: https://www.stgeorge.com.au/online-services/security-centre/responsible-disclosure
+  domains:
+  - app.stgeorge.com.au
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: drupal
+  platform: vdp
+  disclosure: security@drupal.org
+  bounty: false
+  program_url: https://www.drupal.org/drupal-security-team
+  domains:
+  - drupal.org
+  github_orgs: []
+  excluded: []

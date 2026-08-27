@@ -1,0 +1,10 @@
+target:
+  name: bitsoffreedom-www
+  platform: bounty
+  disclosure: security@bof.nl
+  bounty: true
+  program_url: https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure-en/
+  domains:
+  - www.bitsoffreedom.nl
+  github_orgs: []
+  excluded: []

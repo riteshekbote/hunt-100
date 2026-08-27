@@ -1,0 +1,10 @@
+target:
+  name: status-crossref-org-api
+  platform: vdp
+  disclosure: https://www.atlassian.com/trust/security/report-a-vulnerability
+  bounty: false
+  program_url: https://www.atlassian.com/trust/security/report-a-vulnerability
+  domains:
+  - api.atlassian.com
+  github_orgs: []
+  excluded: []

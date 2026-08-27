@@ -1,0 +1,10 @@
+target:
+  name: practo-www
+  platform: vdp
+  disclosure: secure@practo.com
+  bounty: false
+  program_url: https://www.practo.com/company/responsible-disclosure-policy
+  domains:
+  - www.practo.com
+  github_orgs: []
+  excluded: []

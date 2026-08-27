@@ -1,0 +1,10 @@
+target:
+  name: federal-trade-commission
+  platform: vdp
+  disclosure: security@ftc.gov
+  bounty: false
+  program_url: https://www.ftc.gov/vulnerability-disclosure-policy
+  domains:
+  - ftc.gov
+  github_orgs: []
+  excluded: []

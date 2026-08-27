@@ -1,0 +1,10 @@
+target:
+  name: dbs-com-www
+  platform: vdp
+  disclosure: https://www.dbs.com/vdp/default.page?pid=id-bh-group-pweb-footer-vdp
+  bounty: false
+  program_url: https://www.dbs.com/vdp/default.page?pid=id-bh-group-pweb-footer-vdp
+  domains:
+  - www.dbs.com
+  github_orgs: []
+  excluded: []

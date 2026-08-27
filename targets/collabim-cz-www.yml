@@ -1,0 +1,10 @@
+target:
+  name: collabim-cz-www
+  platform: vdp
+  disclosure: https://www.collabim.cz/bezpecnost-collabimu.html
+  bounty: false
+  program_url: https://www.collabim.cz/bezpecnost-collabimu.html
+  domains:
+  - www.collabim.cz
+  github_orgs: []
+  excluded: []

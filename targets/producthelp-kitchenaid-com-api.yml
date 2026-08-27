@@ -1,0 +1,10 @@
+target:
+  name: producthelp-kitchenaid-com-api
+  platform: vdp
+  disclosure: security@mindtouch.com
+  bounty: false
+  program_url: https://mindtouch.com/disclosure
+  domains:
+  - api.mindtouch.com
+  github_orgs: []
+  excluded: []

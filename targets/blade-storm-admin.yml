@@ -1,0 +1,10 @@
+target:
+  name: blade-storm-admin
+  platform: bounty
+  disclosure: security@bladestorm.org
+  bounty: true
+  program_url: https://bladestorm.zendesk.com/hc/en-us/articles/360010393497-Bug-Bounty-Program
+  domains:
+  - admin.bladestorm.zendesk.com
+  github_orgs: []
+  excluded: []

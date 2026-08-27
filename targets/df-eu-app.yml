@@ -1,0 +1,10 @@
+target:
+  name: df-eu-app
+  platform: vdp
+  disclosure: security@df.eu
+  bounty: false
+  program_url: https://df.eu/whitehat/policy
+  domains:
+  - app.df.eu
+  github_orgs: []
+  excluded: []

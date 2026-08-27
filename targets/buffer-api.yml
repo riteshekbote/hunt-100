@@ -1,0 +1,10 @@
+target:
+  name: buffer-api
+  platform: vdp
+  disclosure: security@buffer.com
+  bounty: false
+  program_url: https://buffer.com/legal#security
+  domains:
+  - api.buffer.com
+  github_orgs: []
+  excluded: []

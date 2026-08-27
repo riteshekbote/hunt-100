@@ -1,0 +1,10 @@
+target:
+  name: bitmex-www
+  platform: bounty
+  disclosure: support@bitmex.com
+  bounty: true
+  program_url: https://www.bitmex.com/app/security
+  domains:
+  - www.bitmex.com
+  github_orgs: []
+  excluded: []

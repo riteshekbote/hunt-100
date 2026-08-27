@@ -1,0 +1,10 @@
+target:
+  name: partnerize-api
+  platform: vdp
+  disclosure: https://partnerize.com/en/responsible-disclosure?q=%2Fen%2Fresponsible-disclosure
+  bounty: false
+  program_url: https://partnerize.com/en/responsible-disclosure?q=%2Fen%2Fresponsible-disclosure
+  domains:
+  - api.partnerize.com
+  github_orgs: []
+  excluded: []

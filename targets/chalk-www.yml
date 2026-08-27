@@ -1,0 +1,10 @@
+target:
+  name: chalk-www
+  platform: vdp
+  disclosure: security@chalk.com
+  bounty: false
+  program_url: https://www.chalk.com/security/
+  domains:
+  - www.chalk.com
+  github_orgs: []
+  excluded: []

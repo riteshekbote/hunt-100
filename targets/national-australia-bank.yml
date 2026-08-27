@@ -1,0 +1,10 @@
+target:
+  name: national-australia-bank
+  platform: vdp
+  disclosure: https://bugcrowd.com/nationalaustraliabankog
+  bounty: false
+  program_url: https://bugcrowd.com/nationalaustraliabankog
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

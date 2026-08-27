@@ -1,0 +1,10 @@
+target:
+  name: cox-com-api
+  platform: vdp
+  disclosure: securebug@cox.com
+  bounty: false
+  program_url: https://www.cox.com/aboutus/policies/cox-security-responsible-disclosure-policy.html
+  domains:
+  - api.cox.com
+  github_orgs: []
+  excluded: []

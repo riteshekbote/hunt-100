@@ -1,0 +1,10 @@
+target:
+  name: kinde-www
+  platform: vdp
+  disclosure: security@kinde.com
+  bounty: false
+  program_url: https://kinde.com/docs/important-information/vulnerability-disclosure-policy/
+  domains:
+  - www.kinde.com
+  github_orgs: []
+  excluded: []

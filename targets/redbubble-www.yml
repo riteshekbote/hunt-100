@@ -1,0 +1,10 @@
+target:
+  name: redbubble-www
+  platform: vdp
+  disclosure: https://help.redbubble.com/hc/en-us/articles/214531243-Report-a-Website-Security-Vulnerability
+  bounty: false
+  program_url: https://help.redbubble.com/hc/en-us/articles/214531243-Report-a-Website-Security-Vulnerability
+  domains:
+  - www.help.redbubble.com
+  github_orgs: []
+  excluded: []

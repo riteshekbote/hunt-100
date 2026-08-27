@@ -1,0 +1,10 @@
+target:
+  name: novocure-api
+  platform: vdp
+  disclosure: security@novocure.com
+  bounty: false
+  program_url: https://www.novocure.com/novocure-vulnerability-disclosure-process/
+  domains:
+  - api.novocure.com
+  github_orgs: []
+  excluded: []

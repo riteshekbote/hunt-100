@@ -1,0 +1,10 @@
+target:
+  name: getonbrd-cl
+  platform: vdp
+  disclosure: team@getonbrd.com
+  bounty: false
+  program_url: https://www.getonbrd.com/about/privacy
+  domains:
+  - getonbrd.com
+  github_orgs: []
+  excluded: []

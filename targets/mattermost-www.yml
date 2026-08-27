@@ -1,0 +1,10 @@
+target:
+  name: mattermost-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/engagements/mattermost-mbb-public
+  bounty: true
+  program_url: https://bugcrowd.com/engagements/mattermost-mbb-public
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

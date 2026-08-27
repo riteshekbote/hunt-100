@@ -1,0 +1,10 @@
+target:
+  name: owasp-java-encoder-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/owaspjavaencoder
+  bounty: false
+  program_url: https://bugcrowd.com/owaspjavaencoder
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

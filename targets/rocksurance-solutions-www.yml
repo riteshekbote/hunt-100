@@ -1,0 +1,10 @@
+target:
+  name: rocksurance-solutions-www
+  platform: vdp
+  disclosure: https://www.mynameflow.com/vulnerability-disclosure/
+  bounty: false
+  program_url: https://www.mynameflow.com/vulnerability-disclosure/
+  domains:
+  - www.mynameflow.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: livesport-api
+  platform: bounty
+  disclosure: https://bugbounty.livesport.eu/docs/Vulnerability%20Disclosure%20Policy.pdf
+  bounty: true
+  program_url: https://bugbounty.livesport.eu/docs/Vulnerability%20Disclosure%20Policy.pdf
+  domains:
+  - api.bugbounty.livesport.eu
+  github_orgs: []
+  excluded: []

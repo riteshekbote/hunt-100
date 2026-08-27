@@ -1,0 +1,10 @@
+target:
+  name: finder
+  platform: vdp
+  disclosure: security@finder.com
+  bounty: false
+  program_url: https://www.finder.com.au/vulnerability-disclosure-policy
+  domains:
+  - finder.com.au
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: aqua-security-dev
+  platform: bounty
+  disclosure: psirt@aquasec.com
+  bounty: true
+  program_url: https://www.aquasec.com/trust/security/responsible-disclosure-program/
+  domains:
+  - dev.aquasec.com
+  github_orgs: []
+  excluded: []

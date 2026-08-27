@@ -1,0 +1,10 @@
+target:
+  name: dracoon-app
+  platform: bounty
+  disclosure: https://security.dracoon.com
+  bounty: true
+  program_url: https://security.dracoon.com
+  domains:
+  - app.security.dracoon.com
+  github_orgs: []
+  excluded: []

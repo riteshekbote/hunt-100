@@ -1,0 +1,10 @@
+target:
+  name: hostfact-api
+  platform: vdp
+  disclosure: info@hostfact.nl
+  bounty: false
+  program_url: https://www.hostfact.nl/security/
+  domains:
+  - api.hostfact.nl
+  github_orgs: []
+  excluded: []

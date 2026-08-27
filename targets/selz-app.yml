@@ -1,0 +1,10 @@
+target:
+  name: selz-app
+  platform: bounty
+  disclosure: security@selz.com
+  bounty: true
+  program_url: https://help.selz.com/article/217-security-escalation
+  domains:
+  - app.help.selz.com
+  github_orgs: []
+  excluded: []

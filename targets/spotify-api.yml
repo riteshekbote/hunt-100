@@ -1,0 +1,10 @@
+target:
+  name: spotify-api
+  platform: bounty
+  disclosure: https://www.spotify.com/us/bounty/
+  bounty: true
+  program_url: https://www.spotify.com/us/bounty/
+  domains:
+  - api.spotify.com
+  github_orgs: []
+  excluded: []

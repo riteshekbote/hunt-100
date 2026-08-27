@@ -1,0 +1,10 @@
+target:
+  name: vi-company-www
+  platform: bounty
+  disclosure: support@vicompany.nl
+  bounty: true
+  program_url: https://www.vicompany.nl/legal/responsible-disclosure
+  domains:
+  - www.vicompany.nl
+  github_orgs: []
+  excluded: []

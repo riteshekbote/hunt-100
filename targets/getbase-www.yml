@@ -1,0 +1,10 @@
+target:
+  name: getbase-www
+  platform: vdp
+  disclosure: https://bugbounty.getbase.com/
+  bounty: false
+  program_url: https://bugbounty.getbase.com/
+  domains:
+  - www.bugbounty.getbase.com
+  github_orgs: []
+  excluded: []

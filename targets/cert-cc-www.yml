@@ -1,0 +1,10 @@
+target:
+  name: cert-cc-www
+  platform: vdp
+  disclosure: https://vuls.cert.org/confluence/display/Wiki/Vulnerability+Disclosure+Policy
+  bounty: false
+  program_url: https://vuls.cert.org/confluence/display/Wiki/Vulnerability+Disclosure+Policy
+  domains:
+  - www.vuls.cert.org
+  github_orgs: []
+  excluded: []

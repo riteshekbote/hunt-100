@@ -1,0 +1,10 @@
+target:
+  name: mercedes-benz
+  platform: vdp
+  disclosure: security@daimler.com
+  bounty: false
+  program_url: https://www.mercedes-benz.com/en/whitehat/?owda=misc#coordinated-disclosure-guidlines
+  domains:
+  - mercedes-benz.com
+  github_orgs: []
+  excluded: []

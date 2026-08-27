@@ -1,0 +1,10 @@
+target:
+  name: growsumo-com
+  platform: vdp
+  disclosure: security@partnerstack.com
+  bounty: false
+  program_url: https://www.partnerstack.com/policies#security-practices
+  domains:
+  - partnerstack.com
+  github_orgs: []
+  excluded: []

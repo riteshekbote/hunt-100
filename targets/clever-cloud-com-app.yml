@@ -1,0 +1,10 @@
+target:
+  name: clever-cloud-com-app
+  platform: vdp
+  disclosure: security@clever-cloud.com
+  bounty: false
+  program_url: https://www.clever-cloud.com/security-policy
+  domains:
+  - app.clever-cloud.com
+  github_orgs: []
+  excluded: []

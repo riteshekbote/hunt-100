@@ -1,0 +1,10 @@
+target:
+  name: lego-app
+  platform: vdp
+  disclosure: whitehat@lego.com
+  bounty: false
+  program_url: https://www.lego.com/en-nl/legal/notices-and-policies/responsible-disclosure-policy/
+  domains:
+  - app.lego.com
+  github_orgs: []
+  excluded: []

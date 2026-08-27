@@ -1,0 +1,10 @@
+target:
+  name: dragonex-api
+  platform: bounty
+  disclosure: service@dragonex.io
+  bounty: true
+  program_url: https://dragonex.zendesk.com/hc/en-us/articles/360036938832-BUG-Bounty-Program
+  domains:
+  - api.dragonex.zendesk.com
+  github_orgs: []
+  excluded: []

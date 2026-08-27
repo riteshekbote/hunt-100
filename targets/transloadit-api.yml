@@ -1,0 +1,10 @@
+target:
+  name: transloadit-api
+  platform: vdp
+  disclosure: support@transloadit.com
+  bounty: false
+  program_url: https://transloadit.com/security/
+  domains:
+  - api.transloadit.com
+  github_orgs: []
+  excluded: []

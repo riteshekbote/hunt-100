@@ -1,0 +1,10 @@
+target:
+  name: cobu
+  platform: vdp
+  disclosure: support@livecobu.com
+  bounty: false
+  program_url: https://intercom.help/cobu/en/articles/4342104-member-agreement
+  domains:
+  - intercom.help
+  github_orgs: []
+  excluded: []

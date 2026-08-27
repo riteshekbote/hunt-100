@@ -1,0 +1,10 @@
+target:
+  name: hunter-io-app
+  platform: bounty
+  disclosure: support@hunter.io
+  bounty: true
+  program_url: https://hunter.io/security-bounty-program
+  domains:
+  - app.hunter.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: aldolat-it-app
+  platform: vdp
+  disclosure: https://www.aldolat.it/info/privacy-policy/
+  bounty: false
+  program_url: https://www.aldolat.it/info/privacy-policy/
+  domains:
+  - app.aldolat.it
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: babylon-www
+  platform: vdp
+  disclosure: responsible.disclosure@babylonhealth.com
+  bounty: false
+  program_url: https://www.babylonhealth.com/us/responsible-disclosure-policy
+  domains:
+  - www.babylonhealth.com
+  github_orgs: []
+  excluded: []

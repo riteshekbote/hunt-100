@@ -1,0 +1,10 @@
+target:
+  name: robeco-app
+  platform: vdp
+  disclosure: https://www.robeco.com/en/responsible-disclosure.html
+  bounty: false
+  program_url: https://www.robeco.com/en/responsible-disclosure.html
+  domains:
+  - app.robeco.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: learn-conferencebadge-com-www
+  platform: vdp
+  disclosure: security@conferencebadge.com
+  bounty: false
+  program_url: https://www.conferencebadge.com/security
+  domains:
+  - www.conferencebadge.com
+  github_orgs: []
+  excluded: []

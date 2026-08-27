@@ -1,0 +1,10 @@
+target:
+  name: bugsnag-app
+  platform: vdp
+  disclosure: security@bugsnag.com
+  bounty: false
+  program_url: https://docs.bugsnag.com/security/responsible-disclosure/
+  domains:
+  - app.docs.bugsnag.com
+  github_orgs: []
+  excluded: []

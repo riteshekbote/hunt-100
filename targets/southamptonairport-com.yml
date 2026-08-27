@@ -1,0 +1,10 @@
+target:
+  name: southamptonairport-com
+  platform: vdp
+  disclosure: https://www.agsairports.co.uk/report-a-vulnerability/
+  bounty: false
+  program_url: https://www.agsairports.co.uk/report-a-vulnerability/
+  domains:
+  - agsairports.co.uk
+  github_orgs: []
+  excluded: []

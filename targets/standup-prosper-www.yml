@@ -1,0 +1,10 @@
+target:
+  name: standup-prosper-www
+  platform: vdp
+  disclosure: https://standup-and-prosper.com/app/#/disclosure
+  bounty: false
+  program_url: https://standup-and-prosper.com/app/#/disclosure
+  domains:
+  - www.standup-and-prosper.com
+  github_orgs: []
+  excluded: []

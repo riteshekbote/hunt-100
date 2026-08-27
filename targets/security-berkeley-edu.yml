@@ -1,0 +1,10 @@
+target:
+  name: security-berkeley-edu
+  platform: vdp
+  disclosure: security@berkeley.edu
+  bounty: false
+  program_url: https://security.berkeley.edu/quick-links/report-security-vulnerability
+  domains:
+  - security.berkeley.edu
+  github_orgs: []
+  excluded: []

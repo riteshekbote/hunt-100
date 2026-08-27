@@ -1,0 +1,10 @@
+target:
+  name: blog-oneiroi-co-uk
+  platform: vdp
+  disclosure: security@oneiroi.co.uk
+  bounty: false
+  program_url: https://oneiroi.co.uk/.well-known/policy.txt
+  domains:
+  - oneiroi.co.uk
+  github_orgs: []
+  excluded: []

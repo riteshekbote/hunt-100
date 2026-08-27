@@ -1,0 +1,10 @@
+target:
+  name: blue-canvas-staging
+  platform: vdp
+  disclosure: security@bluecanvas.io
+  bounty: false
+  program_url: https://bluecanvas.io/report-vulnerability
+  domains:
+  - staging.bluecanvas.io
+  github_orgs: []
+  excluded: []

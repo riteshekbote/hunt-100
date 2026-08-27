@@ -1,0 +1,10 @@
+target:
+  name: synack-api
+  platform: vdp
+  disclosure: https://synack.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://synack.responsibledisclosure.com/hc/en-us
+  domains:
+  - api.synack.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: western-union-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/westernunion
+  bounty: true
+  program_url: https://bugcrowd.com/westernunion
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

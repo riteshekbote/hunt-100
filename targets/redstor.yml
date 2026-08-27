@@ -1,0 +1,10 @@
+target:
+  name: redstor
+  platform: vdp
+  disclosure: security@redstor.com
+  bounty: false
+  program_url: https://www.redstor.com/en-us/about/vulnerability-disclosure-policy/
+  domains:
+  - redstor.com
+  github_orgs: []
+  excluded: []

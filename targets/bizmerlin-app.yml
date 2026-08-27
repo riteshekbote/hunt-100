@@ -1,0 +1,10 @@
+target:
+  name: bizmerlin-app
+  platform: vdp
+  disclosure: https://www.bizmerlin.com/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.bizmerlin.com/responsible-disclosure-policy/
+  domains:
+  - app.bizmerlin.com
+  github_orgs: []
+  excluded: []

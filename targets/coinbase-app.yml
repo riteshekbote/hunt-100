@@ -1,0 +1,10 @@
+target:
+  name: coinbase-app
+  platform: bounty
+  disclosure: https://coinbase.com/whitehat
+  bounty: true
+  program_url: https://coinbase.com/whitehat
+  domains:
+  - app.coinbase.com
+  github_orgs: []
+  excluded: []

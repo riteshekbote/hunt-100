@@ -1,0 +1,10 @@
+target:
+  name: ebay-www
+  platform: vdp
+  disclosure: https://pages.ebay.com/securitycenter/security_researchers.html
+  bounty: false
+  program_url: https://pages.ebay.com/securitycenter/security_researchers.html
+  domains:
+  - www.pages.ebay.com
+  github_orgs: []
+  excluded: []

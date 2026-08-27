@@ -1,0 +1,10 @@
+target:
+  name: logentries
+  platform: vdp
+  disclosure: security@logentries.com
+  bounty: false
+  program_url: https://logentries.com/doc/security/
+  domains:
+  - logentries.com
+  github_orgs: []
+  excluded: []

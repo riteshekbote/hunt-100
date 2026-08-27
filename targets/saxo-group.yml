@@ -1,0 +1,10 @@
+target:
+  name: saxo-group
+  platform: vdp
+  disclosure: security@saxobank.com
+  bounty: false
+  program_url: https://www.home.saxo/legal/vulnerability-disclosure-policy/vulnerability-disclosure-policy
+  domains:
+  - home.saxo
+  github_orgs: []
+  excluded: []

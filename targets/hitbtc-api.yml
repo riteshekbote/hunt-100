@@ -1,0 +1,10 @@
+target:
+  name: hitbtc-api
+  platform: bounty
+  disclosure: https://hitbtc.com/bug-report
+  bounty: true
+  program_url: https://hitbtc.com/bug-report
+  domains:
+  - api.hitbtc.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: general-electric-healthcare-api
+  platform: vdp
+  disclosure: GEHealthcareCVD@GE.com
+  bounty: false
+  program_url: https://www.gehealthcare.com/security/cvd
+  domains:
+  - api.gehealthcare.com
+  github_orgs: []
+  excluded: []

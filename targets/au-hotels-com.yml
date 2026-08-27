@@ -1,0 +1,10 @@
+target:
+  name: au-hotels-com
+  platform: vdp
+  disclosure: RespDisc@expedia.com
+  bounty: false
+  program_url: https://www.expediagroup.com/about/privacy-data-handling-requirements/
+  domains:
+  - expediagroup.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: forcepoint-com-api
+  platform: vdp
+  disclosure: PSIRT@forcepoint.com
+  bounty: false
+  program_url: https://www.forcepoint.com/company/innovation/product-security-report-issue
+  domains:
+  - api.forcepoint.com
+  github_orgs: []
+  excluded: []

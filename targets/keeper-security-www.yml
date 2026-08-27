@@ -1,0 +1,10 @@
+target:
+  name: keeper-security-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/keepersecurity
+  bounty: false
+  program_url: https://bugcrowd.com/keepersecurity
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

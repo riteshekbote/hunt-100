@@ -1,0 +1,10 @@
+target:
+  name: pexip-api
+  platform: vdp
+  disclosure: security@pexip.com
+  bounty: false
+  program_url: https://www.pexip.com/vulnerability-disclosure
+  domains:
+  - api.pexip.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: sap-api
+  platform: vdp
+  disclosure: https://wiki.scn.sap.com/wiki/display/PSR/Disclosure+Guidelines+for+SAP+Security+Advisories
+  bounty: false
+  program_url: https://wiki.scn.sap.com/wiki/display/PSR/Disclosure+Guidelines+for+SAP+Security+Advisories
+  domains:
+  - api.wiki.scn.sap.com
+  github_orgs: []
+  excluded: []

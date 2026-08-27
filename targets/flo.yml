@@ -1,0 +1,10 @@
+target:
+  name: flo
+  platform: vdp
+  disclosure: security@flo.health
+  bounty: false
+  program_url: https://flo.health/responsible-vulnerability-disclosure-program
+  domains:
+  - flo.health
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: salesloft
+  platform: vdp
+  disclosure: vdp@salesloft.com
+  bounty: false
+  program_url: https://salesloft.com/vulnerability-disclosure-program/
+  domains:
+  - salesloft.com
+  github_orgs: []
+  excluded: []

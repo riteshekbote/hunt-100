@@ -1,0 +1,10 @@
+target:
+  name: red-hat-www
+  platform: vdp
+  disclosure: https://access.redhat.com/security/team/contact
+  bounty: false
+  program_url: https://access.redhat.com/security/team/contact
+  domains:
+  - www.access.redhat.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: salestrail-app
+  platform: vdp
+  disclosure: support@liid.com
+  bounty: false
+  program_url: https://www.salestrail.io/vulnerability
+  domains:
+  - app.salestrail.io
+  github_orgs: []
+  excluded: []

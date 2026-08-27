@@ -1,0 +1,10 @@
+target:
+  name: john-deere-api
+  platform: vdp
+  disclosure: https://www.deere.com/en/digital-security/responsible-disclosure/
+  bounty: false
+  program_url: https://www.deere.com/en/digital-security/responsible-disclosure/
+  domains:
+  - api.deere.com
+  github_orgs: []
+  excluded: []

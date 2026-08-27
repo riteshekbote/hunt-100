@@ -1,0 +1,10 @@
+target:
+  name: achmea-staging
+  platform: vdp
+  disclosure: https://www.achmea.nl/en/responsibledisclosure
+  bounty: false
+  program_url: https://www.achmea.nl/en/responsibledisclosure
+  domains:
+  - staging.achmea.nl
+  github_orgs: []
+  excluded: []

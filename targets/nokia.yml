@@ -1,0 +1,10 @@
+target:
+  name: nokia
+  platform: vdp
+  disclosure: security-alert@nokia.com
+  bounty: false
+  program_url: https://www.nokia.com/responsible-disclosure/
+  domains:
+  - nokia.com
+  github_orgs: []
+  excluded: []

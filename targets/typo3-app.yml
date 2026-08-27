@@ -1,0 +1,10 @@
+target:
+  name: typo3-app
+  platform: vdp
+  disclosure: security@typo3.org
+  bounty: false
+  program_url: https://typo3.org/teams/security/
+  domains:
+  - app.typo3.org
+  github_orgs: []
+  excluded: []

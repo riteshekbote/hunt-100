@@ -1,0 +1,10 @@
+target:
+  name: ngahr-api
+  platform: vdp
+  disclosure: disclosure@ngahr.com
+  bounty: false
+  program_url: https://www.ngahr.com/privacy-policies/
+  domains:
+  - api.ngahr.com
+  github_orgs: []
+  excluded: []

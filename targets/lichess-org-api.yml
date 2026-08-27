@@ -1,0 +1,10 @@
+target:
+  name: lichess-org-api
+  platform: vdp
+  disclosure: contact@lichess.org
+  bounty: false
+  program_url: https://lichess.org/contact#help-security
+  domains:
+  - api.lichess.org
+  github_orgs: []
+  excluded: []

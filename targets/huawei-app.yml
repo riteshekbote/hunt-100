@@ -1,0 +1,10 @@
+target:
+  name: huawei-app
+  platform: vdp
+  disclosure: psirt@huawei.com
+  bounty: false
+  program_url: https://www.huawei.com/en/psirt/report-vulnerabilities
+  domains:
+  - app.huawei.com
+  github_orgs: []
+  excluded: []

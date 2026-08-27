@@ -1,0 +1,10 @@
+target:
+  name: georgia-tech
+  platform: vdp
+  disclosure: vulnerability.reporting@gatech.edu
+  bounty: false
+  program_url: https://policylibrary.gatech.edu/information-technology/responsible-disclosure-policy
+  domains:
+  - policylibrary.gatech.edu
+  github_orgs: []
+  excluded: []

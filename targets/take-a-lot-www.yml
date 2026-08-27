@@ -1,0 +1,10 @@
+target:
+  name: take-a-lot-www
+  platform: vdp
+  disclosure: security@takealot.com
+  bounty: false
+  program_url: https://www.takealot.com/help/responsible-disclosure-policy
+  domains:
+  - www.takealot.com
+  github_orgs: []
+  excluded: []

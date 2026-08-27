@@ -1,0 +1,10 @@
+target:
+  name: navy-federal
+  platform: vdp
+  disclosure: https://navyfederal.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://navyfederal.responsibledisclosure.com/hc/en-us
+  domains:
+  - navyfederal.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

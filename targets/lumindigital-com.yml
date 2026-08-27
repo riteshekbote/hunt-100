@@ -1,0 +1,10 @@
+target:
+  name: lumindigital-com
+  platform: vdp
+  disclosure: security-disclosure@lumindigital.com
+  bounty: false
+  program_url: https://lumindigital.com/security/
+  domains:
+  - lumindigital.com
+  github_orgs: []
+  excluded: []

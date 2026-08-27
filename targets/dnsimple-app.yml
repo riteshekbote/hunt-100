@@ -1,0 +1,10 @@
+target:
+  name: dnsimple-app
+  platform: vdp
+  disclosure: security@dnsimple.com
+  bounty: false
+  program_url: https://dnsimple.com/security
+  domains:
+  - app.dnsimple.com
+  github_orgs: []
+  excluded: []

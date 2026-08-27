@@ -1,0 +1,10 @@
+target:
+  name: tally-www
+  platform: vdp
+  disclosure: security@meettally.com
+  bounty: false
+  program_url: https://www.meettally.com/rvd/
+  domains:
+  - www.meettally.com
+  github_orgs: []
+  excluded: []

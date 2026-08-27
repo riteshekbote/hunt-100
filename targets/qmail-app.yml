@@ -1,0 +1,10 @@
+target:
+  name: qmail-app
+  platform: bounty
+  disclosure: https://cr.yp.to/qmail/guarantee.html
+  bounty: true
+  program_url: https://cr.yp.to/qmail/guarantee.html
+  domains:
+  - app.cr.yp.to
+  github_orgs: []
+  excluded: []

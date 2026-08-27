@@ -1,0 +1,10 @@
+target:
+  name: backblaze-www
+  platform: bounty
+  disclosure: https://www.backblaze.com/security.html
+  bounty: true
+  program_url: https://www.backblaze.com/security.html
+  domains:
+  - www.backblaze.com
+  github_orgs: []
+  excluded: []

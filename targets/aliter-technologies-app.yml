@@ -1,0 +1,10 @@
+target:
+  name: aliter-technologies-app
+  platform: vdp
+  disclosure: vulnerability@aliter.com
+  bounty: false
+  program_url: https://www.aliter.com/vulnerability-disclosure-policy/
+  domains:
+  - app.aliter.com
+  github_orgs: []
+  excluded: []

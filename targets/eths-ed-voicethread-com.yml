@@ -1,0 +1,10 @@
+target:
+  name: eths-ed-voicethread-com
+  platform: vdp
+  disclosure: https://voicethread.com/howto/category/security-faq/
+  bounty: false
+  program_url: https://voicethread.com/howto/category/security-faq/
+  domains:
+  - voicethread.com
+  github_orgs: []
+  excluded: []

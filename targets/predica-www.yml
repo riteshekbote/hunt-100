@@ -1,0 +1,10 @@
+target:
+  name: predica-www
+  platform: vdp
+  disclosure: https://www.predicagroup.com/cvd/
+  bounty: false
+  program_url: https://www.predicagroup.com/cvd/
+  domains:
+  - www.predicagroup.com
+  github_orgs: []
+  excluded: []

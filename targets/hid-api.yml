@@ -1,0 +1,10 @@
+target:
+  name: hid-api
+  platform: vdp
+  disclosure: secure@hidglobal.com
+  bounty: false
+  program_url: https://www.hidglobal.com/security-center
+  domains:
+  - api.hidglobal.com
+  github_orgs: []
+  excluded: []

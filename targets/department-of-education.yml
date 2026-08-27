@@ -1,0 +1,10 @@
+target:
+  name: department-of-education
+  platform: vdp
+  disclosure: OCIO_VDP@ed.gov
+  bounty: false
+  program_url: https://www.ed.gov/vulnerability-disclosure-policy
+  domains:
+  - ed.gov
+  github_orgs: []
+  excluded: []

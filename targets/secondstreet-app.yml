@@ -1,0 +1,10 @@
+target:
+  name: secondstreet-app
+  platform: vdp
+  disclosure: vulnerability@secondstreet.com
+  bounty: false
+  program_url: https://www.secondstreet.com/product-security-responsible-disclosure-policy
+  domains:
+  - app.secondstreet.com
+  github_orgs: []
+  excluded: []

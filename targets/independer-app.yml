@@ -1,0 +1,10 @@
+target:
+  name: independer-app
+  platform: bounty
+  disclosure: beveiliging@independer.nl
+  bounty: true
+  program_url: https://www.independer.nl/algemeen/info/responsible-disclosure.aspx
+  domains:
+  - app.independer.nl
+  github_orgs: []
+  excluded: []

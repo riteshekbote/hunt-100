@@ -1,0 +1,10 @@
+target:
+  name: dell-technologies-application--api
+  platform: bounty
+  disclosure: https://bugcrowd.com/dell-com
+  bounty: true
+  program_url: https://bugcrowd.com/dell-com
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

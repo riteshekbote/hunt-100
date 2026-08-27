@@ -1,0 +1,10 @@
+target:
+  name: careevolution-staging
+  platform: bounty
+  disclosure: https://careevolution.com/trust/security-research/
+  bounty: true
+  program_url: https://careevolution.com/trust/security-research/
+  domains:
+  - staging.careevolution.com
+  github_orgs: []
+  excluded: []

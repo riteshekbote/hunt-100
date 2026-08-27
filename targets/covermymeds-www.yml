@@ -1,0 +1,10 @@
+target:
+  name: covermymeds-www
+  platform: vdp
+  disclosure: https://www.covermymeds.com/main/about/privacy/responsible-disclosure-program/
+  bounty: false
+  program_url: https://www.covermymeds.com/main/about/privacy/responsible-disclosure-program/
+  domains:
+  - www.covermymeds.com
+  github_orgs: []
+  excluded: []

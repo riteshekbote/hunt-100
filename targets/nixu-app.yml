@@ -1,0 +1,10 @@
+target:
+  name: nixu-app
+  platform: vdp
+  disclosure: vulnerabilities@nixu.com
+  bounty: false
+  program_url: https://www.nixu.com/vulnerability-disclosure-policy
+  domains:
+  - app.nixu.com
+  github_orgs: []
+  excluded: []

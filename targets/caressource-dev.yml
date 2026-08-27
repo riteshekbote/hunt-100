@@ -1,0 +1,10 @@
+target:
+  name: caressource-dev
+  platform: vdp
+  disclosure: Information.Security@caresource.com
+  bounty: false
+  program_url: https://www.caresource.com/about-us/legal/responsible-disclosure-statement/
+  domains:
+  - dev.caresource.com
+  github_orgs: []
+  excluded: []

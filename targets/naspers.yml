@@ -1,0 +1,10 @@
+target:
+  name: naspers
+  platform: vdp
+  disclosure: https://bugcrowd.com/naspers
+  bounty: false
+  program_url: https://bugcrowd.com/naspers
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

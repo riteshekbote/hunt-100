@@ -1,0 +1,10 @@
+target:
+  name: tenable-app
+  platform: vdp
+  disclosure: vulnreport@tenable.com
+  bounty: false
+  program_url: https://www.tenable.com/security/report
+  domains:
+  - app.tenable.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: telenet
+  platform: vdp
+  disclosure: https://www.intigriti.com/public/project/telenet/telenet
+  bounty: false
+  program_url: https://www.intigriti.com/public/project/telenet/telenet
+  domains:
+  - intigriti.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: audi-api
+  platform: vdp
+  disclosure: vulnerability@audi.de
+  bounty: false
+  program_url: https://www.audi.de/de/brand/de/kontakt-und-haendler.html#layer=/de/brand/de/neuwagen/layer/kontakt-audi-cyber-security.html
+  domains:
+  - api.audi.de
+  github_orgs: []
+  excluded: []

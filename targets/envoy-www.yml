@@ -1,0 +1,10 @@
+target:
+  name: envoy-www
+  platform: vdp
+  disclosure: envoy-security@googlegroups.com
+  bounty: false
+  program_url: https://github.com/envoyproxy/envoy/blob/main/SECURITY.md
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

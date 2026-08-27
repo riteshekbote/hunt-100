@@ -1,0 +1,10 @@
+target:
+  name: vkksu-gov-ua
+  platform: vdp
+  disclosure: webmaster@vkksu.gov.ua
+  bounty: false
+  program_url: https://www.vkksu.gov.ua/userfiles/doc/sec/secpolicy.txt
+  domains:
+  - vkksu.gov.ua
+  github_orgs: []
+  excluded: []

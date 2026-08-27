@@ -1,0 +1,10 @@
+target:
+  name: the-hut-group-app
+  platform: vdp
+  disclosure: securitybugs@thehutgroup.com
+  bounty: false
+  program_url: https://www.thg.com/bounty
+  domains:
+  - app.thg.com
+  github_orgs: []
+  excluded: []

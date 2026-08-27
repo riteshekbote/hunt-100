@@ -1,0 +1,10 @@
+target:
+  name: technicolor-com-app
+  platform: vdp
+  disclosure: security@technicolor.com
+  bounty: false
+  program_url: https://www.technicolor.com/privacy-policy
+  domains:
+  - app.technicolor.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: irobot-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/irobot
+  bounty: true
+  program_url: https://bugcrowd.com/irobot
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

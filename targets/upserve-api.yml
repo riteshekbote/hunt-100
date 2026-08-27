@@ -1,0 +1,10 @@
+target:
+  name: upserve-api
+  platform: bounty
+  disclosure: https://upserve.com/security/
+  bounty: true
+  program_url: https://upserve.com/security/
+  domains:
+  - api.upserve.com
+  github_orgs: []
+  excluded: []

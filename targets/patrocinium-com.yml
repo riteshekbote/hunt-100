@@ -1,0 +1,10 @@
+target:
+  name: patrocinium-com
+  platform: vdp
+  disclosure: web-security@patrocinium.com
+  bounty: false
+  program_url: https://security.patrocinium.com/
+  domains:
+  - security.patrocinium.com
+  github_orgs: []
+  excluded: []

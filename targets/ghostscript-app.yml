@@ -1,0 +1,10 @@
+target:
+  name: ghostscript-app
+  platform: bounty
+  disclosure: https://ghostscript.com/Bug_bounty_program.html
+  bounty: true
+  program_url: https://ghostscript.com/Bug_bounty_program.html
+  domains:
+  - app.ghostscript.com
+  github_orgs: []
+  excluded: []

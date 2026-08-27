@@ -1,0 +1,10 @@
+target:
+  name: gsma-api
+  platform: vdp
+  disclosure: security@gsma.com
+  bounty: false
+  program_url: https://www.gsma.com/security/gsma-coordinated-vulnerability-disclosure-programme/
+  domains:
+  - api.gsma.com
+  github_orgs: []
+  excluded: []

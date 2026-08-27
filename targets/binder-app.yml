@@ -1,0 +1,10 @@
+target:
+  name: binder-app
+  platform: vdp
+  disclosure: security@binder.works
+  bounty: false
+  program_url: https://binder.works/responsible-disclosure-program/
+  domains:
+  - app.binder.works
+  github_orgs: []
+  excluded: []

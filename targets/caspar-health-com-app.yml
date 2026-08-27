@@ -1,0 +1,10 @@
+target:
+  name: caspar-health-com-app
+  platform: vdp
+  disclosure: security@caspar-health.com
+  bounty: false
+  program_url: https://caspar-health.com/rdp/
+  domains:
+  - app.caspar-health.com
+  github_orgs: []
+  excluded: []

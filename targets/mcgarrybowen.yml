@@ -1,0 +1,10 @@
+target:
+  name: mcgarrybowen
+  platform: vdp
+  disclosure: ResponsibleDisclosure@Dentsuaegis.com
+  bounty: false
+  program_url: http://www.mcgarrybowen.com/Responsible-Disclosure-Policy
+  domains:
+  - mcgarrybowen.com
+  github_orgs: []
+  excluded: []

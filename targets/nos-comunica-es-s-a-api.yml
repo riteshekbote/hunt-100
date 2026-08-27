@@ -1,0 +1,10 @@
+target:
+  name: nos-comunica-es-s-a-api
+  platform: vdp
+  disclosure: sec.rvd@nos.pt
+  bounty: false
+  program_url: https://www.nos.pt/en/institutional/sustainability/responsible-conduct/security-and-privacy/cybersecurity-responsible-disclosure-of-vulnerabilities
+  domains:
+  - api.nos.pt
+  github_orgs: []
+  excluded: []

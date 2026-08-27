@@ -1,0 +1,10 @@
+target:
+  name: the-atlantic
+  platform: vdp
+  disclosure: security@theatlantic.com
+  bounty: false
+  program_url: https://www.theatlantic.com/responsible-disclosure-policy/
+  domains:
+  - theatlantic.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: starbucks-www
+  platform: bounty
+  disclosure: https://www.starbucks.com/whitehat
+  bounty: true
+  program_url: https://www.starbucks.com/whitehat
+  domains:
+  - www.starbucks.com
+  github_orgs: []
+  excluded: []

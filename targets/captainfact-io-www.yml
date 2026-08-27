@@ -1,0 +1,10 @@
+target:
+  name: captainfact-io-www
+  platform: vdp
+  disclosure: security@captainfact.io
+  bounty: false
+  program_url: https://captainfact.io/help/bug_report
+  domains:
+  - www.captainfact.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: bugify-admin
+  platform: vdp
+  disclosure: security@bugify.com
+  bounty: false
+  program_url: https://bugify.com/security
+  domains:
+  - admin.bugify.com
+  github_orgs: []
+  excluded: []

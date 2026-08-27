@@ -1,0 +1,10 @@
+target:
+  name: brisk-infosec-www
+  platform: vdp
+  disclosure: contact@briskinfosec.com
+  bounty: false
+  program_url: https://www.briskinfosec.com/responsibledisclosure
+  domains:
+  - www.briskinfosec.com
+  github_orgs: []
+  excluded: []

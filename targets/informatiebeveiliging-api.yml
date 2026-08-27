@@ -1,0 +1,10 @@
+target:
+  name: informatiebeveiliging-api
+  platform: vdp
+  disclosure: directie@informatiebeveiliging.nl
+  bounty: false
+  program_url: https://informatiebeveiliging.nl/
+  domains:
+  - api.informatiebeveiliging.nl
+  github_orgs: []
+  excluded: []

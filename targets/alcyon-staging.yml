@@ -1,0 +1,10 @@
+target:
+  name: alcyon-staging
+  platform: vdp
+  disclosure: security@alcyon.nl
+  bounty: false
+  program_url: https://www.alcyon.nl/responsible-disclosure/
+  domains:
+  - staging.alcyon.nl
+  github_orgs: []
+  excluded: []

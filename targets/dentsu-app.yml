@@ -1,0 +1,10 @@
+target:
+  name: dentsu-app
+  platform: vdp
+  disclosure: ResponsibleDisclosure@dentsu.com
+  bounty: false
+  program_url: https://www.dentsu.com/uk/en/policies/responsible-disclosure-policy
+  domains:
+  - app.dentsu.com
+  github_orgs: []
+  excluded: []

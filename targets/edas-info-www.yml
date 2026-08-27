@@ -1,0 +1,10 @@
+target:
+  name: edas-info-www
+  platform: vdp
+  disclosure: https://www.edas.info/doc/disclosure.html
+  bounty: false
+  program_url: https://www.edas.info/doc/disclosure.html
+  domains:
+  - www.edas.info
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: micro-focus
+  platform: vdp
+  disclosure: https://www.microfocus.com/support-and-services/report-security/
+  bounty: false
+  program_url: https://www.microfocus.com/support-and-services/report-security/
+  domains:
+  - microfocus.com
+  github_orgs: []
+  excluded: []

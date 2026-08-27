@@ -1,0 +1,10 @@
+target:
+  name: moneybird-www
+  platform: vdp
+  disclosure: https://www.moneybird.nl/security/
+  bounty: false
+  program_url: https://www.moneybird.nl/security/
+  domains:
+  - www.moneybird.nl
+  github_orgs: []
+  excluded: []

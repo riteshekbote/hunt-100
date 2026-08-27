@@ -1,0 +1,10 @@
+target:
+  name: yeahhub-com-api
+  platform: vdp
+  disclosure: contact@yeahhub.com
+  bounty: false
+  program_url: https://www.yeahhub.com/privacy-policy/
+  domains:
+  - api.yeahhub.com
+  github_orgs: []
+  excluded: []

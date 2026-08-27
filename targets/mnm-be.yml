@@ -1,0 +1,10 @@
+target:
+  name: mnm-be
+  platform: vdp
+  disclosure: infosec@vrt.be
+  bounty: false
+  program_url: https://www.vrt.be/en/responsible-disclosure-policy-english-version/
+  domains:
+  - vrt.be
+  github_orgs: []
+  excluded: []

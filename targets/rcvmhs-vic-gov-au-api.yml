@@ -1,0 +1,10 @@
+target:
+  name: rcvmhs-vic-gov-au-api
+  platform: vdp
+  disclosure: security@harvestdp.com
+  bounty: false
+  program_url: https://harvestdp.com/security-research-policy
+  domains:
+  - api.harvestdp.com
+  github_orgs: []
+  excluded: []

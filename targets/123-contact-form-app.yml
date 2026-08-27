@@ -1,0 +1,10 @@
+target:
+  name: 123-contact-form-app
+  platform: vdp
+  disclosure: http://www.123contactform.com/security-acknowledgements.htm
+  bounty: false
+  program_url: http://www.123contactform.com/security-acknowledgements.htm
+  domains:
+  - app.123contactform.com
+  github_orgs: []
+  excluded: []

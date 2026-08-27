@@ -1,0 +1,10 @@
+target:
+  name: lookout
+  platform: vdp
+  disclosure: security@lookout.com
+  bounty: false
+  program_url: https://www.lookout.com/legal/responsible-disclosure
+  domains:
+  - lookout.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ja-duolingo-com-api
+  platform: vdp
+  disclosure: security@duolingo.com
+  bounty: false
+  program_url: https://www.duolingo.com/privacy
+  domains:
+  - api.duolingo.com
+  github_orgs: []
+  excluded: []

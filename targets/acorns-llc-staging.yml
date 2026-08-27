@@ -1,0 +1,10 @@
+target:
+  name: acorns-llc-staging
+  platform: bounty
+  disclosure: https://bugcrowd.com/acorns
+  bounty: true
+  program_url: https://bugcrowd.com/acorns
+  domains:
+  - staging.bugcrowd.com
+  github_orgs: []
+  excluded: []

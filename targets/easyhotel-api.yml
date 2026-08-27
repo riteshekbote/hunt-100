@@ -1,0 +1,10 @@
+target:
+  name: easyhotel-api
+  platform: vdp
+  disclosure: security@easyhotel.com
+  bounty: false
+  program_url: https://easyshotel.com/vulnerability-disclosure-policy
+  domains:
+  - api.easyshotel.com
+  github_orgs: []
+  excluded: []

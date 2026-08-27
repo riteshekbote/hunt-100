@@ -1,0 +1,10 @@
+target:
+  name: ticketswap-app
+  platform: vdp
+  disclosure: security@ticketswap.com
+  bounty: false
+  program_url: https://www.ticketswap.com/content/responsible-disclosure
+  domains:
+  - app.ticketswap.com
+  github_orgs: []
+  excluded: []

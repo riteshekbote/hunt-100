@@ -1,0 +1,10 @@
+target:
+  name: cvent-app
+  platform: vdp
+  disclosure: https://www.cvent.com/en/event-management-software/vulnerability-disclosure-program
+  bounty: false
+  program_url: https://www.cvent.com/en/event-management-software/vulnerability-disclosure-program
+  domains:
+  - app.cvent.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: u-s-department-of-energy-offic
+  platform: vdp
+  disclosure: security@osti.gov
+  bounty: false
+  program_url: https://www.osti.gov/.well-known/security.txt
+  domains:
+  - osti.gov
+  github_orgs: []
+  excluded: []

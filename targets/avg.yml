@@ -1,0 +1,10 @@
+target:
+  name: avg
+  platform: vdp
+  disclosure: sec.report@avg.com
+  bounty: false
+  program_url: https://www.avg.com/en-ww/security
+  domains:
+  - avg.com
+  github_orgs: []
+  excluded: []

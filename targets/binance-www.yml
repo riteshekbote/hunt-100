@@ -1,0 +1,10 @@
+target:
+  name: binance-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/binance
+  bounty: true
+  program_url: https://bugcrowd.com/binance
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

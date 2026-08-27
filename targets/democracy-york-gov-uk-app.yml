@@ -1,0 +1,10 @@
+target:
+  name: democracy-york-gov-uk-app
+  platform: vdp
+  disclosure: security@york.gov.uk
+  bounty: false
+  program_url: https://www.york.gov.uk/security
+  domains:
+  - app.york.gov.uk
+  github_orgs: []
+  excluded: []

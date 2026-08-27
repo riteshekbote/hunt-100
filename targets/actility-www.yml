@@ -1,0 +1,10 @@
+target:
+  name: actility-www
+  platform: bounty
+  disclosure: https://www.actility.com/security/
+  bounty: true
+  program_url: https://www.actility.com/security/
+  domains:
+  - www.actility.com
+  github_orgs: []
+  excluded: []

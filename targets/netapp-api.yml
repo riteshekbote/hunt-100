@@ -1,0 +1,10 @@
+target:
+  name: netapp-api
+  platform: vdp
+  disclosure: security-alert@netapp.com
+  bounty: false
+  program_url: https://security.netapp.com/contact/
+  domains:
+  - api.security.netapp.com
+  github_orgs: []
+  excluded: []

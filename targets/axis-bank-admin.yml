@@ -1,0 +1,10 @@
+target:
+  name: axis-bank-admin
+  platform: vdp
+  disclosure: security.report@axisbank.com
+  bounty: false
+  program_url: https://www.axisbank.com/docs/default-source/default-document-library/responsible-disclosure-policy.pdf
+  domains:
+  - admin.axisbank.com
+  github_orgs: []
+  excluded: []

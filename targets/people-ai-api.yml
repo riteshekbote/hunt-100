@@ -1,0 +1,10 @@
+target:
+  name: people-ai-api
+  platform: vdp
+  disclosure: https://people.ai/security/reporting/
+  bounty: false
+  program_url: https://people.ai/security/reporting/
+  domains:
+  - api.people.ai
+  github_orgs: []
+  excluded: []

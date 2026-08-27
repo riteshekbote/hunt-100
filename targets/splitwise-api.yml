@@ -1,0 +1,10 @@
+target:
+  name: splitwise-api
+  platform: vdp
+  disclosure: security@splitwise.com
+  bounty: false
+  program_url: https://blog.splitwise.com/about/responsible-disclosure-special-thanks/
+  domains:
+  - api.blog.splitwise.com
+  github_orgs: []
+  excluded: []

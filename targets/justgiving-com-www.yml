@@ -1,0 +1,10 @@
+target:
+  name: justgiving-com-www
+  platform: vdp
+  disclosure: security@blackbaud.com
+  bounty: false
+  program_url: https://www.blackbaud.com/security/responsible-disclosure
+  domains:
+  - www.blackbaud.com
+  github_orgs: []
+  excluded: []

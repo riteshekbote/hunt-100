@@ -1,0 +1,10 @@
+target:
+  name: starlingbank-co-uk
+  platform: vdp
+  disclosure: disclosure@starlingbank.com
+  bounty: false
+  program_url: https://www.starlingbank.com/security/disclosure/
+  domains:
+  - starlingbank.com
+  github_orgs: []
+  excluded: []

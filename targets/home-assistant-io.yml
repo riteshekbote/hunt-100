@@ -1,0 +1,10 @@
+target:
+  name: home-assistant-io
+  platform: vdp
+  disclosure: security@home-assistant.io
+  bounty: false
+  program_url: https://www.home-assistant.io/security/
+  domains:
+  - home-assistant.io
+  github_orgs: []
+  excluded: []

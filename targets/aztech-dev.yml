@@ -1,0 +1,10 @@
+target:
+  name: aztech-dev
+  platform: vdp
+  disclosure: security@aztech.com
+  bounty: false
+  program_url: https://kylaconnect.com/vulnerability-disclosure-policy/
+  domains:
+  - dev.kylaconnect.com
+  github_orgs: []
+  excluded: []

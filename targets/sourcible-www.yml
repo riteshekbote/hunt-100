@@ -1,0 +1,10 @@
+target:
+  name: sourcible-www
+  platform: vdp
+  disclosure: support@sourcible.com
+  bounty: false
+  program_url: https://www.sourcible.com/vdp
+  domains:
+  - www.sourcible.com
+  github_orgs: []
+  excluded: []

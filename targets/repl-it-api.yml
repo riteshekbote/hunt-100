@@ -1,0 +1,10 @@
+target:
+  name: repl-it-api
+  platform: vdp
+  disclosure: security@repl.it
+  bounty: false
+  program_url: https://docs.repl.it/misc/security
+  domains:
+  - api.docs.repl.it
+  github_orgs: []
+  excluded: []

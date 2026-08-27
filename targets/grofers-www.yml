@@ -1,0 +1,10 @@
+target:
+  name: grofers-www
+  platform: vdp
+  disclosure: https://grofers.com/bug-bounty
+  bounty: false
+  program_url: https://grofers.com/bug-bounty
+  domains:
+  - www.grofers.com
+  github_orgs: []
+  excluded: []

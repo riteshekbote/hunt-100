@@ -1,0 +1,10 @@
+target:
+  name: iwalton-com
+  platform: vdp
+  disclosure: iwalton3@gmail.com
+  bounty: false
+  program_url: https://iwalton.com/legal.html
+  domains:
+  - iwalton.com
+  github_orgs: []
+  excluded: []

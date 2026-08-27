@@ -1,0 +1,10 @@
+target:
+  name: chip-de-api
+  platform: vdp
+  disclosure: security@burda-forward.de
+  bounty: false
+  program_url: https://www.burda-forward.de/en/security/
+  domains:
+  - api.burda-forward.de
+  github_orgs: []
+  excluded: []

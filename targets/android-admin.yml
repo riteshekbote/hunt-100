@@ -1,0 +1,10 @@
+target:
+  name: android-admin
+  platform: bounty
+  disclosure: https://www.google.com/about/appsecurity/android-rewards/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/android-rewards/
+  domains:
+  - admin.google.com
+  github_orgs: []
+  excluded: []

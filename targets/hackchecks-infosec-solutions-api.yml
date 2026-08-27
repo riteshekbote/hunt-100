@@ -1,0 +1,10 @@
+target:
+  name: hackchecks-infosec-solutions-api
+  platform: vdp
+  disclosure: security@hackchecks.in
+  bounty: false
+  program_url: https://hackchecks.in/responsible-disclosure/
+  domains:
+  - api.hackchecks.in
+  github_orgs: []
+  excluded: []

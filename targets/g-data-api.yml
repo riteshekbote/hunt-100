@@ -1,0 +1,10 @@
+target:
+  name: g-data-api
+  platform: vdp
+  disclosure: https://www.gdata-software.com/vulnerability-disclosure
+  bounty: false
+  program_url: https://www.gdata-software.com/vulnerability-disclosure
+  domains:
+  - api.gdata-software.com
+  github_orgs: []
+  excluded: []

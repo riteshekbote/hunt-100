@@ -1,0 +1,10 @@
+target:
+  name: acorns-llc-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/acorns
+  bounty: true
+  program_url: https://bugcrowd.com/acorns
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

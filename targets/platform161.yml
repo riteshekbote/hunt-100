@@ -1,0 +1,10 @@
+target:
+  name: platform161
+  platform: vdp
+  disclosure: support@platform161.com
+  bounty: false
+  program_url: https://platform161.com/responsible-disclosure/
+  domains:
+  - platform161.com
+  github_orgs: []
+  excluded: []

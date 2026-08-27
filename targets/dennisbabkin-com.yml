@@ -1,0 +1,10 @@
+target:
+  name: dennisbabkin-com
+  platform: vdp
+  disclosure: https://dennisbabkin.com/security/
+  bounty: false
+  program_url: https://dennisbabkin.com/security/
+  domains:
+  - dennisbabkin.com
+  github_orgs: []
+  excluded: []

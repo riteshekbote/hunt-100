@@ -1,0 +1,10 @@
+target:
+  name: fox-it
+  platform: vdp
+  disclosure: security-alert@fox-it.com
+  bounty: false
+  program_url: https://www.fox-it.com/en/responsible-disclosure/
+  domains:
+  - fox-it.com
+  github_orgs: []
+  excluded: []

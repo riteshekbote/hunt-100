@@ -1,0 +1,10 @@
+target:
+  name: national-science-foundation
+  platform: vdp
+  disclosure: dis-secteam@nsf.gov
+  bounty: false
+  program_url: https://www.nsf.gov/vulnerability-disclosure-policy
+  domains:
+  - nsf.gov
+  github_orgs: []
+  excluded: []

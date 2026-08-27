@@ -1,0 +1,10 @@
+target:
+  name: 24sessions-admin
+  platform: bounty
+  disclosure: security@24sessions.com
+  bounty: true
+  program_url: https://www.24sessions.com/responsible-disclosure
+  domains:
+  - admin.24sessions.com
+  github_orgs: []
+  excluded: []

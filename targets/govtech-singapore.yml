@@ -1,0 +1,10 @@
+target:
+  name: govtech-singapore
+  platform: vdp
+  disclosure: vulnerability_disclosure@tech.gov.sg
+  bounty: false
+  program_url: https://www.tech.gov.sg/report_vulnerability
+  domains:
+  - tech.gov.sg
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: yesware
+  platform: vdp
+  disclosure: security@yesware.com
+  bounty: false
+  program_url: https://www.yesware.com/security/
+  domains:
+  - yesware.com
+  github_orgs: []
+  excluded: []

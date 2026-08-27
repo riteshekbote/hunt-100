@@ -1,0 +1,10 @@
+target:
+  name: ada-health-app
+  platform: vdp
+  disclosure: security@ada.com
+  bounty: false
+  program_url: https://ada.com/security-vulnerability-disclosure-policy/
+  domains:
+  - app.ada.com
+  github_orgs: []
+  excluded: []

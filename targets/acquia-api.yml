@@ -1,0 +1,10 @@
+target:
+  name: acquia-api
+  platform: vdp
+  disclosure: security@acquia.com
+  bounty: false
+  program_url: https://www.acquia.com/solutions/security
+  domains:
+  - api.acquia.com
+  github_orgs: []
+  excluded: []

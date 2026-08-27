@@ -1,0 +1,10 @@
+target:
+  name: 3delight-atlassian-net-dev
+  platform: vdp
+  disclosure: https://www.atlassian.com/trust/security/report-a-vulnerability
+  bounty: false
+  program_url: https://www.atlassian.com/trust/security/report-a-vulnerability
+  domains:
+  - dev.atlassian.com
+  github_orgs: []
+  excluded: []

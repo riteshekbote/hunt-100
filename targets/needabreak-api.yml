@@ -1,0 +1,10 @@
+target:
+  name: needabreak-api
+  platform: vdp
+  disclosure: responsibledisclosure@choicehotels.com
+  bounty: false
+  program_url: https://needabreak.com/responsible-disclosure-policy/
+  domains:
+  - api.needabreak.com
+  github_orgs: []
+  excluded: []

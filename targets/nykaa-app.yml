@@ -1,0 +1,10 @@
+target:
+  name: nykaa-app
+  platform: vdp
+  disclosure: it-security@nykaa.com
+  bounty: false
+  program_url: https://www.nykaa.com/responsible-disclosure
+  domains:
+  - app.nykaa.com
+  github_orgs: []
+  excluded: []

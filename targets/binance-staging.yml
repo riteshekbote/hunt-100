@@ -1,0 +1,10 @@
+target:
+  name: binance-staging
+  platform: bounty
+  disclosure: https://bugcrowd.com/binance
+  bounty: true
+  program_url: https://bugcrowd.com/binance
+  domains:
+  - staging.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: expatistan-www
+  platform: vdp
+  disclosure: gerardo@expatistan.com
+  bounty: false
+  program_url: https://www.expatistan.com/security
+  domains:
+  - www.expatistan.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: buildxact-www
+  platform: vdp
+  disclosure: https://www.buildxact.com.au/responsible-disclosure/
+  bounty: false
+  program_url: https://www.buildxact.com.au/responsible-disclosure/
+  domains:
+  - www.buildxact.com.au
+  github_orgs: []
+  excluded: []

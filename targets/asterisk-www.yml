@@ -1,0 +1,10 @@
+target:
+  name: asterisk-www
+  platform: bounty
+  disclosure: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  bounty: true
+  program_url: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  domains:
+  - www.wiki.asterisk.org
+  github_orgs: []
+  excluded: []

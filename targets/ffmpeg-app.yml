@@ -1,0 +1,10 @@
+target:
+  name: ffmpeg-app
+  platform: vdp
+  disclosure: ffmpeg-security@ffmpeg.org
+  bounty: false
+  program_url: http://www.ffmpeg.org/security.html
+  domains:
+  - app.ffmpeg.org
+  github_orgs: []
+  excluded: []

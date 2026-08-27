@@ -1,0 +1,10 @@
+target:
+  name: electronic-frontier-foundation-www
+  platform: vdp
+  disclosure: vulnerabilities@eff.org
+  bounty: false
+  program_url: https://www.eff.org/security
+  domains:
+  - www.eff.org
+  github_orgs: []
+  excluded: []

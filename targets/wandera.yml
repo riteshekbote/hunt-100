@@ -1,0 +1,10 @@
+target:
+  name: wandera
+  platform: vdp
+  disclosure: disclosure@wandera.com
+  bounty: false
+  program_url: https://www.wandera.com/responsible-disclosure/
+  domains:
+  - wandera.com
+  github_orgs: []
+  excluded: []

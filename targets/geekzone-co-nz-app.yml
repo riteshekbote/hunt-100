@@ -1,0 +1,10 @@
+target:
+  name: geekzone-co-nz-app
+  platform: vdp
+  disclosure: https://www.geekzone.co.nz/content.asp?contentid=105
+  bounty: false
+  program_url: https://www.geekzone.co.nz/content.asp?contentid=105
+  domains:
+  - app.geekzone.co.nz
+  github_orgs: []
+  excluded: []

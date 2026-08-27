@@ -1,0 +1,10 @@
+target:
+  name: kore-wireless-app
+  platform: vdp
+  disclosure: security@korewireless.com
+  bounty: false
+  program_url: https://www.korewireless.com/responsible-disclosure-policy
+  domains:
+  - app.korewireless.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: recovery-tezos-com-app
+  platform: vdp
+  disclosure: security@tezos.com
+  bounty: false
+  program_url: https://tezos.foundation/security
+  domains:
+  - app.tezos.foundation
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: panasonic-app
+  platform: vdp
+  disclosure: https://www.panasonic.com/global/corporate/product-security/sec/psirt/policy.html
+  bounty: false
+  program_url: https://www.panasonic.com/global/corporate/product-security/sec/psirt/policy.html
+  domains:
+  - app.panasonic.com
+  github_orgs: []
+  excluded: []

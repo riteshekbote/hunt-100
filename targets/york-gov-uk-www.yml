@@ -1,0 +1,10 @@
+target:
+  name: york-gov-uk-www
+  platform: vdp
+  disclosure: security@york.gov.uk
+  bounty: false
+  program_url: https://www.york.gov.uk/security
+  domains:
+  - www.york.gov.uk
+  github_orgs: []
+  excluded: []

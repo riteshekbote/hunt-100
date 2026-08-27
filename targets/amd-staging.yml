@@ -1,0 +1,10 @@
+target:
+  name: amd-staging
+  platform: vdp
+  disclosure: https://www.amd.com/en/corporate/product-security-incident-response-team
+  bounty: false
+  program_url: https://www.amd.com/en/corporate/product-security-incident-response-team
+  domains:
+  - staging.amd.com
+  github_orgs: []
+  excluded: []

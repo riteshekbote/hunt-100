@@ -1,0 +1,10 @@
+target:
+  name: one-identity
+  platform: vdp
+  disclosure: https://support.oneidentity.com/contact-us/report-security-vulnerability
+  bounty: false
+  program_url: https://support.oneidentity.com/contact-us/report-security-vulnerability
+  domains:
+  - support.oneidentity.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: defense-nuclear-facilities-saf-api
+  platform: vdp
+  disclosure: Vulnerability@dnfsb.gov
+  bounty: false
+  program_url: https://www.dnfsb.gov/vulnerability-disclosure-policy
+  domains:
+  - api.dnfsb.gov
+  github_orgs: []
+  excluded: []

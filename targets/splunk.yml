@@ -1,0 +1,10 @@
+target:
+  name: splunk
+  platform: vdp
+  disclosure: https://www.splunk.com/en_us/product-security.html
+  bounty: false
+  program_url: https://www.splunk.com/en_us/product-security.html
+  domains:
+  - splunk.com
+  github_orgs: []
+  excluded: []

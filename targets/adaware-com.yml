@@ -1,0 +1,10 @@
+target:
+  name: adaware-com
+  platform: vdp
+  disclosure: dpo@adaware.com
+  bounty: false
+  program_url: https://www.adaware.com/privacy-policy
+  domains:
+  - adaware.com
+  github_orgs: []
+  excluded: []

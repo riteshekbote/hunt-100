@@ -1,0 +1,10 @@
+target:
+  name: radiometer-www
+  platform: vdp
+  disclosure: https://www.radiometer.com/en/about-radiometer/legal/coordinated-vulnerability-disclosure
+  bounty: false
+  program_url: https://www.radiometer.com/en/about-radiometer/legal/coordinated-vulnerability-disclosure
+  domains:
+  - www.radiometer.com
+  github_orgs: []
+  excluded: []

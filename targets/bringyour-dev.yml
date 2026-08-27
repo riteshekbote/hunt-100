@@ -1,0 +1,10 @@
+target:
+  name: bringyour-dev
+  platform: vdp
+  disclosure: security@bringyour.com
+  bounty: false
+  program_url: https://bringyour.com/vdp
+  domains:
+  - dev.bringyour.com
+  github_orgs: []
+  excluded: []

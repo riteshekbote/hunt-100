@@ -1,0 +1,10 @@
+target:
+  name: appsmith-www
+  platform: vdp
+  disclosure: security@appsmith.com
+  bounty: false
+  program_url: https://docs.appsmith.com/product/security
+  domains:
+  - www.docs.appsmith.com
+  github_orgs: []
+  excluded: []

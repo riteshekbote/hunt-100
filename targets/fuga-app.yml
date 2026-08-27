@@ -1,0 +1,10 @@
+target:
+  name: fuga-app
+  platform: vdp
+  disclosure: abuse@fuga.cloud
+  bounty: false
+  program_url: https://fuga.cloud/responsible-disclosure-policy/
+  domains:
+  - app.fuga.cloud
+  github_orgs: []
+  excluded: []

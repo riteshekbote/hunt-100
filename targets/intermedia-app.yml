@@ -1,0 +1,10 @@
+target:
+  name: intermedia-app
+  platform: vdp
+  disclosure: whitehat@intermedia.net
+  bounty: false
+  program_url: https://www.intermedia.net/about-us/vulnerability-disclosure
+  domains:
+  - app.intermedia.net
+  github_orgs: []
+  excluded: []

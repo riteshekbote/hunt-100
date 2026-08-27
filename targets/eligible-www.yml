@@ -1,0 +1,10 @@
+target:
+  name: eligible-www
+  platform: bounty
+  disclosure: security@eligible.com
+  bounty: true
+  program_url: https://eligible.com/responsible_disclosure_program
+  domains:
+  - www.eligible.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: defiant-com-api
+  platform: vdp
+  disclosure: security@defiant.com
+  bounty: false
+  program_url: https://www.defiant.com/security/
+  domains:
+  - api.defiant.com
+  github_orgs: []
+  excluded: []

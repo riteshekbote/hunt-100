@@ -1,0 +1,10 @@
+target:
+  name: sourcible-api
+  platform: vdp
+  disclosure: support@sourcible.com
+  bounty: false
+  program_url: https://www.sourcible.com/vdp
+  domains:
+  - api.sourcible.com
+  github_orgs: []
+  excluded: []

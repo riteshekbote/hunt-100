@@ -1,0 +1,10 @@
+target:
+  name: observu-www
+  platform: vdp
+  disclosure: info@observu.com
+  bounty: false
+  program_url: https://observu.com/security.php
+  domains:
+  - www.observu.com
+  github_orgs: []
+  excluded: []

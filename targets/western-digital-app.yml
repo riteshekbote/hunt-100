@@ -1,0 +1,10 @@
+target:
+  name: western-digital-app
+  platform: vdp
+  disclosure: PSIRT@wdc.com
+  bounty: false
+  program_url: https://www.westerndigital.com/support/productsecurity
+  domains:
+  - app.westerndigital.com
+  github_orgs: []
+  excluded: []

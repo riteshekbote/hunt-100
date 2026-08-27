@@ -1,0 +1,10 @@
+target:
+  name: parity-technologies-api
+  platform: bounty
+  disclosure: bugbounty@parity.io
+  bounty: true
+  program_url: https://www.parity.io/bug-bounty/
+  domains:
+  - api.parity.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: marvel-www
+  platform: vdp
+  disclosure: security@marvelapp.com
+  bounty: false
+  program_url: https://marvelapp.com/security/
+  domains:
+  - www.marvelapp.com
+  github_orgs: []
+  excluded: []

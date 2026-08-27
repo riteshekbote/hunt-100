@@ -1,0 +1,10 @@
+target:
+  name: cisa-dev
+  platform: vdp
+  disclosure: NCCICCUSTOMERSERVICE@hq.dhs.gov
+  bounty: false
+  program_url: https://www.cisa.gov/coordinated-vulnerability-disclosure-process
+  domains:
+  - dev.cisa.gov
+  github_orgs: []
+  excluded: []

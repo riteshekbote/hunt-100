@@ -1,0 +1,10 @@
+target:
+  name: nowpayments-api
+  platform: bounty
+  disclosure: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  bounty: true
+  program_url: https://nowpayments.io/doc/NOWPayments_BugBounty_program.pdf
+  domains:
+  - api.nowpayments.io
+  github_orgs: []
+  excluded: []

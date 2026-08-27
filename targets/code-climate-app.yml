@@ -1,0 +1,10 @@
+target:
+  name: code-climate-app
+  platform: vdp
+  disclosure: security@codeclimate.com
+  bounty: false
+  program_url: https://codeclimate.com/security
+  domains:
+  - app.codeclimate.com
+  github_orgs: []
+  excluded: []

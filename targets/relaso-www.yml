@@ -1,0 +1,10 @@
+target:
+  name: relaso-www
+  platform: vdp
+  disclosure: security@relaso.com
+  bounty: false
+  program_url: http://www.relaso.com/disclosure/
+  domains:
+  - www.relaso.com
+  github_orgs: []
+  excluded: []

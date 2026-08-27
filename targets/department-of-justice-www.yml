@@ -1,0 +1,10 @@
+target:
+  name: department-of-justice-www
+  platform: vdp
+  disclosure: https://www.justice.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.justice.gov/vulnerability-disclosure-policy
+  domains:
+  - www.justice.gov
+  github_orgs: []
+  excluded: []

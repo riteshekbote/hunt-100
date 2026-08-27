@@ -1,0 +1,10 @@
+target:
+  name: dnn-corporation-api
+  platform: vdp
+  disclosure: https://www.dnnsoftware.com/platform/share/bug-reporting
+  bounty: false
+  program_url: https://www.dnnsoftware.com/platform/share/bug-reporting
+  domains:
+  - api.dnnsoftware.com
+  github_orgs: []
+  excluded: []

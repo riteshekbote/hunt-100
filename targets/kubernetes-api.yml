@@ -1,0 +1,10 @@
+target:
+  name: kubernetes-api
+  platform: bounty
+  disclosure: https://kubernetes.io/security
+  bounty: true
+  program_url: https://kubernetes.io/security
+  domains:
+  - api.kubernetes.io
+  github_orgs: []
+  excluded: []

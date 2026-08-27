@@ -1,0 +1,10 @@
+target:
+  name: federacy-api
+  platform: bounty
+  disclosure: https://www.federacy.com/federacy
+  bounty: true
+  program_url: https://www.federacy.com/federacy
+  domains:
+  - api.federacy.com
+  github_orgs: []
+  excluded: []

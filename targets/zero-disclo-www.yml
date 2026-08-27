@@ -1,0 +1,10 @@
+target:
+  name: zero-disclo-www
+  platform: vdp
+  disclosure: https://zerodisclo.com/
+  bounty: false
+  program_url: https://zerodisclo.com/
+  domains:
+  - www.zerodisclo.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: leetcode-app
+  platform: bounty
+  disclosure: support@leetcode.com
+  bounty: true
+  program_url: https://leetcode.com/bugbounty/
+  domains:
+  - app.leetcode.com
+  github_orgs: []
+  excluded: []

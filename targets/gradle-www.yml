@@ -1,0 +1,10 @@
+target:
+  name: gradle-www
+  platform: vdp
+  disclosure: security@gradle.com
+  bounty: false
+  program_url: https://github.com/gradle/.github/blob/master/SECURITY.md
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

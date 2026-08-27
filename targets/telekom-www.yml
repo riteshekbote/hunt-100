@@ -1,0 +1,10 @@
+target:
+  name: telekom-www
+  platform: bounty
+  disclosure: bugbounty@t-mobile.cz
+  bounty: true
+  program_url: https://www.telekom.com/en/corporate-responsibility/data-protection-data-security/security/security/closing-security-gaps-360054
+  domains:
+  - www.telekom.com
+  github_orgs: []
+  excluded: []

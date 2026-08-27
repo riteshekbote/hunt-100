@@ -1,0 +1,10 @@
+target:
+  name: klarna-www
+  platform: vdp
+  disclosure: responsible-disclosure@klarna.com
+  bounty: false
+  program_url: https://www.klarna.com/responsible-disclosure/
+  domains:
+  - www.klarna.com
+  github_orgs: []
+  excluded: []

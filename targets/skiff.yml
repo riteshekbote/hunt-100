@@ -1,0 +1,10 @@
+target:
+  name: skiff
+  platform: vdp
+  disclosure: security@skiff.com
+  bounty: false
+  program_url: https://skiff.com/vdp
+  domains:
+  - skiff.com
+  github_orgs: []
+  excluded: []

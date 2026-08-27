@@ -1,0 +1,10 @@
+target:
+  name: fermi-laboratory-api
+  platform: vdp
+  disclosure: cybersecurity@fnal.gov
+  bounty: false
+  program_url: https://computing.fnal.gov/cybersecurity/vulnerability-disclosure-policy/
+  domains:
+  - api.computing.fnal.gov
+  github_orgs: []
+  excluded: []

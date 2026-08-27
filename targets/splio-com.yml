@@ -1,0 +1,10 @@
+target:
+  name: splio-com
+  platform: vdp
+  disclosure: https://www.splio.com/data-protection/
+  bounty: false
+  program_url: https://www.splio.com/data-protection/
+  domains:
+  - splio.com
+  github_orgs: []
+  excluded: []

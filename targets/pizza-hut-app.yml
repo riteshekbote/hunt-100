@@ -1,0 +1,10 @@
+target:
+  name: pizza-hut-app
+  platform: vdp
+  disclosure: https://pizzahut.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://pizzahut.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.pizzahut.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

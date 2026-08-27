@@ -1,0 +1,10 @@
+target:
+  name: ing-app
+  platform: bounty
+  disclosure: responsible-disclosure@ing.com
+  bounty: true
+  program_url: https://www.ing.com/ING.com-Security.htm
+  domains:
+  - app.ing.com
+  github_orgs: []
+  excluded: []

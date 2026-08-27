@@ -1,0 +1,10 @@
+target:
+  name: bird-co-app
+  platform: vdp
+  disclosure: security@bird.co
+  bounty: false
+  program_url: https://docs.google.com/document/d/1uONlnLYC55398Y2EfyIJu5jRzf4qGa3tJvKlXfLp9MY/view
+  domains:
+  - app.docs.google.com
+  github_orgs: []
+  excluded: []

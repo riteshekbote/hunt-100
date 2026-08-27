@@ -1,0 +1,10 @@
+target:
+  name: national-lottery-co-uk-www
+  platform: vdp
+  disclosure: security@national-lottery.co.uk
+  bounty: false
+  program_url: https://www.national-lottery.co.uk/security
+  domains:
+  - www.national-lottery.co.uk
+  github_orgs: []
+  excluded: []

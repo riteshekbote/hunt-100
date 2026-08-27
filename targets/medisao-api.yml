@@ -1,0 +1,10 @@
+target:
+  name: medisao-api
+  platform: vdp
+  disclosure: https://members.medisao.com/vulnerability_disclosure/
+  bounty: false
+  program_url: https://members.medisao.com/vulnerability_disclosure/
+  domains:
+  - api.members.medisao.com
+  github_orgs: []
+  excluded: []

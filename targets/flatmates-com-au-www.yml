@@ -1,0 +1,10 @@
+target:
+  name: flatmates-com-au-www
+  platform: vdp
+  disclosure: security-vulnerability@rea-group.com
+  bounty: false
+  program_url: https://www.rea-group.com/security
+  domains:
+  - www.rea-group.com
+  github_orgs: []
+  excluded: []

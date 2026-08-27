@@ -1,0 +1,10 @@
+target:
+  name: nz-registry-staging
+  platform: vdp
+  disclosure: security@internetnz.net.nz
+  bounty: false
+  program_url: https://registry.internetnz.nz/about/vulnerability-disclosure-policy/
+  domains:
+  - staging.registry.internetnz.nz
+  github_orgs: []
+  excluded: []

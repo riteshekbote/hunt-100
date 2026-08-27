@@ -1,0 +1,10 @@
+target:
+  name: bluehost-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/endurance-bluehost
+  bounty: false
+  program_url: https://bugcrowd.com/endurance-bluehost
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

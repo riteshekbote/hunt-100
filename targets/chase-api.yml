@@ -1,0 +1,10 @@
+target:
+  name: chase-api
+  platform: vdp
+  disclosure: https://responsibledisclosure.jpmorganchase.com/hc/en-us
+  bounty: false
+  program_url: https://responsibledisclosure.jpmorganchase.com/hc/en-us
+  domains:
+  - api.responsibledisclosure.jpmorganchase.com
+  github_orgs: []
+  excluded: []

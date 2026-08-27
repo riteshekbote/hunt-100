@@ -1,0 +1,10 @@
+target:
+  name: rockwell-automation-api
+  platform: vdp
+  disclosure: secure@ra.rockwell.com
+  bounty: false
+  program_url: https://www.rockwellautomation.com/en-us/capabilities/industrial-security.html
+  domains:
+  - api.rockwellautomation.com
+  github_orgs: []
+  excluded: []

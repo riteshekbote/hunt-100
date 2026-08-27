@@ -1,0 +1,10 @@
+target:
+  name: soluble-app
+  platform: vdp
+  disclosure: https://www.soluble.ai/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.soluble.ai/vulnerability-disclosure-policy
+  domains:
+  - app.soluble.ai
+  github_orgs: []
+  excluded: []

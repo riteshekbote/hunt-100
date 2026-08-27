@@ -1,0 +1,10 @@
+target:
+  name: halodoc-www
+  platform: bounty
+  disclosure: security@halodoc.com
+  bounty: true
+  program_url: https://www.halodoc.com/security
+  domains:
+  - www.halodoc.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ubuntu-www
+  platform: vdp
+  disclosure: security@ubuntu.com
+  bounty: false
+  program_url: https://ubuntu.com/security/disclosure-policy
+  domains:
+  - www.ubuntu.com
+  github_orgs: []
+  excluded: []

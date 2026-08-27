@@ -1,0 +1,10 @@
+target:
+  name: bmw-dev
+  platform: vdp
+  disclosure: report-vulnerabilities@bmwgroup.com
+  bounty: false
+  program_url: https://www.bmwgroup.com/en/general/Security.html
+  domains:
+  - dev.bmwgroup.com
+  github_orgs: []
+  excluded: []

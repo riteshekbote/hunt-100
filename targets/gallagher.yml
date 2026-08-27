@@ -1,0 +1,10 @@
+target:
+  name: gallagher
+  platform: vdp
+  disclosure: https://security.gallagher.com/en/Responsible-Disclosure-Policy
+  bounty: false
+  program_url: https://security.gallagher.com/en/Responsible-Disclosure-Policy
+  domains:
+  - security.gallagher.com
+  github_orgs: []
+  excluded: []

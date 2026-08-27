@@ -1,0 +1,10 @@
+target:
+  name: owna-api
+  platform: vdp
+  disclosure: support@owna.com.au
+  bounty: false
+  program_url: https://www.owna.com.au/security-policy.html
+  domains:
+  - api.owna.com.au
+  github_orgs: []
+  excluded: []

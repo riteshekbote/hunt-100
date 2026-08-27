@@ -1,0 +1,10 @@
+target:
+  name: tidelift-app
+  platform: vdp
+  disclosure: security@tidelift.com
+  bounty: false
+  program_url: https://tidelift.com/docs/security
+  domains:
+  - app.tidelift.com
+  github_orgs: []
+  excluded: []

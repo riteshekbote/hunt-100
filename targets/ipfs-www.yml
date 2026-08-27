@@ -1,0 +1,10 @@
+target:
+  name: ipfs-www
+  platform: vdp
+  disclosure: security@ipfs.io
+  bounty: false
+  program_url: https://github.com/ipfs/go-ipfs#security-issues
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

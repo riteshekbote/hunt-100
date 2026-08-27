@@ -1,0 +1,10 @@
+target:
+  name: stanley-black-decker-app
+  platform: vdp
+  disclosure: https://www.stanleyblackanddecker.com/security
+  bounty: false
+  program_url: https://www.stanleyblackanddecker.com/security
+  domains:
+  - app.stanleyblackanddecker.com
+  github_orgs: []
+  excluded: []

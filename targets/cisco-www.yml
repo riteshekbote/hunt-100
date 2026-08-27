@@ -1,0 +1,10 @@
+target:
+  name: cisco-www
+  platform: vdp
+  disclosure: psirt@cisco.com
+  bounty: false
+  program_url: https://tools.cisco.com/security/center/resources/security_vulnerability_policy.html
+  domains:
+  - www.tools.cisco.com
+  github_orgs: []
+  excluded: []

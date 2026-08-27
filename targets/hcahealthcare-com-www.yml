@@ -1,0 +1,10 @@
+target:
+  name: hcahealthcare-com-www
+  platform: vdp
+  disclosure: Information.Protection@hcahealthcare.com
+  bounty: false
+  program_url: https://hcahealthcare.com/legal/index.dot#responsible-disclosure
+  domains:
+  - www.hcahealthcare.com
+  github_orgs: []
+  excluded: []

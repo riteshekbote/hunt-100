@@ -1,0 +1,10 @@
+target:
+  name: parabol-api
+  platform: bounty
+  disclosure: https://www.parabol.co/security-disclosure
+  bounty: true
+  program_url: https://www.parabol.co/security-disclosure
+  domains:
+  - api.parabol.co
+  github_orgs: []
+  excluded: []

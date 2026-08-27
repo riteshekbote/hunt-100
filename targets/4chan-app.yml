@@ -1,0 +1,10 @@
+target:
+  name: 4chan-app
+  platform: vdp
+  disclosure: security@4chan.org
+  bounty: false
+  program_url: https://www.4chan.org/security
+  domains:
+  - app.4chan.org
+  github_orgs: []
+  excluded: []

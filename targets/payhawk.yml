@@ -1,0 +1,10 @@
+target:
+  name: payhawk
+  platform: vdp
+  disclosure: security@payhawk.com
+  bounty: false
+  program_url: https://payhawk.com/security/disclosure
+  domains:
+  - payhawk.com
+  github_orgs: []
+  excluded: []

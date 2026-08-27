@@ -1,0 +1,10 @@
+target:
+  name: general-services-administratio-api
+  platform: vdp
+  disclosure: gsa-vulnerability@gsa.gov
+  bounty: false
+  program_url: https://www.gsa.gov/vulnerability-disclosure-policy
+  domains:
+  - api.gsa.gov
+  github_orgs: []
+  excluded: []

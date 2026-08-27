@@ -1,0 +1,10 @@
+target:
+  name: proof-of-humanity-www
+  platform: bounty
+  disclosure: clement@kleros.io
+  bounty: true
+  program_url: https://github.com/Proof-Of-Humanity/Proof-Of-Humanity/issues/54
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

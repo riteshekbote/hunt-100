@@ -1,0 +1,10 @@
+target:
+  name: department-of-homeland-securit
+  platform: vdp
+  disclosure: https://www.dhs.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.dhs.gov/vulnerability-disclosure-policy
+  domains:
+  - dhs.gov
+  github_orgs: []
+  excluded: []

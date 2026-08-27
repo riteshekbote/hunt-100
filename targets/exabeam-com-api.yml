@@ -1,0 +1,10 @@
+target:
+  name: exabeam-com-api
+  platform: vdp
+  disclosure: vulnerability@exabeam.com
+  bounty: false
+  program_url: https://www.exabeam.com/.well-known/security.txt
+  domains:
+  - api.exabeam.com
+  github_orgs: []
+  excluded: []

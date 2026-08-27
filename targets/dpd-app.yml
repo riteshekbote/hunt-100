@@ -1,0 +1,10 @@
+target:
+  name: dpd-app
+  platform: bounty
+  disclosure: security@dpd.zendesk.com
+  bounty: true
+  program_url: https://getdpd.com/security/
+  domains:
+  - app.getdpd.com
+  github_orgs: []
+  excluded: []

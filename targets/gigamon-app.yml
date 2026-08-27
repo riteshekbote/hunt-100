@@ -1,0 +1,10 @@
+target:
+  name: gigamon-app
+  platform: vdp
+  disclosure: https://www.gigamon.com/security-disclosure.html
+  bounty: false
+  program_url: https://www.gigamon.com/security-disclosure.html
+  domains:
+  - app.gigamon.com
+  github_orgs: []
+  excluded: []

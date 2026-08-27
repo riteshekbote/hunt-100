@@ -1,0 +1,10 @@
+target:
+  name: foursquare-api
+  platform: vdp
+  disclosure: security@foursquare.com
+  bounty: false
+  program_url: https://foursquare.com/about/security
+  domains:
+  - api.foursquare.com
+  github_orgs: []
+  excluded: []

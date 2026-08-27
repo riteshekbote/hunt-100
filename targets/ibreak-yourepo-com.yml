@@ -1,0 +1,10 @@
+target:
+  name: ibreak-yourepo-com
+  platform: vdp
+  disclosure: contact@yourepo.com
+  bounty: false
+  program_url: https://www.yourepo.com/user/privacy
+  domains:
+  - yourepo.com
+  github_orgs: []
+  excluded: []

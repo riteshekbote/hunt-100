@@ -1,0 +1,10 @@
+target:
+  name: vyper-app
+  platform: vdp
+  disclosure: security@vyperlang.org
+  bounty: false
+  program_url: https://github.com/vyperlang/vyper/security/policy
+  domains:
+  - app.github.com
+  github_orgs: []
+  excluded: []

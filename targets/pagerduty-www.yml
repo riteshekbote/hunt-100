@@ -1,0 +1,10 @@
+target:
+  name: pagerduty-www
+  platform: vdp
+  disclosure: security@pagerduty.com
+  bounty: false
+  program_url: https://www.pagerduty.com/security/disclosure/
+  domains:
+  - www.pagerduty.com
+  github_orgs: []
+  excluded: []

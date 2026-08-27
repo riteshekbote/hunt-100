@@ -1,0 +1,10 @@
+target:
+  name: rakuten-group-inc-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/rakuten-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/rakuten-vdp
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

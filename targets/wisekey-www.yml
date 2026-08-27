@@ -1,0 +1,10 @@
+target:
+  name: wisekey-www
+  platform: vdp
+  disclosure: vulnerabilities@wisekey.com
+  bounty: false
+  program_url: https://www.wisekey.com/vulnerabilities/
+  domains:
+  - www.wisekey.com
+  github_orgs: []
+  excluded: []

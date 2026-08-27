@@ -1,0 +1,10 @@
+target:
+  name: hackrate-www
+  platform: vdp
+  disclosure: https://www.hckrt.com/Catalog/Program?alias=hackrate
+  bounty: false
+  program_url: https://www.hckrt.com/Catalog/Program?alias=hackrate
+  domains:
+  - www.hckrt.com
+  github_orgs: []
+  excluded: []

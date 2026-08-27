@@ -1,0 +1,10 @@
+target:
+  name: netgate-com-api
+  platform: vdp
+  disclosure: security@netgate.com
+  bounty: false
+  program_url: https://www.netgate.com/security/index.html
+  domains:
+  - api.netgate.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ticketcounter
+  platform: vdp
+  disclosure: dev@ticketcounter.nl
+  bounty: false
+  program_url: https://ticketcounter.eu/security/
+  domains:
+  - ticketcounter.eu
+  github_orgs: []
+  excluded: []

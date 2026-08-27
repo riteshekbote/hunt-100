@@ -1,0 +1,10 @@
+target:
+  name: forage-api
+  platform: vdp
+  disclosure: security@theforage.com
+  bounty: false
+  program_url: https://www.theforage.com/security/disclosure
+  domains:
+  - api.theforage.com
+  github_orgs: []
+  excluded: []

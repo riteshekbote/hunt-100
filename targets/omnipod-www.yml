@@ -1,0 +1,10 @@
+target:
+  name: omnipod-www
+  platform: vdp
+  disclosure: https://www.myomnipod.com/Coordinated-Disclosure-Process
+  bounty: false
+  program_url: https://www.myomnipod.com/Coordinated-Disclosure-Process
+  domains:
+  - www.myomnipod.com
+  github_orgs: []
+  excluded: []

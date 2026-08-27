@@ -1,0 +1,10 @@
+target:
+  name: tokopedia-app
+  platform: bounty
+  disclosure: https://bounty.tokopedia.net/rules
+  bounty: true
+  program_url: https://bounty.tokopedia.net/rules
+  domains:
+  - app.bounty.tokopedia.net
+  github_orgs: []
+  excluded: []

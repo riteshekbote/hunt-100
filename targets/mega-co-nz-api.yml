@@ -1,0 +1,10 @@
+target:
+  name: mega-co-nz-api
+  platform: bounty
+  disclosure: bugs@mega.co.nz
+  bounty: true
+  program_url: https://mega.co.nz/#blog_6
+  domains:
+  - api.mega.co.nz
+  github_orgs: []
+  excluded: []

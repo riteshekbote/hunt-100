@@ -1,0 +1,10 @@
+target:
+  name: sense-api
+  platform: vdp
+  disclosure: vulnerability@sense.com
+  bounty: false
+  program_url: https://sense.com/vulnerability.html
+  domains:
+  - api.sense.com
+  github_orgs: []
+  excluded: []

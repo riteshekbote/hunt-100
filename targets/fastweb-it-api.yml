@@ -1,0 +1,10 @@
+target:
+  name: fastweb-it-api
+  platform: vdp
+  disclosure: csirt@fastweb.it
+  bounty: false
+  program_url: https://www.fastweb.it/corporate/responsible-disclosure/
+  domains:
+  - api.fastweb.it
+  github_orgs: []
+  excluded: []

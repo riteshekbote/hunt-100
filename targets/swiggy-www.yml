@@ -1,0 +1,10 @@
+target:
+  name: swiggy-www
+  platform: bounty
+  disclosure: security@swiggy.in
+  bounty: true
+  program_url: https://www.swiggy.com/bug-bounty
+  domains:
+  - www.swiggy.com
+  github_orgs: []
+  excluded: []

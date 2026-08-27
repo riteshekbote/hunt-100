@@ -1,0 +1,10 @@
+target:
+  name: openerp-com-api
+  platform: vdp
+  disclosure: security@odoo.com
+  bounty: false
+  program_url: https://www.odoo.com/security-report
+  domains:
+  - api.odoo.com
+  github_orgs: []
+  excluded: []

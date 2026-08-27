@@ -1,0 +1,10 @@
+target:
+  name: solvinity-api
+  platform: vdp
+  disclosure: security@solvinity.com
+  bounty: false
+  program_url: https://www.solvinity.com/responsible-disclosure
+  domains:
+  - api.solvinity.com
+  github_orgs: []
+  excluded: []

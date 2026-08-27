@@ -1,0 +1,10 @@
+target:
+  name: bing-staging
+  platform: vdp
+  disclosure: https://www.microsoft.com/en-us/msrc/bounty?rtc=1
+  bounty: false
+  program_url: https://www.microsoft.com/en-us/msrc/bounty?rtc=1
+  domains:
+  - staging.microsoft.com
+  github_orgs: []
+  excluded: []

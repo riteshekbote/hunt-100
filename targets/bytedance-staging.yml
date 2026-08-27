@@ -1,0 +1,10 @@
+target:
+  name: bytedance-staging
+  platform: bounty
+  disclosure: https://security.bytedance.com/media/score-standard/Vulnerability_Rewards_Program.pdf
+  bounty: true
+  program_url: https://security.bytedance.com/media/score-standard/Vulnerability_Rewards_Program.pdf
+  domains:
+  - staging.security.bytedance.com
+  github_orgs: []
+  excluded: []

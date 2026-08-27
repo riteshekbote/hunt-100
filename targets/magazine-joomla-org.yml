@@ -1,0 +1,10 @@
+target:
+  name: magazine-joomla-org
+  platform: vdp
+  disclosure: security@joomla.org
+  bounty: false
+  program_url: https://developer.joomla.org/security.html
+  domains:
+  - developer.joomla.org
+  github_orgs: []
+  excluded: []

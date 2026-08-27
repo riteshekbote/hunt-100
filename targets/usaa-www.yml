@@ -1,0 +1,10 @@
+target:
+  name: usaa-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/usaa
+  bounty: true
+  program_url: https://bugcrowd.com/usaa
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ffmpeg-www
+  platform: vdp
+  disclosure: ffmpeg-security@ffmpeg.org
+  bounty: false
+  program_url: http://www.ffmpeg.org/security.html
+  domains:
+  - www.ffmpeg.org
+  github_orgs: []
+  excluded: []

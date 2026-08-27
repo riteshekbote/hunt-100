@@ -1,0 +1,10 @@
+target:
+  name: tealyra-co-uk-www
+  platform: vdp
+  disclosure: c.rideron@gmail.com
+  bounty: false
+  program_url: https://www.tealyra.com/.well-known/policy.txt
+  domains:
+  - www.tealyra.com
+  github_orgs: []
+  excluded: []

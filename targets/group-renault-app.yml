@@ -1,0 +1,10 @@
+target:
+  name: group-renault-app
+  platform: vdp
+  disclosure: alert.cyber-security@renault.com
+  bounty: false
+  program_url: https://group.renault.com/en/vulnerability-disclosure-policy/
+  domains:
+  - app.group.renault.com
+  github_orgs: []
+  excluded: []

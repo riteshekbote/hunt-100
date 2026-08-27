@@ -1,0 +1,10 @@
+target:
+  name: ovh-www
+  platform: vdp
+  disclosure: https://bountyfactory.io/hunter/submit/program/42
+  bounty: false
+  program_url: https://bountyfactory.io/hunter/submit/program/42
+  domains:
+  - www.bountyfactory.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ayers-rock-resort-app
+  platform: vdp
+  disclosure: vulnerability@voyages.com.au
+  bounty: false
+  program_url: https://www.ayersrockresort.com.au/terms-and-conditions/security
+  domains:
+  - app.ayersrockresort.com.au
+  github_orgs: []
+  excluded: []

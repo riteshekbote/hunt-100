@@ -1,0 +1,10 @@
+target:
+  name: fluxiom-www
+  platform: vdp
+  disclosure: security@fluxiom.com
+  bounty: false
+  program_url: https://www.fluxiom.com/security
+  domains:
+  - www.fluxiom.com
+  github_orgs: []
+  excluded: []

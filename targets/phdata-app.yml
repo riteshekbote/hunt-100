@@ -1,0 +1,10 @@
+target:
+  name: phdata-app
+  platform: vdp
+  disclosure: security@phdata.io
+  bounty: false
+  program_url: https://www.phdata.io/bug-bounty-program/
+  domains:
+  - app.phdata.io
+  github_orgs: []
+  excluded: []

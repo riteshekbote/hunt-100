@@ -1,0 +1,10 @@
+target:
+  name: nuclear-waste-technical-review
+  platform: vdp
+  disclosure: security@nwtrb.gov
+  bounty: false
+  program_url: https://www.nwtrb.gov/vulnerability-disclosure-policy
+  domains:
+  - nwtrb.gov
+  github_orgs: []
+  excluded: []

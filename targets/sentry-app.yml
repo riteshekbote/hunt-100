@@ -1,0 +1,10 @@
+target:
+  name: sentry-app
+  platform: vdp
+  disclosure: security@sentry.io
+  bounty: false
+  program_url: https://sentry.io/security/
+  domains:
+  - app.sentry.io
+  github_orgs: []
+  excluded: []

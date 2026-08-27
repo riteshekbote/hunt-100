@@ -1,0 +1,10 @@
+target:
+  name: department-of-the-interior-app
+  platform: vdp
+  disclosure: security@doi.gov
+  bounty: false
+  program_url: https://www.doi.gov/vulnerability-disclosure-policy
+  domains:
+  - app.doi.gov
+  github_orgs: []
+  excluded: []

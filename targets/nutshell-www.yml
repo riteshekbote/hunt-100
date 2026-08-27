@@ -1,0 +1,10 @@
+target:
+  name: nutshell-www
+  platform: vdp
+  disclosure: security@nutshell.com
+  bounty: false
+  program_url: https://www.nutshell.com/security/
+  domains:
+  - www.nutshell.com
+  github_orgs: []
+  excluded: []

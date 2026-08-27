@@ -1,0 +1,10 @@
+target:
+  name: zooz-api
+  platform: vdp
+  disclosure: https://developers.paymentsos.com/docs/disclosure-policy.html
+  bounty: false
+  program_url: https://developers.paymentsos.com/docs/disclosure-policy.html
+  domains:
+  - api.developers.paymentsos.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: gocardless-com-app
+  platform: vdp
+  disclosure: vuln-disc@gocardless.com
+  bounty: false
+  program_url: https://gocardless.com/faq/merchants/security/
+  domains:
+  - app.gocardless.com
+  github_orgs: []
+  excluded: []

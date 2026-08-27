@@ -1,0 +1,10 @@
+target:
+  name: riskalyze-app
+  platform: vdp
+  disclosure: security@riskalyze.com
+  bounty: false
+  program_url: https://www.riskalyze.com/security-response
+  domains:
+  - app.riskalyze.com
+  github_orgs: []
+  excluded: []

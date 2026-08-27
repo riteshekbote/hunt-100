@@ -1,0 +1,10 @@
+target:
+  name: nospamproxy-de-app
+  platform: vdp
+  disclosure: psirt@nospamproxy.com
+  bounty: false
+  program_url: https://www.nospamproxy.de/en/cybersecurity-product-security-incident-response-team-psirt/
+  domains:
+  - app.nospamproxy.de
+  github_orgs: []
+  excluded: []

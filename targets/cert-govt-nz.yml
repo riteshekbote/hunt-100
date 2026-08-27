@@ -1,0 +1,10 @@
+target:
+  name: cert-govt-nz
+  platform: vdp
+  disclosure: disclosure@ops.cert.govt.nz
+  bounty: false
+  program_url: https://www.cert.govt.nz/it-specialists/guides/reporting-a-vulnerability/cert-nz-coordinated-vulnerability-disclosure-policy/
+  domains:
+  - cert.govt.nz
+  github_orgs: []
+  excluded: []

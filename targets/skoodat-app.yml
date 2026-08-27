@@ -1,0 +1,10 @@
+target:
+  name: skoodat-app
+  platform: vdp
+  disclosure: security@skoodat.com
+  bounty: false
+  program_url: https://www.skoodat.com/security
+  domains:
+  - app.skoodat.com
+  github_orgs: []
+  excluded: []

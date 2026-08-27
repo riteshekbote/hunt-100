@@ -1,0 +1,10 @@
+target:
+  name: ingenico-app
+  platform: vdp
+  disclosure: responsibledisclosure@ingenico.com
+  bounty: false
+  program_url: https://www.ingenico.com/responsible-disclosure-program
+  domains:
+  - app.ingenico.com
+  github_orgs: []
+  excluded: []

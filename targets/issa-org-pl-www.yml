@@ -1,0 +1,10 @@
+target:
+  name: issa-org-pl-www
+  platform: vdp
+  disclosure: info@issa.org.pl
+  bounty: false
+  program_url: https://issa.org.pl/it/dokumenty/polityka-prywatnosci
+  domains:
+  - www.issa.org.pl
+  github_orgs: []
+  excluded: []

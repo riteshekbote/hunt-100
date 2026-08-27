@@ -1,0 +1,10 @@
+target:
+  name: environmental-protection-agenc-app
+  platform: vdp
+  disclosure: VSMT@EPA.GOV
+  bounty: false
+  program_url: https://www.epa.gov/vulnerability-disclosure-policy
+  domains:
+  - app.epa.gov
+  github_orgs: []
+  excluded: []

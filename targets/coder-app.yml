@@ -1,0 +1,10 @@
+target:
+  name: coder-app
+  platform: vdp
+  disclosure: https://www.coder.com/security/policy
+  bounty: false
+  program_url: https://www.coder.com/security/policy
+  domains:
+  - app.coder.com
+  github_orgs: []
+  excluded: []

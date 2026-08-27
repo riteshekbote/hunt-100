@@ -1,0 +1,10 @@
+target:
+  name: htc-api
+  platform: vdp
+  disclosure: security@htc.com
+  bounty: false
+  program_url: https://www.htc.com/us/terms/product-security/
+  domains:
+  - api.htc.com
+  github_orgs: []
+  excluded: []

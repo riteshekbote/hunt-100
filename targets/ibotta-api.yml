@@ -1,0 +1,10 @@
+target:
+  name: ibotta-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/ibotta
+  bounty: true
+  program_url: https://bugcrowd.com/ibotta
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

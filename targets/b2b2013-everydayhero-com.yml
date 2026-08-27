@@ -1,0 +1,10 @@
+target:
+  name: b2b2013-everydayhero-com
+  platform: vdp
+  disclosure: security@blackbaud.com
+  bounty: false
+  program_url: https://www.blackbaud.com/security/responsible-disclosure
+  domains:
+  - blackbaud.com
+  github_orgs: []
+  excluded: []

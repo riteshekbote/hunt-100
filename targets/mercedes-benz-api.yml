@@ -1,0 +1,10 @@
+target:
+  name: mercedes-benz-api
+  platform: vdp
+  disclosure: security@daimler.com
+  bounty: false
+  program_url: https://www.mercedes-benz.com/en/whitehat/?owda=misc#coordinated-disclosure-guidlines
+  domains:
+  - api.mercedes-benz.com
+  github_orgs: []
+  excluded: []

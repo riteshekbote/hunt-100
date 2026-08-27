@@ -1,0 +1,10 @@
+target:
+  name: quibi-com-app
+  platform: vdp
+  disclosure: sbugs@quibi.com
+  bounty: false
+  program_url: https://quibi.com/privacy-policy
+  domains:
+  - app.quibi.com
+  github_orgs: []
+  excluded: []

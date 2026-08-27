@@ -1,0 +1,10 @@
+target:
+  name: garantibank-international-www
+  platform: vdp
+  disclosure: reponsibledisclosure@garantibank.eu
+  bounty: false
+  program_url: https://www.garantibank.eu/about-us/security/responsible-disclosure
+  domains:
+  - www.garantibank.eu
+  github_orgs: []
+  excluded: []

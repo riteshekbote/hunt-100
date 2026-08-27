@@ -1,0 +1,10 @@
+target:
+  name: rsk-www
+  platform: bounty
+  disclosure: https://developers.rsk.co/contribute/bug-bounty-program/
+  bounty: true
+  program_url: https://developers.rsk.co/contribute/bug-bounty-program/
+  domains:
+  - www.developers.rsk.co
+  github_orgs: []
+  excluded: []

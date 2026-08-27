@@ -1,0 +1,10 @@
+target:
+  name: keming-labs-api
+  platform: vdp
+  disclosure: security@keminglabs.com
+  bounty: false
+  program_url: https://keminglabs.com/security_disclosure/
+  domains:
+  - api.keminglabs.com
+  github_orgs: []
+  excluded: []

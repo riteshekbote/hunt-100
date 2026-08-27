@@ -1,0 +1,10 @@
+target:
+  name: techgig
+  platform: vdp
+  disclosure: https://www.techgig.com/bugbounty
+  bounty: false
+  program_url: https://www.techgig.com/bugbounty
+  domains:
+  - techgig.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: blinkforhome-dev
+  platform: vdp
+  disclosure: info@blinkforhome.com
+  bounty: false
+  program_url: https://blinkforhome.com/pages/responsible-disclosure-policy?locale=en
+  domains:
+  - dev.blinkforhome.com
+  github_orgs: []
+  excluded: []

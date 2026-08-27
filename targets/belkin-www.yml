@@ -1,0 +1,10 @@
+target:
+  name: belkin-www
+  platform: vdp
+  disclosure: https://www.belkin.com/us/security/
+  bounty: false
+  program_url: https://www.belkin.com/us/security/
+  domains:
+  - www.belkin.com
+  github_orgs: []
+  excluded: []

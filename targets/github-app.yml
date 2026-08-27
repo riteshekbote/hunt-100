@@ -1,0 +1,10 @@
+target:
+  name: github-app
+  platform: bounty
+  disclosure: https://bounty.github.com/
+  bounty: true
+  program_url: https://bounty.github.com/
+  domains:
+  - app.bounty.github.com
+  github_orgs: []
+  excluded: []

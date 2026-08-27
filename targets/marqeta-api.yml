@@ -1,0 +1,10 @@
+target:
+  name: marqeta-api
+  platform: vdp
+  disclosure: https://www.marqeta.com/responsible-disclosure
+  bounty: false
+  program_url: https://www.marqeta.com/responsible-disclosure
+  domains:
+  - api.marqeta.com
+  github_orgs: []
+  excluded: []

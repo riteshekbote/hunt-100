@@ -1,0 +1,10 @@
+target:
+  name: pepperfry-api
+  platform: vdp
+  disclosure: security@pepperfry.com
+  bounty: false
+  program_url: https://www.pepperfry.com/whitehat.html
+  domains:
+  - api.pepperfry.com
+  github_orgs: []
+  excluded: []

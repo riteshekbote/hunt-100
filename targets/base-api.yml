@@ -1,0 +1,10 @@
+target:
+  name: base-api
+  platform: vdp
+  disclosure: https://www.zendesk.com/company/policies-procedures/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.zendesk.com/company/policies-procedures/responsible-disclosure-policy/
+  domains:
+  - api.zendesk.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: merit-systems-protection-board-api
+  platform: vdp
+  disclosure: securityteam@mspb.gov
+  bounty: false
+  program_url: https://www.mspb.gov/vulnerability-disclosure-policy/
+  domains:
+  - api.mspb.gov
+  github_orgs: []
+  excluded: []

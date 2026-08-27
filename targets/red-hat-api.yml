@@ -1,0 +1,10 @@
+target:
+  name: red-hat-api
+  platform: vdp
+  disclosure: https://access.redhat.com/security/team/contact
+  bounty: false
+  program_url: https://access.redhat.com/security/team/contact
+  domains:
+  - api.access.redhat.com
+  github_orgs: []
+  excluded: []

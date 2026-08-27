@@ -1,0 +1,10 @@
+target:
+  name: fusion-api
+  platform: bounty
+  disclosure: https://www.fusion.org/developers/bug-bounty#bugs
+  bounty: true
+  program_url: https://www.fusion.org/developers/bug-bounty#bugs
+  domains:
+  - api.fusion.org
+  github_orgs: []
+  excluded: []

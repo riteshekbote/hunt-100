@@ -1,0 +1,10 @@
+target:
+  name: swift-app
+  platform: vdp
+  disclosure: security.alert@swift.com
+  bounty: false
+  program_url: https://www.swift.com/contact-us/security
+  domains:
+  - app.swift.com
+  github_orgs: []
+  excluded: []

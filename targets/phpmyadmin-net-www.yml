@@ -1,0 +1,10 @@
+target:
+  name: phpmyadmin-net-www
+  platform: vdp
+  disclosure: security@phpmyadmin.net
+  bounty: false
+  program_url: https://www.phpmyadmin.net/security/
+  domains:
+  - www.phpmyadmin.net
+  github_orgs: []
+  excluded: []

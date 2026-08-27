@@ -1,0 +1,10 @@
+target:
+  name: universiteit-leiden-www
+  platform: vdp
+  disclosure: abuse@leidenuniv.nl
+  bounty: false
+  program_url: https://www.staff.universiteitleiden.nl/binaries/content/assets/ul2staff/ict/responsible-disclosure-eng.pdf
+  domains:
+  - www.staff.universiteitleiden.nl
+  github_orgs: []
+  excluded: []

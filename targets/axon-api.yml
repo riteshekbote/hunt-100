@@ -1,0 +1,10 @@
+target:
+  name: axon-api
+  platform: vdp
+  disclosure: infosec@axon.com
+  bounty: false
+  program_url: https://www.axon.com/penetration-testing--vulnerability-disclosure
+  domains:
+  - api.axon.com
+  github_orgs: []
+  excluded: []

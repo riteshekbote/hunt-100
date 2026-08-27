@@ -1,0 +1,10 @@
+target:
+  name: event-espresso
+  platform: vdp
+  disclosure: https://eventespresso.com/report-a-security-vulnerability/
+  bounty: false
+  program_url: https://eventespresso.com/report-a-security-vulnerability/
+  domains:
+  - eventespresso.com
+  github_orgs: []
+  excluded: []

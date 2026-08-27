@@ -1,0 +1,10 @@
+target:
+  name: zomato-www
+  platform: bounty
+  disclosure: security@zomato.com
+  bounty: true
+  program_url: https://www.zomato.com/security
+  domains:
+  - www.zomato.com
+  github_orgs: []
+  excluded: []

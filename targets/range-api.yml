@@ -1,0 +1,10 @@
+target:
+  name: range-api
+  platform: bounty
+  disclosure: security@range.co
+  bounty: true
+  program_url: https://www.range.co/security/bounty
+  domains:
+  - api.range.co
+  github_orgs: []
+  excluded: []

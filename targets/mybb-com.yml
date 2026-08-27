@@ -1,0 +1,10 @@
+target:
+  name: mybb-com
+  platform: vdp
+  disclosure: https://mybb.com/get-involved/security/
+  bounty: false
+  program_url: https://mybb.com/get-involved/security/
+  domains:
+  - mybb.com
+  github_orgs: []
+  excluded: []

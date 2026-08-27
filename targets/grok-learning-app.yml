@@ -1,0 +1,10 @@
+target:
+  name: grok-learning-app
+  platform: vdp
+  disclosure: security@groklearning.com
+  bounty: false
+  program_url: https://groklearning.com/policies/security/
+  domains:
+  - app.groklearning.com
+  github_orgs: []
+  excluded: []

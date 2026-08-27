@@ -1,0 +1,10 @@
+target:
+  name: infoblox
+  platform: vdp
+  disclosure: https://www.infoblox.com/company/legal/vulnerability-responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.infoblox.com/company/legal/vulnerability-responsible-disclosure-policy/
+  domains:
+  - infoblox.com
+  github_orgs: []
+  excluded: []

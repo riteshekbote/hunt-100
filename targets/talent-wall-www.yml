@@ -1,0 +1,10 @@
+target:
+  name: talent-wall-www
+  platform: vdp
+  disclosure: security@talentwall.io
+  bounty: false
+  program_url: https://talentwall.io/responsible-disclosure/
+  domains:
+  - www.talentwall.io
+  github_orgs: []
+  excluded: []

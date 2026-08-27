@@ -1,0 +1,10 @@
+target:
+  name: atlassian-staging
+  platform: bounty
+  disclosure: https://bugcrowd.com/atlassian
+  bounty: true
+  program_url: https://bugcrowd.com/atlassian
+  domains:
+  - staging.bugcrowd.com
+  github_orgs: []
+  excluded: []

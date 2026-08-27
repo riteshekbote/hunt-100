@@ -1,0 +1,10 @@
+target:
+  name: ftx-com
+  platform: vdp
+  disclosure: security@ftx.com
+  bounty: false
+  program_url: https://help.ftx.com/hc/en-us/articles/360031171351
+  domains:
+  - help.ftx.com
+  github_orgs: []
+  excluded: []

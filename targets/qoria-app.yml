@@ -1,0 +1,10 @@
+target:
+  name: qoria-app
+  platform: vdp
+  disclosure: security@qoria.com
+  bounty: false
+  program_url: https://www.qoria.com/vulnerability-disclosure-policy
+  domains:
+  - app.qoria.com
+  github_orgs: []
+  excluded: []

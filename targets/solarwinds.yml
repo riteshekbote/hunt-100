@@ -1,0 +1,10 @@
+target:
+  name: solarwinds
+  platform: vdp
+  disclosure: security@solarwinds.com
+  bounty: false
+  program_url: https://www.solarwinds.com/information-security/vulnerability-disclosure-policy
+  domains:
+  - solarwinds.com
+  github_orgs: []
+  excluded: []

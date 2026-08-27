@@ -1,0 +1,10 @@
+target:
+  name: moviexchange
+  platform: vdp
+  disclosure: security@movieXchange.com
+  bounty: false
+  program_url: https://moviexchange.com/responsible-disclosure-policy/
+  domains:
+  - moviexchange.com
+  github_orgs: []
+  excluded: []

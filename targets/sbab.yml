@@ -1,0 +1,10 @@
+target:
+  name: sbab
+  platform: vdp
+  disclosure: sirt@sbab.se
+  bounty: false
+  program_url: https://www.sbab.se/1/sidfotsmeny_2/sakerhet/responsible_disclosure.html
+  domains:
+  - sbab.se
+  github_orgs: []
+  excluded: []

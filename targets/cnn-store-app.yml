@@ -1,0 +1,10 @@
+target:
+  name: cnn-store-app
+  platform: vdp
+  disclosure: https://cnn.zendesk.com/hc/en-us/articles/115005570566-Responsible-Disclosure-of-Security-Vulnerabilities-
+  bounty: false
+  program_url: https://cnn.zendesk.com/hc/en-us/articles/115005570566-Responsible-Disclosure-of-Security-Vulnerabilities-
+  domains:
+  - app.cnn.zendesk.com
+  github_orgs: []
+  excluded: []

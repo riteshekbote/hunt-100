@@ -1,0 +1,10 @@
+target:
+  name: media-defcon-org
+  platform: vdp
+  disclosure: info@defcon.org
+  bounty: false
+  program_url: https://www.defcon.org/html/links/dc-policy.html
+  domains:
+  - defcon.org
+  github_orgs: []
+  excluded: []

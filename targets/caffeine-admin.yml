@@ -1,0 +1,10 @@
+target:
+  name: caffeine-admin
+  platform: bounty
+  disclosure: https://bugcrowd.com/caffeine
+  bounty: true
+  program_url: https://bugcrowd.com/caffeine
+  domains:
+  - admin.bugcrowd.com
+  github_orgs: []
+  excluded: []

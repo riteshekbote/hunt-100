@@ -1,0 +1,10 @@
+target:
+  name: federal-housing-finance-agency
+  platform: vdp
+  disclosure: domainsecurity@fhfa.gov
+  bounty: false
+  program_url: https://www.fhfa.gov/vulnerability-disclosure-policy
+  domains:
+  - fhfa.gov
+  github_orgs: []
+  excluded: []

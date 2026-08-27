@@ -1,0 +1,10 @@
+target:
+  name: pitchero-com-api
+  platform: vdp
+  disclosure: security@pitchero.com
+  bounty: false
+  program_url: https://www.pitchero.com/security-policy
+  domains:
+  - api.pitchero.com
+  github_orgs: []
+  excluded: []

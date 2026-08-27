@@ -1,0 +1,10 @@
+target:
+  name: postman
+  platform: vdp
+  disclosure: security@postman.com
+  bounty: false
+  program_url: https://www.postman.com/security/vulnerability-reporting/
+  domains:
+  - postman.com
+  github_orgs: []
+  excluded: []

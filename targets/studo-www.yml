@@ -1,0 +1,10 @@
+target:
+  name: studo-www
+  platform: bounty
+  disclosure: security@moshbit.com
+  bounty: true
+  program_url: https://studo.com/at/security
+  domains:
+  - www.studo.com
+  github_orgs: []
+  excluded: []

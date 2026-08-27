@@ -1,0 +1,10 @@
+target:
+  name: antavo-loyalty-management-plat-dev
+  platform: bounty
+  disclosure: https://www.hacktify.eu/en/public-programs/
+  bounty: true
+  program_url: https://www.hacktify.eu/en/public-programs/
+  domains:
+  - dev.hacktify.eu
+  github_orgs: []
+  excluded: []

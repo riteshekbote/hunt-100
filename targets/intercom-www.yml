@@ -1,0 +1,10 @@
+target:
+  name: intercom-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/intercom
+  bounty: true
+  program_url: https://bugcrowd.com/intercom
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

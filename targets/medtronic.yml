@@ -1,0 +1,10 @@
+target:
+  name: medtronic
+  platform: vdp
+  disclosure: http://www.medtronic.com/contact-us/index.htm?cmpid=mdt_plc_2015_US_footer_nav_contact_us_mdt_us_legacy_contact_us_form_link
+  bounty: false
+  program_url: http://www.medtronic.com/contact-us/index.htm?cmpid=mdt_plc_2015_US_footer_nav_contact_us_mdt_us_legacy_contact_us_form_link
+  domains:
+  - medtronic.com
+  github_orgs: []
+  excluded: []

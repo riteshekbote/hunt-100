@@ -1,0 +1,10 @@
+target:
+  name: abbott-admin
+  platform: vdp
+  disclosure: cybersecurity@abbott.com
+  bounty: false
+  program_url: https://www.abbott.com/policies/cybersecurity/cybersecurity-coordinated-product-disclosure.html
+  domains:
+  - admin.abbott.com
+  github_orgs: []
+  excluded: []

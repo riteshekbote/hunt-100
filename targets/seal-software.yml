@@ -1,0 +1,10 @@
+target:
+  name: seal-software
+  platform: vdp
+  disclosure: product-security@docusign.com
+  bounty: false
+  program_url: https://www.seal-software.com/responsible-disclosure/
+  domains:
+  - seal-software.com
+  github_orgs: []
+  excluded: []

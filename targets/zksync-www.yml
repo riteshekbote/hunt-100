@@ -1,0 +1,10 @@
+target:
+  name: zksync-www
+  platform: bounty
+  disclosure: security@zksync.io
+  bounty: true
+  program_url: https://zksync.io/dev/bug-bounty.html
+  domains:
+  - www.zksync.io
+  github_orgs: []
+  excluded: []

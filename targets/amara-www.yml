@@ -1,0 +1,10 @@
+target:
+  name: amara-www
+  platform: vdp
+  disclosure: security@amara.org
+  bounty: false
+  program_url: http://amara.org/en/security
+  domains:
+  - www.amara.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: getambassador
+  platform: vdp
+  disclosure: secalert@datawire.io
+  bounty: false
+  program_url: https://blog.getambassador.io/security-in-ambassador-a-risk-based-approach-fd24e364ea84
+  domains:
+  - blog.getambassador.io
+  github_orgs: []
+  excluded: []

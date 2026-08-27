@@ -1,0 +1,10 @@
+target:
+  name: luno-api
+  platform: bounty
+  disclosure: luno-esf@submit.bugcrowd.com
+  bounty: true
+  program_url: https://bugcrowd.com/luno-og
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

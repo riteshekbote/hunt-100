@@ -1,0 +1,10 @@
+target:
+  name: fastmail-www
+  platform: bounty
+  disclosure: security@fastmailteam.com
+  bounty: true
+  program_url: https://www.fastmail.com/bug-bounty/
+  domains:
+  - www.fastmail.com
+  github_orgs: []
+  excluded: []

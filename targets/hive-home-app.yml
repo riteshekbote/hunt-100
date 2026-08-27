@@ -1,0 +1,10 @@
+target:
+  name: hive-home-app
+  platform: vdp
+  disclosure: https://www.hivehome.com/security
+  bounty: false
+  program_url: https://www.hivehome.com/security
+  domains:
+  - app.hivehome.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: rapidspike
+  platform: vdp
+  disclosure: security@rapidspike.com
+  bounty: false
+  program_url: https://www.rapidspike.com/info/vulnerability-disclosure/
+  domains:
+  - rapidspike.com
+  github_orgs: []
+  excluded: []

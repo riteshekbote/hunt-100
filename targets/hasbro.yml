@@ -1,0 +1,10 @@
+target:
+  name: hasbro
+  platform: vdp
+  disclosure: responsibledisclosure@hasbro.com
+  bounty: false
+  program_url: https://docs.hasbro.com/upload/legal/responsible_disclosure_2020.pdf
+  domains:
+  - docs.hasbro.com
+  github_orgs: []
+  excluded: []

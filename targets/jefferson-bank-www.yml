@@ -1,0 +1,10 @@
+target:
+  name: jefferson-bank-www
+  platform: vdp
+  disclosure: responsible.disclosure@jefferson-bank.com
+  bounty: false
+  program_url: https://www.jefferson-bank.com/personal/security/responsible-disclosure/
+  domains:
+  - www.jefferson-bank.com
+  github_orgs: []
+  excluded: []

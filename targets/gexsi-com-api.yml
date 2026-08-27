@@ -1,0 +1,10 @@
+target:
+  name: gexsi-com-api
+  platform: vdp
+  disclosure: hello@gexsi.com
+  bounty: false
+  program_url: https://gexsi.com/about/en/privacy-policy/
+  domains:
+  - api.gexsi.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: orgnostic-inc-api
+  platform: vdp
+  disclosure: security@orgnostic.com
+  bounty: false
+  program_url: https://orgnostic.com/vulnerability-disclosure
+  domains:
+  - api.orgnostic.com
+  github_orgs: []
+  excluded: []

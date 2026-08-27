@@ -1,0 +1,10 @@
+target:
+  name: trend-micro
+  platform: vdp
+  disclosure: security@trendmicro.com
+  bounty: false
+  program_url: https://success.trendmicro.com/vulnerability-response
+  domains:
+  - success.trendmicro.com
+  github_orgs: []
+  excluded: []

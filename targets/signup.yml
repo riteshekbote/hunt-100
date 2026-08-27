@@ -1,0 +1,10 @@
+target:
+  name: signup
+  platform: vdp
+  disclosure: security@Signup.com
+  bounty: false
+  program_url: https://signup.com/responsible-disclosure-policy
+  domains:
+  - signup.com
+  github_orgs: []
+  excluded: []

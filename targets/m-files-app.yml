@@ -1,0 +1,10 @@
+target:
+  name: m-files-app
+  platform: vdp
+  disclosure: security@m-files.com
+  bounty: false
+  program_url: https://www.m-files.com/en/vulnerability-disclosure
+  domains:
+  - app.m-files.com
+  github_orgs: []
+  excluded: []

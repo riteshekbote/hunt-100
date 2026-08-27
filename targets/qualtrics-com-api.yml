@@ -1,0 +1,10 @@
+target:
+  name: qualtrics-com-api
+  platform: vdp
+  disclosure: platform-security@qualtrics.com
+  bounty: false
+  program_url: https://www.qualtrics.com/platform/security/vulnerability-disclosure/
+  domains:
+  - api.qualtrics.com
+  github_orgs: []
+  excluded: []

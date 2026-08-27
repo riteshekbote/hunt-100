@@ -1,0 +1,10 @@
+target:
+  name: government-of-netherlands-www
+  platform: vdp
+  disclosure: cert@ncsc.nl
+  bounty: false
+  program_url: https://www.government.nl/topics/cybercrime/fighting-cybercrime-in-the-netherlands/responsible-disclosure
+  domains:
+  - www.government.nl
+  github_orgs: []
+  excluded: []

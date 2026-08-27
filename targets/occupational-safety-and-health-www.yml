@@ -1,0 +1,10 @@
+target:
+  name: occupational-safety-and-health-www
+  platform: vdp
+  disclosure: security@oshrc.gov
+  bounty: false
+  program_url: https://www.oshrc.gov/vulnerability-disclosure-policy
+  domains:
+  - www.oshrc.gov
+  github_orgs: []
+  excluded: []

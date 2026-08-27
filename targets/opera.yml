@@ -1,0 +1,10 @@
+target:
+  name: opera
+  platform: vdp
+  disclosure: https://security.opera.com/report-security-issue/
+  bounty: false
+  program_url: https://security.opera.com/report-security-issue/
+  domains:
+  - security.opera.com
+  github_orgs: []
+  excluded: []

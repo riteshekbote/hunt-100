@@ -1,0 +1,10 @@
+target:
+  name: department-of-veterans-affairs-www
+  platform: vdp
+  disclosure: Vulnerability_Disclosure_Mailbox@va.gov
+  bounty: false
+  program_url: https://www.va.gov/vulnerability-disclosure-policy
+  domains:
+  - www.va.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: free-law-project-app
+  platform: vdp
+  disclosure: security@free.law
+  bounty: false
+  program_url: https://free.law/vulnerability-disclosure-policy/
+  domains:
+  - app.free.law
+  github_orgs: []
+  excluded: []

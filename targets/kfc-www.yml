@@ -1,0 +1,10 @@
+target:
+  name: kfc-www
+  platform: vdp
+  disclosure: https://kfc.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://kfc.responsibledisclosure.com/hc/en-us
+  domains:
+  - www.kfc.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

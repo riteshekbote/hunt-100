@@ -1,0 +1,10 @@
+target:
+  name: national-endowment-for-the-hum-www
+  platform: vdp
+  disclosure: VDP@neh.gov
+  bounty: false
+  program_url: https://www.neh.gov/vulnerability-disclosure-policy
+  domains:
+  - www.neh.gov
+  github_orgs: []
+  excluded: []

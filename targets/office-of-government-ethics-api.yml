@@ -1,0 +1,10 @@
+target:
+  name: office-of-government-ethics-api
+  platform: vdp
+  disclosure: contactoge@oge.gov
+  bounty: false
+  program_url: https://www.oge.gov/vulnerability-disclosure-policy
+  domains:
+  - api.oge.gov
+  github_orgs: []
+  excluded: []

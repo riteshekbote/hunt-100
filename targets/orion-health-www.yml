@@ -1,0 +1,10 @@
+target:
+  name: orion-health-www
+  platform: vdp
+  disclosure: https://orionhealth.com/us/support/responsible-disclosure/
+  bounty: false
+  program_url: https://orionhealth.com/us/support/responsible-disclosure/
+  domains:
+  - www.orionhealth.com
+  github_orgs: []
+  excluded: []

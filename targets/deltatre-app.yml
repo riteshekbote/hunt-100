@@ -1,0 +1,10 @@
+target:
+  name: deltatre-app
+  platform: vdp
+  disclosure: security@deltatre.com
+  bounty: false
+  program_url: https://www.deltatre.com/coordinated-vulnerability-disclosure
+  domains:
+  - app.deltatre.com
+  github_orgs: []
+  excluded: []

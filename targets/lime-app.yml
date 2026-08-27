@@ -1,0 +1,10 @@
+target:
+  name: lime-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/lime
+  bounty: true
+  program_url: https://bugcrowd.com/lime
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

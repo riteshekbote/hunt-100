@@ -1,0 +1,10 @@
+target:
+  name: proctorio-public-bug-bounty-pr
+  platform: vdp
+  disclosure: https://www.hckrt.com/Catalog/Program?alias=proctorio
+  bounty: false
+  program_url: https://www.hckrt.com/Catalog/Program?alias=proctorio
+  domains:
+  - hckrt.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: 23andme-api
+  platform: bounty
+  disclosure: https://www.23andme.com/security-report/
+  bounty: true
+  program_url: https://www.23andme.com/security-report/
+  domains:
+  - api.23andme.com
+  github_orgs: []
+  excluded: []

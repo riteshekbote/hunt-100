@@ -1,0 +1,10 @@
+target:
+  name: kayak-app
+  platform: vdp
+  disclosure: security@kayak.com
+  bounty: false
+  program_url: https://www.kayak.co.in/security
+  domains:
+  - app.kayak.co.in
+  github_orgs: []
+  excluded: []

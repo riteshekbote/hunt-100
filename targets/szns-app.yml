@@ -1,0 +1,10 @@
+target:
+  name: szns-app
+  platform: bounty
+  disclosure: security@szns.io
+  bounty: true
+  program_url: https://docs.szns.io/smart-contracts/bug-bounty
+  domains:
+  - app.docs.szns.io
+  github_orgs: []
+  excluded: []

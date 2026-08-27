@@ -1,0 +1,10 @@
+target:
+  name: geoffreyhuntley-com-app
+  platform: vdp
+  disclosure: https://ghuntley.com/security/
+  bounty: false
+  program_url: https://ghuntley.com/security/
+  domains:
+  - app.ghuntley.com
+  github_orgs: []
+  excluded: []

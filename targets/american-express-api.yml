@@ -1,0 +1,10 @@
+target:
+  name: american-express-api
+  platform: vdp
+  disclosure: responsible.disclosure@aexp.com
+  bounty: false
+  program_url: https://www.americanexpress.com/us/security-center/cybersecurity.html
+  domains:
+  - api.americanexpress.com
+  github_orgs: []
+  excluded: []

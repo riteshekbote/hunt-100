@@ -1,0 +1,10 @@
+target:
+  name: getyourguide-api
+  platform: vdp
+  disclosure: security@getyourguide.com
+  bounty: false
+  program_url: https://www.getyourguide.com/security
+  domains:
+  - api.getyourguide.com
+  github_orgs: []
+  excluded: []

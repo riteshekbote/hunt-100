@@ -1,0 +1,10 @@
+target:
+  name: apache-httpd-www
+  platform: bounty
+  disclosure: security@apache.org
+  bounty: true
+  program_url: https://www.apache.org/security/
+  domains:
+  - www.apache.org
+  github_orgs: []
+  excluded: []

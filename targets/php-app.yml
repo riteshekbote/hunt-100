@@ -1,0 +1,10 @@
+target:
+  name: php-app
+  platform: bounty
+  disclosure: security@php.net
+  bounty: true
+  program_url: https://bugs.php.net/report.php?bug_type=Security
+  domains:
+  - app.bugs.php.net
+  github_orgs: []
+  excluded: []

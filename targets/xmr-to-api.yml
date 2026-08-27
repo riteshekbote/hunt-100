@@ -1,0 +1,10 @@
+target:
+  name: xmr-to-api
+  platform: vdp
+  disclosure: security@xmr.to
+  bounty: false
+  program_url: https://xmr.to/security
+  domains:
+  - api.xmr.to
+  github_orgs: []
+  excluded: []

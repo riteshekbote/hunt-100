@@ -1,0 +1,10 @@
+target:
+  name: smile-co-uk
+  platform: vdp
+  disclosure: https://www.smile.co.uk/global/security/responsible-security-disclosure
+  bounty: false
+  program_url: https://www.smile.co.uk/global/security/responsible-security-disclosure
+  domains:
+  - smile.co.uk
+  github_orgs: []
+  excluded: []

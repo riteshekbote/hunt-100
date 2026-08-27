@@ -1,0 +1,10 @@
+target:
+  name: coinpayments-www
+  platform: bounty
+  disclosure: security@coinpayments.net
+  bounty: true
+  program_url: https://www.coinpayments.net/help-bug-bounty
+  domains:
+  - www.coinpayments.net
+  github_orgs: []
+  excluded: []

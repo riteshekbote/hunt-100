@@ -1,0 +1,10 @@
+target:
+  name: rubrik-app
+  platform: vdp
+  disclosure: https://rubrik.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://rubrik.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.rubrik.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

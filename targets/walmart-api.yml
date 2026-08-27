@@ -1,0 +1,10 @@
+target:
+  name: walmart-api
+  platform: bounty
+  disclosure: https://corporate.walmart.com/privacy-security
+  bounty: true
+  program_url: https://corporate.walmart.com/privacy-security
+  domains:
+  - api.corporate.walmart.com
+  github_orgs: []
+  excluded: []

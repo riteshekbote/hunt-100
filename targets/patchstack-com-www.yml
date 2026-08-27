@@ -1,0 +1,10 @@
+target:
+  name: patchstack-com-www
+  platform: vdp
+  disclosure: report-vulnerability@patchstack.com
+  bounty: false
+  program_url: https://patchstack.com/vulnerability-disclosure-policy
+  domains:
+  - www.patchstack.com
+  github_orgs: []
+  excluded: []

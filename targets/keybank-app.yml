@@ -1,0 +1,10 @@
+target:
+  name: keybank-app
+  platform: vdp
+  disclosure: https://www.key.com/about/security/privacy-security.jsp
+  bounty: false
+  program_url: https://www.key.com/about/security/privacy-security.jsp
+  domains:
+  - app.key.com
+  github_orgs: []
+  excluded: []

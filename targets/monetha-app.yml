@@ -1,0 +1,10 @@
+target:
+  name: monetha-app
+  platform: bounty
+  disclosure: https://www.monetha.io/bounty
+  bounty: true
+  program_url: https://www.monetha.io/bounty
+  domains:
+  - app.monetha.io
+  github_orgs: []
+  excluded: []

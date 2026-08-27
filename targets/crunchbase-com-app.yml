@@ -1,0 +1,10 @@
+target:
+  name: crunchbase-com-app
+  platform: vdp
+  disclosure: security@crunchbase.com
+  bounty: false
+  program_url: https://www.crunchbase.com/.well-known/security-policy.txt
+  domains:
+  - app.crunchbase.com
+  github_orgs: []
+  excluded: []

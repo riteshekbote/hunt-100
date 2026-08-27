@@ -1,0 +1,10 @@
+target:
+  name: ncsc-gov-uk
+  platform: vdp
+  disclosure: https://www.ncsc.gov.uk/vulnerability-reporting
+  bounty: false
+  program_url: https://www.ncsc.gov.uk/vulnerability-reporting
+  domains:
+  - ncsc.gov.uk
+  github_orgs: []
+  excluded: []

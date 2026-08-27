@@ -1,0 +1,10 @@
+target:
+  name: 18f-api
+  platform: vdp
+  disclosure: tts-vulnerability-reports@gsa.gov
+  bounty: false
+  program_url: https://18f.gsa.gov/vulnerability-disclosure-policy/
+  domains:
+  - api.18f.gsa.gov
+  github_orgs: []
+  excluded: []

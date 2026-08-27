@@ -1,0 +1,10 @@
+target:
+  name: geotab-www
+  platform: vdp
+  disclosure: https://www.geotab.com/security/
+  bounty: false
+  program_url: https://www.geotab.com/security/
+  domains:
+  - www.geotab.com
+  github_orgs: []
+  excluded: []

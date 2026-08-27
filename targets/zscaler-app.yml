@@ -1,0 +1,10 @@
+target:
+  name: zscaler-app
+  platform: vdp
+  disclosure: https://www.zscaler.com/company/vulnerability-disclosure-program
+  bounty: false
+  program_url: https://www.zscaler.com/company/vulnerability-disclosure-program
+  domains:
+  - app.zscaler.com
+  github_orgs: []
+  excluded: []

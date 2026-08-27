@@ -1,0 +1,10 @@
+target:
+  name: librato-www
+  platform: vdp
+  disclosure: psirt@solarwinds.com
+  bounty: false
+  program_url: https://metrics.librato.com/vulnerability
+  domains:
+  - www.metrics.librato.com
+  github_orgs: []
+  excluded: []

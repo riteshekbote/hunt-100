@@ -1,0 +1,10 @@
+target:
+  name: integraxor-scada-www
+  platform: bounty
+  disclosure: https://www.integraxor.com/integraxor-hmi-scada-bug-bounty-program/
+  bounty: true
+  program_url: https://www.integraxor.com/integraxor-hmi-scada-bug-bounty-program/
+  domains:
+  - www.integraxor.com
+  github_orgs: []
+  excluded: []

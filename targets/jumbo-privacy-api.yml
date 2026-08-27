@@ -1,0 +1,10 @@
+target:
+  name: jumbo-privacy-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/jumboprivacy
+  bounty: true
+  program_url: https://bugcrowd.com/jumboprivacy
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

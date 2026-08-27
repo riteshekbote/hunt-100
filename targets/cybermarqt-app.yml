@@ -1,0 +1,10 @@
+target:
+  name: cybermarqt-app
+  platform: vdp
+  disclosure: info@cybermarqt.com
+  bounty: false
+  program_url: https://cybermarqt.com/responsible-disclosure
+  domains:
+  - app.cybermarqt.com
+  github_orgs: []
+  excluded: []

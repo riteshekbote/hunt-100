@@ -1,0 +1,10 @@
+target:
+  name: humble-bundle
+  platform: vdp
+  disclosure: https://bugcrowd.com/humblebundle
+  bounty: false
+  program_url: https://bugcrowd.com/humblebundle
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

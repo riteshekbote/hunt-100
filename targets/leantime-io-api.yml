@@ -1,0 +1,10 @@
+target:
+  name: leantime-io-api
+  platform: vdp
+  disclosure: security@leantime.io
+  bounty: false
+  program_url: https://leantime.io/responsible-disclosure-policy/
+  domains:
+  - api.leantime.io
+  github_orgs: []
+  excluded: []

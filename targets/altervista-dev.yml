@@ -1,0 +1,10 @@
+target:
+  name: altervista-dev
+  platform: vdp
+  disclosure: https://en.altervista.org/feedback.php?who=feedback
+  bounty: false
+  program_url: https://en.altervista.org/feedback.php?who=feedback
+  domains:
+  - dev.en.altervista.org
+  github_orgs: []
+  excluded: []

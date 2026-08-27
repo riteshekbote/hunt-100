@@ -1,0 +1,10 @@
+target:
+  name: council-of-european-national-t
+  platform: vdp
+  disclosure: security@centr.org
+  bounty: false
+  program_url: https://www.centr.org/responsible-disclosure-policy.html
+  domains:
+  - centr.org
+  github_orgs: []
+  excluded: []

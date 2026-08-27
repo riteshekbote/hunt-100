@@ -1,0 +1,10 @@
+target:
+  name: sylaps-com-api
+  platform: vdp
+  disclosure: https://federacy.com/sylaps
+  bounty: false
+  program_url: https://federacy.com/sylaps
+  domains:
+  - api.federacy.com
+  github_orgs: []
+  excluded: []

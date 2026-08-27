@@ -1,0 +1,10 @@
+target:
+  name: lafabriquedelacite-com-www
+  platform: vdp
+  disclosure: cert@vinci.com
+  bounty: false
+  program_url: https://www.vinci.com/publi/vinci/cert/index-en.html
+  domains:
+  - www.vinci.com
+  github_orgs: []
+  excluded: []

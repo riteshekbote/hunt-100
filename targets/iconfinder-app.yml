@@ -1,0 +1,10 @@
+target:
+  name: iconfinder-app
+  platform: vdp
+  disclosure: support@iconfinder.com
+  bounty: false
+  program_url: https://support.iconfinder.com/en/articles/18178-responsible-disclosure-of-security-vulnerabilities
+  domains:
+  - app.support.iconfinder.com
+  github_orgs: []
+  excluded: []

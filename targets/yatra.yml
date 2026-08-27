@@ -1,0 +1,10 @@
+target:
+  name: yatra
+  platform: vdp
+  disclosure: https://www.yatra.com/online/bug-bounty
+  bounty: false
+  program_url: https://www.yatra.com/online/bug-bounty
+  domains:
+  - yatra.com
+  github_orgs: []
+  excluded: []

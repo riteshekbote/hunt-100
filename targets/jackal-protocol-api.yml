@@ -1,0 +1,10 @@
+target:
+  name: jackal-protocol-api
+  platform: bounty
+  disclosure: security@jackallabs.io
+  bounty: true
+  program_url: https://jackaldao.medium.com/announcement-jackal-bug-bounty-program-31d4e03ab7e2
+  domains:
+  - api.jackaldao.medium.com
+  github_orgs: []
+  excluded: []

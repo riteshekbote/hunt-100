@@ -1,0 +1,10 @@
+target:
+  name: unloq-api
+  platform: vdp
+  disclosure: https://unloq.io/security
+  bounty: false
+  program_url: https://unloq.io/security
+  domains:
+  - api.unloq.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: contrast-security
+  platform: vdp
+  disclosure: security@contrastsecurity.com
+  bounty: false
+  program_url: https://www.contrastsecurity.com/disclosure-policy
+  domains:
+  - contrastsecurity.com
+  github_orgs: []
+  excluded: []

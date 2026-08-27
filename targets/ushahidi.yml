@@ -1,0 +1,10 @@
+target:
+  name: ushahidi
+  platform: vdp
+  disclosure: security@ushahidi.com
+  bounty: false
+  program_url: https://www.ushahidi.com/security
+  domains:
+  - ushahidi.com
+  github_orgs: []
+  excluded: []

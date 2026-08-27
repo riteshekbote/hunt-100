@@ -1,0 +1,10 @@
+target:
+  name: constant-contact
+  platform: vdp
+  disclosure: https://bugcrowd.com/constantcontact
+  bounty: false
+  program_url: https://bugcrowd.com/constantcontact
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

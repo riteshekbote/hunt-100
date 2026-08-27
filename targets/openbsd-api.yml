@@ -1,0 +1,10 @@
+target:
+  name: openbsd-api
+  platform: vdp
+  disclosure: deraadt@openbsd.org
+  bounty: false
+  program_url: https://www.openbsd.org/security.html
+  domains:
+  - api.openbsd.org
+  github_orgs: []
+  excluded: []

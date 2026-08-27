@@ -1,0 +1,10 @@
+target:
+  name: telef-nica-germany
+  platform: vdp
+  disclosure: https://bugcrowd.com/telefonicavdp
+  bounty: false
+  program_url: https://bugcrowd.com/telefonicavdp
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

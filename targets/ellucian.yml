@@ -1,0 +1,10 @@
+target:
+  name: ellucian
+  platform: vdp
+  disclosure: disclosure@ellucian.com
+  bounty: false
+  program_url: https://www.ellucian.com/responsible-disclosure
+  domains:
+  - ellucian.com
+  github_orgs: []
+  excluded: []

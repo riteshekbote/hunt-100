@@ -1,0 +1,10 @@
+target:
+  name: gavrikos-bitbucket-io-www
+  platform: vdp
+  disclosure: https://www.atlassian.com/trust/security/report-a-vulnerability
+  bounty: false
+  program_url: https://www.atlassian.com/trust/security/report-a-vulnerability
+  domains:
+  - www.atlassian.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: palantir-app
+  platform: bounty
+  disclosure: cirt@palantir.com
+  bounty: true
+  program_url: https://www.palantir.com/responsible-disclosure/
+  domains:
+  - app.palantir.com
+  github_orgs: []
+  excluded: []

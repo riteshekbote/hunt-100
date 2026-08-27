@@ -1,0 +1,10 @@
+target:
+  name: olark-api
+  platform: bounty
+  disclosure: support+security@olark.com
+  bounty: true
+  program_url: http://www.olark.com/customer/portal/articles/1237352
+  domains:
+  - api.olark.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: was-research-org-api
+  platform: vdp
+  disclosure: security@ea-foundation.org
+  bounty: false
+  program_url: https://ea-foundation.org/security-policy/
+  domains:
+  - api.ea-foundation.org
+  github_orgs: []
+  excluded: []

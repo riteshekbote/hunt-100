@@ -1,0 +1,10 @@
+target:
+  name: keming-labs-www
+  platform: vdp
+  disclosure: security@keminglabs.com
+  bounty: false
+  program_url: https://keminglabs.com/security_disclosure/
+  domains:
+  - www.keminglabs.com
+  github_orgs: []
+  excluded: []

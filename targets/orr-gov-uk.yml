@@ -1,0 +1,10 @@
+target:
+  name: orr-gov-uk
+  platform: vdp
+  disclosure: security@orr.gov.uk
+  bounty: false
+  program_url: https://www.orr.gov.uk/
+  domains:
+  - orr.gov.uk
+  github_orgs: []
+  excluded: []

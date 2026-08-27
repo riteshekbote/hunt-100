@@ -1,0 +1,10 @@
+target:
+  name: securepractice-co-api
+  platform: vdp
+  disclosure: security@securepractice.co
+  bounty: false
+  program_url: https://securepractice.co/support
+  domains:
+  - api.securepractice.co
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: new-whooing-com-app
+  platform: vdp
+  disclosure: support@whooing.com
+  bounty: false
+  program_url: https://whooing.com/info/privacy
+  domains:
+  - app.whooing.com
+  github_orgs: []
+  excluded: []

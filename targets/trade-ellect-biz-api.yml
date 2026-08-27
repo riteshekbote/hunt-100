@@ -1,0 +1,10 @@
+target:
+  name: trade-ellect-biz-api
+  platform: vdp
+  disclosure: support@kreezalid.com
+  bounty: false
+  program_url: https://www.kreezalid.com/privacy-policy
+  domains:
+  - api.kreezalid.com
+  github_orgs: []
+  excluded: []

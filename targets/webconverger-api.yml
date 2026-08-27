@@ -1,0 +1,10 @@
+target:
+  name: webconverger-api
+  platform: vdp
+  disclosure: http://webconverger.org/security/
+  bounty: false
+  program_url: http://webconverger.org/security/
+  domains:
+  - api.webconverger.org
+  github_orgs: []
+  excluded: []

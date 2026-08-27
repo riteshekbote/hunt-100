@@ -1,0 +1,10 @@
+target:
+  name: consumer-financial-protection--api
+  platform: vdp
+  disclosure: security@cfpb.gov
+  bounty: false
+  program_url: https://www.cfpb.gov/vulnerability-disclosure-policy
+  domains:
+  - api.cfpb.gov
+  github_orgs: []
+  excluded: []

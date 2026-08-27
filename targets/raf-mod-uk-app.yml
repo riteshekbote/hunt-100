@@ -1,0 +1,10 @@
+target:
+  name: raf-mod-uk-app
+  platform: vdp
+  disclosure: https://www.gov.uk/guidance/report-a-vulnerability-on-an-mod-system
+  bounty: false
+  program_url: https://www.gov.uk/guidance/report-a-vulnerability-on-an-mod-system
+  domains:
+  - app.gov.uk
+  github_orgs: []
+  excluded: []

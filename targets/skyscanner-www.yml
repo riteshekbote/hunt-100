@@ -1,0 +1,10 @@
+target:
+  name: skyscanner-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/skyscanner
+  bounty: true
+  program_url: https://bugcrowd.com/skyscanner
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

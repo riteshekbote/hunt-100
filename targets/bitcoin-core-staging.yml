@@ -1,0 +1,10 @@
+target:
+  name: bitcoin-core-staging
+  platform: vdp
+  disclosure: security@bitcoincore.org
+  bounty: false
+  program_url: https://github.com/bitcoin/bitcoin/security/policy
+  domains:
+  - staging.github.com
+  github_orgs: []
+  excluded: []

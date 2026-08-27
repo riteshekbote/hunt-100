@@ -1,0 +1,10 @@
+target:
+  name: onepagecrm-app
+  platform: vdp
+  disclosure: support@onepagecrm.com
+  bounty: false
+  program_url: https://www.onepagecrm.com/vulnerability-disclosure/
+  domains:
+  - app.onepagecrm.com
+  github_orgs: []
+  excluded: []

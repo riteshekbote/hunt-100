@@ -1,0 +1,10 @@
+target:
+  name: patron-technology-www
+  platform: vdp
+  disclosure: security@patrontechnology.com
+  bounty: false
+  program_url: https://www.patrontechnology.com/security-vulnerability-program
+  domains:
+  - www.patrontechnology.com
+  github_orgs: []
+  excluded: []

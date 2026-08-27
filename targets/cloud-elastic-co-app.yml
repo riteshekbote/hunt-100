@@ -1,0 +1,10 @@
+target:
+  name: cloud-elastic-co-app
+  platform: vdp
+  disclosure: security@elastic.co
+  bounty: false
+  program_url: https://www.elastic.co/cloud/security
+  domains:
+  - app.elastic.co
+  github_orgs: []
+  excluded: []

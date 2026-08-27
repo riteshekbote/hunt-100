@@ -1,0 +1,10 @@
+target:
+  name: jumpcloud-app
+  platform: vdp
+  disclosure: vulnerability@jumpcloud.com
+  bounty: false
+  program_url: https://jumpcloud.com/vulnerability-disclosure-policy
+  domains:
+  - app.jumpcloud.com
+  github_orgs: []
+  excluded: []

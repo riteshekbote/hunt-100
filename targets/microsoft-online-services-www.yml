@@ -1,0 +1,10 @@
+target:
+  name: microsoft-online-services-www
+  platform: vdp
+  disclosure: secure@microsoft.com
+  bounty: false
+  program_url: http://technet.microsoft.com/en-us/security/dn800983
+  domains:
+  - www.technet.microsoft.com
+  github_orgs: []
+  excluded: []

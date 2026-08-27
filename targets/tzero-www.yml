@@ -1,0 +1,10 @@
+target:
+  name: tzero-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/tzero-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/tzero-vdp
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

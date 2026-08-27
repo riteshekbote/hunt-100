@@ -1,0 +1,10 @@
+target:
+  name: thumbtack-app
+  platform: vdp
+  disclosure: security@thumbtack.com
+  bounty: false
+  program_url: https://help.thumbtack.com/article/responsible-disclosure-policy
+  domains:
+  - app.help.thumbtack.com
+  github_orgs: []
+  excluded: []

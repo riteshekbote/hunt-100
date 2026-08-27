@@ -1,0 +1,10 @@
+target:
+  name: google-co-hu-api
+  platform: vdp
+  disclosure: https://g.co/vrp
+  bounty: false
+  program_url: https://g.co/vrp
+  domains:
+  - api.g.co
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: mev-boost-api
+  platform: bounty
+  disclosure: security@flashbots.net
+  bounty: true
+  program_url: https://github.com/flashbots/mev-boost/blob/main/SECURITY.md
+  domains:
+  - api.github.com
+  github_orgs: []
+  excluded: []

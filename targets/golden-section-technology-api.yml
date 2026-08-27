@@ -1,0 +1,10 @@
+target:
+  name: golden-section-technology-api
+  platform: vdp
+  disclosure: security@gstdev.com
+  bounty: false
+  program_url: https://www.gstdev.com/responsive-disclosure
+  domains:
+  - api.gstdev.com
+  github_orgs: []
+  excluded: []

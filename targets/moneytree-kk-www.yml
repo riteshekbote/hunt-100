@@ -1,0 +1,10 @@
+target:
+  name: moneytree-kk-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/moneytreekkog
+  bounty: true
+  program_url: https://bugcrowd.com/moneytreekkog
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

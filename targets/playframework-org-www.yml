@@ -1,0 +1,10 @@
+target:
+  name: playframework-org-www
+  platform: vdp
+  disclosure: security@playframework.com
+  bounty: false
+  program_url: https://www.playframework.com/security/vulnerability
+  domains:
+  - www.playframework.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: pa-department-of-state-app
+  platform: vdp
+  disclosure: RA-STBEST@pa.gov
+  bounty: false
+  program_url: https://www.dos.pa.gov/VotingElections/BEST/Pages/Responsible-Disclosure.aspx
+  domains:
+  - app.dos.pa.gov
+  github_orgs: []
+  excluded: []

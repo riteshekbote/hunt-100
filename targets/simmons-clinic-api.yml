@@ -1,0 +1,10 @@
+target:
+  name: simmons-clinic-api
+  platform: vdp
+  disclosure: Information.Protection@simmons-clinic.com
+  bounty: false
+  program_url: https://www.simmons-clinic.com/legal-responsibledisclosure.html
+  domains:
+  - api.simmons-clinic.com
+  github_orgs: []
+  excluded: []

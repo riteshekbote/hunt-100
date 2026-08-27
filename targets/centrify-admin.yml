@@ -1,0 +1,10 @@
+target:
+  name: centrify-admin
+  platform: bounty
+  disclosure: https://bugcrowd.com/centrify
+  bounty: true
+  program_url: https://bugcrowd.com/centrify
+  domains:
+  - admin.bugcrowd.com
+  github_orgs: []
+  excluded: []

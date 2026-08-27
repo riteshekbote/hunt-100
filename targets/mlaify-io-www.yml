@@ -1,0 +1,10 @@
+target:
+  name: mlaify-io-www
+  platform: vdp
+  disclosure: security@mlaify.io
+  bounty: false
+  program_url: https://mlaify.io/security
+  domains:
+  - www.mlaify.io
+  github_orgs: []
+  excluded: []

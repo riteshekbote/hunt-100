@@ -1,0 +1,10 @@
+target:
+  name: clenergy-www
+  platform: bounty
+  disclosure: HWBugBounty@Clenergy.com
+  bounty: true
+  program_url: https://clenergy.com/de/cyber-security-policy/?lang=en
+  domains:
+  - www.clenergy.com
+  github_orgs: []
+  excluded: []

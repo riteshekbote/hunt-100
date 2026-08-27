@@ -1,0 +1,10 @@
+target:
+  name: baker-donelson-app
+  platform: vdp
+  disclosure: https://www.bakerdonelson.com/responsibledisclosure
+  bounty: false
+  program_url: https://www.bakerdonelson.com/responsibledisclosure
+  domains:
+  - app.bakerdonelson.com
+  github_orgs: []
+  excluded: []

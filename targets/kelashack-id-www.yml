@@ -1,0 +1,10 @@
+target:
+  name: kelashack-id-www
+  platform: vdp
+  disclosure: admin@kelashack.id
+  bounty: false
+  program_url: https://kelashack.id/vulnerability-disclosure-program
+  domains:
+  - www.kelashack.id
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: floordao-api
+  platform: bounty
+  disclosure: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  bounty: true
+  program_url: https://docs.floor.xyz/v/en/protocol/bug-bounty
+  domains:
+  - api.docs.floor.xyz
+  github_orgs: []
+  excluded: []

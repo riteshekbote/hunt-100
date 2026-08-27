@@ -1,0 +1,10 @@
+target:
+  name: apparmor-api
+  platform: vdp
+  disclosure: support@apparmor.com
+  bounty: false
+  program_url: https://www.apparmor.com/About/Security/Disclosure/
+  domains:
+  - api.apparmor.com
+  github_orgs: []
+  excluded: []

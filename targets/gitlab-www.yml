@@ -1,0 +1,10 @@
+target:
+  name: gitlab-www
+  platform: vdp
+  disclosure: security@gitlab.com
+  bounty: false
+  program_url: https://about.gitlab.com/security/disclosure/
+  domains:
+  - www.about.gitlab.com
+  github_orgs: []
+  excluded: []

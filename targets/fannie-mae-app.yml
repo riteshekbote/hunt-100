@@ -1,0 +1,10 @@
+target:
+  name: fannie-mae-app
+  platform: vdp
+  disclosure: https://www.fanniemae.com/about-us/reporting-technology-vulnerability
+  bounty: false
+  program_url: https://www.fanniemae.com/about-us/reporting-technology-vulnerability
+  domains:
+  - app.fanniemae.com
+  github_orgs: []
+  excluded: []

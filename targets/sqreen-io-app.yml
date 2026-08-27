@@ -1,0 +1,10 @@
+target:
+  name: sqreen-io-app
+  platform: vdp
+  disclosure: security@sqreen.com
+  bounty: false
+  program_url: https://www.sqreen.com/security
+  domains:
+  - app.sqreen.com
+  github_orgs: []
+  excluded: []

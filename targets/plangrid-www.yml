@@ -1,0 +1,10 @@
+target:
+  name: plangrid-www
+  platform: vdp
+  disclosure: security-disclosure@plangrid.com
+  bounty: false
+  program_url: https://www.plangrid.com/security/
+  domains:
+  - www.plangrid.com
+  github_orgs: []
+  excluded: []

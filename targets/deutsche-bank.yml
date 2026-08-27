@@ -1,0 +1,10 @@
+target:
+  name: deutsche-bank
+  platform: vdp
+  disclosure: https://www.db.com/legal-resources/responsible-disclosure-process
+  bounty: false
+  program_url: https://www.db.com/legal-resources/responsible-disclosure-process
+  domains:
+  - db.com
+  github_orgs: []
+  excluded: []

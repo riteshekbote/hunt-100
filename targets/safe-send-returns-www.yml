@@ -1,0 +1,10 @@
+target:
+  name: safe-send-returns-www
+  platform: vdp
+  disclosure: support@cPaperless.com
+  bounty: false
+  program_url: https://safesendreturns.zendesk.com/hc/en-us/articles/360049940054-Information-Security-Overview
+  domains:
+  - www.safesendreturns.zendesk.com
+  github_orgs: []
+  excluded: []

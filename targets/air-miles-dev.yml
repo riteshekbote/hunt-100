@@ -1,0 +1,10 @@
+target:
+  name: air-miles-dev
+  platform: bounty
+  disclosure: security.privacy@airmiles.nl
+  bounty: true
+  program_url: https://www.airmiles.nl/responsible-disclosure
+  domains:
+  - dev.airmiles.nl
+  github_orgs: []
+  excluded: []

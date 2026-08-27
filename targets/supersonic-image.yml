@@ -1,0 +1,10 @@
+target:
+  name: supersonic-image
+  platform: vdp
+  disclosure: security@supersonicimagine.com
+  bounty: false
+  program_url: https://www.supersonicimagine.com/security
+  domains:
+  - supersonicimagine.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: asterisk-app
+  platform: bounty
+  disclosure: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  bounty: true
+  program_url: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  domains:
+  - app.wiki.asterisk.org
+  github_orgs: []
+  excluded: []

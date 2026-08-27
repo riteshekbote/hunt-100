@@ -1,0 +1,10 @@
+target:
+  name: nbx
+  platform: vdp
+  disclosure: disclosure@nbx.com
+  bounty: false
+  program_url: https://nbxsupport.zendesk.com/hc/en-us/articles/360044264592-NBX-Responsible-Disclosure-Policy
+  domains:
+  - nbxsupport.zendesk.com
+  github_orgs: []
+  excluded: []

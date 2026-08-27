@@ -1,0 +1,10 @@
+target:
+  name: favordelivery-com-www
+  platform: vdp
+  disclosure: security@favordelivery.com
+  bounty: false
+  program_url: https://favordelivery.com/security
+  domains:
+  - www.favordelivery.com
+  github_orgs: []
+  excluded: []

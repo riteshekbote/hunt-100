@@ -1,0 +1,10 @@
+target:
+  name: tryhackme-com-app
+  platform: vdp
+  disclosure: hello@tryhackme.com
+  bounty: false
+  program_url: https://tryhackme.com/terms
+  domains:
+  - app.tryhackme.com
+  github_orgs: []
+  excluded: []

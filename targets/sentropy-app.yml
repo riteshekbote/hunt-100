@@ -1,0 +1,10 @@
+target:
+  name: sentropy-app
+  platform: vdp
+  disclosure: security@sentropy.com
+  bounty: false
+  program_url: https://www.sentropy.com/disclosure
+  domains:
+  - app.sentropy.com
+  github_orgs: []
+  excluded: []

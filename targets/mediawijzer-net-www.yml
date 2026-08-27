@@ -1,0 +1,10 @@
+target:
+  name: mediawijzer-net-www
+  platform: vdp
+  disclosure: info@mediawijzer.net
+  bounty: false
+  program_url: https://www.mediaukkiedagen.nl/responsibledisclosure-en/
+  domains:
+  - www.mediaukkiedagen.nl
+  github_orgs: []
+  excluded: []

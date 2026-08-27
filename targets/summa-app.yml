@@ -1,0 +1,10 @@
+target:
+  name: summa-app
+  platform: vdp
+  disclosure: security@summa.eu
+  bounty: false
+  program_url: https://www.summa.eu/nl/responsible-disclosure
+  domains:
+  - app.summa.eu
+  github_orgs: []
+  excluded: []

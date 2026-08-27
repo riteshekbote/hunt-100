@@ -1,0 +1,10 @@
+target:
+  name: box-dev
+  platform: vdp
+  disclosure: security-reports@box.com
+  bounty: false
+  program_url: https://www.box.com/about-us/security/
+  domains:
+  - dev.box.com
+  github_orgs: []
+  excluded: []

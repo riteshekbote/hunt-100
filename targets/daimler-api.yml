@@ -1,0 +1,10 @@
+target:
+  name: daimler-api
+  platform: vdp
+  disclosure: security@daimler.com
+  bounty: false
+  program_url: https://www.daimler.com/whitehat/
+  domains:
+  - api.daimler.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: clean-email-dev
+  platform: vdp
+  disclosure: support@clean.email
+  bounty: false
+  program_url: https://clean.email/vdp
+  domains:
+  - dev.clean.email
+  github_orgs: []
+  excluded: []

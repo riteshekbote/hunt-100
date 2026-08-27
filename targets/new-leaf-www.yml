@@ -1,0 +1,10 @@
+target:
+  name: new-leaf-www
+  platform: vdp
+  disclosure: itsecurity@newseasonsmarket.com
+  bounty: false
+  program_url: https://www.newleaf.com/responsible-disclosure-policy/
+  domains:
+  - www.newleaf.com
+  github_orgs: []
+  excluded: []

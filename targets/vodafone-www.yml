@@ -1,0 +1,10 @@
+target:
+  name: vodafone-www
+  platform: vdp
+  disclosure: https://www.vodafone.nl/over-deze-website/privacy-en-disclaimer/report-security-leak.shtml
+  bounty: false
+  program_url: https://www.vodafone.nl/over-deze-website/privacy-en-disclaimer/report-security-leak.shtml
+  domains:
+  - www.vodafone.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: avira-app
+  platform: bounty
+  disclosure: vulnerabilities@avira.com
+  bounty: true
+  program_url: https://www.avira.com/en/support-vulnerability
+  domains:
+  - app.avira.com
+  github_orgs: []
+  excluded: []

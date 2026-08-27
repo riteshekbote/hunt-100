@@ -1,0 +1,10 @@
+target:
+  name: bugcrowd-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/bugcrowd
+  bounty: true
+  program_url: https://bugcrowd.com/bugcrowd
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

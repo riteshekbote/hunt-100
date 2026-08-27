@@ -1,0 +1,10 @@
+target:
+  name: dominion-voting-systems
+  platform: vdp
+  disclosure: security@dominionvoting.com
+  bounty: false
+  program_url: https://www.dominionvoting.com/coordinated-vulnerability-disclosure-policy/
+  domains:
+  - dominionvoting.com
+  github_orgs: []
+  excluded: []

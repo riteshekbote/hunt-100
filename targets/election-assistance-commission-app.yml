@@ -1,0 +1,10 @@
+target:
+  name: election-assistance-commission-app
+  platform: vdp
+  disclosure: security@eac.gov
+  bounty: false
+  program_url: https://www.eac.gov/vulnerability-disclosure-policy
+  domains:
+  - app.eac.gov
+  github_orgs: []
+  excluded: []

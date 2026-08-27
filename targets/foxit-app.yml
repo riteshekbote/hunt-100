@@ -1,0 +1,10 @@
+target:
+  name: foxit-app
+  platform: vdp
+  disclosure: security-ml@foxitsoftware.com
+  bounty: false
+  program_url: https://www.foxitsoftware.com/support/report-security-vulnerabilities.html
+  domains:
+  - app.foxitsoftware.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: twintech-solutions-api
+  platform: vdp
+  disclosure: security@twintechsolutions.in
+  bounty: false
+  program_url: https://twintechsolutions.in/security-research/vulnerability-disclosure/
+  domains:
+  - api.twintechsolutions.in
+  github_orgs: []
+  excluded: []

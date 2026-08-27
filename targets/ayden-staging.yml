@@ -1,0 +1,10 @@
+target:
+  name: ayden-staging
+  platform: vdp
+  disclosure: https://www.adyen.help/hc/en-us/articles/115001187330-How-do-I-report-a-possible-security-issue-to-Adyen
+  bounty: false
+  program_url: https://www.adyen.help/hc/en-us/articles/115001187330-How-do-I-report-a-possible-security-issue-to-Adyen
+  domains:
+  - staging.adyen.help
+  github_orgs: []
+  excluded: []

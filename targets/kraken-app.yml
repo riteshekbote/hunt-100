@@ -1,0 +1,10 @@
+target:
+  name: kraken-app
+  platform: bounty
+  disclosure: bugbounty@kraken.com
+  bounty: true
+  program_url: https://www.kraken.com/security/bug-bounty
+  domains:
+  - app.kraken.com
+  github_orgs: []
+  excluded: []

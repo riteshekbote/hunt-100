@@ -1,0 +1,10 @@
+target:
+  name: national-capital-planning-comm-api
+  platform: vdp
+  disclosure: https://www.ncpc.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.ncpc.gov/vulnerability-disclosure-policy
+  domains:
+  - api.ncpc.gov
+  github_orgs: []
+  excluded: []

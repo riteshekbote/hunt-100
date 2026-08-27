@@ -1,0 +1,10 @@
+target:
+  name: poli-app
+  platform: vdp
+  disclosure: security@polipayments.com
+  bounty: false
+  program_url: https://www.polipayments.com/VulnerabilityDisclosurePolicy
+  domains:
+  - app.polipayments.com
+  github_orgs: []
+  excluded: []

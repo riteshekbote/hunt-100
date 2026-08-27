@@ -1,0 +1,10 @@
+target:
+  name: paypal-app
+  platform: bounty
+  disclosure: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  bounty: true
+  program_url: https://www.paypal.com/us/webapps/mpp/security-tools/reporting-security-issues
+  domains:
+  - app.paypal.com
+  github_orgs: []
+  excluded: []

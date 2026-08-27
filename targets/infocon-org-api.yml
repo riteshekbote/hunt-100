@@ -1,0 +1,10 @@
+target:
+  name: infocon-org-api
+  platform: vdp
+  disclosure: info@defcon.org
+  bounty: false
+  program_url: https://www.defcon.org/html/links/dc-policy.html
+  domains:
+  - api.defcon.org
+  github_orgs: []
+  excluded: []

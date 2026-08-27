@@ -1,0 +1,10 @@
+target:
+  name: elive-api
+  platform: vdp
+  disclosure: security@elvie.com
+  bounty: false
+  program_url: https://www.elvie.com/security-research-and-responsible-disclosure
+  domains:
+  - api.elvie.com
+  github_orgs: []
+  excluded: []

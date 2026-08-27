@@ -1,0 +1,10 @@
+target:
+  name: visier-com-api
+  platform: vdp
+  disclosure: security@visier.com
+  bounty: false
+  program_url: https://trust.visier.com/responsible-disclosure/
+  domains:
+  - api.trust.visier.com
+  github_orgs: []
+  excluded: []

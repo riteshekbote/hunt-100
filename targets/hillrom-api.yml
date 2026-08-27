@@ -1,0 +1,10 @@
+target:
+  name: hillrom-api
+  platform: vdp
+  disclosure: productsecurity@hillrom.com
+  bounty: false
+  program_url: https://www.hillrom.com/en/responsible-disclosures/
+  domains:
+  - api.hillrom.com
+  github_orgs: []
+  excluded: []

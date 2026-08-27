@@ -1,0 +1,10 @@
+target:
+  name: outpost-24-api
+  platform: vdp
+  disclosure: security@outpost24.com
+  bounty: false
+  program_url: https://outpost24.com/policies/responsible-disclosure
+  domains:
+  - api.outpost24.com
+  github_orgs: []
+  excluded: []

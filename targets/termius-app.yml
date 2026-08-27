@@ -1,0 +1,10 @@
+target:
+  name: termius-app
+  platform: vdp
+  disclosure: security@termius.com
+  bounty: false
+  program_url: https://termius.com/responsible-disclosure
+  domains:
+  - app.termius.com
+  github_orgs: []
+  excluded: []

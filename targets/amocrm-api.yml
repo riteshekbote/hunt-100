@@ -1,0 +1,10 @@
+target:
+  name: amocrm-api
+  platform: vdp
+  disclosure: security@team.amocrm.com
+  bounty: false
+  program_url: https://www.amocrm.com/vulnerability-disclosure-program/
+  domains:
+  - api.amocrm.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: mailtag-app
+  platform: vdp
+  disclosure: Hi@MailTag.io
+  bounty: false
+  program_url: https://www.mailtag.io/disclosure-policy
+  domains:
+  - app.mailtag.io
+  github_orgs: []
+  excluded: []

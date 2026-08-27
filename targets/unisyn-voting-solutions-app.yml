@@ -1,0 +1,10 @@
+target:
+  name: unisyn-voting-solutions-app
+  platform: vdp
+  disclosure: security@unisynvoting.com
+  bounty: false
+  program_url: https://unisynvoting.com/wp-content/uploads/2020/08/Unisyn-Vulnerability-Disclosure_Policy_V-1.0_8.14.2020.pdf
+  domains:
+  - app.unisynvoting.com
+  github_orgs: []
+  excluded: []

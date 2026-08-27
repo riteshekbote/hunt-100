@@ -1,0 +1,10 @@
+target:
+  name: bugify-api
+  platform: vdp
+  disclosure: security@bugify.com
+  bounty: false
+  program_url: https://bugify.com/security
+  domains:
+  - api.bugify.com
+  github_orgs: []
+  excluded: []

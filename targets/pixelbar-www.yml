@@ -1,0 +1,10 @@
+target:
+  name: pixelbar-www
+  platform: vdp
+  disclosure: cert@pixelbar.nl
+  bounty: false
+  program_url: https://pixelbar.nl/responsibledisclosure/
+  domains:
+  - www.pixelbar.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: wp-engine-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/wpengine
+  bounty: false
+  program_url: https://bugcrowd.com/wpengine
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

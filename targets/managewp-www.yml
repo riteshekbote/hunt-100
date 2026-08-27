@@ -1,0 +1,10 @@
+target:
+  name: managewp-www
+  platform: bounty
+  disclosure: https://managewp.com/white-hat-reward
+  bounty: true
+  program_url: https://managewp.com/white-hat-reward
+  domains:
+  - www.managewp.com
+  github_orgs: []
+  excluded: []

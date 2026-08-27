@@ -1,0 +1,10 @@
+target:
+  name: boozt-fashion-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/boozt-og
+  bounty: true
+  program_url: https://bugcrowd.com/boozt-og
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

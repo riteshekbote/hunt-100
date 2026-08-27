@@ -1,0 +1,10 @@
+target:
+  name: skylight-digital-app
+  platform: vdp
+  disclosure: hello@skylight.digital
+  bounty: false
+  program_url: https://skylight.digital/company/policies/vulnerability-disclosure/
+  domains:
+  - app.skylight.digital
+  github_orgs: []
+  excluded: []

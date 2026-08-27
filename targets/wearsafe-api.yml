@@ -1,0 +1,10 @@
+target:
+  name: wearsafe-api
+  platform: vdp
+  disclosure: security@wearsafe.com
+  bounty: false
+  program_url: https://wearsafe.com/wearsafe-vulnerability-disclosure-policy/
+  domains:
+  - api.wearsafe.com
+  github_orgs: []
+  excluded: []

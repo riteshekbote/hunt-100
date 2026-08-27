@@ -1,0 +1,10 @@
+target:
+  name: chainrift-dev
+  platform: bounty
+  disclosure: support@chainrift.com
+  bounty: true
+  program_url: https://medium.com/chainrift/chainrift-launches-bug-bounty-program-6255eb2d518d
+  domains:
+  - dev.medium.com
+  github_orgs: []
+  excluded: []

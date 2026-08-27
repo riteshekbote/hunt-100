@@ -1,0 +1,10 @@
+target:
+  name: wordpress-app
+  platform: vdp
+  disclosure: https://wordpress.org/about/security/
+  bounty: false
+  program_url: https://wordpress.org/about/security/
+  domains:
+  - app.wordpress.org
+  github_orgs: []
+  excluded: []

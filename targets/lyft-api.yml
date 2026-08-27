@@ -1,0 +1,10 @@
+target:
+  name: lyft-api
+  platform: bounty
+  disclosure: https://www.lyft.com/security
+  bounty: true
+  program_url: https://www.lyft.com/security
+  domains:
+  - api.lyft.com
+  github_orgs: []
+  excluded: []

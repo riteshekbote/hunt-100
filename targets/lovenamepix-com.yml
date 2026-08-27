@@ -1,0 +1,10 @@
+target:
+  name: lovenamepix-com
+  platform: vdp
+  disclosure: contact@lovenamepix.com
+  bounty: false
+  program_url: https://lovenamepix.com/privacy.php
+  domains:
+  - lovenamepix.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: kiteworks-app
+  platform: bounty
+  disclosure: https://security.kiteworks.com
+  bounty: true
+  program_url: https://security.kiteworks.com
+  domains:
+  - app.security.kiteworks.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: department-of-health-and-human-api
+  platform: vdp
+  disclosure: https://www.hhs.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.hhs.gov/vulnerability-disclosure-policy
+  domains:
+  - api.hhs.gov
+  github_orgs: []
+  excluded: []

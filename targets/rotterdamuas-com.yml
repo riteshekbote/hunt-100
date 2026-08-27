@@ -1,0 +1,10 @@
+target:
+  name: rotterdamuas-com
+  platform: vdp
+  disclosure: cert@hr.nl
+  bounty: false
+  program_url: https://rotterdamuas.com/security/
+  domains:
+  - rotterdamuas.com
+  github_orgs: []
+  excluded: []

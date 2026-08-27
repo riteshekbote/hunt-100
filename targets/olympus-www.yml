@@ -1,0 +1,10 @@
+target:
+  name: olympus-www
+  platform: vdp
+  disclosure: productsecurity@olympus.com
+  bounty: false
+  program_url: https://medical.olympusamerica.com/customer-resources/product-security
+  domains:
+  - www.medical.olympusamerica.com
+  github_orgs: []
+  excluded: []

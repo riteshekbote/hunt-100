@@ -1,0 +1,10 @@
+target:
+  name: symantec
+  platform: vdp
+  disclosure: https://www.symantec.com/security-center/vulnerability-management
+  bounty: false
+  program_url: https://www.symantec.com/security-center/vulnerability-management
+  domains:
+  - symantec.com
+  github_orgs: []
+  excluded: []

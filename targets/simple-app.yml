@@ -1,0 +1,10 @@
+target:
+  name: simple-app
+  platform: bounty
+  disclosure: security@simple.com
+  bounty: true
+  program_url: https://www.simple.com/policies/security
+  domains:
+  - app.simple.com
+  github_orgs: []
+  excluded: []

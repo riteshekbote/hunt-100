@@ -1,0 +1,10 @@
+target:
+  name: deps-api
+  platform: vdp
+  disclosure: security@deps.co
+  bounty: false
+  program_url: https://www.deps.co/security/
+  domains:
+  - api.deps.co
+  github_orgs: []
+  excluded: []

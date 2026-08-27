@@ -1,0 +1,10 @@
+target:
+  name: splashtop
+  platform: vdp
+  disclosure: https://www.splashtop.com/responsible-disclosure
+  bounty: false
+  program_url: https://www.splashtop.com/responsible-disclosure
+  domains:
+  - splashtop.com
+  github_orgs: []
+  excluded: []

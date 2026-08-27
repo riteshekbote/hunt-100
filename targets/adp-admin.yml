@@ -1,0 +1,10 @@
+target:
+  name: adp-admin
+  platform: vdp
+  disclosure: vulnerabilityreporting@ADP.com
+  bounty: false
+  program_url: https://www.adp.com/about-adp/data-security.aspx
+  domains:
+  - admin.adp.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: fountain-www
+  platform: vdp
+  disclosure: security@fountain.com
+  bounty: false
+  program_url: https://www.fountain.com/security
+  domains:
+  - www.fountain.com
+  github_orgs: []
+  excluded: []

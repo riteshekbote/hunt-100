@@ -1,0 +1,10 @@
+target:
+  name: getbase-app
+  platform: vdp
+  disclosure: https://bugbounty.getbase.com/
+  bounty: false
+  program_url: https://bugbounty.getbase.com/
+  domains:
+  - app.bugbounty.getbase.com
+  github_orgs: []
+  excluded: []

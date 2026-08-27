@@ -1,0 +1,10 @@
+target:
+  name: audere-staging
+  platform: vdp
+  disclosure: security@auderenow.org
+  bounty: false
+  program_url: https://auderenow.org/security
+  domains:
+  - staging.auderenow.org
+  github_orgs: []
+  excluded: []

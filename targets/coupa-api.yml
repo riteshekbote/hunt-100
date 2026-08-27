@@ -1,0 +1,10 @@
+target:
+  name: coupa-api
+  platform: vdp
+  disclosure: security@coupa.com
+  bounty: false
+  program_url: https://success.coupa.com/Trust/Security_Policies/02_Vulnerability_Reporting_Policy
+  domains:
+  - api.success.coupa.com
+  github_orgs: []
+  excluded: []

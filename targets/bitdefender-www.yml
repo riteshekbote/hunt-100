@@ -1,0 +1,10 @@
+target:
+  name: bitdefender-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/bitdefender
+  bounty: true
+  program_url: https://bugcrowd.com/bitdefender
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

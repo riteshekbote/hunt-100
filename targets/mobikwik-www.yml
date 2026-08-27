@@ -1,0 +1,10 @@
+target:
+  name: mobikwik-www
+  platform: vdp
+  disclosure: infosec@mobikwik.com
+  bounty: false
+  program_url: https://www.mobikwik.com/bug-bounty
+  domains:
+  - www.mobikwik.com
+  github_orgs: []
+  excluded: []

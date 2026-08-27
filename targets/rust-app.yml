@@ -1,0 +1,10 @@
+target:
+  name: rust-app
+  platform: vdp
+  disclosure: security@rust-lang.org
+  bounty: false
+  program_url: https://www.rust-lang.org/policies/security
+  domains:
+  - app.rust-lang.org
+  github_orgs: []
+  excluded: []

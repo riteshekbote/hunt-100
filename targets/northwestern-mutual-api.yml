@@ -1,0 +1,10 @@
+target:
+  name: northwestern-mutual-api
+  platform: vdp
+  disclosure: security@northwesternmutual.com
+  bounty: false
+  program_url: https://www.northwesternmutual.com/responsible-disclosure-policy/
+  domains:
+  - api.northwesternmutual.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: azimo-admin
+  platform: bounty
+  disclosure: security@azimo.com
+  bounty: true
+  program_url: https://azimo.com/en/lp/responsible-disclosure
+  domains:
+  - admin.azimo.com
+  github_orgs: []
+  excluded: []

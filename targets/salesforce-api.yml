@@ -1,0 +1,10 @@
+target:
+  name: salesforce-api
+  platform: vdp
+  disclosure: security@salesforce.com
+  bounty: false
+  program_url: https://trust.salesforce.com/en/security/responsible-disclosure-policy/
+  domains:
+  - api.trust.salesforce.com
+  github_orgs: []
+  excluded: []

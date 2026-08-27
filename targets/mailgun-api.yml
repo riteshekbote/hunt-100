@@ -1,0 +1,10 @@
+target:
+  name: mailgun-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/mailgun
+  bounty: true
+  program_url: https://bugcrowd.com/mailgun
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: asana-admin
+  platform: bounty
+  disclosure: security@asana.com
+  bounty: true
+  program_url: https://asana.com/bounty
+  domains:
+  - admin.asana.com
+  github_orgs: []
+  excluded: []

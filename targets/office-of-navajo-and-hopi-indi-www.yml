@@ -1,0 +1,10 @@
+target:
+  name: office-of-navajo-and-hopi-indi-www
+  platform: vdp
+  disclosure: security@onhir.gov
+  bounty: false
+  program_url: https://www.onhir.gov/vulnerability-disclosure-policy
+  domains:
+  - www.onhir.gov
+  github_orgs: []
+  excluded: []

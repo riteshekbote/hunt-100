@@ -1,0 +1,10 @@
+target:
+  name: udemy-api
+  platform: bounty
+  disclosure: https://support.udemy.com/hc/en-us/articles/229232627-Report-a-Security-Vulnerability
+  bounty: true
+  program_url: https://support.udemy.com/hc/en-us/articles/229232627-Report-a-Security-Vulnerability
+  domains:
+  - api.support.udemy.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: stackpath
+  platform: vdp
+  disclosure: https://bugcrowd.com/stackpath
+  bounty: false
+  program_url: https://bugcrowd.com/stackpath
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

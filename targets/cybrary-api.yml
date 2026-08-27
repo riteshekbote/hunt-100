@@ -1,0 +1,10 @@
+target:
+  name: cybrary-api
+  platform: vdp
+  disclosure: report@cybrary.it
+  bounty: false
+  program_url: https://www.cybrary.it/info/responsible-disclosure-program/
+  domains:
+  - api.cybrary.it
+  github_orgs: []
+  excluded: []

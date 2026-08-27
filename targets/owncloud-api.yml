@@ -1,0 +1,10 @@
+target:
+  name: owncloud-api
+  platform: bounty
+  disclosure: https://security.owncloud.com
+  bounty: true
+  program_url: https://security.owncloud.com
+  domains:
+  - api.security.owncloud.com
+  github_orgs: []
+  excluded: []

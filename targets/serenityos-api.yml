@@ -1,0 +1,10 @@
+target:
+  name: serenityos-api
+  platform: bounty
+  disclosure: kling@serenityos.org
+  bounty: true
+  program_url: https://www.serenityos.org/bounty/
+  domains:
+  - api.serenityos.org
+  github_orgs: []
+  excluded: []

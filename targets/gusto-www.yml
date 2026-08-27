@@ -1,0 +1,10 @@
+target:
+  name: gusto-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/gusto
+  bounty: true
+  program_url: https://bugcrowd.com/gusto
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

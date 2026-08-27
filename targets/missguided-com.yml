@@ -1,0 +1,10 @@
+target:
+  name: missguided-com
+  platform: vdp
+  disclosure: cybersecurity@missguided.com
+  bounty: false
+  program_url: https://www.missguided.co.uk/responsible-disclosure
+  domains:
+  - missguided.co.uk
+  github_orgs: []
+  excluded: []

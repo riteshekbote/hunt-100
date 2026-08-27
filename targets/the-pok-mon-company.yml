@@ -1,0 +1,10 @@
+target:
+  name: the-pok-mon-company
+  platform: vdp
+  disclosure: https://www.pokemon.com/us/vulnerability-disclosure-program/
+  bounty: false
+  program_url: https://www.pokemon.com/us/vulnerability-disclosure-program/
+  domains:
+  - pokemon.com
+  github_orgs: []
+  excluded: []

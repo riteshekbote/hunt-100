@@ -1,0 +1,10 @@
+target:
+  name: opentext-api
+  platform: vdp
+  disclosure: http://opentext.com/2/global/company/security-acknowledgements.htm
+  bounty: false
+  program_url: http://opentext.com/2/global/company/security-acknowledgements.htm
+  domains:
+  - api.opentext.com
+  github_orgs: []
+  excluded: []

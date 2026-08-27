@@ -1,0 +1,10 @@
+target:
+  name: terra
+  platform: vdp
+  disclosure: https://www.terra.money/bugcrowd
+  bounty: false
+  program_url: https://www.terra.money/bugcrowd
+  domains:
+  - terra.money
+  github_orgs: []
+  excluded: []

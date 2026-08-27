@@ -1,0 +1,10 @@
+target:
+  name: pension-benefit-guaranty-corpo-api
+  platform: vdp
+  disclosure: info-uscert@pbgc.gov
+  bounty: false
+  program_url: https://www.pbgc.gov/vulnerability-disclosure-policy
+  domains:
+  - api.pbgc.gov
+  github_orgs: []
+  excluded: []

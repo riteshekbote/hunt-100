@@ -1,0 +1,10 @@
+target:
+  name: tencent-www
+  platform: bounty
+  disclosure: http://en.security.tencent.com/
+  bounty: true
+  program_url: http://en.security.tencent.com/
+  domains:
+  - www.en.security.tencent.com
+  github_orgs: []
+  excluded: []

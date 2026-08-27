@@ -1,0 +1,10 @@
+target:
+  name: staked-api
+  platform: bounty
+  disclosure: https://staked.us/bug-bounty/
+  bounty: true
+  program_url: https://staked.us/bug-bounty/
+  domains:
+  - api.staked.us
+  github_orgs: []
+  excluded: []

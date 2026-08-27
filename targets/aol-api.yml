@@ -1,0 +1,10 @@
+target:
+  name: aol-api
+  platform: vdp
+  disclosure: secvuln@teamaol.com
+  bounty: false
+  program_url: https://contact.security.aol.com/
+  domains:
+  - api.contact.security.aol.com
+  github_orgs: []
+  excluded: []

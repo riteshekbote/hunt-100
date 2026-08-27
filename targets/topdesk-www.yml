@@ -1,0 +1,10 @@
+target:
+  name: topdesk-www
+  platform: vdp
+  disclosure: security@topdesk.com
+  bounty: false
+  program_url: https://www.topdesk.com/us/responsible-disclosure/
+  domains:
+  - www.topdesk.com
+  github_orgs: []
+  excluded: []

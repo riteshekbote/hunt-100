@@ -1,0 +1,10 @@
+target:
+  name: dji-app
+  platform: bounty
+  disclosure: https://security.dji.com/policy?lang=en_US
+  bounty: true
+  program_url: https://security.dji.com/policy?lang=en_US
+  domains:
+  - app.security.dji.com
+  github_orgs: []
+  excluded: []

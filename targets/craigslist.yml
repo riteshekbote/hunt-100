@@ -1,0 +1,10 @@
+target:
+  name: craigslist
+  platform: vdp
+  disclosure: https://www.craigslist.org/contact?step=form&reqType=security
+  bounty: false
+  program_url: https://www.craigslist.org/contact?step=form&reqType=security
+  domains:
+  - craigslist.org
+  github_orgs: []
+  excluded: []

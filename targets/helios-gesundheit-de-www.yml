@@ -1,0 +1,10 @@
+target:
+  name: helios-gesundheit-de-www
+  platform: vdp
+  disclosure: security@helios-gesundheit.de
+  bounty: false
+  program_url: www.helios-gesundheit.de/bugbounty.html
+  domains:
+  - www.helios-gesundheit.de
+  github_orgs: []
+  excluded: []

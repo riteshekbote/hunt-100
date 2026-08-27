@@ -1,0 +1,10 @@
+target:
+  name: group-jumia-com-app
+  platform: vdp
+  disclosure: security@jumia.com
+  bounty: false
+  program_url: https://group.jumia.com/security/
+  domains:
+  - app.group.jumia.com
+  github_orgs: []
+  excluded: []

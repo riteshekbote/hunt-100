@@ -1,0 +1,10 @@
+target:
+  name: aol-dev
+  platform: vdp
+  disclosure: secvuln@teamaol.com
+  bounty: false
+  program_url: https://contact.security.aol.com/
+  domains:
+  - dev.contact.security.aol.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: insulet-www
+  platform: vdp
+  disclosure: https://www.myomnipod.com/product-security
+  bounty: false
+  program_url: https://www.myomnipod.com/product-security
+  domains:
+  - www.myomnipod.com
+  github_orgs: []
+  excluded: []

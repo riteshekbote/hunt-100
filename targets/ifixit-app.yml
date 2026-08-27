@@ -1,0 +1,10 @@
+target:
+  name: ifixit-app
+  platform: vdp
+  disclosure: security@ifixit.com
+  bounty: false
+  program_url: https://www.ifixit.com/Info/Responsible_Disclosure
+  domains:
+  - app.ifixit.com
+  github_orgs: []
+  excluded: []

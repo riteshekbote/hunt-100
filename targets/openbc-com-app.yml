@@ -1,0 +1,10 @@
+target:
+  name: openbc-com-app
+  platform: vdp
+  disclosure: security-reports@new-work.se
+  bounty: false
+  program_url: https://www.xing.com/rfc-2350.txt
+  domains:
+  - app.xing.com
+  github_orgs: []
+  excluded: []

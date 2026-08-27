@@ -1,0 +1,10 @@
+target:
+  name: plugin-alliance-api
+  platform: vdp
+  disclosure: https://www.plugin-alliance.com/en/security.html
+  bounty: false
+  program_url: https://www.plugin-alliance.com/en/security.html
+  domains:
+  - api.plugin-alliance.com
+  github_orgs: []
+  excluded: []

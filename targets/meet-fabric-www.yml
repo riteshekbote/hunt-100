@@ -1,0 +1,10 @@
+target:
+  name: meet-fabric-www
+  platform: vdp
+  disclosure: security@meetfabric.com
+  bounty: false
+  program_url: https://meetfabric.com/legal/security-policy
+  domains:
+  - www.meetfabric.com
+  github_orgs: []
+  excluded: []

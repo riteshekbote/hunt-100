@@ -1,0 +1,10 @@
+target:
+  name: algorand-dev
+  platform: bounty
+  disclosure: https://bugcrowd.com/algorand
+  bounty: true
+  program_url: https://bugcrowd.com/algorand
+  domains:
+  - dev.bugcrowd.com
+  github_orgs: []
+  excluded: []

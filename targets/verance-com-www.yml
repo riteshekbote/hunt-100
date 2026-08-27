@@ -1,0 +1,10 @@
+target:
+  name: verance-com-www
+  platform: vdp
+  disclosure: vulnerabilities@verance.com
+  bounty: false
+  program_url: https://www.verance.com/privacy/
+  domains:
+  - www.verance.com
+  github_orgs: []
+  excluded: []

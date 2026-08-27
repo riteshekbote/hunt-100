@@ -1,0 +1,10 @@
+target:
+  name: state-farm-api
+  platform: vdp
+  disclosure: https://www.statefarm.com/customer-care/privacy-security/security/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.statefarm.com/customer-care/privacy-security/security/vulnerability-disclosure-policy
+  domains:
+  - api.statefarm.com
+  github_orgs: []
+  excluded: []

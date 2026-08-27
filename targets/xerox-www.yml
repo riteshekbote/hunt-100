@@ -1,0 +1,10 @@
+target:
+  name: xerox-www
+  platform: vdp
+  disclosure: https://www.xerox.com/perl-bin/formeng.pl?form=product_security_information_request_7285
+  bounty: false
+  program_url: https://www.xerox.com/perl-bin/formeng.pl?form=product_security_information_request_7285
+  domains:
+  - www.xerox.com
+  github_orgs: []
+  excluded: []

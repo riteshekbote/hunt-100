@@ -1,0 +1,10 @@
+target:
+  name: ipaidthat-api
+  platform: vdp
+  disclosure: security@ipaidthat.io
+  bounty: false
+  program_url: https://ipaidthat.io/en/faq/safety/vulnerability-disclosure-program/
+  domains:
+  - api.ipaidthat.io
+  github_orgs: []
+  excluded: []

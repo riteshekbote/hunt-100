@@ -1,0 +1,10 @@
+target:
+  name: bitski-www
+  platform: bounty
+  disclosure: https://www.bitski.com/bounty/
+  bounty: true
+  program_url: https://www.bitski.com/bounty/
+  domains:
+  - www.bitski.com
+  github_orgs: []
+  excluded: []

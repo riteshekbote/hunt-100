@@ -1,0 +1,10 @@
+target:
+  name: nwb-bank-www
+  platform: bounty
+  disclosure: info@nwbbank.com
+  bounty: true
+  program_url: https://www.nwbbank.com/en/responsible-disclosure
+  domains:
+  - www.nwbbank.com
+  github_orgs: []
+  excluded: []

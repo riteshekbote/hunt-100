@@ -1,0 +1,10 @@
+target:
+  name: port-of-antwerp-www
+  platform: vdp
+  disclosure: https://www.portofantwerp.com/en/responsible-disclosure
+  bounty: false
+  program_url: https://www.portofantwerp.com/en/responsible-disclosure
+  domains:
+  - www.portofantwerp.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: national-archives-and-records--app
+  platform: vdp
+  disclosure: security-vdp@nara.gov
+  bounty: false
+  program_url: https://www.nara.gov/vulnerability-disclosure-policy
+  domains:
+  - app.nara.gov
+  github_orgs: []
+  excluded: []

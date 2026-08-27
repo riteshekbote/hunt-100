@@ -1,0 +1,10 @@
+target:
+  name: zivver-app
+  platform: vdp
+  disclosure: https://security.zivver.com/p/Policy
+  bounty: false
+  program_url: https://security.zivver.com/p/Policy
+  domains:
+  - app.security.zivver.com
+  github_orgs: []
+  excluded: []

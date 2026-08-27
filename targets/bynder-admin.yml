@@ -1,0 +1,10 @@
+target:
+  name: bynder-admin
+  platform: vdp
+  disclosure: security@bynder.com
+  bounty: false
+  program_url: https://www.bynder.com/en/legal/responsible-disclosure-policy/
+  domains:
+  - admin.bynder.com
+  github_orgs: []
+  excluded: []

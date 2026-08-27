@@ -1,0 +1,10 @@
+target:
+  name: google-jp-www
+  platform: vdp
+  disclosure: https://g.co/vrp
+  bounty: false
+  program_url: https://g.co/vrp
+  domains:
+  - www.g.co
+  github_orgs: []
+  excluded: []

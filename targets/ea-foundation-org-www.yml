@@ -1,0 +1,10 @@
+target:
+  name: ea-foundation-org-www
+  platform: vdp
+  disclosure: security@ea-foundation.org
+  bounty: false
+  program_url: https://ea-foundation.org/security-policy/
+  domains:
+  - www.ea-foundation.org
+  github_orgs: []
+  excluded: []

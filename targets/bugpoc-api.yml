@@ -1,0 +1,10 @@
+target:
+  name: bugpoc-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/bugpoc-mbb
+  bounty: true
+  program_url: https://bugcrowd.com/bugpoc-mbb
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

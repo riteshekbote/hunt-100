@@ -1,0 +1,10 @@
+target:
+  name: department-of-commerce-www
+  platform: vdp
+  disclosure: https://www.doc.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.doc.gov/vulnerability-disclosure-policy
+  domains:
+  - www.doc.gov
+  github_orgs: []
+  excluded: []

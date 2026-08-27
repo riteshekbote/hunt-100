@@ -1,0 +1,10 @@
+target:
+  name: wefact-www
+  platform: bounty
+  disclosure: helpdesk@wefact.nl
+  bounty: true
+  program_url: https://www.wefact.nl/security/
+  domains:
+  - www.wefact.nl
+  github_orgs: []
+  excluded: []

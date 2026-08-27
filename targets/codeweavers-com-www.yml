@@ -1,0 +1,10 @@
+target:
+  name: codeweavers-com-www
+  platform: vdp
+  disclosure: webmaster@codeweavers.com
+  bounty: false
+  program_url: https://www.codeweavers.com/support/wiki/website/security
+  domains:
+  - www.codeweavers.com
+  github_orgs: []
+  excluded: []

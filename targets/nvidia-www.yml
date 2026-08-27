@@ -1,0 +1,10 @@
+target:
+  name: nvidia-www
+  platform: vdp
+  disclosure: https://www.nvidia.com/object/submit-security-vulnerability.html
+  bounty: false
+  program_url: https://www.nvidia.com/object/submit-security-vulnerability.html
+  domains:
+  - www.nvidia.com
+  github_orgs: []
+  excluded: []

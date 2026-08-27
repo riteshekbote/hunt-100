@@ -1,0 +1,10 @@
+target:
+  name: peace-corps-www
+  platform: vdp
+  disclosure: soc2@peacecorps.gov
+  bounty: false
+  program_url: https://www.peacecorps.gov/vulnerability-disclosure-policy/
+  domains:
+  - www.peacecorps.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: pathao-www
+  platform: bounty
+  disclosure: security@pathao.com
+  bounty: true
+  program_url: https://pathao.com/bug-bounty/
+  domains:
+  - www.pathao.com
+  github_orgs: []
+  excluded: []

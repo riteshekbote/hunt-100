@@ -1,0 +1,10 @@
+target:
+  name: alibaba-admin
+  platform: bounty
+  disclosure: security@service.alibaba.com
+  bounty: true
+  program_url: https://security.alibaba.com/
+  domains:
+  - admin.security.alibaba.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cockroach-labs
+  platform: vdp
+  disclosure: security@cockroachlabs.com
+  bounty: false
+  program_url: https://www.cockroachlabs.com/security/responsible-disclosure-policy/
+  domains:
+  - cockroachlabs.com
+  github_orgs: []
+  excluded: []

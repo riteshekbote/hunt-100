@@ -1,0 +1,10 @@
+target:
+  name: national-oilwell-varco-app
+  platform: vdp
+  disclosure: https://nov.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://nov.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.nov.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

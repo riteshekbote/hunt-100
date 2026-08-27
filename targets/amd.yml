@@ -1,0 +1,10 @@
+target:
+  name: amd
+  platform: vdp
+  disclosure: https://www.amd.com/en/corporate/product-security-incident-response-team
+  bounty: false
+  program_url: https://www.amd.com/en/corporate/product-security-incident-response-team
+  domains:
+  - amd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: simplerisk
+  platform: vdp
+  disclosure: security@simplerisk.com
+  bounty: false
+  program_url: https://www.simplerisk.com/responsible_disclosure_policy
+  domains:
+  - simplerisk.com
+  github_orgs: []
+  excluded: []

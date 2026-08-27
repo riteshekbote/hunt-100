@@ -1,0 +1,10 @@
+target:
+  name: artsy-staging
+  platform: bounty
+  disclosure: security@artsy.net
+  bounty: true
+  program_url: https://www.artsy.net/security
+  domains:
+  - staging.artsy.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: beckman-coulter-staging
+  platform: vdp
+  disclosure: ProductSecurity@beckman.com
+  bounty: false
+  program_url: https://www.beckmancoulter.com/en/about-beckman-coulter/product-security
+  domains:
+  - staging.beckmancoulter.com
+  github_orgs: []
+  excluded: []

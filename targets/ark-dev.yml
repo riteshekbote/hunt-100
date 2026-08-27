@@ -1,0 +1,10 @@
+target:
+  name: ark-dev
+  platform: bounty
+  disclosure: security@ark.io
+  bounty: true
+  program_url: https://ark.io/blog/ark-development-and-security-bounty-program-arkio-blog
+  domains:
+  - dev.ark.io
+  github_orgs: []
+  excluded: []

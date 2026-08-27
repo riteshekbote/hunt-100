@@ -1,0 +1,10 @@
+target:
+  name: on2it-www
+  platform: vdp
+  disclosure: responsibledisclosure@on2it.net
+  bounty: false
+  program_url: https://on2it.net/responsible-disclosure/
+  domains:
+  - www.on2it.net
+  github_orgs: []
+  excluded: []

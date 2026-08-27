@@ -1,0 +1,10 @@
+target:
+  name: yum-api
+  platform: vdp
+  disclosure: https://yum.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://yum.responsibledisclosure.com/hc/en-us
+  domains:
+  - api.yum.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: forcyd
+  platform: vdp
+  disclosure: responsibledisclosure@forcyd.com
+  bounty: false
+  program_url: https://www.forcyd.com/responsible-disclosure/
+  domains:
+  - forcyd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: trip-advisor
+  platform: vdp
+  disclosure: https://bugcrowd.com/tripadvisor-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/tripadvisor-vdp
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

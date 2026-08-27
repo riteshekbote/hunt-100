@@ -1,0 +1,10 @@
+target:
+  name: scraping-hub-app
+  platform: bounty
+  disclosure: bughunt@scrapinghub.com
+  bounty: true
+  program_url: https://scrapinghub.com/responsible-disclosure-policy/
+  domains:
+  - app.scrapinghub.com
+  github_orgs: []
+  excluded: []

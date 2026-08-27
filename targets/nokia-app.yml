@@ -1,0 +1,10 @@
+target:
+  name: nokia-app
+  platform: vdp
+  disclosure: security-alert@nokia.com
+  bounty: false
+  program_url: https://www.nokia.com/responsible-disclosure/
+  domains:
+  - app.nokia.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: seagate-api
+  platform: vdp
+  disclosure: https://www.seagate.com/legal-privacy/responsible-vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://www.seagate.com/legal-privacy/responsible-vulnerability-disclosure-policy/
+  domains:
+  - api.seagate.com
+  github_orgs: []
+  excluded: []

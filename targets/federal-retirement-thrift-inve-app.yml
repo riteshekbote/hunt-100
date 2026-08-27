@@ -1,0 +1,10 @@
+target:
+  name: federal-retirement-thrift-inve-app
+  platform: vdp
+  disclosure: VulnerabilityDisclosure@FRTIB.gov
+  bounty: false
+  program_url: https://www.frtib.gov/vulnerability-disclosure-policy
+  domains:
+  - app.frtib.gov
+  github_orgs: []
+  excluded: []

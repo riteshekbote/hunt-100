@@ -1,0 +1,10 @@
+target:
+  name: dc3-www
+  platform: vdp
+  disclosure: https://www.dc3.mil/Vulnerability-Disclosure/Vulnerability-Disclosure-Program-VDP/
+  bounty: false
+  program_url: https://www.dc3.mil/Vulnerability-Disclosure/Vulnerability-Disclosure-Program-VDP/
+  domains:
+  - www.dc3.mil
+  github_orgs: []
+  excluded: []

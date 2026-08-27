@@ -1,0 +1,10 @@
+target:
+  name: freshbooks-www
+  platform: vdp
+  disclosure: security@freshbooks.com
+  bounty: false
+  program_url: https://www.freshbooks.com/policies/responsible-disclosure
+  domains:
+  - www.freshbooks.com
+  github_orgs: []
+  excluded: []

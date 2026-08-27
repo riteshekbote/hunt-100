@@ -1,0 +1,10 @@
+target:
+  name: base-staging
+  platform: vdp
+  disclosure: https://www.zendesk.com/company/policies-procedures/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.zendesk.com/company/policies-procedures/responsible-disclosure-policy/
+  domains:
+  - staging.zendesk.com
+  github_orgs: []
+  excluded: []

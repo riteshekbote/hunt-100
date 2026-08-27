@@ -1,0 +1,10 @@
+target:
+  name: servicenow-www
+  platform: vdp
+  disclosure: disclosure@service-now.com
+  bounty: false
+  program_url: https://www.servicenow.com/company/trust/responsible-disclosure.html
+  domains:
+  - www.servicenow.com
+  github_orgs: []
+  excluded: []

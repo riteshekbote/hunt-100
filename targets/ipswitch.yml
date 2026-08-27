@@ -1,0 +1,10 @@
+target:
+  name: ipswitch
+  platform: vdp
+  disclosure: security@ipswitch.com
+  bounty: false
+  program_url: https://www.ipswitch.com/vulnerability-disclosure-policy
+  domains:
+  - ipswitch.com
+  github_orgs: []
+  excluded: []

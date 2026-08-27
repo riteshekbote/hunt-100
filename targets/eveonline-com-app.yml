@@ -1,0 +1,10 @@
+target:
+  name: eveonline-com-app
+  platform: vdp
+  disclosure: security@ccpgames.com
+  bounty: false
+  program_url: https://www.eveonline.com/article/responsible-disclosure-reporting-security-issues
+  domains:
+  - app.eveonline.com
+  github_orgs: []
+  excluded: []

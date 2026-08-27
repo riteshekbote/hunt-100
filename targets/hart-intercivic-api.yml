@@ -1,0 +1,10 @@
+target:
+  name: hart-intercivic-api
+  platform: vdp
+  disclosure: security@hartic.com
+  bounty: false
+  program_url: https://www.hartintercivic.com/wp-content/uploads/HartVulnerabilityDisclosurePolicy_82020.pdf
+  domains:
+  - api.hartintercivic.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: jsof-app
+  platform: vdp
+  disclosure: security@jsof-tech.com
+  bounty: false
+  program_url: https://www.jsof-tech.com/vulnerability-disclosure-policy/
+  domains:
+  - app.jsof-tech.com
+  github_orgs: []
+  excluded: []

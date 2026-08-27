@@ -1,0 +1,10 @@
+target:
+  name: statuspage-io-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/statuspage
+  bounty: true
+  program_url: https://bugcrowd.com/statuspage
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: royal-bank-of-scotland-api
+  platform: vdp
+  disclosure: security.disclosures@rbs.co.uk
+  bounty: false
+  program_url: https://personal.rbs.co.uk/personal/security-centre/responsible-disclosure.html
+  domains:
+  - api.personal.rbs.co.uk
+  github_orgs: []
+  excluded: []

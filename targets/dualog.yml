@@ -1,0 +1,10 @@
+target:
+  name: dualog
+  platform: vdp
+  disclosure: security@dualog.com
+  bounty: false
+  program_url: https://www.dualog.com/legal/vulnerability-disclosure-program
+  domains:
+  - dualog.com
+  github_orgs: []
+  excluded: []

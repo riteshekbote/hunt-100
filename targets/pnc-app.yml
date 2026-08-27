@@ -1,0 +1,10 @@
+target:
+  name: pnc-app
+  platform: vdp
+  disclosure: ResponsibleDisclosure@pnc.com
+  bounty: false
+  program_url: https://www.pnc.com/en/security-privacy/responsible-disclosure-program.html
+  domains:
+  - app.pnc.com
+  github_orgs: []
+  excluded: []

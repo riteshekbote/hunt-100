@@ -1,0 +1,10 @@
+target:
+  name: merkle-inc-api
+  platform: vdp
+  disclosure: responsibledisclosure@merkleinc.com
+  bounty: false
+  program_url: https://www.merkleinc.com/responsible-disclosure-policy
+  domains:
+  - api.merkleinc.com
+  github_orgs: []
+  excluded: []

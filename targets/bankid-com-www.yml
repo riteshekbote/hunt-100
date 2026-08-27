@@ -1,0 +1,10 @@
+target:
+  name: bankid-com-www
+  platform: vdp
+  disclosure: responsible-disclosure@bankid.com
+  bounty: false
+  program_url: https://www.bankid.com/disclosure
+  domains:
+  - www.bankid.com
+  github_orgs: []
+  excluded: []

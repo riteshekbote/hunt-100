@@ -1,0 +1,10 @@
+target:
+  name: co-operative-bank
+  platform: vdp
+  disclosure: securitydisclosures@co-operativebank.co.uk
+  bounty: false
+  program_url: https://www.co-operativebank.co.uk/global/security/responsible-security-disclosure
+  domains:
+  - co-operativebank.co.uk
+  github_orgs: []
+  excluded: []

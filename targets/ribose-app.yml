@@ -1,0 +1,10 @@
+target:
+  name: ribose-app
+  platform: vdp
+  disclosure: https://www.ribose.com/feedback/security
+  bounty: false
+  program_url: https://www.ribose.com/feedback/security
+  domains:
+  - app.ribose.com
+  github_orgs: []
+  excluded: []

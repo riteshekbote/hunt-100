@@ -1,0 +1,10 @@
+target:
+  name: sharktech
+  platform: vdp
+  disclosure: bugreport@sharktech.net
+  bounty: false
+  program_url: https://sharktech.net/responsible-disclosure-policy/
+  domains:
+  - sharktech.net
+  github_orgs: []
+  excluded: []

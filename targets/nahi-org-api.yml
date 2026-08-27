@@ -1,0 +1,10 @@
+target:
+  name: nahi-org-api
+  platform: vdp
+  disclosure: https://www.nachi.org/bug-bounty
+  bounty: false
+  program_url: https://www.nachi.org/bug-bounty
+  domains:
+  - api.nachi.org
+  github_orgs: []
+  excluded: []

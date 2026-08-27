@@ -1,0 +1,10 @@
+target:
+  name: tradingview-app
+  platform: bounty
+  disclosure: security@tradingview.com
+  bounty: true
+  program_url: https://www.tradingview.com/bounty/
+  domains:
+  - app.tradingview.com
+  github_orgs: []
+  excluded: []

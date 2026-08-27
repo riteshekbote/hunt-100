@@ -1,0 +1,10 @@
+target:
+  name: sns-bank-api
+  platform: bounty
+  disclosure: responsible-disclosure@devolksbank.nl
+  bounty: true
+  program_url: https://www.devolksbank.nl/veiligheid.html
+  domains:
+  - api.devolksbank.nl
+  github_orgs: []
+  excluded: []

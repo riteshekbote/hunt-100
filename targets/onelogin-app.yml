@@ -1,0 +1,10 @@
+target:
+  name: onelogin-app
+  platform: vdp
+  disclosure: security@onelogin.com
+  bounty: false
+  program_url: https://www.onelogin.com/security
+  domains:
+  - app.onelogin.com
+  github_orgs: []
+  excluded: []

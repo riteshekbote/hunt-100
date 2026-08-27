@@ -1,0 +1,10 @@
+target:
+  name: australian-government-departme-api
+  platform: vdp
+  disclosure: vulnerabilitydisclosure@health.gov.au
+  bounty: false
+  program_url: https://www.health.gov.au/using-our-websites/vulnerability-disclosure-policy
+  domains:
+  - api.health.gov.au
+  github_orgs: []
+  excluded: []

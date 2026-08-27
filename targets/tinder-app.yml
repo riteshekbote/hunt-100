@@ -1,0 +1,10 @@
+target:
+  name: tinder-app
+  platform: vdp
+  disclosure: security@gotinder.com
+  bounty: false
+  program_url: https://www.gotinder.com/security
+  domains:
+  - app.gotinder.com
+  github_orgs: []
+  excluded: []

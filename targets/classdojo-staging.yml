@@ -1,0 +1,10 @@
+target:
+  name: classdojo-staging
+  platform: bounty
+  disclosure: security@classdojo.com
+  bounty: true
+  program_url: https://www.classdojo.com/securitydisclosureprogram/
+  domains:
+  - staging.classdojo.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: chartio-app
+  platform: vdp
+  disclosure: security@chartio.com
+  bounty: false
+  program_url: https://chartio.com/product/responsible-disclosure/
+  domains:
+  - app.chartio.com
+  github_orgs: []
+  excluded: []

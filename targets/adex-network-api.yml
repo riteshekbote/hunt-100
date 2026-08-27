@@ -1,0 +1,10 @@
+target:
+  name: adex-network-api
+  platform: vdp
+  disclosure: security@adex.network
+  bounty: false
+  program_url: https://www.adex.network/security-policy.txt
+  domains:
+  - api.adex.network
+  github_orgs: []
+  excluded: []

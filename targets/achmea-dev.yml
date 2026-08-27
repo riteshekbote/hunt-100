@@ -1,0 +1,10 @@
+target:
+  name: achmea-dev
+  platform: vdp
+  disclosure: https://www.achmea.nl/en/responsibledisclosure
+  bounty: false
+  program_url: https://www.achmea.nl/en/responsibledisclosure
+  domains:
+  - dev.achmea.nl
+  github_orgs: []
+  excluded: []

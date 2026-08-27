@@ -1,0 +1,10 @@
+target:
+  name: cofense-api
+  platform: vdp
+  disclosure: security@cofense.com
+  bounty: false
+  program_url: https://cofense.com/responsible-disclosure/
+  domains:
+  - api.cofense.com
+  github_orgs: []
+  excluded: []

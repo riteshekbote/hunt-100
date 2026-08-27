@@ -1,0 +1,10 @@
+target:
+  name: grpc-api
+  platform: vdp
+  disclosure: grpc-security@googlegroups.com
+  bounty: false
+  program_url: https://github.com/grpc/proposal/blob/master/P4-grpc-cve-process.md
+  domains:
+  - api.github.com
+  github_orgs: []
+  excluded: []

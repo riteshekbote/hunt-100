@@ -1,0 +1,10 @@
+target:
+  name: gay-capital-www
+  platform: vdp
+  disclosure: Support@Gay.Capital
+  bounty: false
+  program_url: https://gay.capital/docs/bugbounty
+  domains:
+  - www.gay.capital
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: vice-www
+  platform: vdp
+  disclosure: infosec@vice.com
+  bounty: false
+  program_url: https://www.vice.com/en_us/page/vice-responsible-disclosure-policy
+  domains:
+  - www.vice.com
+  github_orgs: []
+  excluded: []

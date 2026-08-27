@@ -1,0 +1,10 @@
+target:
+  name: community-optimizely-com
+  platform: vdp
+  disclosure: security@mindtouch.com
+  bounty: false
+  program_url: https://mindtouch.com/disclosure
+  domains:
+  - mindtouch.com
+  github_orgs: []
+  excluded: []

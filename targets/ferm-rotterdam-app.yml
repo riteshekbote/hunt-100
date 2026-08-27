@@ -1,0 +1,10 @@
+target:
+  name: ferm-rotterdam-app
+  platform: bounty
+  disclosure: https://ferm-rotterdam.nl/nl/responsible-disclosure-statement
+  bounty: true
+  program_url: https://ferm-rotterdam.nl/nl/responsible-disclosure-statement
+  domains:
+  - app.ferm-rotterdam.nl
+  github_orgs: []
+  excluded: []

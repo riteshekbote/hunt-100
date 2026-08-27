@@ -1,0 +1,10 @@
+target:
+  name: beyond-trust-api
+  platform: vdp
+  disclosure: secure@beyondtrust.com
+  bounty: false
+  program_url: https://www.beyondtrust.com/disclosure
+  domains:
+  - api.beyondtrust.com
+  github_orgs: []
+  excluded: []

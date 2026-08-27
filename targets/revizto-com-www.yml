@@ -1,0 +1,10 @@
+target:
+  name: revizto-com-www
+  platform: vdp
+  disclosure: security@revizto.com
+  bounty: false
+  program_url: https://revizto.com/csp
+  domains:
+  - www.revizto.com
+  github_orgs: []
+  excluded: []

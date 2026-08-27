@@ -1,0 +1,10 @@
+target:
+  name: finnie-org-www
+  platform: vdp
+  disclosure: ryan@finnie.org
+  bounty: false
+  program_url: https://www.finnie.org/vuln/
+  domains:
+  - www.finnie.org
+  github_orgs: []
+  excluded: []

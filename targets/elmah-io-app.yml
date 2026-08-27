@@ -1,0 +1,10 @@
+target:
+  name: elmah-io-app
+  platform: bounty
+  disclosure: info@elmah.io
+  bounty: true
+  program_url: https://docs.elmah.io/vulnerability-disclosure-program/
+  domains:
+  - app.docs.elmah.io
+  github_orgs: []
+  excluded: []

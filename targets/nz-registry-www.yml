@@ -1,0 +1,10 @@
+target:
+  name: nz-registry-www
+  platform: vdp
+  disclosure: security@internetnz.net.nz
+  bounty: false
+  program_url: https://registry.internetnz.nz/about/vulnerability-disclosure-policy/
+  domains:
+  - www.registry.internetnz.nz
+  github_orgs: []
+  excluded: []

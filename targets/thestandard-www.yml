@@ -1,0 +1,10 @@
+target:
+  name: thestandard-www
+  platform: vdp
+  disclosure: https://www.standard.com/about-standard/responsible-disclosure-program
+  bounty: false
+  program_url: https://www.standard.com/about-standard/responsible-disclosure-program
+  domains:
+  - www.standard.com
+  github_orgs: []
+  excluded: []

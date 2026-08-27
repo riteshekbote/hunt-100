@@ -1,0 +1,10 @@
+target:
+  name: lark-www
+  platform: vdp
+  disclosure: security@larksuite.com
+  bounty: false
+  program_url: https://www.larksuite.com/bugbounty
+  domains:
+  - www.larksuite.com
+  github_orgs: []
+  excluded: []

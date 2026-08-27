@@ -1,0 +1,10 @@
+target:
+  name: tele2-api
+  platform: vdp
+  disclosure: point@tele2.com
+  bounty: false
+  program_url: https://www.tele2.nl/thuis/internet/veilig-internetten/stappenplan/
+  domains:
+  - api.tele2.nl
+  github_orgs: []
+  excluded: []

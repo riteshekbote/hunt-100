@@ -1,0 +1,10 @@
+target:
+  name: eero-api
+  platform: vdp
+  disclosure: https://bugcrowd.com/eero
+  bounty: false
+  program_url: https://bugcrowd.com/eero
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

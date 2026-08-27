@@ -1,0 +1,10 @@
+target:
+  name: webonic-hu-www
+  platform: vdp
+  disclosure: security@websupport.sk
+  bounty: false
+  program_url: https://www.websupport.sk/support/kb/nahlasenie-zranitelnosti/
+  domains:
+  - www.websupport.sk
+  github_orgs: []
+  excluded: []

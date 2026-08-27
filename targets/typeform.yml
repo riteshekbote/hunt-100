@@ -1,0 +1,10 @@
+target:
+  name: typeform
+  platform: vdp
+  disclosure: security@typeform.com
+  bounty: false
+  program_url: https://help.typeform.com/hc/en-us/articles/360029314532-How-to-report-a-security-vulnerability-to-Typeform
+  domains:
+  - help.typeform.com
+  github_orgs: []
+  excluded: []

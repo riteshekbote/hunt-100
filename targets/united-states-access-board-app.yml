@@ -1,0 +1,10 @@
+target:
+  name: united-states-access-board-app
+  platform: vdp
+  disclosure: itsupport@access-board.gov
+  bounty: false
+  program_url: https://www.access-board.gov/vulnerability-disclosure-policy
+  domains:
+  - app.access-board.gov
+  github_orgs: []
+  excluded: []

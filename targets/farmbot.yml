@@ -1,0 +1,10 @@
+target:
+  name: farmbot
+  platform: vdp
+  disclosure: security@farm.bot
+  bounty: false
+  program_url: https://developer.farm.bot/docs/responsible-disclosure-of-security-vulnerabilities
+  domains:
+  - developer.farm.bot
+  github_orgs: []
+  excluded: []

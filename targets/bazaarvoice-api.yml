@@ -1,0 +1,10 @@
+target:
+  name: bazaarvoice-api
+  platform: vdp
+  disclosure: security@bazaarvoice.com
+  bounty: false
+  program_url: https://www.bazaarvoice.com/legal/vulnerability-disclosure-policy/
+  domains:
+  - api.bazaarvoice.com
+  github_orgs: []
+  excluded: []

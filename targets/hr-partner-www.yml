@@ -1,0 +1,10 @@
+target:
+  name: hr-partner-www
+  platform: vdp
+  disclosure: support@hrpartner.io
+  bounty: false
+  program_url: https://www.hrpartner.io/security.html
+  domains:
+  - www.hrpartner.io
+  github_orgs: []
+  excluded: []

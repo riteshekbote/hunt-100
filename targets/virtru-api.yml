@@ -1,0 +1,10 @@
+target:
+  name: virtru-api
+  platform: vdp
+  disclosure: https://www.virtru.com/responsible-disclosure/
+  bounty: false
+  program_url: https://www.virtru.com/responsible-disclosure/
+  domains:
+  - api.virtru.com
+  github_orgs: []
+  excluded: []

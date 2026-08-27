@@ -1,0 +1,10 @@
+target:
+  name: ahold-delhaize-dev
+  platform: bounty
+  disclosure: ad.itsecurity.group@aholddelhaize.com
+  bounty: true
+  program_url: https://www.aholddelhaize.com/en/security/
+  domains:
+  - dev.aholddelhaize.com
+  github_orgs: []
+  excluded: []

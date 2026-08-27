@@ -1,0 +1,10 @@
+target:
+  name: farm-credit-system-insurance-c-www
+  platform: vdp
+  disclosure: security_vdp@fcsic.gov
+  bounty: false
+  program_url: https://www.fcsic.gov/vulnerability-disclosure-policy
+  domains:
+  - www.fcsic.gov
+  github_orgs: []
+  excluded: []

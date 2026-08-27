@@ -1,0 +1,10 @@
+target:
+  name: workmarket-www
+  platform: vdp
+  disclosure: security@workmarket.com
+  bounty: false
+  program_url: https://www.workmarket.com/security
+  domains:
+  - www.workmarket.com
+  github_orgs: []
+  excluded: []

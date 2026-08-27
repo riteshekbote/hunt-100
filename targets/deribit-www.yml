@@ -1,0 +1,10 @@
+target:
+  name: deribit-www
+  platform: bounty
+  disclosure: https://www.deribit.com/pages/information/bug-bounty-program
+  bounty: true
+  program_url: https://www.deribit.com/pages/information/bug-bounty-program
+  domains:
+  - www.deribit.com
+  github_orgs: []
+  excluded: []

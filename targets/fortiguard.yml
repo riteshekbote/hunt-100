@@ -1,0 +1,10 @@
+target:
+  name: fortiguard
+  platform: vdp
+  disclosure: secresearch@fortinet.com
+  bounty: false
+  program_url: https://fortiguard.com/zeroday/responsible-disclosure
+  domains:
+  - fortiguard.com
+  github_orgs: []
+  excluded: []

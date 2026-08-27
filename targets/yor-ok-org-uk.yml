@@ -1,0 +1,10 @@
+target:
+  name: yor-ok-org-uk
+  platform: vdp
+  disclosure: security@york.gov.uk
+  bounty: false
+  program_url: https://www.york.gov.uk/security
+  domains:
+  - york.gov.uk
+  github_orgs: []
+  excluded: []

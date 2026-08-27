@@ -1,0 +1,10 @@
+target:
+  name: zimbra
+  platform: vdp
+  disclosure: https://wiki.zimbra.com/wiki/Zimbra_Responsible_Disclosure_Policy
+  bounty: false
+  program_url: https://wiki.zimbra.com/wiki/Zimbra_Responsible_Disclosure_Policy
+  domains:
+  - wiki.zimbra.com
+  github_orgs: []
+  excluded: []

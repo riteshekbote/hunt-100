@@ -1,0 +1,10 @@
+target:
+  name: united-states-agency-for-inter-www
+  platform: vdp
+  disclosure: https://www.usaid.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.usaid.gov/vulnerability-disclosure-policy
+  domains:
+  - www.usaid.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: jruby-app
+  platform: vdp
+  disclosure: security@jruby.org
+  bounty: false
+  program_url: https://www.jruby.org/security
+  domains:
+  - app.jruby.org
+  github_orgs: []
+  excluded: []

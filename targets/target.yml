@@ -1,0 +1,10 @@
+target:
+  name: target
+  platform: vdp
+  disclosure: security@target.com
+  bounty: false
+  program_url: https://security.target.com/vdp/
+  domains:
+  - security.target.com
+  github_orgs: []
+  excluded: []

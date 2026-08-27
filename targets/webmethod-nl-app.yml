@@ -1,0 +1,10 @@
+target:
+  name: webmethod-nl-app
+  platform: vdp
+  disclosure: security-external@webmethod.nl
+  bounty: false
+  program_url: https://www.webmethod.nl/juridisch/responsible-disclosure
+  domains:
+  - app.webmethod.nl
+  github_orgs: []
+  excluded: []

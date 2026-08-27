@@ -1,0 +1,10 @@
+target:
+  name: mimosa
+  platform: vdp
+  disclosure: sirt@mimosa.co
+  bounty: false
+  program_url: https://mimosa.co/legal/vulnerability
+  domains:
+  - mimosa.co
+  github_orgs: []
+  excluded: []

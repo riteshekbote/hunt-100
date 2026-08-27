@@ -1,0 +1,10 @@
+target:
+  name: powerschool-app
+  platform: vdp
+  disclosure: https://www.powerschool.com/security/responsible-disclosure-program/
+  bounty: false
+  program_url: https://www.powerschool.com/security/responsible-disclosure-program/
+  domains:
+  - app.powerschool.com
+  github_orgs: []
+  excluded: []

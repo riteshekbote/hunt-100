@@ -1,0 +1,10 @@
+target:
+  name: ping-api
+  platform: bounty
+  disclosure: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  bounty: true
+  program_url: https://www.pingidentity.com/en/company/security-at-ping-identity.html
+  domains:
+  - api.pingidentity.com
+  github_orgs: []
+  excluded: []

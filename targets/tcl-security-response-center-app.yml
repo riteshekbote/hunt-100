@@ -1,0 +1,10 @@
+target:
+  name: tcl-security-response-center-app
+  platform: vdp
+  disclosure: ' security@tcl.com'
+  bounty: false
+  program_url: https://src.tcl.com/
+  domains:
+  - app.src.tcl.com
+  github_orgs: []
+  excluded: []

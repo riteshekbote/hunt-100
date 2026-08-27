@@ -1,0 +1,10 @@
+target:
+  name: devs-nepal-nepal-government-ba-api
+  platform: vdp
+  disclosure: steeringcommittee@opmcm.gov.np
+  bounty: false
+  program_url: https://pmdevcore.gov.np/security
+  domains:
+  - api.pmdevcore.gov.np
+  github_orgs: []
+  excluded: []

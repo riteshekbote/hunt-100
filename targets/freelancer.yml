@@ -1,0 +1,10 @@
+target:
+  name: freelancer
+  platform: vdp
+  disclosure: security-reporting@freelancer.com
+  bounty: false
+  program_url: https://www.freelancer.com/about/security
+  domains:
+  - freelancer.com
+  github_orgs: []
+  excluded: []

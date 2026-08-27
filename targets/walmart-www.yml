@@ -1,0 +1,10 @@
+target:
+  name: walmart-www
+  platform: bounty
+  disclosure: https://corporate.walmart.com/privacy-security
+  bounty: true
+  program_url: https://corporate.walmart.com/privacy-security
+  domains:
+  - www.corporate.walmart.com
+  github_orgs: []
+  excluded: []

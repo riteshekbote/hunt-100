@@ -1,0 +1,10 @@
+target:
+  name: elektra-labs-api
+  platform: vdp
+  disclosure: https://www.elektralabs.com/security
+  bounty: false
+  program_url: https://www.elektralabs.com/security
+  domains:
+  - api.elektralabs.com
+  github_orgs: []
+  excluded: []

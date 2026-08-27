@@ -1,0 +1,10 @@
+target:
+  name: roadie-www
+  platform: vdp
+  disclosure: security@roadie.io
+  bounty: false
+  program_url: https://roadie.io/security/responsible-disclosure/
+  domains:
+  - www.roadie.io
+  github_orgs: []
+  excluded: []

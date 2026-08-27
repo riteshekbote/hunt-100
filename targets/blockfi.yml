@@ -1,0 +1,10 @@
+target:
+  name: blockfi
+  platform: vdp
+  disclosure: security@blockfi.com
+  bounty: false
+  program_url: https://blockfi.com/security/
+  domains:
+  - blockfi.com
+  github_orgs: []
+  excluded: []

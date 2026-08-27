@@ -1,0 +1,10 @@
+target:
+  name: research-gate-api
+  platform: bounty
+  disclosure: https://explore.researchgate.net/display/support/Security+and+vulnerability
+  bounty: true
+  program_url: https://explore.researchgate.net/display/support/Security+and+vulnerability
+  domains:
+  - api.explore.researchgate.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: eset-www
+  platform: bounty
+  disclosure: security@eset.com
+  bounty: true
+  program_url: https://www.eset.com/int/security-vulnerability-reporting/
+  domains:
+  - www.eset.com
+  github_orgs: []
+  excluded: []

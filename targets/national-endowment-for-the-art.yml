@@ -1,0 +1,10 @@
+target:
+  name: national-endowment-for-the-art
+  platform: vdp
+  disclosure: security@arts.gov
+  bounty: false
+  program_url: https://www.arts.gov/vulnerability-disclosure-policy
+  domains:
+  - arts.gov
+  github_orgs: []
+  excluded: []

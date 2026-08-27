@@ -1,0 +1,10 @@
+target:
+  name: paytm-app
+  platform: bounty
+  disclosure: https://bugbounty.paytm.com/
+  bounty: true
+  program_url: https://bugbounty.paytm.com/
+  domains:
+  - app.bugbounty.paytm.com
+  github_orgs: []
+  excluded: []

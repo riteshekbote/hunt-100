@@ -1,0 +1,10 @@
+target:
+  name: state-of-delaware
+  platform: vdp
+  disclosure: https://webfiles.dti.delaware.gov/pdfs/pp/Vulnerability%20Disclosure%20Policy.pdf
+  bounty: false
+  program_url: https://webfiles.dti.delaware.gov/pdfs/pp/Vulnerability%20Disclosure%20Policy.pdf
+  domains:
+  - webfiles.dti.delaware.gov
+  github_orgs: []
+  excluded: []

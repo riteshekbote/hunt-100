@@ -1,0 +1,10 @@
+target:
+  name: umbraco-app
+  platform: vdp
+  disclosure: security@umbraco.com
+  bounty: false
+  program_url: https://umbraco.com/products/umbraco-cms/security/
+  domains:
+  - app.umbraco.com
+  github_orgs: []
+  excluded: []

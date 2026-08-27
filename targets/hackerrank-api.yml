@@ -1,0 +1,10 @@
+target:
+  name: hackerrank-api
+  platform: vdp
+  disclosure: security@hackerrank.com
+  bounty: false
+  program_url: https://docs.google.com/document/d/e/2PACX-1vQnpwaSmghgwwepiui4dqNw3S2LslBM1woAYaTuX6q9KenJ2zAgBpBPivdC8sQs2Gy-FKKuxWJLYwIz/pub
+  domains:
+  - api.docs.google.com
+  github_orgs: []
+  excluded: []

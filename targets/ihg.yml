@@ -1,0 +1,10 @@
+target:
+  name: ihg
+  platform: vdp
+  disclosure: responsibledisclosure@ihg.com
+  bounty: false
+  program_url: https://www.ihg.com/content/us/en/customer-care/privacy-and-cookie-center/responsible-disclosure
+  domains:
+  - ihg.com
+  github_orgs: []
+  excluded: []

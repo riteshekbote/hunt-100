@@ -1,0 +1,10 @@
+target:
+  name: delaware-consulting-api
+  platform: vdp
+  disclosure: delaware.itsecurity@delaware.pro
+  bounty: false
+  program_url: https://www.delawareconsulting.com/en-us/about-us/responsible-disclosure
+  domains:
+  - api.delawareconsulting.com
+  github_orgs: []
+  excluded: []

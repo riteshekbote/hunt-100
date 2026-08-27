@@ -1,0 +1,10 @@
+target:
+  name: nl-nl-duolingo-com-app
+  platform: vdp
+  disclosure: security@duolingo.com
+  bounty: false
+  program_url: https://www.duolingo.com/privacy
+  domains:
+  - app.duolingo.com
+  github_orgs: []
+  excluded: []

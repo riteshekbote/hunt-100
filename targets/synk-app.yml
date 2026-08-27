@@ -1,0 +1,10 @@
+target:
+  name: synk-app
+  platform: vdp
+  disclosure: security@snyk.io
+  bounty: false
+  program_url: https://support.snyk.io/hc/en-us/articles/360005918418-Snyk-vulnerability-disclosure-program
+  domains:
+  - app.support.snyk.io
+  github_orgs: []
+  excluded: []

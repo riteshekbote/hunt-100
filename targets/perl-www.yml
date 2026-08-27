@@ -1,0 +1,10 @@
+target:
+  name: perl-www
+  platform: bounty
+  disclosure: perl5-security-report@perl.org
+  bounty: true
+  program_url: http://perldoc.perl.org/perlsec.html#SECURITY-VULNERABILITY-CONTACT-INFORMATION
+  domains:
+  - www.perldoc.perl.org
+  github_orgs: []
+  excluded: []

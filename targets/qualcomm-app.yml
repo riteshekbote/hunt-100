@@ -1,0 +1,10 @@
+target:
+  name: qualcomm-app
+  platform: bounty
+  disclosure: product-security@qualcomm.com
+  bounty: true
+  program_url: https://www.qualcomm.com/company/product-security/report-a-bug
+  domains:
+  - app.qualcomm.com
+  github_orgs: []
+  excluded: []

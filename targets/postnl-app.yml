@@ -1,0 +1,10 @@
+target:
+  name: postnl-app
+  platform: vdp
+  disclosure: https://www.postnl.nl/en/responsible-disclosure/
+  bounty: false
+  program_url: https://www.postnl.nl/en/responsible-disclosure/
+  domains:
+  - app.postnl.nl
+  github_orgs: []
+  excluded: []

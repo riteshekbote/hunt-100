@@ -1,0 +1,10 @@
+target:
+  name: denederlandschebank-www
+  platform: bounty
+  disclosure: cvd@dnb.nl
+  bounty: true
+  program_url: https://www.dnb.nl/en/responsible-disclosure/index.jsp
+  domains:
+  - www.dnb.nl
+  github_orgs: []
+  excluded: []

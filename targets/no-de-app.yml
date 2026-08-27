@@ -1,0 +1,10 @@
+target:
+  name: no-de-app
+  platform: vdp
+  disclosure: security@nodejs.org
+  bounty: false
+  program_url: https://nodejs.org/en/security/
+  domains:
+  - app.nodejs.org
+  github_orgs: []
+  excluded: []

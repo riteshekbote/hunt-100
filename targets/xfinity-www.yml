@@ -1,0 +1,10 @@
+target:
+  name: xfinity-www
+  platform: vdp
+  disclosure: https://my.xfinity.com/vulnerabilityreport
+  bounty: false
+  program_url: https://my.xfinity.com/vulnerabilityreport
+  domains:
+  - www.my.xfinity.com
+  github_orgs: []
+  excluded: []

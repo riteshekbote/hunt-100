@@ -1,0 +1,10 @@
+target:
+  name: pc-extreme-api
+  platform: bounty
+  disclosure: security@pcextreme.nl
+  bounty: true
+  program_url: https://www.pcextreme.com/policies/responsible-disclosure
+  domains:
+  - api.pcextreme.com
+  github_orgs: []
+  excluded: []

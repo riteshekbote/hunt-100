@@ -1,0 +1,10 @@
+target:
+  name: tezos-com
+  platform: vdp
+  disclosure: security@tezos.com
+  bounty: false
+  program_url: https://tezos.foundation/security
+  domains:
+  - tezos.foundation
+  github_orgs: []
+  excluded: []

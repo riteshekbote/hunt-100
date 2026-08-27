@@ -1,0 +1,10 @@
+target:
+  name: castle-gate-it-dev
+  platform: vdp
+  disclosure: https://www.castlegateit.co.uk/docs/ethical-policy.pdf
+  bounty: false
+  program_url: https://www.castlegateit.co.uk/docs/ethical-policy.pdf
+  domains:
+  - dev.castlegateit.co.uk
+  github_orgs: []
+  excluded: []

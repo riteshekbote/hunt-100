@@ -1,0 +1,10 @@
+target:
+  name: circ-lu-www
+  platform: vdp
+  disclosure: https://www.circl.lu/pub/responsible-vulnerability-disclosure/
+  bounty: false
+  program_url: https://www.circl.lu/pub/responsible-vulnerability-disclosure/
+  domains:
+  - www.circl.lu
+  github_orgs: []
+  excluded: []

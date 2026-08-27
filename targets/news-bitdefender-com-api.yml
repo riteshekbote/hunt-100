@@ -1,0 +1,10 @@
+target:
+  name: news-bitdefender-com-api
+  platform: vdp
+  disclosure: bugbounty@bitdefender.com
+  bounty: false
+  program_url: https://www.bitdefender.com/bitdefender_vulnerability_disclosure_program.html
+  domains:
+  - api.bitdefender.com
+  github_orgs: []
+  excluded: []

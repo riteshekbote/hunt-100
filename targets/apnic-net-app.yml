@@ -1,0 +1,10 @@
+target:
+  name: apnic-net-app
+  platform: vdp
+  disclosure: csirt@apnic.net
+  bounty: false
+  program_url: https://www.apnic.net/community/security/apnic-vulnerability-reporting-program/
+  domains:
+  - app.apnic.net
+  github_orgs: []
+  excluded: []

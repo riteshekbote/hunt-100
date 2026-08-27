@@ -1,0 +1,10 @@
+target:
+  name: digital-asset-www
+  platform: vdp
+  disclosure: security@digitalasset.com
+  bounty: false
+  program_url: https://www.digitalasset.com/responsible-disclosure
+  domains:
+  - www.digitalasset.com
+  github_orgs: []
+  excluded: []

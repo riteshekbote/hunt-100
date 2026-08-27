@@ -1,0 +1,10 @@
+target:
+  name: websitebuilder-com
+  platform: vdp
+  disclosure: https://bugcrowd.com/endurance-builder
+  bounty: false
+  program_url: https://bugcrowd.com/endurance-builder
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

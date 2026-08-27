@@ -1,0 +1,10 @@
+target:
+  name: youtube-api
+  platform: bounty
+  disclosure: https://g.co/vrp
+  bounty: true
+  program_url: https://g.co/vrp
+  domains:
+  - api.g.co
+  github_orgs: []
+  excluded: []

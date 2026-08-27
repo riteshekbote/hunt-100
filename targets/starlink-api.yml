@@ -1,0 +1,10 @@
+target:
+  name: starlink-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/spacex
+  bounty: true
+  program_url: https://bugcrowd.com/spacex
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

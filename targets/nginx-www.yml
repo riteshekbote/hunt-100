@@ -1,0 +1,10 @@
+target:
+  name: nginx-www
+  platform: bounty
+  disclosure: security-alert@nginx.org
+  bounty: true
+  program_url: https://nginx.org/en/security_advisories.html
+  domains:
+  - www.nginx.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: jamf
+  platform: vdp
+  disclosure: https://www.jamf.com/security/vulnerability-disclosure/
+  bounty: false
+  program_url: https://www.jamf.com/security/vulnerability-disclosure/
+  domains:
+  - jamf.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: catawiki-api
+  platform: vdp
+  disclosure: https://www.catawiki.com/conditions/responsible-disclosure.pdf
+  bounty: false
+  program_url: https://www.catawiki.com/conditions/responsible-disclosure.pdf
+  domains:
+  - api.catawiki.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: square-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/square
+  bounty: true
+  program_url: https://bugcrowd.com/square
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

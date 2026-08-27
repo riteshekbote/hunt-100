@@ -1,0 +1,10 @@
+target:
+  name: rpggeek-com-app
+  platform: vdp
+  disclosure: security@boardgamegeek.com
+  bounty: false
+  program_url: https://boardgamegeek.com/responsible_disclosure_policy
+  domains:
+  - app.boardgamegeek.com
+  github_orgs: []
+  excluded: []

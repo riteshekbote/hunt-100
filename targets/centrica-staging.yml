@@ -1,0 +1,10 @@
+target:
+  name: centrica-staging
+  platform: vdp
+  disclosure: https://www.centrica.com/site-tools/security/
+  bounty: false
+  program_url: https://www.centrica.com/site-tools/security/
+  domains:
+  - staging.centrica.com
+  github_orgs: []
+  excluded: []

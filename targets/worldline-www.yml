@@ -1,0 +1,10 @@
+target:
+  name: worldline-www
+  platform: vdp
+  disclosure: security@worldline.com
+  bounty: false
+  program_url: https://worldline.com/en/home/responsible-disclosure-program.html
+  domains:
+  - www.worldline.com
+  github_orgs: []
+  excluded: []

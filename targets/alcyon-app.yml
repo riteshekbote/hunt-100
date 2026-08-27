@@ -1,0 +1,10 @@
+target:
+  name: alcyon-app
+  platform: vdp
+  disclosure: security@alcyon.nl
+  bounty: false
+  program_url: https://www.alcyon.nl/responsible-disclosure/
+  domains:
+  - app.alcyon.nl
+  github_orgs: []
+  excluded: []

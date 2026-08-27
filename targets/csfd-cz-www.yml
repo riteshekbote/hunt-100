@@ -1,0 +1,10 @@
+target:
+  name: csfd-cz-www
+  platform: vdp
+  disclosure: security@csfd.cz
+  bounty: false
+  program_url: https://www.csfd.cz/vyvojari/
+  domains:
+  - www.csfd.cz
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: myetherwallet-com-app
+  platform: vdp
+  disclosure: security@myetherwallet.com
+  bounty: false
+  program_url: https://www.myetherwallet.com/security-policy
+  domains:
+  - app.myetherwallet.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: hiltermannlease-nl-app
+  platform: vdp
+  disclosure: security@xpos.nl
+  bounty: false
+  program_url: https://www.xpos.nl/security.html
+  domains:
+  - app.xpos.nl
+  github_orgs: []
+  excluded: []

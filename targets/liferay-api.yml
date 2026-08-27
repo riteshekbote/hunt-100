@@ -1,0 +1,10 @@
+target:
+  name: liferay-api
+  platform: vdp
+  disclosure: security@liferay.com
+  bounty: false
+  program_url: https://www.liferay.com/security
+  domains:
+  - api.liferay.com
+  github_orgs: []
+  excluded: []

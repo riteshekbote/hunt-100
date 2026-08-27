@@ -1,0 +1,10 @@
+target:
+  name: stefanvd-net
+  platform: vdp
+  disclosure: https://www.stefanvd.net/privacy/
+  bounty: false
+  program_url: https://www.stefanvd.net/privacy/
+  domains:
+  - stefanvd.net
+  github_orgs: []
+  excluded: []

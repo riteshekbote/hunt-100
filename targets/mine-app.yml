@@ -1,0 +1,10 @@
+target:
+  name: mine-app
+  platform: vdp
+  disclosure: support@saymine.com
+  bounty: false
+  program_url: https://saymine.com/vulnerability-disclosure
+  domains:
+  - app.saymine.com
+  github_orgs: []
+  excluded: []

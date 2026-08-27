@@ -1,0 +1,10 @@
+target:
+  name: adobe-app
+  platform: vdp
+  disclosure: PSIRT@adobe.com
+  bounty: false
+  program_url: https://helpx.adobe.com/security/alertus.html
+  domains:
+  - app.helpx.adobe.com
+  github_orgs: []
+  excluded: []

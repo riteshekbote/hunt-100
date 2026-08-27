@@ -1,0 +1,10 @@
+target:
+  name: signify
+  platform: vdp
+  disclosure: lightingproductsecurity@signify.com
+  bounty: false
+  program_url: https://www.signify.com/global/product-security
+  domains:
+  - signify.com
+  github_orgs: []
+  excluded: []

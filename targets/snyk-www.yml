@@ -1,0 +1,10 @@
+target:
+  name: snyk-www
+  platform: bounty
+  disclosure: report@snyk.io
+  bounty: true
+  program_url: https://snyk.io/docs/security
+  domains:
+  - www.snyk.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: simply-business-www
+  platform: vdp
+  disclosure: bugreports@simplybusiness.co.uk
+  bounty: false
+  program_url: https://www.simplybusiness.com/responsible-disclosure/
+  domains:
+  - www.simplybusiness.com
+  github_orgs: []
+  excluded: []

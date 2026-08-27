@@ -1,0 +1,10 @@
+target:
+  name: sviesolutions-com-app
+  platform: vdp
+  disclosure: https://www.openbugbounty.org/bugbounty/sviesolutions/
+  bounty: false
+  program_url: https://www.openbugbounty.org/bugbounty/sviesolutions/
+  domains:
+  - app.openbugbounty.org
+  github_orgs: []
+  excluded: []

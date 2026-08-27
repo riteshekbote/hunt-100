@@ -1,0 +1,10 @@
+target:
+  name: hiver-www
+  platform: vdp
+  disclosure: security@hiverhq.com
+  bounty: false
+  program_url: https://hiverhq.com/disclosure
+  domains:
+  - www.hiverhq.com
+  github_orgs: []
+  excluded: []

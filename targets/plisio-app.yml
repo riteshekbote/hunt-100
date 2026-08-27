@@ -1,0 +1,10 @@
+target:
+  name: plisio-app
+  platform: bounty
+  disclosure: support@plisio.net
+  bounty: true
+  program_url: https://plisio.net/bug-bounty
+  domains:
+  - app.plisio.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: loans-cashconverters-co-nz-app
+  platform: vdp
+  disclosure: appdev@cashconverters.co.nz
+  bounty: false
+  program_url: https://loans.cashconverters.co.nz/security-policy
+  domains:
+  - app.loans.cashconverters.co.nz
+  github_orgs: []
+  excluded: []

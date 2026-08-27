@@ -1,0 +1,10 @@
+target:
+  name: fireeye-app
+  platform: vdp
+  disclosure: security@fireeye.com
+  bounty: false
+  program_url: https://www.fireeye.com/company/security.html
+  domains:
+  - app.fireeye.com
+  github_orgs: []
+  excluded: []

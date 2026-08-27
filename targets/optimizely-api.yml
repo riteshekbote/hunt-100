@@ -1,0 +1,10 @@
+target:
+  name: optimizely-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/optimizely
+  bounty: true
+  program_url: https://bugcrowd.com/optimizely
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

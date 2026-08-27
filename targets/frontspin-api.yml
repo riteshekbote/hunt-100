@@ -1,0 +1,10 @@
+target:
+  name: frontspin-api
+  platform: vdp
+  disclosure: security@frontspin.com
+  bounty: false
+  program_url: https://www.frontspin.com/vulnerability-disclosure-program/
+  domains:
+  - api.frontspin.com
+  github_orgs: []
+  excluded: []

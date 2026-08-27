@@ -1,0 +1,10 @@
+target:
+  name: krisp-ai-api
+  platform: vdp
+  disclosure: security@krisp.ai
+  bounty: false
+  program_url: https://krisp.ai/security/
+  domains:
+  - api.krisp.ai
+  github_orgs: []
+  excluded: []

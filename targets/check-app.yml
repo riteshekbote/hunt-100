@@ -1,0 +1,10 @@
+target:
+  name: check-app
+  platform: bounty
+  disclosure: https://www.federacy.com/check
+  bounty: true
+  program_url: https://www.federacy.com/check
+  domains:
+  - app.federacy.com
+  github_orgs: []
+  excluded: []

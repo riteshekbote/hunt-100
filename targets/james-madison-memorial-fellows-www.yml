@@ -1,0 +1,10 @@
+target:
+  name: james-madison-memorial-fellows-www
+  platform: vdp
+  disclosure: security@jamesmadison.gov
+  bounty: false
+  program_url: https://www.jamesmadison.gov/vulnerability-disclosure-policy
+  domains:
+  - www.jamesmadison.gov
+  github_orgs: []
+  excluded: []

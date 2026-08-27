@@ -1,0 +1,10 @@
+target:
+  name: ec-council-app
+  platform: vdp
+  disclosure: https://www.eccouncil.org/bug-bounty/
+  bounty: false
+  program_url: https://www.eccouncil.org/bug-bounty/
+  domains:
+  - app.eccouncil.org
+  github_orgs: []
+  excluded: []

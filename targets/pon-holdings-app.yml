@@ -1,0 +1,10 @@
+target:
+  name: pon-holdings-app
+  platform: vdp
+  disclosure: rd@pon.com
+  bounty: false
+  program_url: https://a-tcontrols.com/responsible-disclosure/
+  domains:
+  - app.a-tcontrols.com
+  github_orgs: []
+  excluded: []

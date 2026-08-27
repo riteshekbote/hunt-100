@@ -1,0 +1,10 @@
+target:
+  name: autoklose
+  platform: vdp
+  disclosure: security@autoklose.com
+  bounty: false
+  program_url: https://autoklose.com/vulnerability-disclosure-program/
+  domains:
+  - autoklose.com
+  github_orgs: []
+  excluded: []

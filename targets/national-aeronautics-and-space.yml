@@ -1,0 +1,10 @@
+target:
+  name: national-aeronautics-and-space
+  platform: vdp
+  disclosure: https://www.nasa.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.nasa.gov/vulnerability-disclosure-policy
+  domains:
+  - nasa.gov
+  github_orgs: []
+  excluded: []

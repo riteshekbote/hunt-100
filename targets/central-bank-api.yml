@@ -1,0 +1,10 @@
+target:
+  name: central-bank-api
+  platform: vdp
+  disclosure: responsible.disclosure@centralbank.net
+  bounty: false
+  program_url: https://www.centralbank.net/personal/security/responsible-disclosure/
+  domains:
+  - api.centralbank.net
+  github_orgs: []
+  excluded: []

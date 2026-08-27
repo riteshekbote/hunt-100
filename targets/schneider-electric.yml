@@ -1,0 +1,10 @@
+target:
+  name: schneider-electric
+  platform: vdp
+  disclosure: https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy.jsp
+  bounty: false
+  program_url: https://www.se.com/ww/en/work/support/cybersecurity/vulnerability-policy.jsp
+  domains:
+  - se.com
+  github_orgs: []
+  excluded: []

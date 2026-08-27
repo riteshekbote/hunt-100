@@ -1,0 +1,10 @@
+target:
+  name: eclipse-api
+  platform: vdp
+  disclosure: security@eclipse.org
+  bounty: false
+  program_url: http://www.eclipse.org/security/
+  domains:
+  - api.eclipse.org
+  github_orgs: []
+  excluded: []

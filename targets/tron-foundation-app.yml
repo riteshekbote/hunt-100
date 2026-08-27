@@ -1,0 +1,10 @@
+target:
+  name: tron-foundation-app
+  platform: bounty
+  disclosure: https://tron.network/findBug
+  bounty: true
+  program_url: https://tron.network/findBug
+  domains:
+  - app.tron.network
+  github_orgs: []
+  excluded: []

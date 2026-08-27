@@ -1,0 +1,10 @@
+target:
+  name: vulncheck-app
+  platform: vdp
+  disclosure: disclosures@vulncheck.com
+  bounty: false
+  program_url: https://www.vulncheck.com/vulnerability-disclosure-policy
+  domains:
+  - app.vulncheck.com
+  github_orgs: []
+  excluded: []

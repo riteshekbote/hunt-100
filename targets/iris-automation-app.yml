@@ -1,0 +1,10 @@
+target:
+  name: iris-automation-app
+  platform: vdp
+  disclosure: security@irisonboard.com
+  bounty: false
+  program_url: https://www.irisonboard.com/responsible-disclosure/
+  domains:
+  - app.irisonboard.com
+  github_orgs: []
+  excluded: []

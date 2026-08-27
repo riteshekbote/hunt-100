@@ -1,0 +1,10 @@
+target:
+  name: veracode-api
+  platform: vdp
+  disclosure: security-alerts@veracode.com
+  bounty: false
+  program_url: https://www.veracode.com/legal-privacy/responsible-disclosure-policy
+  domains:
+  - api.veracode.com
+  github_orgs: []
+  excluded: []

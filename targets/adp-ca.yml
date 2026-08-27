@@ -1,0 +1,10 @@
+target:
+  name: adp-ca
+  platform: vdp
+  disclosure: vulnerabilityreporting@ADP.com
+  bounty: false
+  program_url: https://www.adp.com/about-adp/data-security.aspx
+  domains:
+  - adp.com
+  github_orgs: []
+  excluded: []

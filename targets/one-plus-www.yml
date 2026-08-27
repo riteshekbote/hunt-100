@@ -1,0 +1,10 @@
+target:
+  name: one-plus-www
+  platform: bounty
+  disclosure: https://security.oneplus.com/noticedetails.html?noticeId=20191565338585128
+  bounty: true
+  program_url: https://security.oneplus.com/noticedetails.html?noticeId=20191565338585128
+  domains:
+  - www.security.oneplus.com
+  github_orgs: []
+  excluded: []

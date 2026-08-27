@@ -1,0 +1,10 @@
+target:
+  name: pastecoin-app
+  platform: bounty
+  disclosure: support@pastecoin.com
+  bounty: true
+  program_url: https://www.pastecoin.com/bug_bounty
+  domains:
+  - app.pastecoin.com
+  github_orgs: []
+  excluded: []

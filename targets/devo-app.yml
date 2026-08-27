@@ -1,0 +1,10 @@
+target:
+  name: devo-app
+  platform: vdp
+  disclosure: vuln-report@devo.com
+  bounty: false
+  program_url: https://www.devo.com/responsible-vulnerability-disclosure-program/
+  domains:
+  - app.devo.com
+  github_orgs: []
+  excluded: []

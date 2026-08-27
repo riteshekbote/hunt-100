@@ -1,0 +1,10 @@
+target:
+  name: voys-www
+  platform: vdp
+  disclosure: security@wearespindle.com
+  bounty: false
+  program_url: https://www.voys.nl/security-responsible-disclosure/#rd
+  domains:
+  - www.voys.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: spreaker-api
+  platform: bounty
+  disclosure: security@spreaker.com
+  bounty: true
+  program_url: https://www.spreaker.com/security
+  domains:
+  - api.spreaker.com
+  github_orgs: []
+  excluded: []

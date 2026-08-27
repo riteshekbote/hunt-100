@@ -1,0 +1,10 @@
+target:
+  name: electroneek-com-api
+  platform: vdp
+  disclosure: care@electroneek.com
+  bounty: false
+  program_url: https://electroneek.com/disclosure-policy/
+  domains:
+  - api.electroneek.com
+  github_orgs: []
+  excluded: []

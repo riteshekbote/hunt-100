@@ -1,0 +1,10 @@
+target:
+  name: hack-me-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/hackme
+  bounty: false
+  program_url: https://bugcrowd.com/hackme
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

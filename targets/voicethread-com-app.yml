@@ -1,0 +1,10 @@
+target:
+  name: voicethread-com-app
+  platform: vdp
+  disclosure: https://voicethread.com/howto/category/security-faq/
+  bounty: false
+  program_url: https://voicethread.com/howto/category/security-faq/
+  domains:
+  - app.voicethread.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ivanti
+  platform: vdp
+  disclosure: responsible.disclosure@ivanti.com
+  bounty: false
+  program_url: https://www.ivanti.com/support/contact-security
+  domains:
+  - ivanti.com
+  github_orgs: []
+  excluded: []

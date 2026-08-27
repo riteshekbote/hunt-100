@@ -1,0 +1,10 @@
+target:
+  name: dassault-systemes-se-3ds-www
+  platform: vdp
+  disclosure: 3ds.information-security@3ds.com
+  bounty: false
+  program_url: https://www.3ds.com/vulnerability-reporting/
+  domains:
+  - www.3ds.com
+  github_orgs: []
+  excluded: []

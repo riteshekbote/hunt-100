@@ -1,0 +1,10 @@
+target:
+  name: hcl
+  platform: vdp
+  disclosure: PSIRT@hcl.com
+  bounty: false
+  program_url: https://www.hcltech.com/software/psirt/hcl-software-vulnerability-disclosure-policy
+  domains:
+  - hcltech.com
+  github_orgs: []
+  excluded: []

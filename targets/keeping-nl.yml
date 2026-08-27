@@ -1,0 +1,10 @@
+target:
+  name: keeping-nl
+  platform: vdp
+  disclosure: security@305.nl
+  bounty: false
+  program_url: https://305.nl/en/terms-and-conditions/security/
+  domains:
+  - 305.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: smartthings-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/smartthings
+  bounty: false
+  program_url: https://bugcrowd.com/smartthings
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cloudera
+  platform: vdp
+  disclosure: security@cloudera.com
+  bounty: false
+  program_url: https://www.cloudera.com/contact-us/security.html
+  domains:
+  - cloudera.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: holland-controls
+  platform: vdp
+  disclosure: security@holland-controls.com
+  bounty: false
+  program_url: https://www.holland-controls.com/responsible-disclosure
+  domains:
+  - holland-controls.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: healthifyme-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/healthifyme
+  bounty: false
+  program_url: https://bugcrowd.com/healthifyme
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

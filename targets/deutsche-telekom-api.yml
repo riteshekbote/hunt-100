@@ -1,0 +1,10 @@
+target:
+  name: deutsche-telekom-api
+  platform: bounty
+  disclosure: bugbounty@t-mobile.cz
+  bounty: true
+  program_url: https://www.telekom.com/en/corporate-responsibility/data-protection-data-security/security/details/closing-security-gaps-360054
+  domains:
+  - api.telekom.com
+  github_orgs: []
+  excluded: []

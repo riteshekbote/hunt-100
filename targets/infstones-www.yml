@@ -1,0 +1,10 @@
+target:
+  name: infstones-www
+  platform: bounty
+  disclosure: https://infstones.com/blog/education/introducing-the-blocguardians-bug-bounty-program-654e723bd9afaf003e44fdea
+  bounty: true
+  program_url: https://infstones.com/blog/education/introducing-the-blocguardians-bug-bounty-program-654e723bd9afaf003e44fdea
+  domains:
+  - www.infstones.com
+  github_orgs: []
+  excluded: []

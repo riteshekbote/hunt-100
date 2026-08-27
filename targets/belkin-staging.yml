@@ -1,0 +1,10 @@
+target:
+  name: belkin-staging
+  platform: vdp
+  disclosure: https://www.belkin.com/us/security/
+  bounty: false
+  program_url: https://www.belkin.com/us/security/
+  domains:
+  - staging.belkin.com
+  github_orgs: []
+  excluded: []

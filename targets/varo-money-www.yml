@@ -1,0 +1,10 @@
+target:
+  name: varo-money-www
+  platform: vdp
+  disclosure: https://varomoney.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://varomoney.responsibledisclosure.com/hc/en-us
+  domains:
+  - www.varomoney.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

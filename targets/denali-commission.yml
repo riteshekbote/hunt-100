@@ -1,0 +1,10 @@
+target:
+  name: denali-commission
+  platform: vdp
+  disclosure: https://www.denali.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.denali.gov/vulnerability-disclosure-policy
+  domains:
+  - denali.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: banksa-www
+  platform: vdp
+  disclosure: vulnerability@banksa.com.au
+  bounty: false
+  program_url: https://www.banksa.com.au/online-services/security-centre/responsible-disclosure
+  domains:
+  - www.banksa.com.au
+  github_orgs: []
+  excluded: []

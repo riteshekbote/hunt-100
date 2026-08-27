@@ -1,0 +1,10 @@
+target:
+  name: amr-net
+  platform: vdp
+  disclosure: https://www.amr.net/site/privacy-policy
+  bounty: false
+  program_url: https://www.amr.net/site/privacy-policy
+  domains:
+  - amr.net
+  github_orgs: []
+  excluded: []

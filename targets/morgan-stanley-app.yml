@@ -1,0 +1,10 @@
+target:
+  name: morgan-stanley-app
+  platform: vdp
+  disclosure: https://morganstanley.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://morganstanley.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.morganstanley.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

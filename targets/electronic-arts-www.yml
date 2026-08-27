@@ -1,0 +1,10 @@
+target:
+  name: electronic-arts-www
+  platform: vdp
+  disclosure: secure@ea.com
+  bounty: false
+  program_url: https://www.ea.com/security/disclosure
+  domains:
+  - www.ea.com
+  github_orgs: []
+  excluded: []

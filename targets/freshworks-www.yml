@@ -1,0 +1,10 @@
+target:
+  name: freshworks-www
+  platform: vdp
+  disclosure: bughunt@freshworks.com
+  bounty: false
+  program_url: https://www.freshworks.com/security/responsible-disclosure/
+  domains:
+  - www.freshworks.com
+  github_orgs: []
+  excluded: []

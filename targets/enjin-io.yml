@@ -1,0 +1,10 @@
+target:
+  name: enjin-io
+  platform: vdp
+  disclosure: https://enj.in/security
+  bounty: false
+  program_url: https://enj.in/security
+  domains:
+  - enj.in
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: under-armour-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/underarmour
+  bounty: false
+  program_url: https://bugcrowd.com/underarmour
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: spaceapegames-com-app
+  platform: vdp
+  disclosure: security@spaceapegames.com
+  bounty: false
+  program_url: https://www.spaceapegames.com/privacy-policy
+  domains:
+  - app.spaceapegames.com
+  github_orgs: []
+  excluded: []

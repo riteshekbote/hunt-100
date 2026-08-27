@@ -1,0 +1,10 @@
+target:
+  name: monarx-www
+  platform: vdp
+  disclosure: security@monarx.com
+  bounty: false
+  program_url: https://monarx.zendesk.com/hc/en-us/articles/360040111711-Responsible-Disclosure
+  domains:
+  - www.monarx.zendesk.com
+  github_orgs: []
+  excluded: []

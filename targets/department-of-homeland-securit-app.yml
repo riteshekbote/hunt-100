@@ -1,0 +1,10 @@
+target:
+  name: department-of-homeland-securit-app
+  platform: vdp
+  disclosure: https://www.dhs.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.dhs.gov/vulnerability-disclosure-policy
+  domains:
+  - app.dhs.gov
+  github_orgs: []
+  excluded: []

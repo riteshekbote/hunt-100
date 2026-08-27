@@ -1,0 +1,10 @@
+target:
+  name: rtbf-be-api
+  platform: vdp
+  disclosure: gr_irtbf_it_kernel@rtbf.be
+  bounty: false
+  program_url: https://www.rtbf.be/cgu/
+  domains:
+  - api.rtbf.be
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: postmark-app
+  platform: vdp
+  disclosure: https://postmarkapp.com/support/article/779-responsible-disclosure-policy
+  bounty: false
+  program_url: https://postmarkapp.com/support/article/779-responsible-disclosure-policy
+  domains:
+  - app.postmarkapp.com
+  github_orgs: []
+  excluded: []

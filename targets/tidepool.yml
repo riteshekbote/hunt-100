@@ -1,0 +1,10 @@
+target:
+  name: tidepool
+  platform: vdp
+  disclosure: security@tidepool.org
+  bounty: false
+  program_url: https://www.tidepool.org/security/
+  domains:
+  - tidepool.org
+  github_orgs: []
+  excluded: []

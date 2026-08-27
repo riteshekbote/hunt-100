@@ -1,0 +1,10 @@
+target:
+  name: idena-www
+  platform: bounty
+  disclosure: info@idena.io
+  bounty: true
+  program_url: https://www.idena.io/contribute#contribute-3-1
+  domains:
+  - www.idena.io
+  github_orgs: []
+  excluded: []

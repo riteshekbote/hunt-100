@@ -1,0 +1,10 @@
+target:
+  name: karbon-app
+  platform: vdp
+  disclosure: https://karbonhq.com/security/vulnerability-disclosure
+  bounty: false
+  program_url: https://karbonhq.com/security/vulnerability-disclosure
+  domains:
+  - app.karbonhq.com
+  github_orgs: []
+  excluded: []

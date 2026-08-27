@@ -1,0 +1,10 @@
+target:
+  name: national-credit-union-administ-app
+  platform: vdp
+  disclosure: https://www.ncua.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.ncua.gov/vulnerability-disclosure-policy
+  domains:
+  - app.ncua.gov
+  github_orgs: []
+  excluded: []

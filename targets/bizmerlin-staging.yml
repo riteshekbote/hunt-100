@@ -1,0 +1,10 @@
+target:
+  name: bizmerlin-staging
+  platform: vdp
+  disclosure: https://www.bizmerlin.com/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.bizmerlin.com/responsible-disclosure-policy/
+  domains:
+  - staging.bizmerlin.com
+  github_orgs: []
+  excluded: []

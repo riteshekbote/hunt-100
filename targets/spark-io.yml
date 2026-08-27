@@ -1,0 +1,10 @@
+target:
+  name: spark-io
+  platform: vdp
+  disclosure: security@particle.io
+  bounty: false
+  program_url: https://www.particle.io/legal/responsible-disclosure/
+  domains:
+  - particle.io
+  github_orgs: []
+  excluded: []

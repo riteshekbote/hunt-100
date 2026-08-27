@@ -1,0 +1,10 @@
+target:
+  name: mckinsey-api
+  platform: vdp
+  disclosure: https://mckinsey.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://mckinsey.responsibledisclosure.com/hc/en-us
+  domains:
+  - api.mckinsey.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

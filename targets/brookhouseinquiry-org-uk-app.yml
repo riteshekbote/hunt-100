@@ -1,0 +1,10 @@
+target:
+  name: brookhouseinquiry-org-uk-app
+  platform: vdp
+  disclosure: https://mojdigital.blog.gov.uk/vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://mojdigital.blog.gov.uk/vulnerability-disclosure-policy/
+  domains:
+  - app.mojdigital.blog.gov.uk
+  github_orgs: []
+  excluded: []

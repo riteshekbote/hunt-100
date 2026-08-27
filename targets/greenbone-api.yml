@@ -1,0 +1,10 @@
+target:
+  name: greenbone-api
+  platform: vdp
+  disclosure: https://www.greenbone.net/en/responsible-disclosure/
+  bounty: false
+  program_url: https://www.greenbone.net/en/responsible-disclosure/
+  domains:
+  - api.greenbone.net
+  github_orgs: []
+  excluded: []

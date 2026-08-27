@@ -1,0 +1,10 @@
+target:
+  name: smiths-medical-www
+  platform: vdp
+  disclosure: cybersecurityincidents@smiths-medical.com
+  bounty: false
+  program_url: https://www.smiths-medical.com/company-information/smiths-medical-coordinated-disclosure-statement
+  domains:
+  - www.smiths-medical.com
+  github_orgs: []
+  excluded: []

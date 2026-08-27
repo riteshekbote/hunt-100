@@ -1,0 +1,10 @@
+target:
+  name: mikrotik-com-api
+  platform: vdp
+  disclosure: https://mikrotik.com/support
+  bounty: false
+  program_url: https://mikrotik.com/support
+  domains:
+  - api.mikrotik.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: namshi-com-api
+  platform: vdp
+  disclosure: security@namshi.com
+  bounty: false
+  program_url: https://namshi.com/security
+  domains:
+  - api.namshi.com
+  github_orgs: []
+  excluded: []

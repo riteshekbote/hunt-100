@@ -1,0 +1,10 @@
+target:
+  name: mailstrom-www
+  platform: vdp
+  disclosure: vulnerability@mailstrom.co
+  bounty: false
+  program_url: https://mailstrom.co/vdp
+  domains:
+  - www.mailstrom.co
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: phas-ubc-ca-api
+  platform: vdp
+  disclosure: https://phas.ubc.ca/.well-known/security-policy.html
+  bounty: false
+  program_url: https://phas.ubc.ca/.well-known/security-policy.html
+  domains:
+  - api.phas.ubc.ca
+  github_orgs: []
+  excluded: []

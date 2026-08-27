@@ -1,0 +1,10 @@
+target:
+  name: productboard-www
+  platform: bounty
+  disclosure: https://www.productboard.com/product/security/#application-security
+  bounty: true
+  program_url: https://www.productboard.com/product/security/#application-security
+  domains:
+  - www.productboard.com
+  github_orgs: []
+  excluded: []

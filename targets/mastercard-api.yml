@@ -1,0 +1,10 @@
+target:
+  name: mastercard-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/mastercard
+  bounty: true
+  program_url: https://bugcrowd.com/mastercard
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

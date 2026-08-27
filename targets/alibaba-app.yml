@@ -1,0 +1,10 @@
+target:
+  name: alibaba-app
+  platform: bounty
+  disclosure: security@service.alibaba.com
+  bounty: true
+  program_url: https://security.alibaba.com/
+  domains:
+  - app.security.alibaba.com
+  github_orgs: []
+  excluded: []

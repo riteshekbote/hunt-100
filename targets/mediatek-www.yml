@@ -1,0 +1,10 @@
+target:
+  name: mediatek-www
+  platform: vdp
+  disclosure: https://www.mediatek.com/security-contact
+  bounty: false
+  program_url: https://www.mediatek.com/security-contact
+  domains:
+  - www.mediatek.com
+  github_orgs: []
+  excluded: []

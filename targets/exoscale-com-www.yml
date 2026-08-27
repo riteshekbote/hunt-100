@@ -1,0 +1,10 @@
+target:
+  name: exoscale-com-www
+  platform: vdp
+  disclosure: security@exoscale.com
+  bounty: false
+  program_url: https://www.exoscale.com/security/
+  domains:
+  - www.exoscale.com
+  github_orgs: []
+  excluded: []

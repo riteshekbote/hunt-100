@@ -1,0 +1,10 @@
+target:
+  name: contensis-com-api
+  platform: vdp
+  disclosure: security@contensis.com
+  bounty: false
+  program_url: https://www.contensis.com/security
+  domains:
+  - api.contensis.com
+  github_orgs: []
+  excluded: []

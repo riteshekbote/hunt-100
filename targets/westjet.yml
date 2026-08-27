@@ -1,0 +1,10 @@
+target:
+  name: westjet
+  platform: vdp
+  disclosure: https://bugcrowd.com/westjet-disclose
+  bounty: false
+  program_url: https://bugcrowd.com/westjet-disclose
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

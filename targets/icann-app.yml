@@ -1,0 +1,10 @@
+target:
+  name: icann-app
+  platform: vdp
+  disclosure: vulnerability@icann.org
+  bounty: false
+  program_url: https://www.icann.org/vulnerabilities
+  domains:
+  - app.icann.org
+  github_orgs: []
+  excluded: []

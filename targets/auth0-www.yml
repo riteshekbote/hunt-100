@@ -1,0 +1,10 @@
+target:
+  name: auth0-www
+  platform: vdp
+  disclosure: https://auth0.com/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://auth0.com/responsible-disclosure-policy/
+  domains:
+  - www.auth0.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: institute-of-museum-and-librar-api
+  platform: vdp
+  disclosure: cybersec@imls.gov
+  bounty: false
+  program_url: https://www.imls.gov/vulnerability-disclosure-policy
+  domains:
+  - api.imls.gov
+  github_orgs: []
+  excluded: []

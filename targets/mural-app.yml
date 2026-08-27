@@ -1,0 +1,10 @@
+target:
+  name: mural-app
+  platform: bounty
+  disclosure: security@mural.co
+  bounty: true
+  program_url: https://www.mural.co/security/vdp
+  domains:
+  - app.mural.co
+  github_orgs: []
+  excluded: []

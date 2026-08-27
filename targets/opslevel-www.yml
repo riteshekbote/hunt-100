@@ -1,0 +1,10 @@
+target:
+  name: opslevel-www
+  platform: vdp
+  disclosure: security@opslevel.com
+  bounty: false
+  program_url: https://www.opslevel.com/responsible-disclosure/
+  domains:
+  - www.opslevel.com
+  github_orgs: []
+  excluded: []

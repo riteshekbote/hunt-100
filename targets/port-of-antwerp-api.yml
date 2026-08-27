@@ -1,0 +1,10 @@
+target:
+  name: port-of-antwerp-api
+  platform: vdp
+  disclosure: https://www.portofantwerp.com/en/responsible-disclosure
+  bounty: false
+  program_url: https://www.portofantwerp.com/en/responsible-disclosure
+  domains:
+  - api.portofantwerp.com
+  github_orgs: []
+  excluded: []

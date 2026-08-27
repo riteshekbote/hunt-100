@@ -1,0 +1,10 @@
+target:
+  name: logitech-app
+  platform: vdp
+  disclosure: https://www.logitech.com/en-us/legal/security-vulnerability-reporting.html
+  bounty: false
+  program_url: https://www.logitech.com/en-us/legal/security-vulnerability-reporting.html
+  domains:
+  - app.logitech.com
+  github_orgs: []
+  excluded: []

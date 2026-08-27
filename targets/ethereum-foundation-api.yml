@@ -1,0 +1,10 @@
+target:
+  name: ethereum-foundation-api
+  platform: bounty
+  disclosure: security@ethereum.org
+  bounty: true
+  program_url: https://bounty.ethereum.org/
+  domains:
+  - api.bounty.ethereum.org
+  github_orgs: []
+  excluded: []

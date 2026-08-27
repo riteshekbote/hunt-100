@@ -1,0 +1,10 @@
+target:
+  name: avanade-www
+  platform: vdp
+  disclosure: Res.Disclosure@Avanade.com
+  bounty: false
+  program_url: https://www.avanade.com/en/about-avanade/approach/trust-center/responsible-disclosure
+  domains:
+  - www.avanade.com
+  github_orgs: []
+  excluded: []

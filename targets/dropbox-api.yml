@@ -1,0 +1,10 @@
+target:
+  name: dropbox-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/dropbox/
+  bounty: true
+  program_url: https://bugcrowd.com/dropbox/
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: basecamp-admin
+  platform: vdp
+  disclosure: security@basecamp.com
+  bounty: false
+  program_url: https://basecamp.com/about/policies/security/response
+  domains:
+  - admin.basecamp.com
+  github_orgs: []
+  excluded: []

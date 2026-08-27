@@ -1,0 +1,10 @@
+target:
+  name: bitcoin-de-admin
+  platform: vdp
+  disclosure: bugs2019@bitcoin.de
+  bounty: false
+  program_url: https://www.bitcoin.de/en/bug-bounty
+  domains:
+  - admin.bitcoin.de
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: sugarcrm-api
+  platform: vdp
+  disclosure: secure@sugarcrm.com
+  bounty: false
+  program_url: https://support.sugarcrm.com/Resources/Security/Bug_Bounty_Program/
+  domains:
+  - api.support.sugarcrm.com
+  github_orgs: []
+  excluded: []

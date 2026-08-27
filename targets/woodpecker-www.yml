@@ -1,0 +1,10 @@
+target:
+  name: woodpecker-www
+  platform: vdp
+  disclosure: support@woodpecker.co
+  bounty: false
+  program_url: https://woodpecker.co/vulnerability-disclosure-program/
+  domains:
+  - www.woodpecker.co
+  github_orgs: []
+  excluded: []

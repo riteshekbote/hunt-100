@@ -1,0 +1,10 @@
+target:
+  name: analog-devices-www
+  platform: vdp
+  disclosure: securityalert@analog.com
+  bounty: false
+  program_url: https://www.analog.com/en/support/technical-support/product-security-response-center/vulnerability-disclosure-policy.html
+  domains:
+  - www.analog.com
+  github_orgs: []
+  excluded: []

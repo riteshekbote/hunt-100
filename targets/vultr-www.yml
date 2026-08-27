@@ -1,0 +1,10 @@
+target:
+  name: vultr-www
+  platform: bounty
+  disclosure: https://www.vultr.com/bug-bounty/
+  bounty: true
+  program_url: https://www.vultr.com/bug-bounty/
+  domains:
+  - www.vultr.com
+  github_orgs: []
+  excluded: []

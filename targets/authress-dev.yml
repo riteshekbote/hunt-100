@@ -1,0 +1,10 @@
+target:
+  name: authress-dev
+  platform: vdp
+  disclosure: https://authress.io/app/#/disclosure
+  bounty: false
+  program_url: https://authress.io/app/#/disclosure
+  domains:
+  - dev.authress.io
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: knowledgeowl-api
+  platform: vdp
+  disclosure: security@knowledgeowl.com
+  bounty: false
+  program_url: https://www.knowledgeowl.com/home/vulnerability-disclosure-policy
+  domains:
+  - api.knowledgeowl.com
+  github_orgs: []
+  excluded: []

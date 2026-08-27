@@ -1,0 +1,10 @@
+target:
+  name: trovisio-api
+  platform: vdp
+  disclosure: info@trovisio.com
+  bounty: false
+  program_url: https://app.trovisio.com/legal?disclosure=disclosure
+  domains:
+  - api.app.trovisio.com
+  github_orgs: []
+  excluded: []

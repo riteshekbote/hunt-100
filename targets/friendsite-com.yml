@@ -1,0 +1,10 @@
+target:
+  name: friendsite-com
+  platform: vdp
+  disclosure: security@sportsa.com
+  bounty: false
+  program_url: https://sportsa.com/policies/
+  domains:
+  - sportsa.com
+  github_orgs: []
+  excluded: []

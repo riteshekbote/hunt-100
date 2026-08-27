@@ -1,0 +1,10 @@
+target:
+  name: fiat-chrysler-automobiles-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/fca
+  bounty: true
+  program_url: https://bugcrowd.com/fca
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: clipperz
+  platform: vdp
+  disclosure: security@clipperz.is
+  bounty: false
+  program_url: https://clipperz.is/security_privacy/responsible_disclosure_policy/
+  domains:
+  - clipperz.is
+  github_orgs: []
+  excluded: []

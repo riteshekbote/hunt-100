@@ -1,0 +1,10 @@
+target:
+  name: audere-admin
+  platform: vdp
+  disclosure: security@auderenow.org
+  bounty: false
+  program_url: https://auderenow.org/security
+  domains:
+  - admin.auderenow.org
+  github_orgs: []
+  excluded: []

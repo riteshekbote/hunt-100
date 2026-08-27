@@ -1,0 +1,10 @@
+target:
+  name: local-heroes
+  platform: vdp
+  disclosure: https://www.localheroes.com/security
+  bounty: false
+  program_url: https://www.localheroes.com/security
+  domains:
+  - localheroes.com
+  github_orgs: []
+  excluded: []

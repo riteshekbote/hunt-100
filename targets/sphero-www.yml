@@ -1,0 +1,10 @@
+target:
+  name: sphero-www
+  platform: vdp
+  disclosure: security@sphero.com
+  bounty: false
+  program_url: https://support.sphero.com/article/5drs94lhk5-vulnerability-disclosure-program
+  domains:
+  - www.support.sphero.com
+  github_orgs: []
+  excluded: []

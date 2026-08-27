@@ -1,0 +1,10 @@
+target:
+  name: barco-api
+  platform: vdp
+  disclosure: psirt@barco.com
+  bounty: false
+  program_url: https://www.barco.com/en/about-barco/legal/responsible-disclosure
+  domains:
+  - api.barco.com
+  github_orgs: []
+  excluded: []

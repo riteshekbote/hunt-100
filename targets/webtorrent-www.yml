@@ -1,0 +1,10 @@
+target:
+  name: webtorrent-www
+  platform: vdp
+  disclosure: feross@feross.org
+  bounty: false
+  program_url: https://github.com/webtorrent/webtorrent/security/policy
+  domains:
+  - www.github.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: shopify-app
+  platform: bounty
+  disclosure: https://bugbounty.shopify.com
+  bounty: true
+  program_url: https://bugbounty.shopify.com
+  domains:
+  - app.bugbounty.shopify.com
+  github_orgs: []
+  excluded: []

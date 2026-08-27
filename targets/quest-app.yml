@@ -1,0 +1,10 @@
+target:
+  name: quest-app
+  platform: vdp
+  disclosure: https://support.quest.com/contact-us/report-security-vulnerability
+  bounty: false
+  program_url: https://support.quest.com/contact-us/report-security-vulnerability
+  domains:
+  - app.support.quest.com
+  github_orgs: []
+  excluded: []

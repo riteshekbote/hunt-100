@@ -1,0 +1,10 @@
+target:
+  name: arm-mbed-app
+  platform: bounty
+  disclosure: Support.mbedtls@arm.com
+  bounty: true
+  program_url: https://tls.mbed.org/c-library-bug-bounty-program
+  domains:
+  - app.tls.mbed.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: lenova-api
+  platform: vdp
+  disclosure: psirt@lenovo.com
+  bounty: false
+  program_url: https://www.lenovo.com/us/en/product-security/vulnerability-disclosure-policy
+  domains:
+  - api.lenovo.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: linksys-api
+  platform: vdp
+  disclosure: security@linksys.com
+  bounty: false
+  program_url: https://www.belkin.com/us/security/
+  domains:
+  - api.belkin.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: metropolitan-government-of-nas-www
+  platform: vdp
+  disclosure: metroitshelpdesk@nashville.gov
+  bounty: false
+  program_url: https://www.nashville.gov/sites/default/files/2021-11/ISM-19-Vulnerability-Disclosure-Policy.pdf
+  domains:
+  - www.nashville.gov
+  github_orgs: []
+  excluded: []

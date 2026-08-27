@@ -1,0 +1,10 @@
+target:
+  name: barco-staging
+  platform: vdp
+  disclosure: psirt@barco.com
+  bounty: false
+  program_url: https://www.barco.com/en/about-barco/legal/responsible-disclosure
+  domains:
+  - staging.barco.com
+  github_orgs: []
+  excluded: []

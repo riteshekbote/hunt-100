@@ -1,0 +1,10 @@
+target:
+  name: gitcoin-www
+  platform: bounty
+  disclosure: engineering@gitcoin.co
+  bounty: true
+  program_url: https://docs.gitcoin.co/mk_securitybounty/
+  domains:
+  - www.docs.gitcoin.co
+  github_orgs: []
+  excluded: []

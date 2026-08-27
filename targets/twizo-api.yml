@@ -1,0 +1,10 @@
+target:
+  name: twizo-api
+  platform: vdp
+  disclosure: security@twizo.com
+  bounty: false
+  program_url: https://www.twizo.com/twizo-responsible-disclosure-policy/
+  domains:
+  - api.twizo.com
+  github_orgs: []
+  excluded: []

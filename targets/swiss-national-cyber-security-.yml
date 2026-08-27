@@ -1,0 +1,10 @@
+target:
+  name: swiss-national-cyber-security-
+  platform: vdp
+  disclosure: vulnerability@ncsc.ch
+  bounty: false
+  program_url: https://www.ncsc.admin.ch/ncsc/en/home/infos-fuer/infos-it-spezialisten/themen/schwachstelle-melden.html
+  domains:
+  - ncsc.admin.ch
+  github_orgs: []
+  excluded: []

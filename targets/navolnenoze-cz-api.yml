@@ -1,0 +1,10 @@
+target:
+  name: navolnenoze-cz-api
+  platform: vdp
+  disclosure: robert@vla.ch
+  bounty: false
+  program_url: https://navolnenoze.cz/o-nas/soukromi/
+  domains:
+  - api.navolnenoze.cz
+  github_orgs: []
+  excluded: []

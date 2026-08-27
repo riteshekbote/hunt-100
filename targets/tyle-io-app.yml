@@ -1,0 +1,10 @@
+target:
+  name: tyle-io-app
+  platform: vdp
+  disclosure: support@tyle.io
+  bounty: false
+  program_url: https://tyle.io/info/privacy
+  domains:
+  - app.tyle.io
+  github_orgs: []
+  excluded: []

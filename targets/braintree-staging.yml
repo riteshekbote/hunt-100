@@ -1,0 +1,10 @@
+target:
+  name: braintree-staging
+  platform: vdp
+  disclosure: ppbugbounty@paypal.com
+  bounty: false
+  program_url: https://www.braintreepayments.com/developers/disclosure
+  domains:
+  - staging.braintreepayments.com
+  github_orgs: []
+  excluded: []

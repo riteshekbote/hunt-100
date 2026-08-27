@@ -1,0 +1,10 @@
+target:
+  name: choice-hotel-api
+  platform: vdp
+  disclosure: responsibledisclosure@choicehotels.com
+  bounty: false
+  program_url: https://www.choicehotels.com/legal/responsible-disclosure
+  domains:
+  - api.choicehotels.com
+  github_orgs: []
+  excluded: []

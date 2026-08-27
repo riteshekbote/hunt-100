@@ -1,0 +1,10 @@
+target:
+  name: cloudflare
+  platform: vdp
+  disclosure: https://www.cloudflare.com/en-gb/disclosure/
+  bounty: false
+  program_url: https://www.cloudflare.com/en-gb/disclosure/
+  domains:
+  - cloudflare.com
+  github_orgs: []
+  excluded: []

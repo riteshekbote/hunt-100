@@ -1,0 +1,10 @@
+target:
+  name: go-jek-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/gojek
+  bounty: true
+  program_url: https://bugcrowd.com/gojek
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: tts-api
+  platform: bounty
+  disclosure: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  bounty: true
+  program_url: https://github.com/18F/vulnerability-disclosure-policy/blob/master/vulnerability-disclosure-policy.md
+  domains:
+  - api.github.com
+  github_orgs: []
+  excluded: []

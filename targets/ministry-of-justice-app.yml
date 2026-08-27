@@ -1,0 +1,10 @@
+target:
+  name: ministry-of-justice-app
+  platform: vdp
+  disclosure: cybersecurity+vulnerabilitydisclosure@digital.justice.gov.uk
+  bounty: false
+  program_url: https://mojdigital.blog.gov.uk/vulnerability-disclosure-policy/
+  domains:
+  - app.mojdigital.blog.gov.uk
+  github_orgs: []
+  excluded: []

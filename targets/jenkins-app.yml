@@ -1,0 +1,10 @@
+target:
+  name: jenkins-app
+  platform: vdp
+  disclosure: https://www.jenkins.io/security/reporting/
+  bounty: false
+  program_url: https://www.jenkins.io/security/reporting/
+  domains:
+  - app.jenkins.io
+  github_orgs: []
+  excluded: []

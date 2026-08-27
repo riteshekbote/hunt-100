@@ -1,0 +1,10 @@
+target:
+  name: tiaa-www
+  platform: vdp
+  disclosure: https://tiaa.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://tiaa.responsibledisclosure.com/hc/en-us
+  domains:
+  - www.tiaa.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: adafruit-dev
+  platform: vdp
+  disclosure: security@adafruit.com
+  bounty: false
+  program_url: https://www.adafruit.com/reportingsecurityissues
+  domains:
+  - dev.adafruit.com
+  github_orgs: []
+  excluded: []

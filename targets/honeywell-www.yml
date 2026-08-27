@@ -1,0 +1,10 @@
+target:
+  name: honeywell-www
+  platform: vdp
+  disclosure: https://www.honeywell.com/us/en/product-security
+  bounty: false
+  program_url: https://www.honeywell.com/us/en/product-security
+  domains:
+  - www.honeywell.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: etsy-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/etsy
+  bounty: true
+  program_url: https://bugcrowd.com/etsy
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

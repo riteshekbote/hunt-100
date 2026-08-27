@@ -1,0 +1,10 @@
+target:
+  name: realtor-www
+  platform: vdp
+  disclosure: security@move.com
+  bounty: false
+  program_url: https://www.realtor.com/responsible-disclosure-policy/
+  domains:
+  - www.realtor.com
+  github_orgs: []
+  excluded: []

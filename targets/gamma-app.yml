@@ -1,0 +1,10 @@
+target:
+  name: gamma-app
+  platform: bounty
+  disclosure: security-alert@intergamma.nl
+  bounty: true
+  program_url: https://www.gamma.nl/klantenservice/veiligheid-privacy/responsible-disclosure
+  domains:
+  - app.gamma.nl
+  github_orgs: []
+  excluded: []

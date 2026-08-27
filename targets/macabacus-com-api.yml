@@ -1,0 +1,10 @@
+target:
+  name: macabacus-com-api
+  platform: vdp
+  disclosure: security@macabacus.com
+  bounty: false
+  program_url: https://macabacus.com/vdp
+  domains:
+  - api.macabacus.com
+  github_orgs: []
+  excluded: []

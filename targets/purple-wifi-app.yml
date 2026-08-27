@@ -1,0 +1,10 @@
+target:
+  name: purple-wifi-app
+  platform: vdp
+  disclosure: security@purple.ai
+  bounty: false
+  program_url: https://purple.ai/responsible-disclosure/
+  domains:
+  - app.purple.ai
+  github_orgs: []
+  excluded: []

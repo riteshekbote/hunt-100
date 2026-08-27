@@ -1,0 +1,10 @@
+target:
+  name: jet-com-api
+  platform: vdp
+  disclosure: https://corporate.walmart.com/article/responsible-disclosure-policy
+  bounty: false
+  program_url: https://corporate.walmart.com/article/responsible-disclosure-policy
+  domains:
+  - api.corporate.walmart.com
+  github_orgs: []
+  excluded: []

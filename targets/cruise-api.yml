@@ -1,0 +1,10 @@
+target:
+  name: cruise-api
+  platform: vdp
+  disclosure: disclosure@getcruise.com
+  bounty: false
+  program_url: https://www.getcruise.com/security
+  domains:
+  - api.getcruise.com
+  github_orgs: []
+  excluded: []

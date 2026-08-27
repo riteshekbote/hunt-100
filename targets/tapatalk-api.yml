@@ -1,0 +1,10 @@
+target:
+  name: tapatalk-api
+  platform: vdp
+  disclosure: https://tapatalk.com/security.php
+  bounty: false
+  program_url: https://tapatalk.com/security.php
+  domains:
+  - api.tapatalk.com
+  github_orgs: []
+  excluded: []

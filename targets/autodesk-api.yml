@@ -1,0 +1,10 @@
+target:
+  name: autodesk-api
+  platform: vdp
+  disclosure: https://www.autodesk.com/trust/incident-response
+  bounty: false
+  program_url: https://www.autodesk.com/trust/incident-response
+  domains:
+  - api.autodesk.com
+  github_orgs: []
+  excluded: []

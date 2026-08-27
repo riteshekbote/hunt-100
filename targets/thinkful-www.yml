@@ -1,0 +1,10 @@
+target:
+  name: thinkful-www
+  platform: vdp
+  disclosure: responsible-disclosure@thinkful.com
+  bounty: false
+  program_url: https://www.thinkful.com/responsible-disclosure/
+  domains:
+  - www.thinkful.com
+  github_orgs: []
+  excluded: []

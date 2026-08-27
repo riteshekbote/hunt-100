@@ -1,0 +1,10 @@
+target:
+  name: boeing-www
+  platform: vdp
+  disclosure: VulnerabilityDisclosure@boeing.com
+  bounty: false
+  program_url: https://www.boeing.com/principles/ethics-and-compliance.page
+  domains:
+  - www.boeing.com
+  github_orgs: []
+  excluded: []

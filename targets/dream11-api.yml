@@ -1,0 +1,10 @@
+target:
+  name: dream11-api
+  platform: vdp
+  disclosure: security@dream11.com
+  bounty: false
+  program_url: https://www.dream11.com/security/rvdp
+  domains:
+  - api.dream11.com
+  github_orgs: []
+  excluded: []

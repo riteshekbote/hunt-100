@@ -1,0 +1,10 @@
+target:
+  name: fastly-www
+  platform: vdp
+  disclosure: https://www.fastly.com/security/report-security-issue
+  bounty: false
+  program_url: https://www.fastly.com/security/report-security-issue
+  domains:
+  - www.fastly.com
+  github_orgs: []
+  excluded: []

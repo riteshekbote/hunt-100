@@ -1,0 +1,10 @@
+target:
+  name: imperva-app
+  platform: vdp
+  disclosure: https://www.imperva.com/legal/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.imperva.com/legal/responsible-disclosure-policy/
+  domains:
+  - app.imperva.com
+  github_orgs: []
+  excluded: []

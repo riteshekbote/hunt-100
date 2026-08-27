@@ -1,0 +1,10 @@
+target:
+  name: fondy-eu-www
+  platform: vdp
+  disclosure: https://www.openbugbounty.org/bugbounty/FONDY_EU/
+  bounty: false
+  program_url: https://www.openbugbounty.org/bugbounty/FONDY_EU/
+  domains:
+  - www.openbugbounty.org
+  github_orgs: []
+  excluded: []

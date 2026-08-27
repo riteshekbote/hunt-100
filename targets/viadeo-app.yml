@@ -1,0 +1,10 @@
+target:
+  name: viadeo-app
+  platform: vdp
+  disclosure: security@viadeo.com
+  bounty: false
+  program_url: https://www.viadeo.com/en/securite
+  domains:
+  - app.viadeo.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: internetwache-app
+  platform: vdp
+  disclosure: security@internetwache.org
+  bounty: false
+  program_url: https://en.internetwache.org/security/
+  domains:
+  - app.en.internetwache.org
+  github_orgs: []
+  excluded: []

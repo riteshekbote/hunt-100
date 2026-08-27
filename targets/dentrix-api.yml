@@ -1,0 +1,10 @@
+target:
+  name: dentrix-api
+  platform: bounty
+  disclosure: https://www.dentrix.com/support/data-security/bug-bounty-program
+  bounty: true
+  program_url: https://www.dentrix.com/support/data-security/bug-bounty-program
+  domains:
+  - api.dentrix.com
+  github_orgs: []
+  excluded: []

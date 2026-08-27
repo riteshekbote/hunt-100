@@ -1,0 +1,10 @@
+target:
+  name: nautadutilh-api
+  platform: vdp
+  disclosure: https://www.nautadutilh.com/en/responsible-disclosure
+  bounty: false
+  program_url: https://www.nautadutilh.com/en/responsible-disclosure
+  domains:
+  - api.nautadutilh.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: qualys-api
+  platform: vdp
+  disclosure: bugreport@qualys.com
+  bounty: false
+  program_url: https://www.qualys.com/docs/responsible-disclosure-policy.pdf
+  domains:
+  - api.qualys.com
+  github_orgs: []
+  excluded: []

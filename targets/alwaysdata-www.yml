@@ -1,0 +1,10 @@
+target:
+  name: alwaysdata-www
+  platform: bounty
+  disclosure: https://www.alwaysdata.com/en/bug-bounty/
+  bounty: true
+  program_url: https://www.alwaysdata.com/en/bug-bounty/
+  domains:
+  - www.alwaysdata.com
+  github_orgs: []
+  excluded: []

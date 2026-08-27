@@ -1,0 +1,10 @@
+target:
+  name: mailchimp
+  platform: vdp
+  disclosure: https://mailchimp.com/about/security/
+  bounty: false
+  program_url: https://mailchimp.com/about/security/
+  domains:
+  - mailchimp.com
+  github_orgs: []
+  excluded: []

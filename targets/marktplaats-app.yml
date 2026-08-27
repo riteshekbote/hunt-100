@@ -1,0 +1,10 @@
+target:
+  name: marktplaats-app
+  platform: bounty
+  disclosure: https://www.marktplaats.nl/i/help/veilig-en-succesvol/responsible-disclosure-program.dot.html
+  bounty: true
+  program_url: https://www.marktplaats.nl/i/help/veilig-en-succesvol/responsible-disclosure-program.dot.html
+  domains:
+  - app.marktplaats.nl
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: pinterest-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/pinterest/
+  bounty: true
+  program_url: https://bugcrowd.com/pinterest/
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

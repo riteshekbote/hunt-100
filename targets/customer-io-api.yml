@@ -1,0 +1,10 @@
+target:
+  name: customer-io-api
+  platform: vdp
+  disclosure: ctf@customer.io
+  bounty: false
+  program_url: https://customer.io/legal/reporting-vulnerability/
+  domains:
+  - api.customer.io
+  github_orgs: []
+  excluded: []

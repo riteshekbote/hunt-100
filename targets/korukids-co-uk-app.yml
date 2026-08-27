@@ -1,0 +1,10 @@
+target:
+  name: korukids-co-uk-app
+  platform: vdp
+  disclosure: security-public@korukids.co.uk
+  bounty: false
+  program_url: https://www.korukids.co.uk/privacy-policy/
+  domains:
+  - app.korukids.co.uk
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: followupboss-com-www
+  platform: vdp
+  disclosure: security@followupboss.com
+  bounty: false
+  program_url: https://www.followupboss.com/vulnerability-disclosure-policy
+  domains:
+  - www.followupboss.com
+  github_orgs: []
+  excluded: []

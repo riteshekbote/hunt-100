@@ -1,0 +1,10 @@
+target:
+  name: twitch-api
+  platform: vdp
+  disclosure: https://www.twitch.tv/p/security
+  bounty: false
+  program_url: https://www.twitch.tv/p/security
+  domains:
+  - api.twitch.tv
+  github_orgs: []
+  excluded: []

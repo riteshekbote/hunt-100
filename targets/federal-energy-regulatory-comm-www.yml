@@ -1,0 +1,10 @@
+target:
+  name: federal-energy-regulatory-comm-www
+  platform: vdp
+  disclosure: https://www.ferc.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.ferc.gov/vulnerability-disclosure-policy
+  domains:
+  - www.ferc.gov
+  github_orgs: []
+  excluded: []

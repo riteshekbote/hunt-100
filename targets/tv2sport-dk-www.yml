@@ -1,0 +1,10 @@
+target:
+  name: tv2sport-dk-www
+  platform: vdp
+  disclosure: security@tv2.dk
+  bounty: false
+  program_url: https://omtv2.tv2.dk/media/126365/tv_2_responsible_disclosure.pdf
+  domains:
+  - www.omtv2.tv2.dk
+  github_orgs: []
+  excluded: []

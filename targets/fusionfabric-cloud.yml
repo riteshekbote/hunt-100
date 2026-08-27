@@ -1,0 +1,10 @@
+target:
+  name: fusionfabric-cloud
+  platform: vdp
+  disclosure: https://fusionfabriccloud.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://fusionfabriccloud.responsibledisclosure.com/hc/en-us
+  domains:
+  - fusionfabriccloud.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

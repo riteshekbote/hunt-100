@@ -1,0 +1,10 @@
+target:
+  name: switch-ch
+  platform: vdp
+  disclosure: https://www.switch.ch/security/.galleries/files/SWITCH-CERT.txt
+  bounty: false
+  program_url: https://www.switch.ch/security/.galleries/files/SWITCH-CERT.txt
+  domains:
+  - switch.ch
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: strala-app
+  platform: vdp
+  disclosure: security@strala.com
+  bounty: false
+  program_url: https://www.strala.com/responsible-disclosure
+  domains:
+  - app.strala.com
+  github_orgs: []
+  excluded: []

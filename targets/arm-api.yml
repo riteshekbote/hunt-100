@@ -1,0 +1,10 @@
+target:
+  name: arm-api
+  platform: vdp
+  disclosure: arm-security@arm.com
+  bounty: false
+  program_url: https://developer.arm.com/support/arm-security-updates/report-security-vulnerabilities
+  domains:
+  - api.developer.arm.com
+  github_orgs: []
+  excluded: []

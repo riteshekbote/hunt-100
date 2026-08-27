@@ -1,0 +1,10 @@
+target:
+  name: zerocopter
+  platform: vdp
+  disclosure: https://www.zerocopter.com/en/responsible-disclosure
+  bounty: false
+  program_url: https://www.zerocopter.com/en/responsible-disclosure
+  domains:
+  - zerocopter.com
+  github_orgs: []
+  excluded: []

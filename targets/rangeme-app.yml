@@ -1,0 +1,10 @@
+target:
+  name: rangeme-app
+  platform: vdp
+  disclosure: security@rangeme.com
+  bounty: false
+  program_url: https://www.rangeme.com/vulnerability_disclosure_program
+  domains:
+  - app.rangeme.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: neophotonics-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/neophotonics
+  bounty: true
+  program_url: https://bugcrowd.com/neophotonics
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

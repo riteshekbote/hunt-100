@@ -1,0 +1,10 @@
+target:
+  name: vonage-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/vonage
+  bounty: false
+  program_url: https://bugcrowd.com/vonage
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

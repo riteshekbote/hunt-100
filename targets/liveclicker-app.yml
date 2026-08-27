@@ -1,0 +1,10 @@
+target:
+  name: liveclicker-app
+  platform: bounty
+  disclosure: https://www.liveclicker.com/trust/report-a-vulnerability/
+  bounty: true
+  program_url: https://www.liveclicker.com/trust/report-a-vulnerability/
+  domains:
+  - app.liveclicker.com
+  github_orgs: []
+  excluded: []

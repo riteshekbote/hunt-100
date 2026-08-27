@@ -1,0 +1,10 @@
+target:
+  name: discover-financial-services
+  platform: vdp
+  disclosure: https://discover.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://discover.responsibledisclosure.com/hc/en-us
+  domains:
+  - discover.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

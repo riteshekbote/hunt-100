@@ -1,0 +1,10 @@
+target:
+  name: alwaysdata-staging
+  platform: bounty
+  disclosure: https://www.alwaysdata.com/en/bug-bounty/
+  bounty: true
+  program_url: https://www.alwaysdata.com/en/bug-bounty/
+  domains:
+  - staging.alwaysdata.com
+  github_orgs: []
+  excluded: []

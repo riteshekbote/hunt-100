@@ -1,0 +1,10 @@
+target:
+  name: wevpn-app
+  platform: bounty
+  disclosure: security@wevpn.com
+  bounty: true
+  program_url: https://wevpn.com/responsible-disclosure
+  domains:
+  - app.wevpn.com
+  github_orgs: []
+  excluded: []

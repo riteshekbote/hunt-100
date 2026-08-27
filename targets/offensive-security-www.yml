@@ -1,0 +1,10 @@
+target:
+  name: offensive-security-www
+  platform: bounty
+  disclosure: security@offensive-security.com
+  bounty: true
+  program_url: https://www.offensive-security.com/bug-bounty-program/
+  domains:
+  - www.offensive-security.com
+  github_orgs: []
+  excluded: []

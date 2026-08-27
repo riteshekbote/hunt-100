@@ -1,0 +1,10 @@
+target:
+  name: appoptics-dev
+  platform: vdp
+  disclosure: psirt@solarwinds.com
+  bounty: false
+  program_url: https://www.appoptics.com/security
+  domains:
+  - dev.appoptics.com
+  github_orgs: []
+  excluded: []

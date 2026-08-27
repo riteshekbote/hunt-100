@@ -1,0 +1,10 @@
+target:
+  name: ashby-dev
+  platform: vdp
+  disclosure: security@ashbyhq.com
+  bounty: false
+  program_url: https://www.ashbyhq.com/resources/vulnerability-disclosure
+  domains:
+  - dev.ashbyhq.com
+  github_orgs: []
+  excluded: []

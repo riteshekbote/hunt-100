@@ -1,0 +1,10 @@
+target:
+  name: tritarget-org-www
+  platform: vdp
+  disclosure: suki@tritarget.org
+  bounty: false
+  program_url: https://tritarget.org/static/Privacy%2520Policy.html
+  domains:
+  - www.tritarget.org
+  github_orgs: []
+  excluded: []

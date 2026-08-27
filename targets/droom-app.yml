@@ -1,0 +1,10 @@
+target:
+  name: droom-app
+  platform: vdp
+  disclosure: Bugbounty@droom.in
+  bounty: false
+  program_url: https://droom.in/bugbounty
+  domains:
+  - app.droom.in
+  github_orgs: []
+  excluded: []

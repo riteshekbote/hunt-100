@@ -1,0 +1,10 @@
+target:
+  name: harmony-app
+  platform: vdp
+  disclosure: security@collectiveidea.com
+  bounty: false
+  program_url: http://get.harmonyapp.com/security/
+  domains:
+  - app.get.harmonyapp.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: conferencebadge-com-api
+  platform: vdp
+  disclosure: security@conferencebadge.com
+  bounty: false
+  program_url: https://www.conferencebadge.com/security
+  domains:
+  - api.conferencebadge.com
+  github_orgs: []
+  excluded: []

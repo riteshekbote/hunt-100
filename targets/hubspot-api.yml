@@ -1,0 +1,10 @@
+target:
+  name: hubspot-api
+  platform: vdp
+  disclosure: https://bugcrowd.com/hubspot
+  bounty: false
+  program_url: https://bugcrowd.com/hubspot
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: paladin-cyber-bug-bounty-www
+  platform: bounty
+  disclosure: https://www.federacy.com/paladin-cyber-bug-bounty
+  bounty: true
+  program_url: https://www.federacy.com/paladin-cyber-bug-bounty
+  domains:
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

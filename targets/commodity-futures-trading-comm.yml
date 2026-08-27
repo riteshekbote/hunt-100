@@ -1,0 +1,10 @@
+target:
+  name: commodity-futures-trading-comm
+  platform: vdp
+  disclosure: Security_Vdp@cftc.gov
+  bounty: false
+  program_url: https://www.cftc.gov/vulnerability-disclosure-policy
+  domains:
+  - cftc.gov
+  github_orgs: []
+  excluded: []

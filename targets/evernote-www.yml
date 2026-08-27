@@ -1,0 +1,10 @@
+target:
+  name: evernote-www
+  platform: vdp
+  disclosure: security@evernote.com
+  bounty: false
+  program_url: https://evernote.com/security/report-issue
+  domains:
+  - www.evernote.com
+  github_orgs: []
+  excluded: []

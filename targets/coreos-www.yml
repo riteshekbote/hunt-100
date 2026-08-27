@@ -1,0 +1,10 @@
+target:
+  name: coreos-www
+  platform: vdp
+  disclosure: security@coreos.com
+  bounty: false
+  program_url: https://coreos.com/security/disclosure/
+  domains:
+  - www.coreos.com
+  github_orgs: []
+  excluded: []

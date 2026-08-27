@@ -1,0 +1,10 @@
+target:
+  name: puppet-api
+  platform: vdp
+  disclosure: security@puppetlabs.com
+  bounty: false
+  program_url: https://puppet.com/blog/responsible-disclosure-of-security-vulnerabilities
+  domains:
+  - api.puppet.com
+  github_orgs: []
+  excluded: []

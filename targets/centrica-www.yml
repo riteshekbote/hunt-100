@@ -1,0 +1,10 @@
+target:
+  name: centrica-www
+  platform: vdp
+  disclosure: https://www.centrica.com/site-tools/security/
+  bounty: false
+  program_url: https://www.centrica.com/site-tools/security/
+  domains:
+  - www.centrica.com
+  github_orgs: []
+  excluded: []

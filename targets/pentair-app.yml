@@ -1,0 +1,10 @@
+target:
+  name: pentair-app
+  platform: vdp
+  disclosure: ResponsibleDisclosure@Pentair.com
+  bounty: false
+  program_url: https://www.pentair.com/en-us/legal/responsible-disclosure.html
+  domains:
+  - app.pentair.com
+  github_orgs: []
+  excluded: []

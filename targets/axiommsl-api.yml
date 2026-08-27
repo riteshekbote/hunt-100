@@ -1,0 +1,10 @@
+target:
+  name: axiommsl-api
+  platform: vdp
+  disclosure: responsible.disclosure@axiomsl.com
+  bounty: false
+  program_url: https://www.axiomsl.com/responsible-disclosure/
+  domains:
+  - api.axiomsl.com
+  github_orgs: []
+  excluded: []

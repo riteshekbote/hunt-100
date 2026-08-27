@@ -1,0 +1,10 @@
+target:
+  name: defibox-api
+  platform: bounty
+  disclosure: bounty@defibox.io
+  bounty: true
+  program_url: https://support.newdex.net/hc/en-us/articles/360046715092-Defibox-launches-bug-bounty-program-officially
+  domains:
+  - api.support.newdex.net
+  github_orgs: []
+  excluded: []

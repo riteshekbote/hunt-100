@@ -1,0 +1,10 @@
+target:
+  name: district-of-columbia-governmen-app
+  platform: vdp
+  disclosure: responsibledisclosure@dc.gov
+  bounty: false
+  program_url: https://octo.dc.gov/sites/default/files/dc/sites/octo/publication/attachments/Responsible%20Disclosure%20Policy%20.pdf
+  domains:
+  - app.octo.dc.gov
+  github_orgs: []
+  excluded: []

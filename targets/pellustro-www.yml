@@ -1,0 +1,10 @@
+target:
+  name: pellustro-www
+  platform: vdp
+  disclosure: security.pellustro@element-22.com
+  bounty: false
+  program_url: https://pellustro.com/responsible-disclosure-policy/
+  domains:
+  - www.pellustro.com
+  github_orgs: []
+  excluded: []

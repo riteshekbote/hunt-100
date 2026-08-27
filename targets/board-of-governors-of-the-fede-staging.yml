@@ -1,0 +1,10 @@
+target:
+  name: board-of-governors-of-the-fede-staging
+  platform: vdp
+  disclosure: vulnerability.reporting@frb.gov
+  bounty: false
+  program_url: https://www.federalreserve.gov/vulnerability-disclosure-policy
+  domains:
+  - staging.federalreserve.gov
+  github_orgs: []
+  excluded: []

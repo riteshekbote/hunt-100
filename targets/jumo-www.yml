@@ -1,0 +1,10 @@
+target:
+  name: jumo-www
+  platform: vdp
+  disclosure: responsibledisclosure@jumo.world.
+  bounty: false
+  program_url: https://www.jumo.world/responsible-disclosure/
+  domains:
+  - www.jumo.world
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: avalara-admin
+  platform: vdp
+  disclosure: information.security@avalara.com
+  bounty: false
+  program_url: https://www.avalara.com/us/en/legal/responsible-disclosure.html
+  domains:
+  - admin.avalara.com
+  github_orgs: []
+  excluded: []

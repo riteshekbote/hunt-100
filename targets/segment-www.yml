@@ -1,0 +1,10 @@
+target:
+  name: segment-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/segment
+  bounty: true
+  program_url: https://bugcrowd.com/segment
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

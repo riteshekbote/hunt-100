@@ -1,0 +1,10 @@
+target:
+  name: eventbrite-app
+  platform: vdp
+  disclosure: security@eventbrite.com
+  bounty: false
+  program_url: http://www.eventbrite.com/security/
+  domains:
+  - app.eventbrite.com
+  github_orgs: []
+  excluded: []

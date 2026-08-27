@@ -1,0 +1,10 @@
+target:
+  name: pon-cat-api
+  platform: bounty
+  disclosure: rd@pon.com
+  bounty: true
+  program_url: https://www.pon-cat.com/en/responsible-disclosure
+  domains:
+  - api.pon-cat.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: gitpod-app
+  platform: vdp
+  disclosure: https://www.gitpod.io/security/report
+  bounty: false
+  program_url: https://www.gitpod.io/security/report
+  domains:
+  - app.gitpod.io
+  github_orgs: []
+  excluded: []

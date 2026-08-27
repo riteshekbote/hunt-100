@@ -1,0 +1,10 @@
+target:
+  name: better-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/better
+  bounty: true
+  program_url: https://bugcrowd.com/better
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

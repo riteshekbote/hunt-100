@@ -1,0 +1,10 @@
+target:
+  name: canva-api
+  platform: bounty
+  disclosure: https://www.canva.com/security/bug-bounty/
+  bounty: true
+  program_url: https://www.canva.com/security/bug-bounty/
+  domains:
+  - api.canva.com
+  github_orgs: []
+  excluded: []

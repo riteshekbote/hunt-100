@@ -1,0 +1,10 @@
+target:
+  name: razorpay-api
+  platform: vdp
+  disclosure: security@razorpay.com
+  bounty: false
+  program_url: https://razorpay.com/responsible-disclosure/
+  domains:
+  - api.razorpay.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: rockset-app
+  platform: bounty
+  disclosure: whitehat@rockset.com
+  bounty: true
+  program_url: https://rockset.com/legal/responsible-disclosure-policy/
+  domains:
+  - app.rockset.com
+  github_orgs: []
+  excluded: []

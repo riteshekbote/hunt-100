@@ -1,0 +1,10 @@
+target:
+  name: teamsnap-api
+  platform: vdp
+  disclosure: https://www.teamsnap.com/responsible-disclosure-policy
+  bounty: false
+  program_url: https://www.teamsnap.com/responsible-disclosure-policy
+  domains:
+  - api.teamsnap.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cnote-staging
+  platform: vdp
+  disclosure: security@mycnote.com
+  bounty: false
+  program_url: https://www.mycnote.com/vulnerability-disclosure-program/
+  domains:
+  - staging.mycnote.com
+  github_orgs: []
+  excluded: []

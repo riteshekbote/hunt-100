@@ -1,0 +1,10 @@
+target:
+  name: sjl-bitbucket-io-app
+  platform: vdp
+  disclosure: https://www.atlassian.com/trust/security/report-a-vulnerability
+  bounty: false
+  program_url: https://www.atlassian.com/trust/security/report-a-vulnerability
+  domains:
+  - app.atlassian.com
+  github_orgs: []
+  excluded: []

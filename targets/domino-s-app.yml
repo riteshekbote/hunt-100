@@ -1,0 +1,10 @@
+target:
+  name: domino-s-app
+  platform: vdp
+  disclosure: https://dominos.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://dominos.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.dominos.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

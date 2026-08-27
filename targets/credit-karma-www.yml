@@ -1,0 +1,10 @@
+target:
+  name: credit-karma-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/creditkarma
+  bounty: true
+  program_url: https://bugcrowd.com/creditkarma
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

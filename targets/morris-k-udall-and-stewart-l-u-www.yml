@@ -1,0 +1,10 @@
+target:
+  name: morris-k-udall-and-stewart-l-u-www
+  platform: vdp
+  disclosure: securityreporting@udall.gov
+  bounty: false
+  program_url: https://www.udall.gov/vulnerability-disclosure-policy
+  domains:
+  - www.udall.gov
+  github_orgs: []
+  excluded: []

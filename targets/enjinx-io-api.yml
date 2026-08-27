@@ -1,0 +1,10 @@
+target:
+  name: enjinx-io-api
+  platform: vdp
+  disclosure: https://enj.in/security
+  bounty: false
+  program_url: https://enj.in/security
+  domains:
+  - api.enj.in
+  github_orgs: []
+  excluded: []

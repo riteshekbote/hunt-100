@@ -1,0 +1,10 @@
+target:
+  name: bitwala-app
+  platform: bounty
+  disclosure: security@bitwala.com
+  bounty: true
+  program_url: https://www.bitwala.com/security/
+  domains:
+  - app.bitwala.com
+  github_orgs: []
+  excluded: []

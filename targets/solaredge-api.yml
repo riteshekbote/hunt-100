@@ -1,0 +1,10 @@
+target:
+  name: solaredge-api
+  platform: bounty
+  disclosure: HWBugBounty@solaredge.com
+  bounty: true
+  program_url: https://www.solaredge.com/us/cyber-security-policy
+  domains:
+  - api.solaredge.com
+  github_orgs: []
+  excluded: []

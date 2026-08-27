@@ -1,0 +1,10 @@
+target:
+  name: selective-service-system
+  platform: vdp
+  disclosure: security@sss.gov
+  bounty: false
+  program_url: https://www.sss.gov/vulnerability-disclosure-policy
+  domains:
+  - sss.gov
+  github_orgs: []
+  excluded: []

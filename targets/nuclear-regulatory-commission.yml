@@ -1,0 +1,10 @@
+target:
+  name: nuclear-regulatory-commission
+  platform: vdp
+  disclosure: SOC-VDP@nrc.gov
+  bounty: false
+  program_url: https://www.nrc.gov/vulnerability-disclosure-policy
+  domains:
+  - nrc.gov
+  github_orgs: []
+  excluded: []

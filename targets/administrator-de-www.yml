@@ -1,0 +1,10 @@
+target:
+  name: administrator-de-www
+  platform: vdp
+  disclosure: security@administrator.de
+  bounty: false
+  program_url: https://administrator.technology/privacy.php
+  domains:
+  - www.administrator.technology
+  github_orgs: []
+  excluded: []

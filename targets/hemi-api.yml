@@ -1,0 +1,10 @@
+target:
+  name: hemi-api
+  platform: vdp
+  disclosure: security@hemi.xyz
+  bounty: false
+  program_url: https://bugcrowd.com/engagements/hemi
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

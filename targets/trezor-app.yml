@@ -1,0 +1,10 @@
+target:
+  name: trezor-app
+  platform: bounty
+  disclosure: https://trezor.io/security/
+  bounty: true
+  program_url: https://trezor.io/security/
+  domains:
+  - app.trezor.io
+  github_orgs: []
+  excluded: []

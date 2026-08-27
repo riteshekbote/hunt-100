@@ -1,0 +1,10 @@
+target:
+  name: bigbank-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/bigbank
+  bounty: false
+  program_url: https://bugcrowd.com/bigbank
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

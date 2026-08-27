@@ -1,0 +1,10 @@
+target:
+  name: activeprospect-api
+  platform: vdp
+  disclosure: security@activeprospect.com
+  bounty: false
+  program_url: https://activeprospect.com/security/
+  domains:
+  - api.activeprospect.com
+  github_orgs: []
+  excluded: []

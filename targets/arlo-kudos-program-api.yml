@@ -1,0 +1,10 @@
+target:
+  name: arlo-kudos-program-api
+  platform: vdp
+  disclosure: https://bugcrowd.com/arlokudos
+  bounty: false
+  program_url: https://bugcrowd.com/arlokudos
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: democracy-live
+  platform: vdp
+  disclosure: security@democracylive.com
+  bounty: false
+  program_url: https://democracylive.com/disclosure-policy/
+  domains:
+  - democracylive.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: arduino-api
+  platform: vdp
+  disclosure: security@arduino.cc
+  bounty: false
+  program_url: https://www.arduino.cc/en/Main/Security
+  domains:
+  - api.arduino.cc
+  github_orgs: []
+  excluded: []

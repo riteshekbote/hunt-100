@@ -1,0 +1,10 @@
+target:
+  name: pyrus
+  platform: vdp
+  disclosure: security@pyrus.com
+  bounty: false
+  program_url: https://pyrus.com/en/vulnerability-reporting
+  domains:
+  - pyrus.com
+  github_orgs: []
+  excluded: []

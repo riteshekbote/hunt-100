@@ -1,0 +1,10 @@
+target:
+  name: klenty-app
+  platform: vdp
+  disclosure: security@klenty.com
+  bounty: false
+  program_url: https://www.klenty.com/responsible-disclosure
+  domains:
+  - app.klenty.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: google-chrome-api
+  platform: bounty
+  disclosure: https://www.google.com/about/appsecurity/chrome-rewards/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/chrome-rewards/
+  domains:
+  - api.google.com
+  github_orgs: []
+  excluded: []

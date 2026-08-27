@@ -1,0 +1,10 @@
+target:
+  name: yammer-api
+  platform: bounty
+  disclosure: https://technet.microsoft.com/en-us/security/dn800983
+  bounty: true
+  program_url: https://technet.microsoft.com/en-us/security/dn800983
+  domains:
+  - api.technet.microsoft.com
+  github_orgs: []
+  excluded: []

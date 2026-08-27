@@ -1,0 +1,10 @@
+target:
+  name: jisc-api
+  platform: vdp
+  disclosure: vulnerability@jisc.ac.uk
+  bounty: false
+  program_url: https://www.jisc.ac.uk/contact/vulnerability-disclosure-policy
+  domains:
+  - api.jisc.ac.uk
+  github_orgs: []
+  excluded: []

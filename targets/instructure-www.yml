@@ -1,0 +1,10 @@
+target:
+  name: instructure-www
+  platform: bounty
+  disclosure: security@instructure.com
+  bounty: true
+  program_url: https://www.instructure.com/canvas/blog/instructures-proven-security-vulnerability-disclosure-program
+  domains:
+  - www.instructure.com
+  github_orgs: []
+  excluded: []

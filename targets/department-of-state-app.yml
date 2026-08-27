@@ -1,0 +1,10 @@
+target:
+  name: department-of-state-app
+  platform: vdp
+  disclosure: vdpsubmission@state.gov
+  bounty: false
+  program_url: https://www.state.gov/vulnerability-disclosure-policy/
+  domains:
+  - app.state.gov
+  github_orgs: []
+  excluded: []

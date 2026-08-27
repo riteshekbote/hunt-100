@@ -1,0 +1,10 @@
+target:
+  name: united-nations
+  platform: vdp
+  disclosure: infosec@un.org
+  bounty: false
+  program_url: https://unite.un.org/content/hall-fame
+  domains:
+  - unite.un.org
+  github_orgs: []
+  excluded: []

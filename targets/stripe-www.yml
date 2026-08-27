@@ -1,0 +1,10 @@
+target:
+  name: stripe-www
+  platform: bounty
+  disclosure: security@stripe.com
+  bounty: true
+  program_url: https://stripe.com/docs/security/stripe
+  domains:
+  - www.stripe.com
+  github_orgs: []
+  excluded: []

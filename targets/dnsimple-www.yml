@@ -1,0 +1,10 @@
+target:
+  name: dnsimple-www
+  platform: vdp
+  disclosure: security@dnsimple.com
+  bounty: false
+  program_url: https://dnsimple.com/security
+  domains:
+  - www.dnsimple.com
+  github_orgs: []
+  excluded: []

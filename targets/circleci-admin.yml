@@ -1,0 +1,10 @@
+target:
+  name: circleci-admin
+  platform: vdp
+  disclosure: https://circleci.com/security/
+  bounty: false
+  program_url: https://circleci.com/security/
+  domains:
+  - admin.circleci.com
+  github_orgs: []
+  excluded: []

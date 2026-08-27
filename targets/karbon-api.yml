@@ -1,0 +1,10 @@
+target:
+  name: karbon-api
+  platform: vdp
+  disclosure: https://karbonhq.com/security/vulnerability-disclosure
+  bounty: false
+  program_url: https://karbonhq.com/security/vulnerability-disclosure
+  domains:
+  - api.karbonhq.com
+  github_orgs: []
+  excluded: []

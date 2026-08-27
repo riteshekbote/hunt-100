@@ -1,0 +1,10 @@
+target:
+  name: wamba-api
+  platform: bounty
+  disclosure: http://corp.wamba.com/en/developer/security/#form
+  bounty: true
+  program_url: http://corp.wamba.com/en/developer/security/#form
+  domains:
+  - api.corp.wamba.com
+  github_orgs: []
+  excluded: []

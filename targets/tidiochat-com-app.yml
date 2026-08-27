@@ -1,0 +1,10 @@
+target:
+  name: tidiochat-com-app
+  platform: vdp
+  disclosure: support@tidio.net
+  bounty: false
+  program_url: https://www.tidio.com/security-policy/
+  domains:
+  - app.tidio.com
+  github_orgs: []
+  excluded: []

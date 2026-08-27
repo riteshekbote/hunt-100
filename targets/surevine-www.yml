@@ -1,0 +1,10 @@
+target:
+  name: surevine-www
+  platform: vdp
+  disclosure: security@surevine.com
+  bounty: false
+  program_url: https://www.surevine.com/responsible-disclosure-policy/
+  domains:
+  - www.surevine.com
+  github_orgs: []
+  excluded: []

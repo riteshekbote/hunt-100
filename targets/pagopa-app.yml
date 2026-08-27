@@ -1,0 +1,10 @@
+target:
+  name: pagopa-app
+  platform: vdp
+  disclosure: security@pagopa.it
+  bounty: false
+  program_url: https://www.pagopa.gov.it/security.html
+  domains:
+  - app.pagopa.gov.it
+  github_orgs: []
+  excluded: []

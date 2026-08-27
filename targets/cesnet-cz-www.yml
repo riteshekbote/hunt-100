@@ -1,0 +1,10 @@
+target:
+  name: cesnet-cz-www
+  platform: vdp
+  disclosure: https://csirt.cesnet.cz/en/vulnerability_report
+  bounty: false
+  program_url: https://csirt.cesnet.cz/en/vulnerability_report
+  domains:
+  - www.csirt.cesnet.cz
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: zarx-app
+  platform: vdp
+  disclosure: info@zarx.co.za
+  bounty: false
+  program_url: https://www.zarx.co.za/rights/terms-and-conditions
+  domains:
+  - app.zarx.co.za
+  github_orgs: []
+  excluded: []

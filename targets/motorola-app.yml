@@ -1,0 +1,10 @@
+target:
+  name: motorola-app
+  platform: vdp
+  disclosure: security@motorola.com
+  bounty: false
+  program_url: https://www.motorola.com/us/legal/security-vulnerability
+  domains:
+  - app.motorola.com
+  github_orgs: []
+  excluded: []

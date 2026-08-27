@@ -1,0 +1,10 @@
+target:
+  name: mariadb-www
+  platform: vdp
+  disclosure: security@mariadb.org
+  bounty: false
+  program_url: https://mariadb.org/about/#security-policy
+  domains:
+  - www.mariadb.org
+  github_orgs: []
+  excluded: []

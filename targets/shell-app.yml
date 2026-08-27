@@ -1,0 +1,10 @@
+target:
+  name: shell-app
+  platform: vdp
+  disclosure: cert@shell.com
+  bounty: false
+  program_url: https://www.shell.com/about-us/our-values/shell-global-helpline/responsible-disclosure-policy.html
+  domains:
+  - app.shell.com
+  github_orgs: []
+  excluded: []

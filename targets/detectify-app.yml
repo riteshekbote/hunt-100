@@ -1,0 +1,10 @@
+target:
+  name: detectify-app
+  platform: vdp
+  disclosure: disclosure@detectify.com
+  bounty: false
+  program_url: https://detectify.com/responsible-disclosure
+  domains:
+  - app.detectify.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: hex-rays-app
+  platform: bounty
+  disclosure: bugbounty@hex-rays.com
+  bounty: true
+  program_url: https://www.hex-rays.com/bugbounty/
+  domains:
+  - app.hex-rays.com
+  github_orgs: []
+  excluded: []

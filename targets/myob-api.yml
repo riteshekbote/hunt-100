@@ -1,0 +1,10 @@
+target:
+  name: myob-api
+  platform: vdp
+  disclosure: securityteam@myob.com
+  bounty: false
+  program_url: https://www.myob.com/au/about/security/report-security-vulnerability
+  domains:
+  - api.myob.com
+  github_orgs: []
+  excluded: []

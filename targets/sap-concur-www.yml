@@ -1,0 +1,10 @@
+target:
+  name: sap-concur-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/concur
+  bounty: false
+  program_url: https://bugcrowd.com/concur
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

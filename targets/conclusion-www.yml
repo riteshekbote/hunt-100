@@ -1,0 +1,10 @@
+target:
+  name: conclusion-www
+  platform: vdp
+  disclosure: cvd@conclusion.nl
+  bounty: false
+  program_url: https://www.conclusion.nl/kleine-lettertjes/responsible-disclosure
+  domains:
+  - www.conclusion.nl
+  github_orgs: []
+  excluded: []

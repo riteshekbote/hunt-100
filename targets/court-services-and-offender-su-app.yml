@@ -1,0 +1,10 @@
+target:
+  name: court-services-and-offender-su-app
+  platform: vdp
+  disclosure: soc@csosa.gov
+  bounty: false
+  program_url: https://www.csosa.gov/vulnerability-disclosure-policy
+  domains:
+  - app.csosa.gov
+  github_orgs: []
+  excluded: []

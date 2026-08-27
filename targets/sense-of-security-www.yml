@@ -1,0 +1,10 @@
+target:
+  name: sense-of-security-www
+  platform: vdp
+  disclosure: https://www.senseofsecurity.com.au/resources/vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://www.senseofsecurity.com.au/resources/vulnerability-disclosure-policy/
+  domains:
+  - www.senseofsecurity.com.au
+  github_orgs: []
+  excluded: []

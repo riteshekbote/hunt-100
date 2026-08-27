@@ -1,0 +1,10 @@
+target:
+  name: wordpress-api
+  platform: vdp
+  disclosure: https://wordpress.org/about/security/
+  bounty: false
+  program_url: https://wordpress.org/about/security/
+  domains:
+  - api.wordpress.org
+  github_orgs: []
+  excluded: []

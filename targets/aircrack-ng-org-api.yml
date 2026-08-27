@@ -1,0 +1,10 @@
+target:
+  name: aircrack-ng-org-api
+  platform: vdp
+  disclosure: security@aircrack-ng.org
+  bounty: false
+  program_url: https://aircrack-ng.org/security.html
+  domains:
+  - api.aircrack-ng.org
+  github_orgs: []
+  excluded: []

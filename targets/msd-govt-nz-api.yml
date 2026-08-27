@@ -1,0 +1,10 @@
+target:
+  name: msd-govt-nz-api
+  platform: vdp
+  disclosure: it_security@msd.govt.nz
+  bounty: false
+  program_url: http://msd.govt.nz/about-msd-and-our-work/tools/responsible-disclosure-guidelines.html
+  domains:
+  - api.msd.govt.nz
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: mujs-api
+  platform: bounty
+  disclosure: https://mujs.com/security.html
+  bounty: true
+  program_url: https://mujs.com/security.html
+  domains:
+  - api.mujs.com
+  github_orgs: []
+  excluded: []

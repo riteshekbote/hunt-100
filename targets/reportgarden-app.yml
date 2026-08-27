@@ -1,0 +1,10 @@
+target:
+  name: reportgarden-app
+  platform: bounty
+  disclosure: devops@reportgarden.com
+  bounty: true
+  program_url: https://reportgarden.com/responsible-disclosure/
+  domains:
+  - app.reportgarden.com
+  github_orgs: []
+  excluded: []

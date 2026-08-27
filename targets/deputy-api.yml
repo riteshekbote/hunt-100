@@ -1,0 +1,10 @@
+target:
+  name: deputy-api
+  platform: vdp
+  disclosure: https://www.deputy.com/terms/responsible-disclosure-safe-harbor-policy
+  bounty: false
+  program_url: https://www.deputy.com/terms/responsible-disclosure-safe-harbor-policy
+  domains:
+  - api.deputy.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: hostinger-www
+  platform: bounty
+  disclosure: abuse@hostinger.com
+  bounty: true
+  program_url: https://www.hostinger.com/responsible-disclosure-policy
+  domains:
+  - www.hostinger.com
+  github_orgs: []
+  excluded: []

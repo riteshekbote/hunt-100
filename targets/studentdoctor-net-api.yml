@@ -1,0 +1,10 @@
+target:
+  name: studentdoctor-net-api
+  platform: vdp
+  disclosure: leeburnett@studentdoctor.net
+  bounty: false
+  program_url: https://www.studentdoctor.net/security-policy/
+  domains:
+  - api.studentdoctor.net
+  github_orgs: []
+  excluded: []

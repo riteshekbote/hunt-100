@@ -1,0 +1,10 @@
+target:
+  name: kenna-security-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/kennasecurity
+  bounty: true
+  program_url: https://bugcrowd.com/kennasecurity
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

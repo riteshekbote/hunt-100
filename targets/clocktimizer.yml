@@ -1,0 +1,10 @@
+target:
+  name: clocktimizer
+  platform: vdp
+  disclosure: support@clocktimizer.com
+  bounty: false
+  program_url: https://www.clocktimizer.com/about/responsible-disclosure/
+  domains:
+  - clocktimizer.com
+  github_orgs: []
+  excluded: []

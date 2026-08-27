@@ -1,0 +1,10 @@
+target:
+  name: remitano-www
+  platform: bounty
+  disclosure: support@remitano.com
+  bounty: true
+  program_url: https://security.remitano.com/
+  domains:
+  - www.security.remitano.com
+  github_orgs: []
+  excluded: []

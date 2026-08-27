@@ -1,0 +1,10 @@
+target:
+  name: alsco-www
+  platform: bounty
+  disclosure: https://alscotoday.com/go/bug
+  bounty: true
+  program_url: https://alscotoday.com/go/bug
+  domains:
+  - www.alscotoday.com
+  github_orgs: []
+  excluded: []

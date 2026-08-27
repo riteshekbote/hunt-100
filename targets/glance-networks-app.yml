@@ -1,0 +1,10 @@
+target:
+  name: glance-networks-app
+  platform: vdp
+  disclosure: security@glance.net
+  bounty: false
+  program_url: https://ww2.glance.net/privacy-policy/
+  domains:
+  - app.ww2.glance.net
+  github_orgs: []
+  excluded: []

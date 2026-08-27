@@ -1,0 +1,10 @@
+target:
+  name: pantheon
+  platform: vdp
+  disclosure: https://bugcrowd.com/pantheon
+  bounty: false
+  program_url: https://bugcrowd.com/pantheon
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

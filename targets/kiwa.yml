@@ -1,0 +1,10 @@
+target:
+  name: kiwa
+  platform: vdp
+  disclosure: responsibledisclosure@kiwa.nl
+  bounty: false
+  program_url: https://www.kiwa.com/en/responsible-disclosure-policy/
+  domains:
+  - kiwa.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: buddy-api
+  platform: vdp
+  disclosure: security@buddy.works
+  bounty: false
+  program_url: https://buddy.works/disclosure-policy
+  domains:
+  - api.buddy.works
+  github_orgs: []
+  excluded: []

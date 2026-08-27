@@ -1,0 +1,10 @@
+target:
+  name: python-app
+  platform: bounty
+  disclosure: security@python.org
+  bounty: true
+  program_url: https://www.python.org/news/security/
+  domains:
+  - app.python.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: z-cert-www
+  platform: vdp
+  disclosure: responsibledisclosure@z-cert.nl
+  bounty: false
+  program_url: https://www.z-cert.nl/en/responsible-disclosure-z-cert
+  domains:
+  - www.z-cert.nl
+  github_orgs: []
+  excluded: []

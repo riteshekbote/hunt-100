@@ -1,0 +1,10 @@
+target:
+  name: tokens-net-api
+  platform: vdp
+  disclosure: security@tokens.net
+  bounty: false
+  program_url: https://www.tokens.net/security-policy/
+  domains:
+  - api.tokens.net
+  github_orgs: []
+  excluded: []

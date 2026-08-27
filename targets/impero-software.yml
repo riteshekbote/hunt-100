@@ -1,0 +1,10 @@
+target:
+  name: impero-software
+  platform: vdp
+  disclosure: security@imperosoftware.com
+  bounty: false
+  program_url: https://www.imperosoftware.com/fr/reporting-vulnerabilities/
+  domains:
+  - imperosoftware.com
+  github_orgs: []
+  excluded: []

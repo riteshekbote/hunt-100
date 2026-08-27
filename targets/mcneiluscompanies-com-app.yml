@@ -1,0 +1,10 @@
+target:
+  name: mcneiluscompanies-com-app
+  platform: vdp
+  disclosure: sirt@oshkoshcorp.com
+  bounty: false
+  program_url: https://www.oshkoshcorp.com/contact/Contacts~CyberSecurity.html
+  domains:
+  - app.oshkoshcorp.com
+  github_orgs: []
+  excluded: []

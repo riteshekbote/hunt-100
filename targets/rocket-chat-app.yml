@@ -1,0 +1,10 @@
+target:
+  name: rocket-chat-app
+  platform: vdp
+  disclosure: security@rocket.chat
+  bounty: false
+  program_url: https://rocket.chat/docs/contributing/security/responsible-disclosure-policy/
+  domains:
+  - app.rocket.chat
+  github_orgs: []
+  excluded: []

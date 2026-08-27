@@ -1,0 +1,10 @@
+target:
+  name: scroll-com-app
+  platform: vdp
+  disclosure: security@scroll.com
+  bounty: false
+  program_url: https://scroll.help/en/articles/3344853-does-scroll-have-a-bug-bounty-or-responsible-disclosure-program
+  domains:
+  - app.scroll.help
+  github_orgs: []
+  excluded: []

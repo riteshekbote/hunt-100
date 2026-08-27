@@ -1,0 +1,10 @@
+target:
+  name: franconnect-app
+  platform: vdp
+  disclosure: security@franconnect.com
+  bounty: false
+  program_url: https://www.franconnect.com/vulnerability-disclosure-policy/
+  domains:
+  - app.franconnect.com
+  github_orgs: []
+  excluded: []

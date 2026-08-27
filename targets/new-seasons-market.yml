@@ -1,0 +1,10 @@
+target:
+  name: new-seasons-market
+  platform: vdp
+  disclosure: itsecurity@newseasonsmarket.com
+  bounty: false
+  program_url: https://www.newseasonsmarket.com/responsible-disclosure-policy/
+  domains:
+  - newseasonsmarket.com
+  github_orgs: []
+  excluded: []

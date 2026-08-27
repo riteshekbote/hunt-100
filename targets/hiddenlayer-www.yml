@@ -1,0 +1,10 @@
+target:
+  name: hiddenlayer-www
+  platform: vdp
+  disclosure: disclosure@hiddenlayer.com
+  bounty: false
+  program_url: https://hiddenlayer.com/vulnerability-disclosure-policy/
+  domains:
+  - www.hiddenlayer.com
+  github_orgs: []
+  excluded: []

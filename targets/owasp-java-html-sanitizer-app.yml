@@ -1,0 +1,10 @@
+target:
+  name: owasp-java-html-sanitizer-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/owaspjavasanitizer
+  bounty: false
+  program_url: https://bugcrowd.com/owaspjavasanitizer
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

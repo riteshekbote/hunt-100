@@ -1,0 +1,10 @@
+target:
+  name: okta-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/okta
+  bounty: true
+  program_url: https://bugcrowd.com/okta
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

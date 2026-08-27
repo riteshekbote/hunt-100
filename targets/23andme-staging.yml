@@ -1,0 +1,10 @@
+target:
+  name: 23andme-staging
+  platform: bounty
+  disclosure: https://www.23andme.com/security-report/
+  bounty: true
+  program_url: https://www.23andme.com/security-report/
+  domains:
+  - staging.23andme.com
+  github_orgs: []
+  excluded: []

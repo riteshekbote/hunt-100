@@ -1,0 +1,10 @@
+target:
+  name: supabase
+  platform: vdp
+  disclosure: security@supabase.io
+  bounty: false
+  program_url: https://github.com/supabase/supabase/security
+  domains:
+  - github.com
+  github_orgs: []
+  excluded: []

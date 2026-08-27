@@ -1,0 +1,10 @@
+target:
+  name: zdrojak-cz
+  platform: vdp
+  disclosure: https://www.zdrojak.cz/redakce/podminky-uzivani
+  bounty: false
+  program_url: https://www.zdrojak.cz/redakce/podminky-uzivani
+  domains:
+  - zdrojak.cz
+  github_orgs: []
+  excluded: []

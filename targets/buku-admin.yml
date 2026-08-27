@@ -1,0 +1,10 @@
+target:
+  name: buku-admin
+  platform: vdp
+  disclosure: security@buku.io
+  bounty: false
+  program_url: https://buku.io/en/security/
+  domains:
+  - admin.buku.io
+  github_orgs: []
+  excluded: []

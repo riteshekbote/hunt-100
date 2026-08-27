@@ -1,0 +1,10 @@
+target:
+  name: lenova-app
+  platform: vdp
+  disclosure: psirt@lenovo.com
+  bounty: false
+  program_url: https://www.lenovo.com/us/en/product-security/vulnerability-disclosure-policy
+  domains:
+  - app.lenovo.com
+  github_orgs: []
+  excluded: []

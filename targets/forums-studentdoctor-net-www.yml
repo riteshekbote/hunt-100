@@ -1,0 +1,10 @@
+target:
+  name: forums-studentdoctor-net-www
+  platform: vdp
+  disclosure: leeburnett@studentdoctor.net
+  bounty: false
+  program_url: https://www.studentdoctor.net/security-policy/
+  domains:
+  - www.studentdoctor.net
+  github_orgs: []
+  excluded: []

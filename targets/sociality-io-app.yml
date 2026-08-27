@@ -1,0 +1,10 @@
+target:
+  name: sociality-io-app
+  platform: vdp
+  disclosure: security@sociality.io
+  bounty: false
+  program_url: https://sociality.io/security/#responsible-disclosure
+  domains:
+  - app.sociality.io
+  github_orgs: []
+  excluded: []

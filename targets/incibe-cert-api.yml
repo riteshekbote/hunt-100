@@ -1,0 +1,10 @@
+target:
+  name: incibe-cert-api
+  platform: vdp
+  disclosure: incidencias@incibe-cert.es
+  bounty: false
+  program_url: https://www.incibe-cert.es/en/what-is-incibe-cert/vulnerability-disclosure-policy
+  domains:
+  - api.incibe-cert.es
+  github_orgs: []
+  excluded: []

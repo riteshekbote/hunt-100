@@ -1,0 +1,10 @@
+target:
+  name: infoplus-commerce-www
+  platform: vdp
+  disclosure: https://www.infopluscommerce.com/legal/responsible-disclosure-policy
+  bounty: false
+  program_url: https://www.infopluscommerce.com/legal/responsible-disclosure-policy
+  domains:
+  - www.infopluscommerce.com
+  github_orgs: []
+  excluded: []

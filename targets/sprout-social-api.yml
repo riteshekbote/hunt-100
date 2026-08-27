@@ -1,0 +1,10 @@
+target:
+  name: sprout-social-api
+  platform: vdp
+  disclosure: https://bugcrowd.com/sproutsocial
+  bounty: false
+  program_url: https://bugcrowd.com/sproutsocial
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

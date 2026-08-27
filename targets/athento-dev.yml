@@ -1,0 +1,10 @@
+target:
+  name: athento-dev
+  platform: vdp
+  disclosure: https://athento.zendesk.com/hc/es/articles/360010484720
+  bounty: false
+  program_url: https://athento.zendesk.com/hc/es/articles/360010484720
+  domains:
+  - dev.athento.zendesk.com
+  github_orgs: []
+  excluded: []

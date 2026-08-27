@@ -1,0 +1,10 @@
+target:
+  name: axiommsl-staging
+  platform: vdp
+  disclosure: responsible.disclosure@axiomsl.com
+  bounty: false
+  program_url: https://www.axiomsl.com/responsible-disclosure/
+  domains:
+  - staging.axiomsl.com
+  github_orgs: []
+  excluded: []

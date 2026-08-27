@@ -1,0 +1,10 @@
+target:
+  name: countryfinancial-com-api
+  platform: vdp
+  disclosure: Security.Reports@countryfinancial.com
+  bounty: false
+  program_url: https://www.countryfinancial.com/en/privacy-and-security.html
+  domains:
+  - api.countryfinancial.com
+  github_orgs: []
+  excluded: []

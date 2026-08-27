@@ -1,0 +1,10 @@
+target:
+  name: moodle
+  platform: vdp
+  disclosure: security@moodle.org
+  bounty: false
+  program_url: https://docs.moodle.org/dev/Moodle_security_procedures
+  domains:
+  - docs.moodle.org
+  github_orgs: []
+  excluded: []

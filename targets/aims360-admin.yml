@@ -1,0 +1,10 @@
+target:
+  name: aims360-admin
+  platform: vdp
+  disclosure: https://www.aims360.com/vulnerability-responses/
+  bounty: false
+  program_url: https://www.aims360.com/vulnerability-responses/
+  domains:
+  - admin.aims360.com
+  github_orgs: []
+  excluded: []

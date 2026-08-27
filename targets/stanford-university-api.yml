@@ -1,0 +1,10 @@
+target:
+  name: stanford-university-api
+  platform: vdp
+  disclosure: https://uit.stanford.edu/security/report-incident
+  bounty: false
+  program_url: https://uit.stanford.edu/security/report-incident
+  domains:
+  - api.uit.stanford.edu
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: nxp-api
+  platform: vdp
+  disclosure: psirt@nxp.com
+  bounty: false
+  program_url: https://www.nxp.com/support/support/report-product-security-vulnerabilities:PSIRT
+  domains:
+  - api.nxp.com
+  github_orgs: []
+  excluded: []

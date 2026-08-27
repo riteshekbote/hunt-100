@@ -1,0 +1,10 @@
+target:
+  name: upwork-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/upwork
+  bounty: true
+  program_url: https://bugcrowd.com/upwork
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: recorded-future
+  platform: vdp
+  disclosure: security@recordedfuture.com
+  bounty: false
+  program_url: https://www.recordedfuture.com/security/
+  domains:
+  - recordedfuture.com
+  github_orgs: []
+  excluded: []

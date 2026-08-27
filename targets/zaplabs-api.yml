@@ -1,0 +1,10 @@
+target:
+  name: zaplabs-api
+  platform: vdp
+  disclosure: information.security@realogy.com
+  bounty: false
+  program_url: https://www.zaplabs.com/docs/Security%20Vulnerability%20Disclosure%20Program.pdf
+  domains:
+  - api.zaplabs.com
+  github_orgs: []
+  excluded: []

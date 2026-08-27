@@ -1,0 +1,10 @@
+target:
+  name: airmap-api
+  platform: vdp
+  disclosure: security@airmap.com
+  bounty: false
+  program_url: https://www.airmap.com/responsible-disclosure-policy/
+  domains:
+  - api.airmap.com
+  github_orgs: []
+  excluded: []

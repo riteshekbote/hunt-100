@@ -1,0 +1,10 @@
+target:
+  name: citrix-staging
+  platform: vdp
+  disclosure: https://www.citrix.com/about/trust-center/vulnerability-process.html
+  bounty: false
+  program_url: https://www.citrix.com/about/trust-center/vulnerability-process.html
+  domains:
+  - staging.citrix.com
+  github_orgs: []
+  excluded: []

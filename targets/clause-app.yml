@@ -1,0 +1,10 @@
+target:
+  name: clause-app
+  platform: bounty
+  disclosure: security@clause.io
+  bounty: true
+  program_url: https://clause.io/security
+  domains:
+  - app.clause.io
+  github_orgs: []
+  excluded: []

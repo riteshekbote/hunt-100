@@ -1,0 +1,10 @@
+target:
+  name: vista-entertainment-solutions-api
+  platform: vdp
+  disclosure: maitlto:security@vista.co
+  bounty: false
+  program_url: https://vista.co/responsible-disclosure-policy/
+  domains:
+  - api.vista.co
+  github_orgs: []
+  excluded: []

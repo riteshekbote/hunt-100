@@ -1,0 +1,10 @@
+target:
+  name: pushpushgo-app
+  platform: vdp
+  disclosure: https://pushpushgo.com/en/pages/bug-bounty/
+  bounty: false
+  program_url: https://pushpushgo.com/en/pages/bug-bounty/
+  domains:
+  - app.pushpushgo.com
+  github_orgs: []
+  excluded: []

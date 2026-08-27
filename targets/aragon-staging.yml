@@ -1,0 +1,10 @@
+target:
+  name: aragon-staging
+  platform: bounty
+  disclosure: security@aragon.one
+  bounty: true
+  program_url: https://blog.aragon.org/aragon-network-bug-bounty/
+  domains:
+  - staging.blog.aragon.org
+  github_orgs: []
+  excluded: []

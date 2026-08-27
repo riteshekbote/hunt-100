@@ -1,0 +1,10 @@
+target:
+  name: sidefx-www
+  platform: vdp
+  disclosure: security@sidefx.com
+  bounty: false
+  program_url: https://www.sidefx.com/responsible-disclosure-program/
+  domains:
+  - www.sidefx.com
+  github_orgs: []
+  excluded: []

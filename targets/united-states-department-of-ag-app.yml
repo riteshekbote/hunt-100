@@ -1,0 +1,10 @@
+target:
+  name: united-states-department-of-ag-app
+  platform: vdp
+  disclosure: https://www.usda.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.usda.gov/vulnerability-disclosure-policy
+  domains:
+  - app.usda.gov
+  github_orgs: []
+  excluded: []

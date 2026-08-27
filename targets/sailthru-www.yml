@@ -1,0 +1,10 @@
+target:
+  name: sailthru-www
+  platform: bounty
+  disclosure: https://www.sailthru.com/trust/report-a-vulnerability/
+  bounty: true
+  program_url: https://www.sailthru.com/trust/report-a-vulnerability/
+  domains:
+  - www.sailthru.com
+  github_orgs: []
+  excluded: []

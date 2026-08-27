@@ -1,0 +1,10 @@
+target:
+  name: bol-com
+  platform: vdp
+  disclosure: rd@bol.com
+  bounty: false
+  program_url: https://www.bol.com/nl/m/algemeen/kwetsbaarheid-melden/subject/64209061/index.html
+  domains:
+  - bol.com
+  github_orgs: []
+  excluded: []

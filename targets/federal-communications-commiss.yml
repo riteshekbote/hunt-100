@@ -1,0 +1,10 @@
+target:
+  name: federal-communications-commiss
+  platform: vdp
+  disclosure: NSOC-Monitor@fcc.gov
+  bounty: false
+  program_url: https://www.fcc.gov/vulnerability-disclosure-policy
+  domains:
+  - fcc.gov
+  github_orgs: []
+  excluded: []

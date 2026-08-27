@@ -1,0 +1,10 @@
+target:
+  name: recidiviz
+  platform: vdp
+  disclosure: security@recidiviz.org
+  bounty: false
+  program_url: https://www.federacy.com/recidiviz?tab=Intro
+  domains:
+  - federacy.com
+  github_orgs: []
+  excluded: []

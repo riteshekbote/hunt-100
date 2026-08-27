@@ -1,0 +1,10 @@
+target:
+  name: eggy-api
+  platform: vdp
+  disclosure: security@eggy.com.au
+  bounty: false
+  program_url: https://eggy.com.au/vulnerability-disclosure/
+  domains:
+  - api.eggy.com.au
+  github_orgs: []
+  excluded: []

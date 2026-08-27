@@ -1,0 +1,10 @@
+target:
+  name: hdms-api
+  platform: vdp
+  disclosure: https://www1.hdms.com/responsible-vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://www1.hdms.com/responsible-vulnerability-disclosure-policy/
+  domains:
+  - api.www1.hdms.com
+  github_orgs: []
+  excluded: []

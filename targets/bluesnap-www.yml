@@ -1,0 +1,10 @@
+target:
+  name: bluesnap-www
+  platform: bounty
+  disclosure: bounty@bluesnap.com
+  bounty: true
+  program_url: https://home.bluesnap.com/security-bounty/
+  domains:
+  - www.home.bluesnap.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: classdojo-dev
+  platform: bounty
+  disclosure: security@classdojo.com
+  bounty: true
+  program_url: https://www.classdojo.com/securitydisclosureprogram/
+  domains:
+  - dev.classdojo.com
+  github_orgs: []
+  excluded: []

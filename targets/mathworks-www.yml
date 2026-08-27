@@ -1,0 +1,10 @@
+target:
+  name: mathworks-www
+  platform: vdp
+  disclosure: security@mathworks.com
+  bounty: false
+  program_url: https://www.mathworks.com/company/aboutus/policies_statements/vulnerability-disclosure-policy.html
+  domains:
+  - www.mathworks.com
+  github_orgs: []
+  excluded: []

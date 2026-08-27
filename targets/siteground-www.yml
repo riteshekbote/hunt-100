@@ -1,0 +1,10 @@
+target:
+  name: siteground-www
+  platform: vdp
+  disclosure: responsible-disclosure@siteground.com
+  bounty: false
+  program_url: https://www.siteground.com/term/92.htm
+  domains:
+  - www.siteground.com
+  github_orgs: []
+  excluded: []

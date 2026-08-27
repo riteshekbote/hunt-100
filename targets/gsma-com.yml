@@ -1,0 +1,10 @@
+target:
+  name: gsma-com
+  platform: vdp
+  disclosure: security@gsma.com
+  bounty: false
+  program_url: https://www.gsma.com/aboutus/legal/privacy
+  domains:
+  - gsma.com
+  github_orgs: []
+  excluded: []

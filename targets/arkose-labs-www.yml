@@ -1,0 +1,10 @@
+target:
+  name: arkose-labs-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/arkose-labs
+  bounty: true
+  program_url: https://bugcrowd.com/arkose-labs
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

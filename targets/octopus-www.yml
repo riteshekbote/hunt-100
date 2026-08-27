@@ -1,0 +1,10 @@
+target:
+  name: octopus-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/octopus-og
+  bounty: true
+  program_url: https://bugcrowd.com/octopus-og
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

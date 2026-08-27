@@ -1,0 +1,10 @@
+target:
+  name: payboy-app
+  platform: vdp
+  disclosure: security@payboy.biz
+  bounty: false
+  program_url: https://payboy.biz/security
+  domains:
+  - app.payboy.biz
+  github_orgs: []
+  excluded: []

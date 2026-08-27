@@ -1,0 +1,10 @@
+target:
+  name: palo-alto-networks-app
+  platform: vdp
+  disclosure: psirt@paloaltonetworks.com
+  bounty: false
+  program_url: https://securityadvisories.paloaltonetworks.com/Report
+  domains:
+  - app.securityadvisories.paloaltonetworks.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: geniebelt-www
+  platform: vdp
+  disclosure: security@letsbuild.com
+  bounty: false
+  program_url: https://www.letsbuild.com/responsible-disclosure
+  domains:
+  - www.letsbuild.com
+  github_orgs: []
+  excluded: []

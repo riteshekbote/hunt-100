@@ -1,0 +1,10 @@
+target:
+  name: bank-of-america-staging
+  platform: vdp
+  disclosure: security@bankofamerica.com
+  bounty: false
+  program_url: https://www.bankofamerica.com/security-center/report-suspicious-communications/
+  domains:
+  - staging.bankofamerica.com
+  github_orgs: []
+  excluded: []

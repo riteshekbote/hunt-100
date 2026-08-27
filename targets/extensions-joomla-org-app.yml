@@ -1,0 +1,10 @@
+target:
+  name: extensions-joomla-org-app
+  platform: vdp
+  disclosure: security@joomla.org
+  bounty: false
+  program_url: https://developer.joomla.org/security.html
+  domains:
+  - app.developer.joomla.org
+  github_orgs: []
+  excluded: []

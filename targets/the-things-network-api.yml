@@ -1,0 +1,10 @@
+target:
+  name: the-things-network-api
+  platform: vdp
+  disclosure: johan@thethingsnetwork.org
+  bounty: false
+  program_url: https://www.thethingsnetwork.org/responsible-disclosure
+  domains:
+  - api.thethingsnetwork.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: crashtest-security
+  platform: vdp
+  disclosure: security@crashtest-security.com
+  bounty: false
+  program_url: https://crashtest-security.com/responsible-disclosure/
+  domains:
+  - crashtest-security.com
+  github_orgs: []
+  excluded: []

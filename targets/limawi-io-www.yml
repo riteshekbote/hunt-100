@@ -1,0 +1,10 @@
+target:
+  name: limawi-io-www
+  platform: vdp
+  disclosure: https://blog.limawi.io/en/security-vulnerability-reporting-policy/
+  bounty: false
+  program_url: https://blog.limawi.io/en/security-vulnerability-reporting-policy/
+  domains:
+  - www.blog.limawi.io
+  github_orgs: []
+  excluded: []

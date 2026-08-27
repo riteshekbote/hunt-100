@@ -1,0 +1,10 @@
+target:
+  name: trevel-app
+  platform: vdp
+  disclosure: contact@Trevel.com
+  bounty: false
+  program_url: https://trevel.com/responsibledisclosure
+  domains:
+  - app.trevel.com
+  github_orgs: []
+  excluded: []

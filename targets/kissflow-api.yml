@@ -1,0 +1,10 @@
+target:
+  name: kissflow-api
+  platform: bounty
+  disclosure: security@kissflow.com
+  bounty: true
+  program_url: https://kissflow.com/responsible-disclosure/
+  domains:
+  - api.kissflow.com
+  github_orgs: []
+  excluded: []

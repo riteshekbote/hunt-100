@@ -1,0 +1,10 @@
+target:
+  name: kiss-investments-www
+  platform: vdp
+  disclosure: security@kissinvestments.com
+  bounty: false
+  program_url: https://kissinvestments.com/responsible-disclosure/
+  domains:
+  - www.kissinvestments.com
+  github_orgs: []
+  excluded: []

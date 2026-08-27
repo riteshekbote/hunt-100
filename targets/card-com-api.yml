@@ -1,0 +1,10 @@
+target:
+  name: card-com-api
+  platform: vdp
+  disclosure: security@card.com
+  bounty: false
+  program_url: https://www.card.com/responsible-disclosure-policy
+  domains:
+  - api.card.com
+  github_orgs: []
+  excluded: []

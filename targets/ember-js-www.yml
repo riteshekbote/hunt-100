@@ -1,0 +1,10 @@
+target:
+  name: ember-js-www
+  platform: vdp
+  disclosure: security@emberjs.com
+  bounty: false
+  program_url: https://emberjs.com/security/
+  domains:
+  - www.emberjs.com
+  github_orgs: []
+  excluded: []

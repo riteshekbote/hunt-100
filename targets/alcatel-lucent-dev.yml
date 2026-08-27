@@ -1,0 +1,10 @@
+target:
+  name: alcatel-lucent-dev
+  platform: vdp
+  disclosure: psirt@al-enterprise.com
+  bounty: false
+  program_url: https://www.al-enterprise.com/en/support/security-advisories
+  domains:
+  - dev.al-enterprise.com
+  github_orgs: []
+  excluded: []

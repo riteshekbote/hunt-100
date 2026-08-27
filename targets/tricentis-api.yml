@@ -1,0 +1,10 @@
+target:
+  name: tricentis-api
+  platform: vdp
+  disclosure: vdp@tricentis.com
+  bounty: false
+  program_url: https://www.tricentis.com/trust/vulnerability-disclosure-policy
+  domains:
+  - api.tricentis.com
+  github_orgs: []
+  excluded: []

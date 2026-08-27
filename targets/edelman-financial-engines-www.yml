@@ -1,0 +1,10 @@
+target:
+  name: edelman-financial-engines-www
+  platform: vdp
+  disclosure: security@edelmanfinancialengines.com
+  bounty: false
+  program_url: https://www.edelmanfinancialengines.com/vulnerability-disclosure
+  domains:
+  - www.edelmanfinancialengines.com
+  github_orgs: []
+  excluded: []

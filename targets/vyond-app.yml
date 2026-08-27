@@ -1,0 +1,10 @@
+target:
+  name: vyond-app
+  platform: vdp
+  disclosure: security@vyond.com
+  bounty: false
+  program_url: https://help.vyond.com/hc/en-us/articles/360000497723-How-do-I-Report-a-Security-Vulnerability-
+  domains:
+  - app.help.vyond.com
+  github_orgs: []
+  excluded: []

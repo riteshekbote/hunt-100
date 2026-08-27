@@ -1,0 +1,10 @@
+target:
+  name: philips-www
+  platform: vdp
+  disclosure: productsecurity@philips.com
+  bounty: false
+  program_url: https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html
+  domains:
+  - www.philips.com
+  github_orgs: []
+  excluded: []

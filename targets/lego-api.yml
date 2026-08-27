@@ -1,0 +1,10 @@
+target:
+  name: lego-api
+  platform: vdp
+  disclosure: whitehat@lego.com
+  bounty: false
+  program_url: https://www.lego.com/en-nl/legal/notices-and-policies/responsible-disclosure-policy/
+  domains:
+  - api.lego.com
+  github_orgs: []
+  excluded: []

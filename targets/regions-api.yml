@@ -1,0 +1,10 @@
+target:
+  name: regions-api
+  platform: vdp
+  disclosure: https://www.regions.com/about-regions/privacy-security/vulnerability-disclosure-program
+  bounty: false
+  program_url: https://www.regions.com/about-regions/privacy-security/vulnerability-disclosure-program
+  domains:
+  - api.regions.com
+  github_orgs: []
+  excluded: []

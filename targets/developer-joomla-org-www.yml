@@ -1,0 +1,10 @@
+target:
+  name: developer-joomla-org-www
+  platform: vdp
+  disclosure: security@joomla.org
+  bounty: false
+  program_url: https://developer.joomla.org/security.html
+  domains:
+  - www.developer.joomla.org
+  github_orgs: []
+  excluded: []

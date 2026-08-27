@@ -1,0 +1,10 @@
+target:
+  name: juniper
+  platform: vdp
+  disclosure: sirt@juniper.net
+  bounty: false
+  program_url: https://www.juniper.net/us/en/security/report-vulnerability/
+  domains:
+  - juniper.net
+  github_orgs: []
+  excluded: []

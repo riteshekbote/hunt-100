@@ -1,0 +1,10 @@
+target:
+  name: garmin-www
+  platform: vdp
+  disclosure: https://www.garmin.com/en-US/legal/security/
+  bounty: false
+  program_url: https://www.garmin.com/en-US/legal/security/
+  domains:
+  - www.garmin.com
+  github_orgs: []
+  excluded: []

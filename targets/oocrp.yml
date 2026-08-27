@@ -1,0 +1,10 @@
+target:
+  name: oocrp
+  platform: vdp
+  disclosure: security@occrp.org
+  bounty: false
+  program_url: https://www.occrp.org/en/responsible-disclosure
+  domains:
+  - occrp.org
+  github_orgs: []
+  excluded: []

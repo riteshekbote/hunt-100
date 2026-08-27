@@ -1,0 +1,10 @@
+target:
+  name: wells-fargo-www
+  platform: vdp
+  disclosure: ResponsibleDisclosure@wellsfargo.com
+  bounty: false
+  program_url: https://www.wellsfargo.com/privacy-security/fraud/responsible-disclosure-program/
+  domains:
+  - www.wellsfargo.com
+  github_orgs: []
+  excluded: []

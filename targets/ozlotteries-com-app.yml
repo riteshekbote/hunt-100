@@ -1,0 +1,10 @@
+target:
+  name: ozlotteries-com-app
+  platform: vdp
+  disclosure: https://jumbointeractive.com/security-reporting
+  bounty: false
+  program_url: https://jumbointeractive.com/security-reporting
+  domains:
+  - app.jumbointeractive.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cyber-sprint-api
+  platform: vdp
+  disclosure: soc@cybersprint.com
+  bounty: false
+  program_url: https://www.cybersprint.com/responsible-disclosure/
+  domains:
+  - api.cybersprint.com
+  github_orgs: []
+  excluded: []

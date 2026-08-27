@@ -1,0 +1,10 @@
+target:
+  name: director-tjhsst-edu
+  platform: vdp
+  disclosure: security@tjhsst.edu
+  bounty: false
+  program_url: https://tjhsst.edu/security/policy.txt
+  domains:
+  - tjhsst.edu
+  github_orgs: []
+  excluded: []

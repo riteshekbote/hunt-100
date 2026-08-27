@@ -1,0 +1,10 @@
+target:
+  name: university-of-twente-api
+  platform: vdp
+  disclosure: responsible-disclosure@utwente.nl
+  bounty: false
+  program_url: https://www.utwente.nl/en/cyber-safety/responsible/
+  domains:
+  - api.utwente.nl
+  github_orgs: []
+  excluded: []

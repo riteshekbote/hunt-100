@@ -1,0 +1,10 @@
+target:
+  name: dropbox-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/dropbox/
+  bounty: true
+  program_url: https://bugcrowd.com/dropbox/
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

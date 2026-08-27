@@ -1,0 +1,10 @@
+target:
+  name: parkhub-com-www
+  platform: vdp
+  disclosure: devops@parkhub.com
+  bounty: false
+  program_url: https://parkhub.com/policy.txt
+  domains:
+  - www.parkhub.com
+  github_orgs: []
+  excluded: []

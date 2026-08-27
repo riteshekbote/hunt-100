@@ -1,0 +1,10 @@
+target:
+  name: envato-app
+  platform: vdp
+  disclosure: https://webuild.envato.com/helpful-hacker/
+  bounty: false
+  program_url: https://webuild.envato.com/helpful-hacker/
+  domains:
+  - app.webuild.envato.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: climbingtree
+  platform: vdp
+  disclosure: hello@climbingtree.nl
+  bounty: false
+  program_url: https://www.climbingtree.nl/responsibledisclosure.php?language=en
+  domains:
+  - climbingtree.nl
+  github_orgs: []
+  excluded: []

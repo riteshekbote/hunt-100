@@ -1,0 +1,10 @@
+target:
+  name: vu-security-api
+  platform: vdp
+  disclosure: corporate@vusecurity.com
+  bounty: false
+  program_url: https://www.vusecurity.com/vulnerability-disclosure-policy
+  domains:
+  - api.vusecurity.com
+  github_orgs: []
+  excluded: []

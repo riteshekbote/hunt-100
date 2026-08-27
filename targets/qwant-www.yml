@@ -1,0 +1,10 @@
+target:
+  name: qwant-www
+  platform: bounty
+  disclosure: https://yeswehack.com/programs/qwant
+  bounty: true
+  program_url: https://yeswehack.com/programs/qwant
+  domains:
+  - www.yeswehack.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: bluescape-www
+  platform: vdp
+  disclosure: security@Bluescape.com
+  bounty: false
+  program_url: https://www.bluescape.com/vulnerability-disclosure-policy/
+  domains:
+  - www.bluescape.com
+  github_orgs: []
+  excluded: []

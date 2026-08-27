@@ -1,0 +1,10 @@
+target:
+  name: mailtrack-app
+  platform: vdp
+  disclosure: security-report@mailtrack.io
+  bounty: false
+  program_url: https://mailtrack.io/en/responsible-vulnerability
+  domains:
+  - app.mailtrack.io
+  github_orgs: []
+  excluded: []

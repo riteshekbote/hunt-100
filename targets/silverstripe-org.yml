@@ -1,0 +1,10 @@
+target:
+  name: silverstripe-org
+  platform: vdp
+  disclosure: https://docs.silverstripe.org/en/contributing/release_process/#security-releases
+  bounty: false
+  program_url: https://docs.silverstripe.org/en/contributing/release_process/#security-releases
+  domains:
+  - docs.silverstripe.org
+  github_orgs: []
+  excluded: []

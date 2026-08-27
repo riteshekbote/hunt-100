@@ -1,0 +1,10 @@
+target:
+  name: leverage
+  platform: vdp
+  disclosure: security@lvrg.ai
+  bounty: false
+  program_url: https://www.lvrg.ai/vdp
+  domains:
+  - lvrg.ai
+  github_orgs: []
+  excluded: []

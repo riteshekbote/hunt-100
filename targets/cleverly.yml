@@ -1,0 +1,10 @@
+target:
+  name: cleverly
+  platform: vdp
+  disclosure: security@cleverly.ai
+  bounty: false
+  program_url: https://cleverly.ai/responsible-disclosure-program/
+  domains:
+  - cleverly.ai
+  github_orgs: []
+  excluded: []

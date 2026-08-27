@@ -1,0 +1,10 @@
+target:
+  name: rekruter-de-api
+  platform: vdp
+  disclosure: messenger@rekruter.de
+  bounty: false
+  program_url: https://www.rekruter.de/impressum/datenschutz.lasso
+  domains:
+  - api.rekruter.de
+  github_orgs: []
+  excluded: []

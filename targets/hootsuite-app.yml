@@ -1,0 +1,10 @@
+target:
+  name: hootsuite-app
+  platform: vdp
+  disclosure: security@hootsuite.com
+  bounty: false
+  program_url: https://hootsuite.com/security/response
+  domains:
+  - app.hootsuite.com
+  github_orgs: []
+  excluded: []

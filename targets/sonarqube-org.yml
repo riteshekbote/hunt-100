@@ -1,0 +1,10 @@
+target:
+  name: sonarqube-org
+  platform: vdp
+  disclosure: security@sonarsource.com
+  bounty: false
+  program_url: https://community.sonarsource.com/t/responsible-vulnerability-disclosure/9317
+  domains:
+  - community.sonarsource.com
+  github_orgs: []
+  excluded: []

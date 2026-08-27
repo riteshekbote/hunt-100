@@ -1,0 +1,10 @@
+target:
+  name: dmoj-ca-www
+  platform: vdp
+  disclosure: security@dmoj.ca
+  bounty: false
+  program_url: https://dmoj.ca/security/
+  domains:
+  - www.dmoj.ca
+  github_orgs: []
+  excluded: []

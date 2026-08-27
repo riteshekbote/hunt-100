@@ -1,0 +1,10 @@
+target:
+  name: varo-money-app
+  platform: vdp
+  disclosure: https://varomoney.responsibledisclosure.com/hc/en-us
+  bounty: false
+  program_url: https://varomoney.responsibledisclosure.com/hc/en-us
+  domains:
+  - app.varomoney.responsibledisclosure.com
+  github_orgs: []
+  excluded: []

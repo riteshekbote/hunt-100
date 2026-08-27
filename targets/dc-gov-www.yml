@@ -1,0 +1,10 @@
+target:
+  name: dc-gov-www
+  platform: vdp
+  disclosure: octo@dc.gov
+  bounty: false
+  program_url: https://octo.dc.gov/publication/responsible-disclosure-policy
+  domains:
+  - www.octo.dc.gov
+  github_orgs: []
+  excluded: []

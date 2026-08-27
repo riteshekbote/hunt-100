@@ -1,0 +1,10 @@
+target:
+  name: watchup-com-www
+  platform: vdp
+  disclosure: security@plex.tv
+  bounty: false
+  program_url: https://support.plex.tv/articles/reporting-security-issues/
+  domains:
+  - www.support.plex.tv
+  github_orgs: []
+  excluded: []

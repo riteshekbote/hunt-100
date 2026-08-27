@@ -1,0 +1,10 @@
+target:
+  name: accenture-admin
+  platform: vdp
+  disclosure: https://www.accenture.com/us-en/about/company/accenture-responsible-disclosure
+  bounty: false
+  program_url: https://www.accenture.com/us-en/about/company/accenture-responsible-disclosure
+  domains:
+  - admin.accenture.com
+  github_orgs: []
+  excluded: []

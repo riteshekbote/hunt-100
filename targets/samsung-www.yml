@@ -1,0 +1,10 @@
+target:
+  name: samsung-www
+  platform: vdp
+  disclosure: security@samsung.com
+  bounty: false
+  program_url: https://securityreport.samsung.com
+  domains:
+  - www.securityreport.samsung.com
+  github_orgs: []
+  excluded: []

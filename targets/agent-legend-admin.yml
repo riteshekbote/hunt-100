@@ -1,0 +1,10 @@
+target:
+  name: agent-legend-admin
+  platform: vdp
+  disclosure: security@agentlegend.com
+  bounty: false
+  program_url: https://agentlegend.com/vulnerability-disclosure-policy/
+  domains:
+  - admin.agentlegend.com
+  github_orgs: []
+  excluded: []

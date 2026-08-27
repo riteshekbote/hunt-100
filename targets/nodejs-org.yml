@@ -1,0 +1,10 @@
+target:
+  name: nodejs-org
+  platform: vdp
+  disclosure: security@nodejs.org
+  bounty: false
+  program_url: https://nodejs.org/en/security/
+  domains:
+  - nodejs.org
+  github_orgs: []
+  excluded: []

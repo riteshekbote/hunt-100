@@ -1,0 +1,10 @@
+target:
+  name: support-code42-com-app
+  platform: vdp
+  disclosure: security@code42.com
+  bounty: false
+  program_url: https://support.code42.com/hc/en-us/articles/14827695756439-Report-a-security-vulnerability-to-Code42
+  domains:
+  - app.support.code42.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: small-business-administration
+  platform: vdp
+  disclosure: https://www.sba.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.sba.gov/vulnerability-disclosure-policy
+  domains:
+  - sba.gov
+  github_orgs: []
+  excluded: []

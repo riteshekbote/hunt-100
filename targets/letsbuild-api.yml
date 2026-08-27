@@ -1,0 +1,10 @@
+target:
+  name: letsbuild-api
+  platform: vdp
+  disclosure: security@letsbuild.com
+  bounty: false
+  program_url: https://letsbuild.com/responsible-disclosure
+  domains:
+  - api.letsbuild.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: scaleft-www
+  platform: vdp
+  disclosure: security@scaleft.com
+  bounty: false
+  program_url: https://www.scaleft.com/company/security/
+  domains:
+  - www.scaleft.com
+  github_orgs: []
+  excluded: []

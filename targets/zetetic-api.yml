@@ -1,0 +1,10 @@
+target:
+  name: zetetic-api
+  platform: vdp
+  disclosure: support@zetetic.net
+  bounty: false
+  program_url: https://www.zetetic.net/security/
+  domains:
+  - api.zetetic.net
+  github_orgs: []
+  excluded: []

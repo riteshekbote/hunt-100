@@ -1,0 +1,10 @@
+target:
+  name: asus-admin
+  platform: vdp
+  disclosure: security@asus.com
+  bounty: false
+  program_url: https://www.asus.com/Static_WebPage/ASUS-Product-Security-Advisory/
+  domains:
+  - admin.asus.com
+  github_orgs: []
+  excluded: []

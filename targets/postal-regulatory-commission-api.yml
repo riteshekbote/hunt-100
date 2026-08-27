@@ -1,0 +1,10 @@
+target:
+  name: postal-regulatory-commission-api
+  platform: vdp
+  disclosure: itsecure@prc.gov
+  bounty: false
+  program_url: https://www.prc.gov/vulnerability-disclosure-policy
+  domains:
+  - api.prc.gov
+  github_orgs: []
+  excluded: []

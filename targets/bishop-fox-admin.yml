@@ -1,0 +1,10 @@
+target:
+  name: bishop-fox-admin
+  platform: vdp
+  disclosure: https://www.bishopfox.com/vulnerability-disclosure-policy/
+  bounty: false
+  program_url: https://www.bishopfox.com/vulnerability-disclosure-policy/
+  domains:
+  - admin.bishopfox.com
+  github_orgs: []
+  excluded: []

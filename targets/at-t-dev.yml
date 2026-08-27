@@ -1,0 +1,10 @@
+target:
+  name: at-t-dev
+  platform: bounty
+  disclosure: https://bugbounty.att.com/
+  bounty: true
+  program_url: https://bugbounty.att.com/
+  domains:
+  - dev.bugbounty.att.com
+  github_orgs: []
+  excluded: []

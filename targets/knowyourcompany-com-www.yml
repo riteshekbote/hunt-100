@@ -1,0 +1,10 @@
+target:
+  name: knowyourcompany-com-www
+  platform: vdp
+  disclosure: https://federacy.com/knowyourteam
+  bounty: false
+  program_url: https://federacy.com/knowyourteam
+  domains:
+  - www.federacy.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: wordfence
+  platform: vdp
+  disclosure: security@wordfence.com
+  bounty: false
+  program_url: https://www.wordfence.com/security/
+  domains:
+  - wordfence.com
+  github_orgs: []
+  excluded: []

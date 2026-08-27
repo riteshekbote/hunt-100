@@ -1,0 +1,10 @@
+target:
+  name: bime-app
+  platform: bounty
+  disclosure: https://www.zendesk.com/company/policies-procedures/#responsible-disclosure-policy
+  bounty: true
+  program_url: https://www.zendesk.com/company/policies-procedures/#responsible-disclosure-policy
+  domains:
+  - app.zendesk.com
+  github_orgs: []
+  excluded: []

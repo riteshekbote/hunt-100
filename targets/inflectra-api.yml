@@ -1,0 +1,10 @@
+target:
+  name: inflectra-api
+  platform: vdp
+  disclosure: support@inflectra.com
+  bounty: false
+  program_url: https://www.inflectra.com/company/responsible-disclosure.aspx
+  domains:
+  - api.inflectra.com
+  github_orgs: []
+  excluded: []

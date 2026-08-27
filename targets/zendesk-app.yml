@@ -1,0 +1,10 @@
+target:
+  name: zendesk-app
+  platform: bounty
+  disclosure: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  bounty: true
+  program_url: https://www.zendesk.de/company/policies-procedures/responsible-disclosure-policy/
+  domains:
+  - app.zendesk.de
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: expressvpn-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/expressvpn
+  bounty: true
+  program_url: https://bugcrowd.com/expressvpn
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

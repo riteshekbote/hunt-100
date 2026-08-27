@@ -1,0 +1,10 @@
+target:
+  name: wedbio-app
+  platform: vdp
+  disclosure: contact@wedbio.com
+  bounty: false
+  program_url: https://wedbio.com/report-incident
+  domains:
+  - app.wedbio.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: zynga-whitehat-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/zynga-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/zynga-vdp
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

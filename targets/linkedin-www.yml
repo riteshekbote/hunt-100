@@ -1,0 +1,10 @@
+target:
+  name: linkedin-www
+  platform: vdp
+  disclosure: security@linkedin.com
+  bounty: false
+  program_url: https://security.linkedin.com/vulnerabilty-disclosure
+  domains:
+  - www.security.linkedin.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: garofalo
+  platform: vdp
+  disclosure: security-reports@reslifeportal.com
+  bounty: false
+  program_url: https://garofalo.zendesk.com/hc/en-us/articles/360034129952-Report-Site-Vulnerabilities
+  domains:
+  - garofalo.zendesk.com
+  github_orgs: []
+  excluded: []

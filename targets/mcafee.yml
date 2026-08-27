@@ -1,0 +1,10 @@
+target:
+  name: mcafee
+  platform: vdp
+  disclosure: ATR_Vuln@McAfee.com
+  bounty: false
+  program_url: https://www.mcafee.com/enterprise/en-us/threat-center/advanced-threat-research/disclosure.html
+  domains:
+  - mcafee.com
+  github_orgs: []
+  excluded: []

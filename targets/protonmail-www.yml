@@ -1,0 +1,10 @@
+target:
+  name: protonmail-www
+  platform: bounty
+  disclosure: security@protonmail.com
+  bounty: true
+  program_url: https://protonmail.com/blog/responsible-vulnerability-disclosure/
+  domains:
+  - www.protonmail.com
+  github_orgs: []
+  excluded: []

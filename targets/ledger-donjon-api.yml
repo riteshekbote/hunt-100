@@ -1,0 +1,10 @@
+target:
+  name: ledger-donjon-api
+  platform: vdp
+  disclosure: bounty@ledger.fr
+  bounty: false
+  program_url: https://donjon.ledger.com/bounty/
+  domains:
+  - api.donjon.ledger.com
+  github_orgs: []
+  excluded: []

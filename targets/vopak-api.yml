@@ -1,0 +1,10 @@
+target:
+  name: vopak-api
+  platform: vdp
+  disclosure: ciso.office@vopak.com
+  bounty: false
+  program_url: https://www.vopak.com/vopak-responsible-disclosure-policy
+  domains:
+  - api.vopak.com
+  github_orgs: []
+  excluded: []

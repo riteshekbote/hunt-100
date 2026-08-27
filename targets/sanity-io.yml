@@ -1,0 +1,10 @@
+target:
+  name: sanity-io
+  platform: vdp
+  disclosure: security@sanity.io
+  bounty: false
+  program_url: https://www.sanity.io/security
+  domains:
+  - sanity.io
+  github_orgs: []
+  excluded: []

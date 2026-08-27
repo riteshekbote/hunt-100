@@ -1,0 +1,10 @@
+target:
+  name: securiti-ai
+  platform: vdp
+  disclosure: security@securiti.ai
+  bounty: false
+  program_url: https://securiti.ai/security/
+  domains:
+  - securiti.ai
+  github_orgs: []
+  excluded: []

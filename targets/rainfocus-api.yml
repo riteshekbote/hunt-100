@@ -1,0 +1,10 @@
+target:
+  name: rainfocus-api
+  platform: vdp
+  disclosure: security@Rainfocus.com
+  bounty: false
+  program_url: https://www.rainfocus.com/vulnerability-disclosure
+  domains:
+  - api.rainfocus.com
+  github_orgs: []
+  excluded: []

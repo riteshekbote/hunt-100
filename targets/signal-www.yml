@@ -1,0 +1,10 @@
+target:
+  name: signal-www
+  platform: vdp
+  disclosure: security@signal.org
+  bounty: false
+  program_url: https://support.signal.org/hc/en-us/articles/360007320791-How-can-I-report-a-security-vulnerability-
+  domains:
+  - www.support.signal.org
+  github_orgs: []
+  excluded: []

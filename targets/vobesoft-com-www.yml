@@ -1,0 +1,10 @@
+target:
+  name: vobesoft-com-www
+  platform: vdp
+  disclosure: support@vobesoft.com
+  bounty: false
+  program_url: https://www.vobesoft.com/security/report
+  domains:
+  - www.vobesoft.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: cpanel-api
+  platform: bounty
+  disclosure: security@cpanel.net
+  bounty: true
+  program_url: https://cpanel.net/cpanel-security-bounty-program/
+  domains:
+  - api.cpanel.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: asana-www
+  platform: bounty
+  disclosure: security@asana.com
+  bounty: true
+  program_url: https://asana.com/bounty
+  domains:
+  - www.asana.com
+  github_orgs: []
+  excluded: []

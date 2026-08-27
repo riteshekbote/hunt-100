@@ -1,0 +1,10 @@
+target:
+  name: australia-post-app
+  platform: vdp
+  disclosure: security@auspost.com.au
+  bounty: false
+  program_url: https://auspost.com.au/about-us/about-our-site/responsible-disclosure
+  domains:
+  - app.auspost.com.au
+  github_orgs: []
+  excluded: []

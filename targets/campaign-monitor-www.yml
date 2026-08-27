@@ -1,0 +1,10 @@
+target:
+  name: campaign-monitor-www
+  platform: bounty
+  disclosure: https://www.campaignmonitor.com/trust/report-a-vulnerability/
+  bounty: true
+  program_url: https://www.campaignmonitor.com/trust/report-a-vulnerability/
+  domains:
+  - www.campaignmonitor.com
+  github_orgs: []
+  excluded: []

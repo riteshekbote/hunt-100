@@ -1,0 +1,10 @@
+target:
+  name: mention-me-com-www
+  platform: vdp
+  disclosure: security@mention-me.com
+  bounty: false
+  program_url: https://mention-me.com/vulnerability-disclosure
+  domains:
+  - www.mention-me.com
+  github_orgs: []
+  excluded: []

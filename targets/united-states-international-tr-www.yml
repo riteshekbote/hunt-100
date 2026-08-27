@@ -1,0 +1,10 @@
+target:
+  name: united-states-international-tr-www
+  platform: vdp
+  disclosure: VDP@usitc.gov
+  bounty: false
+  program_url: https://www.usitc.gov/vulnerability-disclosure-policy
+  domains:
+  - www.usitc.gov
+  github_orgs: []
+  excluded: []

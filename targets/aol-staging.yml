@@ -1,0 +1,10 @@
+target:
+  name: aol-staging
+  platform: vdp
+  disclosure: secvuln@teamaol.com
+  bounty: false
+  program_url: https://contact.security.aol.com/
+  domains:
+  - staging.contact.security.aol.com
+  github_orgs: []
+  excluded: []

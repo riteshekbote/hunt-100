@@ -1,0 +1,10 @@
+target:
+  name: 3gpp-app
+  platform: vdp
+  disclosure: https://www.3gpp.org/coordinated-vulnerability-disclosure-cvd
+  bounty: false
+  program_url: https://www.3gpp.org/coordinated-vulnerability-disclosure-cvd
+  domains:
+  - app.3gpp.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: unilever-api
+  platform: vdp
+  disclosure: https://bugcrowd.com/unilever-vdp
+  bounty: false
+  program_url: https://bugcrowd.com/unilever-vdp
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

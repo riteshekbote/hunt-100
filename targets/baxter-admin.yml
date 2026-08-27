@@ -1,0 +1,10 @@
+target:
+  name: baxter-admin
+  platform: vdp
+  disclosure: productsecurity@baxter.com
+  bounty: false
+  program_url: https://www.baxter.com/product-security
+  domains:
+  - admin.baxter.com
+  github_orgs: []
+  excluded: []

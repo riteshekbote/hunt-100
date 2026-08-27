@@ -1,0 +1,10 @@
+target:
+  name: baxter-staging
+  platform: vdp
+  disclosure: productsecurity@baxter.com
+  bounty: false
+  program_url: https://www.baxter.com/product-security
+  domains:
+  - staging.baxter.com
+  github_orgs: []
+  excluded: []

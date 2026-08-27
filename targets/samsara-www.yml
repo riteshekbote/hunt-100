@@ -1,0 +1,10 @@
+target:
+  name: samsara-www
+  platform: vdp
+  disclosure: https://www.samsara.com/security
+  bounty: false
+  program_url: https://www.samsara.com/security
+  domains:
+  - www.samsara.com
+  github_orgs: []
+  excluded: []

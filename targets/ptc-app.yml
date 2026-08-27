@@ -1,0 +1,10 @@
+target:
+  name: ptc-app
+  platform: vdp
+  disclosure: cvd@ptc.com
+  bounty: false
+  program_url: https://www.ptc.com/en/documents/security/coordinated-vulnerability-disclosure
+  domains:
+  - app.ptc.com
+  github_orgs: []
+  excluded: []

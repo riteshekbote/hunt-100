@@ -1,0 +1,10 @@
+target:
+  name: cloudways-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/cloudways
+  bounty: true
+  program_url: https://bugcrowd.com/cloudways
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: lumosity-app
+  platform: vdp
+  disclosure: disclosure@lumoslabs.com
+  bounty: false
+  program_url: https://www.lumosity.com/en/legal/responsible_disclosure_policy/
+  domains:
+  - app.lumosity.com
+  github_orgs: []
+  excluded: []

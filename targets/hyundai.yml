@@ -1,0 +1,10 @@
+target:
+  name: hyundai
+  platform: vdp
+  disclosure: DisclosureReporting@hmausa.com
+  bounty: false
+  program_url: https://www.hyundaiusa.com/us/zh/vulnerability-disclosure
+  domains:
+  - hyundaiusa.com
+  github_orgs: []
+  excluded: []

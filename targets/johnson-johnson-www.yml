@@ -1,0 +1,10 @@
+target:
+  name: johnson-johnson-www
+  platform: vdp
+  disclosure: productsecurity@its.jnj.com
+  bounty: false
+  program_url: https://www.productsecurity.jnj.com/
+  domains:
+  - www.productsecurity.jnj.com
+  github_orgs: []
+  excluded: []

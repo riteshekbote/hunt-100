@@ -1,0 +1,10 @@
+target:
+  name: appcelerator-api
+  platform: vdp
+  disclosure: appc.support@axway.com
+  bounty: false
+  program_url: https://www.appcelerator.com/responsible-disclosure-of-security-vulnerabilities/
+  domains:
+  - api.appcelerator.com
+  github_orgs: []
+  excluded: []

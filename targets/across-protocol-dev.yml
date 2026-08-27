@@ -1,0 +1,10 @@
+target:
+  name: across-protocol-dev
+  platform: bounty
+  disclosure: bugs@umaproject.org
+  bounty: true
+  program_url: https://docs.across.to/v/developer-docs/additional-info/bug-bounty
+  domains:
+  - dev.docs.across.to
+  github_orgs: []
+  excluded: []

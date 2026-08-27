@@ -1,0 +1,10 @@
+target:
+  name: oviva-com-api
+  platform: vdp
+  disclosure: security@oviva.com
+  bounty: false
+  program_url: https://oviva.com/uk/en/security/
+  domains:
+  - api.oviva.com
+  github_orgs: []
+  excluded: []

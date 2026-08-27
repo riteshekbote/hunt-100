@@ -1,0 +1,10 @@
+target:
+  name: namazu
+  platform: vdp
+  disclosure: security@namazu.org
+  bounty: false
+  program_url: http://www.namazu.org/security.html
+  domains:
+  - namazu.org
+  github_orgs: []
+  excluded: []

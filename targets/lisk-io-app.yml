@@ -1,0 +1,10 @@
+target:
+  name: lisk-io-app
+  platform: vdp
+  disclosure: security@lisk.io
+  bounty: false
+  program_url: https://lisk.io/bug-bounty-program
+  domains:
+  - app.lisk.io
+  github_orgs: []
+  excluded: []

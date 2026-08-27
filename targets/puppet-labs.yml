@@ -1,0 +1,10 @@
+target:
+  name: puppet-labs
+  platform: vdp
+  disclosure: security-infrastructure@puppet.com
+  bounty: false
+  program_url: https://puppet.com/security
+  domains:
+  - puppet.com
+  github_orgs: []
+  excluded: []

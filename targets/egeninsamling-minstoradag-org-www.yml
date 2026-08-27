@@ -1,0 +1,10 @@
+target:
+  name: egeninsamling-minstoradag-org-www
+  platform: vdp
+  disclosure: security@betternow.org
+  bounty: false
+  program_url: https://intl.betternow.org/security
+  domains:
+  - www.intl.betternow.org
+  github_orgs: []
+  excluded: []

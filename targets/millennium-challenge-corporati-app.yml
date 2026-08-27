@@ -1,0 +1,10 @@
+target:
+  name: millennium-challenge-corporati-app
+  platform: vdp
+  disclosure: vulnerabilitydisclosure@mcc.gov
+  bounty: false
+  program_url: https://www.mcc.gov/vulnerability-disclosure-policy
+  domains:
+  - app.mcc.gov
+  github_orgs: []
+  excluded: []

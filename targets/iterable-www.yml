@@ -1,0 +1,10 @@
+target:
+  name: iterable-www
+  platform: vdp
+  disclosure: security@iterable.com
+  bounty: false
+  program_url: https://iterable.com/trust/responsible-disclosure-policy/
+  domains:
+  - www.iterable.com
+  github_orgs: []
+  excluded: []

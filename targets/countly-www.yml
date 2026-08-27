@@ -1,0 +1,10 @@
+target:
+  name: countly-www
+  platform: vdp
+  disclosure: security@count.ly
+  bounty: false
+  program_url: https://count.ly/.well-known/security.txt
+  domains:
+  - www.count.ly
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: ukfast-co-uk-www
+  platform: vdp
+  disclosure: https://www.ukfast.co.uk/terms.html
+  bounty: false
+  program_url: https://www.ukfast.co.uk/terms.html
+  domains:
+  - www.ukfast.co.uk
+  github_orgs: []
+  excluded: []

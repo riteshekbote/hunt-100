@@ -1,0 +1,10 @@
+target:
+  name: barracuda-networks-app
+  platform: vdp
+  disclosure: https://bugcrowd.com/barracuda
+  bounty: false
+  program_url: https://bugcrowd.com/barracuda
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

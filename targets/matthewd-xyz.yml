@@ -1,0 +1,10 @@
+target:
+  name: matthewd-xyz
+  platform: vdp
+  disclosure: security@matthewd.xyz
+  bounty: false
+  program_url: https://matthewd.xyz/security
+  domains:
+  - matthewd.xyz
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: code-kiwi-com-api
+  platform: vdp
+  disclosure: security@kiwi.com
+  bounty: false
+  program_url: https://www.kiwi.com/us/pages/security
+  domains:
+  - api.kiwi.com
+  github_orgs: []
+  excluded: []

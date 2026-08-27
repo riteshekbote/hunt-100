@@ -1,0 +1,10 @@
+target:
+  name: vmware-api
+  platform: vdp
+  disclosure: security@vmware.com
+  bounty: false
+  program_url: https://www.vmware.com/support/policies/security_response.html
+  domains:
+  - api.vmware.com
+  github_orgs: []
+  excluded: []

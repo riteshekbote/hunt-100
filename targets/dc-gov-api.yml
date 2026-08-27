@@ -1,0 +1,10 @@
+target:
+  name: dc-gov-api
+  platform: vdp
+  disclosure: octo@dc.gov
+  bounty: false
+  program_url: https://octo.dc.gov/publication/responsible-disclosure-policy
+  domains:
+  - api.octo.dc.gov
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: university-of-york-app
+  platform: vdp
+  disclosure: cert@york.ac.uk
+  bounty: false
+  program_url: https://www.york.ac.uk/it-services/security/vulnerability-disclosure/
+  domains:
+  - app.york.ac.uk
+  github_orgs: []
+  excluded: []

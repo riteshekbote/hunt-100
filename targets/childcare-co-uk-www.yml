@@ -1,0 +1,10 @@
+target:
+  name: childcare-co-uk-www
+  platform: vdp
+  disclosure: security@childcare.co.uk
+  bounty: false
+  program_url: https://www.childcare.co.uk/responsible-disclosure-policy
+  domains:
+  - www.childcare.co.uk
+  github_orgs: []
+  excluded: []

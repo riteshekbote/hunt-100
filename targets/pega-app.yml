@@ -1,0 +1,10 @@
+target:
+  name: pega-app
+  platform: vdp
+  disclosure: security@pega.com
+  bounty: false
+  program_url: https://www.pega.com/responsible-disclosure-policy
+  domains:
+  - app.pega.com
+  github_orgs: []
+  excluded: []

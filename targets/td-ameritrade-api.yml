@@ -1,0 +1,10 @@
+target:
+  name: td-ameritrade-api
+  platform: vdp
+  disclosure: sirt@tdameritrade.com
+  bounty: false
+  program_url: https://www.tdameritrade.com/security/security-vulnerability.page
+  domains:
+  - api.tdameritrade.com
+  github_orgs: []
+  excluded: []

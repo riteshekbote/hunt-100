@@ -1,0 +1,10 @@
+target:
+  name: swisscom-www
+  platform: bounty
+  disclosure: bug.bounty@swisscom.com
+  bounty: true
+  program_url: https://www.swisscom.ch/en/about/company/portrait/network/security/bug-bounty.html
+  domains:
+  - www.swisscom.ch
+  github_orgs: []
+  excluded: []

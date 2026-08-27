@@ -1,0 +1,10 @@
+target:
+  name: guardian360-app
+  platform: vdp
+  disclosure: security@guardian360.nl
+  bounty: false
+  program_url: https://www.guardian360.net/coordinated-vulnerability-disclosure/
+  domains:
+  - app.guardian360.net
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: geckoboard-api
+  platform: vdp
+  disclosure: https://support.geckoboard.com/hc/en-us/articles/115007061468-Responsible-Disclosure-Policy
+  bounty: false
+  program_url: https://support.geckoboard.com/hc/en-us/articles/115007061468-Responsible-Disclosure-Policy
+  domains:
+  - api.support.geckoboard.com
+  github_orgs: []
+  excluded: []

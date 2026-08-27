@@ -1,0 +1,10 @@
+target:
+  name: oracle-app
+  platform: vdp
+  disclosure: secalert_us@oracle.com
+  bounty: false
+  program_url: https://www.oracle.com/africa/corporate/security-practices/assurance/vulnerability/reporting.html
+  domains:
+  - app.oracle.com
+  github_orgs: []
+  excluded: []

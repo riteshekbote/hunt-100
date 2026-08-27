@@ -1,0 +1,10 @@
+target:
+  name: strem-io-www
+  platform: vdp
+  disclosure: security@stremio.com
+  bounty: false
+  program_url: https://www.stremio.com/security-policy.txt
+  domains:
+  - www.stremio.com
+  github_orgs: []
+  excluded: []

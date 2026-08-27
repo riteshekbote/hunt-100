@@ -1,0 +1,10 @@
+target:
+  name: turnoffthelights-com
+  platform: vdp
+  disclosure: https://www.turnoffthelights.com/privacy.html
+  bounty: false
+  program_url: https://www.turnoffthelights.com/privacy.html
+  domains:
+  - turnoffthelights.com
+  github_orgs: []
+  excluded: []

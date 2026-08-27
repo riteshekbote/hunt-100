@@ -1,0 +1,10 @@
+target:
+  name: foxit-software-www
+  platform: vdp
+  disclosure: security-ml@foxitsoftware.com
+  bounty: false
+  program_url: https://www.foxitsoftware.com/support/responsible-disclosure-policy.html
+  domains:
+  - www.foxitsoftware.com
+  github_orgs: []
+  excluded: []

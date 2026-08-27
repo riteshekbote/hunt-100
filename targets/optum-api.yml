@@ -1,0 +1,10 @@
+target:
+  name: optum-api
+  platform: vdp
+  disclosure: VulnerabilityReporting@optum.com
+  bounty: false
+  program_url: https://www.optum.com/vulnerability.html
+  domains:
+  - api.optum.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: rollbar
+  platform: vdp
+  disclosure: security@rollbar.com
+  bounty: false
+  program_url: https://docs.rollbar.com/docs/responsible-disclosure-policy
+  domains:
+  - docs.rollbar.com
+  github_orgs: []
+  excluded: []

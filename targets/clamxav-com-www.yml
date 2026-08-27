@@ -1,0 +1,10 @@
+target:
+  name: clamxav-com-www
+  platform: vdp
+  disclosure: security@clamxav.com
+  bounty: false
+  program_url: https://clamxav.com/.well-known/vulnerability_disclosure_policy.txt
+  domains:
+  - www.clamxav.com
+  github_orgs: []
+  excluded: []

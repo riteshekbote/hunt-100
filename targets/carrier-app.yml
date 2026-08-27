@@ -1,0 +1,10 @@
+target:
+  name: carrier-app
+  platform: vdp
+  disclosure: productsecurity.ccs@carrier.com
+  bounty: false
+  program_url: https://www.corporate.carrier.com/contact-us/
+  domains:
+  - app.corporate.carrier.com
+  github_orgs: []
+  excluded: []

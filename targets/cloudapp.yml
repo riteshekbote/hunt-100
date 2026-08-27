@@ -1,0 +1,10 @@
+target:
+  name: cloudapp
+  platform: vdp
+  disclosure: support@getcloudapp.com
+  bounty: false
+  program_url: https://support.getcloudapp.com/article/260-responsible-disclosure-report-found-vulnerabilities
+  domains:
+  - support.getcloudapp.com
+  github_orgs: []
+  excluded: []

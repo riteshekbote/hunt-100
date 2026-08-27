@@ -1,0 +1,10 @@
+target:
+  name: national-cyber-security-center-api
+  platform: bounty
+  disclosure: ert@ncsc.nl
+  bounty: true
+  program_url: https://www.ncsc.nl/security
+  domains:
+  - api.ncsc.nl
+  github_orgs: []
+  excluded: []

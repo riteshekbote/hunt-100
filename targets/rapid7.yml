@@ -1,0 +1,10 @@
+target:
+  name: rapid7
+  platform: vdp
+  disclosure: https://www.rapid7.com/security/disclosure
+  bounty: false
+  program_url: https://www.rapid7.com/security/disclosure
+  domains:
+  - rapid7.com
+  github_orgs: []
+  excluded: []

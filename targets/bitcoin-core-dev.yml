@@ -1,0 +1,10 @@
+target:
+  name: bitcoin-core-dev
+  platform: vdp
+  disclosure: security@bitcoincore.org
+  bounty: false
+  program_url: https://github.com/bitcoin/bitcoin/security/policy
+  domains:
+  - dev.github.com
+  github_orgs: []
+  excluded: []

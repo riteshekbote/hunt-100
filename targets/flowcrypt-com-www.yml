@@ -1,0 +1,10 @@
+target:
+  name: flowcrypt-com-www
+  platform: vdp
+  disclosure: security@flowcrypt.com
+  bounty: false
+  program_url: https://flowcrypt.com/docs/technical/bug-bounty.html
+  domains:
+  - www.flowcrypt.com
+  github_orgs: []
+  excluded: []

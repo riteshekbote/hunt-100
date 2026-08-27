@@ -1,0 +1,10 @@
+target:
+  name: axis-os-dev
+  platform: bounty
+  disclosure: https://bugcrowd.com/engagements/axis-os-public
+  bounty: true
+  program_url: https://bugcrowd.com/engagements/axis-os-public
+  domains:
+  - dev.bugcrowd.com
+  github_orgs: []
+  excluded: []

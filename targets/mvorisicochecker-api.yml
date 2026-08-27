@@ -1,0 +1,10 @@
+target:
+  name: mvorisicochecker-api
+  platform: vdp
+  disclosure: contact@mvonederland.nl
+  bounty: false
+  program_url: https://www.mvorisicochecker.nl/de/node/1807
+  domains:
+  - api.mvorisicochecker.nl
+  github_orgs: []
+  excluded: []

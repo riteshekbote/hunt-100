@@ -1,0 +1,10 @@
+target:
+  name: 0xdata-atlassian-net-staging
+  platform: vdp
+  disclosure: https://www.atlassian.com/trust/security/report-a-vulnerability
+  bounty: false
+  program_url: https://www.atlassian.com/trust/security/report-a-vulnerability
+  domains:
+  - staging.atlassian.com
+  github_orgs: []
+  excluded: []

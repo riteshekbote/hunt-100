@@ -1,0 +1,10 @@
+target:
+  name: accellion-staging
+  platform: bounty
+  disclosure: https://bugcrowd.com/accellion-public
+  bounty: true
+  program_url: https://bugcrowd.com/accellion-public
+  domains:
+  - staging.bugcrowd.com
+  github_orgs: []
+  excluded: []

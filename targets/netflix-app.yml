@@ -1,0 +1,10 @@
+target:
+  name: netflix-app
+  platform: vdp
+  disclosure: https://help.netflix.com/en/node/6657
+  bounty: false
+  program_url: https://help.netflix.com/en/node/6657
+  domains:
+  - app.help.netflix.com
+  github_orgs: []
+  excluded: []

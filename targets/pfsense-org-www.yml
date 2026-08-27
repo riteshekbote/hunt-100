@@ -1,0 +1,10 @@
+target:
+  name: pfsense-org-www
+  platform: vdp
+  disclosure: security@netgate.com
+  bounty: false
+  program_url: https://www.netgate.com/security/index.html
+  domains:
+  - www.netgate.com
+  github_orgs: []
+  excluded: []

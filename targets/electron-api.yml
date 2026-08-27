@@ -1,0 +1,10 @@
+target:
+  name: electron-api
+  platform: vdp
+  disclosure: security@electronjs.org
+  bounty: false
+  program_url: https://github.com/electron/electron/blob/main/SECURITY.md
+  domains:
+  - api.github.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: capital-one-app
+  platform: vdp
+  disclosure: https://www.capitalone.com/digital/responsible-disclosure/
+  bounty: false
+  program_url: https://www.capitalone.com/digital/responsible-disclosure/
+  domains:
+  - app.capitalone.com
+  github_orgs: []
+  excluded: []

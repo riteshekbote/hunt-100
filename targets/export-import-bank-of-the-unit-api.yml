@@ -1,0 +1,10 @@
+target:
+  name: export-import-bank-of-the-unit-api
+  platform: vdp
+  disclosure: https://www.exim.gov/vulnerability-disclosure-policy
+  bounty: false
+  program_url: https://www.exim.gov/vulnerability-disclosure-policy
+  domains:
+  - api.exim.gov
+  github_orgs: []
+  excluded: []

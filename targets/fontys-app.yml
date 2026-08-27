@@ -1,0 +1,10 @@
+target:
+  name: fontys-app
+  platform: vdp
+  disclosure: https://fontys.edu/About-Fontys-4/Responsible-disclosure.htm
+  bounty: false
+  program_url: https://fontys.edu/About-Fontys-4/Responsible-disclosure.htm
+  domains:
+  - app.fontys.edu
+  github_orgs: []
+  excluded: []

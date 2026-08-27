@@ -1,0 +1,10 @@
+target:
+  name: abn-amro-staging
+  platform: bounty
+  disclosure: responsible.disclosure@nl.abnamro.com
+  bounty: true
+  program_url: https://www.abnamro.nl/en/personal/overabnamro/secure-banking/responsible-disclosure.html
+  domains:
+  - staging.abnamro.nl
+  github_orgs: []
+  excluded: []

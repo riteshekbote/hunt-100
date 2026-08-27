@@ -1,0 +1,10 @@
+target:
+  name: bitdiscovery
+  platform: vdp
+  disclosure: https://bugcrowd.com/bitdiscovery
+  bounty: false
+  program_url: https://bugcrowd.com/bitdiscovery
+  domains:
+  - bugcrowd.com
+  github_orgs: []
+  excluded: []

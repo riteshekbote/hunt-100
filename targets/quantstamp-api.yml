@@ -1,0 +1,10 @@
+target:
+  name: quantstamp-api
+  platform: bounty
+  disclosure: security@quantstamp.com
+  bounty: true
+  program_url: https://quantstamp.com/legal/responsible-disclosure
+  domains:
+  - api.quantstamp.com
+  github_orgs: []
+  excluded: []

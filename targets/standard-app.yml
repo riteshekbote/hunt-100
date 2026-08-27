@@ -1,0 +1,10 @@
+target:
+  name: standard-app
+  platform: vdp
+  disclosure: https://www.standard.com/about-standard/responsible-disclosure-program
+  bounty: false
+  program_url: https://www.standard.com/about-standard/responsible-disclosure-program
+  domains:
+  - app.standard.com
+  github_orgs: []
+  excluded: []

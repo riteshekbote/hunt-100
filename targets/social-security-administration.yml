@@ -1,0 +1,10 @@
+target:
+  name: social-security-administration
+  platform: vdp
+  disclosure: security@ssa.gov
+  bounty: false
+  program_url: https://www.ssa.gov/vulnerability-disclosure-policy
+  domains:
+  - ssa.gov
+  github_orgs: []
+  excluded: []

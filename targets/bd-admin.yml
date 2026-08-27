@@ -1,0 +1,10 @@
+target:
+  name: bd-admin
+  platform: vdp
+  disclosure: https://cybersecurity.bd.com/vulnerability-disclosures
+  bounty: false
+  program_url: https://cybersecurity.bd.com/vulnerability-disclosures
+  domains:
+  - admin.cybersecurity.bd.com
+  github_orgs: []
+  excluded: []

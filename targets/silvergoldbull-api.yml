@@ -1,0 +1,10 @@
+target:
+  name: silvergoldbull-api
+  platform: bounty
+  disclosure: https://silvergoldbull.com/bug-bounty/
+  bounty: true
+  program_url: https://silvergoldbull.com/bug-bounty/
+  domains:
+  - api.silvergoldbull.com
+  github_orgs: []
+  excluded: []

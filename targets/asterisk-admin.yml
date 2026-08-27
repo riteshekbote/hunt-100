@@ -1,0 +1,10 @@
+target:
+  name: asterisk-admin
+  platform: bounty
+  disclosure: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  bounty: true
+  program_url: https://wiki.asterisk.org/wiki/display/AST/Asterisk+Bug+Bounties
+  domains:
+  - admin.wiki.asterisk.org
+  github_orgs: []
+  excluded: []

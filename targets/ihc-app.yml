@@ -1,0 +1,10 @@
+target:
+  name: ihc-app
+  platform: vdp
+  disclosure: ITSecurity@royalihc.com
+  bounty: false
+  program_url: https://www.royalihc.com/en/responsible-disclosure-policy
+  domains:
+  - app.royalihc.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: kusama-app
+  platform: vdp
+  disclosure: security-report@web3.foundation
+  bounty: false
+  program_url: https://guide.kusama.network/docs/en/kusama-bug-bounty
+  domains:
+  - app.guide.kusama.network
+  github_orgs: []
+  excluded: []

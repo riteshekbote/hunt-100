@@ -1,0 +1,10 @@
+target:
+  name: vanmoof-www
+  platform: vdp
+  disclosure: security@vanmoof.com
+  bounty: false
+  program_url: https://www.vanmoof.com/en/responsible-disclosure-policy
+  domains:
+  - www.vanmoof.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: etsi-org-www
+  platform: vdp
+  disclosure: ETSI_CVD@etsi.org
+  bounty: false
+  program_url: https://www.etsi.org/standards/coordinated-vulnerability-disclosure
+  domains:
+  - www.etsi.org
+  github_orgs: []
+  excluded: []

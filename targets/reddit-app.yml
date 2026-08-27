@@ -1,0 +1,10 @@
+target:
+  name: reddit-app
+  platform: vdp
+  disclosure: security@reddit.com
+  bounty: false
+  program_url: http://code.reddit.com/wiki/help/whitehat
+  domains:
+  - app.code.reddit.com
+  github_orgs: []
+  excluded: []

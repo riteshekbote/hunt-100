@@ -1,0 +1,10 @@
+target:
+  name: privacy-and-civil-liberties-ov
+  platform: vdp
+  disclosure: soc@pclob.gov
+  bounty: false
+  program_url: https://www.pclob.gov/vulnerability-disclosure-policy
+  domains:
+  - pclob.gov
+  github_orgs: []
+  excluded: []

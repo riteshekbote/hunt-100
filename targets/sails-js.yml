@@ -1,0 +1,10 @@
+target:
+  name: sails-js
+  platform: vdp
+  disclosure: critical@sailsjs.io
+  bounty: false
+  program_url: https://sailsjs.com/security
+  domains:
+  - sailsjs.com
+  github_orgs: []
+  excluded: []

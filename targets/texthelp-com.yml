@@ -1,0 +1,10 @@
+target:
+  name: texthelp-com
+  platform: vdp
+  disclosure: security@texthelp.com
+  bounty: false
+  program_url: https://docs.google.com/document/d/e/2PACX-1vQwtwixwk3TzxDEkmLc0NJnEH_u_SJ0FlHX5tFGldG3tK37k4SLeeOc8yFPIc73iMELb3F80z1SOZU4/pub
+  domains:
+  - docs.google.com
+  github_orgs: []
+  excluded: []

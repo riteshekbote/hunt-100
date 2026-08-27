@@ -1,0 +1,10 @@
+target:
+  name: sonarcloud-io-api
+  platform: vdp
+  disclosure: security@sonarsource.com
+  bounty: false
+  program_url: https://community.sonarsource.com/t/responsible-vulnerability-disclosure/9317
+  domains:
+  - api.community.sonarsource.com
+  github_orgs: []
+  excluded: []

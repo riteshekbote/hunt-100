@@ -1,0 +1,10 @@
+target:
+  name: ncsc-nl-www
+  platform: bounty
+  disclosure: cert@ncsc.nl
+  bounty: true
+  program_url: https://www.ncsc.nl/security
+  domains:
+  - www.ncsc.nl
+  github_orgs: []
+  excluded: []

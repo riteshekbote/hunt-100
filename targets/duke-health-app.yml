@@ -1,0 +1,10 @@
+target:
+  name: duke-health-app
+  platform: vdp
+  disclosure: security@duke.edu
+  bounty: false
+  program_url: https://security.duke.edu/policies/responsible-disclosure
+  domains:
+  - app.security.duke.edu
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: beanstalk-dev
+  platform: vdp
+  disclosure: https://support.beanstalkapp.com/article/890-responsible-disclosure-policy
+  bounty: false
+  program_url: https://support.beanstalkapp.com/article/890-responsible-disclosure-policy
+  domains:
+  - dev.support.beanstalkapp.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: danske-bank-app
+  platform: vdp
+  disclosure: soc_itops@danskebank.com
+  bounty: false
+  program_url: https://danskebank.com/responsible-disclosure
+  domains:
+  - app.danskebank.com
+  github_orgs: []
+  excluded: []

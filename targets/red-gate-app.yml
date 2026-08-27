@@ -1,0 +1,10 @@
+target:
+  name: red-gate-app
+  platform: vdp
+  disclosure: security@red-gate.com
+  bounty: false
+  program_url: https://www.red-gate.com/website/legal
+  domains:
+  - app.red-gate.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: innovative-emergency-managemen-app
+  platform: vdp
+  disclosure: responsibledisclosure@iem.com
+  bounty: false
+  program_url: https://iem.com/privacy/responsible-vulnerability-disclosure-guidelines/
+  domains:
+  - app.iem.com
+  github_orgs: []
+  excluded: []

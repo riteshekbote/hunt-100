@@ -1,0 +1,10 @@
+target:
+  name: revolut-www
+  platform: vdp
+  disclosure: https://www.revolut.com/responsible-disclosure-program
+  bounty: false
+  program_url: https://www.revolut.com/responsible-disclosure-program
+  domains:
+  - www.revolut.com
+  github_orgs: []
+  excluded: []

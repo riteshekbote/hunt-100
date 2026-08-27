@@ -1,0 +1,10 @@
+target:
+  name: nowsecure-api
+  platform: vdp
+  disclosure: https://www.nowsecure.com/company/responsible-disclosure-policy/
+  bounty: false
+  program_url: https://www.nowsecure.com/company/responsible-disclosure-policy/
+  domains:
+  - api.nowsecure.com
+  github_orgs: []
+  excluded: []

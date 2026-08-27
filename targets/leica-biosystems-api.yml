@@ -1,0 +1,10 @@
+target:
+  name: leica-biosystems-api
+  platform: vdp
+  disclosure: https://www.leicabiosystems.com/about/product-security/
+  bounty: false
+  program_url: https://www.leicabiosystems.com/about/product-security/
+  domains:
+  - api.leicabiosystems.com
+  github_orgs: []
+  excluded: []

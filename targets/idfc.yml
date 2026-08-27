@@ -1,0 +1,10 @@
+target:
+  name: idfc
+  platform: vdp
+  disclosure: responsible.disclosure@idfcbank.com
+  bounty: false
+  program_url: https://www.idfcbank.com/content/dam/idfc/image/security-tips/pdf/Responsible-Disclosure-Program.pdf
+  domains:
+  - idfcbank.com
+  github_orgs: []
+  excluded: []

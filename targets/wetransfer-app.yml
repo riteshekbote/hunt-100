@@ -1,0 +1,10 @@
+target:
+  name: wetransfer-app
+  platform: bounty
+  disclosure: https://wetransfer.com/legal/disclosure
+  bounty: true
+  program_url: https://wetransfer.com/legal/disclosure
+  domains:
+  - app.wetransfer.com
+  github_orgs: []
+  excluded: []

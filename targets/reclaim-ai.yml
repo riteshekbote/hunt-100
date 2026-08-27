@@ -1,0 +1,10 @@
+target:
+  name: reclaim-ai
+  platform: vdp
+  disclosure: infosec@reclaim.ai
+  bounty: false
+  program_url: https://reclaim.ai/responsible-disclosure
+  domains:
+  - reclaim.ai
+  github_orgs: []
+  excluded: []

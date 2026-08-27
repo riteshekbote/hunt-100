@@ -1,0 +1,10 @@
+target:
+  name: sendsafely-www
+  platform: bounty
+  disclosure: https://www.sendsafely.com/security/bug-bounty
+  bounty: true
+  program_url: https://www.sendsafely.com/security/bug-bounty
+  domains:
+  - www.sendsafely.com
+  github_orgs: []
+  excluded: []

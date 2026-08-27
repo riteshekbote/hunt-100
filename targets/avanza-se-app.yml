@@ -1,0 +1,10 @@
+target:
+  name: avanza-se-app
+  platform: vdp
+  disclosure: securityreport@avanza.se
+  bounty: false
+  program_url: https://www.avanza.se/sakerhet-villkor/sakerhet.html
+  domains:
+  - app.avanza.se
+  github_orgs: []
+  excluded: []

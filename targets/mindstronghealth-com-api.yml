@@ -1,0 +1,10 @@
+target:
+  name: mindstronghealth-com-api
+  platform: vdp
+  disclosure: security@mindstronghealth.com
+  bounty: false
+  program_url: https://www.mindstronghealth.com/security-policy.html
+  domains:
+  - api.mindstronghealth.com
+  github_orgs: []
+  excluded: []

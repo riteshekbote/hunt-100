@@ -1,0 +1,10 @@
+target:
+  name: drexel-university-app
+  platform: vdp
+  disclosure: InformationSecurity@drexel.edu
+  bounty: false
+  program_url: https://drexel.edu/it/security/services-processes/bug-bounty/
+  domains:
+  - app.drexel.edu
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: department-of-the-treasury
+  platform: vdp
+  disclosure: webcomments@treasury.gov
+  bounty: false
+  program_url: https://www.treasury.gov/vulnerability-disclosure-policy
+  domains:
+  - treasury.gov
+  github_orgs: []
+  excluded: []

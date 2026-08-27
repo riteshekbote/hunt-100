@@ -1,0 +1,10 @@
+target:
+  name: asn-bank-admin
+  platform: vdp
+  disclosure: responsible-disclosure@devolksbank.nl
+  bounty: false
+  program_url: https://www.devolksbank.nl/over-ons/kwetsbaarheden-melden
+  domains:
+  - admin.devolksbank.nl
+  github_orgs: []
+  excluded: []

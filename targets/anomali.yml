@@ -1,0 +1,10 @@
+target:
+  name: anomali
+  platform: vdp
+  disclosure: security@anomali.com
+  bounty: false
+  program_url: https://www.anomali.com/security
+  domains:
+  - anomali.com
+  github_orgs: []
+  excluded: []

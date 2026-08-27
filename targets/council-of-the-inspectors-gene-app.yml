@@ -1,0 +1,10 @@
+target:
+  name: council-of-the-inspectors-gene-app
+  platform: vdp
+  disclosure: cigieitvdp@cigie.gov
+  bounty: false
+  program_url: https://www.ignet.gov/vulnerability-disclosure-policy
+  domains:
+  - app.ignet.gov
+  github_orgs: []
+  excluded: []

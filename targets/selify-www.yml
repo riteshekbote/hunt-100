@@ -1,0 +1,10 @@
+target:
+  name: selify-www
+  platform: vdp
+  disclosure: https://sellfy.com/security/
+  bounty: false
+  program_url: https://sellfy.com/security/
+  domains:
+  - www.sellfy.com
+  github_orgs: []
+  excluded: []

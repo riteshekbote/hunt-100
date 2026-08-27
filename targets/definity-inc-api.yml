@@ -1,0 +1,10 @@
+target:
+  name: definity-inc-api
+  platform: bounty
+  disclosure: security@definityinc.com
+  bounty: true
+  program_url: https://definityinc.com/bug-bounty-program/
+  domains:
+  - api.definityinc.com
+  github_orgs: []
+  excluded: []

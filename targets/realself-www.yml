@@ -1,0 +1,10 @@
+target:
+  name: realself-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/realself
+  bounty: true
+  program_url: https://bugcrowd.com/realself
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

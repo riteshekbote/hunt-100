@@ -1,0 +1,10 @@
+target:
+  name: federal-mediation-and-concilia
+  platform: vdp
+  disclosure: security@fmcs.gov
+  bounty: false
+  program_url: https://www.fmcs.gov/vulnerability-disclosure-policy
+  domains:
+  - fmcs.gov
+  github_orgs: []
+  excluded: []

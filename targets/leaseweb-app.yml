@@ -1,0 +1,10 @@
+target:
+  name: leaseweb-app
+  platform: vdp
+  disclosure: security@leaseweb.com
+  bounty: false
+  program_url: https://www.leaseweb.com/security-certifications/responsible-disclosure
+  domains:
+  - app.leaseweb.com
+  github_orgs: []
+  excluded: []

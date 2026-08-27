@@ -1,0 +1,10 @@
+target:
+  name: brandcast-api
+  platform: vdp
+  disclosure: security@brandcast.com
+  bounty: false
+  program_url: https://support.brandcast.com/en/articles/990526-security-disclosure
+  domains:
+  - api.support.brandcast.com
+  github_orgs: []
+  excluded: []

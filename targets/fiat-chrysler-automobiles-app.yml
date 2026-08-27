@@ -1,0 +1,10 @@
+target:
+  name: fiat-chrysler-automobiles-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/fca
+  bounty: true
+  program_url: https://bugcrowd.com/fca
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

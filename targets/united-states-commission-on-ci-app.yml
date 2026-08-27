@@ -1,0 +1,10 @@
+target:
+  name: united-states-commission-on-ci-app
+  platform: vdp
+  disclosure: ccrsoc@usccr.gov
+  bounty: false
+  program_url: https://www.usccr.gov/vulnerability-disclosure-policy
+  domains:
+  - app.usccr.gov
+  github_orgs: []
+  excluded: []

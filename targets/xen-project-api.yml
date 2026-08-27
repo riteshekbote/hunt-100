@@ -1,0 +1,10 @@
+target:
+  name: xen-project-api
+  platform: vdp
+  disclosure: security@xenproject
+  bounty: false
+  program_url: https://www.xenproject.org/security-policy.html
+  domains:
+  - api.xenproject.org
+  github_orgs: []
+  excluded: []

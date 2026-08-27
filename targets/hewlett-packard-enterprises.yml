@@ -1,0 +1,10 @@
+target:
+  name: hewlett-packard-enterprises
+  platform: vdp
+  disclosure: https://www.hpe.com/us/en/services/security-vulnerability.html
+  bounty: false
+  program_url: https://www.hpe.com/us/en/services/security-vulnerability.html
+  domains:
+  - hpe.com
+  github_orgs: []
+  excluded: []

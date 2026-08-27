@@ -1,0 +1,10 @@
+target:
+  name: websupport-sk
+  platform: vdp
+  disclosure: security@websupport.sk
+  bounty: false
+  program_url: https://www.websupport.sk/support/kb/nahlasenie-zranitelnosti/
+  domains:
+  - websupport.sk
+  github_orgs: []
+  excluded: []

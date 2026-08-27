@@ -1,0 +1,10 @@
+target:
+  name: accenture-api
+  platform: vdp
+  disclosure: https://www.accenture.com/us-en/about/company/accenture-responsible-disclosure
+  bounty: false
+  program_url: https://www.accenture.com/us-en/about/company/accenture-responsible-disclosure
+  domains:
+  - api.accenture.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: realpython-com
+  platform: vdp
+  disclosure: info+security@realpython.com
+  bounty: false
+  program_url: https://realpython.com/security/
+  domains:
+  - realpython.com
+  github_orgs: []
+  excluded: []

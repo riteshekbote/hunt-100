@@ -1,0 +1,10 @@
+target:
+  name: mongodb
+  platform: vdp
+  disclosure: security@mongodb.com
+  bounty: false
+  program_url: https://www.mongodb.com/security
+  domains:
+  - mongodb.com
+  github_orgs: []
+  excluded: []

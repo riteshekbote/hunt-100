@@ -1,0 +1,10 @@
+target:
+  name: 18f-staging
+  platform: vdp
+  disclosure: tts-vulnerability-reports@gsa.gov
+  bounty: false
+  program_url: https://18f.gsa.gov/vulnerability-disclosure-policy/
+  domains:
+  - staging.18f.gsa.gov
+  github_orgs: []
+  excluded: []

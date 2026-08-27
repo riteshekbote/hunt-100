@@ -1,0 +1,10 @@
+target:
+  name: salesflare
+  platform: vdp
+  disclosure: security@salesflare.com
+  bounty: false
+  program_url: https://salesflare.com/vdp
+  domains:
+  - salesflare.com
+  github_orgs: []
+  excluded: []

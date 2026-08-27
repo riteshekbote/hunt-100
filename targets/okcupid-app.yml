@@ -1,0 +1,10 @@
+target:
+  name: okcupid-app
+  platform: vdp
+  disclosure: security@okcupid.com
+  bounty: false
+  program_url: https://www.okcupid.com/security
+  domains:
+  - app.okcupid.com
+  github_orgs: []
+  excluded: []

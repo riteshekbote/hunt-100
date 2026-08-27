@@ -1,0 +1,10 @@
+target:
+  name: cosyfeet-com-api
+  platform: vdp
+  disclosure: andrews@footshopltd.co.uk
+  bounty: false
+  program_url: https://www.cosyfeet.com/security-privacy
+  domains:
+  - api.cosyfeet.com
+  github_orgs: []
+  excluded: []

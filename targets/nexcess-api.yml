@@ -1,0 +1,10 @@
+target:
+  name: nexcess-api
+  platform: vdp
+  disclosure: bugbounty@liquidweb.com
+  bounty: false
+  program_url: https://www.nexcess.net/policies/nexcess-bug-bounty/
+  domains:
+  - api.nexcess.net
+  github_orgs: []
+  excluded: []

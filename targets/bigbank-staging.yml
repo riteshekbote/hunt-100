@@ -1,0 +1,10 @@
+target:
+  name: bigbank-staging
+  platform: vdp
+  disclosure: https://bugcrowd.com/bigbank
+  bounty: false
+  program_url: https://bugcrowd.com/bigbank
+  domains:
+  - staging.bugcrowd.com
+  github_orgs: []
+  excluded: []

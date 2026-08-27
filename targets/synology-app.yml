@@ -1,0 +1,10 @@
+target:
+  name: synology-app
+  platform: bounty
+  disclosure: bounty@synology.com with https://www.synology.com/de-de/support/security_pgp_key
+  bounty: true
+  program_url: https://www.synology.com/de-de/security/bounty_program#scope_and_reward
+  domains:
+  - app.synology.com
+  github_orgs: []
+  excluded: []

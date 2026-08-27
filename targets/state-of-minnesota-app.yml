@@ -1,0 +1,10 @@
+target:
+  name: state-of-minnesota-app
+  platform: vdp
+  disclosure: appsec@state.mn.us
+  bounty: false
+  program_url: https://mn.gov/mnit/about-mnit/security/securing-the-state/vulnerability-disclosure-program.jsp
+  domains:
+  - app.mn.gov
+  github_orgs: []
+  excluded: []

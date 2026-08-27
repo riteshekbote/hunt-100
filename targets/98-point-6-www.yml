@@ -1,0 +1,10 @@
+target:
+  name: 98-point-6-www
+  platform: vdp
+  disclosure: security@98point6.com
+  bounty: false
+  program_url: https://www.98point6.com/responsible-disclosure-policy/
+  domains:
+  - www.98point6.com
+  github_orgs: []
+  excluded: []

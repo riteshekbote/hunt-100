@@ -1,0 +1,10 @@
+target:
+  name: dssw-co-uk
+  platform: vdp
+  disclosure: support@dssw.co.uk
+  bounty: false
+  program_url: https://www.dssw.co.uk/readme/security.html
+  domains:
+  - dssw.co.uk
+  github_orgs: []
+  excluded: []

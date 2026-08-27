@@ -1,0 +1,10 @@
+target:
+  name: parabol-www
+  platform: bounty
+  disclosure: https://www.parabol.co/security-disclosure
+  bounty: true
+  program_url: https://www.parabol.co/security-disclosure
+  domains:
+  - www.parabol.co
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: chitchats-com-www
+  platform: vdp
+  disclosure: security@reinvent.com
+  bounty: false
+  program_url: https://admin.reinvent.com/security/security.policy.txt
+  domains:
+  - www.admin.reinvent.com
+  github_orgs: []
+  excluded: []

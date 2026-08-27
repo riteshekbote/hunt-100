@@ -1,0 +1,10 @@
+target:
+  name: apptimize-com-www
+  platform: vdp
+  disclosure: security@airship.com
+  bounty: false
+  program_url: https://www.airship.com/legal/full-disclosure-security-policy/
+  domains:
+  - www.airship.com
+  github_orgs: []
+  excluded: []

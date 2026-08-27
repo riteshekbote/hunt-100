@@ -1,0 +1,10 @@
+target:
+  name: unity3d-app
+  platform: vdp
+  disclosure: security@unity3d.com
+  bounty: false
+  program_url: https://unity3d.com/fr/security
+  domains:
+  - app.unity3d.com
+  github_orgs: []
+  excluded: []

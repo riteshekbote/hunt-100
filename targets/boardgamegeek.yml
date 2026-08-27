@@ -1,0 +1,10 @@
+target:
+  name: boardgamegeek
+  platform: vdp
+  disclosure: security@boardgamegeek.com
+  bounty: false
+  program_url: https://boardgamegeek.com/responsible_disclosure_policy
+  domains:
+  - boardgamegeek.com
+  github_orgs: []
+  excluded: []

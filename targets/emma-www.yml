@@ -1,0 +1,10 @@
+target:
+  name: emma-www
+  platform: bounty
+  disclosure: responsibledisclosure@eneco.com
+  bounty: true
+  program_url: https://myemma.com/trust/report-a-vulnerability/
+  domains:
+  - www.myemma.com
+  github_orgs: []
+  excluded: []

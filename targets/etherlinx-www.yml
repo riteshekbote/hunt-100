@@ -1,0 +1,10 @@
+target:
+  name: etherlinx-www
+  platform: vdp
+  disclosure: security@etherlinx.net
+  bounty: false
+  program_url: https://bugcrowd.com/engagements/etherlinx-vdpc
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

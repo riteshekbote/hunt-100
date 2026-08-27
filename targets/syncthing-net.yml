@@ -1,0 +1,10 @@
+target:
+  name: syncthing-net
+  platform: vdp
+  disclosure: security@syncthing.net
+  bounty: false
+  program_url: https://syncthing.net/security/
+  domains:
+  - syncthing.net
+  github_orgs: []
+  excluded: []

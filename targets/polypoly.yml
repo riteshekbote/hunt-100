@@ -1,0 +1,10 @@
+target:
+  name: polypoly
+  platform: vdp
+  disclosure: security@polypoly.net
+  bounty: false
+  program_url: https://polypoly.net/en/security/vdp/
+  domains:
+  - polypoly.net
+  github_orgs: []
+  excluded: []

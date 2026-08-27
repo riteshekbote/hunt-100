@@ -1,0 +1,10 @@
+target:
+  name: dato-capital-app
+  platform: vdp
+  disclosure: security@datocapital.com
+  bounty: false
+  program_url: https://en.datocapital.com/report-security-issue.html
+  domains:
+  - app.en.datocapital.com
+  github_orgs: []
+  excluded: []

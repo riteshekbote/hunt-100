@@ -1,0 +1,10 @@
+target:
+  name: nitro-app
+  platform: vdp
+  disclosure: security@gonitro.com
+  bounty: false
+  program_url: https://www.gonitro.com/nps/security/updates#vulnerability-bug-bounty-policy
+  domains:
+  - app.gonitro.com
+  github_orgs: []
+  excluded: []

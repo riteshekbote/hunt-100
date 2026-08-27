@@ -1,0 +1,10 @@
+target:
+  name: andreessen-horowitz-staging
+  platform: vdp
+  disclosure: https://a16z.com/security-policy
+  bounty: false
+  program_url: https://a16z.com/security-policy
+  domains:
+  - staging.a16z.com
+  github_orgs: []
+  excluded: []

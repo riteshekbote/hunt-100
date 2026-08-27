@@ -1,0 +1,10 @@
+target:
+  name: hesaplama-net-app
+  platform: vdp
+  disclosure: https://gizlilik-ilkeleri.hesaplama.net/
+  bounty: false
+  program_url: https://gizlilik-ilkeleri.hesaplama.net/
+  domains:
+  - app.gizlilik-ilkeleri.hesaplama.net
+  github_orgs: []
+  excluded: []

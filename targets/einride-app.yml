@@ -1,0 +1,10 @@
+target:
+  name: einride-app
+  platform: vdp
+  disclosure: security@einride.tech
+  bounty: false
+  program_url: https://www.einride.tech/vulnerability-disclosure-policy
+  domains:
+  - app.einride.tech
+  github_orgs: []
+  excluded: []

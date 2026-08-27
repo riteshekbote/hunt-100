@@ -1,0 +1,10 @@
+target:
+  name: directly-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/directly
+  bounty: true
+  program_url: https://bugcrowd.com/directly
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

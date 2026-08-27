@@ -1,0 +1,10 @@
+target:
+  name: slack-api
+  platform: bounty
+  disclosure: https://slack.com/report-vulnerability
+  bounty: true
+  program_url: https://slack.com/report-vulnerability
+  domains:
+  - api.slack.com
+  github_orgs: []
+  excluded: []

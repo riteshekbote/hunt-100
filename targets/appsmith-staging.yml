@@ -1,0 +1,10 @@
+target:
+  name: appsmith-staging
+  platform: vdp
+  disclosure: security@appsmith.com
+  bounty: false
+  program_url: https://docs.appsmith.com/product/security
+  domains:
+  - staging.docs.appsmith.com
+  github_orgs: []
+  excluded: []

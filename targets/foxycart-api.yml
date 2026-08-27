@@ -1,0 +1,10 @@
+target:
+  name: foxycart-api
+  platform: bounty
+  disclosure: https://bugcrowd.com/foxycart
+  bounty: true
+  program_url: https://bugcrowd.com/foxycart
+  domains:
+  - api.bugcrowd.com
+  github_orgs: []
+  excluded: []

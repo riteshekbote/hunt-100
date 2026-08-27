@@ -1,0 +1,10 @@
+target:
+  name: aragon-www
+  platform: bounty
+  disclosure: security@aragon.one
+  bounty: true
+  program_url: https://blog.aragon.org/aragon-network-bug-bounty/
+  domains:
+  - www.blog.aragon.org
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: securedrop-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/freedomofpress
+  bounty: true
+  program_url: https://bugcrowd.com/freedomofpress
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

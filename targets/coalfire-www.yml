@@ -1,0 +1,10 @@
+target:
+  name: coalfire-www
+  platform: vdp
+  disclosure: support@coalfire.com
+  bounty: false
+  program_url: https://www.coalfire.com/vulnerability-disclosure-policy
+  domains:
+  - www.coalfire.com
+  github_orgs: []
+  excluded: []

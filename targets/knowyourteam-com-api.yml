@@ -1,0 +1,10 @@
+target:
+  name: knowyourteam-com-api
+  platform: vdp
+  disclosure: https://federacy.com/knowyourteam
+  bounty: false
+  program_url: https://federacy.com/knowyourteam
+  domains:
+  - api.federacy.com
+  github_orgs: []
+  excluded: []

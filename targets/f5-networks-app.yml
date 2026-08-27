@@ -1,0 +1,10 @@
+target:
+  name: f5-networks-app
+  platform: vdp
+  disclosure: f5sirt@f5.com
+  bounty: false
+  program_url: https://support.f5.com/csp/article/K4602
+  domains:
+  - app.support.f5.com
+  github_orgs: []
+  excluded: []

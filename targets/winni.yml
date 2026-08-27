@@ -1,0 +1,10 @@
+target:
+  name: winni
+  platform: vdp
+  disclosure: https://www.winni.in/bug-bounty
+  bounty: false
+  program_url: https://www.winni.in/bug-bounty
+  domains:
+  - winni.in
+  github_orgs: []
+  excluded: []

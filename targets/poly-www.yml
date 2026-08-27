@@ -1,0 +1,10 @@
+target:
+  name: poly-www
+  platform: vdp
+  disclosure: security@polycom.com
+  bounty: false
+  program_url: https://support.polycom.com/content/dam/polycom-support/global/documentation/product-vulnerability-disclosure-policy.pdf
+  domains:
+  - www.support.polycom.com
+  github_orgs: []
+  excluded: []

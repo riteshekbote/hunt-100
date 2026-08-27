@@ -1,0 +1,10 @@
+target:
+  name: finleap-connect-api
+  platform: vdp
+  disclosure: responsibledisclosure-connect@finleap.com
+  bounty: false
+  program_url: https://connect.finleap.com/responsible-disclosure-statement/
+  domains:
+  - api.connect.finleap.com
+  github_orgs: []
+  excluded: []

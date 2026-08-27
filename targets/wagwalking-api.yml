@@ -1,0 +1,10 @@
+target:
+  name: wagwalking-api
+  platform: bounty
+  disclosure: security@wagwalking.com
+  bounty: true
+  program_url: https://wagwalking.com/responsible-disclosure
+  domains:
+  - api.wagwalking.com
+  github_orgs: []
+  excluded: []

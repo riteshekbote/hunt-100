@@ -1,0 +1,10 @@
+target:
+  name: compass
+  platform: vdp
+  disclosure: security-reports@compass.com
+  bounty: false
+  program_url: https://www.compass.com/legal/responsible-disclosure/
+  domains:
+  - compass.com
+  github_orgs: []
+  excluded: []

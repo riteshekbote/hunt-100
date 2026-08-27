@@ -1,0 +1,10 @@
+target:
+  name: netgear-kudos-rewards-www
+  platform: vdp
+  disclosure: https://bugcrowd.com/netgearkudos
+  bounty: false
+  program_url: https://bugcrowd.com/netgearkudos
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

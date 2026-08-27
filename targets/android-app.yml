@@ -1,0 +1,10 @@
+target:
+  name: android-app
+  platform: bounty
+  disclosure: https://www.google.com/about/appsecurity/android-rewards/
+  bounty: true
+  program_url: https://www.google.com/about/appsecurity/android-rewards/
+  domains:
+  - app.google.com
+  github_orgs: []
+  excluded: []

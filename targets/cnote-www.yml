@@ -1,0 +1,10 @@
+target:
+  name: cnote-www
+  platform: vdp
+  disclosure: security@mycnote.com
+  bounty: false
+  program_url: https://www.mycnote.com/vulnerability-disclosure-program/
+  domains:
+  - www.mycnote.com
+  github_orgs: []
+  excluded: []

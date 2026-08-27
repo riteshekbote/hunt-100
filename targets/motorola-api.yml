@@ -1,0 +1,10 @@
+target:
+  name: motorola-api
+  platform: vdp
+  disclosure: security@motorola.com
+  bounty: false
+  program_url: https://www.motorola.com/us/legal/security-vulnerability
+  domains:
+  - api.motorola.com
+  github_orgs: []
+  excluded: []

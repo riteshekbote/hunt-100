@@ -1,0 +1,10 @@
+target:
+  name: rackspace-www
+  platform: vdp
+  disclosure: security@rackspace.com
+  bounty: false
+  program_url: http://www.rackspace.com/information/legal/rsdp
+  domains:
+  - www.rackspace.com
+  github_orgs: []
+  excluded: []

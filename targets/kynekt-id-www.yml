@@ -1,0 +1,10 @@
+target:
+  name: kynekt-id-www
+  platform: vdp
+  disclosure: security@kynekt.id
+  bounty: false
+  program_url: https://kynekt.id/legal-page/vulnerability-disclosure-policy
+  domains:
+  - www.kynekt.id
+  github_orgs: []
+  excluded: []

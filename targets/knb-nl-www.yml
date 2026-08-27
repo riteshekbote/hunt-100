@@ -1,0 +1,10 @@
+target:
+  name: knb-nl-www
+  platform: vdp
+  disclosure: responsible-disclosure@knb.nl
+  bounty: false
+  program_url: https://www.knb.nl/english/responsible-disclosure
+  domains:
+  - www.knb.nl
+  github_orgs: []
+  excluded: []

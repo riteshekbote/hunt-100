@@ -1,0 +1,10 @@
+target:
+  name: setpoint-api
+  platform: vdp
+  disclosure: rd@pon.com
+  bounty: false
+  program_url: https://www.setpointis.com/responsible-disclosure/
+  domains:
+  - api.setpointis.com
+  github_orgs: []
+  excluded: []

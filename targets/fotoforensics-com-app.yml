@@ -1,0 +1,10 @@
+target:
+  name: fotoforensics-com-app
+  platform: vdp
+  disclosure: security2020@hackerfactor.com
+  bounty: false
+  program_url: http://fotoforensics.com/faq.php?show=Security
+  domains:
+  - app.fotoforensics.com
+  github_orgs: []
+  excluded: []

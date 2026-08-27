@@ -1,0 +1,10 @@
+target:
+  name: chameleon-dev
+  platform: bounty
+  disclosure: https://www.trychameleon.com/security/disclosure
+  bounty: true
+  program_url: https://www.trychameleon.com/security/disclosure
+  domains:
+  - dev.trychameleon.com
+  github_orgs: []
+  excluded: []

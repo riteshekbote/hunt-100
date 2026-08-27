@@ -1,0 +1,10 @@
+target:
+  name: seek-www
+  platform: bounty
+  disclosure: https://bugcrowd.com/seek
+  bounty: true
+  program_url: https://bugcrowd.com/seek
+  domains:
+  - www.bugcrowd.com
+  github_orgs: []
+  excluded: []

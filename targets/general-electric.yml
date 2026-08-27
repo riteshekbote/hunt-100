@@ -1,0 +1,10 @@
+target:
+  name: general-electric
+  platform: vdp
+  disclosure: https://www.ge.com/security
+  bounty: false
+  program_url: https://www.ge.com/security
+  domains:
+  - ge.com
+  github_orgs: []
+  excluded: []

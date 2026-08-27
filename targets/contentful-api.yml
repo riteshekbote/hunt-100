@@ -1,0 +1,10 @@
+target:
+  name: contentful-api
+  platform: vdp
+  disclosure: https://www.contentful.com/security/
+  bounty: false
+  program_url: https://www.contentful.com/security/
+  domains:
+  - api.contentful.com
+  github_orgs: []
+  excluded: []

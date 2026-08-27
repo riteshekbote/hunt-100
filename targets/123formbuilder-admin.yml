@@ -1,0 +1,10 @@
+target:
+  name: 123formbuilder-admin
+  platform: vdp
+  disclosure: https://security.123formbuilder.com
+  bounty: false
+  program_url: https://security.123formbuilder.com
+  domains:
+  - admin.security.123formbuilder.com
+  github_orgs: []
+  excluded: []

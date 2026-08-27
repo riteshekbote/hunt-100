@@ -1,0 +1,10 @@
+target:
+  name: letgo
+  platform: vdp
+  disclosure: https://we.letgo.com/responsible-disclosure-policy
+  bounty: false
+  program_url: https://we.letgo.com/responsible-disclosure-policy
+  domains:
+  - we.letgo.com
+  github_orgs: []
+  excluded: []

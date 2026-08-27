@@ -1,0 +1,10 @@
+target:
+  name: vipps-as-api
+  platform: vdp
+  disclosure: responsible-disclosure@vipps.no
+  bounty: false
+  program_url: https://www.vipps.no/sikkerhet/responsible-disclosure-policy/
+  domains:
+  - api.vipps.no
+  github_orgs: []
+  excluded: []

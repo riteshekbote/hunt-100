@@ -1,0 +1,10 @@
+target:
+  name: vpnarea-app
+  platform: bounty
+  disclosure: support@vpnarea.com
+  bounty: true
+  program_url: https://vpnarea.com/front/home/bugbounty
+  domains:
+  - app.vpnarea.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: department-of-transportation-www
+  platform: vdp
+  disclosure: DOT-VDP@dot.gov
+  bounty: false
+  program_url: https://www.dot.gov/vulnerability-disclosure-policy
+  domains:
+  - www.dot.gov
+  github_orgs: []
+  excluded: []

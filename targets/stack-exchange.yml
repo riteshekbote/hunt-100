@@ -1,0 +1,10 @@
+target:
+  name: stack-exchange
+  platform: vdp
+  disclosure: https://stackexchange.com/about/security
+  bounty: false
+  program_url: https://stackexchange.com/about/security
+  domains:
+  - stackexchange.com
+  github_orgs: []
+  excluded: []

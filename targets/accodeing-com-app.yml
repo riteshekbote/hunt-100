@@ -1,0 +1,10 @@
+target:
+  name: accodeing-com-app
+  platform: vdp
+  disclosure: info@accodeing.com
+  bounty: false
+  program_url: https://accodeing.com/security/policy
+  domains:
+  - app.accodeing.com
+  github_orgs: []
+  excluded: []

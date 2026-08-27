@@ -1,0 +1,10 @@
+target:
+  name: jt-www
+  platform: vdp
+  disclosure: disclosure@jtglobal.com
+  bounty: false
+  program_url: https://business.jtglobal.com/responsible-disclosure/
+  domains:
+  - www.business.jtglobal.com
+  github_orgs: []
+  excluded: []

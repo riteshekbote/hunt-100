@@ -1,0 +1,10 @@
+target:
+  name: pt-duolingo-com
+  platform: vdp
+  disclosure: security@duolingo.com
+  bounty: false
+  program_url: https://www.duolingo.com/privacy
+  domains:
+  - duolingo.com
+  github_orgs: []
+  excluded: []

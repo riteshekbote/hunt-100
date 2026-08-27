@@ -1,0 +1,10 @@
+target:
+  name: bentley-dev
+  platform: bounty
+  disclosure: security@bentley.com
+  bounty: true
+  program_url: https://www.bentley.com/legal/bug-bounty-report/
+  domains:
+  - dev.bentley.com
+  github_orgs: []
+  excluded: []

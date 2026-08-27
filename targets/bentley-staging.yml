@@ -1,0 +1,10 @@
+target:
+  name: bentley-staging
+  platform: bounty
+  disclosure: security@bentley.com
+  bounty: true
+  program_url: https://www.bentley.com/legal/bug-bounty-report/
+  domains:
+  - staging.bentley.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: recruit-crm
+  platform: vdp
+  disclosure: https://recruitcrm.io/legal/rcrm-vulnerability-disclosure-program
+  bounty: false
+  program_url: https://recruitcrm.io/legal/rcrm-vulnerability-disclosure-program
+  domains:
+  - recruitcrm.io
+  github_orgs: []
+  excluded: []

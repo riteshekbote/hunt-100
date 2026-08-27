@@ -1,0 +1,10 @@
+target:
+  name: ourfabriq-www
+  platform: vdp
+  disclosure: hello@ourfabriq.com
+  bounty: false
+  program_url: https://www.ourfabriq.com/responsible-disclosure-policy
+  domains:
+  - www.ourfabriq.com
+  github_orgs: []
+  excluded: []

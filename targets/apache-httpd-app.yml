@@ -1,0 +1,10 @@
+target:
+  name: apache-httpd-app
+  platform: bounty
+  disclosure: security@apache.org
+  bounty: true
+  program_url: https://www.apache.org/security/
+  domains:
+  - app.apache.org
+  github_orgs: []
+  excluded: []

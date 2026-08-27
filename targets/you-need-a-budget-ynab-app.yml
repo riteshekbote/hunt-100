@@ -1,0 +1,10 @@
+target:
+  name: you-need-a-budget-ynab-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/ynab
+  bounty: true
+  program_url: https://bugcrowd.com/ynab
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

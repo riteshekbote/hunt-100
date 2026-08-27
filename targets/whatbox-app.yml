@@ -1,0 +1,10 @@
+target:
+  name: whatbox-app
+  platform: vdp
+  disclosure: security@whatbox.ca
+  bounty: false
+  program_url: https://whatbox.ca/policies/security
+  domains:
+  - app.whatbox.ca
+  github_orgs: []
+  excluded: []

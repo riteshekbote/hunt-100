@@ -1,0 +1,10 @@
+target:
+  name: thexyz-com-api
+  platform: vdp
+  disclosure: https://www.thexyz.com/about/security-policy
+  bounty: false
+  program_url: https://www.thexyz.com/about/security-policy
+  domains:
+  - api.thexyz.com
+  github_orgs: []
+  excluded: []

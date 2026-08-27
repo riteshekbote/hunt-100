@@ -1,0 +1,10 @@
+target:
+  name: carbon-black-dev
+  platform: vdp
+  disclosure: security@vmware.com
+  bounty: false
+  program_url: https://www.carbonblack.com/legal/reporting-security-vulnerability/
+  domains:
+  - dev.carbonblack.com
+  github_orgs: []
+  excluded: []

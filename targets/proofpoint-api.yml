@@ -1,0 +1,10 @@
+target:
+  name: proofpoint-api
+  platform: vdp
+  disclosure: security@proofpoint.com
+  bounty: false
+  program_url: https://www.proofpoint.com/us/security
+  domains:
+  - api.proofpoint.com
+  github_orgs: []
+  excluded: []

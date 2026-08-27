@@ -1,0 +1,10 @@
+target:
+  name: bloomscape-com-app
+  platform: vdp
+  disclosure: security-alerts@bloomscape.com
+  bounty: false
+  program_url: https://bloomscape.com/.well-known/security-policy.html
+  domains:
+  - app.bloomscape.com
+  github_orgs: []
+  excluded: []

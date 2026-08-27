@@ -1,0 +1,10 @@
+target:
+  name: msv
+  platform: vdp
+  disclosure: vulnerability@msv.com
+  bounty: false
+  program_url: https://shop.msv.com/About/Legal
+  domains:
+  - shop.msv.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: sky-tv
+  platform: vdp
+  disclosure: https://skytv.custhelp.com/app/answers/detail/a_id/1797/~/responsible-disclosure-guidelines
+  bounty: false
+  program_url: https://skytv.custhelp.com/app/answers/detail/a_id/1797/~/responsible-disclosure-guidelines
+  domains:
+  - skytv.custhelp.com
+  github_orgs: []
+  excluded: []

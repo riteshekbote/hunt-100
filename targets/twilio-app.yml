@@ -1,0 +1,10 @@
+target:
+  name: twilio-app
+  platform: bounty
+  disclosure: https://bugcrowd.com/twilio
+  bounty: true
+  program_url: https://bugcrowd.com/twilio
+  domains:
+  - app.bugcrowd.com
+  github_orgs: []
+  excluded: []

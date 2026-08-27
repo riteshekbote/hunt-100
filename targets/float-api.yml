@@ -1,0 +1,10 @@
+target:
+  name: float-api
+  platform: vdp
+  disclosure: support@float.sg
+  bounty: false
+  program_url: https://www.float.sg/disclosure
+  domains:
+  - api.float.sg
+  github_orgs: []
+  excluded: []

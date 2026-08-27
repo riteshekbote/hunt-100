@@ -1,0 +1,10 @@
+target:
+  name: abb-admin
+  platform: vdp
+  disclosure: cybersecurity@ch.abb.com
+  bounty: false
+  program_url: https://www.abb.com/cybersecurity
+  domains:
+  - admin.abb.com
+  github_orgs: []
+  excluded: []

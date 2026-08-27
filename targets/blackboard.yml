@@ -1,0 +1,10 @@
+target:
+  name: blackboard
+  platform: vdp
+  disclosure: https://help.blackboard.com/Product_Security
+  bounty: false
+  program_url: https://help.blackboard.com/Product_Security
+  domains:
+  - help.blackboard.com
+  github_orgs: []
+  excluded: []

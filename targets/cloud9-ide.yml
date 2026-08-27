@@ -1,0 +1,10 @@
+target:
+  name: cloud9-ide
+  platform: vdp
+  disclosure: security@c9.io
+  bounty: false
+  program_url: https://c9.io/security
+  domains:
+  - c9.io
+  github_orgs: []
+  excluded: []

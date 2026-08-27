@@ -1,0 +1,10 @@
+target:
+  name: deputy-www
+  platform: vdp
+  disclosure: https://www.deputy.com/terms/responsible-disclosure-safe-harbor-policy
+  bounty: false
+  program_url: https://www.deputy.com/terms/responsible-disclosure-safe-harbor-policy
+  domains:
+  - www.deputy.com
+  github_orgs: []
+  excluded: []

@@ -1,0 +1,10 @@
+target:
+  name: shape-security-www
+  platform: bounty
+  disclosure: security@shapesecurity.com
+  bounty: true
+  program_url: https://www.shapesecurity.com/report-a-vulnerability
+  domains:
+  - www.shapesecurity.com
+  github_orgs: []
+  excluded: []

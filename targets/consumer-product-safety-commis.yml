@@ -1,0 +1,10 @@
+target:
+  name: consumer-product-safety-commis
+  platform: vdp
+  disclosure: security@cpsc.gov
+  bounty: false
+  program_url: https://www.cpsc.gov/vulnerability-disclosure-policy
+  domains:
+  - cpsc.gov
+  github_orgs: []
+  excluded: []

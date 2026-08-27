@@ -1,0 +1,10 @@
+target:
+  name: take-a-lot-app
+  platform: vdp
+  disclosure: security@takealot.com
+  bounty: false
+  program_url: https://www.takealot.com/help/responsible-disclosure-policy
+  domains:
+  - app.takealot.com
+  github_orgs: []
+  excluded: []

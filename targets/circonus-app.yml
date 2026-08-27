@@ -1,0 +1,10 @@
+target:
+  name: circonus-app
+  platform: vdp
+  disclosure: security@circonus.com
+  bounty: false
+  program_url: https://www.circonus.com/security/disclosure/
+  domains:
+  - app.circonus.com
+  github_orgs: []
+  excluded: []

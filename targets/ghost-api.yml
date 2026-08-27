@@ -1,0 +1,10 @@
+target:
+  name: ghost-api
+  platform: vdp
+  disclosure: security@ghost.org
+  bounty: false
+  program_url: https://github.com/TryGhost/Ghost/blob/master/SECURITY.md
+  domains:
+  - api.github.com
+  github_orgs: []
+  excluded: []

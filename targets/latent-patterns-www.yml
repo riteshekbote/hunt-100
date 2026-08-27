@@ -1,0 +1,10 @@
+target:
+  name: latent-patterns-www
+  platform: bounty
+  disclosure: security@latentpatterns.com
+  bounty: true
+  program_url: https://latentpatterns.com/security
+  domains:
+  - www.latentpatterns.com
+  github_orgs: []
+  excluded: []

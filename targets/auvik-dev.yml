@@ -1,0 +1,10 @@
+target:
+  name: auvik-dev
+  platform: vdp
+  disclosure: incident@auvik.com
+  bounty: false
+  program_url: https://www.auvik.com/disclosure-policy.html
+  domains:
+  - dev.auvik.com
+  github_orgs: []
+  excluded: []

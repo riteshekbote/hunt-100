@@ -1,0 +1,10 @@
+target:
+  name: factorialhr-com-api
+  platform: vdp
+  disclosure: security@factorialhr.com
+  bounty: false
+  program_url: https://www.factorialhr.com/security
+  domains:
+  - api.factorialhr.com
+  github_orgs: []
+  excluded: []

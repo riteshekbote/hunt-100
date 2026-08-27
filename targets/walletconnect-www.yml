@@ -1,0 +1,10 @@
+target:
+  name: walletconnect-www
+  platform: bounty
+  disclosure: security@walletconnect.com
+  bounty: true
+  program_url: https://walletconnect.com/.well-known/security.txt
+  domains:
+  - www.walletconnect.com
+  github_orgs: []
+  excluded: []

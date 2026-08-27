@@ -1,0 +1,10 @@
+target:
+  name: clubcollect-app
+  platform: vdp
+  disclosure: rd@clubcollect.com
+  bounty: false
+  program_url: https://www.clubcollect.com/en/responsible-disclosure/
+  domains:
+  - app.clubcollect.com
+  github_orgs: []
+  excluded: []

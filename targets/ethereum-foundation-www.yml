@@ -1,0 +1,10 @@
+target:
+  name: ethereum-foundation-www
+  platform: bounty
+  disclosure: security@ethereum.org
+  bounty: true
+  program_url: https://bounty.ethereum.org/
+  domains:
+  - www.bounty.ethereum.org
+  github_orgs: []
+  excluded: []

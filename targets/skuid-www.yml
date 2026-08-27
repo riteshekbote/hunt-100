@@ -1,0 +1,10 @@
+target:
+  name: skuid-www
+  platform: vdp
+  disclosure: infosec@skuid.com
+  bounty: false
+  program_url: http://www.skuidify.com/security
+  domains:
+  - www.skuidify.com
+  github_orgs: []
+  excluded: []

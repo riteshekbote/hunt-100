@@ -1,0 +1,10 @@
+target:
+  name: protonmail-ch-www
+  platform: vdp
+  disclosure: security@protonmail.com
+  bounty: false
+  program_url: https://protonmail.com/blog/protonmail-bug-bounty-program/
+  domains:
+  - www.protonmail.com
+  github_orgs: []
+  excluded: []
