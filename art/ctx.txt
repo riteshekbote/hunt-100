@@ -91283,6 +91283,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 # Knowledge Base (seed) — hunt-100 105 bounty programs
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence)
+- 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91716,6 +91717,10 @@ none
 ## RANKED HYPOTHESES 2026-08-27 15:20:06 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence)
+
+## RANKED HYPOTHESES 2026-08-27 15:34:11 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
 === LATEST ROBOT PROBE RESULTS ===
 
 ## 2026-08-27 05:06:25 UTC
@@ -91731,4 +91736,7 @@ none
 
 
 ## 2026-08-27 15:20:15 UTC
+
+
+## 2026-08-27 15:34:21 UTC
 
