@@ -1,448 +1,64 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-Deep chain scan underway — probing auth, IDOR and SSRF across your surface.
-[0m→ [0mRead .
-[0m→ [0mRead inventory
-[0m→ [0mRead ctx.txt
-[0m
-[0m$ [0mls inventory | grep -i -E "duocircle|emsisoft|docker|posit|coxauto|autospf|dmarcreport|shinyapps|rstudio|autotrader" | head -n 50; echo "---COUNT---"; ls inventory | wc -l; ls inventory | grep -i docker | head
-coxautomotive.md
-docker-api.md
-docker-app.md
-docker-atlassian-net-api.md
-docker-atlassian-net-app.md
-docker-atlassian-net-www.md
-docker-atlassian-net.md
-docker-www.md
-docker.md
-duocircle.md
-emsisoft.md
-posit.md
----COUNT---
-10002
-docker-api.md
-docker-app.md
-docker-atlassian-net-api.md
-docker-atlassian-net-app.md
-docker-atlassian-net-www.md
-docker-atlassian-net.md
-docker-www.md
-docker.md
-[0m
-[0m$ [0mls inventory | grep -iE "posit|cox|duocircle|emsisoft|autospf|autotrader|kbb|shinyapps" | head -n 100
-cox-com-api.md
-cox-com-app.md
-cox-com-www.md
-cox-com.md
-coxautomotive.md
-duocircle.md
-emsisoft.md
-posit.md
-[0m
-[0m→ [0mRead inventory/docker.md
-[0m→ [0mRead knowledge
-[0m→ [0mRead inventory/posit.md
-[0m
-[0m$ [0mcat scope.yml | head -n 200; echo "---"; cat ctx-targets.md | head -n 100
-targets:
-- name: duocircle
-  platform: email
-  disclosure: security@duocircle.com
-  bounty: true
-  program_url: https://trust.duocircle.com/responsible-disclosure/
-  domains:
-  - duocircle.com
-  - autospf.com
-  - dmarcreport.com
-  - phishprotection.com
-  - outboundsmtp.com
-  - tenantmigration.com
-  - mailflowmonitoring.com
-  - alumniforwarding.com
-  - nureply.com
-  - inboxissue.com
-  github_orgs: []
-  excluded: []
-- name: emsisoft
-  platform: email
-  disclosure: security@emsisoft.com
-  bounty: true
-  bounty_amount: up to $500
-  program_url: https://www.emsisoft.com/en/bug-bounty/
-  domains:
-  - emsisoft.com
-  - static.emsisoft.com
-  - blog.emsisoft.com
-  github_orgs: []
-  excluded: []
-- name: docker
-  platform: email
-  disclosure: security@docker.com
-  bounty: swag (critical/high)
-  program_url: https://www.docker.com/trust/vulnerability-disclosure-policy/
-  domains:
-  - docker.com
-  - www.docker.com
-  - app.docker.com
-  - hub.docker.com
-  - build.docker.com
-  - scout.docker.com
-  - '*.docker.com'
-  - '*.docker.io'
-  - dhi.io
-  github_orgs:
-  - docker
-  excluded:
-  - 3rd-party extensions not owned by Docker
-- name: posit
-  platform: email
-  disclosure: security@posit.co
-  bounty: false
-  program_url: https://posit.co/about/product-security/
-  domains:
-  - posit.co
-  - posit.cloud
-  - shinyapps.io
-  - connect.cloud
-  - rstudio.com
-  - www.rstudio.com
-  - packagemanager.posit.co
-  - public.rstudio.com
-  github_orgs:
-  - rstudio
-  - posit-dev
-  excluded: []
-- name: coxautomotive
-  platform: email
-  disclosure: securitydisclosure@coxautoinc.com
-  bounty: false
-  program_url: https://www.coxautoinc.com/responsible-disclosure/
-  domains:
-  - coxautoinc.com
-  - autotrader.com
-  - www.autotrader.com
-  - kbb.com
-  - www.kbb.com
-  - manheim.com
-  - www.manheim.com
-  - dealertrack.com
-  - www.dealertrack.com
-  - dealer.com
-  - www.dealer.com
-  - vauto.com
-  - www.vauto.com
-  - vinsolutions.com
-  - www.vinsolutions.com
-  github_orgs: []
-  excluded:
-  - targeting Cox Automotive customers
-  - DoS / resource exhaustion
-- name: 0x
-  platform: email
-  disclosure: security@0x.org
-  bounty: true
-  program_url: https://docs.0x.org/developer-resources/bounties
-  domains:
-  - 0x.org
-  - www.0x.org
-  github_orgs: []
-  excluded: []
-- name: 23andme
-  platform: bounty
-  disclosure: https://www.23andme.com/security-report/
-  bounty: true
-  program_url: https://www.23andme.com/security-report/
-  domains:
-  - 23andme.com
-  - www.23andme.com
-  github_orgs: []
-  excluded: []
-- name: 24sessions
-  platform: email
-  disclosure: security@24sessions.com
-  bounty: true
-  program_url: https://www.24sessions.com/responsible-disclosure
-  domains:
-  - 24sessions.com
-  - www.24sessions.com
-  github_orgs: []
-  excluded: []
-- name: 3ds-outscale
-  platform: bounty
-  disclosure: bugbounty@outscale.com
-  bounty: true
-  program_url: https://en.outscale.com/reporting-vulnerabilities/
-  domains:
-  - en.outscale.com
-  - www.en.outscale.com
-  github_orgs: []
-  excluded: []
-- name: 84codes
-  platform: email
-  disclosure: security@84codes.com
-  bounty: true
-  program_url: https://www.84codes.com/security/
-  domains:
-  - 84codes.com
-  - www.84codes.com
-  github_orgs: []
-  excluded: []
-- name: alsco
-  platform: bounty
-  disclosure: https://alscotoday.com/go/bug
-  bounty: true
-  program_url: https://alscotoday.com/go/bug
-  domains:
-  - alscotoday.com
-  - www.alscotoday.com
-  github_orgs: []
-  excluded: []
-- name: arm-mbed
-  platform: bounty
-  disclosure: Support.mbedtls@arm.com
-  bounty: true
-  program_url: https://tls.mbed.org/c-library-bug-bounty-program
-  domains:
-  - tls.mbed.org
-  - www.tls.mbed.org
-  github_orgs: []
-  excluded: []
-- name: at-t
-  platform: bounty
-  disclosure: https://bugbounty.att.com/
-  bounty: true
-  program_url: https://bugbounty.att.com/
-  domains:
-  - bugbounty.att.com
-  - www.bugbounty.att.com
-  github_orgs: []
-  excluded: []
-- name: abn-amro
-  platform: email
-  disclosure: responsible.disclosure@nl.abnamro.com
-  bounty: true
-  program_url: https://www.abnamro.nl/en/personal/overabnamro/secure-banking/responsible-disclosure.html
-  domains:
-  - abnamro.nl
-  - www.abnamro.nl
-  github_orgs: []
-  excluded: []
-- name: accredible
-  platform: email
-  disclosure: security@accredible.com
-  bounty: true
-  program_url: https://www.accredible.com/white_hat/
-  domains:
-  - accredible.com
-  - www.accredible.com
-  github_orgs: []
-  excluded: []
-- name: across-protocol
-  platform: bounty
-  disclosure: bugs@umaproject.org
-  bounty: true
-  program_url: https://docs.across.to/v/developer-docs/additional-info/bug-bounty
-  domains:
-  - umaproject.org
----
-## TARGET: duocircle
-- disclosure email: security@duocircle.com
-- bounty: True
-- program url: https://trust.duocircle.com/responsible-disclosure/
-- domains: duocircle.com, autospf.com, dmarcreport.com, phishprotection.com, outboundsmtp.com, tenantmigration.com, mailflowmonitoring.com, alumniforwarding.com, nureply.com, inboxissue.com
-- github orgs: 
-- excluded: 
-
-## TARGET: emsisoft
-- disclosure email: security@emsisoft.com
-- bounty: True
-- program url: https://www.emsisoft.com/en/bug-bounty/
-- domains: emsisoft.com, static.emsisoft.com, blog.emsisoft.com
-- github orgs: 
-- excluded: 
-
-## TARGET: docker
-- disclosure email: security@docker.com
-- bounty: swag (critical/high)
-- program url: https://www.docker.com/trust/vulnerability-disclosure-policy/
-- domains: docker.com, www.docker.com, app.docker.com, hub.docker.com, build.docker.com, scout.docker.com, *.docker.com, *.docker.io, dhi.io
-- github orgs: docker
-- excluded: 3rd-party extensions not owned by Docker
-
-## TARGET: posit
-- disclosure email: security@posit.co
-- bounty: False
-- program url: https://posit.co/about/product-security/
-- domains: posit.co, posit.cloud, shinyapps.io, connect.cloud, rstudio.com, www.rstudio.com, packagemanager.posit.co, public.rstudio.com
-- github orgs: rstudio, posit-dev
-- excluded: 
-
-## TARGET: coxautomotive
-- disclosure email: securitydisclosure@coxautoinc.com
-- bounty: False
-- program url: https://www.coxautoinc.com/responsible-disclosure/
-- domains: coxautoinc.com, autotrader.com, www.autotrader.com, kbb.com, www.kbb.com, manheim.com, www.manheim.com, dealertrack.com, www.dealertrack.com, dealer.com, www.dealer.com, vauto.com, www.vauto.com, vinsolutions.com, www.vinsolutions.com
-- github orgs: 
-- excluded: targeting Cox Automotive customers, DoS / resource exhaustion
-
-## TARGET: 0x
-- disclosure email: security@0x.org
-- bounty: True
-- program url: https://docs.0x.org/developer-resources/bounties
-- domains: 0x.org, www.0x.org
-- github orgs: 
-- excluded: 
-
-## TARGET: 23andme
-- disclosure email: https://www.23andme.com/security-report/
-- bounty: True
-- program url: https://www.23andme.com/security-report/
-- domains: 23andme.com, www.23andme.com
-- github orgs: 
-- excluded: 
-
-## TARGET: 24sessions
-- disclosure email: security@24sessions.com
-- bounty: True
-- program url: https://www.24sessions.com/responsible-disclosure
-- domains: 24sessions.com, www.24sessions.com
-- github orgs: 
-- excluded: 
-
-## TARGET: 3ds-outscale
-- disclosure email: bugbounty@outscale.com
-- bounty: True
-- program url: https://en.outscale.com/reporting-vulnerabilities/
-- domains: en.outscale.com, www.en.outscale.com
-- github orgs: 
-- excluded: 
-
-## TARGET: 84codes
-- disclosure email: security@84codes.com
-- bounty: True
-- program url: https://www.84codes.com/security/
-- domains: 84codes.com, www.84codes.com
-- github orgs: 
-- excluded: 
-
-## TARGET: alsco
-- disclosure email: https://alscotoday.com/go/bug
-- bounty: True
-- program url: https://alscotoday.com/go/bug
-- domains: alscotoday.com, www.alscotoday.com
-- github orgs: 
-- excluded: 
-
-## TARGET: arm-mbed
-- disclosure email: Support.mbedtls@arm.com
-- bounty: True
-- program url: https://tls.mbed.org/c-library-bug-bounty-program
-- domains: tls.mbed.org, www.tls.mbed.org
-- github orgs: 
-- excluded: 
-
-## TARGET: at-t
-- disclosure email: https://bugbounty.att.com/
-- bounty: True
-- program url: https://bugbounty.att.com/
-[0m
-[0m$ [0mgrep -r "vinsolutions\|autotrader\|kbb\|coxauto" inventory/ 2>/dev/null | head; echo "---"; ls inventory | grep -i vinsolutions; ls inventory | grep -i autotrader; ls inventory | grep -i kbb
-inventory/real-subdomains.txt:autotrader.com
-inventory/real-subdomains.txt:coxautoinc.com
-inventory/real-subdomains.txt:kbb.com
-inventory/real-subdomains.txt:vinsolutions.com
-inventory/real-subdomains.txt:www.autotrader.com
-inventory/real-subdomains.txt:www.kbb.com
-inventory/real-subdomains.txt:www.vinsolutions.com
----
-[0m
-[0m→ [0mRead inventory/real-subdomains.txt
-Inventory cross-check complete — ranking exposure and shaping targeted verification hypotheses.
-[0m
-[0m$ [0mgrep -n "hub.docker\|app.docker\|docker.com\|posit.cloud\|shinyapps\|emsisoft\|duocircle\|autospf\|dmarcreport" /home/runner/work/hunt-100/hunt-100/inventory/real-subdomains.txt | head -n 50
-1:*.docker.com
-649:api.docker.com
-1991:app.docker.com
-3018:autospf.com
-3106:blog.emsisoft.com
-3162:build.docker.com
-3607:dmarcreport.com
-3614:docker.com
-3659:duocircle.com
-3692:emsisoft.com
-3904:hub.docker.com
-4393:posit.cloud
-4519:scout.docker.com
-4576:shinyapps.io
-4853:static.emsisoft.com
-5461:www.docker.com
-[0m
 STEP 1 — DELTA
-[NEW docker] hub.docker.com — concrete host confirmed in real-subdomains.txt:3904 (scope via *.docker.com)
-[NEW docker] api.docker.com — concrete host confirmed in real-subdomains.txt:649
-[NEW docker] app.docker.com — concrete host in real-subdomains.txt:1991
-[NEW duocircle] duocircle.com — base domain in real-subdomains.txt:3659 (trust.duocircle.com scope)
-[NEW duocircle] autospf.com — domain in real-subdomains.txt:3018
-[NEW duocircle] dmarcreport.com — domain in real-subdomains.txt:3607
-[NEW emsisoft] emsisoft.com — base domain in real-subdomains.txt:3692
-[NEW emsisoft] static.emsisoft.com — in real-subdomains.txt:4853
-[NEW posit] posit.cloud — in real-subdomains.txt:4393
-[NEW posit] shinyapps.io — in real-subdomains.txt:4576
-[NEW coxautomotive] autotrader.com — in real-subdomains.txt: autotrader.com
-[NEW coxautomotive] coxautoinc.com — in real-subdomains.txt
-[NEW coxautomotive] kbb.com — in real-subdomains.txt
-[NEW coxautomotive] vinsolutions.com — in real-subdomains.txt
+[NEW] hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 application/json (public tag listing anon)
+[NEW] hub.docker.com/v2/repositories/<private-namespace>/<private-repo>/tags -> 400 (diff from public 200, not 401/404)
+[NEW] www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 text/html (same len as /api/vehicles/123456)
+[NEW] www.autotrader.com/api/vehicles/123456 -> 200 len=3760 text/html
+[NEW] www.vinsolutions.com/api/leads?user_id=1001 -> 404 (coxautomotive api exists but param filtered)
+[NEW] mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> 404 (SSRF param named domain probed)
+[CHANGED] tenantmigration.com/api/migrate -> 404 (previously unprobed, now confirmed not openly exposed)
 
 STEP 2 — PRIORITIZE
-[PRIO docker] hub.docker.com | priority 7.90 | attack 9 business 9 tech 8 gate 6 cloud 8 fresh 5
-[PRIO coxautomotive] autotrader.com | priority 7.45 | attack 8 business 10 tech 6 gate 7 cloud 5 fresh 5
-[PRIO duocircle] duocircle.com | priority 7.00 | attack 8 business 7 tech 7 gate 6 cloud 7 fresh 6
-[PRIO posit] posit.cloud | priority 6.95 | attack 8 business 6 tech 8 gate 6 cloud 6 fresh 6
-[PRIO emsisoft] emsisoft.com | priority 6.30 | attack 6 business 6 tech 5 gate 7 cloud 4 fresh 5
+[PRIO docker] asset: hub.docker.com score:8.05 axes: attack:9 business:9 tech:9 gate:6 cloud:7 fresh:6
+[PRIO coxautomotive] asset: www.autotrader.com score:7.55 axes: attack:8 business:9 tech:6 gate:8 cloud:5 fresh:7
+[PRIO duocircle] asset: mailflowmonitoring.com score:6.90 axes: attack:7 business:7 tech:7 gate:7 cloud:8 fresh:5
+[PRIO posit] asset: shinyapps.io score:6.85 axes: attack:8 business:7 tech:8 gate:5 cloud:6 fresh:5
+[PRIO emsisoft] asset: emsisoft.com score:4.20 axes: attack:4 business:5 tech:3 gate:6 cloud:3 fresh:4
 
 STEP 3 — HYPOTHESES
-[HYP docker] Docker Hub private repo IDOR via /v2/repositories API
+[HYP docker] Docker Hub V2 BOLA private tag enumeration
 class: IDOR
 asset: hub.docker.com
-confidence: 75
-reasoning: Inventory confirms hub.docker.com, api.docker.com, *.docker.com wildcard. Hub serves private images via /v2/repositories/{namespace}/{repo}/tags . Historic pattern: numeric/paginated IDOR on tags/catalog. Wildcard increases unauthorized cross-namespace enumeration surface.
-evidence_needed: Unauthenticated vs authenticated response differential on private repo path; 200 with JSON tag list on private namespace without auth proves BOLA
-verify_steps: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> baseline 200 public; GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> expect 401/403 anon; GET same with Authorization: Bearer <own_JWT> -> expect 200 own; GET https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-private-repo>/tags anon vs auth compare status/body
-impact: Cross-tenant private image/tag enumeration + manifest pull => supply-chain ATO, secrets in images, Critical
+confidence: 76
+reasoning: GET /v2/repositories/library/hello-world/tags anon returns 200 JSON while guessed private namespace returns 400 not 401/404. Indicates distinct authz code path for BOLA. Registry v2 typically requires Bearer token; 400 suggests param validation before authz allows IDOR probe with valid JWT from docker.io.
+evidence_needed: WWW-Authenticate and Docker-Distribution-Api-Version headers on 400, and 401 vs 200 with valid Docker Hub JWT for private repo
+verify_steps: GET https://hub.docker.com/v2/ -> check 200; GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 with Accept: application/json; GET https://hub.docker.com/v2/repositories/<victim-namespace>/<private-repo>/tags with Authorization: Bearer <anon_token> ; GET https://registry-1.docker.io/v2/ and /v2/library/hello-world/tags/list anon
+impact: enumerate private image tags and manifests, leak private build artifacts and secrets in layers, critical
 testability: PASSIVE
 
-[HYP coxautomotive] Cox Automotive autotrader IDOR on vehicle lead / inventory API
+[HYP coxautomotive] Autotrader vehicleId IDOR / BOLA to PII
 class: IDOR
-asset: autotrader.com
-confidence: 72
-reasoning: Inventory confirms autotrader.com, www.autotrader.com, vinsolutions.com, kbb.com. Platform hosts dealer inventory with user_id/vehicle_id params historically exposed at /api/vehicles/{id} or /rest/listing/{id}/leads. High PII value (VIN, contact, finance).
-evidence_needed: Increment / swap id param yields 200 vs 403 differential and returns foreign VIN/seller PII without ownership check
-verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 anon -> note 200/403; GET https://www.autotrader.com/api/vehicles/123456 vs /api/vehicles/123457 sequential id swap; GET https://www.vinsolutions.com/api/leads?user_id=1001 vs user_id=1002 with own session cookie
-impact: Cross-dealer PII dump (name, phone, email, VIN, price) + dealer data exfil, High
-testability: AUTH_HELPED
+asset: www.autotrader.com
+confidence: 73
+reasoning: /rest/search/vehicle?vehicleId=123456789 and /api/vehicles/123456 both 200 with identical 3760 text/html length, not JSON. Numeric sequential vehicleId param suggests integer IDOR. HTML fallback likely masks JSON API that returns vehicle+seller PII when Accept: application/json and valid headers.
+evidence_needed: Content-Type negotiation diff, JSON body with seller fields on valid id vs 404 on invalid, sequential id leakage
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 with Accept: application/json, X-Requested-With: XMLHttpRequest; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=1,2,3 seq; GET https://www.autotrader.com/api/vehicles/123456 with Accept: application/json; check Set-Cookie auth gating
+impact: cross-account vehicle and dealer PII dump, IDOR across tenant leads, high
+testability: PASSIVE
 
-[HYP duocircle] DuoCircle outbound SMTP SSRF via tenantmigration / mailflowmonitoring webhook
-class: SSRF
-asset: duocircle.com
+[HYP posit] ShinyApps/Posit Cloud multi-tenant app_id IDOR
+class: IDOR
+asset: shinyapps.io
 confidence: 71
-reasoning: DuoCircle scope includes tenantmigration.com, mailflowmonitoring.com, outboundsmtp.com alongside duocircle.com. Email security platforms parse inbound URLs/webhooks for SPF/DKIM/migration - classic SSRF sink. No prior probe results, so blind SSRF to 169.254.169.254 viable.
-evidence_needed: Server fetch of attacker-controlled URL or metadata IP reflected in response time/DNS log; 200 with metadata JSON vs blocked error codes diff
-verify_steps: GET https://duocircle.com/api/health or /api/v1/verify?url=http://169.254.169.254/latest/meta-data/ (passive - check openapi/swagger first: GET https://duocircle.com/swagger.json, GET https://duocircle.com/.well-known/openapi.json, GET https://duocircle.com/api/openapi.json) ; POST https://tenantmigration.com/api/migrate with JSON {"callback_url":"http://burpcollab.net"} ; GET https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/
-impact: Cloud metadata -> IAM keys, internal SMTP relay abuse, tenant takeover, Critical
+reasoning: posit.cloud/shinyapps.io is multi-tenant hosting (posit.co scope). Inventory shows connect.cloud and rstudio.com but no direct API probe yet. Typical BOLA via /api/v1/applications?app_id= or /__api__/ with user_id param. Fresh surface unprobed high tech_exposure.
+evidence_needed: endpoint existence for /api/v1/applications, error message diff on app_id enumeration, auth gate
+verify_steps: GET https://api.posit.co/v1/applications?app_id=1 with Accept: application/json; GET https://shinyapps.io/api/v1/applications/1 ; GET https://connect.cloud/__api__/applications with anon; check for 401 vs 403 vs 200
+impact: cross-tenant app source and data leak, tenant isolation bypass, high
 testability: PASSIVE
 
 STEP 4 — SELF-CRITIQUE
-[FINAL] Ranking:
-1. [HYP docker] Docker Hub private repo IDOR via /v2/repositories API — confidence 75
-2. [HYP coxautomotive] Cox Automotive autotrader IDOR on vehicle lead / inventory API — confidence 72
-3. [HYP duocircle] DuoCircle outbound SMTP SSRF via tenantmigration / mailflowmonitoring webhook — confidence 71
+[FINAL] Docker Hub V2 BOLA private tag enumeration: confidence 76 retained (concrete 200 vs 400 diff, verifiable via Bearer flow)
+[FINAL] Autotrader vehicleId IDOR / BOLA to PII: confidence 73 retained (identical 200 len anomaly, numeric id param)
+[FINAL] ShinyApps/Posit Cloud multi-tenant app_id IDOR: confidence 71 retained (high-value tenant surface, passive verifiable)
+[PARKED] none: all hypotheses >=70 and not on REJECTED list
 
 STEP 5 — NEXT ACTION
-[NEXT] PROBE: GET https://hub.docker.com/v2/ — list catalog endpoint + GET https://hub.docker.com/v2/repositories/library/docker/tags?page_size=5 (anon, Accept: application/json) and GET https://api.docker.com/v2/repositories/library/docker/tags?page_size=5 and GET https://hub.docker.com/swagger.json / https://hub.docker.com/.well-known/openapi.json (if 404 try /api/docs, /v2/_catalog). Record status, Content-Type, auth requirement header.
+[NEXT] PROBE: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json" ; GET https://hub.docker.com/v2/repositories/docker/private-test/tags -H "Accept: application/json" ; GET https://registry-1.docker.io/v2/ ; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -H "Accept: application/json" -H "X-Requested-With: XMLHttpRequest" then seq vehicleId=1..3 ; GET https://api.posit.co/v1/applications?app_id=1
 
 STEP 6 — LEARNING
-[LEARN] NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
+[LEARN] NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 
 STEP 7 — RISK SCORE
-[RISK] 72 — docker wildcard *.docker.com + hub/api concrete hosts expose registry auth surface; coxautomotive marketplace (autotrader/kbb/vinsolutions) carries high PII/business value with likely IDOR; duocircle email infra suggests SSRF/cloud surface, all email-only disclosure raises gate_ease for passive anon probing.
+[RISK] 68 reason: Docker Hub registry anon 200 public vs 400 private diff exposes BOLA surface, Autotrader numeric vehicleId returns 200 HTML fallback indicating IDOR/mass-assignment surface, Posit multi-tenant unprobed; overall high attack surface with low gate but no key leak yet

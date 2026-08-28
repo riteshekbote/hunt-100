@@ -10,3 +10,7 @@
 ## 2026-08-27 15:34:11 UTC
 
 ## 2026-08-28 00:39:55 UTC
+
+## 2026-08-28 12:14:58 UTC
+- NEW mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> 404 (SSRF param named domain probed)
+- CHANGED tenantmigration.com/api/migrate -> 404 (previously unprobed, now confirmed not openly exposed)

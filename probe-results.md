@@ -30,3 +30,15 @@ https://duocircle.com/.well-known/openapi.json -> HTTP 404
 https://duocircle.com/api/openapi.json -> HTTP 404
 https://tenantmigration.com/api/migrate -> HTTP 404
 https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> HTTP 404
+
+## 2026-08-28 12:15:11 UTC
+https://hub.docker.com/v2/ -> HTTP 404
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<victim-namespace>/<private-repo>/tags -> HTTP 400
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=1,2,3 -> 200 len=3761 type=text/html
+https://www.autotrader.com/api/vehicles/123456 -> 200 len=3761 type=text/html
+https://api.posit.co/v1/applications?app_id=1 -> ERR <urlopen error [Errno -2] Name or service not know
+https://shinyapps.io/api/v1/applications/1 -> HTTP 404
+https://connect.cloud/__api__/applications -> HTTP 404

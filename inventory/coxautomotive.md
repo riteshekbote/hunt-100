@@ -10,3 +10,8 @@
 ## 2026-08-27 15:34:11 UTC
 
 ## 2026-08-28 00:39:55 UTC
+
+## 2026-08-28 12:14:58 UTC
+- NEW www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 text/html (same len as /api/vehicles/123456)
+- NEW www.autotrader.com/api/vehicles/123456 -> 200 len=3760 text/html
+- NEW www.vinsolutions.com/api/leads?user_id=1001 -> 404 (coxautomotive api exists but param filtered)

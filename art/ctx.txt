@@ -91284,6 +91284,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence)
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
+- 2026-08-28 NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91721,6 +91722,11 @@ none
 ## RANKED HYPOTHESES 2026-08-27 15:34:11 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
+
+## RANKED HYPOTHESES 2026-08-28 00:39:55 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/ — list catalog endpoint + GET https://hub.docker.com/v2/repositories/library/docker/tags?page_size=5 (anon, Accept: applic
+- LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
 === LATEST ROBOT PROBE RESULTS ===
 
 ## 2026-08-27 05:06:25 UTC
@@ -91740,3 +91746,17 @@ none
 
 ## 2026-08-27 15:34:21 UTC
 
+
+## 2026-08-28 00:40:10 UTC
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> HTTP 400
+https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-private-repo>/tags -> HTTP 400
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
+https://www.autotrader.com/api/vehicles/123456 -> 200 len=3760 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404
+https://duocircle.com/api/health -> HTTP 404
+https://duocircle.com/swagger.json -> HTTP 404
+https://duocircle.com/.well-known/openapi.json -> HTTP 404
+https://duocircle.com/api/openapi.json -> HTTP 404
+https://tenantmigration.com/api/migrate -> HTTP 404
+https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> HTTP 404
