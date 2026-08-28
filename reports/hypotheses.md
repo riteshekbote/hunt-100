@@ -34,3 +34,7 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json" ; GET https://hub.docker.com/v2/repositorie
 - LEARN: NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
+
+## RANKED HYPOTHESES 2026-08-28 22:20:39 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- LEARN: NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty

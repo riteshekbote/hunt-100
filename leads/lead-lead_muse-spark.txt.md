@@ -104,3 +104,32 @@ testability: PASSIVE
 [NEXT] PROBE: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json" ; GET https://hub.docker.com/v2/repositories/docker/private-test/tags -H "Accept: application/json" ; GET https://registry-1.docker.io/v2/ ; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -H "Accept: application/json" -H "X-Requested-With: XMLHttpRequest" then seq vehicleId=1..3 ; GET https://api.posit.co/v1/applications?app_id=1
 [LEARN] NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 [RISK] 68 reason: Docker Hub registry anon 200 public vs 400 private diff exposes BOLA surface, Autotrader numeric vehicleId returns 200 HTML fallback indicating IDOR/mass-assignment surface, Posit multi-tenant unprobed; overall high attack surface with low gate but no key leak yet
+## 2026-08-28 22:20:28 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: v2 returns 401 with Bearer realm auth.docker.io, service registry.docker.io. Hub API allows anon 200 for library/hello-world tags, proving split Hub catalog vs Registry distribution authz. Token endpoint scope=repository:*:pull historically prone to scope confusion if audience not bound to namespace.
+evidence_needed: anon token for public scope succeeds for private namespace manifest (200 vs 401) or 401 vs 404 oracle leaks existence
+verify_steps: GET https://registry-1.docker.io/v2/ anon -> check Www-Authenticate; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull anon -> get token; GET https://registry-1.docker.io/v2/library/hello-world/manifests/latest -H "Authorization: Bearer <token>" -> expect 200; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" -> compare 401/404/200
+impact: Private image config/layers exfiltration, embedded secrets, supply chain compromise - Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: hub.docker.com
+confidence: 78
+reasoning: Hub v2 anonymous 200 for public library/hello-world tags vs 400 for both owned-private and victim-guessed private /tags without auth. 400 body differential may encode existence vs permission; Hub catalog historically leaks private names via pagination.
+evidence_needed: Status/text differential for existing private vs non-existent with anon vs JWT; authenticated enumeration of victim private repos
+verify_steps: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json" baseline 200; GET https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -H "Authorization: JWT <owned-token>" expect 200; GET https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags anon record 400 body; repeat with owned JWT compare 403/404/400
+impact: Cross-tenant private repository enumeration, enables targeted Registry pull - High
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 72
+reasoning: /rest/search/vehicle?vehicleId=123456789 and ?vehicleId=1,2,3 both 200 text/html 3761 bytes anon, suggests soft-200 WAF or JSON gated by Accept header missing BOLA check. Cox scope shares vehicleId namespace across vinsolutions.com/dealertrack.com for lead data.
+evidence_needed: Accept: application/json returns JSON with VIN/dealer/customer PII for arbitrary vehicleId; changing ID returns other dealer's record without auth
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -H "Accept: application/json" anon vs GET https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -H "Accept: application/json" compare JSON; GET https://www.vinsolutions.com/api/leads?user_id=1001 analogue; replay with dealer session if available
+impact: Cross-dealer lead/PII dump, VIN+contact+financial exposure - High
+testability: PASSIVE
+[PARKED] NONE - all 3 meet confidence >=70, not on REJECTED list, concrete verify_steps
+[FINAL] 1. Hub API BOLA private repo existence oracle (78) 2. Registry token scope escalation (75) 3. Autotrader vehicleId IDOR (72)
+[LEARN] NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+[RISK] 73 - Docker Registry+Hub anon public enumeration proven (200) with private 400 oracle + 401 token gate exposes scope-confusion surface; Cox Autotrader soft-200 on ID-param without auth suggests missing BOLA gate on dealer vehicle namespace

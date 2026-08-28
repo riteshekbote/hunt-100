@@ -42,3 +42,15 @@ https://www.autotrader.com/api/vehicles/123456 -> 200 len=3761 type=text/html
 https://api.posit.co/v1/applications?app_id=1 -> ERR <urlopen error [Errno -2] Name or service not know
 https://shinyapps.io/api/v1/applications/1 -> HTTP 404
 https://connect.cloud/__api__/applications -> HTTP 404
+
+## 2026-08-28 22:20:53 UTC
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/library/hello-world/manifests/latest -> HTTP 401
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -> HTTP 400
+https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags -> HTTP 400
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3761 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404

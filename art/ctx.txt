@@ -91285,6 +91285,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence)
 - 2026-08-27 NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
 - 2026-08-28 NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
+- 2026-08-28 NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91727,6 +91728,11 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/ — list catalog endpoint + GET https://hub.docker.com/v2/repositories/library/docker/tags?page_size=5 (anon, Accept: applic
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
+
+## RANKED HYPOTHESES 2026-08-28 12:14:58 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json" ; GET https://hub.docker.com/v2/repositorie
+- LEARN: NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 === LATEST ROBOT PROBE RESULTS ===
 
 ## 2026-08-27 05:06:25 UTC
@@ -91760,3 +91766,15 @@ https://duocircle.com/.well-known/openapi.json -> HTTP 404
 https://duocircle.com/api/openapi.json -> HTTP 404
 https://tenantmigration.com/api/migrate -> HTTP 404
 https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> HTTP 404
+
+## 2026-08-28 12:15:11 UTC
+https://hub.docker.com/v2/ -> HTTP 404
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<victim-namespace>/<private-repo>/tags -> HTTP 400
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=1,2,3 -> 200 len=3761 type=text/html
+https://www.autotrader.com/api/vehicles/123456 -> 200 len=3761 type=text/html
+https://api.posit.co/v1/applications?app_id=1 -> ERR <urlopen error [Errno -2] Name or service not know
+https://shinyapps.io/api/v1/applications/1 -> HTTP 404
+https://connect.cloud/__api__/applications -> HTTP 404
