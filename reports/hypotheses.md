@@ -52,3 +52,9 @@
 ## RANKED HYPOTHESES 2026-08-29 15:39:19 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+
+## RANKED HYPOTHESES 2026-08-29 18:54:57 UTC
+- [78] *.docker.com: posit-connect-cloud-api-bola (from reports/hypotheses-lead_muse-spark.txt.txt)
+- [78] *.docker.com: coxautomotive-autotrader-bola-vehicleId (from reports/hypotheses-lead_muse-spark.txt.txt)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<vi
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty

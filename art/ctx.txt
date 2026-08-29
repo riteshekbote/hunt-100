@@ -91699,10 +91699,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): SCAN: Passive CT + light probe to populate inventory — 1) crt.sh/CT for duocircle.com, *.docker.com, *.docker.io, posit.cloud, shinyapps.io, autotrader.com, kbb
-- LEARN: NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
-
 ## RANKED HYPOTHESES 2026-08-27 14:17:52 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): SCAN: Passive CT + light probe to populate inventory — 1) crt.sh/CT for duocircle.com, *.docker.com, *.docker.io, posit.cloud, shinyapps.io, autotrader.com, kbb
@@ -91739,17 +91735,11 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull anon then GET https://registry-1.dock
 - LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
-=== LATEST ROBOT PROBE RESULTS ===
 
-## 2026-08-28 00:40:10 UTC
-https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
-https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> HTTP 400
-https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-private-repo>/tags -> HTTP 400
-https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
-https://www.autotrader.com/api/vehicles/123456 -> 200 len=3760 type=text/html
-https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404
-https://duocircle.com/api/health -> HTTP 404
-https://duocircle.com/swagger.json -> HTTP 404
+## RANKED HYPOTHESES 2026-08-29 15:39:19 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+=== LATEST ROBOT PROBE RESULTS ===
 https://duocircle.com/.well-known/openapi.json -> HTTP 404
 https://duocircle.com/api/openapi.json -> HTTP 404
 https://tenantmigration.com/api/migrate -> HTTP 404
@@ -91800,3 +91790,13 @@ https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/late
 https://registry-1.docker.io/v2/<victim-ns>/notexistXYZ123/manifests/latest -> HTTP 404
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3761 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html
+
+## 2026-08-29 15:39:30 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/library/hello-world/manifests/latest -> HTTP 401
+https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/latest/meta-data/ -> HTTP 404
+https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/ -> HTTP 404
+https://tenantmigration.com/api/migrate?domain=http://169.254.169.254/ -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+https://www.autotrader.com/api/vehicles/<owned -> 200 len=3762 type=text/html

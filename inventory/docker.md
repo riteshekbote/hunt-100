@@ -28,3 +28,5 @@
 - NEW hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags and <victim-ns>/guessed -> both 400 (no 404 differentiation, potential IDOR oracle suppressed)
 
 ## 2026-08-29 15:39:19 UTC
+
+## 2026-08-29 18:54:57 UTC

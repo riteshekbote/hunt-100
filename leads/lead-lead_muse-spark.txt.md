@@ -239,3 +239,36 @@ testability: AUTH_HELPED
 [PARKED] none - all hypotheses >=70, not on REJECTED list, have concrete verify_steps
 [LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 [RISK] 68 — docker registry token anon-issuance + coxautomotive IDOR template-stable 200s + duocircle domain-fetch surface remain unvalidated, but no 200 PII/metadata exfil proven; chaining potential high if one gate fails
+## 2026-08-29 18:54:45 UTC (model muse-spark)
+[HYP] docker-private-repo-token-scope-enum
+class: AUTH
+asset: *.docker.com
+confidence: 78
+reasoning: hub.docker.com/v2 returns 404 anon, /v2/repositories/library/hello-world/tags returns 200 public, registry-1.docker.io/v2 returns 401 anon, auth.docker.io/token for library/hello-world:pull returns 200 token, for <victim-ns>/<private-repo>:pull also returns 200 token but manifest 404 vs 401 delta reveals existence vs authz gap
+evidence_needed: anon vs Bearer token GET registry-1.docker.io/v2/<ns>/<repo>/manifests/latest status diff (401 vs 404 vs 200) and hub tags 400 vs 200
+verify_steps: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 Accept:application/json (expect 200); GET https://hub.docker.com/v2/repositories/<victim-ns>/<private-repo>/tags Accept:application/json (observe 400 vs 401); GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull (expect 200 token); GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull (compare 200 vs 401); GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest Authorization:Bearer <token> (observe 401/404/200)
+impact: private repo enumeration, layer pull if scope over-permissive => source/secrets leak, supply-chain poison (High)
+testability: AUTH_HELPED
+[HYP] posit-connect-cloud-api-bola
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: posit target exposes posit.cloud, shinyapps.io, connect.cloud, packagemanager.posit.co; prior probes 404 on /api/v1/applications/1 and /__api__/applications without auth; versioned APIs /api/v1|v2|beta common on Posit Connect; id/uid/app_id params observed in inventory
+evidence_needed: anon 404 vs auth 200 on /api/v1/applications?app_id=<owned> vs <other> and difference in body length/status
+verify_steps: GET https://posit.cloud/.well-known/openapi.json (expect 404 vs 200); GET https://posit.cloud/api/v1/applications?app_id=1 Accept:application/json (expect 401/404); GET https://posit.cloud/api/v1/applications?app_id=<owned-id> with Authorization:Bearer <token> (expect 200); GET https://posit.cloud/api/v1/applications?app_id=<other-id> with same token (expect 200 with other PII if BOLA or 403 if fixed)
+impact: cross-tenant app metadata/PII dump, token theft via app logs (High)
+testability: AUTH_HELPED
+[HYP] coxautomotive-autotrader-bola-vehicleId
+class: IDOR
+asset: autotrader.com
+confidence: 74
+reasoning: www.autotrader.com/rest/search/vehicle?vehicleId=123456789 returns 200 len~3762 HTML for any value (1,2,3, owned-id all 200 same len), indicates no per-object authz on rest endpoint; vinsolutions.com/api/leads?user_id 404 suggests similar pattern on vinsolutions/dealertrack; param vehicleId/user_id classic BOLA
+evidence_needed: owned vehicleId returns 200 with PII vs other vehicleId returns 200 with same structure but different data (401/403 expected if fixed)
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> (record len/body); GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id> (compare len/status, look for PII leak); GET https://www.autotrader.com/api/vehicles/<owned-id> (observe 200 HTML vs JSON); GET https://www.vinsolutions.com/api/leads?user_id=<owned> vs ?user_id=<other> (observe 404 vs 200/401)
+impact: cross-account vehicle/PII/leads disclosure, ATO via lead hijack (High)
+testability: AUTH_HELPED
+[PARKED] none — all hypotheses confidence >=70, classes not rejected, verify_steps concrete passive-first
+[FINAL] 1. docker-private-repo-token-scope-enum (78) 2. coxautomotive-autotrader-bola-vehicleId (74) 3. posit-connect-cloud-api-bola (72)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" vs anon GET without token (record 401 vs 404 vs 200) ; also GET https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -H "Accept: application/json" anon vs auth
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+[RISK] 62 — Docker registry wildcard scope and high-value money/auth flows (autotrader/vinsolutions) expose BOLA/IDOR surface; auth-gated APIs return uniform 200/404 without clear 401/403 differentiation, requires token-gated probe to confirm

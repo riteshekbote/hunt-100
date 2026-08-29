@@ -86,3 +86,17 @@ https://tenantmigration.com/api/migrate?domain=http://169.254.169.254/ -> HTTP 4
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
 https://www.autotrader.com/api/vehicles/<owned -> 200 len=3762 type=text/html
+
+## 2026-08-29 18:55:09 UTC
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<victim-ns>/<private-repo>/tags -> HTTP 400
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=1 -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
