@@ -66,3 +66,13 @@ https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> H
 https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3762 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
 https://www.autotrader.com/api/vehicles/1 -> 200 len=3762 type=text/html
+
+## 2026-08-29 11:04:48 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://registry-1.docker.io/v2/<victim-ns>/notexistXYZ123/manifests/latest -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3761 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html

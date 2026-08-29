@@ -20,3 +20,6 @@
 
 ## 2026-08-29 03:54:31 UTC
 - CHANGED www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 text/html len=3761 (static HTML for all IDs, WAF/cache masking)
+
+## 2026-08-29 11:04:35 UTC
+- NEW www.autotrader.com/rest/search/vehicle?vehicleId= param variation 1 vs 123456789 -> both 200 len~3762 html (param ignored, no 4xx)

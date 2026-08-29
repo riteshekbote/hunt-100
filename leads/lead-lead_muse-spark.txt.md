@@ -168,3 +168,43 @@ testability: PASSIVE
 [NEXT] PROBE: GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -H "Accept: application/json" anon then with Authorization: Bearer <public-token>; GET https://hub.docker.com/v2/repositories/<victim-ns>/not-exist-xyz123/tags; compare Status 200/400/401/404 + body len to confirm oracle
 [LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 [RISK] 62 Docker Hub public anon 200 + private 400 oracle + registry 401/token 200 chain indicates auth surface misconfig; Cox Autotrader HTML masking hides potential BOLA; Duocircle/Posit APIs still unmapped but 404s suggest versioned/internal APIs remain high-likelihood
+## 2026-08-29 11:04:23 UTC (model muse-spark)
+[NEW] auth.docker.io/token scope=repository:<victim-ns>/<private-repo>:pull -> 200 2026-08-29 vs prior 401 expectation for private scope
+[NEW] registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> 404 vs base registry-1.docker.io/v2/ -> 401 (differential oracle)
+[NEW] hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags and <victim-ns>/guessed -> both 400 (no 404 differentiation, potential IDOR oracle suppressed)
+[NEW] www.autotrader.com/rest/search/vehicle?vehicleId= param variation 1 vs 123456789 -> both 200 len~3762 html (param ignored, no 4xx)
+[PRIO]
+[HYP]
+class: AUTH
+asset: auth.docker.io
+confidence: 75
+reasoning: GET /token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull anon returned 200 app/json on 2026-08-29. Expected 401/403 for private repo without Authorization. Same endpoint for library/hello-world also 200 is normal public. Differential suggests scope not validated before token mint.
+evidence_needed: 200 vs 401 comparison same request with anon vs Bearer + manifest fetch with returned token to prove pull access to private blob
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull anon => expect 200; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull anon => capture token; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H Authorization: Bearer <token> => check 200 vs 404/401
+impact: Private image pull bypass -> supply chain theft, secrets in layers, ATO via leaked env, severity High
+testability: AUTH_HELPED
+class: IDOR
+asset: registry-1.docker.io
+confidence: 72
+reasoning: GET https://registry-1.docker.io/v2/ -> 401 expected. GET /v2/<victim-ns>/<private-repo>/manifests/latest -> 404 not 401 on 2026-08-28/29. 404 reveals repo existence check leaks via status differentiation versus auth required. 400 on hub API for both owned/victim confirms hub masks, registry does not.
+evidence_needed: Repeat with owned private repo vs non-existent repo to map 404 vs 401 vs 400 matrix, with and without valid token
+verify_steps: GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest anon => record; GET https://registry-1.docker.io/v2/<victim-ns>/notexistXYZ123/manifests/latest anon => record; GET same with Authorization: Bearer <valid-token-for-owned-ns> => compare
+impact: Private repo enumeration -> targeted token scope brute force, cross-tenant privacy breach, Medium-High
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 70
+reasoning: GET /rest/search/vehicle?vehicleId=1, 123456789, 1,2,3 all return 200 len~3760-3762 html identical. No 404/403 on invalid IDs. Suggests backend ignores vehicleId or falls back to generic page, masking IDOR. Need to test authenticated vs anon and with user-owned id vs other tenant id.
+evidence_needed: Response body diff and JSON vs HTML content-type switch with owned session cookie/Auth header and valid vehicleId owned by test account vs victim id
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> -H Cookie: <owned-session> => capture baseline; GET same with vehicleId=<victim-id> same cookie => compare; GET https://www.autotrader.com/api/vehicles/<owned-id> vs <victim-id> anon vs auth => check 200 vs 401
+impact: Cross-account vehicle/PII/leads access (Cox Automotive includes vAuto/vinsolutions), PII + business logic, High if BOLA confirmed
+testability: AUTH_HELPED
+[PARKED]
+[PARKED] none — all 3 hypotheses confidence >=70, concrete verify_steps, class not on REJECTED, asset in inventory via wildcard *.docker.com/*.docker.io and live probe host
+[FINAL]
+[NEXT]
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull anon then GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -H Authorization: Bearer <returned-token> ; repeat with scope=repository:<victim-ns>/<private-notexist-XYZ123>:pull to contrast 200 vs 401/404 and validate token reuse for private pull
+[LEARN]
+[LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+[RISK]
+[RISK] 68 — Docker registry/auth surface exposes anon token issuance + 404 oracle for private repos (HIGH business value, public anon gate); Cox Automotive search endpoints hide IDOR behind generic 200 HTML requiring auth-helped validation; no file upload/GraphQL/JWT surface proven yet

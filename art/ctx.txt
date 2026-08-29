@@ -91287,6 +91287,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-28 NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
 - 2026-08-28 NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 - 2026-08-28 NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+- 2026-08-29 NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91698,11 +91699,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-
-## RANKED HYPOTHESES 2026-08-27 05:06:25 UTC
-- (no NEW hypotheses this cycle — all deduped)
-
-## RANKED HYPOTHESES 2026-08-27 07:20:16 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): SCAN: Passive CT + light probe to populate inventory — 1) crt.sh/CT for duocircle.com, *.docker.com, *.docker.io, posit.cloud, shinyapps.io, autotrader.com 2) r
 - LEARN: NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
@@ -91738,15 +91734,12 @@ none
 ## RANKED HYPOTHESES 2026-08-28 22:20:39 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+
+## RANKED HYPOTHESES 2026-08-29 03:54:31 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -H "Accept: application/json" anon then with Authorization: Bear
+- LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 === LATEST ROBOT PROBE RESULTS ===
-
-## 2026-08-27 05:06:25 UTC
-
-
-## 2026-08-27 07:20:28 UTC
-
-
-## 2026-08-27 07:41:11 UTC
 
 
 ## 2026-08-27 14:18:03 UTC
@@ -91795,3 +91788,15 @@ https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags -> HTTP 400
 https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3761 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404
+
+## 2026-08-29 03:54:44 UTC
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> HTTP 400
+https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-not-exist-xyz123>/tags -> HTTP 400
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/1 -> 200 len=3762 type=text/html
