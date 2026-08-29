@@ -91289,6 +91289,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-28 NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 - 2026-08-29 NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 - 2026-08-29 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+- 2026-08-29 NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91700,11 +91701,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-- (no NEW hypotheses this cycle — all deduped)
-- LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence)
-
-## RANKED HYPOTHESES 2026-08-27 15:34:11 UTC
-- (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
 
 ## RANKED HYPOTHESES 2026-08-28 00:39:55 UTC
@@ -91740,16 +91736,12 @@ none
 - [78] *.docker.com: coxautomotive-autotrader-bola-vehicleId (from reports/hypotheses-lead_muse-spark.txt.txt)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<vi
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
-=== LATEST ROBOT PROBE RESULTS ===
-https://shinyapps.io/api/v1/applications/1 -> HTTP 404
-https://connect.cloud/__api__/applications -> HTTP 404
 
-## 2026-08-28 22:20:53 UTC
-https://registry-1.docker.io/v2/ -> HTTP 401
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/library/hello-world/manifests/latest -> HTTP 401
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
-https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+## RANKED HYPOTHESES 2026-08-29 21:45:18 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+=== LATEST ROBOT PROBE RESULTS ===
 https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -> HTTP 400
 https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags -> HTTP 400
 https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
@@ -91801,3 +91793,12 @@ https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=te
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+
+## 2026-08-29 21:45:28 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html

@@ -302,3 +302,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>" then GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" vs GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <owned-token>" compare 200 vs 401 vs 404; also GET https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags?page_size=5 -H "Authorization: Bearer <hub-jwt>" vs anon
 [LEARN] NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 [RISK] 68 reason: high-value registry/cloud surfaces expose auth-gated endpoints anon (token 200 for private scope, posit openapi HTML fallback, autotrader static HTML for id params) indicating gating ambiguity but no confirmed bypass; business value critical across docker/posit/coxauto
+## 2026-08-29 23:40:11 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token returns 200 for repository:library/hello-world:pull and for <victim-ns>/<private-repo>:pull anon — identical. anon GET /v2/<victim-ns>/<private-repo>/manifests/latest and /v2/<notexistXYZ123>/manifests/latest both 404 vs GET /v2/library/hello-world/manifests/latest anon 401 vs GET /v2/ anon 401. Differential 404 vs 401 suggests existence oracle; need auth-gated 200 vs 401 to confirm BOLA.
+evidence_needed: owned JWT scoped to <owned-private-ns>/<repo>:pull fetching own manifest 200 vs victim manifest 200 with same token type = IDOR; vs 401/404 = not.
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<repo>:pull anon vs with owned creds (Accept: application/json); then GET https://registry-1.docker.io/v2/<owned-private-ns>/<repo>/manifests/latest H: Authorization: Bearer <owned-token> vs H: Authorization: Bearer <victim-token-anon> ; compare status/body sha256; then same for <victim-ns>/<private-repo>
+impact: cross-tenant private image pull, secrets/source disclosure, supply-chain takeover — critical
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 72
+reasoning: GET /rest/search/vehicle?vehicleId=1 and 123456789 and <owned-id> and <other-id> all 200 len 3761-3762 text/html identical; GET /api/vehicles/<owned-id> same. HTML fallback suggests anon unauthenticated path; versioned API may require Accept: application/json or X-Api-Key.
+evidence_needed: authenticated JSON response differentiation for owned vs other vehicleId (200 with distinct VIN/owner PII vs 403/404)
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> H: Accept: application/json, Cookie: <owned> vs vehicleId=<other-id>; then GET https://www.autotrader.com/api/vehicles/<owned-id> same; diff status/len/hash; also probe https://www.vinsolutions.com/api/leads?user_id=<owned> with auth
+impact: cross-user PII/lead disclosure, dealership data leak — high
+testability: AUTH_HELPED
+class: SSRF
+asset: mailflowmonitoring.com
+confidence: 70
+reasoning: duocircle family (mailflowmonitoring.com, tenantmigration.com, alumniforwarding.com) email/security with monitoring APIs. Prior probes GET /api/check?domain=http://169.254.169.254/latest/meta-data/ and /api/v1/check?url=http://169.254.169.254/ and tenantmigration /api/migrate?domain=http://169.254.169.254/ all 404, but host returns 200 for openapi-style paths with html len 1823 elsewhere; suggests versioned/internal path not bruteforced.
+evidence_needed: 200 with metadata contents or OOB callback for url=http://169.254.169.254/latest/meta-data/ vs http://example.com differential, or DNS pingback
+verify_steps: GET https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/latest/meta-data/ H: Accept: application/json; GET https://mailflowmonitoring.com/api/v1/check?url=http://example.com ; POST https://mailflowmonitoring.com/api/check Content-Type: application/json {"domain":"http://169.254.169.254/","url":"http://169.254.169.254/"} ; monitor Collaborator/Burp
+impact: cloud metadata/IMDS key theft, SSRF to internal — critical
+testability: PASSIVE
+[PARKED] none — all 3 hypotheses confidence >=70, class not on REJECTED list, verify_steps concrete and asset in REAL SUBDOMAIN INVENTORY/probe_allow (*.docker.io, www.autotrader.com, mailflowmonitoring.com via duocircle.com family)
+[FINAL] 1. [HYP docker] Registry Token Scope BOLA - Private Manifest Disclosure (75) 2. [HYP coxautomotive] Autotrader Vehicle ID BOLA (72) 3. [HYP duocircle] MailFlowMonitoring SSRF (70)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull H: Accept: application/json with owned docker JWT anon vs owned; then GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest H: Authorization: Bearer <owned-token> H: Accept: application/vnd.docker.distribution.manifest.v2+json vs same for <victim-ns>/<private-repo> ; record 200 vs 401/404 + body hash
+[LEARN] NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+[RISK] 68 reason: high business value docker registry + automotive PII + email-security cloud, but probes show anon HTML fallback (3761/1823) and 404 uniformity hiding existence, requiring AUTH_HELPED to break; SSRF surface unproven, no 200 metadata yet
