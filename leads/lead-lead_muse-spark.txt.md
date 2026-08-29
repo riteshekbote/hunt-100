@@ -272,3 +272,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" vs anon GET without token (record 401 vs 404 vs 200) ; also GET https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -H "Accept: application/json" anon vs auth
 [LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 [RISK] 62 — Docker registry wildcard scope and high-value money/auth flows (autotrader/vinsolutions) expose BOLA/IDOR surface; auth-gated APIs return uniform 200/404 without clear 401/403 differentiation, requires token-gated probe to confirm
+## 2026-08-29 21:45:09 UTC (model muse-spark)
+class: AUTH
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token?scope=repository:<victim-ns>/<private-repo>:pull returns 200 anon same as library/hello-world; expected 401/403 for non-existent/private scope if properly gated; registry /v2/ correctly 401, but /v2/<victim-ns>/<private-repo>/manifests/latest returns 404 not 401 anon, inconsistent authz signaling
+evidence_needed: token body comparison (token vs error) and manifest 200 vs 401 vs 404 with valid Bearer for owned private repo vs victim private repo
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull (anon, Accept: application/json); GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>"; GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <owned-token>" expect 200; GET same for <victim-ns>/<private-repo> with owned token expect 401 vs 200 confirms bypass
+impact: private image manifest disclosure, pull of proprietary layers/secrets, supply-chain compromise - critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET posit.cloud/.well-known/openapi.json returns 200 text/html len1823 not JSON; GET posit.cloud/api/v1/applications?app_id=1|<owned-id>|<other-id> all 200 len1823 text/html anon identical; expected JSON or 401/403/404 differentiation per tenant; identical HTML suggests auth-gated API returning SPA shell masking access control
+evidence_needed: authenticated JSON response differentiation with valid posit.cloud session, and OpenAPI spec with Accept: application/json
+verify_steps: GET https://posit.cloud/.well-known/openapi.json -H "Accept: application/json" anon; GET https://posit.cloud/api/v1/applications?app_id=<owned-id> -H "Authorization: Bearer <posit-token>" -H "Accept: application/json"; GET same for <other-id> compare status/body (200 vs 403)
+impact: cross-tenant application metadata/PII disclosure, BOLA across posit.cloud/shinyapps tenants - high
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 70
+reasoning: GET www.autotrader.com/rest/search/vehicle?vehicleId=1,123456789,<owned-id>,<other-id> all 200 len~3761-3762 text/html anon; GET www.autotrader.com/api/vehicles/<owned-id> also 200 same HTML anon; expected API JSON vehicle object or 404/401 per id; identical HTML suggests SSR fallback masking true API gating
+evidence_needed: JSON response with valid Cox session cookie/auth header and Accept: application/json for owned vs other vehicleId
+verify_steps: GET https://www.autotrader.com/api/vehicles/<owned-id> -H "Cookie: <cox-session>" -H "Accept: application/json"; GET same for <other-id> compare 200 JSON vs 403; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id> -H "Accept: application/json" with auth
+impact: cross-user vehicle/VIN/lead PII disclosure, dealer tenant IDOR - high
+testability: AUTH_HELPED
+[PARKED] none: all hypotheses confidence >=70 and not on REJECTED list, retain all
+[FINAL] 1: [HYP docker] registry token scope 200 (confidence 75) 2: [HYP posit] posit cloud api app_id (72) 3: [HYP coxautomotive] autotrader vehicleId (70)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>" then GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" vs GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <owned-token>" compare 200 vs 401 vs 404; also GET https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags?page_size=5 -H "Authorization: Bearer <hub-jwt>" vs anon
+[LEARN] NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+[RISK] 68 reason: high-value registry/cloud surfaces expose auth-gated endpoints anon (token 200 for private scope, posit openapi HTML fallback, autotrader static HTML for id params) indicating gating ambiguity but no confirmed bypass; business value critical across docker/posit/coxauto

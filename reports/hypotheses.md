@@ -58,3 +58,8 @@
 - [78] *.docker.com: coxautomotive-autotrader-bola-vehicleId (from reports/hypotheses-lead_muse-spark.txt.txt)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<vi
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+
+## RANKED HYPOTHESES 2026-08-29 21:45:18 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty

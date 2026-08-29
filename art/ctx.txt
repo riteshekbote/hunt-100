@@ -91288,6 +91288,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-28 NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 - 2026-08-28 NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 - 2026-08-29 NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+- 2026-08-29 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91699,12 +91700,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-## RANKED HYPOTHESES 2026-08-27 14:17:52 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): SCAN: Passive CT + light probe to populate inventory — 1) crt.sh/CT for duocircle.com, *.docker.com, *.docker.io, posit.cloud, shinyapps.io, autotrader.com, kbb
-- LEARN: NONE — no class proven dead/alive this cycle (no passive evidence). Retain prior REJECTED list empty.
-
-## RANKED HYPOTHESES 2026-08-27 15:20:06 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence)
 
@@ -91739,21 +91734,13 @@ none
 ## RANKED HYPOTHESES 2026-08-29 15:39:19 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
-=== LATEST ROBOT PROBE RESULTS ===
-https://duocircle.com/.well-known/openapi.json -> HTTP 404
-https://duocircle.com/api/openapi.json -> HTTP 404
-https://tenantmigration.com/api/migrate -> HTTP 404
-https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> HTTP 404
 
-## 2026-08-28 12:15:11 UTC
-https://hub.docker.com/v2/ -> HTTP 404
-https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
-https://hub.docker.com/v2/repositories/<victim-namespace>/<private-repo>/tags -> HTTP 400
-https://registry-1.docker.io/v2/ -> HTTP 401
-https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=1,2,3 -> 200 len=3761 type=text/html
-https://www.autotrader.com/api/vehicles/123456 -> 200 len=3761 type=text/html
-https://api.posit.co/v1/applications?app_id=1 -> ERR <urlopen error [Errno -2] Name or service not know
+## RANKED HYPOTHESES 2026-08-29 18:54:57 UTC
+- [78] *.docker.com: posit-connect-cloud-api-bola (from reports/hypotheses-lead_muse-spark.txt.txt)
+- [78] *.docker.com: coxautomotive-autotrader-bola-vehicleId (from reports/hypotheses-lead_muse-spark.txt.txt)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull then GET https://registry-1.docker.io/v2/<vi
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+=== LATEST ROBOT PROBE RESULTS ===
 https://shinyapps.io/api/v1/applications/1 -> HTTP 404
 https://connect.cloud/__api__/applications -> HTTP 404
 
@@ -91800,3 +91787,17 @@ https://tenantmigration.com/api/migrate?domain=http://169.254.169.254/ -> HTTP 4
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
 https://www.autotrader.com/api/vehicles/<owned -> 200 len=3762 type=text/html
+
+## 2026-08-29 18:55:09 UTC
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<victim-ns>/<private-repo>/tags -> HTTP 400
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=1 -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
