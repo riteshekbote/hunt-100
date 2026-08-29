@@ -208,3 +208,34 @@ testability: AUTH_HELPED
 [LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 [RISK]
 [RISK] 68 — Docker registry/auth surface exposes anon token issuance + 404 oracle for private repos (HIGH business value, public anon gate); Cox Automotive search endpoints hide IDOR behind generic 200 HTML requiring auth-helped validation; no file upload/GraphQL/JWT surface proven yet
+## 2026-08-29 15:39:07 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 72
+reasoning: auth.docker.io issued 200 token for private scope anon (library/hello-world and <victim-ns>/<private-repo> both 200). registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest then 404 for both existent-private and notexistXYZ123 - indistinguishable 404 suggests authz not differentiated anon. If token actually grants pull, 200 vs 401 delta expected after bearer use.
+evidence_needed: anon token vs no token manifest status delta (401 vs 404 vs 200) with Authorization: Bearer <token>
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> capture token; GET https://registry-1.docker.io/v2/library/hello-world/manifests/latest -H "Authorization: Bearer <token>" expect 200; repeat for scope repository:<owned-private-ns>/<private-repo>:pull anon then with token to owned private repo (owned by hunter) compare 200 vs 401 vs 404
+impact: private image pull, secrets/env leakage, supply chain - critical
+testability: AUTH_HELPED
+class: SSRF
+asset: mailflowmonitoring.com
+confidence: 70
+reasoning: /api/check?domain=http://169.254.169.254/ probed once -> 404, not proof of absence. duocircle portfolio (mailflowmonitoring, tenantmigration, autospf) handles domain fetch/monitoring - classic SSRF surface. 404 suggests route wrong, not param filtered. Versioned /api/v1|v2|internal likely.
+evidence_needed: 200/302 with metadata body or timing/DNS callback vs 404
+verify_steps: GET https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/latest/meta-data/ -H Accept: application/json; GET https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/; GET https://tenantmigration.com/api/migrate?domain=http://169.254.169.254/ ; observe status/body/time, use collaborator http://<oob>.oast.pro for DNS
+impact: cloud metadata -> IAM keys, tenant takeover - critical
+testability: PASSIVE
+class: IDOR
+asset: www.autotrader.com
+confidence: 71
+reasoning: /rest/search/vehicle?vehicleId=123456789 ->200 len3760, vehicleId=1 ->200 len3761, vehicleId=1,2,3 ->200 len3761 - identical HTML shell suggests WAF/template not object-level check. Parameter name vehicleId indicates numeric IDOR/BOLA candidate. Cox scope includes vinsolutions leads API which returned 404 for user_id=1001 (not enumerate). Need JSON API with auth.
+evidence_needed: distinct body diff for owned ID vs other ID (VIN, price, seller PII) with auth vs anon 200 vs 401/403
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> vs ?vehicleId=<other-id> compare JSON fields length/hash; GET https://www.vinsolutions.com/api/leads?user_id=<owned> -H Cookie: hunter session then user_id=<other> ; GET https://www.autotrader.com/api/vehicles/<owned> with Accept: application/json
+impact: cross-tenant PII (seller phone, VIN, leads) + dealer data dump - high
+testability: AUTH_HELPED
+[FINAL] Registry Manifest BOLA via Anonymous Token Scope (72) - retains token differential evidence, auth-helped testable
+[FINAL] IDOR/BOLA Vehicle/Lead Object Reference via vehicleId (71) - retains odd stable 200 anomaly, needs auth compare
+[FINAL] SSRF via Domain Check Parameter to Cloud Metadata (70) - retains cloud_surface, probe was single path only
+[PARKED] none - all hypotheses >=70, not on REJECTED list, have concrete verify_steps
+[LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+[RISK] 68 — docker registry token anon-issuance + coxautomotive IDOR template-stable 200s + duocircle domain-fetch surface remain unvalidated, but no 200 PII/metadata exfil proven; chaining potential high if one gate fails

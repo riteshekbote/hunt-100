@@ -76,3 +76,13 @@ https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/late
 https://registry-1.docker.io/v2/<victim-ns>/notexistXYZ123/manifests/latest -> HTTP 404
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3761 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html
+
+## 2026-08-29 15:39:30 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/library/hello-world/manifests/latest -> HTTP 401
+https://mailflowmonitoring.com/api/check?domain=http://169.254.169.254/latest/meta-data/ -> HTTP 404
+https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/ -> HTTP 404
+https://tenantmigration.com/api/migrate?domain=http://169.254.169.254/ -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+https://www.autotrader.com/api/vehicles/<owned -> 200 len=3762 type=text/html

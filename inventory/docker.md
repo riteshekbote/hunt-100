@@ -26,3 +26,5 @@
 - NEW auth.docker.io/token scope=repository:<victim-ns>/<private-repo>:pull -> 200 2026-08-29 vs prior 401 expectation for private scope
 - NEW registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> 404 vs base registry-1.docker.io/v2/ -> 401 (differential oracle)
 - NEW hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags and <victim-ns>/guessed -> both 400 (no 404 differentiation, potential IDOR oracle suppressed)
+
+## 2026-08-29 15:39:19 UTC

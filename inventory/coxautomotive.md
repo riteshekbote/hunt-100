@@ -23,3 +23,5 @@
 
 ## 2026-08-29 11:04:35 UTC
 - NEW www.autotrader.com/rest/search/vehicle?vehicleId= param variation 1 vs 123456789 -> both 200 len~3762 html (param ignored, no 4xx)
+
+## 2026-08-29 15:39:19 UTC
