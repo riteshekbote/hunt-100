@@ -15,3 +15,6 @@
 - NEW mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> 404 (SSRF param named domain probed)
 
 ## 2026-08-28 22:20:39 UTC
+
+## 2026-08-29 03:54:31 UTC
+- CHANGED mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> 404 (path not found, SSRF surface unmapped)

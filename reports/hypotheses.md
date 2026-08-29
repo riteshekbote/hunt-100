@@ -38,3 +38,8 @@
 ## RANKED HYPOTHESES 2026-08-28 22:20:39 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+
+## RANKED HYPOTHESES 2026-08-29 03:54:31 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -H "Accept: application/json" anon then with Authorization: Bear
+- LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty

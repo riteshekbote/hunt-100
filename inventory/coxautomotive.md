@@ -17,3 +17,6 @@
 - NEW www.vinsolutions.com/api/leads?user_id=1001 -> 404 (coxautomotive api exists but param filtered)
 
 ## 2026-08-28 22:20:39 UTC
+
+## 2026-08-29 03:54:31 UTC
+- CHANGED www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 text/html len=3761 (static HTML for all IDs, WAF/cache masking)

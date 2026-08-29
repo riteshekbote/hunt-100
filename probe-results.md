@@ -54,3 +54,15 @@ https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags -> HTTP 400
 https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3761 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404
+
+## 2026-08-29 03:54:44 UTC
+https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
+https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> HTTP 400
+https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-not-exist-xyz123>/tags -> HTTP 400
+https://registry-1.docker.io/v2/ -> HTTP 401
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/1 -> 200 len=3762 type=text/html

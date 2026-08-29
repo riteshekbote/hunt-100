@@ -133,3 +133,38 @@ testability: PASSIVE
 [FINAL] 1. Hub API BOLA private repo existence oracle (78) 2. Registry token scope escalation (75) 3. Autotrader vehicleId IDOR (72)
 [LEARN] NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 [RISK] 73 - Docker Registry+Hub anon public enumeration proven (200) with private 400 oracle + 401 token gate exposes scope-confusion surface; Cox Autotrader soft-200 on ID-param without auth suggests missing BOLA gate on dealer vehicle namespace
+## 2026-08-29 03:54:19 UTC (model muse-spark)
+[NEW] hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 application/json (public anon tag listing)
+[NEW] registry-1.docker.io/v2/ -> 401 (auth required, registry alive)
+[NEW] auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 (token endpoint alive)
+[CHANGED] www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 text/html len=3761 (static HTML for all IDs, WAF/cache masking)
+[CHANGED] mailflowmonitoring.com/api/check?domain=http://169.254.169.254/ -> 404 (path not found, SSRF surface unmapped)
+class: AUTH
+asset: hub.docker.com
+confidence: 72
+reasoning: Public repo /v2/repositories/library/hello-world/tags?page_size=5 returns 200 anon; private namespace guesses return 400 not 401/404. Non-standard 400 suggests auth logic flaw leaking existence/oracle. Docker Hub is high-value private image store.
+evidence_needed: Differential status/len between existent private vs non-existent namespace with and without auth; confirm 401/404 expected per spec but 400 returned
+verify_steps: GET https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -H "Accept: application/json"; GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -H "Accept: application/json" anon vs with Bearer; GET https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-not-exist-xyz123>/tags
+impact: Private repository enumeration -> image name discovery -> supply chain + secret leakage (High)
+testability: PASSIVE
+class: AUTH
+asset: registry-1.docker.io
+confidence: 71
+reasoning: registry-1.docker.io/v2/ returns 401 correctly, auth.docker.io/token returns 200 for public scope. No evidence scope validation blocks private repo pull if token scope manipulated. Chain: token -> manifest pull.
+evidence_needed: 401 vs 200 with manipulated scope=repository:<victim-private>:pull, then manifest fetch status 200 vs 401/404
+verify_steps: GET https://registry-1.docker.io/v2/ ; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull ; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull - then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>"
+impact: Private image pull -> code/secrets disclosure -> ATO supply chain (Critical)
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 70
+reasoning: /rest/search/vehicle?vehicleId=1, 123456789, 1,2,3 all return 200 text/html len 3760-3762 identical, not JSON. Indicates WAF/cache or HTML shell masking JSON API; true REST endpoint may be /api/vehicles/{id} with BOLA on numeric IDs exposing PII/dealer leads.
+evidence_needed: JSON vs HTML content-type differential, status 200 vs 401/403 when testing id=1 vs owned vs other tenant, with Accept: application/json
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -H "Accept: application/json"; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -H "Accept: application/json" compare len/type; GET https://www.autotrader.com/api/vehicles/1 -H "Accept: application/json" anon vs auth
+impact: Cross-tenant vehicle/PII + dealer leads dump -> privacy breach (High)
+testability: PASSIVE
+[PARKED] None: all 3 hypotheses >=70 and not on REJECTED list, verify_steps concrete and passive-first
+[FINAL] 1 Hub v2 Private Repo Existence Oracle via 400 vs 200 Differential (72) 2 Registry Token Scope Escalation to Pull Private Manifests (71) 3 Autotrader REST vehicleId Parameter Masked IDOR Behind HTML Shell (70)
+[NEXT] PROBE: GET https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -H "Accept: application/json" anon then with Authorization: Bearer <public-token>; GET https://hub.docker.com/v2/repositories/<victim-ns>/not-exist-xyz123/tags; compare Status 200/400/401/404 + body len to confirm oracle
+[LEARN] NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+[RISK] 62 Docker Hub public anon 200 + private 400 oracle + registry 401/token 200 chain indicates auth surface misconfig; Cox Autotrader HTML masking hides potential BOLA; Duocircle/Posit APIs still unmapped but 404s suggest versioned/internal APIs remain high-likelihood

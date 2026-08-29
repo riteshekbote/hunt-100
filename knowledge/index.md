@@ -5,3 +5,4 @@
 - 2026-08-28 NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
 - 2026-08-28 NONE — no class proven dead/alive this cycle (delta is status-code anomaly only, need token-gated probe to confirm). Retain prior REJECTED list empty.
 - 2026-08-28 NONE - no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+- 2026-08-29 NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
