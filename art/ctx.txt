@@ -91290,6 +91290,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-29 NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 - 2026-08-29 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 - 2026-08-29 NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+- 2026-08-29 NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91701,11 +91702,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-- LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence) @ inventory
-
-## RANKED HYPOTHESES 2026-08-28 00:39:55 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://hub.docker.com/v2/ — list catalog endpoint + GET https://hub.docker.com/v2/repositories/library/docker/tags?page_size=5 (anon, Accept: applic
 - LEARN: NONE — no class proven dead/alive this cycle (no status/param evidence yet). Retain prior REJECTED list empty.
 
 ## RANKED HYPOTHESES 2026-08-28 12:14:58 UTC
@@ -91741,17 +91737,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
-=== LATEST ROBOT PROBE RESULTS ===
-https://hub.docker.com/v2/repositories/<owned-private-ns>/<private-repo>/tags -> HTTP 400
-https://hub.docker.com/v2/repositories/<victim-ns>/<guessed>/tags -> HTTP 400
-https://www.autotrader.com/rest/search/vehicle?vehicleId=123456789 -> 200 len=3760 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=1 -> 200 len=3761 type=text/html
-https://www.vinsolutions.com/api/leads?user_id=1001 -> HTTP 404
 
-## 2026-08-29 03:54:44 UTC
-https://hub.docker.com/v2/repositories/library/hello-world/tags?page_size=5 -> 200 len=? type=application/json
-https://hub.docker.com/v2/repositories/<owned-private-namespace>/<private-repo>/tags -> HTTP 400
-https://hub.docker.com/v2/repositories/<victim-namespace>/<guessed-not-exist-xyz123>/tags -> HTTP 400
+## RANKED HYPOTHESES 2026-08-29 23:40:21 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull H: Accept: application/json with owne
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
+=== LATEST ROBOT PROBE RESULTS ===
 https://registry-1.docker.io/v2/ -> HTTP 401
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
@@ -91802,3 +91793,13 @@ https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
+
+## 2026-08-29 23:40:32 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<owned-private-ns>/<repo>/manifests/latest -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/latest/meta-data/ -> HTTP 404
+https://mailflowmonitoring.com/api/v1/check?url=http://example.com -> HTTP 404
+https://mailflowmonitoring.com/api/check -> HTTP 404

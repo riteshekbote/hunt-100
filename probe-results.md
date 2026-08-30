@@ -119,3 +119,16 @@ https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
 https://mailflowmonitoring.com/api/v1/check?url=http://169.254.169.254/latest/meta-data/ -> HTTP 404
 https://mailflowmonitoring.com/api/v1/check?url=http://example.com -> HTTP 404
 https://mailflowmonitoring.com/api/check -> HTTP 404
+
+## 2026-08-30 01:41:36 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+https://mailflowmonitoring.com/.well-known/openapi.json -> HTTP 404
+https://mailflowmonitoring.com/api/v1/check -> HTTP 404
+https://tenantmigration.com/api/migrate -> HTTP 404

