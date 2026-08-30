@@ -88,3 +88,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED li
+
+## RANKED HYPOTHESES 2026-08-30 21:04:40 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED li

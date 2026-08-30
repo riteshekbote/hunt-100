@@ -91293,6 +91293,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-08-29 NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
 - 2026-08-30 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
 - 2026-08-30 NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
+- 2026-08-30 NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91705,11 +91706,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-08-29 11:04:35 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull anon then GET https://registry-1.dock
-- LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
-
 ## RANKED HYPOTHESES 2026-08-29 15:39:19 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
@@ -91744,18 +91740,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list em
-=== LATEST ROBOT PROBE RESULTS ===
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
-https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
-https://posit.cloud/api/v1/applications?app_id=1 -> 200 len=1823 type=text/html
-https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
-https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
 
-## 2026-08-29 21:45:28 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+## RANKED HYPOTHESES 2026-08-30 17:48:07 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED li
+=== LATEST ROBOT PROBE RESULTS ===
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -> 200 len=? type=application/json
 https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -> HTTP 404
 https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
@@ -91805,3 +91795,14 @@ https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=te
 https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+
+## 2026-08-30 17:48:16 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<other-id -> HTTP 404

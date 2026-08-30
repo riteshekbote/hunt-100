@@ -1,53 +1,19 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-STEP 1 — DELTA
-NO_DELTA
+[NEW NONE] NO_DELTA
 
-STEP 2 — PRIORITIZE
-[PRIO docker] registry-1.docker.io/v2 - score 8.0 (attack:9 business:9 tech:8 gate:6 cloud:6 fresh:8)
-[PRIO posit] posit.cloud/api - score 7.1 (attack:8 business:7 tech:7 gate:7 cloud:5 fresh:7)
-[PRIO coxautomotive] www.autotrader.com/rest - score 7.1 (attack:8 business:8 tech:6 gate:7 cloud:4 fresh:7)
+[PRIO docker] *.docker.com score 8.2 (attack 9, business 9, tech 9, gate 6, cloud 7, fresh 7) priority=0.25*9+0.25*9+0.15*9+0.15*6+0.10*7+0.10*7=8.15
+[PRIO coxautomotive] www.autotrader.com score 7.9 (attack 9, business 9, tech 7, gate 8, cloud 5, fresh 6) priority=0.25*9+0.25*9+0.15*7+0.15*8+0.10*5+0.10*6=7.85
+[PRIO posit] posit.cloud score 7.3 (attack 8, business 8, tech 7, gate 7, cloud 6, fresh 6) priority=0.25*8+0.25*8+0.15*7+0.15*7+0.10*6+0.10*6=7.30
 
-STEP 3 — HYPOTHESES
-[HYP docker] docker-registry-bola-private-manifest
-class: IDOR
-asset: registry-1.docker.io/v2/<namespace>/<repo>/manifests/latest
-confidence: 75
-reasoning: auth.docker.io/token returns 200 application/json for scope repository:<victim-ns>/<private-repo>:pull identical to owned private repo and library/hello-world; registry-1.docker.io/v2/<owned-ns>/<private-repo>/manifests/latest returns 404 with owned JWT while victim returns 404 without differential — token minting not validating ownership suggests registry ACL may be bypassable via scope confusion or stolen JWT
-evidence_needed: owned JWT fetched for victim scope used against registry returns 200 + manifest JSON vs 401/404 differential
-verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "Accept: application/json"; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <victim-scoped-JWT>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" compare to owned 200/404
-impact: cross-tenant private image pull, secrets/source leakage, supply-chain compromise - critical
-testability: AUTH_HELPED
+[HYP NONE]
 
-[HYP posit] posit-connect-cloud-api-bola-app_id
-class: IDOR
-asset: posit.cloud/api/v1/applications
-confidence: 72
-reasoning: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> and ?app_id=<other-id> and ?app_id=1 and /.well-known/openapi.json all return 200 len=1823 text/html identical; no 401/403 differential suggests endpoint exists but HTML fallback masks JSON API or unauthenticated BOLA returns same login page — versioned /api/v1 exposed without auth gate
-evidence_needed: authenticated GET with owned session JWT to /api/v1/applications?app_id=<other-id> returning 200 application/json with other tenant data vs 401/403/404 for anon
-verify_steps: GET https://posit.cloud/.well-known/openapi.json -H "Accept: application/json" anon; then GET https://posit.cloud/api/v1/applications?app_id=<other-id> -H "Authorization: Bearer <owned-JWT>" -H "Accept: application/json" compare len/content-type/status to anon 1823 html
-impact: cross-tenant BOLA dump of Posit Connect Cloud apps, PII, deployment secrets - high
-testability: AUTH_HELPED
+[PARKED] NONE: no hypothesis met VALID >=70 with concrete token-gated evidence; prior docker/posit/autotrader BOLA leads remain HOLD pending auth comparison (200 html vs 404 deltas only)
+[FINAL] NONE
 
-[HYP coxautomotive] cox-autotrader-bola-vehicleId
-class: IDOR
-asset: www.autotrader.com/rest/search/vehicle
-confidence: 70
-reasoning: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> vs <other-id> and GET https://www.autotrader.com/api/vehicles/<owned-id> all return 200 len~3761-3762 text/html identical; no 401/404 differential suggests API masks auth or returns HTML shell — query param vehicleId is classic numeric IDOR surface on high-value inventory/PII/leads across coxautoinc.com, vinsolutions.com
-evidence_needed: authenticated GET with owned session to /rest/search/vehicle?vehicleId=<other-id> returning 200 application/json with other user vehicle/PII vs 403/404 for anon
-verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id> anon -H "Accept: application/json" note 200 html; then replay with -H "Authorization: Bearer <owned-JWT>" -H "Cookie: <owned-session>" -H "Accept: application/json" and GET https://www.vinsolutions.com/api/leads?user_id=<other-id> same
-impact: cross-tenant vehicle/PII/leads disclosure across Autotrader, Vinsolutions, Dealertrack — mass PII — high
-testability: AUTH_HELPED
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" compare 200 vs 401/404 vs owned-private-repo baseline
 
-STEP 4 — SELF-CRITIQUE
-[FINAL] docker-registry-bola-private-manifest, posit-connect-cloud-api-bola-app_id, cox-autotrader-bola-vehicleId
-
-STEP 5 — NEXT ACTION
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <returned-token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" compare status/body to GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/manifests/latest with same header
-
-STEP 6 — LEARNING
 [LEARN] NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED list empty
 
-STEP 7 — RISK SCORE
-[RISK] 68 — Docker registry wildcard scope issues issuance 200 for private victim repos, Posit Cloud /api/v1 with HTML fallback masking potential BOLA, Cox Autotrader vehicleId numeric IDOR surface all unauthenticated 200 but need token-gated JSON differential to confirm; overall chaining potential (IDOR->PII, registry->secrets) high but unproven without auth
+[RISK] 38 reason: docker registry token endpoint open (200) but manifests 404 for both owned/victim, posit.cloud and autotrader.com return identical 200 html (1823/3762) for any id, duocircle mailflowmonitoring/tenantmigration 404, no auth bypass or cloud metadata proven; exposure limited to unauth HTML with no PII leak yet
