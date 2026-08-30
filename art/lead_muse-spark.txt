@@ -1,30 +1,32 @@
-## 2026-08-30 07:26:32 UTC (model muse-spark)
-class: AUTH
-asset: hub.docker.com
-confidence: 78
-reasoning: hub.docker.com/v2/repositories/library/hello-world/tags ->200 anon; /<victim-ns>/<private-repo>/tags ->400 not 401/404 delta. auth.docker.io/token?scope=repository:<victim-ns>/<private-repo>:pull ->200 anon (should be 401). registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest ->404 both owned/victim, no delta, indicates token issuance not enforcing private scope.
-evidence_needed: token JSON contains access_token for victim private scope anon vs 401; manifest fetch with victim-scoped token returns 200 vs 401/404 differential between owned JWT and anon
-verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull anon (baseline 200); GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull anon then with Authorization: Bearer <owned-jwt>; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest with each token, compare status/body
-impact: unauthorized pull of private images -> supply-chain code theft, secrets in layers, critical
-testability: AUTH_HELPED
-class: IDOR
-asset: www.autotrader.com
+## 2026-08-30 13:18:14 UTC (model muse-spark)
+[NEW] NONE
+[CHANGED] NONE
+class: BOLA
+asset: registry-1.docker.io
 confidence: 75
-reasoning: www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id ->200 len 3761-3762 html; same endpoint with <other-id ->200 same len/html shell; /api/vehicles/<id also 200 same len. No 401/403 delta suggests missing object-level check, HTML wrapper masks JSON differences.
-evidence_needed: JSON body field-level delta for owned vs other vehicleId when Accept: application/json or with session cookie; PII (seller, VIN, location) returned for other-id with 200 vs 401
-verify_steps: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -H "Accept: application/json" anon then auth; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id same headers; GET https://www.autotrader.com/api/vehicles/<other-id same; diff JSON keys/length
-impact: cross-tenant PII/VIN/seller info dump, IDOR high
+reasoning: auth.docker.io/token returns 200 for library/hello-world and for <victim-ns>/<private-repo> indicating token issuance not owner-checked; registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest anon returns 404 for both owned and victim private repo (latest probes 2026-08-30) requiring Bearer-differentiated test to distinguish 401 vs 404 vs 200
+evidence_needed: 200 manifest JSON for victim private repo with owned JWT-scoped token vs 401/404 anon or mismatched scope
+verify_steps: 1) POST https://hub.docker.com/v2/users/login with owned creds -> JWT 2) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H Authorization: Bearer <owned-JWT> 3) GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H Authorization: Bearer <token> -H Accept: application/vnd.docker.distribution.manifest.v2+json anon vs auth compare status/body
+impact: private image pull, source/secrets leak, critical
 testability: AUTH_HELPED
-class: IDOR
+class: BOLA
 asset: posit.cloud
 confidence: 72
-reasoning: posit.cloud/.well-known/openapi.json ->200 len1823 html (exposed spec); /api/v1/applications?app_id=<owned-id ->200 len1823 html; same with <other-id ->200 same len. Identical HTML suggests SPA shell, not API authz decision; need Accept: application/json to get true API response.
-evidence_needed: API returns 200 JSON with other-user app data vs 401/404 when app_id belongs to other tenant; openapi.json details scopes
-verify_steps: GET https://posit.cloud/api/v1/applications?app_id=<owned-id -H "Accept: application/json" with owned session; GET https://posit.cloud/api/v1/applications?app_id=<other-id same; GET https://posit.cloud/api/v1/applications?app_id=1 anon; compare status 200 vs 401 and JSON app owner field
-impact: cross-workspace source code/data exfiltration, IDOR high
+reasoning: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> and ?app_id=<other-id> and ?app_id=1 all return 200 len=1823 text/html identical (probes 2026-08-29/30) suggesting soft-404 without auth; endpoint uses predictable integer app_id, versioned /api/v1, openapi endpoint returns html not json
+evidence_needed: 200 JSON with other-user app data vs 401/403/html when swapping app_id under authenticated session cookie
+verify_steps: 1) GET https://posit.cloud/.well-known/openapi.json anon record 2) Login as owned user capture session cookie 3) GET https://posit.cloud/api/v1/applications?app_id=<owned-id> vs ?app_id=<other-id> with Cookie compare Content-Type and JSON fields
+impact: cross-tenant app metadata and PII leak, high
 testability: AUTH_HELPED
-[PARKED] NONE: all hypotheses confidence >=70 and not on REJECTED list
-[FINAL] 1: docker Docker Registry Private Repo Token Scope Confusion (78), 2: coxautomotive Autotrader Vehicle BOLA via vehicleId (75), 3: posit Posit Cloud Applications BOLA via app_id (72)
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" compare 200 vs 401/404 against anon token baseline
+class: BOLA
+asset: www.autotrader.com
+confidence: 70
+reasoning: GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> and <other-id> both 200 len=3762 html and GET https://www.autotrader.com/api/vehicles/<owned-id> same length (probes 2026-08-29/30) suggests unauthenticated rendering of search page not API; param vehicleId indicates backend lookup; dealer.com/vauto.com not yet probed for same pattern; requires dealer session to differentiate
+evidence_needed: JSON vehicle record for other-id under owned dealer JWT vs html/403 anon
+verify_steps: 1) Login as owned dealer capture JWT/cookie 2) GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> with auth vs anon compare 3) GET same with ?vehicleId=<other-id> with auth check for PII fields diff
+impact: dealer/customer PII and inventory leak via BOLA, high
+testability: AUTH_HELPED
+[PARKED] NONE: all hypotheses confidence >=70, not on REJECTED list, have concrete verify_steps
+[FINAL] 1) docker Registry private repo BOLA via scoped token (75) 2) posit Posit Connect Cloud BOLA via app_id (72) 3) coxautomotive Autotrader vehicleId BOLA (70)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" compare anon 404 vs auth 200/401
 [LEARN] NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, token-gated 200 vs 401 confirmation still needed) Retain prior REJECTED list empty
-[RISK] 68 reason: large docker registry + coxautomotive autotrader + posit cloud APIs exposed with authz deltas (400 vs 200 token issuance, identical HTML for IDOR probes) but no confirmed 200 vs 401 data leak yet, SSRF surface probed 404, cloud metadata not reached
+[RISK] 45 reason: top 5 surface shows broad attack surface but probes show identical soft-404 html masking (autotrader 3762, posit 1823) and registry 404 anon, no unauthenticated PII/SSRF-to-metadata proven; exposure is auth-dependent BOLA requiring token-gated confirmation, not unauth RCE
