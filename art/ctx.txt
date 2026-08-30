@@ -91705,11 +91705,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-
-## RANKED HYPOTHESES 2026-08-29 15:39:19 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- LEARN: NONE — no class proven dead/alive this cycle (status deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
-
 ## RANKED HYPOTHESES 2026-08-29 18:54:57 UTC
 - [78] *.docker.com: posit-connect-cloud-api-bola (from reports/hypotheses-lead_muse-spark.txt.txt)
 - [78] *.docker.com: coxautomotive-autotrader-bola-vehicleId (from reports/hypotheses-lead_muse-spark.txt.txt)
@@ -91745,10 +91740,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED li
+
+## RANKED HYPOTHESES 2026-08-30 21:04:40 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, token-gated 200 vs 401/403 confirmation still needed) Retain prior REJECTED li
 === LATEST ROBOT PROBE RESULTS ===
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/<owned-private-ns>/<private-repo>/manifests/latest -> HTTP 404
-https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3761 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
@@ -91806,3 +91803,6 @@ https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=37
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=<other-id -> HTTP 404
+
+## 2026-08-30 21:04:51 UTC
+

@@ -166,3 +166,14 @@ https://www.vinsolutions.com/api/leads?user_id=<other-id -> HTTP 404
 
 ## 2026-08-30 21:04:51 UTC
 
+
+## 2026-08-30 23:30:28 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://www.autotrader.com/api/vehicles/<owned-vehicleId -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<other-vehicleId -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-vehicleId -> 200 len=3762 type=text/html
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
