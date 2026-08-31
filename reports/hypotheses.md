@@ -98,3 +98,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior 
+
+## RANKED HYPOTHESES 2026-08-31 01:39:38 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>" and GET https://posit.
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior REJE
