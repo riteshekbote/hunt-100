@@ -91708,11 +91708,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-08-29 23:40:21 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull H: Accept: application/json with owne
-- LEARN: NONE — no class proven dead/alive this cycle (status 200 vs 401/404 deltas only, need token-gated 200 vs 401 confirmation) Retain prior REJECTED list empty
-
 ## RANKED HYPOTHESES 2026-08-30 01:41:22 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-private-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-jwt>
@@ -91747,16 +91742,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>" and GET https://posit.
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior REJE
-=== LATEST ROBOT PROBE RESULTS ===
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<other-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<id -> 200 len=3762 type=text/html
-https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
-https://mailflowmonitoring.com/.well-known/openapi.json -> HTTP 404
-https://mailflowmonitoring.com/api/v1/check -> HTTP 404
-https://tenantmigration.com/api/migrate -> HTTP 404
 
-## 2026-08-30 07:26:58 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:library/hello-world:pull -> 200 len=? type=application/json
+## RANKED HYPOTHESES 2026-08-31 07:44:30 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorizat
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior REJE
+=== LATEST ROBOT PROBE RESULTS ===
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
 https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
@@ -91808,3 +91799,12 @@ https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=te
 https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+
+## 2026-08-31 07:44:41 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html

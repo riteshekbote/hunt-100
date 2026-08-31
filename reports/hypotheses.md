@@ -108,3 +108,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorizat
 - LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior REJE
+
+## RANKED HYPOTHESES 2026-08-31 15:28:26 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Aut
+- LEARN: NONE — no class proven dead/alive this cycle (status 200 html vs 404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior REJE
