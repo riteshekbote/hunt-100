@@ -206,3 +206,11 @@ https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
+
+## 2026-08-31 21:07:11 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<victim-id -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3761 type=text/html
