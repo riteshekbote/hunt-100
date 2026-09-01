@@ -758,3 +758,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorization: Bearer <owned-hub-jwt>" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <registry-token>" compare 200 JSON vs 401/403 JSON
 [LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remains) Retain prior REJECTED list empty @ inventory
 [RISK] 62 reason: 5-target union exposes high-value private-repo, multi-tenant Connect, and dealer PII surfaces with GraphQL/JWT/upload not yet gated by auth differentiation; all recent probes returned HTML 200 or 404 without JSON auth testing, leaving BOLA/IDOR unproven but plausible — chained ATO/PII impact high, exploitability currently AUTH_HELPED
+## 2026-09-01 21:21:28 UTC (model muse-spark)
+class: AUTH
+asset: hub.docker.com
+confidence: 72
+reasoning: GET https://hub.docker.com/v2/users/login -> 415 (only 415 in last cycle) proves endpoint exists but rejects GET; 415 = unsupported media type implying POST JSON expected; high-value auth endpoint for Docker Hub; mass-assignment/JWT pattern common on login.
+evidence_needed: POST 200 vs 415/401 differentiation with JSON body; 200 JSON token for valid creds vs 401 for invalid vs 415 for missing Content-Type
+verify_steps: 1) POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"test","password":"test"}' observe status 401 vs 400; 2) POST same with '{"username":"test","password":"test","isAdmin":true}' check 200 vs 401 diff; 3) GET https://hub.docker.com/v2/repositories/<owned-ns>/ 401 vs 200 with token
+impact: ATO, token theft, private repo enumeration — critical
+testability: PASSIVE
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token returns 200 application/json for both owned and victim ns (no ACL at token layer); registry-1.docker.io/v2/<ns>/<repo>/manifests/latest returns 404 for both with and without Bearer (HTML fallback ambiguity); tech_exposure high (JWT bearer), business high (private images).
+evidence_needed: JWT-authenticated JSON differentiation: 200 manifest JSON (with Docker-Content-Digest) for victim vs 401/404 JSON {"errors":[{"code":"UNAUTHORIZED"}]} for owned when using victim-scoped Bearer token; need authentic Hub token
+verify_steps: 1) POST https://hub.docker.com/v2/users/login to get JWT; 2) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <JWT>" expect 200 JSON token; 3) GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <token>" compare owned vs victim status/body (200 JSON vs 401 JSON)
+impact: private image pull, secret leak, supply-chain — critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 71
+reasoning: posit.cloud hosts return 200 text/html len=1823 for both owned and victim app_id/guid (SPA fallback), no JSON; indicates WAF/auth gate not differentiating via status; versioned __api__/v1 suggests hidden API; tech_exposure high (api version, guid param), attack_surface 8.
+evidence_needed: JWT/session-authenticated JSON differentiation: 200 JSON content metadata for victim guid vs 401/403 JSON for owned when replaying session cookie / Authorization header; need HTML vs JSON content-type check
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> with valid session cookie -H "Accept: application/json" record 200 JSON vs html; 2) GET same with victim guid same headers compare body length/type; 3) GET https://posit.cloud/.well-known/openapi.json with Accept: application/json check 200 JSON vs 200 html fallback
+impact: cross-tenant app/source code PII dump — high
+testability: AUTH_HELPED
+[PARKED] hub.docker.com login mass-assignment/auth anomaly (415): confidence 72 borderline but verify_steps need HUMAN_ONLY for POST body mutation and no prior token evidence — park until GET-to-POST 401 differentiation proven
+[FINAL] surviving hypotheses re-ranked:
+[NEXT] PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"invalid_test_user_123","password":"invalid_test_123"}' then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <token_from_auth.docker.io_with_JWT>" compare owned vs victim — read-only auth flow to get JSON 401 vs 200 differentiation
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remains) Retain prior REJECTED list empty
+[RISK] 38 reason: docker registry 415 + token 200 JSON proves auth surface exists but manifest 404 for both and posit/autotrader HTML fallback (1823/3762) show no passive PII leak; exposure is high on auth/JWT but gated behind Bearer/session, no proven IDOR/SSRF chain yet
