@@ -91709,11 +91709,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-08-30 23:30:18 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <owned-JWT>" -H "A
-- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/404 deltas only, need JWT-authenticated JSON differentiation to confirm BOLA) Retain prior 
-
 ## RANKED HYPOTHESES 2026-08-31 01:39:38 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>" and GET https://posit.
@@ -91748,18 +91743,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Aut
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remain
-=== LATEST ROBOT PROBE RESULTS ===
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
-https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
 
-## 2026-08-31 07:44:41 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
-https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
-https://posit.cloud/api/v1/applications?app_id=<other-id -> 200 len=1823 type=text/html
-https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+## RANKED HYPOTHESES 2026-09-01 15:13:30 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Aut
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remain
+=== LATEST ROBOT PROBE RESULTS ===
 
 ## 2026-08-31 15:28:39 UTC
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
@@ -91809,3 +91798,14 @@ https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=te
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
+
+## 2026-09-01 15:13:39 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
+https://posit.cloud/api/v1/applications?app_id=<victim-id -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<victim-id -> HTTP 404
