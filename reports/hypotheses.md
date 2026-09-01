@@ -148,3 +148,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"invalid_test_user_123","password":"invalid_test_123"}' th
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remain
+
+## RANKED HYPOTHESES 2026-09-01 23:35:28 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorizat
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remain

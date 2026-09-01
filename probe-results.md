@@ -275,3 +275,9 @@ https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim
 https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+
+## 2026-09-01 23:35:37 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://hub.docker.com/v2/users/login -> HTTP 415
+https://hub.docker.com/v2/repositories/<owned-ns>/ -> HTTP 400

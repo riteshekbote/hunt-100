@@ -788,3 +788,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"invalid_test_user_123","password":"invalid_test_123"}' then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <token_from_auth.docker.io_with_JWT>" compare owned vs victim — read-only auth flow to get JSON 401 vs 200 differentiation
 [LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remains) Retain prior REJECTED list empty
 [RISK] 38 reason: docker registry 415 + token 200 JSON proves auth surface exists but manifest 404 for both and posit/autotrader HTML fallback (1823/3762) show no passive PII leak; exposure is high on auth/JWT but gated behind Bearer/session, no proven IDOR/SSRF chain yet
+## 2026-09-01 23:35:18 UTC (model muse-spark)
+class: AUTH
+asset: auth.docker.io
+confidence: 72
+reasoning: Passive probe 2026-09-01 returned 200 application/json for both owned-ns and victim-ns private repo scope without Authorization header. Expected 401/403 for private victim scope. Identical token issuance suggests scope not validated against ownership.
+evidence_needed: JSON token body differentiation with valid JWT vs anonymous for victim-ns private repo; decode token claims for access scope
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -H Accept:application/json; repeat with victim-ns; then GET with Authorization: Bearer <owned-JWT>; compare status 200 vs 401/403 and JSON error code vs token
+impact: Private image pull cross-tenant, supply-chain poisoning, secrets in layers, critical
+testability: AUTH_HELPED
+class: IDOR
+asset: registry-1.docker.io
+confidence: 70
+reasoning: Manifest endpoint returns HTTP 404 for both owned and victim private repo even with token from previous step, no JSON error differentiation. HTML vs JSON ambiguity remains. Need JWT-authenticated JSON differentiation.
+evidence_needed: Token-authenticated GET with owned vs victim manifest, JSON error body comparison 200 vs 401/403/404 with Docker-Distribution-Api-Version header
+verify_steps: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H Accept:application/vnd.docker.distribution.manifest.v2+json -H Authorization:Bearer <token-from-auth.docker.io>; repeat owned-ns; compare status and JSON errors
+impact: Cross-tenant private repository disclosure, image layers, env secrets, critical
+testability: AUTH_HELPED
+class: AUTH
+asset: hub.docker.com
+confidence: 65
+reasoning: POST https://hub.docker.com/v2/users/login returned 415 without Content-Type validation details. Probe lacked application/json header in earlier cycle then 400 on repository list. Suggests inconsistent auth handling.
+evidence_needed: Correct Content-Type POST with invalid vs valid credentials, JSON error differentiation
+verify_steps: POST https://hub.docker.com/v2/users/login -H Content-Type:application/json -d {"username":"invalid_test_123","password":"invalid"}; compare 401 JSON vs 415/400; then GET https://hub.docker.com/v2/repositories/<owned-ns>/ -H Authorization:Bearer <JWT>
+impact: Account takeover, token issuance bypass, high
+testability: PASSIVE
+[PARKED] Auth Bypass via Hub Login 415 Anomaly: why dropped - confidence 65 <70 threshold, no concrete JSON differentiation evidence, HTML fallback domain
+[FINAL] Ranked 1: Token Scope Validation Bypass at auth.docker.io (72) | 2: BOLA Manifest Pull at registry-1.docker.io (70)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <token>" compare owned vs victim status 200 vs 401/403 JSON
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remains) Retain prior REJECTED list empty
+[RISK] 68 reason: Docker registry exposes high-value private image surface via token+manifest APIs with observed 200 token issuance for victim private scope and 404 manifest uniformity, but without JWT-authenticated JSON differentiation BOLA not confirmed; posit.cloud and coxautomotive APIs return HTML fallback identical for owned/victim IDs hiding IDOR, overall chaining potential (token->manifest->layer secrets) keeps exposure medium-high
