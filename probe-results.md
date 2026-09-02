@@ -315,3 +315,10 @@ https://www.vinsolutions.com/api/leads?user_id=<victim-id -> HTTP 404
 
 ## 2026-09-02 18:59:32 UTC
 
+
+## 2026-09-02 21:50:16 UTC
+https://hub.docker.com/v2/users/login -> HTTP 415
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
