@@ -1,8 +1,8 @@
-## 2026-09-02 06:27:02 UTC (model muse-spark)
-[PARKED] docker BOLA token-scope confusion @ registry-1.docker.io: confidence 60 (<70) — auth.docker.io returns 200 JSON for both owned/victim scope without Authorization, registry returns 404 for both, no JWT-authenticated 200 vs 401/403 JSON differentiation yet
-[PARKED] posit IDOR content GUID @ posit.cloud: confidence 55 (<70) — __api__/v1/content/<victim-guid> returns 200 len=1823 text/html identical to owned, HTML SPA fallback vs JSON ambiguity, needs Accept:application/json + JWT 403 vs 200 proof
-[PARKED] coxautomotive IDOR vehicleId @ www.autotrader.com: confidence 50 (<70) — /api/vehicles/<victim-id> returns 200 len=3762 text/html identical to owned, no JSON differentiation, status-code only
-[FINAL] NONE — no surviving hypotheses >=70 after self-critique
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-auth.docker.io-with-victim-scope>" vs same with owned JWT; expect JSON 200 with tags for owned and 401/403 JSON {"errors":[{"code":"UNAUTHORIZED"}]} for victim if properly isolated — then repeat for posit: GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <posit-session-jwt>" expect owned 200 JSON, victim 403/404 JSON
+## 2026-09-02 11:45:07 UTC (model muse-spark)
+[PARKED] docker registry BOLA: confidence 68 <70 — token-gated 200 vs 401/403 JSON differentiation still not proven, both victim/owned return 404 without Authorization header [file_path:live_probe:registry-1.docker.io]
+[PARKED] posit content IDOR: confidence 62 <70 — owned vs victim GUID both return 200 len=1823 text/html SPA fallback, need Accept: application/json + Authorization to differentiate [file_path:live_probe:posit.cloud]
+[PARKED] coxautomotive vehicle IDOR: confidence 60 <70 — owned vs victim vehicleId both return 200 len=3762 text/html fallback, need JSON API with auth header differentiation [file_path:live_probe:www.autotrader.com]
+[FINAL] NONE — no hypothesis meets VALID >=70 with concrete differential evidence this cycle
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull-with-owned-user-session>" then repeat with owned-ns token; expect 200 json tags vs 401/403 json error to prove BOLA, 404 html is inconclusive
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambiguity remains) Retain prior REJECTED list empty
-[RISK] 38 — broad wildcard cloud/registry surface but all probes show HTML fallback 200 or 404 without JSON auth differentiation, no high-value gate bypass proven
+[RISK] 48 — Docker registry and Posit/Autotrader APIs return ambiguous HTML 200 / opaque 404 without auth-gated JSON differentiation; high business value but no differential PII or cloud-metadata extraction proven this cycle
