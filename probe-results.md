@@ -281,3 +281,15 @@ https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-
 https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
 https://hub.docker.com/v2/users/login -> HTTP 415
 https://hub.docker.com/v2/repositories/<owned-ns>/ -> HTTP 400
+
+## 2026-09-02 01:26:05 UTC
+https://hub.docker.com/v2/users/login -> HTTP 415
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/manifests/latest -> HTTP 404
+https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-vehicleId -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<victim-vehicleId -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
