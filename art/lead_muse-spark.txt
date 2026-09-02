@@ -1,29 +1,8 @@
-## 2026-09-02 15:20:21 UTC (model muse-spark)
-class: AUTH
-asset: registry-1.docker.io
-confidence: 75
-reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:<ns>/<repo>:pull returns 200 application/json for both owned and victim scopes anonymous (2026-09-01 18:30/23:35 probes). registry-1.docker.io/v2/<ns>/<repo>/manifests/latest returns 404 for both owned and victim anonymous, not 401/403, masking authz. Token gate not yet differentiated.
-evidence_needed: JWT-authenticated JSON differentiation: owned-repo JWT -> 200 vs victim-repo JWT -> 401/403 vs 200 leak
-verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> capture JWT Owned; GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list -H "Authorization: Bearer <JWT-Owned>" expect 200; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> JWT Victim; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <JWT-Victim>" compare 200 vs 401/403 JSON
-impact: Private image/manifest/layer theft, secrets in env/Dockerfile, supply-chain push, critical
-testability: AUTH_HELPED
-class: IDOR
-asset: posit.cloud
-confidence: 72
-reasoning: GET https://posit.cloud/api/v1/applications?app_id=<owned-id> and ?app_id=<victim-id> both 200 len=1823 text/html (2026-09-01 15:13). GET https://posit.cloud/__api__/v1/content/<victim-guid> and <owned-guid> both 200 len=1823 text/html. No JSON differentiation, indicates SPA fallback, authz not proven; versioned /__api__/v1 and api/v1 are high-value IDOR surface.
-evidence_needed: JWT/session-authenticated GET with Accept: application/json showing 200 JSON for owned vs 401/403 JSON for victim vs 200 leak with same schema
-verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Authorization: Bearer <owned-session-JWT>" -H "Accept: application/json" -> record 200 JSON; GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Authorization: Bearer <owned-session-JWT>" -H "Accept: application/json" -> compare 200 JSON leak vs 401/403/404 JSON; same for /api/v1/applications?app_id=
-impact: Cross-tenant Shiny/Connect app/content dump, PII/code theft, medium-high
-testability: AUTH_HELPED
-class: IDOR
-asset: www.autotrader.com
-confidence: 71
-reasoning: GET https://www.autotrader.com/api/vehicles/<owned-id> and /api/vehicles/<victim-vehicleId> both 200 len=3762 text/html (2026-09-02 01:26). GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<owned-id> vs <victim-id> both 200 len=3762 text/html. Same HTML fallback for owned/victim suggests auth gate not differentiated; param names vehicleId/user_id are classic IDOR.
-evidence_needed: Authenticated JSON GET showing owned returns 200 JSON vehicle object vs victim returns 403/404 JSON vs 200 leak; need Accept: application/json and session cookie/JWT
-verify_steps: GET https://www.autotrader.com/api/vehicles/<owned-id> -H "Cookie: <owned-session>" -H "Accept: application/json" -> 200 JSON; GET https://www.autotrader.com/api/vehicles/<victim-id> -H "Cookie: <owned-session>" -H "Accept: application/json" -> check 200 leak vs 401/403; repeat for https://www.vinsolutions.com/api/leads?user_id=<victim-id> vs <owned-id>
-impact: Cross-user vehicle/PII/lead disclosure across dealer tenants, high
-testability: AUTH_HELPED
-[FINAL] Docker Registry BOLA - private repo manifest/tags access via JWT scope confusion | Posit Cloud Content IDOR via GUID/app_id | Autotrader Vehicle/Lead IDOR via vehicleId/user_id
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull>" then GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list -H "Authorization: Bearer <JWT-from-owned-scope>" compare 200 JSON vs 401/403 JSON
-[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambiguity remains) Retain prior REJECTED list empty
-[RISK] 62 Docker registry token endpoint anon 200 + HTML fallback masking on posit.cloud/autotrader indicates large gated surface but no confirmed leak yet; exposure is authz logic behind JWT/session, not anon bypass
+## 2026-09-02 18:59:12 UTC (model muse-spark)
+[PARKED] docker registry BOLA via tags/list: dropped — evidence 2026-09-02 both owned-tags/list and victim-tags/list = HTTP 404 identical, no differential, confidence <70
+[PARKED] posit.cloud IDOR via __api__/v1/content/<guid>: dropped — evidence both victim-guid and owned-guid = 200 len 1823 text/html identical, missing Accept: application/json + Authorization differentiation, confidence <70
+[PARKED] coxautomotive IDOR via /rest/search/vehicle?vehicleId=: dropped — evidence owned vs victim = 200 len 3762 text/html identical, no auth-gated JSON contrast, confidence <70
+[FINAL] none surviving — re-rank empty
+[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" vs GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" — expect 200 JSON with content metadata for owned vs 403/404 JSON for victim; repeat same pair with -H "Accept: application/json" only (no auth) to confirm HTML fallback vs JSON ambiguity; log status + content-type + body sha256
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambiguity remains) Retain prior REJECTED list empty
+[RISK] 55 reason: docker registry + posit.cloud + autotrader surface expose versioned /api/* and GUID/ID param names but all live probes require auth-gated JSON contrast; no unauthenticated PII/money flow leak proven, cloud metadata SSRF surface not exposed in probed hosts, overall exposure moderate until token-gated differentiation succeeds
