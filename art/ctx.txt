@@ -91711,11 +91711,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-01 05:41:34 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Aut
-- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback vs JSON ambiguity remain
-
 ## RANKED HYPOTHESES 2026-09-01 10:28:41 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Aut
@@ -91750,10 +91745,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-auth.docker.io
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambigu
-=== LATEST ROBOT PROBE RESULTS ===
 
-## 2026-09-01 10:28:53 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+## RANKED HYPOTHESES 2026-09-02 11:45:18 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET-https://au
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambigu
+=== LATEST ROBOT PROBE RESULTS ===
 https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
 https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
@@ -91810,4 +91807,7 @@ https://www.autotrader.com/api/vehicles/<victim-vehicleId -> 200 len=3762 type=t
 https://www.vinsolutions.com/api/leads?user_id=<owned -> HTTP 404
 
 ## 2026-09-02 06:27:25 UTC
+
+
+## 2026-09-02 11:45:30 UTC
 
