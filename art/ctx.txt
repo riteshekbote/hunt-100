@@ -91302,6 +91302,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-09-02 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambiguity remains) Retain prior REJECTED list empty
 - 2026-09-03 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambiguity remains) Retain prior REJECTED list empty
 - 2026-09-03 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; current evidence is HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed)
+- 2026-09-03 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; current evidence is HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91714,11 +91715,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-02 01:25:50 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Accept: application/json" -H "Authorizat
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambigu
-
 ## RANKED HYPOTHESES 2026-09-02 06:27:14 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-auth.docker.io
@@ -91753,10 +91749,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET-https://au
 - LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; current evidence is HTML fallback 1823/3762 vs 404 i
+
+## RANKED HYPOTHESES 2026-09-03 09:13:03 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET https://au
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; current evidence is HTML fallback 1823
 === LATEST ROBOT PROBE RESULTS ===
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -> HTTP 404
-https://hub.docker.com/v2/users/login -> HTTP 415
-https://hub.docker.com/v2/repositories/<owned-ns>/ -> HTTP 400
 
 ## 2026-09-02 01:26:05 UTC
 https://hub.docker.com/v2/users/login -> HTTP 415
@@ -91813,4 +91811,7 @@ https://posit.cloud/.well-known/openapi.json -> 200 len=1823 type=text/html
 https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=text/html
 
 ## 2026-09-03 04:23:25 UTC
+
+
+## 2026-09-03 09:13:13 UTC
 

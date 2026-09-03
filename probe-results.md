@@ -341,3 +341,15 @@ https://posit.cloud/api/v1/applications?app_id=<owned-id -> 200 len=1823 type=te
 
 ## 2026-09-03 09:13:13 UTC
 
+
+## 2026-09-03 13:35:54 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list -> HTTP 404
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/v2/vehicles/<victim-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/leads?user_id=<victim-id -> HTTP 404
