@@ -1,49 +1,39 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-[DELTA] NO_DELTA — inventory stable (1823/3762 HTML fallback vs 404 pattern unchanged), no new hosts/params beyond last cycle
-
-[PRIO docker] hub.docker.com — score 7.4 (attack 9 business 9 tech 8 gate 4 cloud 6 fresh 5) calc 0.25*9+0.25*9+0.15*8+0.15*4+0.10*6+0.10*5=7.4 — registry BOLA surface, JWT-gated
-[PRIO coxautomotive] www.autotrader.com — score 6.95 (attack 8 business 9 tech 6 gate 6 cloud 4 fresh 5) calc 2.0+2.25+0.9+0.9+0.4+0.5=6.95 — vehicle API 3762 HTML fallback identical owned/victim
-[PRIO posit] posit.cloud — score 6.9 (attack 8 business 8 tech 7 gate 5 cloud 5 fresh 6) calc 2.0+2.0+1.05+0.75+0.5+0.6=6.9 — content GUID API 1823 HTML fallback identical
-[PRIO duocircle] duocircle.com — score 5.1 (attack 6 business 5 tech 5 gate 6 cloud 3 fresh 4) — no anomaly observed, passive 200 only
-[PRIO emsisoft] emsisoft.com — score 4.9 (attack 5 business 5 tech 4 gate 7 cloud 3 fresh 4) — static/blog only
-
-[HYP docker] Docker Registry BOLA via JWT scope reuse
+[NEW] NO_DELTA — inventory stable vs 2026-09-03 probes; live hosts repeat (auth.docker.io 200 json, registry-1.docker.io 404, posit.cloud 1823 html, autotrader 3762 html) no new host/param observed this cycle
+[PRIO docker] asset: registry-1.docker.io/v2/<ns>/<repo>/tags/list priority: 7.4 (attack_surface 9 business_value 9 tech_exposure 8 gate_ease 3 cloud_surface 7 freshness 5)
+[PRIO posit] asset: posit.cloud/__api__/v1/content/<guid> priority: 7.3 (attack_surface 8 business_value 8 tech_exposure 7 gate_ease 4 cloud_surface 6 freshness 5)
+[PRIO coxautomotive] asset: www.autotrader.com/api/vehicles/<id> priority: 7.1 (attack_surface 9 business_value 9 tech_exposure 6 gate_ease 5 cloud_surface 4 freshness 5)
+[HYP docker] Docker Registry BOLA via scoped JWT
 class: IDOR
 asset: registry-1.docker.io
 confidence: 75
-reasoning: auth.docker.io/token 200 JSON for both owned/victim scope, registry-1.docker.io/v2/*/tags/list 404 unauth but need JWT differentiation; hub.docker.com auth flow uses Bearer JWT that may be scoped to service=registry.docker.io
-evidence_needed: JWT-authenticated JSON 200 vs 401/403 differentiation for victim private repo
-verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT>" -> capture token; GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <token-owned>" expect 200 JSON; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT>" -> capture token-victim; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <token-victim>" compare 200 vs 401/404 JSON
-impact: cross-namespace private image/tags/manifest disclosure + pull, registry compromise — critical
+reasoning: auth.docker.io/token returns 200 json for both owned-ns and victim-ns with same scope; registry tags/list returns 404 for both without differentiated JWT. Previous probes lacked Authorization: Bearer <hub-JWT> + Accept: application/json differentiation.
+evidence_needed: JWT-authenticated JSON 200 vs 401/403 on victim repo with owned JWT-scoped token
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT-owned>" => expect 200 json w/ token; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <token>" => compare owned repo 200 json vs victim 401/403 json (401/403 = secure, 200 = BOLA)
+impact: cross-tenant private image pull, supply-chain code leak - Critical
 testability: AUTH_HELPED
-
-[HYP posit] Posit Cloud Content GUID IDOR
-class: IDOR
+[HYP posit] Posit Cloud Content BOLA via GUID
+class: BOLA
 asset: posit.cloud
 confidence: 72
-reasoning: GET posit.cloud/__api__/v1/content/<owned-guid> 200 len1823 text/html and GET posit.cloud/__api__/v1/content/<victim-guid> 200 len1823 text/html identical; GET posit.cloud/.well-known/openapi.json also 1823 html => unauth fallback masks authz; API likely requires Authorization: Bearer <JWT> + Accept: application/json
-evidence_needed: JWT-authenticated JSON 200 owned vs 401/403 victim differentiation
-verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" expect 200 JSON; GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" expect 401/403 vs 200; repeat with no auth expect 401
-impact: cross-workspace content/source dump, deployment config leak — high
+reasoning: /__api__/v1/content/<owned-guid> and /__api__/v1/content/<victim-guid> both return 200 len 1823 text/html anonymously identical, no JWT JSON branch tested. Asset exposes __api + GUID param, high IDOR surface.
+evidence_needed: JWT-authenticated JSON 200 vs 401/403 differentiation with Accept: application/json and owned JWT
+verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" => expect 200 json; then GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers => expect 401/403 json if secure else 200 json with victim PII = BOLA
+impact: cross-tenant PII/shiny app source dump - High
 testability: AUTH_HELPED
-
-[HYP coxautomotive] Autotrader Vehicle API IDOR
+[HYP coxautomotive] Autotrader Vehicle IDOR via vehicleId/user_id
 class: IDOR
 asset: www.autotrader.com
-confidence: 71
-reasoning: GET www.autotrader.com/api/vehicles/<owned-id> 200 len3762 text/html and GET /api/vehicles/<victim-id> 200 len3762 text/html identical; GET /rest/search/vehicle?vehicleId=<owned-id> 3762 html identical; indicates unauth returns SPA shell, real API likely versioned /api/v1 + JWT
-evidence_needed: JWT-authenticated JSON 200 owned vs 401/403 victim
-verify_steps: GET https://www.autotrader.com/api/vehicles/<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-session>" expect 200 JSON; GET https://www.autotrader.com/api/vehicles/<victim-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-session>" compare 200 vs 401/403; also probe GET https://www.autotrader.com/api/v2/vehicles/<victim-id> and GET https://www.vinsolutions.com/api/leads?user_id=<victim-id> -H "Accept: application/json" -H "Authorization: Bearer <token>"
-impact: cross-customer PII, vehicle/lead PII dump — high
+confidence: 70
+reasoning: /api/vehicles/<owned-id> and /api/vehicles/<victim-id> both return 200 len 3762 text/html anonymously identical; probe of /rest/search/vehicle?vehicleId=<id> same; vinsolutions /api/leads?user_id=<victim-id> returns 404 not JSON. Versioned /api/* with id params = IDOR prone, no authed JSON test.
+evidence_needed: auth-helped JSON differentiation 200 vs 401/403 or distinct JSON body lengths
+verify_steps: GET https://www.autotrader.com/api/vehicles/<victim-id> -H "Accept: application/json" -H "Cookie: <owned-session>" => compare 200 json owned vs victim; also GET https://www.vinsolutions.com/api/leads?user_id=<victim-id> -H "Accept: application/json" -H "Authorization: Bearer <owned>" => expect 403 json vs 404
+impact: vehicle/lead PII and dealer data exfil - High
 testability: AUTH_HELPED
-
-[PARKED] none: all hypotheses confidence 71-75 >=70, not on REJECTED, have concrete AUTH_HELPED verify_steps
-[FINAL] 1) Docker Registry BOLA 2) Posit Cloud Content GUID IDOR 3) Autotrader Vehicle API IDOR
-
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT-owned>" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-victim-scope>" vs GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list with same JWT; need raw JSON status to confirm 200 vs 401 BOLA
-
-[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; current HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
-
-[RISK] 68 — high business-value surfaces (docker registry private repos, posit cloud workspaces, autotrader dealer PII) gated behind JWT but unauth probes mask authz with 200 HTML/404 ambiguity; no JSON authz bypass confirmed yet, chained BOLA/IDOR risk remains if JWT scoping fails
+[PARKED] NONE — all 3 hypotheses >=70, class not on REJECTED list, verify_steps concrete
+[FINAL] 1. [HYP docker] Docker Registry BOLA 75 2. [HYP posit] Posit Cloud BOLA 72 3. [HYP coxautomotive] Autotrader IDOR 70
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT-owned>" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <token>" compare vs owned-ns same flow for JSON 200 vs 401/403
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
+[RISK] 48 — broad 105-target email-only VDP surface with wildcard docker plus admin/api Inventory, but anonymous probes show HTML fallback masquerading as 200 and consistent 404 for registry/lead APIs; no JWT JSON branch proven, so exposure moderate pending auth-helped differentiation
