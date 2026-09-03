@@ -19,3 +19,4 @@
 - 2026-09-02 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback vs 404 ambiguity remains) Retain prior REJECTED list empty
 - 2026-09-02 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambiguity remains) Retain prior REJECTED list empty
 - 2026-09-03 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambiguity remains) Retain prior REJECTED list empty
+- 2026-09-03 NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; current evidence is HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed)
