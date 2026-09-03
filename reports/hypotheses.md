@@ -183,3 +183,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull Authorization: Bearer <owned-JWT-from-hub.do
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation to confirm BOLA/IDOR; HTML fallback 1823/3762 vs 
+
+## RANKED HYPOTHESES 2026-09-03 00:14:41 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET https://au
+- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ambigui
