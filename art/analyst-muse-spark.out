@@ -1,18 +1,28 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
+STEP 1 — DELTA
 NO_DELTA
 
-[PRIO docker] asset: *.docker.io (registry-1.docker.io / auth.docker.io) score: 7.8 axes: attack=9 business=9 tech=8 gate=6 cloud=7 fresh=5 calc: 0.25*9+0.25*9+0.15*8+0.15*6+0.10*7+0.10*5=7.8
-[PRIO posit] asset: posit.cloud score: 6.35 axes: attack=7 business=8 tech=6 gate=4 cloud=6 fresh=5 calc: 0.25*7+0.25*8+0.15*6+0.15*4+0.10*6+0.10*5=6.35
-[PRIO coxautomotive] asset: www.autotrader.com score: 6.0 axes: attack=7 business=8 tech=5 gate=4 cloud=4 fresh=5 calc: 0.25*7+0.25*8+0.15*5+0.15*4+0.10*4+0.10*5=6.0
+STEP 2 — PRIORITIZE
+[PRIO docker] asset: registry-1.docker.io score: 7.95 breakdown: attack=9 business=9 tech=9 gate=6 cloud=7 fresh=5
+[PRIO docker] asset: hub.docker.com score: 7.35 breakdown: attack=8 business=8 tech=8 gate=7 cloud=6 fresh=5
+[PRIO docker] asset: auth.docker.io score: 7.15 breakdown: attack=8 business=8 tech=9 gate=5 cloud=6 fresh=5
 
+STEP 3 — HYPOTHESES
 [HYP NONE]
 
-[FINAL] NONE - no hypothesis meets VALID-only >=70 with concrete victim vs owned JSON differentiation
+STEP 4 — SELF-CRITIQUE
+[PARKED] BOLA registry-1.docker.io tags/list: confidence <70 without JWT-authenticated JSON 200 vs 401/403 differentiation; HTML fallback 1823/3762 vs 404 identical for owned/victim proves no BOLA yet
+[PARKED] IDOR posit.cloud __api__/v1/content: confidence <70 - 200 len=1823 text/html identical for owned-guid vs victim-guid, no JSON differentiation
+[PARKED] BOLA www.autotrader.com api/vehicles: confidence <70 - 200 len=3762 text/html identical for owned-id vs victim-id
+[FINAL] none - no hypothesis meets VALID confidence>=70 with concrete evidence; all require JWT-authenticated JSON differentiation
 
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull>" vs GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list with same JWT; compare JSON 200 vs 401/403 to confirm BOLA; fallback also probe GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" vs owned-guid
+STEP 5 — NEXT ACTION
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/json" -H "Authorization: Bearer <JWT-from-GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<private-repo>:pull with owned Docker Hub JWT>" vs GET https://registry-1.docker.io/v2/<owned-ns>/<private-repo>/tags/list with same headers; compare status JSON (200 authenticated vs 401/403 vs 404) to confirm BOLA
 
-[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed; current evidence is HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed)
+STEP 6 — LEARNING
+[LEARN] NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; current evidence is HTML fallback 1823/3762 vs 404 identical for owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
 
-[RISK] 58 reason: large union surface (105 programs, wildcard *.docker.com/*.docker.io, posit.cloud, autotrader/vinsolutions APIs) but all probes return HTML fallback or 404 without authenticated JSON differentiation; exposure is medium until JWT-gated BOLA/IDOR is proven
+STEP 7 — RISK SCORE
+[RISK] 42 — registry/hub auth gates hold (404 vs 404 without JWT, 415 on /v2/users/login), but posit.cloud and autotrader expose HTML fallback 1823/3762 identical for owned/victim indicating unauthenticated surface; no JWT-confirmed cross-tenant read yet, requires auth-helped JSON probe
