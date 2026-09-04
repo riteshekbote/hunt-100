@@ -1222,3 +1222,32 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Authorization: Bearer <JWT-from-POST-hub.docker.com/v2/users/login-owned>" ; compare against GET same path with random non-existent ns/repo and GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT-owned>" (read-only, top priority per 7 cycles of 404-vs-HTML ambiguity)
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
 [RISK] 68 — Docker registry + Posit Cloud + Autotrader/vinsolutions expose versioned /api/v1, JWT/OAuth, and id/vehicleId params behind auth gates; unauthenticated probes return identical HTML shells (1823/3761) masking true access control, leaving high-value BOLA/IDOR surface unvalidated without token-gated JSON tests
+## 2026-09-04 19:52:32 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull returns 200 application/json even when JWT is owned-account Bearer. registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list returns 404 identical for owned vs victim without JWT differentiation. No 401/403 vs 200 JSON split proven.
+evidence_needed: JWT-authenticated JSON differentiation 200 vs 401/403 on registry with Accept: application/vnd.docker.distribution.manifest.v2+json
+verify_steps: POST https://hub.docker.com/v2/users/login with owned creds -> extract JWT; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <JWT>" -> record status/body; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -> compare owned-private-repo 200 vs victim-private-repo 200/401/404
+impact: cross-namespace private image pull, supply chain compromise, secrets leakage — Critical BOLA
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET posit.cloud/__api__/v1/content/<owned-guid> 200 len 1823 text/html and GET posit.cloud/__api__/v1/content/<victim-guid> 200 len 1823 text/html identical lengths/types identical to __api__/login fallback. Suggests HTML SPA fallback not API JSON; needs JSON Accept + auth header test. No 401/403 JSON split observed.
+evidence_needed: JWT/session authenticated JSON 200 with content metadata for owned vs 401/403 or 404 JSON for victim, not HTML fallback
+verify_steps: GET https://posit.cloud/__api__/login -H "Accept: application/json" -> check auth endpoint; GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <session-JWT>" -> record JSON; GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers -> diff 200 vs 401/403; also GET https://posit.cloud/__api__/v1/applications/<id> same test
+impact: cross-tenant Shiny app/content disclosure, PII/code leak — High
+testability: AUTH_HELPED
+class: IDOR
+asset: www.autotrader.com
+confidence: 71
+reasoning: GET www.autotrader.com/api/vehicles/<owned-id> 200 len 3761 text/html and GET www.autotrader.com/api/vehicles/<victim-id> 200 len 3762 text/html identical HTML not JSON. Same for /rest/search/vehicle?vehicleId and .well-known/security.txt same fallback 3761. Suggests path not API or requires Accept: application/json / api key. No authenticated JSON differentiation.
+evidence_needed: JSON 200 with vehicle PII for owned vs 401/403/404 JSON for victim when Accept: application/json + optional session
+verify_steps: GET https://www.autotrader.com/api/vehicles/<owned-id> -H "Accept: application/json" -> record; GET https://www.autotrader.com/api/vehicles/<victim-id> -H "Accept: application/json" -> compare; GET https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id> -H "Accept: application/json" -> compare; GET https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-JWT>" -> check 404 vs 401/200
+impact: vehicle/PII and dealer lead cross-tenant read — High IDOR
+testability: AUTH_HELPED
+[FINAL] 1. Registry BOLA via auth.docker.io token scope for victim private repository 2. Posit Cloud content GUID IDOR via __api__/v1/content 3. Autotrader vehicle API IDOR via vehicleId
+[NEXT] PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"<owned-user>","password":"<owned-pass>"}' -> extract token; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <JWT>" -> capture JSON; GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -> compare status/body vs owned private repo same request
+[LEARN] NONE — no class proven dead/alive this cycle (need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML fallback 1823/3762 vs 404 identical owned/victim)
+[RISK] 38 — broad wildcard inventory with high-value docker registry + posit cloud + autotrader dealer APIs but live probes show only HTML SPA fallback 1823/3762 identical for owned/victim and registry 404 without auth differentiation; no JSON auth bypass proven yet, chaining potential remains high if JWT scope issue confirmed
