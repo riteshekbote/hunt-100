@@ -105,3 +105,5 @@
 - NEW NO_DELTA — inventory vs 2026-09-04 05:08 probes shows same HTML fallback 1823/3762 vs 404 pattern, no new hosts beyond wildcard *.docker.com/*.docker.io already in probe_allow
 
 ## 2026-09-04 13:48:26 UTC
+
+## 2026-09-04 17:37:24 UTC
