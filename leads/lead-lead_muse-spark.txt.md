@@ -1475,3 +1475,34 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token-from-prior>" -H "Accept: application/json" ; compare with owned-ns/owned-private baseline for 200 vs 401/403 JSON differentiation (read-only, owned account only)
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim) Retain prior REJECTED list empty
 [RISK] 48 — overall program exposure moderate: high-value registry/health/video APIs exposed (docker.io, 23andme, 24sessions) with versioned api/admin attack surface, but current probes show HTML fallback 1823/3762 vs 404 identical and token endpoint returns 200 for both owned/victim without registry differentiation, requiring authenticated JSON validation to confirm BOLA/IDOR; no confirmed PII or private image compromise yet
+## 2026-09-05 23:20:46 UTC (model muse-spark)
+class: AUTH
+asset: auth.docker.io
+confidence: 74
+reasoning: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private>:pull -u owned-user:owned-pass returns 200 application/json (21:46) vs expected 401/403 for cross-tenant; registry-1.docker.io/v2/<victim>/<private>/tags/list returns 404 not 401 suggests auth layer grants bearer
+evidence_needed: JWT payload decoded showing aud=registry.docker.io scope includes victim-ns victim-private for owned sub; Bearer reuse to registry returns 200 JSON tags vs 404/401
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -u owned:pass -H Accept:application/json decode JWT 2) GET same with victim-ns/victim-private same creds decode JWT compare scope 3) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H Authorization: Bearer <victim-scope-JWT> -H Accept:application/json
+impact: cross-tenant private image/registry layer pull, secrets and supply-chain compromise, Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: 23andme.com
+confidence: 62
+reasoning: GET https://api.23andme.com/api/v1/users/<owned-id> and /<victim-id> both 403 (21:46) identical without auth differentiation; no 200 vs 401 delta yet
+evidence_needed: JWT-authenticated GET with owned Bearer returns 200 JSON for owned-id vs 200 for victim-id proves BOLA
+verify_steps: GET https://api.23andme.com/api/v1/users/<owned-id> -H Authorization: Bearer <owned-jwt> -H Accept:application/json ; repeat victim-id compare status/body
+impact: PII + health genetics disclosure across accounts, Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 58
+reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> and <victim-guid> both 200 len 1823 text/html identical SPA fallback, no JSON differentiation
+evidence_needed: authenticated JSON request with session cookie/JWT returns 200 JSON for owned guid vs 200 for victim guid
+verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H Cookie: owned-session -H Accept:application/json ; repeat victim-guid compare JSON
+impact: cross-tenant Shiny content / code disclosure, High
+testability: AUTH_HELPED
+[PARKED] BOLA on api.23andme.com /api/v1/users/<id>: confidence 62 <70 and no 200 vs 403 differentiation
+[PARKED] IDOR on posit.cloud __api__/v1/content/<guid>: confidence 58 <70 and HTML fallback 1823 identical owned/victim, need JWT JSON differentiation
+[FINAL] 1) Registry token scope escalation to victim private repo (74) — surviving
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" -> capture token, base64 decode JWT payload, verify scope claim contains victim-ns/private-repo; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/manifests/latest -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" compare owned vs victim status
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
+[RISK] 62 reason: high-value docker registry auth surface shows anomalous 200 token issuance for cross-tenant private repo (gate_ease high, business_value critical) but not yet weaponized to 200 JSON on registry; posit/autotrader surfaces remain gated by SPA fallback masking; 23andme/24sessions new 403/404 signals indicate authz present but unproven; overall exposure moderate-high pending JWT differentiation

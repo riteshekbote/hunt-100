@@ -532,3 +532,10 @@ https://api.23andme.com/api/v1/users/<owned-id -> HTTP 403
 https://api.23andme.com/api/v1/users/<victim-id -> HTTP 403
 https://api.24sessions.com/api/v1/sessions/<owned-uuid -> HTTP 404
 https://api.24sessions.com/api/v1/sessions/<victim-uuid -> HTTP 404
+
+## 2026-09-05 23:21:10 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private>:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://api.23andme.com/api/v1/users/<owned-id -> HTTP 403
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
