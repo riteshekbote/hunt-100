@@ -91728,11 +91728,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-04 19:52:43 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"<owned-user>","password":"<owned-pass>"}' -> extract toke
-- LEARN: NONE — no class proven dead/alive this cycle (need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML fallback 1823/3762 vs 404 i
-
 ## RANKED HYPOTHESES 2026-09-04 22:23:27 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"<owned-user>","password":"<owned-pass>"}' -> extract toke
@@ -91767,21 +91762,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u <owned-user>:<owned-pass> -H Accept:appli
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ide
-=== LATEST ROBOT PROBE RESULTS ===
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
-https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
-https://www.autotrader.com/.well-known/security.txt -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
 
-## 2026-09-05 00:25:58 UTC
-https://hub.docker.com/v2/users/login -> HTTP 415
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<owned-private>:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
-https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
+## RANKED HYPOTHESES 2026-09-05 19:31:30 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: a
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 182
+=== LATEST ROBOT PROBE RESULTS ===
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/applications/<id -> 200 len=1823 type=text/html
@@ -91828,3 +91814,17 @@ https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/htm
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
 https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+
+## 2026-09-05 19:31:40 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<owned-private>:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<owned -> HTTP 404
+https://www.autotrader.com/api/vehicles/<id -> 200 len=3762 type=text/html
+https://www.autotrader.com/__api__/login -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
+https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html

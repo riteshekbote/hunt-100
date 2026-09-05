@@ -1445,3 +1445,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" -> extract token; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" - compare 200 JSON vs 401/404 vs owned control
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim) Retain prior REJECTED list empty
 [RISK] 68 Docker registry token scope + Posit Cloud content API and Cox Automotive dealer APIs expose high business_value PII/supply-chain but currently gated by HTML fallback requiring JWT differentiation
+## 2026-09-05 21:44:59 UTC (model muse-spark)
+class: BOLA
+asset: *.docker.io
+confidence: 75
+reasoning: auth.docker.io returns 200 application/json for both owned-ns/owned-private and victim-ns/private with owned creds via GET /token?service=registry.docker.io; registry-1.docker.io/v2/<victim>/tags/list returns 404 for both, indicating authz not differentiated at registry but token endpoint may issue valid JWT for victim repo.
+evidence_needed: JWT issued for victim private repo with owned Basic Auth returns 200 with token and allows pull vs 401/403 denial
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" -> inspect status and token; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" compare owned vs victim
+impact: Private image pull, supply-chain compromise, secret exfiltration | severity: High
+testability: AUTH_HELPED
+class: IDOR
+asset: api.23andme.com
+confidence: 72
+reasoning: Inventory exposes api.23andme.com, app.23andme.com, admin.23andme.com; pattern api.<domain> with high PII business_value=9; typical vulnerable param names id/user_id/email/guid present in similar health APIs; no probe yet differentiates owned vs victim object access.
+evidence_needed: JWT-authenticated GET to /api/v1/users/<victim-id> or /api/v1/profiles/<victim-guid> returns 200 JSON for victim vs 401/403/404 for owned-only, with differing body length vs HTML fallback 1823
+verify_steps: POST https://api.23andme.com/login or use owned session -> GET https://api.23andme.com/api/v1/users/<owned-id> -H "Authorization: Bearer <owned-jwt>" -H "Accept: application/json" baseline 200; then GET https://api.23andme.com/api/v1/users/<victim-id> with same token compare status/body
+impact: Cross-tenant PII dump (genetic health data) | severity: Critical
+testability: AUTH_HELPED
+class: BOLA
+asset: api.24sessions.com
+confidence: 70
+reasoning: Inventory exposes api.24sessions.com, admin.24sessions.com; 24sessions is video meeting platform with recordings/transcripts; api prefix + cloud_surface 5 suggests REST /api/v1/sessions|recordings|users with id param; gate_ease 6 indicates likely token-gated not public.
+evidence_needed: Owned JWT allows GET /api/v1/sessions/<victim-uuid>/recordings 200 JSON vs 403/404
+verify_steps: GET https://api.24sessions.com/api/v1/sessions/<owned-uuid> -H "Authorization: Bearer <owned-jwt>" -H "Accept: application/json" baseline; then GET https://api.24sessions.com/api/v1/sessions/<victim-uuid> with same token, also test POST /api/v1/sessions/<victim-uuid>/participants enumeration
+impact: Cross-tenant meeting recordings/PII disclosure | severity: High
+testability: AUTH_HELPED
+[PARKED] NONE: all 3 hypotheses confidence >=70 and concrete verify_steps, no REJECTED class overlap
+[FINAL] Ranked:
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token-from-prior>" -H "Accept: application/json" ; compare with owned-ns/owned-private baseline for 200 vs 401/403 JSON differentiation (read-only, owned account only)
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim) Retain prior REJECTED list empty
+[RISK] 48 — overall program exposure moderate: high-value registry/health/video APIs exposed (docker.io, 23andme, 24sessions) with versioned api/admin attack surface, but current probes show HTML fallback 1823/3762 vs 404 identical and token endpoint returns 200 for both owned/victim without registry differentiation, requiring authenticated JSON validation to confirm BOLA/IDOR; no confirmed PII or private image compromise yet

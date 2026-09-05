@@ -523,3 +523,12 @@ https://www.autotrader.com/__api__/login -> 200 len=3762 type=text/html
 https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
 https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
 https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
+
+## 2026-09-05 21:46:43 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://api.23andme.com/login -> HTTP 403
+https://api.23andme.com/api/v1/users/<owned-id -> HTTP 403
+https://api.23andme.com/api/v1/users/<victim-id -> HTTP 403
+https://api.24sessions.com/api/v1/sessions/<owned-uuid -> HTTP 404
+https://api.24sessions.com/api/v1/sessions/<victim-uuid -> HTTP 404
