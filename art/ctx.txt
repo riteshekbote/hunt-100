@@ -91311,6 +91311,7 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-09-04 NONE — no class proven dead/alive this cycle (need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim)
 - 2026-09-04 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
 - 2026-09-04 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
+- 2026-09-05 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404 identical owned/victim) Retain prior REJECTED list empty
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91723,11 +91724,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-03 22:34:55 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -H "Authorization: Bearer <hub-JWT-owned-fro
-- LEARN: NONE — no class proven dead/alive this cycle (token-gated 200 vs 401/403 JSON differentiation still needed for BOLA/IDOR; HTML fallback 1823/3762 vs 404 identic
-
 ## RANKED HYPOTHESES 2026-09-04 00:31:53 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull H:Authorization: Bearer <JWT-from-POST-hub.d
@@ -91762,21 +91758,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"<owned-user>","password":"<owned-pass>"}' -> extract toke
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ide
-=== LATEST ROBOT PROBE RESULTS ===
-## 2026-09-04 09:38:00 UTC
-https://hub.docker.com/v2/users/login -> HTTP 415
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
-https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
-https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
-https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
 
-## 2026-09-04 13:48:40 UTC
-https://hub.docker.com/v2/users/login -> HTTP 415
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+## RANKED HYPOTHESES 2026-09-05 00:25:47 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: POST https://hub.docker.com/v2/users/login -H "Content-Type: application/json" -d '{"username":"<owned-user>","password":"<owned-pass>"}' -> extract JWT;
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 182
+=== LATEST ROBOT PROBE RESULTS ===
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/login -> 200 len=1823 type=text/html
@@ -91823,3 +91810,17 @@ https://www.autotrader.com/.well-known/security.txt -> 200 len=3762 type=text/ht
 https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
 https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
+
+## 2026-09-05 00:25:58 UTC
+https://hub.docker.com/v2/users/login -> HTTP 415
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<owned-private>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/applications/<id -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/.well-known/security.txt -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
