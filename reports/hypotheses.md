@@ -278,3 +278,8 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<owned-private>:pull -u "<owned-user>:<owned-pass>" -H "Accept: a
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML fallback 1823/3762 vs
+
+## RANKED HYPOTHESES 2026-09-05 17:40:09 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u <owned-user>:<owned-pass> -H Accept:appli
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404 ide
