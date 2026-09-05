@@ -117,3 +117,6 @@
 ## 2026-09-05 04:58:14 UTC
 
 ## 2026-09-05 09:03:42 UTC
+
+## 2026-09-05 12:42:42 UTC
+- NEW NO_DELTA — inventory truncated at api.axon.com, no new hosts vs prior cycle; probe surface unchanged (registry-1.docker.io, posit.cloud, www.autotrader.com remain top)

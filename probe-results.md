@@ -485,3 +485,15 @@ https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/htm
 
 ## 2026-09-05 09:03:54 UTC
 
+
+## 2026-09-05 12:42:56 UTC
+https://hub.docker.com/v2/users/login -> HTTP 415
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
+https://www.autotrader.com/api/vehicles/<owned-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3762 type=text/html
+https://www.autotrader.com/.well-known/security.txt -> 200 len=3762 type=text/html
+https://www.autotrader.com/rest/search/vehicle?vehicleId=<victim-id -> 200 len=3762 type=text/html
