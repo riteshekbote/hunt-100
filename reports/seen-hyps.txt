@@ -1,2 +1,5 @@
 bdbcfa0e5ed1ac9f posit-connect-cloud-api-bola
 65292ea80d91ee69 coxautomotive-autotrader-bola-vehicleId
+487037c8cca2697f Docker Registry BOLA via token scope confusion
+82ec19aeaea6a65f Posit Cloud Content IDOR via GUID enumeration
+2c474d84312c7278 CoxAutomotive Vinsolutions Lead IDOR via user_id

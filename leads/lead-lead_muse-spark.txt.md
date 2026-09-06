@@ -1654,3 +1654,38 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <owned-JWT-from-auth.docker.io-victim-scope>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" and control GET https://registry-1.docker.io/v2/<owned-ns>/<owned-private>/tags/list with same header - record status JSON vs 401/403/404
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404/401 identical owned/victim) Retain prior REJECTED list empty
 [RISK] 62 reason: High-value auth-gated surfaces (docker registry JWT, posit.cloud content API, cox automotive dealer APIs) expose IDOR/BOLA primitives but still gated by undifferentiated 404/401 vs HTML 1823/3762 fallback without JSON auth proof; chain potential high if differentiated
+## 2026-09-06 21:45:17 UTC (model muse-spark)
+[NEW] NO_DELTA — inventory stable vs last cycle; CT recon volume same, live probes remain 404/HTML-fallback 1823/3762 vs 401/403 ambiguity, no new host class promoted
+[CHANGED] NO_DELTA — ranked hypotheses unchanged (docker registry BOLA, posit content IDOR, vinsolutions lead IDOR still pending JWT JSON differentiation)
+[HYP] Docker Registry BOLA via token scope confusion
+class: IDOR
+asset: hub.docker.com
+confidence: 73
+reasoning: auth.docker.io token endpoint returns 200 application/json for BOTH owned and victim repository scopes (2026-09-05/06 probes: scope=repository:<victim-ns>/<private>:pull ->200). Registry tags/list then returns inconsistent 404 vs 401 with same JWT, not deterministic 401/403. Indicates authZ not bound to scope.
+evidence_needed: JWT for owned user requesting victim scope followed by GET /v2/<victim-ns>/<private>/tags/list returning 200 JSON vs 401/403 with victim vs owned token; compare owned-repo 200 baseline
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -u owned-user:owned-pass -H Accept:application/json -> capture token; 2) GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list -H Authorization:Bearer <owned-token> -H Accept:application/json; 3) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -u owned-user:owned-pass -> capture victim-scope token; 4) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H Authorization:Bearer <victim-scope-token> -H Accept:application/json -> expect 401/403 if safe, 200 if BOLA
+impact: cross-tenant private image pull, source code/secret leak, supply-chain compromise; critical
+testability: AUTH_HELPED
+[HYP] Posit Cloud Content IDOR via GUID enumeration
+class: IDOR
+asset: posit.cloud
+confidence: 71
+reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> and <victim-guid> both return 200 len=1823 text/html identical fallback (2026-09-05 23:21, 2026-09-06 01:21/06:32/14:27/19:33). No JSON authZ differential tested. GUID appears as direct object reference, fallback suggests SPA routing masking real API AuthZ.
+evidence_needed: Authenticated JSON GET with owned session JWT/cookie to /__api__/v1/content/<victim-guid> returning 200 JSON with victim content vs 401/403/404; compare owned-GUID 200 baseline with same headers
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> -H Accept:application/json -H Cookie:<owned-session> -> expect 200 JSON; 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> -H Accept:application/json -H Cookie:<owned-session> -> expect 401/403 if safe, 200 if IDOR; 3) Repeat without Cookie/Accept:text/html to confirm fallback difference
+impact: cross-user content disclosure, PII/dashboard leak, tenant isolation bypass; high
+testability: AUTH_HELPED
+[HYP] CoxAutomotive Vinsolutions Lead IDOR via user_id
+class: IDOR
+asset: www.vinsolutions.com
+confidence: 70
+reasoning: GET https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id> and <victim-id> both return 404 identical (2026-09-06 01:21,14:27,19:33) without auth. Endpoint name user_id suggests direct object reference on lead PII. No authenticated probe with session yet; 404 may be unauthenticated routing, not AuthZ check.
+evidence_needed: Authenticated GET with owned Cox dealer session cookie/JWT to /api/v2/leads?user_id=<victim-id> returning 200 JSON with victim leads vs 401/403/404 with owned session cross-tenant
+verify_steps: 1) GET https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id> -H Accept:application/json -H Cookie:<owned-cox-session> -> expect 200; 2) GET https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> -H Accept:application/json -H Cookie:<owned-cox-session>; 3) GET https://www.autotrader.com/api/vehicles/<victim-id> pattern cross-check with same session
+impact: cross-dealership customer PII/lead dump, GDPR exposure, business logic abuse; high
+testability: AUTH_HELPED
+[PARKED] NONE — all 3 hypotheses meet confidence >=70, class not on REJECTED, verify_steps concrete
+[FINAL] 1) Docker Registry BOLA via token scope confusion (73) 2) Posit Cloud Content IDOR via GUID enumeration (71) 3) CoxAutomotive Vinsolutions Lead IDOR via user_id (70)
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <owned-JWT-from-auth.docker.io?victim-scope>" -H "Accept: application/json" ; baseline GET https://registry-1.docker.io/v2/<owned-ns>/<owned-private>/tags/list -H "Authorization: Bearer <owned-JWT-owned-scope>" -H "Accept: application/json" ; expect 200 owned vs 401/403 victim if safe, 200/200 if BOLA
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404/401 identical owned/victim remains ambiguous) Retain prior REJECTED list empty
+[RISK] 64 reason: docker registry private-repo leakage (high business) + posit tenant content + coxauto lead PII all unresolved behind auth gate; token endpoint permissive 200 for victim scopes increases likelihood, but no JSON AuthZ proof yet, overall exposure moderate-high
