@@ -335,3 +335,8 @@
 - [73] hub.docker.com: CoxAutomotive Vinsolutions Lead IDOR via user_id (from reports/hypotheses-lead_muse-spark.txt.txt)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <owned-JWT-from-auth.docker.io?victim-scope>" -H "Acce
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823/3762 vs 404/401
+
+## RANKED HYPOTHESES 2026-09-06 23:12:32 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <owned-JWT-from-auth.docker.io?service=registry.docker
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 182
