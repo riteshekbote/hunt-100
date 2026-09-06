@@ -539,3 +539,11 @@ https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-n
 https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
 https://api.23andme.com/api/v1/users/<owned-id -> HTTP 403
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+
+## 2026-09-06 01:21:59 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<owned-ns>/<owned-private>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/login -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
