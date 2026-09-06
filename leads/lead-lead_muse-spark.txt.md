@@ -1567,3 +1567,18 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" ; decode token; then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" vs anonymous and owned-private control
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 1823/3762 vs 404/401 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty
 [RISK] 68 reason: Docker registry token endpoint mints 200 JSON for victim private scope with owned creds plus registry tags/list 401<->404 instability indicates high-value BOLA surface still unrefuted; Posit/CoxAutomotive HTML fallback masking prevents confirmation but preserves exposure, overall program exposure remains High pending JWT JSON gated probes
+## 2026-09-06 11:23:27 UTC (model muse-spark)
+class: BOLA
+asset: auth.docker.io
+confidence: 78
+reasoning: owned creds GET /token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull ->200 JSON token (expected). Same owned creds with scope=repository:victim-ns/victim-private:pull also ->200 JSON token (2026-09-06 06:32:34). Token should be denied/401 for private repo not owned. Registry tag-list for victim returns 401 vs 404 flip indicating authz confusion.
+evidence_needed: JWT token body scope field contains victim repo with Actor=owned-user and registry-1.docker.io/v2/victim-ns/private-repo/tags/list with Bearer token returns 200 JSON vs 401/404
+verify_steps: 1) POST https://hub.docker.com/v2/users/login -d '{"username":"<owned>","password":"<owned>"}' extract token 2) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private>:pull -u owned:owned -H Accept:application/json decode JWT 3) GET https://registry-1.docker.io/v2/<victim-ns>/<private>/tags/list -H Authorization:Bearer <victim-scoped-token> compare vs owned-private list
+impact: cross-tenant private image pull, secrets/code leakage, supply-chain compromise - Critical
+testability: AUTH_HELPED
+[PARKED] posit IDOR via /__api__/v1/content/<guid>: dropped - confidence 45 <70, evidence shows 1823 html identical for owned vs victim GUID (2026-09-06 06:32), no JSON 200 vs 401 differentiation
+[PARKED] coxautomotive IDOR via vinsolutions leads?user_id: dropped - confidence 40 <70, both owned/victim return 404 identical, no BOLA signal
+[FINAL] 1) Docker Registry BOLA via auth.docker.io token scope (78)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -u "<owned-user>:<owned-pass>" -H "Accept: application/json" -> decode JWT, then GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" compare status/body vs GET https://registry-1.docker.io/v2/<owned-ns>/<owned-private>/tags/list with same token
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823/3762 vs 404/401 identical owned/victim remains ambiguous) Retain prior REJECTED list empty
+[RISK] 68 reason: Docker registry auth surface shows token issuance for victim private repo with owned creds (high business value), but registry enforcement still returns 401/404 inconsistently; posit/vinsolutions/autotrader all HTML fallback 1823/3762 identical, no confirmed IDOR yet, overall exposure moderate-high pending JWT proof
