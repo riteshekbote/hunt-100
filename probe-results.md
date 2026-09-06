@@ -560,3 +560,12 @@ https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/ht
 https://hub.docker.com/v2/users/login -> HTTP 415
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private>:pull -> 200 len=? type=application/json
 https://registry-1.docker.io/v2/<victim-ns>/<private>/tags/list -> HTTP 404
+
+## 2026-09-06 14:27:13 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
+https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+https://www.autotrader.com/__api__/login -> 200 len=3762 type=text/html
