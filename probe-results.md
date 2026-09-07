@@ -616,3 +616,11 @@ https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/ht
 https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
 https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
 https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
+
+## 2026-09-07 12:27:38 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
+https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596

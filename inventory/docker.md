@@ -152,3 +152,5 @@
 
 ## 2026-09-07 06:06:26 UTC
 - CHANGED registry-1.docker.io/v2/tags/list 404 -> 401 when JWT presented (2026-09-06 21:45:40) indicates auth gate now active vs prior 404 unauthed
+
+## 2026-09-07 12:27:24 UTC
