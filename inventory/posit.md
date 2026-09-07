@@ -139,3 +139,6 @@
 ## 2026-09-06 23:12:32 UTC
 
 ## 2026-09-07 01:02:54 UTC
+
+## 2026-09-07 06:06:26 UTC
+- CHANGED posit.cloud/__api__/v1/content/<guid> stable 200 len=1823 html for both owned/victim (no JSON differentiation yet)
