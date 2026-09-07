@@ -1849,3 +1849,13 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-owned-creds>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" -H "Accept: application/json"
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML fallback 1823/3760 vs 401/404/596 identical owned/victim, no IDOR/BOLA confirmed) Retain prior REJECTED list empty.
 [RISK] 68 — Docker registry/private image + Posit Cloud tenant content + Cox Vinsolutions dealer leads present high business-value BOLA/IDOR surface with valid auth gates (401/404/596) but no JSON differentiation yet proven; chained ATO->PII chain still plausible.
+## 2026-09-07 23:47:12 UTC (model muse-spark)
+[NEW] NO_DELTA
+[CHANGED] NO_DELTA — inventory stable (ct passive ~3.9k hosts), live probe surface unchanged (registry/auth 200/401, posit 1823 html, vinsolutions 596/404) vs 2026-09-07 21:32
+[PARKED] docker registry BOLA via victim scope JWT: confidence 62 dropped (<70) — victim-scope token 200 JSON but registry GET 401 identical owned/victim (no 200 vs 401 differentiation, need Authorization: Bearer victim-scope JWT + Accept: application/json)
+[PARKED] posit content IDOR via GUID: confidence 55 dropped — 200 len=1823 text/html identical owned/victim (HTML fallback, need JWT JSON 200 vs 401/403)
+[PARKED] coxautomotive vinsolutions Lead IDOR: confidence 58 dropped — api.vinsolutions.com 596 identical owned/victim, www 404 identical (no owned 200 vs victim 401/403 JSON, need auth)
+[FINAL] NONE — no hypothesis passes VALID >=70 this cycle
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-as-owned-user>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" ; compare owned-JWT-victim-scope vs victim-JWT-victim-scope vs no-auth — expect 200 JSON owned success vs 401/403 vs 404 to confirm BOLA
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML 1823/3760 vs 401/404/596 identical owned/victim)
+[RISK] 68 — Docker registry + Posit Cloud + Cox Vinsolutions present token-gated BOLA/IDOR surface with cloud metadata exposure, but current probes show 401/404/596 HTML fallback identical owned/victim, no differential JSON 200 proven; exploitability gated behind JWT with victim scope
