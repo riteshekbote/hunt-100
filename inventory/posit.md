@@ -155,3 +155,6 @@
 - CHANGED posit.cloud/__api__/v1/content/<guid> — consistent HTTP 200 len=1823 type=text/html for owned-guid vs victim-guid (HTML fallback identical, no JSON differentiation)
 
 ## 2026-09-08 06:34:55 UTC
+
+## 2026-09-08 11:47:39 UTC
+- NEW NO_DELTA — inventory stable (truncated 1510 entries, no new hosts beyond prior CT recon), probe surface unchanged (posit.cloud HTML 1823 fallback, docker 401, vinsolutions 404/596)
