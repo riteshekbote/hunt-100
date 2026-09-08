@@ -91742,16 +91742,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-07 01:02:54 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <JWT-from-auth.docker.io?service=registry.docker.io&sc
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 182
-
-## RANKED HYPOTHESES 2026-09-07 06:06:26 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <JWT-from-auth.docker.io?service=registry.docker.io&scop
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML fallback 182
-
 ## RANKED HYPOTHESES 2026-09-07 12:27:24 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -H "Authorization: Bearer <JWT-from-GET-https://auth.docker.io/token?service=reg
@@ -91781,25 +91771,17 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-base64>" th
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823 vs 401/404/596 
+
+## RANKED HYPOTHESES 2026-09-08 11:47:39 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-base64>" th
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823 vs 401/404/596 
+
+## RANKED HYPOTHESES 2026-09-08 15:22:37 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-base64>" th
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823 vs 401/404/596 
 === LATEST ROBOT PROBE RESULTS ===
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
-https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
-https://www.autotrader.com/api/vehicles/<victim-id -> 200 len=3761 type=text/html
-https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
-
-## 2026-09-07 06:06:38 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
-https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list -> HTTP 401
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
-https://www.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 404
-https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
-https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
-
-## 2026-09-07 12:27:38 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:<victim-ns>/<private-repo>:pull -> 200 len=? type=application/json
 https://registry-1.docker.io/v2/<victim-ns>/<private-repo>/tags/list -> HTTP 404
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
@@ -91836,6 +91818,24 @@ https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/htm
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 
 ## 2026-09-08 06:35:08 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
+https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
+
+## 2026-09-08 11:47:51 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
+https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
+
+## 2026-09-08 15:22:52 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
 https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
