@@ -160,3 +160,6 @@
 ## 2026-09-07 21:31:56 UTC
 
 ## 2026-09-07 23:47:43 UTC
+
+## 2026-09-08 01:29:15 UTC
+- CHANGED registry-1.docker.io/v2/<ns>/<repo>/tags/list — status oscillated 401 vs 404 between cycles with/without Bearer (401 owned/victim identical when unauthenticated, 404 when scoped token attempted)

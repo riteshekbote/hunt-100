@@ -153,3 +153,6 @@
 ## 2026-09-07 21:31:56 UTC
 
 ## 2026-09-07 23:47:43 UTC
+
+## 2026-09-08 01:29:15 UTC
+- CHANGED api.vinsolutions.com/api/v2/leads?user_id=<id> — now HTTP 596 vs www.vinsolutions.com 404 for same param (different host routing, identical owned/victim 596)
