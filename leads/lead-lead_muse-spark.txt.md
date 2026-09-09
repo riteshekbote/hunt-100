@@ -2226,3 +2226,34 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <attacker-JWT>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" and GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same JWT compare JSON 200 vs 401
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML fallback 1823 vs 596/401 identical owned/victim remains ambiguous) Retain prior REJECTED list empty
 [RISK] 62 reason: high-value BOLA surface remains (docker token 200 for victim repo, posit 1823 html identical, vinsolutions 596 identical) but no JWT JSON differential yet; chained cross-tenant PII/image pull impact high if confirmed
+## 2026-09-09 22:34:23 UTC (model muse-spark)
+class: IDOR
+asset: auth.docker.io
+confidence: 78
+reasoning: Attacker Basic auth GET /token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returned 200 application/json (expected 401/403 for non-owner). Registry GET /v2/victim-ns/victim-private/tags/list without Bearer returned 401. Suggests token service may issue bearer tokens for foreign private repos.
+evidence_needed: Decoded token contains repository:victim-ns/victim-private:pull with attacker sub, and Bearer token then yields 200 JSON on registry tags/manifests vs 401 for unauthed
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -> capture token 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" 3) control: same with owned-ns/owned-private
+impact: Private image pull, push poisoning, supply-chain takeover, cross-tenant code/data theft - Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 58
+reasoning: GET /api/v2/leads?user_id=<owned-id> -> 596 len? and same victim-id -> 596 identical. www subdomain -> 404. Status delta 596 vs 404 suggests versioned API gate but owned vs victim 596 identical implies no BOLA or gate blocks unauthed JSON.
+evidence_needed: JWT/session-authenticated JSON 200 vs 401/403 differentiation owned vs victim with response body JSON leak vs identical 596 error
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> -H "Authorization: Bearer <owned-jwt>" -H "Accept: application/json" 2) same with victim-id using owned jwt 3) compare JSON bodies/status
+impact: Cross-dealer lead PII dump (name/email/phone/VIN) - High
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 52
+reasoning: GET /__api__/v1/content/<owned-guid> -> 200 len1823 text/html and victim-guid -> 200 len1823 text/html identical lengths/types. No JSON. Indicates HTML fallback without auth, not true API response.
+evidence_needed: JWT-authenticated JSON 200 vs 401/403 differentiation owned vs victim with JSON body
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Authorization: Bearer <owned-jwt>" -H "Accept: application/json" 2) same victim-guid with owned jwt 3) diff status/body
+impact: Cross-workspace content theft, code/shiny app leak - High
+testability: AUTH_HELPED
+[PARKED] Vinsolutions IDOR on api.vinsolutions.com user_id: confidence 58 <70 and 596 identical owned/victim indicates no IDOR signal without JWT JSON
+[PARKED] Posit Cloud IDOR on __api__/v1/content GUID: confidence 52 <70 and HTML fallback 1823 identical without JWT JSON differentiation
+[FINAL] 1) Docker Registry BOLA via auth.docker.io scoped token issuance (78)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -> capture token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" (control: same with owned-ns/owned-private)
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence HTML 1823 identical vs 401/596/404 identical owned/victim) Retain prior REJECTED list empty
+[RISK] 68 Docker registry auth scope token issuance anomaly retains Critical supply-chain exposure while posit/vinsolutions remain HTML-fallback/596 ambiguous without auth-gated JSON
