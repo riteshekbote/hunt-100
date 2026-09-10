@@ -2324,3 +2324,33 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Basic>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" - compare vs GET without auth (expect 401) and vs owned-ns/owned-private with same Bearer (expect 200)
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON vs registry 401, api.vinsolutions.com 596 identical owned/victim vs 404 on www, posit.cloud 1823 html identical owned/victim) Retain prior REJECTED list empty
 [RISK] 68 reason: Docker private registry (high business impact) returns auth 200 for victim scope but registry 401 without Bearer — untested BOLA window; Cox vinsolutions leads API behind non-standard 596 masking authz; Posit Cloud API returns HTML fallback identical for owned/victim masking IDOR — overall exposure moderate-high pending authenticated JSON tests
+## 2026-09-10 14:26:51 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token returns 200 application/json for both owned-ns/owned-private and victim-ns/victim-private with attacker Basic; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 with Bearer from attacker-scoped victim token - indicates authz enforced at registry not token mint. Need JSON differentiation with correctly scoped victim JWT.
+evidence_needed: 200 JSON with tags vs 401/403 JSON error when using attacker-Bearer for victim-private; token payload aud/scope must show victim scope granted to attacker
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Authorization: Basic <attacker-b64> -> capture token; decode JWT check scope; 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Authorization: Bearer <token> Accept: application/json; 3) repeat for owned-ns/owned-private as control compare status/body
+impact: cross-tenant private image pull, code/secrets leak, supply chain - critical
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 70
+reasoning: api.vinsolutions.com/api/v2/leads?user_id=<owned-id> and ?user_id=<victim-id> both 596 identical; www.vinsolutions.com same path 404 vs 596 indicates routing/WAF split; 596 not standard 401/403 suggests custom error masking authz, need authenticated JSON session test
+evidence_needed: authenticated GET with owned session returning 200 JSON leads for owned-id vs 200 JSON for victim-id (BOLA) vs 401/403/404 if fixed; need body diff owned vs victim
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> with owned session cookie/JWT Accept: application/json; 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers; 3) GET https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers compare 404 vs 596
+impact: dealer CRM PII dump (customer leads, contact, VIN, finance) cross-dealership - high
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 70
+reasoning: posit.cloud/__api__/v1/content/<owned-guid> and /<victim-guid> both 200 len=1823 text/html identical - HTML fallback not JSON API indicates unauthenticated probe hits SPA shell; need JWT session with Accept: application/json to differentiate 200 JSON vs 401/403/404 JSON
+evidence_needed: JWT-authenticated GET with Accept: application/json returning 200 JSON content metadata for owned vs victim (IDOR) vs 401/403 JSON if fixed; HTML 1823 identical is not proof
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> Authorization: Bearer <positJWT> Accept: application/json; 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers; 3) compare status/json keys (guid, owner, access) vs HTML fallback
+impact: cross-workspace Shiny app/source code PII leak, private content exfil - high
+testability: AUTH_HELPED
+[PARKED] none: all hypotheses confidence >=70 and not on REJECTED list, verify_steps concrete passive-first with auth help
+[FINAL] 1) [HYP docker] Docker Registry BOLA 75 2) [HYP coxautomotive] vinsolutions BOLA 70 3) [HYP posit] posit.cloud IDOR 70
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Basic>" -H "Accept: application/json" ; prerequisite GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" to mint token, decode JWT, then compare owned vs victim tags/list JSON status
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON vs registry 401, api.vinsolutions.com 596 identical owned/victim vs 404 on www, posit.cloud 1823 html identical owned/victim) Retain prior REJECTED list empty
+[RISK] 68 — Docker registry token mint 200 but registry 401 shows authz at enforcement layer still blocks but JWT scope confusion window remains high-value; coxautomotive vinsolutions 596 custom error hides authz fate; posit.cloud HTML fallback masks API authz - all require authenticated JSON differentiation to confirm BOLA, overall exposure moderate-high due to private repos/PII
