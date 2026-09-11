@@ -3,3 +3,4 @@ bdbcfa0e5ed1ac9f posit-connect-cloud-api-bola
 487037c8cca2697f Docker Registry BOLA via token scope confusion
 82ec19aeaea6a65f Posit Cloud Content IDOR via GUID enumeration
 2c474d84312c7278 CoxAutomotive Vinsolutions Lead IDOR via user_id
+416638aef633bed6 Posit Cloud Content API IDOR — GUID enumeration returns identical 1823 html fallback
