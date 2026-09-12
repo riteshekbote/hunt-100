@@ -91759,11 +91759,6 @@ explorer.money
 none
 === AGGREGATED HYPOTHESES (tail) ===
 
-## RANKED HYPOTHESES 2026-09-10 20:52:25 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-token-service-registry.docker
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; HTML 1823 vs 596/404 identical own
-
 ## RANKED HYPOTHESES 2026-09-10 23:11:31 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Ba
@@ -91798,18 +91793,12 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Header Authorization: Basic <attacker-b64> -> 
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 20
-=== LATEST ROBOT PROBE RESULTS ===
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
-https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
-https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 
-## 2026-09-11 01:05:54 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
-https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
+## RANKED HYPOTHESES 2026-09-11 23:33:13 UTC
+- [74] registry-1.docker.io: Posit Cloud Content API IDOR — GUID enumeration returns identical 1823 html fallback (from reports/hypotheses-lead_muse-spark.txt.txt)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -> ca
+- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 20
+=== LATEST ROBOT PROBE RESULTS ===
 https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
 https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
 
@@ -91859,3 +91848,14 @@ https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/ht
 https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
 https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
 https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+
+## 2026-09-11 23:33:26 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list -> HTTP 401
+https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
+https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
+https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
