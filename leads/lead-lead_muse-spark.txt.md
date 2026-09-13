@@ -2990,3 +2990,37 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/manifests/latest -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Basic>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" ; GET https://registry-1.docker.io/v2/_catalog -H "Authorization: Bearer <same-token>"
 [LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML 1823 vs 401/404/596 identical owned/victim, auth.docker.io 200 JSON both scopes vs registry 401 both)
 [RISK] 38 — high-value cloud registry and dealer-lead APIs exposed with auth-gated 200 vs 401/596 ambiguity; no JSON-differentiated BOLA/IDOR proven yet, but token issuance and user_id routing remain top chain primitives
+## 2026-09-13 18:59:37 UTC (model muse-spark)
+[HYP] Docker Registry BOLA via auth.docker.io scope confusion -> registry private tags
+class: BOLA
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json for both owned and victim scope when authenticated as attacker (no 401 vs 200 differentiation). Registry tags/list then returns 401 for both without Bearer. Token minting appears not bound to repository ownership; registry authz not yet tested with minted victim-scope token.
+evidence_needed: JWT from auth.docker.io for victim scope as attacker -> registry GET tags/list with Authorization: Bearer <jwt> returns 200 JSON with tag list for owned and victim differently (200 vs 401/403 JSON, not HTML/gateway).
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "Accept: application/json" -> extract token. 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" vs same for owned-ns/owned-private -> compare status/body JSON.
+impact: Private image enumeration/pull, supply-chain poisoning, registry data breach — critical
+testability: AUTH_HELPED
+[HYP] Posit Cloud IDOR via __api__ content JSON vs HTML fallback
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> and /<victim-guid> both return 200 len=1823 type=text/html identical, indicating SPA fallback HTML without Accept: application/json. Endpoint is versioned /__api__/v1 suggesting JSON API requires Accept header and session JWT/cookie differentiation.
+evidence_needed: Authenticated JSON 200 with content metadata for owned vs 401/403/404 JSON for victim (or PII difference), not identical HTML fallback.
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <posit-jwt>" vs 2) same for victim-guid -> compare JSON status/body; 3) repeat unauthenticated without cookie to confirm 401 fallback.
+impact: Cross-tenant Shiny content / PII dump, source code disclosure — high
+testability: AUTH_HELPED
+[HYP] CoxAutomotive Vinsolutions Leads IDOR via user_id param on api gateway
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 70
+reasoning: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> and ?user_id=<victim-id> both return HTTP 596 identical, while https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> returns 404. 596 is non-standard gateway/WAF code, suggests missing Authorization/Accept JSON or api-key before app authz. Param user_id is classic IDOR on /api/v2 versioned leads API (PII).
+evidence_needed: Authenticated JSON 200 with victim leads vs 401/403/404 JSON for victim user_id when sent with valid session/JWT and Accept: application/json.
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <cox-jwt>" vs 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> with same headers -> compare JSON status/body; 3) try X-API-Key / Cookie variant if 596 persists.
+impact: Dealer lead PII (names/emails/phones/deals) cross-tenant dump — high
+testability: AUTH_HELPED
+[FINAL]
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "Accept: application/json" -> extract token -> GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json" ; compare to owned-ns/owned-private same flow; expect 200 JSON vs 401 JSON differentiation
+[LEARN] NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823 vs 596/401 identical owned/victim remains ambiguous, no class proven
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for BOLA/IDOR; HTML 1823 identical owned/victim
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim
+[RISK] 68 Docker registry private repo scope confusion highest exposure; Posit content API and Vinsolutions leads IDOR both versioned /api/v1|v2 with user_id/guid params remain untested with proper JSON Accept + Bearer, overall program exposure high due to private image and dealer PII

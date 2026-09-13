@@ -564,3 +564,10 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/manifests/latest -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-atta
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML 1823 vs 401/404/596 i
+
+## RANKED HYPOTHESES 2026-09-13 19:01:23 UTC
+- [75] registry-1.docker.io: Posit Cloud IDOR via __api__ content JSON vs HTML fallback (from reports/hypotheses-lead_muse-spark.txt.txt)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "A
+- LEARN: NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823 vs 596/401 identical owned/victim rem
+- LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for BOLA/IDOR; HTML 1823 identical owned/victim
+- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim
