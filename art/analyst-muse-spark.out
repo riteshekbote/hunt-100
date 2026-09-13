@@ -1,53 +1,18 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-STEP 1 — DELTA:
 NO_DELTA
 
-STEP 2 — PRIORITIZE:
-[PRIO docker] asset: registry-1.docker.io score: 7.85 breakdown: attack_surface=9 business_value=9 tech_exposure=9 gate_ease=6 cloud_surface=6 freshness=5
-[PRIO coxautomotive] asset: api.vinsolutions.com score: 7.15 breakdown: attack_surface=8 business_value=9 tech_exposure=7 gate_ease=5 cloud_surface=5 freshness=6
-[PRIO posit] asset: posit.cloud score: 6.95 breakdown: attack_surface=8 business_value=7 tech_exposure=7 gate_ease=7 cloud_surface=5 freshness=6
+[PRIO docker] asset: registry-1.docker.io/v2/victim-ns/victim-private/tags/list score: 7.8 axes: attack=9 business=9 tech=9 gate=4 cloud=7 fresh=6 calc: 0.25*9+0.25*9+0.15*9+0.15*4+0.10*7+0.10*6=7.75
+[PRIO posit] asset: posit.cloud/__api__/v1/content/<guid> score: 7.2 axes: attack=8 business=7 tech=8 gate=6 cloud=6 fresh=6 calc: 0.25*8+0.25*7+0.15*8+0.15*6+0.10*6+0.10*6=7.05
+[PRIO coxautomotive] asset: api.vinsolutions.com/api/v2/leads?user_id=<id> score: 7.4 axes: attack=8 business=9 tech=7 gate=5 cloud=5 fresh=6 calc: 0.25*8+0.25*9+0.15*7+0.15*5+0.10*5+0.10*6=7.15
 
-STEP 3 — HYPOTHESES:
-[HYP docker] Docker Registry BOLA via Bearer scope confusion
-class: IDOR
-asset: registry-1.docker.io
-confidence: 75
-reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json with attacker Basic both owned and victim scopes; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical owned/victim without token; token-gated differentiation missing
-evidence_needed: JWT Bearer for victim scope used on registry returns 200 JSON with tags/catalog vs 401/403 for owned token vs victim token; decode token aud/scope/access
-verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "Accept: application/json"; parse token; GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <victim-scope-token>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json"; compare vs owned-ns token and vs no-auth 401
-impact: cross-tenant private image manifest/layer pull, secrets in images, supply-chain compromise - critical
-testability: AUTH_HELPED
+[HYP NONE]
 
-[HYP coxautomotive] Vinsolutions Leads API BOLA via user_id
-class: IDOR
-asset: api.vinsolutions.com
-confidence: 72
-reasoning: api.vinsolutions.com/api/v2/leads?user_id=<owned-id> 596 and ?user_id=<victim-id> 596 identical; www.vinsolutions.com same path 404; indicates api gateway with 596 not authZ; versioned /api/v2 + user_id param classic BOLA
-evidence_needed: JWT/session authenticated GET with owned user vs victim user_id returning 200 JSON with PII differential vs 401/403/404
-verify_steps: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>"; GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>"; compare status/len/content-type; repeat on www subdomain
-impact: cross-dealer PII dump (leads, customers, VINs), Cox Automotive tenant isolation failure - high
-testability: AUTH_HELPED
+[FINAL] NONE
 
-[HYP posit] Posit Cloud Content IDOR via __api__/v1/content GUID
-class: IDOR
-asset: posit.cloud
-confidence: 70
-reasoning: posit.cloud/__api__/v1/content/<owned-guid> 200 len 1823 text/html and victim-guid identical 1823 text/html with no Accept header; HTML fallback masks JSON API; guid is opaque IDOR candidate
-evidence_needed: Accept: application/json with owned JWT returning 200 JSON for owned vs victim guid differential vs 401/403/404
-verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>"; GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <owned-jwt>"; compare status/type/len; also test without auth
-impact: cross-workspace content disclosure, RStudio/Connect source code and data exfiltration - high
-testability: AUTH_HELPED
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "Accept: application/json" -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" vs GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same attacker token; compare 200 JSON body vs 401 JSON {"errors":[{"code":"UNAUTHORIZED"}]} to confirm BOLA; repeat for posit.cloud/__api__/v1/content victim vs owned with Authorization: Bearer <posit_jwt>
 
-STEP 4 — SELF-CRITIQUE:
-[FINAL] 3 hypotheses retained ranked: 1) Docker Registry BOLA 75, 2) Vinsolutions Leads BOLA 72, 3) Posit Cloud Content IDOR 70 - all confidence >=70, class not on REJECTED list, concrete verify_steps provided
+[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON both scopes vs registry-1 401 both, posit.cloud 1823 html identical both vs 404, api.vinsolutions.com 596 identical both vs www 404 remains ambiguous HTML fallback vs gateway) Retain prior REJECTED list empty
 
-STEP 5 — NEXT ACTION:
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Basic>" -H "Accept: application/vnd.docker.distribution.manifest.v2+json"
-
-STEP 6 — LEARNING:
-[LEARN] NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON both scopes vs registry 401 both, posit 1823 html identical vs 404, api.vinsolutions 596 identical vs www 404 remains ambiguous HTML fallback vs gateway)
-
-STEP 7 — RISK SCORE:
-[RISK] 68 reason: high-value auth-gated surfaces (docker registry JWT, posit content GUID, vinsolutions leads user_id) remain ambiguous due to HTML/gateway fallback; no confirmed 200 JSON differentiation yet but scope allows critical cross-tenant BOLA if token enforcement is weak
+[RISK] 68 reason: high business-value PII/money surface (vinsolutions leads user_id, docker private repos, posit content GUIDs) with versioned APIs and admin/dev/staging sprawl, but current live probes show 1823 html fallback and 596 gateway identical owned/victim vs 401/404 - no confirmed IDOR/BOLA, exposure is gated behind JWT unknown - risk is latent not exploited
