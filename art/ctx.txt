@@ -91359,6 +91359,9 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-09-13 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON both scopes vs registry 401 both, posit 1823 html identical vs 404, api.vinsolutions 596 identical vs www 404 remains ambiguous HTML fallback vs gateway)
 - 2026-09-13 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 200 JSON both scopes vs registry-1 401 both, posit.cloud 1823 html identical both vs 404, api.vinsolutions.com 596 identical both vs www 404 remains ambiguous HTML fallback vs gateway) Retain prior REJECTED list empty
 - 2026-09-13 NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML 1823 vs 401/404/596 identical owned/victim, auth.docker.io 200 JSON both scopes vs registry 401 both)
+- 2026-09-13 NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823 vs 596/401 identical owned/victim remains ambiguous, no class proven
+- 2026-09-13 NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for BOLA/IDOR; HTML 1823 identical owned/victim
+- 2026-09-13 NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91770,13 +91773,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 20
-
-## RANKED HYPOTHESES 2026-09-12 17:09:49 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 20
-
-## RANKED HYPOTHESES 2026-09-12 19:19:56 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-attacker-Ba
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current evidence auth.docker.io 20
@@ -91810,15 +91806,14 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/manifests/latest -H "Authorization: Bearer <token-from-auth.docker.io-victim-scope-with-atta
 - LEARN: NONE — no class proven dead/alive this cycle (still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA/IDOR; current HTML 1823 vs 401/404/596 i
-=== LATEST ROBOT PROBE RESULTS ===
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
-https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 
-## 2026-09-12 19:20:09 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+## RANKED HYPOTHESES 2026-09-13 19:01:23 UTC
+- [75] registry-1.docker.io: Posit Cloud IDOR via __api__ content JSON vs HTML fallback (from reports/hypotheses-lead_muse-spark.txt.txt)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "A
+- LEARN: NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823 vs 596/401 identical owned/victim rem
+- LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for BOLA/IDOR; HTML 1823 identical owned/victim
+- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim
+=== LATEST ROBOT PROBE RESULTS ===
 https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/html
 https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
 https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
@@ -91871,3 +91866,11 @@ https://posit.cloud/__api__/v1/content/<victim-guid -> 200 len=1823 type=text/ht
 https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
 https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
 https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+
+## 2026-09-13 19:01:38 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
+https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
+https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596

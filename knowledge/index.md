@@ -80,3 +80,6 @@
 - 2026-09-13 NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; HTML fallback 1823 vs 596/401 identical owned/victim remains ambiguous, no class proven
 - 2026-09-13 NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for BOLA/IDOR; HTML 1823 identical owned/victim
 - 2026-09-13 NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim
+- 2026-09-13 NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not yet proof
+- 2026-09-13 NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+- 2026-09-13 NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
