@@ -3056,3 +3056,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 [RISK] 68 — High cloud SaaS tenant isolation surface (Posit, Docker registry, Vinsolutions CRM) with unauthenticated HTML/gateway identical responses masking true authz; token endpoint 200 indicates scope issuance works, BOLA/IDOR not yet disproven, chainable to PII/source exfiltration
+## 2026-09-13 23:32:03 UTC (model muse-spark)
+[PARKED] docker registry-1 BOLA — victim-private tags/list vs owned-private: confidence 35 <70, evidence is 401 identical owned/victim + 200 json token without registry Bearer differentiation, no 200 vs 401/403 JSON delta yet
+[PARKED] posit.cloud IDOR __api__ content guid: confidence 30 <70, evidence is 200 len=1823 text/html identical owned/victim (HTML fallback), no Accept:application/json + JWT differentiation, no IDOR proof
+[PARKED] coxautomotive api.vinsolutions.com IDOR leads?user_id: confidence 25 <70, evidence is 596 identical owned/victim vs 404 on www host (gateway vs app), no authenticated JSON 200 vs 403 delta, no IDOR proof
+[FINAL] NONE — no hypothesis survives VALID gates at >=70
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "Accept: application/json" -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <victim-scoped-token>" -H "Accept: application/json" and compare to GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same token + same headers; record status, content-type, body length hash, and JSON error code for 200 vs 401/403 differentiation
+[LEARN] NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+[RISK] 62 — docker registry private repo BOLA chain + posit.cloud content IDOR + coxautomotive vinsolutions leads PII surface remain unauthenticated-undifferentiated; identical HTML/gateway responses prevent confirmation, but token endpoint 200 json suggests gate may be bypassable, overall exposure moderate-high pending Bearer differentiation

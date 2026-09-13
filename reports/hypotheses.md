@@ -578,3 +578,10 @@
 - LEARN: NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not yet proof
 - LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 - LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+
+## RANKED HYPOTHESES 2026-09-13 23:33:27 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" -H "A
+- LEARN: NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+- LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
