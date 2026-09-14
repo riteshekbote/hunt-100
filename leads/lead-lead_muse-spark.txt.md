@@ -3102,3 +3102,34 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 [RISK] 38 reason: docker registry token issuance anomaly 200 for victim private scope with attacker creds is high-value signal but not yet confirmed exploit; posit/vinsolutions remain HTML/gateway ambiguous identical responses; overall program surface (docker hub/scout/posit cloud/leads API) high business value but current evidence shows no confirmed BOLA/IDOR 200 vs 401/403 JSON diff
+## 2026-09-14 07:06:18 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token 200 application/json for victim-ns/victim-private:pull with attacker Basic; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical owned/victim. Token issuance not rejected, registry gate ambiguous. JWT bearer confusion possible.
+evidence_needed: JWT 200 JSON vs 401/403 differentiation; decode token aud/scope, succeed tags/list JSON with attacker token scoped to victim repo
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -H "Authorization: Basic <attacker-b64>" 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -H "Authorization: Bearer <token>" -H "Accept: application/json" compare owned vs victim len/status/body
+impact: Cross-tenant private image enumeration/pull, supply-chain compromise - Critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> 200 len=1823 text/html; GET https://posit.cloud/__api__/v1/content/<victim-guid> 200 len=1823 text/html identical. HTML fallback masks JSON authorization. GUID param + __api__ versioned API suggests BOLA.
+evidence_needed: Accept: application/json + JWT Bearer differentiation 200 JSON owned vs 401/403/404 victim, content-type JSON vs HTML
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> -H "Accept: application/json" -H "Authorization: Bearer <attacker-jwt>" 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers; compare status/len/JSON fields (id/owner)
+impact: Cross-tenant source code/content dump, PII - High
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 70
+reasoning: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> 596; GET ?user_id=<victim-id> 596 identical. param name user_id + v2 API + www.vinsolutions.com 404 vs api 596 suggests gateway vs app logic difference, classic IDOR pattern.
+evidence_needed: AUTH_HELPED JSON 200 vs 401/403 diferenciação; with valid session/JWT, victim user_id returns 200 JSON with PII vs 403
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> -H "Accept: application/json" -H "Authorization: Bearer <valid-jwt>" 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers; compare 200 JSON vs 401/403, also test api.www vs api host
+impact: Dealer PII/leads across tenants - High
+testability: AUTH_HELPED
+[FINAL] 1: Docker Registry BOLA via token scope confusion on private repo tags/list | 2: Posit Cloud Content IDOR via __api__/v1/content GUID with Accept header bypass | 3: Vinsolutions Leads IDOR via user_id on api.vinsolutions.com/v2
+[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <attacker-jwt-for-owned-account>" and same for <owned-guid>; compare status, content-type, body JSON vs HTML 1823 fallback
+[LEARN] NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
+[RISK] 62 reason: 3 high-value state-changing APIs with user_id/GUID/token-scope params exposed, gate_ease moderate (200 token + 200 HTML fallback mask auth), cloud_surface high (registry/cloud/vinsolutions), but no proven 200 vs 401/403 JSON differentiation yet so exploit unconfirmed
