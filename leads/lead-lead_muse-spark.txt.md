@@ -3263,3 +3263,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 [RISK] 68 Docker registry token issues unauthenticated 401 but private scope issuance 200, Posit Cloud SPA fallback hides IDOR, VinSolutions gateway 596 obscures IDOR; all need authenticated JSON proof before critical
+## 2026-09-15 06:10:03 UTC (model muse-spark)
+[PARKED] registry-1.docker.io BOLA via token scope: auth.docker.io 200 JSON for victim-private:pull but registry-1 401 identical owned/victim proves no BOLA with anonymous/Basic, needs JWT Bearer differentiation — confidence 45 <70
+[PARKED] posit.cloud IDOR __api__/v1/content GUID: 200 len=1823 text/html identical owned/victim with default Accept proves HTML fallback, not JSON API differentiation — needs Accept: application/json + attacker JWT — confidence 40 <70
+[PARKED] api.vinsolutions.com BOLA /api/v2/leads?user_id=: HTTP 596 identical owned/victim, www 404 divergent indicates gateway vs app routing, not access control proof — needs authenticated JSON 200 vs 401/403 — confidence 35 <70
+[FINAL] (none) — 0 hypotheses survive VALID threshold >=70
+[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <attacker-jwt-for-owned-account>" and same with <owned-guid> compare status/body JSON; then GET https://posit.cloud/__api__/v1/content/<victim-guid> without Authorization to confirm 401/403 vs 200 differentiation
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+[RISK] 42 — high-value surfaces (Docker registry private repos, Posit Cloud content GUIDs, Cox vinsolutions PII) present but all probes show identical 401/596/1823 owned vs victim with unauthenticated HTML fallback; no JWT-authenticated JSON differentiation yet, so exposure is unconfirmed, not proven low

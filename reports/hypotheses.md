@@ -627,3 +627,10 @@
 - LEARN: NONE @ registry-1.docker.io: still need JWT-authenticated JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
 - LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 - LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+
+## RANKED HYPOTHESES 2026-09-15 06:10:15 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <attacker-jwt-for-owned-account>" and sa
+- LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
+- LEARN: NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
