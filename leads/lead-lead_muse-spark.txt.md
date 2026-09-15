@@ -3345,3 +3345,36 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
 [RISK] 68 reason: high-value registry + dealer CRM + Connect Cloud surfaces exposed via versioned APIs ( /v2/ , /__api__/v1/ ) with IDOR/BOLA-shaped params (user_id, GUID), but current evidence is unauth HTML/gateway fallback identical owned/victim — gate is JWT-dependent, not yet proven bypass, so exposure not yet confirmable without auth-helped JSON probes
+## 2026-09-15 22:14:08 UTC (model muse-spark)
+class: BOLA
+asset: registry-1.docker.io
+confidence: 78
+reasoning: auth.docker.io/token returns 200 application/json for victim-ns scope with attacker creds, but registry-1.docker.io/v2/victim-ns/victim-private/tags/list and /manifests/latest both return 401 identical for owned vs victim without Bearer; indicates auth gate exists but Bearer differentiation not yet tested
+evidence_needed: JWT Bearer 200 vs 401/403 JSON differentiation on same endpoint with attacker JWT for victim scope vs owned scope
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull H:Authorization: Basic <attacker-b64> -> capture JWT; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Authorization: Bearer <jwt> H:Accept: application/json and same for owned ns compare status/body
+impact: Private image pull/manifest disclosure, supply chain secret leak, registry PII; critical
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 75
+reasoning: GET /api/v2/leads?user_id=<owned> and ?user_id=<victim> both 596 gateway identical; www.vinsolutions.com same path 404 suggests api subdomain is gated/WAF; param name user_id is classic IDOR sink, status 596 masks auth differentiation, need authenticated JSON
+evidence_needed: Authenticated JSON 200 vs 401/403 differentiation with valid session/JWT for owned vs victim user_id
+verify_steps: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> H:Accept: application/json H:Authorization: Bearer <attacker-session> vs GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers; also test without auth vs with auth and Accept: application/json
+impact: Cross-dealer PII dump (leads, customers, VINs), Cox Automotive tenant isolation bypass; high
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 74
+reasoning: GET /__api__/v1/content/<owned-guid> and <victim-guid> both 200 len=1823 type=text/html identical without auth; endpoint is documented Connect API expecting Accept: application/json + JWT; HTML fallback hides JSON 401/403 vs 200, no IDOR proof yet
+evidence_needed: Accept: application/json + attacker JWT 200 JSON vs 401/403/404 JSON differentiation owned vs victim GUID
+verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> H:Accept: application/json H:Authorization: Bearer <attacker-jwt> vs GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers; also test unauthenticated with Accept: application/json
+impact: Cross-workspace content disclosure, Rmd/shiny source exfiltration, tenant isolation bypass; high
+testability: AUTH_HELPED
+[FINAL] 1. [HYP docker] Registry BOLA via JWT scope confusion on private repo (78)
+[FINAL] 2. [HYP coxautomotive] IDOR/BOLA on leads API via user_id param (75)
+[FINAL] 3. [HYP posit] IDOR on Connect Cloud content API via GUID (74)
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H: Authorization: Bearer <jwt-from-auth.docker.io-token-for-victim-ns-pull-with-attacker-creds> H: Accept: application/json and same for owned-ns; compare 200 JSON vs 401/403 JSON
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 68 gated high-value surface with unauthenticated HTML fallback and gateway masking hides potential BOLA/IDOR; no JSON differentiation yet but business value of registry/CRM/content is critical if gate fails
