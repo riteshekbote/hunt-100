@@ -3273,3 +3273,11 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 [RISK] 42 — high-value surfaces (Docker registry private repos, Posit Cloud content GUIDs, Cox vinsolutions PII) present but all probes show identical 401/596/1823 owned vs victim with unauthenticated HTML fallback; no JWT-authenticated JSON differentiation yet, so exposure is unconfirmed, not proven low
+## 2026-09-15 11:41:15 UTC (model muse-spark)
+[PARKED] NONE — no candidate met VALID-ONLY >=70 gate; prior BOLA/IDOR hypotheses require token-gated JSON 200 vs 401/403 proof not yet collected
+[FINAL] — 0 surviving hypotheses (ranked empty)
+[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> H: Accept: application/json H: Authorization: Bearer <attacker-jwt-for-owned-account-sha256> ; AND GET https://posit.cloud/__api__/v1/content/<owned-guid> same headers; expect 200 JSON with id+owner fields for owned vs 401/403/404 JSON for victim if access controlled, vs 200 JSON leak if IDOR/BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+[RISK] 38 — broad API surface with versioned /api/v2 + user_id param and SPA fallback on posit.cloud, but auth gates currently indistinguishable (1823 HTML / 596 / 401 identical) without JWT JSON proof; no PII/key exfiltration demonstrated

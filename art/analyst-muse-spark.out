@@ -1,23 +1,28 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-[DELTA] NO_DELTA
+STEP 1 — DELTA
+NO_DELTA — inventory unchanged vs 2026-09-15; LIVE probes repeat same HTML fallback 1823 and gateway 596 identical owned/victim, no new hosts beyond *.docker.io/posit.cloud/api.vinsolutions.com already tracked
 
-[PRIO docker] hub.docker.com — priority 7.40 (attack:9 business:8 tech:8 gate:5 cloud:6 fresh:6) calc:0.25*9+0.25*8+0.15*8+0.15*5+0.10*6+0.10*6=7.40
-[PRIO docker] registry-1.docker.io — priority 7.35 (attack:9 business:9 tech:8 gate:3 cloud:7 fresh:5) calc:0.25*9+0.25*9+0.15*8+0.15*3+0.10*7+0.10*5=7.35
-[PRIO posit] posit.cloud — priority 6.85 (attack:8 business:8 tech:7 gate:4 cloud:6 fresh:6) calc:0.25*8+0.25*8+0.15*7+0.15*4+0.10*6+0.10*6=6.85
+STEP 2 — PRIORITIZE
+[PRIO coxautomotive] asset: api.vinsolutions.com score: 7.7 axes: attack:9 business:8 tech:8 gate:6 cloud:5 fresh:8 calc:0.25*9+0.25*8+0.15*8+0.15*6+0.10*5+0.10*8=7.65
+[PRIO docker] asset: hub.docker.com score: 7.6 axes: attack:9 business:8 tech:9 gate:5 cloud:7 fresh:6 calc:2.25+2.0+1.35+0.75+0.70+0.60=7.65
+[PRIO posit] asset: posit.cloud score: 7.1 axes: attack:8 business:7 tech:7 gate:7 cloud:6 fresh:7 calc:2.0+1.75+1.05+1.05+0.60+0.70=7.15
 
-[HYP NONE]
+STEP 3 — HYPOTHESES
+[HYP NONE] — no hypothesis reaches VALID confidence >=70 with concrete evidence on this cycle (all top assets require JWT+Accept:application/json differentiation; current evidence is HTML 1823 identical and gateway 596 identical owned/victim)
 
-[PARKED] registry-1.docker.io BOLA via token scope: auth.docker.io 200 JSON for victim-private:pull but registry-1 401 identical owned/victim proves no BOLA with anonymous/Basic, needs JWT Bearer differentiation — confidence 45 <70
-[PARKED] posit.cloud IDOR __api__/v1/content GUID: 200 len=1823 text/html identical owned/victim with default Accept proves HTML fallback, not JSON API differentiation — needs Accept: application/json + attacker JWT — confidence 40 <70
-[PARKED] api.vinsolutions.com BOLA /api/v2/leads?user_id=: HTTP 596 identical owned/victim, www 404 divergent indicates gateway vs app routing, not access control proof — needs authenticated JSON 200 vs 401/403 — confidence 35 <70
-[FINAL] (none) — 0 hypotheses survive VALID threshold >=70
+STEP 4 — SELF-CRITIQUE
+[PARKED] NONE — no candidate met VALID-ONLY >=70 gate; prior BOLA/IDOR hypotheses require token-gated JSON 200 vs 401/403 proof not yet collected
+[FINAL] — 0 surviving hypotheses (ranked empty)
 
-[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> -H "Accept: application/json" -H "Authorization: Bearer <attacker-jwt-for-owned-account>" and same with <owned-guid> compare status/body JSON; then GET https://posit.cloud/__api__/v1/content/<victim-guid> without Authorization to confirm 401/403 vs 200 differentiation
+STEP 5 — NEXT ACTION
+[NEXT] PROBE: GET https://posit.cloud/__api__/v1/content/<victim-guid> H: Accept: application/json H: Authorization: Bearer <attacker-jwt-for-owned-account-sha256> ; AND GET https://posit.cloud/__api__/v1/content/<owned-guid> same headers; expect 200 JSON with id+owner fields for owned vs 401/403/404 JSON for victim if access controlled, vs 200 JSON leak if IDOR/BOLA
 
-[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
+STEP 6 — LEARNING
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 
-[RISK] 42 — high-value surfaces (Docker registry private repos, Posit Cloud content GUIDs, Cox vinsolutions PII) present but all probes show identical 401/596/1823 owned vs victim with unauthenticated HTML fallback; no JWT-authenticated JSON differentiation yet, so exposure is unconfirmed, not proven low
+STEP 7 — RISK SCORE
+[RISK] 38 — broad API surface with versioned /api/v2 + user_id param and SPA fallback on posit.cloud, but auth gates currently indistinguishable (1823 HTML / 596 / 401 identical) without JWT JSON proof; no PII/key exfiltration demonstrated
