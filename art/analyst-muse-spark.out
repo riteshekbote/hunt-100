@@ -1,28 +1,20 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-STEP 1 — DELTA:
-NO_DELTA — inventory unchanged vs 2026-09-15/16; probe statuses identical (auth.docker.io 200 json vs registry 401, posit.cloud 1823 html identical owned/victim, api.vinsolutions.com 596 identical owned/victim vs www 404). No new hosts in REAL INVENTORY requiring [NEW].
+[DELTA] NO_DELTA — inventory stable vs 2026-09-16 snapshots; LIVE probe set unchanged (registry-1.docker.io 401, posit.cloud 1823 html, api.vinsolutions.com 596) — no new subdomains in probe_allow for 5 targets this cycle.
 
-STEP 2 — PRIORITIZE:
-[PRIO docker] hub.docker.com — score 7.4 (attack 9 business 8 tech 9 gate 4 cloud 7 fresh 5) calc 0.25*9+0.25*8+0.15*9+0.15*4+0.10*7+0.10*5=7.4 — registry tags/list BOLA via auth.docker.io JWT
-[PRIO coxautomotive] api.vinsolutions.com — score 7.1 (attack 8 business 9 tech 7 gate 5 cloud 4 fresh 6) calc 2.0+2.25+1.05+0.75+0.4+0.6=7.1 — /api/v2/leads?user_id= IDOR, 596 gateway vs www 404 anomaly
-[PRIO posit] posit.cloud — score 6.5 (attack 7 business 7 tech 6 gate 7 cloud 5 fresh 5) calc 1.75+1.75+0.9+1.05+0.5+0.5=6.45 — __api__/v1/content/<guid> HTML fallback 1823 identical, needs Accept:application/json+JWT
+[PRIO docker] asset: registry-1.docker.io/v2/<ns>/<repo>/tags/list score: 7.60 breakdown: attack_surface=9 business_value=9 tech_exposure=8 gate_ease=4 cloud_surface=7 freshness=6 calc: 0.25*9+0.25*9+0.15*8+0.15*4+0.10*7+0.10*6=7.60
+[PRIO coxautomotive] asset: api.vinsolutions.com/api/v2/leads?user_id= score: 6.85 breakdown: attack_surface=8 business_value=9 tech_exposure=7 gate_ease=3 cloud_surface=5 freshness=6 calc: 0.25*8+0.25*9+0.15*7+0.15*3+0.10*5+0.10*6=6.85
+[PRIO posit] asset: posit.cloud/__api__/v1/content/<guid> score: 6.10 breakdown: attack_surface=7 business_value=6 tech_exposure=6 gate_ease=5 cloud_surface=6 freshness=6 calc: 0.25*7+0.25*6+0.15*6+0.15*5+0.10*6+0.10*6=6.10
 
-STEP 3 — HYPOTHESES:
-[HYP NONE] — no VALID >=70 confidence hypothesis passes 7 gates on current passive evidence (all BOLA/IDOR candidates remain 401/596/1823 identical owned vs victim, need JWT Bearer JSON differentiation; no concrete 200 vs 401/403 JSON delta yet)
+[HYP NONE]
 
-STEP 4 — SELF-CRITIQUE:
-[PARKED] NONE — no hypotheses emitted to park; prior cycles' registry/posit/vinsolutions BOLA drafts dropped for confidence <70 (identical 401/596/1823 html vs 404 without Authz: Bearer JWT JSON proves no IDOR)
-[FINAL] NONE — no surviving VALID hypotheses this cycle pending authenticated JSON probes
+[FINAL] NONE — no hypothesis meets VALID ≥70 with concrete 200 vs 401/403 JSON differentiation; all current evidence is HTML 1823 identical owned/victim (posit) and 401/596 identical owned/victim (docker/cox) — HOLD pending JWT+Accept: application/json probe.
 
-STEP 5 — NEXT ACTION:
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H: Authorization: Bearer <jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-attacker-Basic> H: Accept: application/vnd.docker.distribution.manifest.v2+json ; compare owned-ns vs victim-ns with same attacker JWT — 200 JSON vs 401 JSON proves BOLA, 401 both proves not
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Host: registry-1.docker.io Accept: application/json Authorization: Bearer <jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-attacker-account> ; repeat with owned-ns token for owned-private repo and compare status JSON: expect 200 {tags:[]} vs 401 {"errors":[{"code":"UNAUTHORIZED"}]} if BOLA fixed, else 200/200 proves BOLA.
 
-STEP 6 — LEARNING:
 [LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
 
-STEP 7 — RISK SCORE:
-[RISK] 38 — registry auth flow leaks 200 token for private scope but registry gates 401, posit/vinsolutions show no cross-tenant JSON disclosure on passive probes; exposure limited to auth-gated enumeration pending JWT tests
+[RISK] 58 reason: docker registry exposes private repo BOLA surface but gated by JWT (401 without), posit.cloud content API returns 200 HTML fallback identical (no JSON auth test yet), coxautomotive vinsolutions 596 gateway blocks passive enumeration — overall medium exposure, no proven IDOR/BOLA yet, requires authenticated JSON probes to confirm.

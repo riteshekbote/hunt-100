@@ -1,8 +1,7 @@
-## 2026-09-16 18:53:40 UTC (model muse-spark)
-[PARKED] NONE — no hypotheses emitted to park; prior cycles' registry/posit/vinsolutions BOLA drafts dropped for confidence <70 (identical 401/596/1823 html vs 404 without Authz: Bearer JWT JSON proves no IDOR)
-[FINAL] NONE — no surviving VALID hypotheses this cycle pending authenticated JSON probes
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H: Authorization: Bearer <jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-attacker-Basic> H: Accept: application/vnd.docker.distribution.manifest.v2+json ; compare owned-ns vs victim-ns with same attacker JWT — 200 JSON vs 401 JSON proves BOLA, 401 both proves not
+## 2026-09-16 22:09:15 UTC (model muse-spark)
+[FINAL] NONE — no hypothesis meets VALID ≥70 with concrete 200 vs 401/403 JSON differentiation; all current evidence is HTML 1823 identical owned/victim (posit) and 401/596 identical owned/victim (docker/cox) — HOLD pending JWT+Accept: application/json probe.
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Host: registry-1.docker.io Accept: application/json Authorization: Bearer <jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-attacker-account> ; repeat with owned-ns token for owned-private repo and compare status JSON: expect 200 {tags:[]} vs 401 {"errors":[{"code":"UNAUTHORIZED"}]} if BOLA fixed, else 200/200 proves BOLA.
 [LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
-[RISK] 38 — registry auth flow leaks 200 token for private scope but registry gates 401, posit/vinsolutions show no cross-tenant JSON disclosure on passive probes; exposure limited to auth-gated enumeration pending JWT tests
+[RISK] 58 reason: docker registry exposes private repo BOLA surface but gated by JWT (401 without), posit.cloud content API returns 200 HTML fallback identical (no JSON auth test yet), coxautomotive vinsolutions 596 gateway blocks passive enumeration — overall medium exposure, no proven IDOR/BOLA yet, requires authenticated JSON probes to confirm.
