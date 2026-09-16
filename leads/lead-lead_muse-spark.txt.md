@@ -3506,3 +3506,11 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
 [RISK] 66 docker registry private repo BOLA + cox automotive dealer PII (596 gateway hiding) + posit content exposure all gated but high business value if JWT gate fails
+## 2026-09-16 18:53:40 UTC (model muse-spark)
+[PARKED] NONE — no hypotheses emitted to park; prior cycles' registry/posit/vinsolutions BOLA drafts dropped for confidence <70 (identical 401/596/1823 html vs 404 without Authz: Bearer JWT JSON proves no IDOR)
+[FINAL] NONE — no surviving VALID hypotheses this cycle pending authenticated JSON probes
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H: Authorization: Bearer <jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-attacker-Basic> H: Accept: application/vnd.docker.distribution.manifest.v2+json ; compare owned-ns vs victim-ns with same attacker JWT — 200 JSON vs 401 JSON proves BOLA, 401 both proves not
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 38 — registry auth flow leaks 200 token for private scope but registry gates 401, posit/vinsolutions show no cross-tenant JSON disclosure on passive probes; exposure limited to auth-gated enumeration pending JWT tests
