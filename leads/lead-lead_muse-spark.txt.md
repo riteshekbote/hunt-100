@@ -3553,3 +3553,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
 [RISK] 68 - 3 high-value gated APIs with wildcard/bulk param surface (JWT-scoped registry, GUID content, user_id leads) plus open token issuer, but no unauth JSON proof yet, requires AUTH_HELPED differentiation
+## 2026-09-17 05:22:46 UTC (model muse-spark)
+[PARKED] BOLA registry-1.docker.io: confidence 60 <70 — needs Bearer JWT differentiation (identical 401 owned/victim not proof)
+[PARKED] IDOR posit.cloud: confidence 55 <70 — needs Accept:application/json + JWT differentiation (identical 1823 html owned/victim not proof)
+[PARKED] IDOR api.vinsolutions.com: confidence 50 <70 — needs authenticated JSON differentiation (identical 596 gateway owned/victim not proof)
+[FINAL] NONE — zero surviving hypotheses after self-critique
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list — step1: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull (attacker identity) extract token JWT; step2a: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Host: registry-1.docker.io Accept: application/vnd.docker.distribution.manifest.v2+json Authorization: Bearer <jwt-victim-scope-attacker-id> ; step2b: repeat with scope=repository:owned-ns/owned-private:pull as control; compare 200 JSON vs 401/403 — 200 on victim-ns with attacker JWT = BOLA valid; both 401 = not valid
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim not proof
+[RISK] 58 — program surface moderate-high: docker registry exposes JWT-gated private image path with proven auth endpoint 200 JSON but 401 enclosure still ambiguous; posit content GUID extractable but unauthenticated HTML identical blocks IDOR proof; coxautomotive vinsolutions gateway 596 masks API; no valid chained PII/money exploit proven, overall exposure gated by auth/WAF not open.
