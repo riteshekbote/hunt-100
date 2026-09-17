@@ -1,32 +1,7 @@
-## 2026-09-17 15:19:59 UTC (model muse-spark)
-class: BOLA
-asset: registry-1.docker.io
-confidence: 76
-reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json for both scopes; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical owned/victim without Bearer. Hub fallback 404. Indicates gate is JWT Bearer check, not 401 proof of authz.
-evidence_needed: JWT from auth.docker.io for victim scope used as Bearer vs owned scope; expect 200 JSON vs 401/403 differential on same /tags/list with Accept: application/vnd.docker.distribution.manifest.v2+json
-verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> extract token; 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Host: registry-1.docker.io Accept: application/vnd.docker.distribution.manifest.v2+json Authorization: Bearer <jwt> -> compare owned token vs victim token status/body; 3) same with owned-ns token as control
-impact: Private image name/tag enumeration + manifest pull -> source code/secrets leakage, high severity
-testability: AUTH_HELPED
-class: IDOR
-asset: api.vinsolutions.com
-confidence: 75
-reasoning: Versioned API /api/v2/leads?user_id=<id> classic IDOR param. PROBE 2026-09-17 api.vinsolutions.com/api/v2/leads?user_id=<owned-id> 596 and ?user_id=<victim-id> 596 identical; www.vinsolutions.com same path 404 indicates api host is WAF/gateway masking auth, not true authorization. Requires authenticated JSON differentiation.
-evidence_needed: Authenticated GET with valid session/JWT on api.vinsolutions.com with Accept: application/json; 200 JSON with victim PII vs 401/403/404 for victim-id when using owned session. 596 must diverge to 200 vs block.
-verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> Accept: application/json Authorization: Bearer <owned-jwt> -> baseline 200; 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers -> if 200 with victim data = IDOR; 3) GET https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> control 404
-impact: Cross-tenant PII dump (dealer leads, customer name/email/phone/VIN), IDOR P1/P2
-testability: AUTH_HELPED
-class: IDOR
-asset: posit.cloud
-confidence: 72
-reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> 200 len=1823 text/html and <victim-guid> 200 len=1823 text/html identical. HTML fallback vs expected JSON indicates missing Accept: application/json + JWT check; endpoint enumerated via GUID, likely BOLA/IDOR for deployed content.
-evidence_needed: Same GUIDs with Accept: application/json and Authorization: Bearer <posit-jwt>; expect 200 JSON metadata differential vs 401/403/404 for victim GUID under owned session, and content-type application/json not text/html.
-verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> Accept: application/json Authorization: Bearer <jwt> -> 200 JSON; 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers -> 200 JSON with victim data = IDOR else 401/403/404; 3) GET without auth with Accept: application/json to confirm HTML fallback is unauth leakage
-impact: Cross-workspace content metadata/code leakage, deployment secrets, medium-high
-testability: AUTH_HELPED
-[PARKED] none: all 3 hypotheses confidence >=70, not on REJECTED list, verify_steps concrete, asset in scope via *.docker.io, vinsolutions.com, posit.cloud
-[FINAL] 1) [HYP docker] Registry BOLA 76 2) [HYP coxautomotive] vinsolutions IDOR 75 3) [HYP posit] posit.cloud IDOR 72
-[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list — step1 GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull (capture token), step2 GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Host: registry-1.docker.io Accept: application/vnd.docker.distribution.manifest.v2+json Authorization: Bearer <jwt-victim> ; repeat with <jwt-owned> for victim-ns and compare 200 JSON vs 401/403
-[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
-[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
-[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
-[RISK] 68 — high business_value on docker registry private images + cox automotive PII (leads) + posit workspace content; versioned APIs with IDOR-prone user_id/guid params exposed through gateway/HTML fallback masking but unauthenticated probes return identical status (401/596/1823), requiring authenticated JSON differentiation to confirm BOLA/IDOR; auth token service already 200 JSON indicates gate is reachable.
+## 2026-09-17 19:16:21 UTC (model muse-spark)
+[FINAL] NONE — no hypothesis meets VALID confidence >=70 with concrete JSON 200 vs 401/403 differentiation; all current evidence is HTML fallback 1823 identical owned/victim or gateway 596 identical owned/victim or 401 identical owned/victim
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Accept: application/json H:Authorization: Bearer <jwt-from-step1> — compare owned-token vs victim-token vs no-token (expect 200 JSON vs 401/403 to prove/deny BOLA; record body len/type)
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 38 — email-only disclosure, no platform, broad inventory but all high-value probes return identical HTML fallback/gateway/401 for owned vs victim, no token-gated JSON differentiation yet, limited cloud metadata/GraphQL/upload exposure observed
