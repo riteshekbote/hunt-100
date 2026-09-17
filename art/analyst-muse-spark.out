@@ -5,18 +5,21 @@ STEP 1 — DELTA:
 NO_DELTA
 
 STEP 2 — PRIORITIZE:
-[PRIO docker] asset: registry-1.docker.io score: 7.15 breakdown: attack=8 business=9 tech=8 gate=4 cloud=6 fresh=5
-[PRIO coxautomotive] asset: api.vinsolutions.com score: 6.95 breakdown: attack=8 business=9 tech=7 gate=5 cloud=4 fresh=5
-[PRIO posit] asset: posit.cloud score: 6.60 breakdown: attack=7 business=7 tech=7 gate=7 cloud=5 fresh=5
+[PRIO docker] asset: registry-1.docker.io score:7.85 axes: ATK9 BUS9 TECH9 GATE4 CLOUD8 FRESH6 calc:0.25*9+0.25*9+0.15*9+0.15*4+0.10*8+0.10*6
+[PRIO coxautomotive] asset: api.vinsolutions.com score:6.85 axes: ATK8 BUS9 TECH7 GATE3 CLOUD5 FRESH6 calc:0.25*8+0.25*9+0.15*7+0.15*3+0.10*5+0.10*6
+[PRIO posit] asset: posit.cloud score:6.50 axes: ATK7 BUS8 TECH6 GATE5 CLOUD6 FRESH5 calc:0.25*7+0.25*8+0.15*6+0.15*5+0.10*6+0.10*5
 
 STEP 3 — HYPOTHESES:
 [HYP NONE]
 
 STEP 4 — SELF-CRITIQUE:
-[FINAL] NONE — no hypothesis meets VALID confidence >=70 with concrete JSON 200 vs 401/403 differentiation; all current evidence is HTML fallback 1823 identical owned/victim or gateway 596 identical owned/victim or 401 identical owned/victim
+[PARKED] BOLA registry-1.docker.io: confidence 55 <70 - evidence is 401 identical owned/victim without JWT Bearer JSON differentiation, HTML fallback vs gateway 596 identical not proof
+[PARKED] IDOR posit.cloud: confidence 45 <70 - evidence is 200 len=1823 text/html identical owned/victim, need Accept: application/json + JWT to differentiate 200 JSON vs 401/403
+[PARKED] IDOR api.vinsolutions.com: confidence 50 <70 - evidence is 596 gateway identical owned/victim vs 404 on www, no authenticated JSON 200 vs 401/403 differentiation
+[FINAL] NONE
 
 STEP 5 — NEXT ACTION:
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Accept: application/json H:Authorization: Bearer <jwt-from-step1> — compare owned-token vs victim-token vs no-token (expect 200 JSON vs 401/403 to prove/deny BOLA; record body len/type)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Accept: application/vnd.docker.distribution.manifest.v2+json H:Authorization: Bearer <jwt-victim-scope> ; compare victim vs owned token response for JSON 200 with tags vs 401 JSON {"errors":[{"code":"UNAUTHORIZED"}]} to prove BOLA
 
 STEP 6 — LEARNING:
 [LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
@@ -24,4 +27,4 @@ STEP 6 — LEARNING:
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
 
 STEP 7 — RISK SCORE:
-[RISK] 38 — email-only disclosure, no platform, broad inventory but all high-value probes return identical HTML fallback/gateway/401 for owned vs victim, no token-gated JSON differentiation yet, limited cloud metadata/GraphQL/upload exposure observed
+[RISK] 58 reason: 5-target surface large (docker registry + posit cloud + dealer PII APIs) but live probes show auth-gated 401/596 and identical HTML fallbacks, no validated 200 JSON cross-tenant read yet; exposure is auth-gated not open

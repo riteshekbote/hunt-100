@@ -3634,3 +3634,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
 [RISK] 38 — email-only disclosure, no platform, broad inventory but all high-value probes return identical HTML fallback/gateway/401 for owned vs victim, no token-gated JSON differentiation yet, limited cloud metadata/GraphQL/upload exposure observed
+## 2026-09-17 22:11:58 UTC (model muse-spark)
+[PARKED] BOLA registry-1.docker.io: confidence 55 <70 - evidence is 401 identical owned/victim without JWT Bearer JSON differentiation, HTML fallback vs gateway 596 identical not proof
+[PARKED] IDOR posit.cloud: confidence 45 <70 - evidence is 200 len=1823 text/html identical owned/victim, need Accept: application/json + JWT to differentiate 200 JSON vs 401/403
+[PARKED] IDOR api.vinsolutions.com: confidence 50 <70 - evidence is 596 gateway identical owned/victim vs 404 on www, no authenticated JSON 200 vs 401/403 differentiation
+[FINAL] NONE
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Accept: application/vnd.docker.distribution.manifest.v2+json H:Authorization: Bearer <jwt-victim-scope> ; compare victim vs owned token response for JSON 200 with tags vs 401 JSON {"errors":[{"code":"UNAUTHORIZED"}]} to prove BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 58 reason: 5-target surface large (docker registry + posit cloud + dealer PII APIs) but live probes show auth-gated 401/596 and identical HTML fallbacks, no validated 200 JSON cross-tenant read yet; exposure is auth-gated not open
