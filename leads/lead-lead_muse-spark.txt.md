@@ -3814,3 +3814,35 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical owned/victim not proof
 [RISK] 71 reason: high-value IDOR/BOLA surface persists across docker registry (private images), posit.cloud (tenant GUID), vinsolutions leads (PII/money) with abnormal signals (token 200 vs registry 401, 596 gateway, 1823 html fallback) but gated behind JWT/JSON differentiation — exposure high until Bearer tests prove authz
+## 2026-09-18 21:52:38 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token returns 200 JSON for both owned-ns and victim-ns scopes with owned session; registry-1.docker.io/v2/*/tags/list returns 401 identical for owned/victim without token, indicating auth-gated BOLA surface not yet tested with JWT.
+evidence_needed: JWT Bearer token for owned session scoped to victim-private repo returns 200 JSON with tag list vs 401/403 differential; identical 401 with different token proves no BOLA.
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull with Cookie: owned DockerHub session -> extract token. 2) GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with Header Authorization: Bearer <token1> Accept: application/vnd.docker.distribution.manifest.v2+json -> expect 200. 3) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull with same Cookie -> token2. 4) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list with Authorization: Bearer <token2> -> compare status/body owned vs victim.
+impact: cross-tenant private image enumeration/pull -> supply chain compromise, secrets leak, high severity
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 72
+reasoning: GET /api/v2/leads?user_id=<owned-id> and ?user_id=<victim-id> both return HTTP 596 identical (gateway) with and without auth; www.vinsolutions.com same path returns 404; indicates gated API requiring authenticated JSON differentiation.
+evidence_needed: Authenticated GET with owned JWT/session returns 200 JSON for owned user_id vs 401/403 or 200 with victim PII differential for victim user_id.
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> with Header Authorization: Bearer <owned-JWT> Accept: application/json -> record status/JSON. 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> with same Authorization -> compare status/len/JSON keys; repeat with no auth -> expect 596 vs 401/403 differential.
+impact: cross-dealership PII dump (leads, customers) -> IDOR high severity
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 70
+reasoning: GET /__api__/v1/content/<owned-guid> and /<victim-guid> both return 200 len=1823 text/html identical with current probe (HTML fallback); no Accept: application/json + JWT test done, so IDOR not disproven.
+evidence_needed: GET with Accept: application/json + owned session JWT returns 200 JSON for owned GUID vs 401/403 or 200 with victim data for victim GUID.
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> with Header Cookie: owned session Accept: application/json -> expect 200 JSON. 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> with same headers -> compare status/body differential 200 vs 401/403.
+impact: cross-workspace content disclosure (apps, data) -> medium-high severity
+testability: AUTH_HELPED
+[PARKED] none: all hypotheses confidence >=70 and have concrete AUTH_HELPED verify steps, not on REJECTED list
+[FINAL] 1) [HYP docker] Docker Registry cross-namespace BOLA - confidence 75 2) [HYP coxautomotive] Cox Vinsolutions leads IDOR - confidence 72 3) [HYP posit] Posit Cloud content IDOR - confidence 70
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull with owned DockerHub session Cookie -> extract token; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list with Header Authorization: Bearer <token> Accept: application/vnd.docker.distribution.manifest.v2+json; compare owned vs victim status/len JSON differential for BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
+[RISK] 42 — high-value surfaces (Docker registry BOLA, Vinsolutions dealer PII, Posit workspace) remain auth-gated with no JWT JSON differential proven; identical HTML/596 vs 401 fallbacks hide potential IDOR/BOLA, requiring token-gated 200 vs 401/403 proof before escalation
