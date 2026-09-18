@@ -3708,3 +3708,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
 [RISK] 68 reason: high-value BOLA/IDOR surface on private registry, Posit content GUID, and Vinsolutions lead API remains unauthenticated-indistinguishable (401/596/1823 HTML fallback identical owned/victim), requires JWT-authenticated JSON differentiation to confirm, but PII/supply-chain impact if validated is critical across docker/posit/coxautomotive union scope
+## 2026-09-18 09:15:30 UTC (model muse-spark)
+[PARKED] BOLA registry-1.docker.io: confidence 55 <70 - 401 identical owned/victim without JWT Bearer JSON differentiation, no 200 vs 401 proof
+[PARKED] IDOR posit.cloud: confidence 50 <70 - 200 len 1823 text/html identical owned/victim, need Accept: application/json + JWT to test 401/403 vs 200 JSON
+[PARKED] IDOR api.vinsolutions.com: confidence 45 <70 - 596 gateway identical owned/victim vs 404 on www, need authenticated JSON differentiation
+[FINAL] NONE - no hypothesis meets VALID >=70
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull with owned DockerHub session cookie -> extract token -> GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list H:Authorization: Bearer <token> H:Accept: application/vnd.docker.distribution.manifest.v2+json H:Accept: application/json compare vs GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same token for 200 vs 401/404 JSON differentiation
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 62 reason: high-value private registry + dealer PII surface exposed via versioned APIs but all current probes return identical status/length (401/596/1823) without authenticated JSON differentiation, no chained exploit proven
