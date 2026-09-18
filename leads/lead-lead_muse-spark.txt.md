@@ -3750,3 +3750,35 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON differentiation; gateway 596 identical not proof
 [RISK] 68 reason: high business_value on docker registry private repos + posit content + Cox leads PII, versioned APIs and IDOR params (user_id/guid) present, but current probes stuck at gateway/HTML fallback identical for owned/victim — exposure remains medium-high until JWT+JSON differentiation proves BOLA/IDOR chain
+## 2026-09-18 17:13:46 UTC (model muse-spark)
+class: BOLA
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json for both owned/victim scopes; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical owned/victim without JWT; hub.docker.com/v2/repositories/victim-ns/victim-private/tags 404; no JSON differentiation with Bearer yet proven.
+evidence_needed: JWT Bearer 200 vs 401/403 JSON differentiation owned vs victim private repo with valid owned session
+verify_steps: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull with owned DockerHub session -> extract token; GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull same session -> extract token2; GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list with Header Authorization: Bearer <token2> Accept: application/json
+impact: private image manifest/layer pull -> supply-chain code theft, secrets in layers, critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET posit.cloud/__api__/v1/content/<owned-guid> 200 len=1823 text/html identical to GET posit.cloud/__api__/v1/content/<victim-guid> 200 len=1823 text/html; GUID in path suggests object-level lookup; no Accept: application/json + JWT test done; HTML fallback masks JSON disparity.
+evidence_needed: Accept: application/json + JWT 200 vs 401/403 JSON differentiation for victim GUID with owned session
+verify_steps: GET https://posit.cloud/__api__/v1/content/<owned-guid> Header Accept: application/json + owned JWT/cookie -> record JSON; GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers -> compare status/body for IDOR
+impact: cross-tenant content/PII disclosure, moderate-high
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 74
+reasoning: GET api.vinsolutions.com/api/v2/leads?user_id=<owned-id> 596 identical to victim-id 596; www.vinsolutions.com same path 404 vs 596 shows routing diff; user_id param suggests IDOR; 596 gateway masks auth logic, needs authenticated JSON probe.
+evidence_needed: authenticated JSON 200 vs 401/403 differentiation for victim user_id with owned JWT/session
+verify_steps: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> Header Authorization: Bearer <owned-JWT> Accept: application/json -> baseline; GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers -> compare
+impact: dealer CRM PII/leads dump cross-tenant, high
+testability: AUTH_HELPED
+[PARKED] none: all hypotheses confidence >=70, class not on REJECTED, concrete verify_steps present
+[FINAL] 1. coxautomotive Vinsolutions Leads IDOR via user_id (74) 2. docker Docker Registry BOLA via JWT scope confusion (75) 3. posit Posit Cloud Content IDOR via GUID (72)
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull with owned DockerHub session cookie -> extract token, then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Header Authorization: Bearer <token> Accept: application/json
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + JWT differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
+[RISK] 68 - JWT-gated registry + GUID content + user_id leads APIs expose high business-value PII/images, but all gated behind 401/596/1823 HTML identical responses requiring auth-helped JSON differentiation; no anonymous 200 PII dump proven
