@@ -4014,3 +4014,11 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation for BOLA; gateway 596 identical owned/victim not proof
 [RISK] 42 reason: 5-target surface is auth-gated (docker registry 401, posit SPA fallback, vinsolutions 596 WAF) — high business value (private images, dealer PII) but no unauthenticated JSON 200 vs 401/403 IDOR/BOLA proof this cycle; exposure is medium without token-gated differentiation
+## 2026-09-19 21:46:22 UTC (model muse-spark)
+[PARKED] NONE: no hypothesis meets VALID >=70 with concrete evidence - current probes show HTML 1823 identical owned/victim @ posit.cloud, 401 identical owned/victim @ registry-1.docker.io, 596 identical owned/victim @ api.vinsolutions.com - all require JWT Bearer JSON differentiation
+[FINAL] NONE
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Header Cookie: <owned-DockerHub-session> -> extract token; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json, Authorization: Bearer <extracted-token> vs control GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list same headers - compare 200 JSON vs 401/404
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+[RISK] 38 | auth-gated surface with HTML fallback ambiguity - no JSON IDOR/BOLA proven, no open SSRF/metadata or upload exposure observed this cycle

@@ -1,15 +1,22 @@
 [0m
 > build · muse-spark-1.2-contributor-free
 [0m
-[NEW] NO_DELTA — inventory unchanged vs last cycle (real subdomain inventory same truncated view, live high-value hosts unchanged: registry-1.docker.io 401, posit.cloud 1823 html, api.vinsolutions.com 596). No new domains added to 5-target scope (duocircle, emsisoft, docker, posit, coxautomotive).
-[PRIO docker] asset: registry-1.docker.io score: 7.25 breakdown: attack_surface=9 business_value=9 tech_exposure=8 gate_ease=3 cloud_surface=6 freshness=5 calc: 0.25*9+0.25*9+0.15*8+0.15*3+0.10*6+0.10*5=7.25 reason: private repo tags/list = source/secrets, JWT Bearer BOLA is high-value chain to registry
-[PRIO posit] asset: posit.cloud score: 6.45 breakdown: attack_surface=7 business_value=7 tech_exposure=7 gate_ease=4 cloud_surface=7 freshness=6 calc: 0.25*7+0.25*7+0.15*7+0.15*4+0.10*7+0.10*6=6.45 reason: __api__/v1/content/<guid> — tenant content API, SPA fallback 1823 hides JSON IDOR, cloud-hosted RStudio/Connect
-[PRIO coxautomotive] asset: api.vinsolutions.com score: 6.60 breakdown: attack_surface=8 business_value=9 tech_exposure=6 gate_ease=3 cloud_surface=5 freshness=5 calc: 0.25*8+0.25*9+0.15*6+0.15*3+0.10*5+0.10*5=6.60 reason: /api/v2/leads?user_id= — dealer CRM PII, versioned API, gateway 596 identical owned/victim indicates WAF not authz proof
+NO_DELTA
+
+[PRIO docker] registry-1.docker.io | score:7.3 | 9,9,8,2,7,6 | attack:9 business:9 tech:8 gate:2 cloud:7 fresh:6
+[PRIO posit] posit.cloud | score:6.7 | 8,8,7,3,6,6 | attack:8 business:8 tech:7 gate:3 cloud:6 fresh:6
+[PRIO coxautomotive] api.vinsolutions.com | score:6.45 | 8,9,6,2,5,5 | attack:8 business:9 tech:6 gate:2 cloud:5 fresh:5
+
 [HYP NONE]
-[PARKED] NONE — no hypotheses emitted this cycle; prior docker/posit/vinsolutions BOLA/IDOR candidates allparked due to confidence <70 and 0/7 gates: evidence is 401 identical (registry), 1823 html identical (posit), 596 identical (vinsolutions) with no JWT Bearer + Accept: application/json differentiation, no concrete 200 vs 401/403 JSON proof
-[FINAL] NONE — no surviving hypotheses >=70 confidence; retain prior REJECTED list empty
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull Header Cookie: <owned DockerHub session> -> extract token t_owned; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Authorization: Bearer <t_owned>, Accept: application/vnd.docker.distribution.manifest.v2+json, Accept: application/json Expected: 200 JSON {tags:[]} if BOLA else 401/403 JSON {errors:[{code:UNAUTHORIZED}]} — compare 1:1 length/body vs owned-ns/owned-private with same token; proves BOLA at registry layer (read-only, no write)
+
+[PARKED] NONE: no hypothesis meets VALID >=70 with concrete evidence - current probes show HTML 1823 identical owned/victim @ posit.cloud, 401 identical owned/victim @ registry-1.docker.io, 596 identical owned/victim @ api.vinsolutions.com - all require JWT Bearer JSON differentiation
+
+[FINAL] NONE
+
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Header Cookie: <owned-DockerHub-session> -> extract token; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json, Authorization: Bearer <extracted-token> vs control GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list same headers - compare 200 JSON vs 401/404
+
 [LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
-[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation for BOLA; gateway 596 identical owned/victim not proof
-[RISK] 42 reason: 5-target surface is auth-gated (docker registry 401, posit SPA fallback, vinsolutions 596 WAF) — high business value (private images, dealer PII) but no unauthenticated JSON 200 vs 401/403 IDOR/BOLA proof this cycle; exposure is medium without token-gated differentiation
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof
+
+[RISK] 38 | auth-gated surface with HTML fallback ambiguity - no JSON IDOR/BOLA proven, no open SSRF/metadata or upload exposure observed this cycle
