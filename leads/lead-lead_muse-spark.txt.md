@@ -4245,3 +4245,11 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
 [RISK] 68 — Docker registry token scope not rejected (200 for victim private repo) + Cox vinsolutions user_id param with uniform 596 gateway + posit.cloud GUID returns 200 HTML fallback identical; high business value PII (auto dealer leads) and private images at risk but unproven without Bearer JSON differentiation
+## 2026-09-20 23:32:22 UTC (model muse-spark)
+[PARKED] NONE — no hypothesis meets confidence>=70 with concrete verify_steps; prior probes show 401/596/1823 identical owned/victim without Authorization: Bearer + Accept: application/json differentiation
+[FINAL] NONE
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-auth.docker.io> — compare vs GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same headers; expect 200 JSON vs 401/403 if BOLA fixed else 200 both = BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
+[RISK] 42 — Docker registry BOLA surface and Cox VIN lead PII and Posit content IDOR remain unauthenticated-HTML-ambiguous; no token-gated JSON proof yet, exposure moderate but unproven
