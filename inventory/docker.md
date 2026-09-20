@@ -331,3 +331,5 @@
 - NEW NO_DELTA — inventory stable (CT list ~105 hosts, wildcard *.docker.com / *.docker.io unchanged), last leads none, live probes 2026-09-19 show identical owned vs victim: auth.docker.io 200 JSON both sc
 
 ## 2026-09-20 07:01:08 UTC
+
+## 2026-09-20 12:20:02 UTC
