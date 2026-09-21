@@ -4253,3 +4253,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical not proof
 [RISK] 42 — Docker registry BOLA surface and Cox VIN lead PII and Posit content IDOR remain unauthenticated-HTML-ambiguous; no token-gated JSON proof yet, exposure moderate but unproven
+## 2026-09-21 01:41:40 UTC (model muse-spark)
+[PARKED] Docker Registry BOLA @ registry-1.docker.io: confidence 55 <70, 401 identical without Bearer not proof, need JWT Bearer + Accept: application/json differentiation
+[PARKED] Posit Content IDOR @ posit.cloud: confidence 45 <70, HTML 1823 identical owned/victim with text/html, need Accept: application/json + Authorization: Bearer <owned-posit-jwt>
+[PARKED] Cox Vinsolutions Leads IDOR @ api.vinsolutions.com: confidence 50 <70, 596 gateway identical owned/victim vs 404 on www host is routing ambiguity, need authenticated JSON 200 vs 401/403
+[FINAL] No surviving hypotheses this cycle — all parked for confidence <70
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull-with-Cookie-<owned-DockerHub-session>> | Compare to GET https://registry-1.docker.io/v2/owned-ns/owned-private/tags/list with same Bearer | Expect 200 JSON owned vs 401/403 victim if authz enforced, 200 both = BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof vs 404 on www.vinsolutions.com
+[RISK] 58 | large passive inventory (admin/api/dev/staging/* + *.docker.com/*.docker.io + versioned /api/v2) but live probes show 401/596/1823 identical owned/victim without authenticated JSON, no PII/money flow exfil proven yet, gated JWT differentiation still required
