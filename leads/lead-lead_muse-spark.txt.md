@@ -4390,3 +4390,33 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof vs 404 on www host remains routing ambiguity
 [RISK] 68 reason: Docker private registry (high business value + JWT scoping) plus Cox Automotive leads PII surface (user_id IDOR) remain unproven due to HTML fallback/gateway masking; gate_ease moderate (auth required), cloud_surface moderate, no proven BOLA/IDOR yet but attack surface high
+## 2026-09-22 01:37:14 UTC (model muse-spark)
+class: IDOR
+asset: registry-1.docker.io
+confidence: 72
+reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 JSON for victim scope both accounts; registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical owned/victim without Bearer; anomaly is token issuance success vs registry 401 identical suggests authz not differentiated at registry layer
+evidence_needed: JWT Bearer JSON 200 vs 401/403 differentiation: owned JWT against victim repo returns 200 JSON with tags vs victim JWT 401/403
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json Cookie: <owned-Docker-session> -> extract token; 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept: application/json Authorization: Bearer <owned-token> ; 3) repeat 1-2 with victim-ns/owned-private as control
+impact: private image pull, source code/secrets leak, supply-chain poisoning — critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 70
+reasoning: GET /__api__/v1/content/<owned-guid> and /__api__/v1/content/<victim-guid> both 200 len 1823 text/html identical; HTML fallback masks JSON API; endpoint pattern /__api__/v1/content/{guid} with param guid suggests direct object reference; identical HTML indicates SPA shell not authz check
+evidence_needed: Accept: application/json + Authorization: Bearer <owned-posit-jwt> returns 200 JSON owned vs 401/403 or divergent JSON for victim GUID
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> Accept: application/json Authorization: Bearer <owned-posit-jwt> ; 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> Accept: application/json Authorization: Bearer <owned-posit-jwt> ; compare status/body
+impact: cross-tenant R content/app exfil, PII, code theft — high
+testability: AUTH_HELPED
+class: IDOR
+asset: api.vinsolutions.com
+confidence: 70
+reasoning: GET /api/v2/leads?user_id=<owned-id> and ?user_id=<victim-id> both 596 identical; www.vinsolutions.com same path returns 404 vs api 596 shows routing ambiguity not authz proof; param user_id suggests BOLA/IDOR on CRM leads
+evidence_needed: authenticated JSON 200 vs 401/403 differentiation: owned session/token against victim user_id returns 200 JSON with victim leads vs 401/403
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> Accept: application/json Cookie: <owned-vinsolutions-session> ; 2) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> Accept: application/json Cookie: <owned-vinsolutions-session> ; compare status/JSON
+impact: cross-dealership customer PII, financial, lead dump — high
+testability: AUTH_HELPED
+[PARKED] none: all hypotheses confidence >=70, class not on REJECTED list, concrete verify_steps present
+[FINAL] 1) Registry BOLA via JWT scope confusion @ registry-1.docker.io (72); 2) Connect content IDOR @ posit.cloud (70); 3) Vinsolutions CRM IDOR @ api.vinsolutions.com (70)
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull>
+[LEARN] NONE — no class proven dead/alive this cycle; registry-1 401 identical without Bearer not proof, posit 1823 html identical not proof, vinsolutions 596 identical not proof; need JWT Bearer JSON 200 vs 401/403 differentiation
+[RISK] 68 — high-value attack surface (registry private repos, Connect multi-tenant GUIDs, Cox CRM PII) with authz masked by HTML fallback/gateway 596/401 identical; no confirmed BOLA yet but token issuance 200 JSON indicates gate bypass potential, exposure remains high pending authenticated JSON differentiation
