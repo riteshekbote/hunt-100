@@ -4522,3 +4522,34 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 on www host remains routing ambiguity not proof
 [RISK] 68 — Docker registry auth gate untested with Bearer (high value supply chain), Posit multi-tenant GUID and Cox/Vinsolutions user_id IDOR surfaces remain ambiguous due to HTML/gateway fallbacks; no proven dead class but high blast radius if Bearer bypass holds
+## 2026-09-22 23:17:26 UTC (model muse-spark)
+class: BOLA
+asset: registry-1.docker.io
+confidence: 75
+reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json for both scopes. registry-1.docker.io/v2/victim-ns/victim-private/tags/list returns 401 identical without Bearer. No JWT-differentiated JSON tested yet.
+evidence_needed: 200 vs 401/403 JSON differentiation with Authorization: Bearer <owned-docker-jwt> for owned-id vs victim-id repository
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json -> extract token. 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept: application/json Authorization: Bearer <owned-jwt>. 3) Repeat with victim-ns/owned-private for comparison. Compare JSON vs 401.
+impact: private image enumeration + pull -> supply-chain compromise + secrets leak — critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 72
+reasoning: GET https://posit.cloud/__api__/v1/content/<owned-guid> and /<victim-guid> both return 200 len=1823 text/html identical. HTML fallback without Accept: application/json + Authorization. No JSON IDOR differentiation tested.
+evidence_needed: Accept: application/json + Authorization: Bearer <owned-posit-jwt> returning 200 JSON for victim-guid vs 401/403/404
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> Accept: application/json Authorization: Bearer <owned-jwt>. 2) GET same with <victim-guid> same headers. 3) Compare JSON fields (id/owner/content) vs status.
+impact: cross-tenant source code / data / PII dump of private Posit Cloud content — high
+testability: AUTH_HELPED
+class: BOLA
+asset: api.vinsolutions.com
+confidence: 70
+reasoning: GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> and ?user_id=<victim-id> both return 596 identical. www.vinsolutions.com same path returns 404. Gateway 596 masks auth gate. No authenticated JSON 200 vs 401/403 tested.
+evidence_needed: authenticated JSON 200 with victim PII vs 401/403/404 when using session/JWT for owned vs victim user_id
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id> Accept: application/json Cookie: <owned-session> or Authorization: Bearer <owned-jwt>. 2) GET same with user_id=<victim-id> same auth. 3) Compare JSON array vs error.
+impact: cross-dealership PII / leads dump (names/emails/phones) -> GDPR breach — high
+testability: AUTH_HELPED
+[FINAL] Docker Registry BOLA — victim private repository tags/list | Cox Vinsolutions BOLA — user_id leads | Posit Cloud IDOR — content GUID enumeration
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull> — then same with scope repository:owned-ns/owned-private:pull for control; compare 200 JSON vs 401/403
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www host remains routing ambiguity not proof
+[RISK] 68 — Docker registry + Posit Cloud + Vinsolutions expose high-value private objects with unauthenticated 401/596/1823-html masking; JWT-authenticated JSON differentiation not yet proven, but attack surface remains critical if token scoping fails
