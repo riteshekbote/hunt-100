@@ -4420,3 +4420,31 @@ testability: AUTH_HELPED
 [NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull>
 [LEARN] NONE — no class proven dead/alive this cycle; registry-1 401 identical without Bearer not proof, posit 1823 html identical not proof, vinsolutions 596 identical not proof; need JWT Bearer JSON 200 vs 401/403 differentiation
 [RISK] 68 — high-value attack surface (registry private repos, Connect multi-tenant GUIDs, Cox CRM PII) with authz masked by HTML fallback/gateway 596/401 identical; no confirmed BOLA yet but token issuance 200 JSON indicates gate bypass potential, exposure remains high pending authenticated JSON differentiation
+## 2026-09-22 06:48:27 UTC (model muse-spark)
+class: BOLA
+asset: registry-1.docker.io
+confidence: 72
+reasoning: GET /v2/<ns>/<repo>/tags/list returns 401 identical owned/victim without Bearer; auth.docker.io/token returns 200 JSON for victim scope without differentiation yet. JWT scope repository:victim-ns/victim-private:pull is gate. Unauthenticated 401 identical masks BOLA not yet tested with victim-scoped Bearer from owned session.
+evidence_needed: Bearer JWT for victim-private repo from owned account returns 200 JSON with tags vs 401/403 for unauthorized; body diff vs identical 401
+verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json Cookie: <owned-Docker-session> 2) Extract token 3) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept: application/json Authorization: Bearer <token> compare owned vs victim
+impact: Cross-account private image manifest/layer disclosure, supply-chain injection - critical
+testability: AUTH_HELPED
+class: IDOR
+asset: posit.cloud
+confidence: 70
+reasoning: GET /__api__/v1/content/<guid> returns 200 len 1823 text/html identical owned/victim without Accept: application/json and without Bearer. Indicates HTML fallback masking API authz. Posit uses GUID as direct ref, likely JWT-gated. Need Accept: application/json + Bearer differentiation.
+evidence_needed: GET with Accept: application/json Authorization: Bearer <owned-posit-jwt> returns 200 JSON victim content metadata vs 401/403/404
+verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<victim-guid> Accept: application/json Authorization: Bearer <owned-posit-jwt> 2) Compare to GET <owned-guid> same headers and unauth variant; inspect Content-Type and JSON body vs 1823 html
+impact: Cross-tenant Shiny/Connect content, code and PII dump - high
+testability: AUTH_HELPED
+class: BOLA
+asset: api.vinsolutions.com
+confidence: 71
+reasoning: GET /api/v2/leads?user_id=<id> returns HTTP 596 identical owned/victim on api host, while www.vinsolutions.com same path returns 404. Gateway error masks authz. Versioned /api/v2 suggests dealership CRM BOLA on user_id, high business value PII.
+evidence_needed: Authenticated JSON GET with owned Cox JWT returns 200 JSON for victim user_id vs 401/403
+verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> Accept: application/json Authorization: Bearer <owned-Cox-JWT> 2) Compare owned-id response 3) Test www host same params for routing diff
+impact: Mass dealership lead/PII cross-tenant exfiltration - critical
+testability: AUTH_HELPED
+[FINAL] 1) Docker Registry BOLA 2) Cox Automotive Vinsolutions BOLA 3) Posit Cloud IDOR
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json Cookie: <owned-Docker-session>; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept: application/json Authorization: Bearer <token>
+[RISK] 68 registry private repo + posit content GUID + vinsolutions lead PII surface is high but unproven without JWT Bearer JSON 200 vs 401/403 differentiation; exposure remains auth-gated not yet bypassed

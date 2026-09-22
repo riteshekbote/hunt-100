@@ -940,3 +940,7 @@
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET
 - LEARN: NONE — no class proven dead/alive this cycle; registry-1 401 identical without Bearer not proof, posit 1823 html identical not proof, vinsolutions 596 identical
+
+## RANKED HYPOTHESES 2026-09-22 06:48:43 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json Cookie: <owned-Docker
