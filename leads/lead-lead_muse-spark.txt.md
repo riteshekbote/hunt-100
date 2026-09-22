@@ -4448,3 +4448,13 @@ testability: AUTH_HELPED
 [FINAL] 1) Docker Registry BOLA 2) Cox Automotive Vinsolutions BOLA 3) Posit Cloud IDOR
 [NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json Cookie: <owned-Docker-session>; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept: application/json Authorization: Bearer <token>
 [RISK] 68 registry private repo + posit content GUID + vinsolutions lead PII surface is high but unproven without JWT Bearer JSON 200 vs 401/403 differentiation; exposure remains auth-gated not yet bypassed
+## 2026-09-22 12:36:06 UTC (model muse-spark)
+[PARKED] BOLA registry-1.docker.io tags/list: <70 confidence without Bearer JWT JSON 200 vs 401 differentiation
+[PARKED] IDOR posit.cloud __api__/v1/content guid: <70 confidence HTML 1823 identical owned/victim without Accept:application/json + Bearer
+[PARKED] BOLA api.vinsolutions.com leads user_id: <70 confidence gateway 596 identical owned/victim vs 404 www routing ambiguity, no auth JSON proof
+[FINAL] NONE — no surviving hypotheses >=70
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull> — compare JSON 200 vs 401 vs owned-private 200 to prove BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof vs 404 on www host remains routing ambiguity
+[RISK] 38 reason: high-value APIs exposed (docker registry private repos, posit content GUIDs, Cox vinsolutions PII leads) but unauthenticated probes show uniform deny (401/596) or SPA fallback (1823 HTML) with no JSON disclosure yet; exposure is auth-gated pending JWT tests

@@ -148,3 +148,6 @@
 - 2026-09-21 NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www host remains routing ambiguity, not proof
 - 2026-09-21 NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof vs 404 on www host remains routing ambiguity
 - 2026-09-22 NONE — no class proven dead/alive this cycle; registry-1 401 identical without Bearer not proof, posit 1823 html identical not proof, vinsolutions 596 identical not proof; need JWT Bearer JSON 200 vs 401/403 differentiation
+- 2026-09-22 NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
+- 2026-09-22 NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+- 2026-09-22 NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim not proof vs 404 on www host remains routing ambiguity
