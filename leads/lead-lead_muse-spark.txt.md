@@ -4692,3 +4692,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 on www remains routing ambiguity not proof
 [RISK] 68 reason: registry auth issuance for victim scope + posit HTML fallback masking + vinsolutions gateway 596 indicate gate_ease 3-5, high business_value PII/repo, but no Bearer/JSON differentiation proven yet so exposure is high but unconfirmed
+## 2026-09-23 23:58:36 UTC (model muse-spark)
+[PARKED] docker registry BOLA @ registry-1.docker.io: confidence 55 <70 - need JWT Bearer JSON 200 vs 401/403 differentiation, current 401 identical without Bearer not proof
+[PARKED] posit IDOR @ posit.cloud: confidence 45 <70 - HTML 1823 identical owned/victim, need Accept: application/json + Authorization: Bearer <owned-posit-jwt> 200 vs 401/403
+[PARKED] coxautomotive IDOR @ api.vinsolutions.com: confidence 50 <70 - gateway 596 identical owned/victim vs 404 on www.vinsolutions.com remains routing ambiguity, need authenticated JSON 200 vs 401
+[FINAL] NONE — no hypothesis meets VALID ≥70 this cycle
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Headers: Accept: application/json -> capture owned-docker-jwt; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt> ; repeat with victim-ns scope and compare JSON 200 vs 401/403 owned vs victim
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 on www remains routing ambiguity not proof
+[RISK] 42 — high-value surfaces (Docker registry private repos, Posit content GUIDs, Cox/Vinsolutions lead PII) still require JWT-authenticated JSON differentiation; unauthenticated 401/596/1823 identical responses indicate controls present but not yet proven bypass-resistant; no chained primitive demonstrated this cycle
