@@ -4584,3 +4584,13 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambiguity not proof
 [RISK] 68 Docker registry BOLA (auth 200 both scopes vs registry 401) + posit.cloud IDOR (1823 identical) + vinsolutions gateway 596 masking IDOR remain unauthenticated from passive; chained impact is Critical/High if Bearer confirms
+## 2026-09-23 07:45:08 UTC (model muse-spark)
+[PARKED] BOLA registry-1.docker.io/v2/victim-ns/victim-private/tags/list: confidence 60 <70 — 401 identical owned/victim without Bearer not proof, need JWT Bearer JSON differentiation
+[PARKED] IDOR posit.cloud/__api__/v1/content/<guid>: confidence 55 <70 — 200 len=1823 text/html identical owned/victim with/without auth, need Accept: application/json + Bearer
+[PARKED] BOLA api.vinsolutions.com/api/v2/leads?user_id=<id>: confidence 55 <70 — 596 identical owned/victim vs 404 on www host is routing/gateway ambiguity, need authenticated JSON 200 vs 401/403
+[FINAL] (none) — 0 surviving hypotheses >=70
+[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept: application/json (capture owned-docker-jwt) then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json Authorization: Bearer <owned-docker-jwt> — compare owned vs victim scope 200 JSON vs 401/403 to confirm BOLA (read-only)
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www host remains routing ambiguity not proof
+[RISK] 62 — private registry + dealer CRM PII + RStudio Connect content endpoints exposed with auth-gated APIs; no confirmed IDOR/BOLA yet but high business value if JWT/authz fails, requires AUTH_HELPED JSON validation
