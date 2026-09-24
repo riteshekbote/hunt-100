@@ -91451,6 +91451,8 @@ probe_allow: '*|0x|123contactform|18f|23andme|24sessions|305|3ds|3gpp|4chan|84co
 - 2026-09-24 NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
 - 2026-09-24 NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 - 2026-09-24 NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambiguity not proof
+- 2026-09-24 NONE @ posit.cloud: still need Accept:application/json + Authorization:Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
+- 2026-09-24 NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 routing ambiguity not proof
 === REAL SUBDOMAIN INVENTORY (from passive CT recon — PROBE/ANALYZE THESE, DO NOT INVENT HOSTS) ===
 *.docker.com
 *.docker.io
@@ -91865,13 +91867,6 @@ none
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Headers: Accept: application/json -> capture o
 - LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
-- LEARN: NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not
-- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www host remains routing
-
-## RANKED HYPOTHESES 2026-09-23 21:29:36 UTC
-- (no NEW hypotheses this cycle — all deduped)
-- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Headers: Accept: application/json -> capture o
-- LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
 - LEARN: NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 - LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 on www remains routing ambiguity not pro
 
@@ -91902,13 +91897,14 @@ none
 - LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
 - LEARN: NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not
 - LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambi
-=== LATEST ROBOT PROBE RESULTS ===
-https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 596
 
-## 2026-09-22 23:17:47 UTC
-https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
-https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
-https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+## RANKED HYPOTHESES 2026-09-24 18:41:05 UTC
+- (no NEW hypotheses this cycle — all deduped)
+- NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Accept:application/json -> capture owned JWT; 
+- LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
+- LEARN: NONE @ posit.cloud: still need Accept:application/json + Authorization:Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
+- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 routing ambiguity not proof
+=== LATEST ROBOT PROBE RESULTS ===
 https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
 
 ## 2026-09-23 01:49:05 UTC
@@ -91963,3 +91959,9 @@ https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
 
 ## 2026-09-24 14:27:55 UTC
 
+
+## 2026-09-24 18:41:17 UTC
+https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull -> 200 len=? type=application/json
+https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list -> HTTP 401
+https://posit.cloud/__api__/v1/content/<owned-guid -> 200 len=1823 type=text/html
+https://api.vinsolutions.com/api/v2/leads?user_id=<owned-id -> HTTP 596
