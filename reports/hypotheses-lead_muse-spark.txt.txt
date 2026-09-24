@@ -1,32 +1,7 @@
-## 2026-09-24 09:34:14 UTC (model muse-spark)
-class: BOLA
-asset: registry-1.docker.io/v2/victim-ns/victim-private/tags/list
-confidence: 75
-reasoning: auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull returns 200 application/json both scopes. registry-1 returns 401 identical owned/victim without Bearer, no JWT differentiation yet.
-evidence_needed: JWT Bearer 200 vs 401/403 JSON differentiation with owned token accessing victim repo
-verify_steps: 1) GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull Accept:application/json capture token 2) GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Accept:application/json Authorization:Bearer <owned-jwt> 3) repeat with victim token compare body
-impact: private image manifest pull, supply-chain takeover, High
-testability: AUTH_HELPED
-class: IDOR
-asset: posit.cloud/__api__/v1/content/<guid>
-confidence: 70
-reasoning: GET posit.cloud/__api__/v1/content/<owned-guid> and <victim-guid> both 200 len=1823 text/html identical. HTML fallback masks JSON authz, no Accept:application/json + Bearer test done.
-evidence_needed: Accept:application/json + Authorization:Bearer <owned-posit-jwt> 200 JSON owned vs 401/403 JSON victim differentiation
-verify_steps: 1) GET https://posit.cloud/__api__/v1/content/<owned-guid> Headers: Accept:application/json Authorization:Bearer <owned-jwt> 2) GET https://posit.cloud/__api__/v1/content/<victim-guid> same headers compare status/body
-impact: cross-tenant content/apps exfiltration, Medium-High
-testability: AUTH_HELPED
-class: BOLA
-asset: api.vinsolutions.com/api/v2/leads?user_id=
-confidence: 70
-reasoning: GET api.vinsolutions.com/api/v2/leads?user_id=<owned-id> and <victim-id> both HTTP 596 identical gateway, www.vinsolutions.com same path returns 404, suggests routing/gateway not authz tested, no authenticated JSON differentiation.
-evidence_needed: authenticated JSON 200 vs 401/403 differentiation with session/JWT on api vs www
-verify_steps: 1) GET https://api.vinsolutions.com/api/v2/leads?user_id=<victim-id> Headers: Accept:application/json Authorization:Bearer <owned-cox-jwt> or Cookie 2) GET https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id> same headers compare
-impact: PII leads dump cross-dealer, High
-testability: AUTH_HELPED
-[PARKED] none: all confidence >=70 and not on REJECTED list, verify_steps concrete
-[FINAL] 1) BOLA on registry-1.docker.io tags/list via JWT reuse (75) 2) IDOR on posit.cloud __api__/v1/content GUID (70) 3) BOLA/access-control on api.vinsolutions.com leads user_id (70)
-[NEXT] PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:victim-ns/victim-private:pull Headers: Accept: application/json -> capture owned-docker-jwt; then GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json, Authorization: Bearer <owned-docker-jwt> (read-only, compare status/body vs unauth 401)
-[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical owned/victim without Bearer not proof
+## 2026-09-24 14:27:33 UTC (model muse-spark)
+[FINAL] NONE
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json, Authorization: Bearer <owned-docker-jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull> Compare vs GET same path with Authorization: Bearer <victim-docker-jwt> Capture status JSON 200 vs 401/403 to prove BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambiguity not proof
-[RISK] 42: wide inventory but auth-gated BOLA/IDOR unproven without JWT, gateway 596 and HTML fallback mask true authz, no mass-assign/SSRF/JWT confusion evidence yet
+[RISK] 58 reason: high-value versioned APIs with sensitive params (user_id, content GUID, private registry tags) exposed but unauthenticated responses are identical 401/596/1823 HTML fallback; no authz differentiation yet proven, cloud metadata/JS exposure not yet probed

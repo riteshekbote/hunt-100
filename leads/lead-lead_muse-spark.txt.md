@@ -4744,3 +4744,10 @@ testability: AUTH_HELPED
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambiguity not proof
 [RISK] 42: wide inventory but auth-gated BOLA/IDOR unproven without JWT, gateway 596 and HTML fallback mask true authz, no mass-assign/SSRF/JWT confusion evidence yet
+## 2026-09-24 14:27:33 UTC (model muse-spark)
+[FINAL] NONE
+[NEXT] PROBE: GET https://registry-1.docker.io/v2/victim-ns/victim-private/tags/list Headers: Accept: application/json, Authorization: Bearer <owned-docker-jwt-from-GET-https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull> Compare vs GET same path with Authorization: Bearer <victim-docker-jwt> Capture status JSON 200 vs 401/403 to prove BOLA
+[LEARN] NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
+[LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical owned/victim not proof
+[LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical owned/victim vs 404 on www remains routing ambiguity not proof
+[RISK] 58 reason: high-value versioned APIs with sensitive params (user_id, content GUID, private registry tags) exposed but unauthenticated responses are identical 401/596/1823 HTML fallback; no authz differentiation yet proven, cloud metadata/JS exposure not yet probed
