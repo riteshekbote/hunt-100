@@ -4865,3 +4865,4 @@ testability: PASSIVE
 [LEARN] NONE @ posit.cloud: still need Accept: application/json + Authorization: Bearer <owned-posit-jwt> differentiation for IDOR; HTML 1823 identical not proof
 [LEARN] NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs www 404 remains routing ambiguity not proof
 [RISK] 62 reason: high-value docker registry + posit content API + dealer CRM all exposure gated behind JWT/gateway; no IDOR/BOLA proven due to missing Bearer JSON differentiation, but attack surface remains broad (105 targets, GraphQL/OAuth not yet probed)
+## 2026-09-25 10:32:59 UTC (model muse-spark)
