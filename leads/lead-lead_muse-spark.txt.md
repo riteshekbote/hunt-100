@@ -4867,3 +4867,4 @@ testability: PASSIVE
 [RISK] 62 reason: high-value docker registry + posit content API + dealer CRM all exposure gated behind JWT/gateway; no IDOR/BOLA proven due to missing Bearer JSON differentiation, but attack surface remains broad (105 targets, GraphQL/OAuth not yet probed)
 ## 2026-09-25 10:32:59 UTC (model muse-spark)
 ## 2026-09-25 15:33:12 UTC (model muse-spark)
+## 2026-09-25 19:32:36 UTC (model muse-spark)
