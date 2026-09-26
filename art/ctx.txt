@@ -91867,9 +91867,6 @@ explorer.money
 {"phase": "POC"}=== MY LAST LEADS (tail) ===
 none
 === AGGREGATED HYPOTHESES (tail) ===
-- LEARN: NONE @ api.vinsolutions.com: still need authenticated JSON 200 vs 401/403 differentiation; gateway 596 identical vs 404 routing ambiguity not proof
-
-## RANKED HYPOTHESES 2026-09-24 21:49:04 UTC
 - (no NEW hypotheses this cycle — all deduped)
 - NEXT(hypotheses-lead_muse-spark.txt.txt): PROBE: GET https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull Accept:application/json -> capture owned JWT; th
 - LEARN: NONE @ registry-1.docker.io: still need JWT Bearer JSON 200 vs 401/403 differentiation for BOLA; 401 identical without Bearer not proof
@@ -91907,10 +91904,10 @@ none
 
 ## RANKED HYPOTHESES 2026-09-26 06:37:14 UTC
 - (no NEW hypotheses this cycle — all deduped)
+
+## RANKED HYPOTHESES 2026-09-26 11:46:36 UTC
+- (no NEW hypotheses this cycle — all deduped)
 === LATEST ROBOT PROBE RESULTS ===
-
-## 2026-09-24 04:45:13 UTC
-
 
 ## 2026-09-24 09:34:40 UTC
 https://auth.docker.io/token?service=registry.docker.io&scope=repository:owned-ns/owned-private:pull -> 200 len=? type=application/json
@@ -91967,4 +91964,7 @@ https://www.vinsolutions.com/api/v2/leads?user_id=<victim-id -> HTTP 404
 
 
 ## 2026-09-26 06:37:26 UTC
+
+
+## 2026-09-26 11:46:48 UTC
 
